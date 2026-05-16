@@ -1,0 +1,109 @@
+{
+  "id": "deictic-summary",
+  "class": "deictic-summary",
+  "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.",
+  "matchMode": "contains",
+  "maxTokens": 80,
+  "templates": [
+    "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.",
+    "{deicticSubject} {linkingVerb} the {summaryNoun} that {thinPredicate}.",
+    "{deicticSubject} {linkingVerb} the {summaryNoun} {genericAudience} {reactionVerb}.",
+    "{deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.",
+    "{deicticSubject} {linkingVerb} how {abstractSubject} {abstractVerb}."
+  ],
+  "slots": {
+    "deicticSubject": ["that", "this", "it"],
+    "linkingVerb": ["is", "was"],
+    "evaluativeAdjective": [
+      "real",
+      "strange",
+      "deeper",
+      "hard",
+      "quiet",
+      "simple",
+      "honest",
+      "actual",
+      "central"
+    ],
+    "summaryNoun": [
+      "part",
+      "promise",
+      "truth",
+      "lesson",
+      "point",
+      "reward",
+      "nature",
+      "invitation",
+      "shift",
+      "work"
+    ],
+    "genericAudience": [
+      "nobody",
+      "people",
+      "fans",
+      "everyone",
+      "most people",
+      "teams",
+      "leaders"
+    ],
+    "reactionVerb": [
+      "wants to hear",
+      "love",
+      "loves",
+      "miss",
+      "misses",
+      "forget",
+      "forgets",
+      "avoid",
+      "avoids"
+    ],
+    "thinPredicate": [
+      "matters",
+      "changes everything",
+      "makes the difference",
+      "survives",
+      "does the work"
+    ],
+    "abstractSubject": [
+      "progress",
+      "trust",
+      "clarity",
+      "the work",
+      "the shift",
+      "the lesson",
+      "the story"
+    ],
+    "abstractVerb": [
+      "lives",
+      "starts",
+      "begins",
+      "happens",
+      "changes",
+      "settles"
+    ]
+  },
+  "rejectIf": [
+    "sentence names the concrete lesson, truth, or decision",
+    "sentence is a literal pointer to a visible object",
+    "sentence includes a concrete result with a named actor and action"
+  ],
+  "positiveExamples": [
+    "That is the real promise.",
+    "That is the lesson, and it applies more widely than people think.",
+    "This is the part fans love.",
+    "That is where progress lives.",
+    "That is how real progress usually looks.",
+    "It is the simple truth."
+  ],
+  "negativeExamples": [
+    "This is the screw that holds the hinge plate in place.",
+    "That is the lesson: replace the expired signing key before Friday.",
+    "It was the part Marius ordered from the blacksmith.",
+    "This is where Cassia found the brass gear under the wagon wheel."
+  ],
+  "notes": [
+    "This pattern is intentionally contains-mode because generated prose embeds this frame inside longer sentences.",
+    "It overlaps with generic-signposting but targets deictic summary language specifically."
+  ]
+}

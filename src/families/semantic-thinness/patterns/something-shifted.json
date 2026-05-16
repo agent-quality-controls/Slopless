@@ -1,0 +1,73 @@
+{
+  "id": "something-shifted",
+  "class": "vague-change",
+  "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.",
+  "matchMode": "contains",
+  "maxTokens": 80,
+  "templates": [
+    "{genericSubject} {changeVerb}.",
+    "{genericSubject} had {changeVerb}.",
+    "{genericSubject} in {abstractContainer} had {changeVerb}.",
+    "{concreteSubject} did not {changeVerb}, but {genericSubject} in it did.",
+    "{genericSubject} {changeVerb} when {genericSubject} {abstractAction}."
+  ],
+  "slots": {
+    "genericSubject": [
+      "something",
+      "everything",
+      "the room",
+      "the day",
+      "the moment",
+      "the arrangement",
+      "the energy",
+      "the air",
+      "the story"
+    ],
+    "changeVerb": ["shifted", "changed", "moved", "turned", "crossed a line"],
+    "abstractContainer": [
+      "it",
+      "the room",
+      "the day",
+      "the arrangement",
+      "the moment",
+      "the house"
+    ],
+    "concreteSubject": [
+      "the room",
+      "the house",
+      "the day",
+      "the market",
+      "the office"
+    ],
+    "abstractAction": [
+      "stopped trying",
+      "started listening",
+      "chose differently",
+      "named the truth",
+      "let go"
+    ]
+  },
+  "rejectIf": [
+    "sentence names what changed",
+    "sentence describes a concrete object moving",
+    "sentence includes a date, number, measurement, or physical direction"
+  ],
+  "positiveExamples": [
+    "Something had shifted.",
+    "Everything changed.",
+    "Something in the room had shifted.",
+    "The room did not change, but something in it did.",
+    "Something shifted when she stopped trying.",
+    "The air had changed."
+  ],
+  "negativeExamples": [
+    "The market shifted three stalls west after the fire.",
+    "The room changed when Arden opened the shutters.",
+    "The line crossed the river at the stone bridge.",
+    "The air changed after the storm front reached the harbor."
+  ],
+  "notes": [
+    "This is one of the highest-value generated slop families.",
+    "Rejecting concrete physical movement is the main false-positive gate."
+  ]
+}

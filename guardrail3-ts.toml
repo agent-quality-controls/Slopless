@@ -1,0 +1,10 @@
+[ts.package]
+source_globs = ["src/**/*.ts"]
+
+[ts.style]
+source_globs = ["src/**/*.ts"]
+stylelint_css_globs = ["styles/**/*.css"]
+
+[style]
+source_globs = ["src/**/*.ts"]
+stylelint_css_globs = ["styles/**/*.css"]

@@ -1,0 +1,77 @@
+{
+  "id": "body-emotion-shorthand",
+  "class": "body-emotion",
+  "purpose": "Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure.",
+  "templates": [
+    "{bodySubject} {feltVerb} {bodySensation}.",
+    "{bodySubject} {feltVerb} like {weightImage}.",
+    "{objectSubject} {feltVerb} like {weightImage}.",
+    "{breathSubject} caught in {throatTarget}."
+  ],
+  "slots": {
+    "bodySubject": [
+      "her chest",
+      "his chest",
+      "my chest",
+      "their chest",
+      "cassia's chest",
+      "her paws",
+      "his paws",
+      "my paws",
+      "her heart",
+      "his heart",
+      "my heart"
+    ],
+    "feltVerb": ["felt", "went"],
+    "bodySensation": [
+      "a sudden heavy thump",
+      "a heavy thump",
+      "heavy",
+      "cold",
+      "tight",
+      "small",
+      "hollow",
+      "strange"
+    ],
+    "weightImage": ["a weight", "a stone", "a rock", "lead", "ice"],
+    "objectSubject": [
+      "the badge on her chest",
+      "the badge on his chest",
+      "the silver badge on her chest",
+      "the silver badge on his chest",
+      "the medal on her chest",
+      "the medal on his chest"
+    ],
+    "breathSubject": [
+      "her breath",
+      "his breath",
+      "my breath",
+      "cassia's breath"
+    ],
+    "throatTarget": ["her throat", "his throat", "my throat", "their throat"]
+  },
+  "rejectIf": [
+    "sentence names the concrete fear, thought, injury, illness, or physical cause",
+    "sentence includes a cause clause",
+    "sentence includes a concrete action that follows from the sensation",
+    "sentence is quoted dialogue"
+  ],
+  "positiveExamples": [
+    "Her chest felt a sudden heavy thump.",
+    "Cassia's chest felt a heavy thump.",
+    "Her paws felt heavy.",
+    "The silver badge on her chest felt like a weight.",
+    "Cassia's breath caught in her throat.",
+    "Her heart went cold."
+  ],
+  "negativeExamples": [
+    "Her chest hurt because the harness strap had twisted under her arm.",
+    "His breath caught when smoke reached the stairwell.",
+    "The badge on her chest weighed 42 grams.",
+    "Her paws felt cold after she stepped into the snow."
+  ],
+  "notes": [
+    "This is a fiction-specific thinness signal.",
+    "It should stay separate from physical blocking because the bad move is translating emotion into stock body sensation."
+  ]
+}

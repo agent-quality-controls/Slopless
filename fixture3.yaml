@@ -1,0 +1,17 @@
+version: 1
+suites:
+  textlint-rules:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/*/*.md"
+      - "behavior/fixtures/textlint-rules/corpus/*.md"
+    command:
+      argv:
+        - "scripts/behavior-replay.sh"
+        - "{fixtures}"
+      ok_exit_codes:
+        - 0
+        - 1
+    storage:
+      approved_dir: "behavior/golden/textlint-rules"
+      received_dir: ".fixture3/textlint-rules"
+      diff_dir: ".fixture3/textlint-rules"

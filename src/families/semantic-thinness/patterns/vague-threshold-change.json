@@ -1,0 +1,98 @@
+{
+  "id": "vague-threshold-change",
+  "class": "threshold-change",
+  "purpose": "Catch vague threshold or evaluation changes without named scale, cause, or concrete state.",
+  "templates": [
+    "{genericSubject} {thresholdVerb} {evaluativeComplement}.",
+    "{genericSubject} {thresholdVerb} {comparativeComplement}.",
+    "{genericSubject} {feelingVerb} {evaluativeComplement}.",
+    "{genericSubject} {thresholdVerb} {weakDegree} {evaluativeComplement}."
+  ],
+  "slots": {
+    "genericSubject": [
+      "things",
+      "everything",
+      "something",
+      "it",
+      "this",
+      "that",
+      "the work",
+      "the process",
+      "the conversation",
+      "the situation",
+      "the day",
+      "the moment",
+      "the path",
+      "the choice"
+    ],
+    "thresholdVerb": [
+      "got",
+      "became",
+      "grew",
+      "turned",
+      "seemed",
+      "stayed",
+      "remained"
+    ],
+    "feelingVerb": ["felt", "looked", "sounded", "seemed"],
+    "evaluativeComplement": [
+      "different",
+      "better",
+      "worse",
+      "harder",
+      "easier",
+      "clearer",
+      "messier",
+      "heavier",
+      "lighter",
+      "stranger",
+      "simpler",
+      "complicated",
+      "possible",
+      "real"
+    ],
+    "comparativeComplement": [
+      "more real",
+      "more possible",
+      "more complicated",
+      "less certain",
+      "less simple",
+      "harder to ignore",
+      "easier to see",
+      "clearer than before"
+    ],
+    "weakDegree": [
+      "a little",
+      "somewhat",
+      "kind of",
+      "more",
+      "less",
+      "slightly",
+      "quietly"
+    ]
+  },
+  "rejectIf": [
+    "sentence names the scale or metric that changed",
+    "sentence names a concrete cause",
+    "sentence includes a concrete before or after state",
+    "sentence includes a number, date, named actor, or specific event"
+  ],
+  "positiveExamples": [
+    "Things got harder.",
+    "Everything became clearer.",
+    "Something felt different.",
+    "The work became more complicated.",
+    "The situation got worse.",
+    "It felt more real."
+  ],
+  "negativeExamples": [
+    "The build got slower after the cache key changed.",
+    "Everything became clearer when the audit log showed the missing request.",
+    "The situation got worse after three nurses called in sick.",
+    "The work became more complicated because the API added pagination."
+  ],
+  "notes": [
+    "This pattern must reject concrete cause and metric information.",
+    "It is similar to empty scene transition but centered on evaluation thresholds."
+  ]
+}

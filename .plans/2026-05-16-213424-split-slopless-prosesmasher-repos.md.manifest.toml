@@ -1,0 +1,65 @@
+[[required_path]]
+path = "src"
+
+[[required_path]]
+path = "behavior"
+
+[[required_path]]
+path = "scripts/behavior-replay.sh"
+
+[[required_path]]
+path = "scripts/normalize-textlint-golden-output.py"
+
+[[required_path]]
+path = "scripts/verify-corpus-preserve.py"
+
+[[required_path]]
+path = "scripts/fixture3.sh"
+
+[[required_path]]
+path = "package.json"
+
+[[required_path]]
+path = "package-lock.json"
+
+[[required_path]]
+path = "README.md"
+
+[[required_path]]
+path = "LICENSE"
+
+[[required_path]]
+path = "fixture3.yaml"
+
+[[forbidden_path]]
+path = "apps"
+
+[[forbidden_path]]
+path = "crates"
+
+[[forbidden_path]]
+path = "Cargo.toml"
+
+[[forbidden_path]]
+path = "Cargo.lock"
+
+[[forbidden_path]]
+path = "packages"
+
+[package_json]
+name = "slopless"
+version = "0.2.2"
+repository_url = "git+https://github.com/agent-quality-controls/Slopless.git"
+homepage = "https://github.com/agent-quality-controls/Slopless#readme"
+bugs_url = "https://github.com/agent-quality-controls/Slopless/issues"
+bin_name = "slopless"
+bin_path = "dist/cli.js"
+files = ["dist", "README.md"]
+
+[[forbidden_text]]
+path = "scripts/behavior-replay.sh"
+pattern = "packages/textlint-rules"
+
+[[forbidden_text]]
+path = "README.md"
+pattern = "agent-quality-controls/slopless"

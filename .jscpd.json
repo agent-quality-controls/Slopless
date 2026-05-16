@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/kucherenko/jscpd/master/schemas/jscpd-schema.json",
+  "absolute": true,
+  "format": ["typescript"],
+  "threshold": 0,
+  "reporters": ["console"],
+  "ignore": [
+    "**/.next/**",
+    "**/components/ui/**",
+    "**/dist/**",
+    "**/node_modules/**",
+    "**/target/**"
+  ]
+}

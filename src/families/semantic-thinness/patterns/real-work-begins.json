@@ -1,0 +1,66 @@
+{
+  "id": "real-work-begins",
+  "class": "work-payoff",
+  "purpose": "Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work.",
+  "matchMode": "contains",
+  "maxTokens": 80,
+  "templates": [
+    "{workSubject} {startVerb}.",
+    "{workSubject} {startVerb} when {genericSubject} {abstractAction}.",
+    "{workSubject} {startVerb} after {abstractEvent} {fadesVerb}.",
+    "where {workSubject} {startVerb}."
+  ],
+  "slots": {
+    "workSubject": [
+      "the real work",
+      "the actual work",
+      "the deeper work",
+      "the hard work",
+      "the honest work",
+      "the inner work"
+    ],
+    "startVerb": ["begins", "starts", "happens", "lives"],
+    "genericSubject": ["we", "you", "they", "people", "the team"],
+    "abstractAction": [
+      "start naming what matters",
+      "stop hiding behind noise",
+      "learn to listen",
+      "choose clarity",
+      "do the hard thing",
+      "tell the truth",
+      "return to the practice"
+    ],
+    "abstractEvent": [
+      "the excitement",
+      "the noise",
+      "the moment",
+      "the launch",
+      "the drama",
+      "the ceremony"
+    ],
+    "fadesVerb": ["fades", "settles", "ends", "passes"]
+  },
+  "rejectIf": [
+    "sentence names concrete work items",
+    "sentence refers to a literal job starting at a time or place",
+    "sentence includes a specific deliverable"
+  ],
+  "positiveExamples": [
+    "The real work begins.",
+    "The real work begins when we stop hiding behind noise.",
+    "The deeper work starts after the excitement fades.",
+    "That is where the real work begins.",
+    "The hard work happens when people choose clarity.",
+    "The inner work begins when you return to the practice."
+  ],
+  "negativeExamples": [
+    "The real work begins at 8:30 with the masonry crew.",
+    "The hard work starts when Cassia carries the ladder to the wall.",
+    "The actual work begins after the build script finishes compiling.",
+    "The team starts work after the client signs the invoice."
+  ],
+  "notes": [
+    "This phrase was rare but very high precision in the generated corpus.",
+    "Contains-mode is required because it often appears after a comma."
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "low-information-physical-blocking",
+  "class": "physical-blocking",
+  "purpose": "Catch bland physical action beats that move bodies around without adding object, goal, cause, or consequence.",
+  "templates": [
+    "{humanSubject} {weakAdverb} {bodyVerb} {weakLocative}.",
+    "{humanSubject} {bodyVerb} {weakLocative}.",
+    "{humanSubject} {bodyVerb} and {bodyVerb} {weakLocative}.",
+    "{humanSubject} {bodyVerb} from {genericFace} to {genericFace}."
+  ],
+  "slots": {
+    "humanSubject": [
+      "he",
+      "she",
+      "they",
+      "we",
+      "i",
+      "the man",
+      "the woman",
+      "the person",
+      "the kid",
+      "the child",
+      "the team",
+      "the group",
+      "the manager",
+      "the teacher",
+      "the parent",
+      "the doctor",
+      "the engineer",
+      "the couple",
+      "everyone",
+      "someone"
+    ],
+    "weakAdverb": [
+      "just",
+      "simply",
+      "quietly",
+      "silently",
+      "slowly",
+      "finally",
+      "only",
+      "still"
+    ],
+    "bodyVerb": [
+      "stood",
+      "sat",
+      "looked",
+      "turned",
+      "walked",
+      "stared",
+      "paused",
+      "waited",
+      "nodded",
+      "smiled",
+      "blinked",
+      "breathed",
+      "glanced",
+      "shifted",
+      "stepped",
+      "moved"
+    ],
+    "weakLocative": [
+      "there",
+      "around",
+      "back",
+      "away",
+      "down",
+      "up",
+      "over",
+      "again",
+      "for a moment",
+      "in place",
+      "at each other",
+      "toward the door",
+      "into the room"
+    ],
+    "genericFace": [
+      "one face",
+      "another face",
+      "the others",
+      "each other",
+      "the room",
+      "the table",
+      "the floor",
+      "the door"
+    ]
+  },
+  "rejectIf": [
+    "sentence has a direct object that carries specific information",
+    "sentence has a purpose phrase",
+    "sentence has a cause clause",
+    "sentence has a concrete object being searched for, handled, measured, or changed",
+    "sentence is part of quoted dialogue attribution"
+  ],
+  "positiveExamples": [
+    "They just stood there.",
+    "She looked around.",
+    "He turned and looked back.",
+    "They looked from one face to another.",
+    "The group waited quietly.",
+    "He sat there for a moment."
+  ],
+  "negativeExamples": [
+    "She looked around for the missing inhaler.",
+    "He turned and looked back when the alarm sounded.",
+    "They stood there until the vibration sensor stopped moving.",
+    "The engineer stepped into the room and unplugged the failing router."
+  ],
+  "notes": [
+    "This pattern is about low-information blocking, not physical action in general.",
+    "Reject purpose and cause aggressively."
+  ]
+}

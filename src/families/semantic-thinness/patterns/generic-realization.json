@@ -1,0 +1,113 @@
+{
+  "id": "generic-realization",
+  "class": "realization",
+  "purpose": "Catch realization lines that announce understanding without naming what was learned.",
+  "templates": [
+    "{humanSubject} {realizationVerb} {genericObject}.",
+    "{humanSubject} {realizationVerb} that {genericSubject} {thinPredicate}.",
+    "{realizationSubject} {linkingVerb} {thinComplement}.",
+    "{humanSubject} finally {realizationVerb}."
+  ],
+  "slots": {
+    "humanSubject": [
+      "he",
+      "she",
+      "they",
+      "we",
+      "i",
+      "the team",
+      "the group",
+      "the couple",
+      "the manager",
+      "the parent",
+      "the child",
+      "everyone",
+      "someone"
+    ],
+    "realizationVerb": [
+      "realized",
+      "understood",
+      "saw",
+      "noticed",
+      "learned",
+      "recognized",
+      "remembered",
+      "accepted",
+      "knew",
+      "felt"
+    ],
+    "genericObject": [
+      "the truth",
+      "the pattern",
+      "the point",
+      "the lesson",
+      "the answer",
+      "what mattered",
+      "what had changed",
+      "what was happening",
+      "why it mattered"
+    ],
+    "genericSubject": [
+      "things",
+      "everything",
+      "it",
+      "this",
+      "that",
+      "the work",
+      "the process",
+      "the relationship",
+      "the moment"
+    ],
+    "thinPredicate": [
+      "was different",
+      "had changed",
+      "mattered",
+      "was harder",
+      "was simple",
+      "was not simple",
+      "would take time",
+      "was the point"
+    ],
+    "realizationSubject": [
+      "the realization",
+      "the lesson",
+      "the truth",
+      "the answer",
+      "the point"
+    ],
+    "linkingVerb": ["was", "is", "became", "remained"],
+    "thinComplement": [
+      "simple",
+      "clear",
+      "harder",
+      "different",
+      "the point",
+      "the lesson",
+      "what mattered"
+    ]
+  },
+  "rejectIf": [
+    "sentence names the concrete fact learned",
+    "sentence includes a source of evidence",
+    "sentence includes a concrete action that follows from the realization",
+    "sentence is quoted dialogue"
+  ],
+  "positiveExamples": [
+    "She realized the truth.",
+    "They understood what mattered.",
+    "He finally saw the pattern.",
+    "The realization was simple.",
+    "They learned that everything had changed.",
+    "She noticed what was happening."
+  ],
+  "negativeExamples": [
+    "She realized the router was still using the old DNS record.",
+    "They understood that the grant deadline moved to March 14.",
+    "He saw the cracked valve under the sink.",
+    "The lesson was to cap retries after three failed requests."
+  ],
+  "notes": [
+    "This is lower confidence than empty scene transition.",
+    "It needs concrete-object rejection to avoid normal narrative and technical prose."
+  ]
+}

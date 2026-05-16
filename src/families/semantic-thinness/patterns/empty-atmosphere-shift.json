@@ -1,0 +1,70 @@
+{
+  "id": "empty-atmosphere-shift",
+  "class": "atmosphere-shift",
+  "purpose": "Catch atmosphere-shift lines that announce mood change in a place without concrete cause, action, or sensory detail.",
+  "templates": [
+    "{placeSubject} {feltVerb} {weakAdverb} {atmosphereState}.",
+    "{placeSubject} {feltVerb} {atmosphereState} {weakModifier}.",
+    "{atmosphereSubject} {feltVerb} {atmosphereState} {weakModifier}.",
+    "{atmosphereSubject} {feltVerb} {weakAdverb} {atmosphereState}."
+  ],
+  "slots": {
+    "placeSubject": [
+      "the yard",
+      "the room",
+      "the house",
+      "the street",
+      "the compound",
+      "the kitchen",
+      "the workshop",
+      "the courtyard",
+      "the market"
+    ],
+    "atmosphereSubject": [
+      "the air",
+      "the quiet",
+      "the silence",
+      "the moment",
+      "the mood",
+      "the rooms",
+      "everything"
+    ],
+    "feltVerb": ["felt", "went", "became", "turned", "seemed"],
+    "weakAdverb": ["suddenly", "just", "so", "somehow"],
+    "atmosphereState": [
+      "cold",
+      "quiet",
+      "still",
+      "empty",
+      "different",
+      "heavy",
+      "strange",
+      "wrong"
+    ],
+    "weakModifier": ["now", "again", "after that", "for a moment"]
+  },
+  "rejectIf": [
+    "sentence includes a concrete sound, object, weather condition, or event that explains the atmosphere",
+    "sentence includes a cause clause",
+    "sentence includes a measurable environmental detail",
+    "sentence is quoted dialogue"
+  ],
+  "positiveExamples": [
+    "The yard felt suddenly cold.",
+    "The air felt different now.",
+    "Everything seemed quiet now.",
+    "The rooms felt just empty.",
+    "The moment felt heavy again.",
+    "The silence became suddenly strange."
+  ],
+  "negativeExamples": [
+    "The yard felt cold because the sun dropped behind the wall.",
+    "The air felt different after the spice smoke reached the gate.",
+    "The workshop was quiet enough to hear the loose hinge scrape.",
+    "The room was empty except for two brass gears on the bench."
+  ],
+  "notes": [
+    "This overlaps with empty-scene-state but is narrower: it targets announced mood shifts.",
+    "The fixture phrase 'despite the climbing sun' is intentionally not matched until we add phrase-tail templates."
+  ]
+}

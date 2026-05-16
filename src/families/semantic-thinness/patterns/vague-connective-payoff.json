@@ -1,0 +1,90 @@
+{
+  "id": "vague-connective-payoff",
+  "class": "connective-payoff",
+  "purpose": "Catch connective payoff sentences that signal a conclusion without adding the conclusion.",
+  "templates": [
+    "{payoffOpener} {payoffComplement}.",
+    "{payoffOpener} where {genericWork} {startVerb}.",
+    "{payoffOpener} why {genericSubject} {importanceVerb}.",
+    "{payoffOpener} how {genericChange} {startVerb}."
+  ],
+  "slots": {
+    "payoffOpener": [
+      "and that is",
+      "and this is",
+      "that is",
+      "this is",
+      "which is",
+      "which is why",
+      "that is why",
+      "this is why",
+      "that is where",
+      "this is where",
+      "that is how",
+      "this is how"
+    ],
+    "payoffComplement": [
+      "where the work begins",
+      "where change starts",
+      "where things shift",
+      "why it matters",
+      "why this matters",
+      "how change starts",
+      "how the work begins",
+      "the point",
+      "the part that matters",
+      "the real work"
+    ],
+    "genericWork": [
+      "the work",
+      "change",
+      "the process",
+      "the practice",
+      "the repair",
+      "the lesson",
+      "the answer"
+    ],
+    "startVerb": ["begins", "starts", "happens", "shows up", "takes root"],
+    "genericSubject": [
+      "it",
+      "this",
+      "that",
+      "the work",
+      "the lesson",
+      "the process",
+      "the change"
+    ],
+    "importanceVerb": ["matters", "works", "sticks", "lasts", "changes things"],
+    "genericChange": [
+      "change",
+      "repair",
+      "progress",
+      "growth",
+      "trust",
+      "clarity"
+    ]
+  },
+  "rejectIf": [
+    "sentence contains the concrete conclusion after the payoff opener",
+    "previous sentence provides a precise referent and payoff sentence is a short valid summary",
+    "sentence includes a concrete actor, action, object, number, date, or named source"
+  ],
+  "positiveExamples": [
+    "And that is where the work begins.",
+    "That is why it matters.",
+    "This is how change starts.",
+    "That is where things shift.",
+    "This is the part that matters.",
+    "Which is why the work begins there."
+  ],
+  "negativeExamples": [
+    "That is why the repayment job must run before the invoice export.",
+    "This is how the parser maps the sentence offset back to the original paragraph.",
+    "That is where the nurse found the missing inhaler.",
+    "This is why the clinic added a second intake desk in 2024."
+  ],
+  "notes": [
+    "This overlaps with generic signposting and closers.",
+    "Previous-sentence referent checks are required before activation."
+  ]
+}

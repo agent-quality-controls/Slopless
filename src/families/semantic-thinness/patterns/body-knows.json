@@ -1,0 +1,80 @@
+{
+  "id": "body-knows",
+  "class": "wellness-abstraction",
+  "purpose": "Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning.",
+  "matchMode": "contains",
+  "maxTokens": 80,
+  "templates": [
+    "{wisdomSubject} {wisdomVerb}.",
+    "{wisdomSubject} {wisdomVerb} {genericObject}.",
+    "{wisdomSubject} {wisdomVerb} what {genericSubject} {thinPredicate}.",
+    "{wisdomSubject} {wisdomVerb} long before {mindSubject} {mindVerb}."
+  ],
+  "slots": {
+    "wisdomSubject": [
+      "the body",
+      "your body",
+      "her body",
+      "his body",
+      "their body",
+      "the mind",
+      "your nervous system",
+      "the nervous system",
+      "the breath",
+      "your breath"
+    ],
+    "wisdomVerb": [
+      "knows",
+      "knew",
+      "remembers",
+      "remembered",
+      "learns",
+      "learned",
+      "notices",
+      "noticed",
+      "softens",
+      "settles"
+    ],
+    "genericObject": [
+      "the pattern",
+      "the truth",
+      "the difference",
+      "what matters",
+      "what it knows",
+      "what happens often"
+    ],
+    "genericSubject": ["it", "we", "you", "the mind", "the heart"],
+    "thinPredicate": [
+      "needs",
+      "wants",
+      "knows",
+      "has been carrying",
+      "is ready to release"
+    ],
+    "mindSubject": ["the mind", "your mind", "her mind", "his mind"],
+    "mindVerb": ["admits it", "understands", "catches up", "can explain it"]
+  },
+  "rejectIf": [
+    "sentence describes a concrete physiological symptom",
+    "sentence names a medical condition or measurable body response",
+    "sentence gives a concrete training or rehab instruction"
+  ],
+  "positiveExamples": [
+    "The body knows what it knows.",
+    "The body learns the pattern.",
+    "The body notices what happens often.",
+    "The nervous system knows when it is time to change.",
+    "The breath remembers the truth.",
+    "The body knows the difference long before the mind admits it."
+  ],
+  "negativeExamples": [
+    "The body knows it is dehydrated when urine output drops.",
+    "The nervous system learns the reflex after repeated training trials.",
+    "The breath settles after Cassia counts four slow steps.",
+    "Her body noticed the cold stone under her paws."
+  ],
+  "notes": [
+    "This is persona-specific: it targets wellness slop and should not be used as a general physiology rule.",
+    "Concrete physiological or training contexts should be rejected."
+  ]
+}

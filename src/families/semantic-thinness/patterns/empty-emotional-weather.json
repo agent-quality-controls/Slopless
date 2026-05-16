@@ -1,0 +1,104 @@
+{
+  "id": "empty-emotional-weather",
+  "class": "emotional-weather",
+  "purpose": "Catch atmospheric abstract nouns that move through a scene without concrete source, action, or consequence.",
+  "templates": [
+    "{atmosphereSubject} {weatherVerb} {placePhrase}.",
+    "{atmosphereSubject} {weatherVerb} between {humanGroup}.",
+    "{atmosphereSubject} {weatherVerb} in {placeNoun}.",
+    "{atmosphereSubject} {weatherVerb} over {placeNoun}."
+  ],
+  "slots": {
+    "atmosphereSubject": [
+      "silence",
+      "a silence",
+      "quiet",
+      "a quiet",
+      "tension",
+      "a tension",
+      "stillness",
+      "a stillness",
+      "pressure",
+      "a pressure",
+      "weight",
+      "a weight",
+      "unease",
+      "an unease",
+      "distance",
+      "a distance",
+      "calm",
+      "a calm",
+      "heaviness",
+      "a heaviness"
+    ],
+    "weatherVerb": [
+      "sat",
+      "hung",
+      "settled",
+      "filled",
+      "moved",
+      "spread",
+      "stretched",
+      "landed",
+      "fell",
+      "returned",
+      "remained"
+    ],
+    "placePhrase": [
+      "in the room",
+      "over the room",
+      "between them",
+      "around them",
+      "in the air",
+      "over the table",
+      "across the room",
+      "inside the house",
+      "through the hallway"
+    ],
+    "placeNoun": [
+      "the room",
+      "the house",
+      "the hallway",
+      "the kitchen",
+      "the office",
+      "the meeting room",
+      "the air",
+      "the table",
+      "the space",
+      "the doorway"
+    ],
+    "humanGroup": [
+      "them",
+      "the two of them",
+      "the group",
+      "the family",
+      "the team",
+      "the couple",
+      "the room"
+    ]
+  },
+  "rejectIf": [
+    "sentence names the event or person that caused the atmosphere",
+    "sentence includes concrete physical source",
+    "sentence continues into a concrete action or consequence",
+    "sentence is part of intentional literary prose"
+  ],
+  "positiveExamples": [
+    "Silence sat between them.",
+    "A quiet tension settled over the room.",
+    "A weight hung in the air.",
+    "Stillness filled the hallway.",
+    "Unease moved through the room.",
+    "A heaviness settled between them."
+  ],
+  "negativeExamples": [
+    "Silence followed the judge's warning.",
+    "A pressure drop in the pipe triggered the alarm.",
+    "The weight hung from the ceiling bracket.",
+    "Tension rose after the monitor showed a falling oxygen level."
+  ],
+  "notes": [
+    "This is high risk for fiction and should be kept narrow.",
+    "Concrete source rejection is mandatory."
+  ]
+}

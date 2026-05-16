@@ -1,0 +1,69 @@
+{
+  "id": "silence-as-actor",
+  "class": "abstract-atmosphere",
+  "purpose": "Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action.",
+  "matchMode": "contains",
+  "maxTokens": 80,
+  "templates": [
+    "{silenceSubject} {linkingVerb} not {thinState}.",
+    "{silenceSubject} {linkingVerb} {thinState}.",
+    "{deicticSubject} only made {silenceSubject} feel {thinState}.",
+    "{placeSubject} had gone quiet in {mannerFrame}.",
+    "{humanSubject} could make {silenceSubject} feel {thinState}."
+  ],
+  "slots": {
+    "silenceSubject": [
+      "the silence",
+      "silence",
+      "the quiet",
+      "the room",
+      "the office",
+      "the house",
+      "the hall"
+    ],
+    "linkingVerb": ["was", "felt", "became", "seemed", "looked"],
+    "thinState": [
+      "empty",
+      "crowded",
+      "deliberate",
+      "arranged",
+      "heavy",
+      "strange",
+      "loud",
+      "busy",
+      "complete"
+    ],
+    "deicticSubject": ["this", "that", "it"],
+    "placeSubject": ["the office", "the room", "the house", "the hall"],
+    "mannerFrame": [
+      "the way offices do",
+      "the way rooms do",
+      "the way old houses do",
+      "the way halls do"
+    ],
+    "humanSubject": ["she", "he", "they", "we", "the woman", "the man"]
+  },
+  "rejectIf": [
+    "sentence identifies a concrete sound source",
+    "sentence describes acoustic measurement or recording",
+    "sentence uses quiet as a direct instruction"
+  ],
+  "positiveExamples": [
+    "The silence was not empty.",
+    "The silence felt arranged.",
+    "This only made the silence feel deliberate.",
+    "The office had gone quiet in the way offices do.",
+    "She could make silence feel crowded.",
+    "The room felt busy."
+  ],
+  "negativeExamples": [
+    "The room was quiet enough to hear the loose hinge scrape.",
+    "The office went quiet after the fire alarm stopped.",
+    "Keep quiet until Marius reaches the gate.",
+    "The recording measured the silence at 28 decibels."
+  ],
+  "notes": [
+    "This overlaps with empty-scene-state but targets personified atmosphere specifically.",
+    "It is common in wellness and literary slop."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "point-is-frame",
+  "class": "summary-frame",
+  "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.",
+  "matchMode": "contains",
+  "maxTokens": 80,
+  "templates": [
+    "the {summaryNoun} {linkingVerb} to {abstractAction}.",
+    "the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+    "the {summaryNoun} {linkingVerb} not to {abstractAction}.",
+    "the {summaryNoun} {linkingVerb} {thinComplement}.",
+    "the {summaryNoun} was not {abstractNoun} for its own sake."
+  ],
+  "slots": {
+    "summaryNoun": [
+      "point",
+      "lesson",
+      "truth",
+      "answer",
+      "invitation",
+      "goal",
+      "work"
+    ],
+    "linkingVerb": ["is", "was"],
+    "abstractAction": [
+      "be honest",
+      "be perfect",
+      "begin",
+      "listen",
+      "remember",
+      "return",
+      "trust",
+      "notice",
+      "choose clarity",
+      "be loyal to what is familiar"
+    ],
+    "abstractNoun": [
+      "performance",
+      "perfection",
+      "revelation",
+      "escape",
+      "achievement",
+      "control",
+      "strategy",
+      "a thunderclap",
+      "the feature set"
+    ],
+    "thinComplement": [
+      "simple",
+      "clear",
+      "enough",
+      "the work",
+      "the practice",
+      "the shift",
+      "what matters"
+    ]
+  },
+  "rejectIf": [
+    "sentence gives a concrete rule after a colon",
+    "sentence names the actual lesson as a specific action",
+    "sentence uses point as a geometric or score noun"
+  ],
+  "positiveExamples": [
+    "The point is not performance.",
+    "The point is to be honest enough to see what is there.",
+    "The lesson is simple.",
+    "The invitation is to trust the fog.",
+    "The point was not revelation for its own sake.",
+    "The answer is enough."
+  ],
+  "negativeExamples": [
+    "The point is to rotate the signing key every 30 days.",
+    "The point was marked on the map with red ink.",
+    "The lesson is: measure twice before cutting the hinge.",
+    "The goal is to carry the ladder to the north wall before sunset."
+  ],
+  "notes": [
+    "This is the generated-prose version of generic signposting.",
+    "It should remain separate because the semantic defect is the empty interpretive noun."
+  ]
+}

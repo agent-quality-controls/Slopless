@@ -1,0 +1,75 @@
+{
+  "id": "truth-answer-moves",
+  "class": "abstract-revelation",
+  "purpose": "Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact.",
+  "matchMode": "contains",
+  "maxTokens": 80,
+  "templates": [
+    "{truthSubject} {emergenceVerb}.",
+    "{truthSubject} starts {motionVerb}.",
+    "{truthSubject} began to {motionVerb}.",
+    "{truthSubject} {arrivalVerb} as {abstractForm}.",
+    "{humanSubject} checked whether {truthSubject} would be allowed to {thinAction}."
+  ],
+  "slots": {
+    "truthSubject": [
+      "the truth",
+      "the answer",
+      "the pattern",
+      "the meaning",
+      "the lesson",
+      "the point"
+    ],
+    "emergenceVerb": [
+      "surfaces",
+      "surfaced",
+      "arrives",
+      "arrived",
+      "appears",
+      "appeared",
+      "emerges",
+      "emerged"
+    ],
+    "motionVerb": [
+      "move",
+      "moving around",
+      "take shape",
+      "show itself",
+      "surface",
+      "arrive"
+    ],
+    "arrivalVerb": ["comes", "came", "arrives", "arrived"],
+    "abstractForm": [
+      "a body sensation",
+      "a feeling",
+      "a knowing",
+      "a quiet answer",
+      "a small signal"
+    ],
+    "humanSubject": ["he", "she", "they", "we", "people"],
+    "thinAction": ["stay small", "come out", "be seen", "matter", "arrive"]
+  },
+  "rejectIf": [
+    "sentence states the actual truth or answer",
+    "sentence uses answer as a response to a concrete question",
+    "sentence names the evidence that produced the answer"
+  ],
+  "positiveExamples": [
+    "Eventually the truth surfaces.",
+    "The answer arrives as a body sensation.",
+    "The meaning arrives later.",
+    "The truth starts moving around.",
+    "The answer began to take shape.",
+    "She checked whether the truth would be allowed to stay small."
+  ],
+  "negativeExamples": [
+    "The answer arrived by email at 9:14.",
+    "The truth is that the latch was opened with Rory's spare key.",
+    "The pattern emerged after Cassia sorted the footprints by size.",
+    "He answered the guard's question before noon."
+  ],
+  "notes": [
+    "This pattern is high precision in generated slop but must reject concrete answers.",
+    "It pairs with generic-realization but catches abstract subject movement."
+  ]
+}

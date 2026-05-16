@@ -1,0 +1,82 @@
+{
+  "id": "generic-lesson-extraction",
+  "class": "lesson-extraction",
+  "purpose": "Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun.",
+  "templates": [
+    "The {summaryNoun} {linkingVerb} {thinComplement}.",
+    "The {summaryNoun} {linkingVerb} simple.",
+    "The {summaryNoun} {linkingVerb} not {heroicComplement}.",
+    "The {summaryNoun} {linkingVerb} usually {thinComplement}."
+  ],
+  "slots": {
+    "summaryNoun": [
+      "lesson",
+      "answer",
+      "fix",
+      "point",
+      "move",
+      "strategy",
+      "trick",
+      "truth",
+      "work",
+      "practice",
+      "solution",
+      "pattern",
+      "result",
+      "difference",
+      "takeaway",
+      "message"
+    ],
+    "linkingVerb": ["is", "was", "becomes", "became", "remains", "stays"],
+    "thinComplement": [
+      "simple",
+      "small",
+      "boring",
+      "plain",
+      "clear",
+      "obvious",
+      "consistency",
+      "practice",
+      "patience",
+      "repair",
+      "attention",
+      "discipline",
+      "repetition",
+      "a smaller move",
+      "a quieter practice",
+      "a steadier rhythm"
+    ],
+    "heroicComplement": [
+      "heroic",
+      "dramatic",
+      "complicated",
+      "mysterious",
+      "glamorous",
+      "magical"
+    ]
+  },
+  "rejectIf": [
+    "complement starts an infinitive concrete fix",
+    "sentence names a specific technical action",
+    "sentence includes a concrete example after a colon",
+    "sentence is a heading or list label rather than prose"
+  ],
+  "positiveExamples": [
+    "The lesson was simple.",
+    "The answer is consistency.",
+    "The fix is boring.",
+    "The move is smaller than people want.",
+    "The point is practice.",
+    "The truth is not dramatic."
+  ],
+  "negativeExamples": [
+    "The fix is to initialize the parser before reading offsets.",
+    "The answer is 42.",
+    "The lesson is that expired tokens must be rejected before refresh.",
+    "The strategy is to call every patient within 48 hours."
+  ],
+  "notes": [
+    "A related syntactic-pattern rule already catches some lesson framing.",
+    "This pattern should focus on low-information complements."
+  ]
+}

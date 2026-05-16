@@ -1,0 +1,112 @@
+{
+  "id": "abstract-metaphor-claim",
+  "class": "abstract-metaphor",
+  "purpose": "Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent.",
+  "templates": [
+    "{abstractSubject} {metaphorVerb} in {abstractObject}.",
+    "{abstractSubject} {metaphorVerb} inside {abstractObject}.",
+    "{abstractSubject} {metaphorVerb} after {abstractObject}.",
+    "{abstractSubject} {metaphorVerb} with {abstractObject}.",
+    "{abstractSubject} {linkingVerb} {abstractComplement}."
+  ],
+  "slots": {
+    "abstractSubject": [
+      "prevention",
+      "problem-solving",
+      "trust",
+      "clarity",
+      "repair",
+      "growth",
+      "change",
+      "resilience",
+      "confidence",
+      "connection",
+      "discipline",
+      "leadership",
+      "healing",
+      "progress",
+      "safety",
+      "accountability",
+      "momentum",
+      "consistency",
+      "daily life",
+      "the answer",
+      "the work",
+      "the lesson",
+      "the process",
+      "the practice",
+      "the relationship"
+    ],
+    "metaphorVerb": [
+      "lives",
+      "lands",
+      "sits",
+      "starts",
+      "belongs",
+      "rests",
+      "moves",
+      "breathes",
+      "travels",
+      "arrives",
+      "settles",
+      "grows",
+      "shows up",
+      "takes root",
+      "holds"
+    ],
+    "abstractObject": [
+      "rehearsal",
+      "repair",
+      "practice",
+      "consistency",
+      "attention",
+      "patience",
+      "discipline",
+      "the work",
+      "the process",
+      "the lesson",
+      "the moment",
+      "the pattern",
+      "the relationship",
+      "the conversation",
+      "the storm",
+      "the quiet",
+      "the rhythm"
+    ],
+    "linkingVerb": ["is", "was", "becomes", "became", "remains"],
+    "abstractComplement": [
+      "a steadier rhythm",
+      "a quieter practice",
+      "a different kind of repair",
+      "a form of rehearsal",
+      "a kind of discipline",
+      "a daily practice",
+      "the real curriculum",
+      "the actual work"
+    ]
+  },
+  "rejectIf": [
+    "subject is concrete or named",
+    "verb use is literal",
+    "sentence includes a concrete example, event, actor, object, number, date, or causal explanation",
+    "metaphor is inside quoted literary prose"
+  ],
+  "positiveExamples": [
+    "Prevention lives in rehearsal.",
+    "Problem-solving lands after the storm.",
+    "Trust sits inside repair.",
+    "The answer is a steadier rhythm.",
+    "Daily life is the curriculum.",
+    "Safety starts with consistency."
+  ],
+  "negativeExamples": [
+    "The backup generator sits inside the repair shop.",
+    "The answer is to move the server restart before the migration.",
+    "Prevention starts with installing smoke alarms in every bedroom.",
+    "Trust improved after the team published the missing incident timeline."
+  ],
+  "notes": [
+    "This pattern needs abstract/concrete slot checks before activation.",
+    "Short slogan-like sentences are higher confidence than long explanatory sentences."
+  ]
+}

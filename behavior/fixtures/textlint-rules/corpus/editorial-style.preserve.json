@@ -1,0 +1,825 @@
+{
+  "version": 1,
+  "corpus": "editorial-style.md",
+  "preserve": [
+    {
+      "text": "## Draft Review Notes For Editors",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 1
+    },
+    {
+      "text": "Ship the patch! Check the logs!",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 3
+    },
+    {
+      "text": "At 5:47 PM, the dashboard finally turned green.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 5
+    },
+    {
+      "text": "At 5:47pm the dashboard finally turned green.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 7
+    },
+    {
+      "text": "At 5:47 PM we checked logs, and at 6:12 PM we closed the incident.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 9
+    },
+    {
+      "text": "The editor wrote “ship it” after the review.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 11
+    },
+    {
+      "text": "The editor’s note changed the draft.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 13
+    },
+    {
+      "text": "Then the team saw it: nothing moved.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 15
+    },
+    {
+      "text": "Time: 3 hours.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 17
+    },
+    {
+      "text": "The patch landed—but the logs stayed red.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 19
+    },
+    {
+      "text": "He said “go”—then left.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 21
+    },
+    {
+      "text": "At 5:47 PM, it passed! Then it failed!",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 23
+    },
+    {
+      "text": "## Draft Review Notes For “Editors”",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 25
+    },
+    {
+      "text": "The verdict was simple: “ship it.”",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 27
+    },
+    {
+      "text": "This sentence has a closed em dash—right here.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 29
+    },
+    {
+      "text": "This sentence uses “curly quotes” and should trigger.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 31
+    },
+    {
+      "text": "This paragraph has too much excitement! It keeps going! It should stop!",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 33
+    },
+    {
+      "text": "The fake diary starts at 5:47 PM, and should trigger.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 35
+    },
+    {
+      "text": "And then it hit me: everything changed.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 37
+    },
+    {
+      "text": "## Draft Review notes for editors",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 1
+    },
+    {
+      "text": "### Draft Review Notes For Editors",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 3
+    },
+    {
+      "text": "## API SDK CLI notes",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 5
+    },
+    {
+      "text": "Ship the patch! Check the logs.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 7
+    },
+    {
+      "text": "Ship the patch!",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 9
+    },
+    {
+      "text": "Check the logs!",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 11
+    },
+    {
+      "text": "- Ship the patch! Check the logs!",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 13
+    },
+    {
+      "text": "At 17:47, the dashboard finally turned green.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 15
+    },
+    {
+      "text": "The editor wrote \"ship it\" after the review.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 17
+    },
+    {
+      "text": "- The editor wrote “ship it” after the review.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 19
+    },
+    {
+      "text": "The team saw it: nothing moved because the worker was still waiting for the lock.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 21
+    },
+    {
+      "text": "The team saw it: nothing moved, and the queue stayed full.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 23
+    },
+    {
+      "text": "The patch landed — but the logs stayed red.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 25
+    },
+    {
+      "text": "The patch landed - but the logs stayed red.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 27
+    },
+    {
+      "text": "- The patch landed—but the logs stayed red.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 29
+    },
+    {
+      "text": "This sentence uses a spaced dash — and should not trigger the closed em dash rule.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 31
+    },
+    {
+      "text": "This sentence uses \"straight quotes\" and should stay clean.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 33
+    },
+    {
+      "text": "This paragraph has one exclamation mark! That is allowed by the Rust default.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 35
+    },
+    {
+      "text": "The factual clock says fourteen thirty and should stay clean.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 37
+    },
+    {
+      "text": "There are three types: red, blue, and green.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 39
+    },
+    {
+      "text": "This sentence has no dash and should stay clean.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 41
+    },
+    {
+      "text": "In today's fast-paced world, the release note still needs a concrete claim.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 1
+    },
+    {
+      "text": "Let's dive in before the incident timeline gets longer.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 3
+    },
+    {
+      "text": "The style guide bans \"in conclusion\" from final paragraphs.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 5
+    },
+    {
+      "text": "As a language model, I cannot verify the latest outage numbers.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 7
+    },
+    {
+      "text": "But I don't have access to real-time data, so the number may be stale.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 9
+    },
+    {
+      "text": "I do not have access to realtime information about this deployment.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 11
+    },
+    {
+      "text": "In my experience, teams ship fewer regressions when ownership is explicit.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 13
+    },
+    {
+      "text": "As Someone Who Has reviewed many launch notes, I would cut this claim.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 15
+    },
+    {
+      "text": "Use the checklist to debug your morning routine.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 17
+    },
+    {
+      "text": "The onboarding plan keeps optimizing for delight instead of clarity.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 19
+    },
+    {
+      "text": "The team keeps iterating on our values without naming decisions.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 21
+    },
+    {
+      "text": "The missed dependency put the team back to square one.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 23
+    },
+    {
+      "text": "The proposal calls the rewrite a Clean Slate for billing.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 25
+    },
+    {
+      "text": "The roadmap labels account cleanup as low-hanging fruit.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 27
+    },
+    {
+      "text": "The manager requested a drill-down before approving the budget.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 29
+    },
+    {
+      "text": "Hopefully the release note explains the customer impact.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 31
+    },
+    {
+      "text": "The customer received FULSOME praise in the case study.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 33
+    },
+    {
+      "text": "The outage decimated the queue before the worker pool recovered.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 35
+    },
+    {
+      "text": "The draft calls the migration very unique without evidence.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 37
+    },
+    {
+      "text": "The dashboard claims this is the Most Complete export.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 39
+    },
+    {
+      "text": "At the end of the day, the appendix still avoids the decision.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 41
+    },
+    {
+      "text": "The failed rollout sent the team back to the drawing board.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 43
+    },
+    {
+      "text": "In my experience, leaders keep optimizing for delight instead of clarity.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 45
+    },
+    {
+      "text": "As a language model, in conclusion, I cannot verify the rollout date.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 47
+    },
+    {
+      "text": "In today's fast-paced world, teams often say let's dive in before they have a point.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 49
+    },
+    {
+      "text": "In my experience, the advice gets worse when the author keeps auditioning for authority.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 51
+    },
+    {
+      "text": "As someone who has edited enough bland posts, I would cut the credential before the claim.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 53
+    },
+    {
+      "text": "The draft keeps optimizing for emotional resonance instead of saying what changed.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 55
+    },
+    {
+      "text": "Please debug your morning routine before you call it a strategy.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 57
+    },
+    {
+      "text": "The team went back to square one after the launch review.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 59
+    },
+    {
+      "text": "The roadmap keeps chasing low-hanging fruit instead of naming the tradeoff.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 61
+    },
+    {
+      "text": "Hopefully the final draft does not lean on disputed usage.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 63
+    },
+    {
+      "text": "The campaign calls the offer very unique without explaining what changed.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 65
+    },
+    {
+      "text": "As a language model, I do not have access to real-time information.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 67
+    },
+    {
+      "text": "The key takeaways changed after the data review.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 1
+    },
+    {
+      "text": "The test fixture contains \"as a language model\" as quoted sample text.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 3
+    },
+    {
+      "text": "The experience report lists each failed assumption.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 5
+    },
+    {
+      "text": "Use the trace output to debug your build before merging.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 7
+    },
+    {
+      "text": "The service team is optimizing for latency on the upload path.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 9
+    },
+    {
+      "text": "The glossary uses \"back to square one\" as an example of vague wording.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 11
+    },
+    {
+      "text": "The acid testers labeled each vial before the audit.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 13
+    },
+    {
+      "text": "The transcript quotes \"let's touch base\" as a phrase to remove.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 15
+    },
+    {
+      "text": "The paper measured synergistic effects between the two drugs.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 17
+    },
+    {
+      "text": "The editor marked \"hopefully\" as disputed usage in the style guide.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 19
+    },
+    {
+      "text": "The preamble refers to a more perfect union.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 21
+    },
+    {
+      "text": "The retry loop runs at most three times.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 23
+    },
+    {
+      "text": "The review flags \"very unique\" as a usage example.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 25
+    },
+    {
+      "text": "The cat slept near the door after lunch. A small dog ran across the yard. Birds moved through the trees before rain. People made tea and talked softly. The room stayed warm until evening.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 27
+    },
+    {
+      "text": "The editor marked \"back to square one\" in the margin as example text.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 29
+    },
+    {
+      "text": "At most, complete the first section before lunch.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 31
+    },
+    {
+      "text": "The editor marked \"very unique\" in the margin as example text.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 33
+    },
+    {
+      "text": "The clean control sentence describes a normal editorial decision.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 35
+    },
+    {
+      "text": "The engineer can debug your build script after lunch.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 37
+    },
+    {
+      "text": "The team is optimizing for latency in the parser.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 39
+    },
+    {
+      "text": "The migration might perhaps finish after the config review.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 1
+    },
+    {
+      "text": "Maybe the release Probably needs another review.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 3
+    },
+    {
+      "text": "The budget could maybe change after the audit.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 5
+    },
+    {
+      "text": "This section calls the migration a pivotal release risk.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 7
+    },
+    {
+      "text": "The editor circled \"vibrant\" in the draft margin.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 9
+    },
+    {
+      "text": "The draft keeps delving into process history.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 11
+    },
+    {
+      "text": "The launch plan will leverage the audit notes.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 13
+    },
+    {
+      "text": "The vendor called the export ROBUST in the release note.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 15
+    },
+    {
+      "text": "The guide tells teams to utilize the backup path.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 17
+    },
+    {
+      "text": "The coordinator will FACILITATE the handoff.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 19
+    },
+    {
+      "text": "The team utilized the backup path during the outage.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 21
+    },
+    {
+      "text": "The paragraph calls support tickets a realm of hidden work.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 23
+    },
+    {
+      "text": "The draft says teams should utilize a robust tapestry of checks.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 25
+    },
+    {
+      "text": "This article tries to leverage a robust and seamless process.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 27
+    },
+    {
+      "text": "We might perhaps utilize numerous tools to facilitate the launch.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 29
+    },
+    {
+      "text": "This vibrant landscape asks the reader to delve into an intricate tapestry.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 31
+    },
+    {
+      "text": "The migration might finish after the config review.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 1
+    },
+    {
+      "text": "The landscaper repaired the stone path before noon.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 3
+    },
+    {
+      "text": "The code sample names the field actuallyactual for legacy parity.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 5
+    },
+    {
+      "text": "The implementation passed the parser checks.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 7
+    },
+    {
+      "text": "The plan might work. Perhaps the plain version starts later.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 9
+    },
+    {
+      "text": "We use many tools to help the launch.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 11
+    },
+    {
+      "text": "The clean control sentence uses ordinary language and should not trigger the prohibited word rule.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 13
+    }
+  ]
+}

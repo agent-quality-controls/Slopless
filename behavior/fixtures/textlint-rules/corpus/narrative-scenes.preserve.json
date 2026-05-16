@@ -1,0 +1,657 @@
+{
+  "version": 1,
+  "corpus": "narrative-scenes.md",
+  "preserve": [
+    {
+      "text": "The point is not control. The point is repair.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 1
+    },
+    {
+      "text": "Prevention lives in rehearsal.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 3
+    },
+    {
+      "text": "Her chest felt a sudden heavy thump.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 5
+    },
+    {
+      "text": "The silver badge on her chest felt like a weight.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 7
+    },
+    {
+      "text": "The body learns the pattern.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 9
+    },
+    {
+      "text": "The body knows the difference long before the mind admits it.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 11
+    },
+    {
+      "text": "That is the real promise.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 13
+    },
+    {
+      "text": "That is where progress lives.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 15
+    },
+    {
+      "text": "The yard felt suddenly cold.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 17
+    },
+    {
+      "text": "The air felt different now.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 19
+    },
+    {
+      "text": "The yard felt cold despite the climbing sun.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 21
+    },
+    {
+      "text": "Silence sat between them.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 23
+    },
+    {
+      "text": "A weight hung in the air.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 25
+    },
+    {
+      "text": "The yard was empty.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 27
+    },
+    {
+      "text": "The air felt heavy.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 29
+    },
+    {
+      "text": "Everything shifted.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 31
+    },
+    {
+      "text": "The room changed after that.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 33
+    },
+    {
+      "text": "Her gaze fell to the ground.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 35
+    },
+    {
+      "text": "His eyes moved from the shadows to the rooftops.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 37
+    },
+    {
+      "text": "The lesson was simple.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 39
+    },
+    {
+      "text": "The truth is not dramatic.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 41
+    },
+    {
+      "text": "The stakes felt real.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 43
+    },
+    {
+      "text": "The pressure sat in the room.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 45
+    },
+    {
+      "text": "She realized the truth.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 47
+    },
+    {
+      "text": "They learned that everything had changed.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 49
+    },
+    {
+      "text": "That mattered more than it seemed.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 51
+    },
+    {
+      "text": "The lesson is the part that sticks.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 53
+    },
+    {
+      "text": "They just stood there.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 55
+    },
+    {
+      "text": "They looked from one face to another face.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 57
+    },
+    {
+      "text": "The point is not performance.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 59
+    },
+    {
+      "text": "The invitation is to trust the fog.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 61
+    },
+    {
+      "text": "The real work begins.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 63
+    },
+    {
+      "text": "The deeper work starts after the noise fades.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 65
+    },
+    {
+      "text": "The silence was not empty.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 67
+    },
+    {
+      "text": "The office had gone quiet in the way offices do.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 69
+    },
+    {
+      "text": "Something had shifted.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 71
+    },
+    {
+      "text": "Something shifted when something let go.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 73
+    },
+    {
+      "text": "Eventually the truth surfaces.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 75
+    },
+    {
+      "text": "The answer arrives as a body sensation.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 77
+    },
+    {
+      "text": "And that is where the work begins.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 79
+    },
+    {
+      "text": "This is how change starts.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 81
+    },
+    {
+      "text": "Things got harder.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 83
+    },
+    {
+      "text": "It became more real.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 85
+    },
+    {
+      "text": "The room felt still.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 89
+    },
+    {
+      "text": "Safety starts with installing smoke alarms in every bedroom.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 1
+    },
+    {
+      "text": "Her eyes moved from the shadows to the rooftops, searching for the lantern signal.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 3
+    },
+    {
+      "text": "The backup generator sits inside the repair shop.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 5
+    },
+    {
+      "text": "Her chest hurt because the harness strap had twisted under her arm.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 7
+    },
+    {
+      "text": "The reflex arc improved after repeated training trials.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 9
+    },
+    {
+      "text": "This is the screw that holds the hinge plate in place.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 11
+    },
+    {
+      "text": "The yard felt cold because the sun dropped behind the wall.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 13
+    },
+    {
+      "text": "The weight hung from the ceiling bracket.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 15
+    },
+    {
+      "text": "The yard was empty because the evacuation order had cleared the neighborhood.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 17
+    },
+    {
+      "text": "She looked under the bench for the missing badge.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 21
+    },
+    {
+      "text": "The stakes were high because the permit expired at midnight.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 25
+    },
+    {
+      "text": "She looked around for the missing inhaler.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 31
+    },
+    {
+      "text": "The masonry crew starts work at half past eight.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 35
+    },
+    {
+      "text": "The room was quiet enough to hear the loose hinge scrape.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 37
+    },
+    {
+      "text": "The market shifted three stalls west after the fire.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 39
+    },
+    {
+      "text": "The truth is that the latch was opened with Rory's spare key.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 41
+    },
+    {
+      "text": "The moment passed.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 47
+    },
+    {
+      "text": "The room felt still because the HVAC shut down.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 51
+    },
+    {
+      "text": "The stakes felt real when the board rejected the loan.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 53
+    },
+    {
+      "text": "She realized the truth when the invoice matched the ledger.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 55
+    },
+    {
+      "text": "They stood by the north exit at 8:13.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 57
+    },
+    {
+      "text": "The lesson was simple: rotate the signing key every 30 days.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 59
+    },
+    {
+      "text": "After all, most people expect the process to explain itself.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 41
+    },
+    {
+      "text": "Name the next step, not the whole mountain.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 101
+    },
+    {
+      "text": "“Everyone thinks I sounded stupid” is usually a story, not a fact.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 209
+    },
+    {
+      "text": "Trust erodes, not necessarily because of betrayal, but because the relationship stops feeling like a place where truth can be handled safely.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 217
+    },
+    {
+      "text": "Too much noise, too many demands, too many feelings, not enough room to sort any of it out.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 317
+    },
+    {
+      "text": "If the safest way to survive is to stay quiet, you will get silence, not trust.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 367
+    },
+    {
+      "text": "Silence is not agreement. Silence is often confusion with a nice face on it.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 467
+    },
+    {
+      "text": "They do not fail because people are careless. They fail because the language gets fuzzy at the exact moment clarity matters most.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 469
+    },
+    {
+      "text": "The people most likely to feel attention problems are not mysterious. They are the ones who combine several risk factors at once.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 487
+    },
+    {
+      "text": "The issue is not the number of bodies in the room. It is whether a person feels connected, supported, and seen.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 507
+    },
+    {
+      "text": "Validation is not agreement. It is acknowledging internal logic: \"Given what you heard, it makes sense you felt dismissed.\" When people feel understood, they become more flexible and less defensive.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 583
+    },
+    {
+      "text": "Dishes, lateness, money, or texts are not always about dishes, lateness, money, or texts. They are often stand-ins for deeper themes like reliability, appreciation, fairness, or emotional connection.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 607
+    },
+    {
+      "text": "Adult loneliness is not only the absence of people. It is often the absence of people who know you without explanation.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 613
+    },
+    {
+      "text": "It is not just something you want to do often. It is something your brain learns to initiate with less conscious effort because the cue and the response have been paired repeatedly.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 621
+    },
+    {
+      "text": "Loneliness is not about how many people are around you. It is about whether you feel supported, understood, and safe enough to be real.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 689
+    },
+    {
+      "text": "That is because loneliness is not about how many people are around you. It is about whether you feel seen, safe, and known.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 693
+    },
+    {
+      "text": "The strategy memo is not just a memo. It is a quiet referendum on whether people were right to trust you in the first place.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 713
+    },
+    {
+      "text": "That matters because culture is not an HR initiative. It is the pattern people learn from experience.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 725
+    },
+    {
+      "text": "The best people I know are not the ones who can make everything sound sophisticated. They are the ones who can strip a mess down to its core without needing applause for it.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 735
+    },
+    {
+      "text": "The antidote is not a communication technique. It is the willingness to stay in the room, emotionally, when the impulse is to leave.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 769
+    },
+    {
+      "text": "2/10 The problem is not only how many people are around you. It is whether you feel known, supported, and safe with them.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 791
+    },
+    {
+      "text": "1/10 Loneliness is not just feeling sad in a quieter room. It is what happens when your need for connection is not being met.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 803
+    },
+    {
+      "text": "This is where people get stuck.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 889
+    },
+    {
+      "text": "Some people may generally feel uncertain in some cases.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 893
+    },
+    {
+      "text": "Many adults usually delay the obvious repair.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 895
+    },
+    {
+      "text": "Sixty seconds. That's the whole repair.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 919
+    },
+    {
+      "text": "The job is to reduce the fuel, hold the limit, and teach the next repair.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 73
+    }
+  ]
+}

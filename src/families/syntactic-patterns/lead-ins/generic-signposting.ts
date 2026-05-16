@@ -1,0 +1,280 @@
+import type { TxtDocumentNode } from "@textlint/ast-node-types";
+import type { TextlintRuleModule } from "@textlint/types";
+import {
+  cleanSentence,
+  containsAny,
+  tokens,
+  type SentenceMatch
+} from "../../../shared/matchers/prose-patterns.js";
+import { allParagraphSentences } from "../../../shared/text/sections.js";
+
+const PREFIXES = ["however, ", "but ", "and ", "so "];
+const IMPORTANT_TO_PATTERNS = [
+  "it's important to note",
+  "it is important to note",
+  "it's important to remember",
+  "it is important to remember"
+];
+const TRANSITION_PATTERNS = ["that being said", "as such"];
+const CONSULTATION_PATTERNS = [
+  "it's always best to consult",
+  "it is always best to consult",
+  "it's best to consult",
+  "it is best to consult",
+  "it's recommended to consult",
+  "it is recommended to consult"
+];
+const NOTE_PATTERNS = ["please note that", "please note"];
+const QUESTION_PATTERNS = [
+  "the useful question is",
+  "the useful move is",
+  "the practical move is",
+  "the real question is",
+  "the better question is"
+];
+const ANSWER_PATTERNS = [
+  "the answer is simple",
+  "the answer is straightforward",
+  "the practical answer is",
+  "the short answer is",
+  "the better conclusion is",
+  "the useful conclusion is simple"
+];
+const FRAME_PATTERNS = [
+  "the short version",
+  "the practical version is",
+  "the useful frame",
+  "the useful version is",
+  "the point is plain enough"
+];
+const SEQUENCE_PATTERNS = [
+  "a simple sequence works well",
+  "a simple pattern works well",
+  "a simple rule works well"
+];
+const WHAT_FRAME_TAIL_STARTERS = [
+  "boring",
+  "clear",
+  "consistent",
+  "easy",
+  "hard",
+  "less",
+  "making",
+  "more",
+  "never",
+  "not",
+  "plain",
+  "practice",
+  "rarely",
+  "small",
+  "smaller",
+  "simple",
+  "straightforward",
+  "true",
+  "usually"
+];
+const FRAME_ADJECTIVES = [
+  "basic",
+  "best",
+  "better",
+  "biggest",
+  "bigger",
+  "central",
+  "clearest",
+  "core",
+  "easiest",
+  "final",
+  "first",
+  "hardest",
+  "honest",
+  "important",
+  "main",
+  "only",
+  "obvious",
+  "practical",
+  "real",
+  "simple",
+  "useful"
+];
+const FRAME_NOUNS = [
+  "answer",
+  "challenge",
+  "conclusion",
+  "fact",
+  "frame",
+  "idea",
+  "lesson",
+  "move",
+  "point",
+  "problem",
+  "question",
+  "result",
+  "rule",
+  "shift",
+  "signal",
+  "test",
+  "thing",
+  "truth",
+  "version",
+  "way",
+  "win"
+];
+const ABSTRACT_FRAME_VERBS = ["is", "are", "was"];
+const POINT_NOUNS = ["goal", "job", "key", "point", "takeaway", "trick"];
+
+function matchModifiedAbstractFrame(
+  words: readonly string[]
+): string | undefined {
+  const [first, second, third, fourth, fifth] = words;
+
+  if (
+    first === "the" &&
+    second === "result" &&
+    third === "worth" &&
+    fourth === "caring" &&
+    fifth === "about"
+  ) {
+    return "the-result-worth-caring-about";
+  }
+
+  if (first !== "the") {
+    return undefined;
+  }
+
+  const key = `${second ?? ""}-${third ?? ""}-${fourth ?? ""}`;
+  const matches = new Map([
+    ["better-move-is", "the-better-move-is"],
+    ["bigger-win-is", "the-bigger-win-is"],
+    ["useful-move-is", "the-useful-move-is"],
+    ["useful-alternative-is", "the-useful-alternative-is"],
+    ["useful-alternatives-are", "the-useful-alternatives-are"]
+  ]);
+
+  return matches.get(key);
+}
+
+function matchEvaluativeFrame(words: readonly string[]): string | undefined {
+  const [first, second, third, fourth] = words;
+
+  if (
+    first === "the" &&
+    second !== undefined &&
+    third !== undefined &&
+    fourth !== undefined &&
+    FRAME_ADJECTIVES.includes(second) &&
+    FRAME_NOUNS.includes(third) &&
+    ABSTRACT_FRAME_VERBS.includes(fourth)
+  ) {
+    return `the-${second}-${third}-${fourth}`;
+  }
+
+  return undefined;
+}
+
+function matchPointIsToFrame(words: readonly string[]): string | undefined {
+  const [first, second, third, fourth, fifth] = words;
+
+  if (
+    first === "the" &&
+    POINT_NOUNS.includes(second ?? "") &&
+    third === "is" &&
+    fourth === "to" &&
+    fifth !== undefined
+  ) {
+    return `the-${second ?? "point"}-is-to`;
+  }
+
+  return undefined;
+}
+
+function matchWhatFrame(words: readonly string[]): string | undefined {
+  const [first, second, third, fourth] = words;
+
+  if (
+    first === "what" &&
+    (second === "helps" ||
+      second === "matters" ||
+      second === "works" ||
+      second === "changes") &&
+    third === "is" &&
+    fourth !== undefined &&
+    WHAT_FRAME_TAIL_STARTERS.includes(fourth)
+  ) {
+    return `what-${second}-is`;
+  }
+
+  if (first === "what" && second === "matters" && third === "most") {
+    return "what-matters-most";
+  }
+
+  return undefined;
+}
+
+function matchAbstractFrame(text: string): string | undefined {
+  const words = tokens(text);
+  return (
+    matchModifiedAbstractFrame(words) ??
+    matchEvaluativeFrame(words) ??
+    matchPointIsToFrame(words) ??
+    matchWhatFrame(words)
+  );
+}
+
+function matchSignposting(sentence: string): SentenceMatch | undefined {
+  const stripped = cleanSentence(sentence, PREFIXES);
+  const abstract = matchAbstractFrame(stripped);
+
+  if (abstract !== undefined) {
+    return { kind: "abstract-evaluation-frame", signal: abstract };
+  }
+
+  const checks: readonly (readonly [string, readonly string[]])[] = [
+    ["important-to", IMPORTANT_TO_PATTERNS],
+    ["transition", TRANSITION_PATTERNS],
+    ["consultation-signpost", CONSULTATION_PATTERNS],
+    ["note-signpost", NOTE_PATTERNS],
+    ["question-frame", QUESTION_PATTERNS],
+    ["answer-frame", ANSWER_PATTERNS],
+    ["frame-signpost", FRAME_PATTERNS],
+    ["sequence-frame", SEQUENCE_PATTERNS]
+  ];
+
+  for (const [kind, patterns] of checks) {
+    const signal = containsAny(stripped, patterns);
+    if (signal !== undefined) {
+      return { kind, signal };
+    }
+  }
+
+  return undefined;
+}
+
+const rule: TextlintRuleModule = (context) => {
+  const { Syntax, RuleError, locator, report } = context;
+
+  return {
+    [Syntax.Document](node: TxtDocumentNode): void {
+      for (const item of allParagraphSentences(node)) {
+        const matched = matchSignposting(item.sentence.text);
+        if (matched === undefined) {
+          continue;
+        }
+
+        report(
+          item.paragraph,
+          new RuleError(
+            `Generic signposting found: ${matched.signal}. Replace the frame with the concrete claim.`,
+            {
+              padding: locator.range([
+                item.source.originalStartFor(item.sentence.start),
+                item.source.originalEndFor(item.sentence.end)
+              ])
+            }
+          )
+        );
+      }
+    }
+  };
+};
+
+export default rule;

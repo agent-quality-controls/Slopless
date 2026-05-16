@@ -1,0 +1,103 @@
+{
+  "id": "hollow-significance",
+  "class": "significance",
+  "purpose": "Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result.",
+  "templates": [
+    "{deicticSubject} {significanceVerb} {intensifier}.",
+    "{summarySubject} {linkingVerb} {importanceComplement}.",
+    "{summarySubject} {linkingVerb} the part that {stickVerb}.",
+    "{deicticSubject} {changePhrase}."
+  ],
+  "slots": {
+    "deicticSubject": [
+      "this",
+      "that",
+      "it",
+      "this part",
+      "that part",
+      "this moment",
+      "that moment",
+      "this change",
+      "that change",
+      "this result",
+      "that result"
+    ],
+    "summarySubject": [
+      "the result",
+      "the lesson",
+      "the point",
+      "the answer",
+      "the shift",
+      "the move",
+      "the work",
+      "the change",
+      "the thing",
+      "the part",
+      "the detail",
+      "the truth",
+      "the difference"
+    ],
+    "significanceVerb": [
+      "mattered",
+      "counts",
+      "sticks",
+      "lasts",
+      "helps",
+      "worked",
+      "changed",
+      "landed"
+    ],
+    "linkingVerb": ["is", "was", "became", "remained"],
+    "importanceComplement": [
+      "what mattered",
+      "the key",
+      "the point",
+      "the part that matters",
+      "the part that sticks",
+      "the useful part",
+      "the real work",
+      "where it starts",
+      "where things change"
+    ],
+    "stickVerb": ["sticks", "matters", "lasts", "changes", "helps", "works"],
+    "changePhrase": [
+      "changed everything",
+      "made the difference",
+      "helped a lot",
+      "mattered more than it seemed",
+      "stuck with them"
+    ],
+    "intensifier": [
+      "more than it seemed",
+      "more than expected",
+      "more than anyone knew",
+      "in the end",
+      "after all",
+      "a lot"
+    ]
+  },
+  "rejectIf": [
+    "sentence names the concrete referent of this or that",
+    "sentence includes a concrete result",
+    "previous sentence has a precise referent and this sentence is a legitimate summary",
+    "line is part of a quoted reaction or cited claim"
+  ],
+  "positiveExamples": [
+    "That mattered more than it seemed.",
+    "It changed everything.",
+    "The result was what mattered.",
+    "The lesson is the part that sticks.",
+    "That one change helped a lot.",
+    "The answer was the real work."
+  ],
+  "negativeExamples": [
+    "The patched offset mapper changed every reported range in the fixture.",
+    "That mattered because it removed the last failing repayment case.",
+    "The result was a 14 percent drop in missed appointments.",
+    "The lesson is to initialize the parser before reading paragraph offsets."
+  ],
+  "notes": [
+    "This overlaps with existing syntactic-pattern rules and should be reviewed before activation.",
+    "This pattern needs previous-sentence referent checks."
+  ]
+}

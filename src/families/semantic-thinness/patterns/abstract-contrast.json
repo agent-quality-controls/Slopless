@@ -1,0 +1,85 @@
+{
+  "id": "abstract-contrast",
+  "class": "abstract-contrast",
+  "purpose": "Catch abstract not-this-but-that contrasts that reframe with abstract nouns instead of adding concrete information.",
+  "templates": [
+    "{abstractSubject} is not {abstractObject}. It is {abstractObject}.",
+    "{abstractSubject} is not about {abstractObject}. It is about {abstractObject}.",
+    "{abstractSubject} {metaphorVerb} in {abstractObject}, not in {abstractObject}.",
+    "This is not {abstractObject}. This is {abstractObject}.",
+    "The point is not {abstractObject}. The point is {abstractObject}."
+  ],
+  "slots": {
+    "abstractSubject": [
+      "prevention",
+      "healing",
+      "growth",
+      "trust",
+      "leadership",
+      "connection",
+      "confidence",
+      "discipline",
+      "change",
+      "repair",
+      "the work",
+      "the lesson",
+      "the answer",
+      "the process",
+      "the practice",
+      "the point",
+      "the problem"
+    ],
+    "abstractObject": [
+      "control",
+      "clarity",
+      "repair",
+      "practice",
+      "consistency",
+      "rehearsal",
+      "the lecture",
+      "the lesson",
+      "the work",
+      "the process",
+      "the outcome",
+      "the mindset",
+      "the rhythm",
+      "the pattern",
+      "the storm",
+      "the quiet",
+      "the answer",
+      "the point",
+      "the performance"
+    ],
+    "metaphorVerb": [
+      "lives",
+      "lands",
+      "starts",
+      "sits",
+      "rests",
+      "belongs",
+      "shows up"
+    ]
+  },
+  "rejectIf": [
+    "either side of contrast contains concrete technical, factual, or measured content",
+    "contrast names specific actors, dates, places, statutes, code symbols, or physical objects",
+    "sentence pair is a legitimate correction of a concrete misconception"
+  ],
+  "positiveExamples": [
+    "The point is not control. The point is repair.",
+    "Prevention lives in rehearsal, not in the lecture.",
+    "This is not clarity. This is performance.",
+    "Growth is not intensity. It is consistency.",
+    "The work is not the outcome. The work is the process."
+  ],
+  "negativeExamples": [
+    "The bug is not in the parser. It is in the offset mapper.",
+    "The policy is not a tax credit. It is a direct rebate.",
+    "The fix is not to retry the request. It is to close the socket.",
+    "The sensor is not in the hallway. It is in the stairwell."
+  ],
+  "notes": [
+    "This overlaps with negation-reframe and contrastive-aphorism.",
+    "Activation should avoid duplicate reports with existing contrast rules."
+  ]
+}

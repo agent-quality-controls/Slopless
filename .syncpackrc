@@ -1,0 +1,29 @@
+{
+  "source": ["package.json"],
+  "versionGroups": [
+    {
+      "label": "Pin cspell",
+      "dependencies": ["cspell"],
+      "dependencyTypes": ["prod", "dev"],
+      "pinVersion": "10.0.0"
+    },
+    {
+      "label": "Pin g3ts-eslint-plugin-style-policy",
+      "dependencies": ["g3ts-eslint-plugin-style-policy"],
+      "dependencyTypes": ["prod", "dev"],
+      "pinVersion": "0.1.3"
+    },
+    {
+      "label": "Pin prettier",
+      "dependencies": ["prettier"],
+      "dependencyTypes": ["prod", "dev"],
+      "pinVersion": "3.8.3"
+    },
+    {
+      "label": "Pin type-coverage",
+      "dependencies": ["type-coverage"],
+      "dependencyTypes": ["prod", "dev"],
+      "pinVersion": "2.29.7"
+    }
+  ]
+}

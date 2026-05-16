@@ -1,0 +1,98 @@
+{
+  "id": "empty-scene-transition",
+  "class": "transition-change",
+  "purpose": "Catch generic transition lines that declare change, passage, or motion without naming what changed or why.",
+  "templates": [
+    "{genericSubject} {changeVerb}.",
+    "{genericSubject} {changeVerb} {weakModifier}.",
+    "{genericSubject} {changeVerb} {genericObject}.",
+    "{genericSubject} {passageVerb}."
+  ],
+  "slots": {
+    "genericSubject": [
+      "it",
+      "everything",
+      "something",
+      "things",
+      "the moment",
+      "the scene",
+      "the room",
+      "the day",
+      "the night",
+      "the conversation",
+      "the energy",
+      "the mood",
+      "the air",
+      "the silence",
+      "the feeling",
+      "the dynamic",
+      "the situation",
+      "the story",
+      "the work"
+    ],
+    "changeVerb": [
+      "changed",
+      "shifted",
+      "moved",
+      "turned",
+      "tilted",
+      "settled",
+      "opened",
+      "broke",
+      "landed",
+      "clicked",
+      "happened"
+    ],
+    "passageVerb": [
+      "passed",
+      "faded",
+      "ended",
+      "began",
+      "started",
+      "continued",
+      "returned"
+    ],
+    "weakModifier": [
+      "after that",
+      "from there",
+      "again",
+      "then",
+      "somehow",
+      "a little",
+      "in that moment"
+    ],
+    "genericObject": [
+      "everything",
+      "the scene",
+      "the room",
+      "the conversation",
+      "the day",
+      "the moment",
+      "the work"
+    ]
+  },
+  "rejectIf": [
+    "sentence has a concrete cause clause",
+    "sentence has a concrete result clause",
+    "sentence names a specific rule, event, object, person, date, number, or action that explains the change",
+    "sentence is longer than the short transition window"
+  ],
+  "positiveExamples": [
+    "Everything shifted.",
+    "It changed everything.",
+    "The moment passed.",
+    "The room changed after that.",
+    "The conversation shifted.",
+    "Things changed from there."
+  ],
+  "negativeExamples": [
+    "Everything shifted after the new tax rule took effect.",
+    "The scene changed when the camera cut to the exterior courtyard.",
+    "The conversation shifted after Maria named the missing budget line.",
+    "The room changed when the lights failed at 8:13."
+  ],
+  "notes": [
+    "The rejection gates are more important than the positive slot lists.",
+    "This is the safest first semantic-thinness template."
+  ]
+}

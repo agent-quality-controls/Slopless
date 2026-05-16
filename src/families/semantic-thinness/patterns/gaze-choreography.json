@@ -1,0 +1,87 @@
+{
+  "id": "gaze-choreography",
+  "class": "body-camera",
+  "purpose": "Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction.",
+  "templates": [
+    "{gazeSubject} {gazeVerb} {gazeTarget}.",
+    "{gazeSubject} {movementVerb} from {gazeTarget} to {gazeTarget}.",
+    "{humanSubject} followed {possessive} gaze to {gazeTarget}.",
+    "{humanSubject} traced {objectSubject} with {possessive} eyes."
+  ],
+  "slots": {
+    "gazeSubject": [
+      "her gaze",
+      "his gaze",
+      "their gaze",
+      "her eyes",
+      "his eyes",
+      "their eyes",
+      "his gold eyes",
+      "her almond eyes"
+    ],
+    "gazeVerb": [
+      "fell to",
+      "moved to",
+      "went to",
+      "darted across",
+      "measured",
+      "searched",
+      "tracked"
+    ],
+    "movementVerb": ["moved", "went", "traveled", "shifted"],
+    "gazeTarget": [
+      "the ground",
+      "the floor",
+      "the yard",
+      "the room",
+      "the door",
+      "the street",
+      "the shadows",
+      "the rooftops",
+      "the line of small chests",
+      "the dark rim of the clay"
+    ],
+    "humanSubject": [
+      "he",
+      "she",
+      "they",
+      "we",
+      "the group",
+      "cassia",
+      "arden",
+      "the cubs"
+    ],
+    "possessive": ["her", "his", "their", "my"],
+    "objectSubject": [
+      "the trail",
+      "the badge",
+      "the line",
+      "the print",
+      "the prints"
+    ]
+  },
+  "rejectIf": [
+    "sentence states the concrete clue being observed",
+    "sentence names a deliberate search goal",
+    "sentence includes a physical action beyond looking",
+    "sentence is quoted dialogue"
+  ],
+  "positiveExamples": [
+    "Her gaze fell to the ground.",
+    "His gold eyes measured the line of small chests.",
+    "Her almond eyes darted across the yard.",
+    "They followed her gaze to the dark rim of the clay.",
+    "Cassia traced the trail with her eyes.",
+    "His eyes moved from the shadows to the rooftops."
+  ],
+  "negativeExamples": [
+    "Cassia looked for the single stitch out of place.",
+    "He checked for straight backs and tucked tails.",
+    "She looked under the bench for the missing badge.",
+    "His eyes watered after the forge smoke reached the room."
+  ],
+  "notes": [
+    "This pattern is about camera-like gaze movement, not every verb of seeing.",
+    "The strongest signals are gaze as grammatical subject and eyes as a moving camera."
+  ]
+}
