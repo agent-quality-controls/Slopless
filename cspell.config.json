@@ -33,9 +33,12 @@
     "typecov",
     "uncomparable",
     "uncomparables",
-    "websmasher"
+    "websmasher",
+    "worklogs"
   ],
   "ignorePaths": [
+    ".plans",
+    ".worklogs",
     "behavior/golden",
     "dist",
     "node_modules",

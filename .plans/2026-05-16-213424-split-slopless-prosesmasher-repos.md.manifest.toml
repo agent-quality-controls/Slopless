@@ -48,10 +48,10 @@ path = "packages"
 
 [package_json]
 name = "slopless"
-version = "0.2.2"
-repository_url = "git+https://github.com/agent-quality-controls/Slopless.git"
-homepage = "https://github.com/agent-quality-controls/Slopless#readme"
-bugs_url = "https://github.com/agent-quality-controls/Slopless/issues"
+version = "0.2.3"
+repository_url = "git+https://github.com/agent-quality-controls/slopless.git"
+homepage = "https://github.com/agent-quality-controls/slopless#readme"
+bugs_url = "https://github.com/agent-quality-controls/slopless/issues"
 bin_name = "slopless"
 bin_path = "dist/cli.js"
 files = ["dist", "README.md"]

@@ -1,15 +1,15 @@
 {
   "name": "slopless",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Deterministic textlint rules for detecting slop in prose.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agent-quality-controls/Slopless.git"
+    "url": "git+https://github.com/agent-quality-controls/slopless.git"
   },
-  "homepage": "https://github.com/agent-quality-controls/Slopless#readme",
+  "homepage": "https://github.com/agent-quality-controls/slopless#readme",
   "bugs": {
-    "url": "https://github.com/agent-quality-controls/Slopless/issues"
+    "url": "https://github.com/agent-quality-controls/slopless/issues"
   },
   "type": "module",
   "main": "./dist/index.js",

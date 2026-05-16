@@ -1,6 +1,6 @@
 [
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/corpus/editorial-style.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/editorial-style.md",
     "messages": [
       {
         "column": 1,
@@ -2006,7 +2006,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/corpus/engineering-review.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/engineering-review.md",
     "messages": [
       {
         "column": 1,
@@ -10199,7 +10199,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
     "messages": [
       {
         "column": 1,
@@ -14781,7 +14781,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/metrics/hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/metrics/hits.md",
     "messages": [
       {
         "column": 1,
@@ -15407,7 +15407,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/orthography/hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/orthography/hits.md",
     "messages": [
       {
         "column": 1,
@@ -15941,7 +15941,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/phrases/hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/phrases/hits.md",
     "messages": [
       {
         "column": 1,
@@ -16774,7 +16774,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
     "messages": [
       {
         "column": 1,
@@ -17998,7 +17998,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
     "messages": [
       {
         "column": 1,
@@ -31136,7 +31136,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
     "messages": [
       {
         "column": 1,
@@ -31187,7 +31187,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/words/hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/words/hits.md",
     "messages": [
       {
         "column": 1,
@@ -31859,7 +31859,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
     "messages": [
       {
         "column": 1,
@@ -32669,7 +32669,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
     "messages": [
       {
         "column": 1,
@@ -34583,11 +34583,11 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/markdown-layout/no-hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/markdown-layout/no-hits.md",
     "messages": []
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/metrics/no-hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/metrics/no-hits.md",
     "messages": [
       {
         "column": 1,
@@ -34776,19 +34776,19 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/no-signal/no-hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/no-signal/no-hits.md",
     "messages": []
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/orthography/no-hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/orthography/no-hits.md",
     "messages": []
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/phrases/no-hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/phrases/no-hits.md",
     "messages": []
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
     "messages": [
       {
         "column": 1,
@@ -34885,7 +34885,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
     "messages": [
       {
         "column": 1,
@@ -35005,7 +35005,7 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/term-policy/no-hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/term-policy/no-hits.md",
     "messages": [
       {
         "column": 1,
@@ -35033,11 +35033,11 @@
     ]
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/cases/words/no-hits.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/words/no-hits.md",
     "messages": []
   },
   {
-    "filePath": "/Users/tartakovsky/Projects/Slopless/behavior/fixtures/textlint-rules/corpus/technical-terminology.md",
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/technical-terminology.md",
     "messages": [
       {
         "column": 1,
