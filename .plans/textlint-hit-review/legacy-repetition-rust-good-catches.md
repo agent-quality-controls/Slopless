@@ -1,0 +1,715 @@
+# Repetition Rust good catches
+
+These are the Rust repetition-family findings from `fixtures/`. Each item stores the full sentence run or sentence needed to build later fixture text.
+
+## Counts
+
+- demonstrative-emphasis: 80
+- fragment-stacking: 51
+- triple-repeat: 101
+
+## demonstrative-emphasis
+
+- `fixtures/explainers/gpt_5_4_mini/burnout-at-work.md`
+  - match: demonstrative-np-negation
+  - context: That list is not random.
+- `fixtures/explainers/gpt_5_4_mini/burnout-at-work.md`
+  - match: demonstrative-np-copular
+  - context: That finding was consistent across studies and settings.
+- `fixtures/explainers/gpt_5_4_mini/burnout-at-work.md`
+  - match: demonstrative-perception
+  - context: That sounds boring because it is boring.
+- `fixtures/explainers/gpt_5_4_mini/burnout-at-work.md`
+  - match: demonstrative-copular
+  - context: Those are not cures.
+- `fixtures/explainers/gpt_5_4_mini/does-social-media-harm-attention-span.md`
+  - match: demonstrative-emphatic-verb
+  - context: That distinction matters.
+- `fixtures/explainers/gpt_5_4_mini/does-social-media-harm-attention-span.md`
+  - match: demonstrative-copular
+  - context: Those are related, but not identical.
+- `fixtures/explainers/gpt_5_4_mini/does-social-media-harm-attention-span.md`
+  - match: demonstrative-relative
+  - context: That is why the question "does social media harm attention span?"
+- `fixtures/explainers/gpt_5_4_mini/does-social-media-harm-attention-span.md`
+  - match: demonstrative-np-copular
+  - context: That reorientation is tiny on any one switch.
+- `fixtures/explainers/gpt_5_4_mini/does-social-media-harm-attention-span.md`
+  - match: demonstrative-relative
+  - context: This is where people usually overreach.
+- `fixtures/explainers/gpt_5_4_mini/does-social-media-harm-attention-span.md`
+  - match: demonstrative-copular
+  - context: These are small obstacles, which is the point.
+- `fixtures/explainers/gpt_5_4_mini/how-chronic-stress-affects-the-body.md`
+  - match: demonstrative-copular
+  - context: That is one reason stress can become self-reinforcing.
+- `fixtures/explainers/gpt_5_4_mini/how-chronic-stress-affects-the-body.md`
+  - match: demonstrative-copular
+  - context: That is not a character flaw.
+- `fixtures/explainers/gpt_5_4_mini/how-chronic-stress-affects-the-body.md`
+  - match: demonstrative-np-copular
+  - context: That person is either fictional or deeply confused.
+- `fixtures/explainers/gpt_5_4_mini/why-adults-feel-tired-all-the-time.md`
+  - match: demonstrative-emphatic-verb
+  - context: That split matters.
+- `fixtures/explainers/gpt_5_4_mini/why-adults-feel-tired-all-the-time.md`
+  - match: demonstrative-copular
+  - context: This is one reason tiredness should not be blamed on laziness.
+- `fixtures/explainers/gpt_5_4_mini/why-adults-feel-tired-all-the-time.md`
+  - match: demonstrative-copular
+  - context: Those are not "maybe tomorrow" symptoms.
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: demonstrative-copular
+  - context: This is one reason consistency matters.
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: definite-np-copular
+  - context: The behavior is the surface.
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: demonstrative-emphatic-verb
+  - context: That gap matters.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: demonstrative-np-copular
+  - context: That shift is common.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: definite-np-copular
+  - context: The bad news is that this pattern can harden.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: demonstrative-copular
+  - context: That is not avoidance if you come back.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: demonstrative-np-copular
+  - context: That mode is poison.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: demonstrative-copular
+  - context: That is enough to start.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: demonstrative-relative
+  - context: That is why deadlines matter so much.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: demonstrative-np-copular
+  - context: That advice is lazy and also late.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: demonstrative-copular
+  - context: That is not an insult.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: demonstrative-copular
+  - context: That is enough for most people.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: definite-np-copular
+  - context: The older myth is that habits take a fixed number of days.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: definite-np-copular
+  - context: The fifth failure is the all-or-nothing reset.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: demonstrative-copular
+  - context: That is not a habit problem.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: definite-np-copular
+  - context: The next cue is the restart.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: demonstrative-copular
+  - context: That is not a defeat.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: demonstrative-copular
+  - context: That is not glamorous.
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-perception
+  - context: This sounds underwhelming because it is.
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-copular
+  - context: That is part of the point.
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-copular
+  - context: This is not softness.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: demonstrative-relative
+  - context: This is where the whole thing gets meaner.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: definite-np-copular
+  - context: The weird part is that the relief is real, just brief.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: definite-np-copular
+  - context: The good news is that procrastination is changeable.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: demonstrative-perception
+  - context: That sounds obvious because it is.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: demonstrative-copular
+  - context: That is inconvenient, but useful.
+- `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`
+  - match: demonstrative-copular
+  - context: That is typical for mental health conditions.
+- `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`
+  - match: demonstrative-np-copular
+  - context: That trade is bad math.
+- `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`
+  - match: definite-np-copular
+  - context: The good news is that social anxiety is treatable.
+- `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`
+  - match: definite-np-copular
+  - context: That update is the work.
+- `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`
+  - match: demonstrative-copular
+  - context: This is useful if therapy is hard to access, expensive, or delayed.
+- `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/article.md`
+  - match: demonstrative-relative
+  - context: That is why stress can feel physical before it feels emotional.
+- `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/article.md`
+  - match: demonstrative-copular
+  - context: This is one reason stress can be hard to spot.
+- `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/article.md`
+  - match: demonstrative-copular
+  - context: These are not mystical rituals.
+- `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/article.md`
+  - match: demonstrative-copular
+  - context: That is bad for stress and bad for the body.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: demonstrative-copular
+  - context: That is not a morality tale.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: demonstrative-relative
+  - context: That is why so many friendship breakups are really life-structure breakups.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: demonstrative-np-copular
+  - context: That story is tidy.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: demonstrative-copular
+  - context: That is not just “feeling a bit off.”
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: demonstrative-np-copular
+  - context: That part is true and useful.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: demonstrative-copular
+  - context: That is normal.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: definite-np-copular
+  - context: The good news is that a friendship does not need dramatic rescue.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-copular
+  - context: That is efficient, which is why habits exist at all.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: definite-np-copular
+  - context: The third obstacle is that people confuse intention with automation.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-np-copular
+  - context: That sense is fuel.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-copular
+  - context: This is not a compromise, it is an engine.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-copular
+  - context: This is not a weakness to transcend.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-relative
+  - context: That is why the advice that sounds dramatic usually fails.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: demonstrative-np-copular
+  - context: This pattern is so common it's almost universal.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: demonstrative-relative
+  - context: This is where you are right now, in the first few weeks.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: demonstrative-np-copular
+  - context: This stage is genuine, but it's not reliable.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: demonstrative-np-copular
+  - context: But this awareness is destabilizing emotionally.
+- `fixtures/instagram/gpt_5_4_mini/why-people-lose-motivation-after-big-goals.md`
+  - match: demonstrative-relative
+  - context: That is where motivation starts to slip.
+- `fixtures/instagram/gpt_5_4_mini/why-people-lose-motivation-after-big-goals.md`
+  - match: demonstrative-copular
+  - context: That is not lowering the standard.
+- `fixtures/instagram/gpt_5_4_mini/why-people-lose-motivation-after-big-goals.md`
+  - match: demonstrative-copular
+  - context: That is building something that survives real life.
+- `fixtures/linkedin/gpt_5_4_mini/why-modern-work-makes-people-feel-constantly-behind.md`
+  - match: demonstrative-copular
+  - context: That is exhausting.
+- `fixtures/linkedin/gpt_5_4_mini/why-modern-work-makes-people-feel-constantly-behind.md`
+  - match: demonstrative-np-relative
+  - context: That residue is what makes people feel behind.
+- `fixtures/linkedin/gpt_5_4_mini/why-modern-work-makes-people-feel-constantly-behind.md`
+  - match: demonstrative-relative
+  - context: That is where the guilt starts.
+- `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`
+  - match: definite-np-copular
+  - context: The routine is the behavior itself.
+- `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-np-relative
+  - context: That shift is how cravings form and why habits become self-perpetuating.
+- `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`
+  - match: demonstrative-copular
+  - context: But that is precisely the point.
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: definite-np-copular
+  - context: The pursuit itself is the reward.
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: definite-np-copular
+  - context: The question "Is this actually worth it?"
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: definite-np-copular
+  - context: The conflict itself is the damage.
+
+## fragment-stacking
+
+- `fixtures/explainers/gpt_5_4_mini/does-social-media-harm-attention-span.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: Add a little friction. Put the apps in a folder. Log out on your phone. Remove the badge counts.
+- `fixtures/explainers/gpt_5_4_mini/how-chronic-stress-affects-the-body.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Muscles stay tense. Sleep gets lighter or shorter. Appetite shifts.
+- `fixtures/explainers/gpt_5_4_mini/how-chronic-stress-affects-the-body.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: The gut responds quickly to stress. Some people lose their appetite. Others overeat.
+- `fixtures/explainers/gpt_5_4_mini/why-adults-feel-tired-all-the-time.md`
+  - match: noun-fragment, noun-fragment, modifier-fragment
+  - context: Adults miss sleep for boring reasons. Late nights. Early alarms.
+- `fixtures/explainers/gpt_5_4_mini/why-modern-friendships-fade-over-time.md`
+  - match: noun-fragment, noun-fragment, modifier-fragment, subject-drop, noun-fragment, subject-drop
+  - context: Work expands. Partners enter the picture. Children arrive. Caregiving starts. Sleep gets worse. Commuting eats the day.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Add structure. Reduce distractions. Use self-compassion instead of shame.
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Bills sit unopened. Forms wait on the counter. Laundry becomes a geological formation.
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: At what time of day? After which feelings? Around which people?
+- `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: People begin cutting recovery corners. Sleep gets worse. Breaks disappear.
+- `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Concentration drops. Patience shortens. Emotional reactions get sharper.
+- `fixtures/gpt_5_4/stress_and_physical_symptoms/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: Hormones shift. Muscles tighten. Sleep degrades. Digestion changes.
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: noun-fragment, noun-fragment, subject-drop, subject-drop, noun-fragment
+  - context: Many good habits offer delayed rewards. Exercise improves health over time. Saving money helps later. Reading compounds slowly. Meal prep pays off tomorrow.
+- `fixtures/gpt_5_4/why_people_wake_up_tired/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Look at substances honestly. Reduce alcohol near bedtime. Move caffeine earlier.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: noun-fragment, subject-drop, noun-fragment
+  - context: Bad sleep makes starting harder. Avoiding tasks adds stress. Stress makes sleep worse.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: The kitchen repair stays broken. The savings transfer never starts. Each delay looks small.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: noun-fragment, subject-drop, subject-drop
+  - context: Relationships suffer in quieter ways. Delayed responses look like indifference. Repeated postponement looks like unreliability.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Open the document. Write the subject line. Put the shoes by the door.
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Sleep gets worse. Concentration slips. Small frustrations feel larger.
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Third, rebuild boundaries aggressively. Burnout thrives in “always on” cultures. Turn off work notifications after hours.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Build a family media plan. Keep devices out of bedrooms. Protect the hour before bed.
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Small ruptures go unrepaired. Mild irritation becomes sarcasm. A complaint becomes a character judgment.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: New room, new cue. New schedule, new anchor. Same behavior, different hook.
+- `fixtures/instagram/gpt_5_4/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Open another tab. Check your phone. Clean the counter.
+- `fixtures/instagram/gpt_5_4/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: Open the doc. Write the first ugly sentence. Set a 10 minute timer. Send the one email.
+- `fixtures/instagram/gpt_5_4/why-overloaded-children-seem-rude.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: Lower your voice. Use fewer words. Cut one demand. Move them somewhere quieter.
+- `fixtures/instagram/gpt_5_4/why-people-feel-anxious-in-ordinary-social-situations.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: Then the alarm system kicks in. Heart up. Muscles tight. Mind scanning for danger.
+- `fixtures/instagram/gpt_5_4/why-school-drop-off-is-hard.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: Some kids cry. Some cling. Some go silent. Some get silly, angry, or "difficult."
+- `fixtures/instagram/gpt_5_4_mini/why-habits-fail-when-you-rely-on-willpower.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Energy changes. The day gets weird. A meeting runs long.
+- `fixtures/instagram/gpt_5_4_mini/why-loneliness-shows-up-in-busy-lives.md`
+  - match: noun-fragment, noun-fragment, modifier-fragment
+  - context: Start with one person. One plan. One real conversation.
+- `fixtures/instagram/gpt_5_4_mini/why-overloaded-children-seem-rude.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Fewer words help. A calm voice helps. A clear boundary helps.
+- `fixtures/instagram/gpt_5_4_mini/why-people-feel-anxious-in-ordinary-social-situations.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: A meeting. A school pickup. A small-talk conversation.
+- `fixtures/instagram/gpt_5_4_mini/why-school-drop-off-is-hard.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: Same routine. Short goodbye. Clear phrase. No sneaking away.
+- `fixtures/linkedin/gpt_5_4/why-smart-people-overcomplicate-simple-problems.md`
+  - match: noun-fragment, modifier-fragment, modifier-fragment, modifier-fragment
+  - context: So the brain starts decorating. More frameworks. More caveats. More slides.
+- `fixtures/linkedin/gpt_5_4/why-smart-people-overcomplicate-simple-problems.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Pick one owner. Cut one feature. Say no to one stakeholder.
+- `fixtures/linkedin/gpt_5_4_mini/biggest-team-communication-mistake.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: A meeting ends. Heads nod. Someone says, "Sounds good." Then three people leave with three different versions of the plan.
+- `fixtures/linkedin/gpt_5_4_mini/why-consistency-matters-more-than-motivation.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: One page. One walk. One follow-up. One draft.
+- `fixtures/linkedin/gpt_5_4_mini/why-high-performers-procrastinate.md`
+  - match: modifier-fragment, modifier-fragment, modifier-fragment
+  - context: More planning. More polish. More time.
+- `fixtures/linkedin/gpt_5_4_mini/why-high-performers-procrastinate.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Write the bad opening. Send the rough note. Build the ugly first pass.
+- `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Open the document. Write one sentence. Send one email.
+- `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`
+  - match: subject-drop, subject-drop, subject-drop, subject-drop
+  - context: Withdrawing from responsibilities. Arriving late regularly. Missing deadlines. Stopping returning calls and emails.
+- `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: A bad week. Seasonal fatigue. A difficult project.
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Every January, gyms fill up. Notebooks get opened. Productivity apps get downloaded.
+- `fixtures/twitter/gpt_5_4/why-adults-procrastinate-and-what-helps.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Open the file. Write the heading. Draft one bad paragraph.
+- `fixtures/twitter/gpt_5_4/why-couples-stop-communicating-well.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, subject-drop
+  - context: 6/10 Then the pattern hardens. Criticism replaces requests. Defensiveness replaces listening. Stonewalling replaces repair.
+- `fixtures/twitter/gpt_5_4/why-couples-stop-communicating-well.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: Smaller conversations. Better timing. One issue at a time. Specific examples. Fast repair after a bad exchange.
+- `fixtures/twitter/gpt_5_4/why-loneliness-affects-mental-and-physical-health.md`
+  - match: noun-fragment, noun-fragment, noun-fragment, noun-fragment
+  - context: Small repeatable contact works better. One text. One walk. One weekly group.
+- `fixtures/twitter/gpt_5_4_mini/why-adults-procrastinate-and-what-helps.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Open the file. Write one ugly paragraph. Send one sentence.
+- `fixtures/twitter/gpt_5_4_mini/why-burnout-happens-gradually.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Sleep gets worse. Patience gets thinner. Focus starts to wobble.
+- `fixtures/twitter/gpt_5_4_mini/why-habits-fail-even-with-motivation.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: Two pages. One paragraph. One walk around the block.
+- `fixtures/twitter/gpt_5_4_mini/why-habits-fail-even-with-motivation.md`
+  - match: noun-fragment, noun-fragment, noun-fragment
+  - context: After coffee, read. After brushing teeth, floss. After opening the laptop, write.
+- `fixtures/twitter/gpt_5_4_mini/why-loneliness-affects-mental-and-physical-health.md`
+  - match: modifier-fragment, modifier-fragment, modifier-fragment
+  - context: Less trust. Less energy. Less reason to reach out.
+
+## triple-repeat
+
+- `fixtures/explainers/gpt_5_4_mini/does-social-media-harm-attention-span.md`
+  - match: each
+  - context: Each check trains your brain to expect novelty, social reward, and fast feedback. Each notification interrupts a task you had just started to hold in working memory. Each session of scrolling teaches you to tolerate less friction before you switch away.
+- `fixtures/explainers/gpt_5_4_mini/how-loneliness-affects-mental-and-physical-health.md`
+  - match: fewer
+  - context: Fewer calls. Fewer plans. Fewer moments of being reminded that other people are not all that mysterious and terrifying.
+- `fixtures/explainers/gpt_5_4_mini/how-loneliness-affects-mental-and-physical-health.md`
+  - match: a
+  - context: A text. A recurring walk. A group you attend.
+- `fixtures/explainers/gpt_5_4_mini/how-loneliness-affects-mental-and-physical-health.md`
+  - match: a
+  - context: A recurring walk. A group you attend. A habit that makes one person less alone today and slightly less alone next week.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: a
+  - context: A 2026 dyadic longitudinal study in the Journal of Marital and Family Therapy found that communication and attachment were linked with relationship satisfaction over time. A 2023 longitudinal study in Frontiers in Psychology found that empathy and stress interact in ways that shape relationship outcomes. A 2023 study in International Journal of Applied Positive Psychology found that coordinated goals in romantic relationships were associated with better life satisfaction a year later.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: a
+  - context: A fight about dishes may be about fairness, but it may also be about respect. A fight about sex may be about desire, but it may also be about rejection. A fight about spending may be about money, but it may also be about trust.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: if
+  - context: If you snapped, own it. If you misunderstood, say so. If you need a reset, ask for one.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: if
+  - context: If you want to start reading, leave the book open on the desk. If you want to write, leave the document open. If you want to exercise, put shoes by the door.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: after
+  - context: After coffee, write for five minutes. After brushing teeth, floss. After unlocking the laptop, open the draft.
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: if
+  - context: If you script everything, switch to three bullet points. If you hide behind your phone, keep it in your pocket for the first five minutes. If you always leave early, stay ten minutes longer.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: who
+  - context: Who plans? Who cleans? Who manages the invisible chores like appointments, birthdays, and household supplies?
+- `fixtures/gpt_5_2_chat/why_people_lose_motivation_after_big_goals/article.md`
+  - match: if
+  - context: If you ran one marathon, people ask about the next. If you shipped one great project, expectations rise. If you lost weight, maintenance feels like a permanent exam.
+- `fixtures/gpt_5_2_chat/why_people_lose_motivation_after_big_goals/article.md`
+  - match: if
+  - context: If the value was freedom, maybe the next target is a lighter workload. If the value was mastery, maybe the next target is deeper skill, not higher stakes. If the value was health, maybe the next target is consistency and recovery, not another punishing challenge.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: you
+  - context: You scroll to avoid anxiety. You snack to soothe stress. You skip the gym because the day already feels like too much.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: if
+  - context: If I get home late, then I will do the 5-minute version. If I miss a day, then I will restart tomorrow with the smallest version. If I travel, then my habit becomes “10 minutes of walking and 5 minutes of stretching.”
+- `fixtures/gpt_5_4/screen_time_and_child_attention/article.md`
+  - match: a
+  - context: A tablet buys ten quiet minutes in a waiting room. A cartoon helps a parent cook dinner. A phone keeps a child occupied during a long drive.
+- `fixtures/gpt_5_4/screen_time_and_child_attention/article.md`
+  - match: some
+  - context: Some are more sensitive to stimulation. Some are naturally impulsive or novelty-seeking. Some have neurodevelopmental differences that make self-regulation harder from the start.
+- `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/article.md`
+  - match: you
+  - context: You set a huge goal. You feel electric for three days. You buy the notebook, the app, the water bottle, the clean new identity.
+- `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/article.md`
+  - match: research
+  - context: Research on self-determination theory shows that motivation lasts longer when a goal feels chosen, meaningful, and tied to your own values, not just to status or pressure. Research on goal pursuit shows that people often get "stuck in the middle," with motivation dipping halfway through long efforts. Research on hedonic adaptation points to another rude fact: humans get used to wins fast.
+- `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/article.md`
+  - match: you
+  - context: You want the promotion because your field respects it. You want the body transformation because the internet has been yelling at you since 2014. You want the startup, the degree, or the bigger number because it seems like the kind of thing a capable adult should want.
+- `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/article.md`
+  - match: the
+  - context: The long goal gives direction. The weekly target keeps pressure humane. The daily minimum gives you a floor for bad days.
+- `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/article.md`
+  - match: if
+  - context: If you are training for an event, decide what the two weeks after the event look like. If you are shipping a project, decide what maintenance means. If you are chasing a number on a scale or a bank account, define the life that follows.
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: what
+  - context: What cue was missing? What friction got in the way? What version would be easier tomorrow?
+- `fixtures/gpt_5_4/why_people_wake_up_tired/article.md`
+  - match: you
+  - context: You did the thing. You went to bed. You stayed there.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: the
+  - context: The car registration expires. The dentist appointment gets postponed. The reply to your friend sits unsent long enough to become socially weird.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: the
+  - context: The dentist appointment gets postponed. The reply to your friend sits unsent long enough to become socially weird. The kitchen repair stays broken.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: the
+  - context: The reply to your friend sits unsent long enough to become socially weird. The kitchen repair stays broken. The savings transfer never starts.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: if
+  - context: If X happens, I will do Y. If it is 7 p.m., I will open the laptop and work for 20 minutes. If I sit down with coffee, I will answer one hard email before checking messages.
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - match: some
+  - context: Some people withdraw socially. Some become more cynical or sarcastic. Some overuse caffeine, alcohol, food, or other coping tools just to get through the week.
+- `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/article.md`
+  - match: if
+  - context: If your sleep is fragile, stress may wreck it first. If your stomach is sensitive, stress may head there. If your shoulders carry the emotional burden of modern life like a public works project, that is where the pain lands.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: the
+  - context: The emotional center of friendship still depends on repeated, embodied, ordinary contact. The platform changes. The requirement does not.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: for
+  - context: For dormant but long-running friendships, phone or video is often better than endless texting because it restores tone, timing, and the sense that another human is on the other end of the line. For newer friendships, shared activities do more than long messages ever will. For faraway friends, the goal is not perfect continuity.
+- `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/article.md`
+  - match: if
+  - context: If you want to read more, read after coffee. If you want to exercise, do it after you change clothes, not after you feel inspired. If you want to write, begin at the same desk, at the same time, with the same first task.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: if
+  - context: If you want to read more, begin with two pages, not a heroic chapter. If you want to run, begin with ten minutes. If you want to floss, begin with one quadrant.
+- `fixtures/gpt_5_4_mini/why_people_wake_up_tired/article.md`
+  - match: they
+  - context: They remember the time they got into bed, not the time they were truly asleep. They forget awakenings. They overestimate how much they got done after midnight.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: your
+  - context: Your competence is rising, even if you can't see it. Your neural pathways are being rewired. Your identity is shifting.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: it's
+  - context: It's understanding that the emotional terrain of change is predictable and manageable. It's building systems that work even when you don't feel like working. It's defining a deeper why that endures when excitement fades.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: it's
+  - context: It's building systems that work even when you don't feel like working. It's defining a deeper why that endures when excitement fades. It's breaking big dreams into daily actions that don't require heroic effort.
+- `fixtures/instagram/gpt_5_4/what-stress-does-to-the-body-and-how-to-slow-it-down.md`
+  - match: it
+  - context: It can make small tasks feel loud. It can make rest feel impossible. It can leave you tired and tense at the same time, which is a very rude combination.
+- `fixtures/instagram/gpt_5_4/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: start
+  - context: Start ugly. Start short. Start before you feel ready.
+- `fixtures/instagram/gpt_5_4/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: you
+  - context: “You were tired.” “You were mad it ended.” “You wanted to do it yourself.”
+- `fixtures/instagram/gpt_5_4/why-habits-fail-when-you-rely-on-willpower.md`
+  - match: after
+  - context: After coffee, take the vitamin. After brushing your teeth, floss one tooth. After opening the laptop, write one sentence before touching email.
+- `fixtures/instagram/gpt_5_4/why-overloaded-children-seem-rude.md`
+  - match: they
+  - context: They snap. They yell "no." They ignore you.
+- `fixtures/instagram/gpt_5_4/why-overloaded-children-seem-rude.md`
+  - match: they
+  - context: They yell "no." They ignore you. They throw the shoes you just handed them like you delivered a personal insult.
+- `fixtures/instagram/gpt_5_4/why-rest-is-not-the-same-as-recovery.md`
+  - match: did
+  - context: Did my body get a chance to unclench? Did my brain get a break from input? Did I have any time that was not useful to someone else?
+- `fixtures/instagram/gpt_5_4/why-school-drop-off-is-hard.md`
+  - match: some
+  - context: Some kids cry. Some cling. Some go silent.
+- `fixtures/instagram/gpt_5_4/why-school-drop-off-is-hard.md`
+  - match: some
+  - context: Some cling. Some go silent. Some get silly, angry, or "difficult."
+- `fixtures/instagram/gpt_5_4_mini/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: the
+  - context: The banana broke. The park ended. The answer was no.
+- `fixtures/instagram/gpt_5_4_mini/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: the
+  - context: The park ended. The answer was no. The emotional volume goes straight to max.
+- `fixtures/instagram/gpt_5_4_mini/why-habits-fail-when-you-rely-on-willpower.md`
+  - match: after
+  - context: After coffee, open the book. After brushing your teeth, floss. After you sit at your desk, write one sentence before checking email.
+- `fixtures/instagram/gpt_5_4_mini/why-loneliness-shows-up-in-busy-lives.md`
+  - match: one
+  - context: One honest text. One walk with no multitasking. One recurring plan that does not depend on perfect timing.
+- `fixtures/instagram/gpt_5_4_mini/why-loneliness-shows-up-in-busy-lives.md`
+  - match: a
+  - context: A voice note. A long coffee. A conversation where nobody is pretending to be fine.
+- `fixtures/instagram/gpt_5_4_mini/why-people-feel-anxious-in-ordinary-social-situations.md`
+  - match: a
+  - context: A meeting. A school pickup. A small-talk conversation.
+- `fixtures/instagram/gpt_5_4_mini/why-people-feel-anxious-in-ordinary-social-situations.md`
+  - match: it
+  - context: It looks like tolerating one awkward conversation without escaping early. It looks like leaving a meeting and realizing your body did not fall apart. It looks like proving to your own nervous system that ordinary life is not an emergency.
+- `fixtures/instagram/gpt_5_4_mini/why-rest-is-not-the-same-as-recovery.md`
+  - match: do
+  - context: Do I feel clearer? Do I feel less reactive? Do I feel more able to start again?
+- `fixtures/linkedin/gpt_5_4/biggest-team-communication-mistake.md`
+  - match: they
+  - context: They verify it. They name owners. They use dates instead of "soon."
+- `fixtures/linkedin/gpt_5_4/biggest-team-communication-mistake.md`
+  - match: they
+  - context: They name owners. They use dates instead of "soon." They write the decision down while everyone is still there to correct it.
+- `fixtures/linkedin/gpt_5_4/what-healthy-workplace-culture-looks-like.md`
+  - match: it
+  - context: It looks like a manager who gives clear priorities instead of vague pressure. It looks like someone saying, "I was wrong," without the room going stiff. It looks like meetings where people leave knowing who owns what, by when, and why it matters.
+- `fixtures/linkedin/gpt_5_4/what-healthy-workplace-culture-looks-like.md`
+  - match: it
+  - context: It means people can disagree without damage. It means commitments are reliable. It means managers do not hoard information, and teams do not waste half their energy decoding moods, politics, or mixed signals.
+- `fixtures/linkedin/gpt_5_4/what-healthy-workplace-culture-looks-like.md`
+  - match: how
+  - context: How are mistakes handled? How are decisions made? How often do people have to guess?
+- `fixtures/linkedin/gpt_5_4/why-consistency-matters-more-than-motivation.md`
+  - match: they
+  - context: They are the ones who keep doing the basic things well. They prepare before meetings. They follow up when they said they would.
+- `fixtures/linkedin/gpt_5_4/why-consistency-matters-more-than-motivation.md`
+  - match: they
+  - context: They prepare before meetings. They follow up when they said they would. They ship the draft.
+- `fixtures/linkedin/gpt_5_4/why-consistency-matters-more-than-motivation.md`
+  - match: they
+  - context: They follow up when they said they would. They ship the draft. They make the hard call instead of circling it for six days like it might solve itself out of guilt.
+- `fixtures/linkedin/gpt_5_4/why-high-performers-procrastinate.md`
+  - match: you
+  - context: You tweak the outline. You read one more article. You call it preparation because that sounds better than avoidance.
+- `fixtures/linkedin/gpt_5_4/why-modern-work-makes-people-feel-constantly-behind.md`
+  - match: you
+  - context: You clear your inbox, then Slack fills up. You finish the deck, then someone adds "just one more angle." You close the sprint, then the next planning cycle starts before the team has even caught its breath.
+- `fixtures/linkedin/gpt_5_4/why-most-people-misunderstand-leadership.md`
+  - match: they
+  - context: They asked better questions. They named tradeoffs without dressing them up. They noticed who had gone quiet.
+- `fixtures/linkedin/gpt_5_4/why-most-people-misunderstand-leadership.md`
+  - match: they
+  - context: They named tradeoffs without dressing them up. They noticed who had gone quiet. They were willing to say, “I don’t know yet,” without making the room feel abandoned.
+- `fixtures/linkedin/gpt_5_4/why-most-people-misunderstand-leadership.md`
+  - match: it
+  - context: It is helping people face reality without panic. It is making decisions that other people can trust, even if they do not love every part of them. It is creating enough safety for someone to say, “We are off track,” before the damage gets expensive.
+- `fixtures/linkedin/gpt_5_4/why-smart-people-overcomplicate-simple-problems.md`
+  - match: too
+  - context: Too plain. Too obvious. Too close to something anyone in the room could have said.
+- `fixtures/linkedin/gpt_5_4/why-smart-people-overcomplicate-simple-problems.md`
+  - match: more
+  - context: More frameworks. More caveats. More slides.
+- `fixtures/linkedin/gpt_5_4/why-smart-people-overcomplicate-simple-problems.md`
+  - match: more
+  - context: More caveats. More slides. More language between the problem and the decision.
+- `fixtures/linkedin/gpt_5_4_mini/biggest-team-communication-mistake.md`
+  - match: they
+  - context: They repeat decisions in plain language. They write down names and dates. They ask the annoying follow-up question before the confusion grows teeth.
+- `fixtures/linkedin/gpt_5_4_mini/biggest-team-communication-mistake.md`
+  - match: it
+  - context: It saves time. It cuts down on "I thought you meant..." emails. It also lowers the social cost of working together, because people stop guessing and start moving.
+- `fixtures/linkedin/gpt_5_4_mini/burnout-taught-me-about-productivity.md`
+  - match: i
+  - context: I answered messages fast. I packed my calendar. I kept a dozen tabs open and told myself that meant I was moving quickly.
+- `fixtures/linkedin/gpt_5_4_mini/what-healthy-workplace-culture-looks-like.md`
+  - match: if
+  - context: If speaking up gets you ignored, people stop speaking up. If overwork gets rewarded, people keep overworking. If the safest way to survive is to stay quiet, you will get silence, not trust.
+- `fixtures/linkedin/gpt_5_4_mini/what-healthy-workplace-culture-looks-like.md`
+  - match: they
+  - context: They are honest. They make expectations explicit. They handle tension directly.
+- `fixtures/linkedin/gpt_5_4_mini/what-healthy-workplace-culture-looks-like.md`
+  - match: they
+  - context: They make expectations explicit. They handle tension directly. They care about results, but they do not use results as an excuse to treat people like disposable parts.
+- `fixtures/linkedin/gpt_5_4_mini/why-consistency-matters-more-than-motivation.md`
+  - match: one
+  - context: One page. One walk. One follow-up.
+- `fixtures/linkedin/gpt_5_4_mini/why-consistency-matters-more-than-motivation.md`
+  - match: one
+  - context: One walk. One follow-up. One draft.
+- `fixtures/linkedin/gpt_5_4_mini/why-high-performers-procrastinate.md`
+  - match: more
+  - context: More planning. More polish. More time.
+- `fixtures/linkedin/gpt_5_4_mini/why-high-performers-procrastinate.md`
+  - match: it
+  - context: It calls that caution. It calls that standards. It calls that professionalism.
+- `fixtures/linkedin/gpt_5_4_mini/why-modern-work-makes-people-feel-constantly-behind.md`
+  - match: you
+  - context: You close one task and three more arrive. You clear your inbox and the meeting notes turn into new work. You finish the deck, then someone wants a different version with “just a few changes.”
+- `fixtures/linkedin/gpt_5_4_mini/why-modern-work-makes-people-feel-constantly-behind.md`
+  - match: you
+  - context: You can spend the whole day in motion and still feel like nothing moved. You answered everything. You reacted fast.
+- `fixtures/linkedin/gpt_5_4_mini/why-modern-work-makes-people-feel-constantly-behind.md`
+  - match: you
+  - context: You answered everything. You reacted fast. You stayed on top of the noise.
+- `fixtures/linkedin/gpt_5_4_mini/why-most-people-misunderstand-leadership.md`
+  - match: it
+  - context: It is the willingness to name the hard thing early, before everyone has invested in denial. It is the discipline to make a decision with incomplete information and still stay accountable when the outcome is messy. It is the humility to share credit when things go well and absorb blame when they do not.
+- `fixtures/linkedin/gpt_5_4_mini/why-most-people-misunderstand-leadership.md`
+  - match: they
+  - context: They were steady. They listened longer than I expected. They asked questions that revealed what was happening, not what everyone wished were happening.
+- `fixtures/linkedin/gpt_5_4_mini/why-most-people-misunderstand-leadership.md`
+  - match: they
+  - context: They listened longer than I expected. They asked questions that revealed what was happening, not what everyone wished were happening. They created enough trust for people to say, "This is not working," without fear of being seen as difficult.
+- `fixtures/linkedin/gpt_5_4_mini/why-smart-people-overcomplicate-simple-problems.md`
+  - match: one
+  - context: One more model. One more meeting. One more round of thinking that feels responsible and productive, but is really just a delay with a nice shirt on.
+- `fixtures/linkedin/gpt_5_4_mini/why-smart-people-overcomplicate-simple-problems.md`
+  - match: they
+  - context: They can say, “This is the real issue.” They can name the next move. They can leave their intelligence out of the room long enough to let it be useful.
+- `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - match: you
+  - context: You do not need to feel ready. You do not need to feel motivated. You just need to start — and starting, it turns out, is its own kind of motivation.
+- `fixtures/opus_4_6/screen_time_and_child_attention/article.md`
+  - match: for
+  - context: For children 18 to 24 months, any screen time should involve high-quality educational content watched together with a caregiver. For ages two to five, one hour per day of high-quality programming remains the benchmark. For children six and older, the emphasis shifts to ensuring that screen habits do not crowd out the activities essential for healthy development.
+- `fixtures/opus_4_6/why_couples_stop_communicating/article.md`
+  - match: the
+  - context: The questions become logistical. The stories stop being told. The silence that once felt comfortable begins to feel like distance.
+- `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: the
+  - context: The gym bag stays in the closet. The language app sends notifications to no one. The business plan sits in a half-finished Google Doc.
+- `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`
+  - match: if
+  - context: If you want to eat more fruit, put it on the counter at eye level instead of in the back of the fridge. If you want to read more, leave a book on your pillow. If you want to stop checking your phone first thing in the morning, charge it in another room.
+- `fixtures/sonnet_4_6/social_anxiety_in_daily_life/article.md`
+  - match: the
+  - context: The most important thing is to start somewhere: a conversation with a doctor, a therapist, an online CBT program. The feared social catastrophe almost never comes. The relief, when anxiety finally loosens its grip, consistently does.
+- `fixtures/twitter/gpt_5_4/why-children-have-tantrums.md`
+  - match: you
+  - context: “You were mad.” “You wanted to stay.” “You calmed down.”
+- `fixtures/twitter/gpt_5_4/why-loneliness-affects-mental-and-physical-health.md`
+  - match: one
+  - context: One text. One walk. One weekly group.
+- `fixtures/twitter/gpt_5_4/why-loneliness-affects-mental-and-physical-health.md`
+  - match: one
+  - context: One walk. One weekly group. One plan with a clear time and place.
+- `fixtures/twitter/gpt_5_4_mini/why-habits-fail-even-with-motivation.md`
+  - match: after
+  - context: After coffee, read. After brushing teeth, floss. After opening the laptop, write.
+- `fixtures/twitter/gpt_5_4_mini/why-loneliness-affects-mental-and-physical-health.md`
+  - match: less
+  - context: Less trust. Less energy. Less reason to reach out.
+- `fixtures/why_do_we_dream.md`
+  - match: stage
+  - context: Stage 1 is the lightest stage of sleep, where we are just drifting off. Stage 2 is a period of deep relaxation where our brain waves slow down, and we begin to disengage from our surroundings. Stage 3 is the deepest stage of sleep, where our body repairs and regenerates itself.
+

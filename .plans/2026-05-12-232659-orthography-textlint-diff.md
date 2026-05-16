@@ -1,0 +1,522 @@
+# Orthography textlint diff
+
+Rust was run with `em-dashes,smart-quotes,sentence-case,exclamation-density,fake-timestamps,colon-dramatic`. Textlint was run with the migrated orthography rules on the same 202 fixture files.
+
+## Counts
+
+- colon-dramatic: Rust evidence 69, Rust match-count 69, textlint 76
+- em-dashes: Rust evidence 92, Rust match-count 134, textlint 134
+- exclamation-density: Rust evidence 1, Rust match-count 1, textlint 1
+- sentence-case: Rust evidence 139, Rust match-count 139, textlint 139
+- smart-quotes: Rust evidence 343, Rust match-count 710, textlint 344
+
+## File-level differences
+
+### colon-dramatic
+
+- `fixtures/gpt_5_2_chat/screen_time_and_child_attention/article.md`: Rust 0, textlint 1
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`: Rust 15, textlint 16
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md`: Rust 2, textlint 3
+- `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md`: Rust 0, textlint 1
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`: Rust 0, textlint 1
+- `fixtures/linkedin/gpt_5_4/what-healthy-workplace-culture-looks-like.md`: Rust 1, textlint 2
+- `fixtures/twitter/gpt_5_4/why-habits-fail-even-with-motivation.md`: Rust 0, textlint 1
+
+### em-dashes
+
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`: Rust 12, textlint 20
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`: Rust 7, textlint 9
+- `fixtures/haiku/screen_time_and_child_attention/article.md`: Rust 6, textlint 10
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`: Rust 7, textlint 14
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`: Rust 7, textlint 10
+- `fixtures/haiku/why_couples_stop_communicating/article.md`: Rust 12, textlint 21
+- `fixtures/haiku/why_friendships_fade/article.md`: Rust 13, textlint 17
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`: Rust 12, textlint 14
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`: Rust 11, textlint 14
+
+### exclamation-density
+
+- No file-level evidence-count differences.
+
+### sentence-case
+
+- No file-level evidence-count differences.
+
+### smart-quotes
+
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`: Rust 18, textlint 19
+
+## Textlint-only reviewed contexts
+
+- `fixtures/gpt_5_2_chat/screen_time_and_child_attention/article.md` `colon-dramatic`
+  - match: "What happened?"
+  - context: **4. Co-view sometimes and talk about what they see.** Simple questions build media literacy: "What happened?", "Was that kind?", "Is this trying to sell something?"
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: they avoid it.
+  - context: Most couples do not wake up one morning and decide, "We should stop talking." Communication usually fades through a thousand small moments: a tense tone, an unanswered question, a hard topic postponed, a repair not made. Over time, partners start doing what humans do when something feels painful or pointless: they avoid it.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: Who initiates?
+  - context: Many couples carry a quiet ledger: Who initiates? Who plans? Who cleans? Who manages the invisible chores like appointments, birthdays, and household supplies? When one person feels overburdened or unappreciated, they often stop asking clearly and start hinting, testing, or withdrawing. The other person may not understand what is needed, and the gap widens.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: talking leads to pain.
+  - context: If disagreements regularly end in yelling, contempt, stonewalling, or punishment, the nervous system learns a simple lesson: talking leads to pain. Silence is not always apathy; it can be protection. Avoidance prevents blowups short-term, but it also prevents solutions and lowers intimacy.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: Mind reading motives.
+  - context: **Mistake 3: Mind reading motives.**
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: Talking when emotionally flooded.
+  - context: **Mistake 4: Talking when emotionally flooded.**
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: Bad timing and ambush conversations.
+  - context: **Mistake 5: Bad timing and ambush conversations.**
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: 30 p.m.
+  - context: Starting a heavy topic at 11:30 p.m., in the car, right before work, or mid-scroll almost guarantees a bad outcome. It turns "communication" into a threat rather than a tool.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - context: "You never help."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: "I’m overwhelmed.
+  - context: "I’m overwhelmed. Can you take dishes tonight, and can we talk Sunday about a better split?"
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: "I miss feeling pursued.
+  - context: Instead: "I miss feeling pursued. Can we plan one date this month with no phones?"
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: "I’m too heated.
+  - context: "I’m too heated. I need 20 minutes. I’m not abandoning this. Let’s resume at 7:30."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - match: 30."
+  - context: "I’m too heated. I need 20 minutes. I’m not abandoning this. Let’s resume at 7:30."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md` `colon-dramatic`
+  - context: No phones during meals.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “Good habits”
+  - context: Most people do not fail at habits because they are lazy. They fail because they are trying to change behavior in a way that fights basic psychology: our brains prioritize what is easy, familiar, emotionally soothing, and immediately rewarding. “Good habits” often ask for the opposite: effort now, payoff later.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “decide”
+  - context: Habits are not willpower trophies. They are patterns the brain automates to save energy. When something becomes habitual, you stop having to “decide” so often. That is the goal: making the desired behavior the default, not the daily debate.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “lower risk of disease” competes poorly against an immediate benefit like “relief, comfort, fun, or escape.”
+  - context: Humans heavily discount future rewards. A long-term benefit like “lower risk of disease” competes poorly against an immediate benefit like “relief, comfort, fun, or escape.” That is why habits with delayed payoffs (saving money, exercising, learning) are hard, while habits with instant rewards (snacking, doomscrolling, procrastination) are sticky.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “bad habits”
+  - context: Many “bad habits” are not random; they are coping strategies. You scroll to avoid anxiety. You snack to soothe stress. You skip the gym because the day already feels like too much. If you ignore the emotional function of a behavior, you will keep trying to remove something your brain believes it needs.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “I’m someone who keeps promises to myself”
+  - context: People are more consistent with behaviors that match their identity (“I’m someone who keeps promises to myself”) than with behaviors that feel like temporary self-improvement projects. The more a habit feels like "who you are," the less it depends on mood.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “
+  - context: “Eat healthier” is not a behavior; it is a wish. The brain needs a specific action it can execute in a specific context. Vague goals force you to decide from scratch every day, which is exhausting.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: ”
+  - context: “Eat healthier” is not a behavior; it is a wish. The brain needs a specific action it can execute in a specific context. Vague goals force you to decide from scratch every day, which is exhausting.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “I’m a fit person”) rather than at the level of the next repeatable action (“I walk for 10 minutes after dinner”
+  - context: People frequently choose habits at the level of the desired identity (“I’m a fit person”) rather than at the level of the next repeatable action (“I walk for 10 minutes after dinner”). Big habits fail because they demand too much friction, time, and planning right away.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “I already ruined it, so it doesn’t matter,”
+  - context: Missing one day is interpreted as failure rather than data. The mind says, “I already ruined it, so it doesn’t matter,” and the gap grows. In reality, habit success is mostly about recovering quickly after a miss.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “good habit”
+  - context: Under stress, the brain defaults to familiar patterns and seeks quick comfort. Sleep deprivation worsens impulse control and makes effort feel more expensive. When you are drained, the “good habit” competes with survival mode.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “hack”
+  - context: The point of strategy is not to “hack” yourself. It is to make the desired behavior easier to start, easier to repeat, and more rewarding than the alternative.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “After I pour my morning coffee, I will write for 10 minutes.”  \n“
+  - context: “After I pour my morning coffee, I will write for 10 minutes.”  
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: ’s gym clothes.”  \n“
+  - context: “After I brush my teeth at night, I will set out tomorrow’s gym clothes.”  
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “Should I do it?”
+  - context: This is powerful because it reduces decision-making. You are not asking, “Should I do it?” You are linking the behavior to a reliable trigger.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md` `smart-quotes`
+  - match: “startup cost”
+  - context: Most habits are won or lost at the start. Reduce the “startup cost”:
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md` `colon-dramatic`
+  - match: 00 a.m.
+  - context: Implementation intentions are useful here. That phrase sounds like it belongs in a seminar room with bad coffee, but the idea is simple: decide in advance when and where you will act. "At 9:00 a.m., after I sit down at my desk, I will spend fifteen minutes outlining the proposal." A vague intention asks the future to be generous. A concrete plan gives it fewer escape routes.
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md` `colon-dramatic`
+  - match: "I avoided this yesterday.
+  - context: Self-compassion matters more than people expect. People who beat themselves up for procrastinating often create more distress, which feeds more delay. A better move is blunt honesty without drama: "I avoided this yesterday. I’m starting with ten minutes now." That tone keeps responsibility intact without turning the day into a courtroom.
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md` `colon-dramatic`
+  - match: 00 p.m.
+  - context: Social accountability can also help. Tell a coworker what you will send by 3:00 p.m. Book a body-doubling session with a friend. Work in a library. Join a study or writing group. Humans are inconsistent alone and often better when witnessed.
+- `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md` `colon-dramatic`
+  - match: no Slack after 6 p.m.
+  - context: Boundaries matter, but vague boundaries are weak boundaries. “I need better balance” is not specific enough to protect anyone. Better versions sound like: no Slack after 6 p.m., no meetings during lunch, one day a week without late calls, or a documented limit on how many urgent requests can be handled at once. Burnout often thrives in ambiguity, so recovery needs concrete lines.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md` `colon-dramatic`
+  - match: 30 a.m.
+  - context: That is why the advice that sounds dramatic usually fails. Big declarations feel good and fade fast. Small routines feel dull and last longer. The brain does not care about your announcement. It cares about what you do on Tuesday at 7:30 a.m. in the same kitchen, with the same cue, three weeks in a row.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Procrastination—the act of delaying tasks until the last moment—is a nearly universal human experience. Yet for millions of adults, procrastination has become far more than a minor habit; it's a chronic pattern that undermines productivity, erodes well-being, and creates unnecessary stress. Research indicates that 20-25% of adults worldwide are chronic procrastinators, struggling with the persistent tendency to postpone important work despite knowing the negative consequences. Understanding why we procrastinate, how it affects our lives, and what strategies can help us overcome this behavior is essential for anyone seeking to reclaim their time and peace of mind.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Procrastination—the act of delaying tasks until the last moment—is a nearly universal human experience. Yet for millions of adults, procrastination has become far more than a minor habit; it's a chronic pattern that undermines productivity, erodes well-being, and creates unnecessary stress. Research indicates that 20-25% of adults worldwide are chronic procrastinators, struggling with the persistent tendency to postpone important work despite knowing the negative consequences. Understanding why we procrastinate, how it affects our lives, and what strategies can help us overcome this behavior is essential for anyone seeking to reclaim their time and peace of mind.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: At its core, procrastination is a form of emotion regulation—albeit an ineffective one. When faced with a task, many adults experience negative emotions such as anxiety, frustration, or self-doubt. Rather than confronting these feelings directly, procrastinators focus on alleviating the discomfort in the moment by avoiding the task. This provides temporary emotional relief but ultimately makes the problem worse. Research shows that people who procrastinate often don't view themselves as capable of changing the situation, so instead of focusing on the work itself, they focus on managing their emotional reactions—a strategy that leaves tasks undone and stress mounting.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: At its core, procrastination is a form of emotion regulation—albeit an ineffective one. When faced with a task, many adults experience negative emotions such as anxiety, frustration, or self-doubt. Rather than confronting these feelings directly, procrastinators focus on alleviating the discomfort in the moment by avoiding the task. This provides temporary emotional relief but ultimately makes the problem worse. Research shows that people who procrastinate often don't view themselves as capable of changing the situation, so instead of focusing on the work itself, they focus on managing their emotional reactions—a strategy that leaves tasks undone and stress mounting.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: For many adults, procrastination is driven by perfectionism. The fear that work won't meet impossibly high standards can be paralyzing, leading people to delay starting until they feel ready or inspired—a moment that often never comes. This perfectionism is frequently intertwined with fear of failure, where the anxiety about producing subpar work becomes so overwhelming that avoiding the task altogether seems preferable to risking disappointment.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Self-efficacy—the belief in one's ability to succeed—plays a crucial role in procrastination. Adults with low self-efficacy doubt their capacity to complete tasks effectively, making it easier to rationalize delay. Additionally, procrastination is often fueled by impulsivity, where the immediate gratification of checking social media or browsing the internet outweighs the delayed reward of task completion. This impulse control challenge becomes especially pronounced in our digitally connected world, where distractions are literally at our fingertips.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Self-efficacy—the belief in one's ability to succeed—plays a crucial role in procrastination. Adults with low self-efficacy doubt their capacity to complete tasks effectively, making it easier to rationalize delay. Additionally, procrastination is often fueled by impulsivity, where the immediate gratification of checking social media or browsing the internet outweighs the delayed reward of task completion. This impulse control challenge becomes especially pronounced in our digitally connected world, where distractions are literally at our fingertips.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Procrastination creates a vicious cycle of stress and anxiety. Early in a project timeline, procrastinators often report lower stress levels because the deadline feels distant. However, as deadlines approach, stress spikes dramatically, leading to rushed work, reduced quality, and increased anxiety. Chronic procrastination raises cortisol levels—the body's primary stress hormone—which impairs memory, focus, concentration, and overall mental health. This stress becomes a constant background noise in daily life, affecting mood, motivation, and relationships with colleagues and loved ones.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Procrastination creates a vicious cycle of stress and anxiety. Early in a project timeline, procrastinators often report lower stress levels because the deadline feels distant. However, as deadlines approach, stress spikes dramatically, leading to rushed work, reduced quality, and increased anxiety. Chronic procrastination raises cortisol levels—the body's primary stress hormone—which impairs memory, focus, concentration, and overall mental health. This stress becomes a constant background noise in daily life, affecting mood, motivation, and relationships with colleagues and loved ones.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: The research evidence is clear: procrastination is significantly associated with depression, anxiety, and other mental health challenges. One longitudinal study found that procrastination predicts subsequent mental health problems, with procrastinators experiencing higher levels of depression and anxiety symptoms over time. The negative emotions associated with procrastination—boredom, helplessness, anger, and shame—accumulate and compound, creating a mental health burden that extends well beyond the specific task being avoided.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: The research evidence is clear: procrastination is significantly associated with depression, anxiety, and other mental health challenges. One longitudinal study found that procrastination predicts subsequent mental health problems, with procrastinators experiencing higher levels of depression and anxiety symptoms over time. The negative emotions associated with procrastination—boredom, helplessness, anger, and shame—accumulate and compound, creating a mental health burden that extends well beyond the specific task being avoided.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Rather than responding to procrastination with shame and self-criticism—emotions that often worsen the cycle—practice self-compassion. Acknowledge that struggling with a task is part of the human experience, treat yourself kindly, and refocus on moving forward. Research shows that self-compassion actually increases motivation and reduces the emotional resistance to tackling difficult work.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Rather than responding to procrastination with shame and self-criticism—emotions that often worsen the cycle—practice self-compassion. Acknowledge that struggling with a task is part of the human experience, treat yourself kindly, and refocus on moving forward. Research shows that self-compassion actually increases motivation and reduces the emotional resistance to tackling difficult work.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Plan your days in advance rather than frantically deciding what to do each morning. Use time management techniques that reduce anxiety and emphasize the satisfaction and rewards of task completion. Setting specific implementation intentions—"When X happens, I will do Y"—has been shown to be particularly effective in overcoming procrastination.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Plan your days in advance rather than frantically deciding what to do each morning. Use time management techniques that reduce anxiety and emphasize the satisfaction and rewards of task completion. Setting specific implementation intentions—"When X happens, I will do Y"—has been shown to be particularly effective in overcoming procrastination.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Regular check-ins with an accountability partner—whether a colleague, friend, or professional—can provide motivation and help you stay committed to your goals. Knowing that someone will ask about your progress creates external pressure that complements internal motivation. Visualization techniques, where you mentally rehearse completing a task successfully, can also enhance your sense of capability.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Regular check-ins with an accountability partner—whether a colleague, friend, or professional—can provide motivation and help you stay committed to your goals. Knowing that someone will ask about your progress creates external pressure that complements internal motivation. Visualization techniques, where you mentally rehearse completing a task successfully, can also enhance your sense of capability.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Minimize digital distractions by using website blockers during focused work periods, create a dedicated workspace free from interruptions, and establish routines that signal to your brain that it's time to work. Sometimes the simplest interventions—removing your phone from sight or closing unnecessary browser tabs—can have outsized effects on your ability to focus.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Minimize digital distractions by using website blockers during focused work periods, create a dedicated workspace free from interruptions, and establish routines that signal to your brain that it's time to work. Sometimes the simplest interventions—removing your phone from sight or closing unnecessary browser tabs—can have outsized effects on your ability to focus.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md` `em-dashes`
+  - match: —
+  - context: Procrastination is a complex behavior rooted in emotional regulation challenges, perfectionism, low self-efficacy, and environmental factors. Its consequences extend far beyond missed deadlines, affecting mental health, physical well-being, and overall quality of life. Yet the research is equally clear that procrastination is changeable. By understanding the specific causes of your procrastination, implementing evidence-based strategies tailored to your triggers, and seeking support when needed, you can reclaim your time, reduce chronic stress, and build a life characterized by momentum rather than last-minute scrambling. The path forward doesn't require perfection—just consistent, compassionate action toward the person you want to become.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md` `em-dashes`
+  - match: —
+  - context: Today's workplace has introduced a new dimension to burnout: what experts call "quiet burnout." A 2026 trend report reveals that 55% of the workforce is currently "quietly cracking"—maintaining their professional performance on the surface while experiencing significant internal distress. This phenomenon particularly affects high-achievers who continue to meet deadlines and complete projects while feeling exhausted and detached internally. Younger workers are hitting hardest, with Gen Z and millennials experiencing burnout at higher rates than any other demographic, often while simultaneously managing debt, economic uncertainty, and caregiving responsibilities.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md` `em-dashes`
+  - match: —
+  - context: One of the clearest early signs of burnout is waking up tired despite a full night's sleep. This persistent exhaustion—that continues throughout the workday and isn't relieved by rest—signals deeper workplace strain rather than simple fatigue. Burnout drains your energy reserves in ways that normal sleep often cannot repair.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md` `em-dashes`
+  - match: —
+  - context: One of the clearest early signs of burnout is waking up tired despite a full night's sleep. This persistent exhaustion—that continues throughout the workday and isn't relieved by rest—signals deeper workplace strain rather than simple fatigue. Burnout drains your energy reserves in ways that normal sleep often cannot repair.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md` `em-dashes`
+  - match: —
+  - context: Watch for increased irritability, particularly in interactions with colleagues, family, or friends. You may find yourself becoming cynical about work or feeling detached from projects you once cared about. Some people experience reduced empathy or compassion—a notable shift from their typical personality. Others withdraw from colleagues, skip social gatherings, or avoid workplace communication.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md` `em-dashes`
+  - match: —
+  - context: The mechanisms underlying these health effects involve multiple pathways. Burnout disrupts sleep, which impairs the body's ability to repair and regulate hormones. It triggers prolonged stress responses that elevate cortisol levels, leading to inflammation throughout the body. Additionally, burnout can trigger metabolic syndrome and increase concentrations of proinflammatory cytokines—immune signaling molecules associated with chronic disease.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md` `em-dashes`
+  - match: —
+  - context: Recovery requires four types of rest. Physical rest includes adequate sleep (7–9 hours nightly) and gentle movement. Mental rest means giving your brain breaks from decision-making and problem-solving—activities like meditating, being in nature, or creative pursuits that don't involve work. Emotional rest involves spending time with supportive people who don't require emotional labor from you. Spiritual rest reconnects you with meaning and purpose, whether through spiritual practices, volunteering, or reflection on your values.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md` `em-dashes`
+  - match: —
+  - context: After returning to work, implement strong boundaries between work and personal time. Create a ritual that marks the end of your workday—such as changing clothes, taking a different route home, or a short walk. Avoid checking work communications outside designated hours. These boundaries give your nervous system essential recovery time.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md` `em-dashes`
+  - match: —
+  - context: Burnout recovery is possible, but it requires taking action early and committing to comprehensive changes across multiple life domains. The warning signs are real signals from your mind and body that something needs to change. Rather than pushing through or hoping burnout will resolve on its own, addressing it directly—through rest, professional support, boundary-setting, and lifestyle changes—enables genuine recovery.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md` `em-dashes`
+  - match: —
+  - context: Burnout recovery is possible, but it requires taking action early and committing to comprehensive changes across multiple life domains. The warning signs are real signals from your mind and body that something needs to change. Rather than pushing through or hoping burnout will resolve on its own, addressing it directly—through rest, professional support, boundary-setting, and lifestyle changes—enables genuine recovery.
+- `fixtures/haiku/screen_time_and_child_attention/article.md` `em-dashes`
+  - match: —
+  - context: However, researchers emphasize a crucial distinction: correlation does not equal causation. According to pediatric behavioral health specialists, there is still not enough evidence to support a definitive cause-and-effect link between heightened technology use and ADHD development. The relationship appears bidirectional—excessive screen time may contribute to attention problems, but children with existing attention difficulties may also gravitate toward screens more readily.
+- `fixtures/haiku/screen_time_and_child_attention/article.md` `em-dashes`
+  - match: —
+  - context: An important nuance often missed in discussions about screen time is that not all screen content affects children equally. Fast-paced, visually stimulating media—such as action-filled video games or rapid-fire cartoons—appears more detrimental to attention span development than slower, interactive content.
+- `fixtures/haiku/screen_time_and_child_attention/article.md` `em-dashes`
+  - match: —
+  - context: An important nuance often missed in discussions about screen time is that not all screen content affects children equally. Fast-paced, visually stimulating media—such as action-filled video games or rapid-fire cartoons—appears more detrimental to attention span development than slower, interactive content.
+- `fixtures/haiku/screen_time_and_child_attention/article.md` `em-dashes`
+  - match: —
+  - context: The overstimulation from fast-paced media can essentially train children's brains to expect constant novelty and rapid shifts in visual input. When children transition from this stimulating digital environment to slower-paced, real-world activities—like reading a book, doing homework, or having a conversation—their brains struggle with the adjustment. Rapid shifts between short videos and games demonstrably reduce a child's ability to sustain attention on slower, real-world tasks.
+- `fixtures/haiku/screen_time_and_child_attention/article.md` `em-dashes`
+  - match: —
+  - context: The overstimulation from fast-paced media can essentially train children's brains to expect constant novelty and rapid shifts in visual input. When children transition from this stimulating digital environment to slower-paced, real-world activities—like reading a book, doing homework, or having a conversation—their brains struggle with the adjustment. Rapid shifts between short videos and games demonstrably reduce a child's ability to sustain attention on slower, real-world tasks.
+- `fixtures/haiku/screen_time_and_child_attention/article.md` `em-dashes`
+  - match: —
+  - context: **Attention and Academic Difficulties**: Declining grades, difficulty following directions, trouble transitioning between tasks, and problems with sustained focus on non-screen activities. Children with excessive screen exposure often struggle with executive function—the mental processes needed for planning, organizing, and completing complex tasks.
+- `fixtures/haiku/screen_time_and_child_attention/article.md` `em-dashes`
+  - match: —
+  - context: **Create Tech-Free Zones and Times**: Designate certain areas of your home—particularly bedrooms—as screen-free spaces. Similarly, establish screen-free times, such as during mealtimes, the first hour after school, or one night per week as a complete digital detox.
+- `fixtures/haiku/screen_time_and_child_attention/article.md` `em-dashes`
+  - match: —
+  - context: **Create Tech-Free Zones and Times**: Designate certain areas of your home—particularly bedrooms—as screen-free spaces. Similarly, establish screen-free times, such as during mealtimes, the first hour after school, or one night per week as a complete digital detox.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: Beyond genetics, researchers are discovering that the condition may be rooted in actual changes within the brain and even the gut. The brain's amygdala, which processes fear and threat detection, can be hyperactive in people with social anxiety. Additionally, neurotransmitters like serotonin and dopamine—chemical messengers in the brain—play roles in mood regulation and reward processing, and imbalances in these systems can contribute to anxiety symptoms.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: Beyond genetics, researchers are discovering that the condition may be rooted in actual changes within the brain and even the gut. The brain's amygdala, which processes fear and threat detection, can be hyperactive in people with social anxiety. Additionally, neurotransmitters like serotonin and dopamine—chemical messengers in the brain—play roles in mood regulation and reward processing, and imbalances in these systems can contribute to anxiety symptoms.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: Our early life experiences shape how we respond to social situations. Children raised in emotionally inconsistent environments—receiving warmth one moment and coldness the next—are significantly more likely to develop social anxiety in adulthood. This inconsistency can create confusion about social safety and heighten vigilance for signs of rejection or criticism.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: Our early life experiences shape how we respond to social situations. Children raised in emotionally inconsistent environments—receiving warmth one moment and coldness the next—are significantly more likely to develop social anxiety in adulthood. This inconsistency can create confusion about social safety and heighten vigilance for signs of rejection or criticism.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: The good news is that social anxiety is highly treatable. A range of effective approaches—from professional treatment to self-help strategies—can help people manage their symptoms and build confidence in social situations.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: The good news is that social anxiety is highly treatable. A range of effective approaches—from professional treatment to self-help strategies—can help people manage their symptoms and build confidence in social situations.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: **Mindfulness and Relaxation:** Practicing mindfulness—being present without judgment—has been shown to reduce social anxiety symptoms and improve overall quality of life. Similarly, simple breathing techniques can quickly reduce anxiety to a manageable level. Try inhaling through your nose for three seconds, holding briefly, then exhaling for three seconds. Repeat for up to ten minutes as needed.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: **Mindfulness and Relaxation:** Practicing mindfulness—being present without judgment—has been shown to reduce social anxiety symptoms and improve overall quality of life. Similarly, simple breathing techniques can quickly reduce anxiety to a manageable level. Try inhaling through your nose for three seconds, holding briefly, then exhaling for three seconds. Repeat for up to ten minutes as needed.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: **Sleep Management:** People with social anxiety frequently experience sleep problems, which ironically worsen anxiety. Prioritizing good sleep hygiene—maintaining a consistent sleep schedule, limiting caffeine, and creating a relaxing bedtime routine—can significantly improve overall anxiety levels.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: **Sleep Management:** People with social anxiety frequently experience sleep problems, which ironically worsen anxiety. Prioritizing good sleep hygiene—maintaining a consistent sleep schedule, limiting caffeine, and creating a relaxing bedtime routine—can significantly improve overall anxiety levels.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: Social anxiety is a common, treatable condition rooted in a combination of genetic, biological, psychological, and environmental factors. Its manifestations—from racing heart and trembling hands to negative self-talk and avoidance patterns—are real and understandable. However, understanding the causes and recognizing the symptoms is only the first step.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: Social anxiety is a common, treatable condition rooted in a combination of genetic, biological, psychological, and environmental factors. Its manifestations—from racing heart and trembling hands to negative self-talk and avoidance patterns—are real and understandable. However, understanding the causes and recognizing the symptoms is only the first step.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: The encouraging reality is that social anxiety responds well to evidence-based treatment approaches like cognitive behavioral therapy, acceptance and commitment therapy, and when appropriate, medication. Combined with practical self-help strategies—mindfulness, gradual exposure, healthy sleep, exercise, and building meaningful connections—most people can significantly reduce their social anxiety and reclaim their quality of life.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md` `em-dashes`
+  - match: —
+  - context: The encouraging reality is that social anxiety responds well to evidence-based treatment approaches like cognitive behavioral therapy, acceptance and commitment therapy, and when appropriate, medication. Combined with practical self-help strategies—mindfulness, gradual exposure, healthy sleep, exercise, and building meaningful connections—most people can significantly reduce their social anxiety and reclaim their quality of life.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: When you experience stress, your body initiates a sophisticated physiological response known as the "fight-or-flight" reaction. This process begins in the brain, where a tiny region at the base called the hypothalamus detects a perceived threat and sets off an alarm system. Through both nerve and hormonal signals, this system prompts the adrenal glands—located atop the kidneys—to release a surge of hormones, particularly adrenaline and cortisol.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: When you experience stress, your body initiates a sophisticated physiological response known as the "fight-or-flight" reaction. This process begins in the brain, where a tiny region at the base called the hypothalamus detects a perceived threat and sets off an alarm system. Through both nerve and hormonal signals, this system prompts the adrenal glands—located atop the kidneys—to release a surge of hormones, particularly adrenaline and cortisol.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: Psychosomatic conditions—where physical symptoms are caused or worsened by psychological stress—are particularly important to understand. These are not imaginary or "all in your head," as some dismissively suggest. Rather, they are genuine physical experiences triggered by stress and psychological factors. Common psychosomatic conditions include fibromyalgia, arthritis and inflammatory disorders, skin conditions like psoriasis and eczema, and sexual dysfunction. Recent statistics indicate that approximately 75% of Americans report experiencing physical or emotional symptoms related to stress, with 83% of U.S. workers experiencing work-related stress specifically.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: Psychosomatic conditions—where physical symptoms are caused or worsened by psychological stress—are particularly important to understand. These are not imaginary or "all in your head," as some dismissively suggest. Rather, they are genuine physical experiences triggered by stress and psychological factors. Common psychosomatic conditions include fibromyalgia, arthritis and inflammatory disorders, skin conditions like psoriasis and eczema, and sexual dysfunction. Recent statistics indicate that approximately 75% of Americans report experiencing physical or emotional symptoms related to stress, with 83% of U.S. workers experiencing work-related stress specifically.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: The long-term activation of the stress response system represents a significant health risk. When cortisol remains chronically elevated, it can produce central obesity, muscle wasting, hypertension, and glucose intolerance—conditions previously associated only with primary hormonal disorders. Excessive stress weakens the immune system, making you more susceptible to infections and illness. It can also contribute to the development of anxiety disorders, depression, and other mental health conditions, creating a vicious cycle where emotional distress worsens physical symptoms and vice versa.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: **Breathing Techniques**: Controlled breathing is particularly effective because it directly stimulates the parasympathetic nervous system—your "rest and digest" system. When activated, the parasympathetic system lowers cortisol levels, reduces heart rate, and promotes relaxation. Techniques such as deep diaphragmatic breathing, box breathing (inhale for 4 counts, hold for 4, exhale for 4, hold for 4), and progressive muscle relaxation have been scientifically validated for stress reduction.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: **Mindfulness and Meditation**: Mindfulness practices have extensive research support for reducing stress and anxiety. Regular meditation can lower cortisol levels, reduce blood pressure, and improve overall emotional regulation. Even brief daily practice—as little as 5-10 minutes—can produce measurable benefits over time.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: **Mindfulness and Meditation**: Mindfulness practices have extensive research support for reducing stress and anxiety. Regular meditation can lower cortisol levels, reduce blood pressure, and improve overall emotional regulation. Even brief daily practice—as little as 5-10 minutes—can produce measurable benefits over time.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: The connection between stress and physical symptoms is not a matter of mind over matter or willpower—it is a well-established biological reality rooted in our nervous system, hormonal systems, and every organ in our body. The good news is that understanding this connection empowers us to take action. By recognizing stress symptoms early and implementing evidence-based stress reduction strategies, we can prevent the development of chronic stress-related conditions and improve both our physical and mental health.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md` `em-dashes`
+  - match: —
+  - context: Whether through exercise, breathing techniques, social support, or professional help, the tools to manage stress and protect our physical health are accessible to all of us. In our increasingly fast-paced world, stress management is not a luxury—it is a necessity for maintaining long-term health and well-being. By taking stress seriously and treating it as the genuine threat to physical health that it is, we can build more resilient, healthier bodies and minds.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: Couples often start relationships brimming with excitement, novelty, and endless conversations. Yet somewhere between the early butterflies and years of shared responsibilities, something shifts. Partners find themselves communicating less meaningfully, with conversations devolving into logistics about bills and schedules rather than genuine connection. This communication breakdown is one of the leading causes of relationship dissatisfaction and divorce. Understanding why this happens—and what couples can do about it—is essential for maintaining a healthy, fulfilling partnership.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: Couples often start relationships brimming with excitement, novelty, and endless conversations. Yet somewhere between the early butterflies and years of shared responsibilities, something shifts. Partners find themselves communicating less meaningfully, with conversations devolving into logistics about bills and schedules rather than genuine connection. This communication breakdown is one of the leading causes of relationship dissatisfaction and divorce. Understanding why this happens—and what couples can do about it—is essential for maintaining a healthy, fulfilling partnership.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: Long-term couples often drift into what therapists call "logistics mode"—discussing only practical matters: the kids' schedules, household repairs, bills, and groceries. While necessary, these conversations lack the vulnerability and emotional intimacy that nourish relationships.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: The deeper conversations that sustained them early on—dreams, fears, personal growth, philosophical questions, appreciation—fade into the background. Without these meaningful exchanges, emotional connection atrophies, and couples feel like roommates rather than partners.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: The deeper conversations that sustained them early on—dreams, fears, personal growth, philosophical questions, appreciation—fade into the background. Without these meaningful exchanges, emotional connection atrophies, and couples feel like roommates rather than partners.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: When couples are together, their minds may still be elsewhere—checking emails, scrolling social media, or watching shows. The presence of distractions prevents the kind of undivided attention that builds intimacy.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: People bring their entire histories into relationships. Childhood experiences with communication—whether characterized by openness, conflict avoidance, criticism, or emotional shutdown—shape how adults communicate with partners. Someone raised in a household where feelings weren't discussed might naturally withdraw during conflict. Another might become aggressive or defensive without realizing it.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: People bring their entire histories into relationships. Childhood experiences with communication—whether characterized by openness, conflict avoidance, criticism, or emotional shutdown—shape how adults communicate with partners. Someone raised in a household where feelings weren't discussed might naturally withdraw during conflict. Another might become aggressive or defensive without realizing it.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: Long-term partners sometimes assume they know what the other is thinking or feeling. This assumption leads to misunderstandings and missed opportunities for genuine connection. [Research shows that assumptions in relationships—including the belief that we understand our partner's thoughts without verification—can lead to communication breakdown](https://www.changingus.org/blog/communication-problems-in-relationships).
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: Long-term partners sometimes assume they know what the other is thinking or feeling. This assumption leads to misunderstandings and missed opportunities for genuine connection. [Research shows that assumptions in relationships—including the belief that we understand our partner's thoughts without verification—can lead to communication breakdown](https://www.changingus.org/blog/communication-problems-in-relationships).
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: **Not Listening Actively**: Many people wait for their turn to speak rather than genuinely listening to understand. Active listening—reflecting back what you hear without judgment—is crucial for [effective couples communication](https://www.gottman.com/blog/10-communication-exercises-for-couples-to-have-better-relationships/).
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: **Not Listening Actively**: Many people wait for their turn to speak rather than genuinely listening to understand. Active listening—reflecting back what you hear without judgment—is crucial for [effective couples communication](https://www.gottman.com/blog/10-communication-exercises-for-couples-to-have-better-relationships/).
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: Relationships stagnate when couples stop trying to understand each other. Ask questions about your partner's internal world—their dreams, fears, and experiences—as if you're still getting to know them. This keeps relationships dynamic and deepens intimacy.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: Relationships stagnate when couples stop trying to understand each other. Ask questions about your partner's internal world—their dreams, fears, and experiences—as if you're still getting to know them. This keeps relationships dynamic and deepens intimacy.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: The couples who maintain strong communication over decades typically share one quality: they treat their relationship as worthy of investment. They resist the drift that comes naturally from stress and busyness. They acknowledge that communication is a skill requiring practice and that misunderstandings are inevitable—but so are repair and reconnection.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: If you notice your relationship drifting into silence, that awareness itself is valuable. It's an invitation to pause, reconnect, and rebuild the communication that sustains love and partnership. The conversations you have—or choose to have—shape the relationship you create together.
+- `fixtures/haiku/why_couples_stop_communicating/article.md` `em-dashes`
+  - match: —
+  - context: If you notice your relationship drifting into silence, that awareness itself is valuable. It's an invitation to pause, reconnect, and rebuild the communication that sustains love and partnership. The conversations you have—or choose to have—shape the relationship you create together.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: We've all experienced it—that unsettling moment when you realize you haven't spoken to a close friend in months, or worse, years. The friendship that once felt permanent has quietly evaporated. You scroll through their social media, see glimpses of their life, feel a pang of nostalgia, and wonder what happened. This phenomenon isn't a personal failure; it's becoming the defining characteristic of modern relationships. Research shows that when asked to reflect on the past decade, people estimate they've lost touch with approximately nine friendships. Alarmingly, Gen Z is reporting a higher average of friendships fading than previous generations—a troubling indicator of a broader "friendship recession" affecting American society.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: We've all experienced it—that unsettling moment when you realize you haven't spoken to a close friend in months, or worse, years. The friendship that once felt permanent has quietly evaporated. You scroll through their social media, see glimpses of their life, feel a pang of nostalgia, and wonder what happened. This phenomenon isn't a personal failure; it's becoming the defining characteristic of modern relationships. Research shows that when asked to reflect on the past decade, people estimate they've lost touch with approximately nine friendships. Alarmingly, Gen Z is reporting a higher average of friendships fading than previous generations—a troubling indicator of a broader "friendship recession" affecting American society.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: The friendship recession isn't a new phenomenon, but it has intensified in recent years. According to research from Harvard's Leadership & Happiness Laboratory, the structural changes in modern life have fundamentally altered how friendships form and persist. The old model—where friendships were built on shared physical spaces like schools, workplaces, or regular community gatherings—has fragmented. Remote work, geographic mobility, and the expansion of online communities have disrupted the consistent proximity that once naturally sustained friendships.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: The friendship recession isn't a new phenomenon, but it has intensified in recent years. According to research from Harvard's Leadership & Happiness Laboratory, the structural changes in modern life have fundamentally altered how friendships form and persist. The old model—where friendships were built on shared physical spaces like schools, workplaces, or regular community gatherings—has fragmented. Remote work, geographic mobility, and the expansion of online communities have disrupted the consistent proximity that once naturally sustained friendships.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: The single biggest factor killing friendships today is geographical distance. Our lives have become increasingly mobile. We move for job opportunities, education, and lifestyle preferences. When friendships are no longer anchored by proximity, maintaining them requires deliberate effort—something most of us fail to provide consistently.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: Life transitions compound this problem. The shift from high school to college, from college to career, from single to partnered, from childless to parenthood—each transition reshapes our priorities, available time, and social circles. These natural inflection points create opportunities for friendships to fade.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: Research indicates that millennials frequently cite changing values as a reason for friendship fade. As we mature, our beliefs, priorities, and identities evolve. What once bonded you—shared college experiences, similar humor, recreational habits—may no longer resonate. When friends take divergent paths politically, spiritually, or professionally, the relationship can strain and eventually stagnate.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: Research indicates that millennials frequently cite changing values as a reason for friendship fade. As we mature, our beliefs, priorities, and identities evolve. What once bonded you—shared college experiences, similar humor, recreational habits—may no longer resonate. When friends take divergent paths politically, spiritually, or professionally, the relationship can strain and eventually stagnate.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: The impact of losing friendships is profound and frequently underestimated. While we often acknowledge the pain of romantic breakups, we rarely grant the same emotional legitimacy to friendship loss—yet research demonstrates these losses are deeply painful.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: Close friendships provide more than companionship; they affirm our identities. When a friendship fades, especially one formed during formative years, we lose a part of ourselves—a version of who we were when that friendship was vital. This loss triggers genuine grief: sadness, anger, and a sense of rejection that can last for years.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: Perhaps most concerning, friendship fade contributes to the broader epidemic of social isolation and loneliness. When you lose touch with multiple friends simultaneously—a common pattern—you risk becoming socially isolated. This isolation has been linked to heightened risks of depression, anxiety, and even cognitive decline. The health consequences rival smoking, obesity, and physical inactivity in their severity.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: Perhaps most concerning, friendship fade contributes to the broader epidemic of social isolation and loneliness. When you lose touch with multiple friends simultaneously—a common pattern—you risk becoming socially isolated. This isolation has been linked to heightened risks of depression, anxiety, and even cognitive decline. The health consequences rival smoking, obesity, and physical inactivity in their severity.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: What makes modern friendship fade especially painful is its often silent, undramatic nature. Unlike a clear breakup with defined closure, friendships fade gradually. You notice you haven't texted in six months. Then a year. Eventually, reaching out feels impossible—too much time has passed, too much has changed. The awkwardness creates a barrier that feels insurmountable.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: The first step is reaching out directly. Send a message—via social media, email, or text—expressing that you've been thinking of them and missing them in your life. Acknowledge the time gap without making excuses or creating elaborate justifications. Vulnerability opens doors that politeness cannot.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: The first step is reaching out directly. Send a message—via social media, email, or text—expressing that you've been thinking of them and missing them in your life. Acknowledge the time gap without making excuses or creating elaborate justifications. Vulnerability opens doors that politeness cannot.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: Part of addressing the friendship crisis involves reframing our expectations. Not all friendships need to last forever. Some friendships are seasonal—they serve their purpose during a particular life chapter and naturally fade when that season ends. This isn't failure; it's evolution.
+- `fixtures/haiku/why_friendships_fade/article.md` `em-dashes`
+  - match: —
+  - context: The next time you think of an old friend, don't let that thought evaporate into the ether. Reach out. The barrier you imagine is far higher than the one they're experiencing. Vulnerability is the antidote to the silence that kills friendships—and it may be the most valuable investment you make in your own well-being.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: We've all been there. You set a ambitious goal—start a new business, lose 50 pounds, write a novel, or learn a new skill. For the first few days, maybe even the first few weeks, you're energized. You wake up excited, visualize your success, and can't wait to take action. Then, imperceptibly at first, something shifts. The excitement fades. The daily work feels harder than you expected. Progress seems slower than anticipated. Before long, you've drifted back to old habits, wondering what happened to that fire you felt just weeks ago.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: This pattern is so common it's almost universal. Research shows that approximately 90% of people give up on their New Year's resolutions within the first few weeks. But this phenomenon isn't a personal failure or a sign of weakness—it's a predictable psychological pattern rooted in how our brains and emotions process change. Understanding why motivation evaporates after big goals is the first step to building the kind of lasting consistency that actually produces results.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: The initial motivation isn't actually commitment—it's temporary excitement. Our brains release dopamine when we imagine future success, creating a pleasurable sensation that makes us feel certain we'll follow through. But this chemical rush isn't designed to last. Once it fades, we're left with the actual work, and without understanding this natural progression, we interpret the fade as a personal failing.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: The farther away a goal feels, the less real and compelling it becomes. Six months feels like an eternity when you're in week two. This isn't a failure of willpower—it's a failure of mental proximity. Our brains are wired to prioritize immediate concerns over distant ones, which is why a goal set with genuine passion can feel meaningless just weeks later.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: This stage is called "informed" pessimism because, unlike uninformed optimism, it's based on real data. You've now experienced the actual work. But this awareness is destabilizing emotionally. Many people misinterpret this stage as evidence they should give up. It's not. It's actually a sign you're making progress—you're moving from fantasy to reality.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: If you persist through the valley, you eventually reach the other side. Your competence catches up with your ambitions. The work that felt crushing becomes manageable, then easy. Your identity shifts—you don't have to force yourself anymore because you've become someone who does this work. Success arrives not with a fanfare, but with a quiet realization that you've fundamentally changed.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: The most powerful motivation research reveals that intrinsic goals—those that genuinely matter to you—create longer-lasting satisfaction than extrinsic goals chased for external rewards. A salesperson chasing a bonus might work harder for a few months, but once the bonus disappears, motivation often evaporates. But someone working toward a goal because it aligns with their values, identity, or core purpose keeps going even when external rewards vanish.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: The most powerful motivation research reveals that intrinsic goals—those that genuinely matter to you—create longer-lasting satisfaction than extrinsic goals chased for external rewards. A salesperson chasing a bonus might work harder for a few months, but once the bonus disappears, motivation often evaporates. But someone working toward a goal because it aligns with their values, identity, or core purpose keeps going even when external rewards vanish.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: This is less about motivation and more about removing obstacles to consistent action. Take your big goal and work backward, breaking it into monthly, weekly, and daily targets. Then break those down further. Your daily task should be small enough that it doesn't require motivation—it requires only commitment.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: When you hit week 3 or 4 and motivation drops, don't panic. That's not a signal to quit—that's confirmation that you're following a normal human progression. Remind yourself explicitly that informed pessimism and the Valley of Despair are standard features of any meaningful change, not bugs in your system.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: Here's a counterintuitive insight: discipline doesn't require motivation. Once you establish a daily routine, your brain switches from requiring motivation to simply executing habit. When people commit to a consistent routine—doing the work at the same time each day—they learn to perform the work regardless of temporary moods or distractions.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: Here's a counterintuitive insight: discipline doesn't require motivation. Once you establish a daily routine, your brain switches from requiring motivation to simply executing habit. When people commit to a consistent routine—doing the work at the same time each day—they learn to perform the work regardless of temporary moods or distractions.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: The goal isn't to feel motivated every day. The goal is to have the discipline to act without motivation. Once this shift happens, you're unstoppable. You no longer need to generate willpower—you're just following the routine.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md` `em-dashes`
+  - match: —
+  - context: Motivation loss after setting big goals isn't a tragedy—it's a feature of human psychology. Your brain simply isn't wired to maintain the intense emotional buzz of goal-setting indefinitely. The fact that you're losing motivation doesn't mean you should lose the goal.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: We've all been there. January arrives with renewed determination to hit the gym, meditate daily, or finally organize that closet. By February, the momentum has faded. By March, we've returned to our old patterns. The struggle to build good habits is universal, but it's not a character flaw—it's neuroscience. Understanding why habits are so difficult to form, what obstacles stand in our way, and which strategies actually work can transform our approach from willpower-dependent to system-dependent.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: This explains why old habits persist so stubbornly even when we intellectually know they're not serving us. The neural pathways for established behaviors are deeply imprinted and fire automatically, while new habits require constant conscious attention. Research from cognitive neuroscience shows that getting the balance between these systems right is crucial—an imbalance can leave us vulnerable to action slips, impulsive behaviors, and even compulsive cycles.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: Many people believe the "21-day rule"—the idea that any habit can be formed in just three weeks. This misconception sets people up for failure. Research has revealed a more accurate picture: it takes an average of 66 days for a habit to become automatic, with a range between 18 and 254 days depending on complexity and individual differences. This means most of us need to maintain conscious effort for two to three months before a behavior truly becomes second nature.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: One of the most underestimated obstacles to habit formation is environmental friction—the friction between intention and action. Even highly motivated people struggle if their environment works against them. Wanting to exercise daily while your gym shoes are buried under laundry, or wanting to read more while your phone notifications constantly interrupt, creates unnecessary barriers. Your phone, for example, is engineered by teams of scientists to be irresistible. Competing against that through willpower alone is a losing battle.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: Stress doesn't just make us feel bad—it literally changes how our brain operates. When stressed or fatigued, neural activation shifts from flexible, cognitively driven action control to more rigid habitual control. In other words, stress pushes us toward our most automatic behaviors, usually the ones we're trying to change. A difficult day at work doesn't just deplete willpower; it actually changes your brain's decision-making processes in ways that favor old patterns.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: One of the most damaging obstacles is the shame cycle. When someone lapses—misses a workout, eats a piece of cake on a diet, sleeps through meditation—they often interpret it as evidence that they "can't stick with anything." Instead of treating a lapse as data ("I need to reduce friction" or "I need more sleep"), they treat it as a character flaw. This shame triggers what researchers call "what-the-hell effect," where one mistake escalates into complete abandonment of the goal.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: One of the most damaging obstacles is the shame cycle. When someone lapses—misses a workout, eats a piece of cake on a diet, sleeps through meditation—they often interpret it as evidence that they "can't stick with anything." Instead of treating a lapse as data ("I need to reduce friction" or "I need more sleep"), they treat it as a character flaw. This shame triggers what researchers call "what-the-hell effect," where one mistake escalates into complete abandonment of the goal.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: Many people approach habit change with perfectionism. They create elaborate plans, commit to the habit every single day, and if they miss one day, they consider the whole effort failed. This binary thinking doesn't match how behavior change actually works. Research shows that flexibility within routines is actually protective—people who occasionally vary how they implement a habit (running different routes, meditating at different times) are more resilient to disruption.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: You already have dozens of habits operating automatically—brushing your teeth, making coffee, checking email. You can leverage these established neural pathways by "stacking" a new habit onto an old one. Meditating after your morning coffee, doing push-ups while water boils for tea, or reviewing goals while your computer starts up creates an automatic trigger.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: During the startup phase of habit formation, deliberately insert some variability into your routine. You might meditate at different times, run different routes, or cook different healthy meals. This seems counterintuitive—shouldn't habits be consistent?—but research shows that introducing planned variability makes the behavior more resilient to disruption. It prevents the habit from becoming so specific that any deviation triggers abandonment.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: During the startup phase of habit formation, deliberately insert some variability into your routine. You might meditate at different times, run different routes, or cook different healthy meals. This seems counterintuitive—shouldn't habits be consistent?—but research shows that introducing planned variability makes the behavior more resilient to disruption. It prevents the habit from becoming so specific that any deviation triggers abandonment.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: External rewards (tracking apps, money, prizes) provide short-term motivation but don't sustain long-term behavior change. Intrinsic motivation—motivation that comes from within—does. Ask yourself why you genuinely want this habit. Not the social media version of why, but the real reason. If you can't find genuine internal motivation, reconsider whether this habit is worth your effort.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md` `em-dashes`
+  - match: —
+  - context: External rewards (tracking apps, money, prizes) provide short-term motivation but don't sustain long-term behavior change. Intrinsic motivation—motivation that comes from within—does. Ask yourself why you genuinely want this habit. Not the social media version of why, but the real reason. If you can't find genuine internal motivation, reconsider whether this habit is worth your effort.
+- `fixtures/linkedin/gpt_5_4/what-healthy-workplace-culture-looks-like.md` `colon-dramatic`
+  - match: 46 p.m.
+  - context: Healthy culture also has visible boundaries. People do not have to perform panic to prove they care. "Urgent" means something. It is not the label slapped on every email by someone who waited until Friday at 4:46 p.m. to remember a project existed.
+- `fixtures/twitter/gpt_5_4/why-habits-fail-even-with-motivation.md` `colon-dramatic`
+  - match: 12 p.m.
+  - context: 3/10 This is why motivated people still stall. They pick goals with no landing point: eat better, read more, be consistent. Then 7:12 p.m. arrives, the day is messy, and the brain picks the easier option.

@@ -1,0 +1,104 @@
+plan = ".plans/2026-05-14-120752-migrate-fixture3.md"
+
+[[rename]]
+from = "goldencheck.yaml"
+to = "fixture3.yaml"
+
+[[rename]]
+from = "scripts/goldencheck.sh"
+to = "scripts/fixture3.sh"
+
+[[rename]]
+from = "scripts/verify-textlint-corpus-goldencheck-manifest.py"
+to = "scripts/verify-textlint-corpus-fixture3-manifest.py"
+
+[[forbidden_path]]
+path = "goldencheck.yaml"
+
+[[forbidden_path]]
+path = "scripts/goldencheck.sh"
+
+[[forbidden_path]]
+path = ".goldencheck"
+
+[[fixture3_suite]]
+name = "textlint-rules-corpus"
+manifest = "fixture3.yaml"
+fixtures = ["behavior/fixtures/textlint-rules/corpus/*.md"]
+command = ["scripts/behavior-replay.sh", "{fixtures}"]
+ok_exit_codes = [0, 1]
+output_format = "json"
+normalizer = ["python3", "scripts/normalize-textlint-golden-output.py"]
+approved_dir = "behavior/golden/textlint-rules-corpus"
+received_dir = ".fixture3/textlint-rules-corpus"
+diff_dir = ".fixture3/textlint-rules-corpus"
+
+[[fixture3_suite]]
+name = "textlint-rules-edge-cases"
+manifest = "fixture3.yaml"
+fixtures = ["behavior/fixtures/textlint-rules/edge-cases/generated/*.md"]
+command = ["scripts/behavior-replay.sh", "{fixtures}"]
+ok_exit_codes = [0, 1]
+output_format = "json"
+normalizer = ["python3", "scripts/normalize-textlint-golden-output.py"]
+approved_dir = "behavior/golden/textlint-rules-edge-cases"
+received_dir = ".fixture3/textlint-rules-edge-cases"
+diff_dir = ".fixture3/textlint-rules-edge-cases"
+
+[[required_command]]
+path = "scripts/fixture3.sh"
+
+[[required_command]]
+path = "scripts/verify-textlint-corpus-fixture3-manifest.py"
+
+[[required_command]]
+path = "scripts/verify-textlint-corpus-enrichment-manifest.py"
+
+[[required_command]]
+path = "scripts/verify-textlint-edge-cases.py"
+
+[[required_command]]
+path = "scripts/verify-fixture3-migration.py"
+
+[[forbidden_active_reference]]
+pattern = "goldencheck"
+path_globs = [
+  "fixture3.yaml",
+  "*.yaml",
+  "*.yml",
+  "*.json",
+  "*.toml",
+  ".github/**/*",
+  "behavior/fixtures/**/*",
+  "behavior/reports/**/*",
+  "packages/textlint-rules/*.js",
+  "packages/textlint-rules/*.json",
+  "packages/textlint-rules/*.toml",
+  "packages/textlint-rules/src/**/*",
+  "scripts/**/*",
+  "scripts/fixture3.sh",
+  "scripts/verify-textlint-corpus-fixture3-manifest.py",
+  "scripts/verify-textlint-corpus-enrichment-manifest.py",
+  "scripts/verify-textlint-edge-cases.py",
+  ".plans/2026-05-13-220429-textlint-corpus-fixture3.md.manifest.toml",
+  ".plans/2026-05-13-222214-textlint-corpus-enrichment.md.manifest.toml",
+  ".plans/2026-05-14-110810-textlint-edge-case-corpus.md.manifest.toml",
+]
+
+[[verification]]
+command = "python3 scripts/verify-fixture3-migration.py --manifest .plans/2026-05-14-120752-migrate-fixture3.md.manifest.toml"
+
+[[verification]]
+command = "python3 scripts/verify-textlint-corpus-fixture3-manifest.py --manifest .plans/2026-05-13-220429-textlint-corpus-fixture3.md.manifest.toml all"
+
+[[verification]]
+command = "python3 scripts/verify-textlint-corpus-enrichment-manifest.py --manifest .plans/2026-05-13-222214-textlint-corpus-enrichment.md.manifest.toml all"
+
+[[verification]]
+command = "python3 scripts/verify-textlint-edge-cases.py --manifest .plans/2026-05-14-110810-textlint-edge-case-corpus.md.manifest.toml all"
+
+[[verification]]
+command = "scripts/fixture3.sh check --all"
+
+[[verification]]
+command = "npm run validate"

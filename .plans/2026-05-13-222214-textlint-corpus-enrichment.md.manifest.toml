@@ -1,0 +1,253 @@
+plan = ".plans/2026-05-13-222214-textlint-corpus-enrichment.md"
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/positive.md"
+role = "positive"
+min_words = 500
+allowed_messages = true
+legacy_dense = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/negative.md"
+role = "negative"
+min_words = 500
+allowed_messages = false
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/mixed.md"
+role = "mixed"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/clean.md"
+role = "clean"
+min_words = 500
+allowed_messages = false
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/positive-product-memo-variations.md"
+role = "positive"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/positive-wellness-essay-variations.md"
+role = "positive"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/positive-syntactic-parenting-variations.md"
+role = "positive"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/positive-syntactic-workplace-variations.md"
+role = "positive"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/positive-semantic-literary-variations.md"
+role = "positive"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/positive-semantic-reflective-variations.md"
+role = "positive"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/positive-metrics-long-sentence-variation.md"
+role = "positive"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/mixed-operations-slop.md"
+role = "mixed"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/mixed-wellness-slop.md"
+role = "mixed"
+min_words = 500
+allowed_messages = true
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/negative-engineering-near-misses.md"
+role = "negative"
+min_words = 500
+allowed_messages = false
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/negative-product-near-misses.md"
+role = "negative"
+min_words = 500
+allowed_messages = false
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/clean-engineering-review.md"
+role = "clean"
+min_words = 500
+allowed_messages = false
+
+[[corpus_variation]]
+path = "behavior/fixtures/textlint-rules/corpus/clean-parenting-explainer.md"
+role = "clean"
+min_words = 500
+allowed_messages = false
+
+[[fixture3_suite]]
+name = "textlint-rules-corpus"
+manifest = "fixture3.yaml"
+fixture_glob = "behavior/fixtures/textlint-rules/corpus/*.md"
+approved_output = "behavior/golden/textlint-rules-corpus/approved.normalized.json"
+normalizer = ["python3", "scripts/normalize-textlint-golden-output.py"]
+coverage_exclude_paths = ["behavior/fixtures/textlint-rules/corpus/positive.md"]
+
+[[coverage_rule]]
+id = "avg-sentence-length"
+
+[[coverage_rule]]
+id = "coleman-liau"
+
+[[coverage_rule]]
+id = "flesch-kincaid"
+
+[[coverage_rule]]
+id = "gunning-fog"
+
+[[coverage_rule]]
+id = "paragraph-length"
+
+[[coverage_rule]]
+id = "word-repetition"
+
+[[coverage_rule]]
+id = "colon-dramatic"
+
+[[coverage_rule]]
+id = "em-dashes"
+
+[[coverage_rule]]
+id = "exclamation-density"
+
+[[coverage_rule]]
+id = "fake-timestamps"
+
+[[coverage_rule]]
+id = "sentence-case"
+
+[[coverage_rule]]
+id = "smart-quotes"
+
+[[coverage_rule]]
+id = "hedge-stacking"
+
+[[coverage_rule]]
+id = "llm-vocabulary"
+
+[[coverage_rule]]
+id = "prohibited-words"
+
+[[coverage_rule]]
+id = "simplicity"
+
+[[coverage_rule]]
+id = "cliches"
+
+[[coverage_rule]]
+id = "corporate-speak"
+
+[[coverage_rule]]
+id = "humble-bragger"
+
+[[coverage_rule]]
+id = "jargon-faker"
+
+[[coverage_rule]]
+id = "llm-disclaimer"
+
+[[coverage_rule]]
+id = "prohibited-phrases"
+
+[[coverage_rule]]
+id = "skunked-terms"
+
+[[coverage_rule]]
+id = "uncomparables"
+
+[[coverage_rule]]
+id = "authority-padding"
+
+[[coverage_rule]]
+id = "affirmation-closers"
+
+[[coverage_rule]]
+id = "boilerplate-conclusion"
+
+[[coverage_rule]]
+id = "false-question"
+
+[[coverage_rule]]
+id = "summative-closer"
+
+[[coverage_rule]]
+id = "blame-reframe"
+
+[[coverage_rule]]
+id = "contrastive-aphorism"
+
+[[coverage_rule]]
+id = "negation-reframe"
+
+[[coverage_rule]]
+id = "softening-language"
+
+[[coverage_rule]]
+id = "universalizing-claims"
+
+[[coverage_rule]]
+id = "boilerplate-framing"
+
+[[coverage_rule]]
+id = "generic-signposting"
+
+[[coverage_rule]]
+id = "lesson-framing"
+
+[[coverage_rule]]
+id = "llm-openers"
+
+[[coverage_rule]]
+id = "observer-guidance"
+
+[[coverage_rule]]
+id = "response-wrapper"
+
+[[coverage_rule]]
+id = "demonstrative-emphasis"
+
+[[coverage_rule]]
+id = "empty-emphasis"
+
+[[coverage_rule]]
+id = "fragment-stacking"
+
+[[coverage_rule]]
+id = "triple-repeat"
+
+[[coverage_rule]]
+id = "semantic-thinness"
+
+[[verification]]
+command = "python3 scripts/verify-textlint-corpus-enrichment-manifest.py --manifest .plans/2026-05-13-222214-textlint-corpus-enrichment.md.manifest.toml all"
+
+[[verification]]
+command = "scripts/fixture3.sh check --suite textlint-rules-corpus"

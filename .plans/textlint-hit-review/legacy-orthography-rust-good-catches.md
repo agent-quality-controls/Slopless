@@ -1,0 +1,2254 @@
+# Orthography Rust good catches
+
+These are the Rust orthography findings from `fixtures/` for the migrated rule set. Each item stores the smallest useful review context, not only the matched glyph or phrase.
+
+## Counts
+
+- colon-dramatic: 69
+- em-dashes: 92
+- exclamation-density: 1
+- sentence-case: 139
+- smart-quotes: 343
+
+## colon-dramatic
+
+- `fixtures/explainers/gpt_5_4_mini/burnout-at-work.md`
+  - match: the person and the job.
+  - context: Recovery works best on two levels at once: the person and the job.
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: common tantrums are common.
+  - context: The NIMH study on preschool tantrums is a useful rule of thumb here: common tantrums are common.
+- `fixtures/explainers/gpt_5_4_mini/why-modern-friendships-fade-over-time.md`
+  - match: life gets crowded.
+  - context: One reason is simple: life gets crowded.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: 10 a.m.
+  - context: It is a sentence that sounds noble and tells you nothing about what to do at 7:10 a.m.
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: it boosts alertness and energy.
+  - context: In short bursts, it can be useful: it boosts alertness and energy.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: they avoid it.
+  - context: Over time, partners start doing what humans do when something feels painful or pointless: they avoid it.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: Who initiates?
+  - context: Many couples carry a quiet ledger: Who initiates?
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: talking leads to pain.
+  - context: If disagreements regularly end in yelling, contempt, stonewalling, or punishment, the nervous system learns a simple lesson: talking leads to pain.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: Mind reading motives.
+  - context: Mistake 3: Mind reading motives.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: Talking when emotionally flooded.
+  - context: Mistake 4: Talking when emotionally flooded.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: Bad timing and ambush conversations.
+  - context: Mistake 5: Bad timing and ambush conversations.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: "You never help."
+  - context: Swap: "You never help."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: "I’m overwhelmed.
+  - context: For: "I’m overwhelmed.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: "You’re not romantic anymore."
+  - context: Not: "You’re not romantic anymore."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: "I miss feeling pursued.
+  - context: Instead: "I miss feeling pursued.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: "I’m too heated.
+  - context: If you get flooded, call a timeout with a return time: "I’m too heated.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: 30."
+  - context: Let’s resume at 7:30."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: No phones during meals.
+  - context: Small boundaries help: No phones during meals.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ____."
+  - context: "Here’s one thing I’ll do differently this week: ____."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ____."
+  - context: "Here’s one small thing I’m asking from you this week: ____."
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “Did I do something wrong?”
+  - context: That ambiguity invites rumination: “Did I do something wrong?”
+- `fixtures/gpt_5_2_chat/why_people_lose_motivation_after_big_goals/article.md`
+  - match: "This is the post-achievement dip."
+  - context: A simple reframe helps: "This is the post-achievement dip."
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: Goals that are too vague.
+  - context: Obstacle 1: Goals that are too vague.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: Hidden friction in the environment.
+  - context: Obstacle 4: Hidden friction in the environment.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: All-or-nothing thinking.
+  - context: Obstacle 6: All-or-nothing thinking.
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: sleep apnea.
+  - context: Likely bucket: sleep apnea.
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md`
+  - match: "I avoided this yesterday.
+  - context: A better move is blunt honesty without drama: "I avoided this yesterday.
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md`
+  - match: 00 p.m.
+  - context: Tell a coworker what you will send by 3:00 p.m.
+- `fixtures/gpt_5_4/social_anxiety_in_daily_life/article.md`
+  - match: How do I look?
+  - context: Social anxiety turns attention inward: How do I look?
+- `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/article.md`
+  - match: exhaustion.
+  - context: This is one of the least romantic reasons motivation drops after a big goal: exhaustion.
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: What broke the routine?
+  - context: A more useful mindset is observational rather than moralistic: What broke the routine?
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: a scoping review).
+  - context: Research on health and daily life contexts keeps showing procrastination alongside stress, distress, poor time management, and increased internet or social media use (Procrastination during the COVID-19 pandemic: a scoping review).
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “What is this screen replacing?”
+  - context: Try: “What is this screen replacing?”
+- `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`
+  - match: escape equals relief.
+  - context: Your brain learns: escape equals relief.
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: people change.
+  - context: There is also a less romantic but very real issue: people change.
+- `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/article.md`
+  - match: not all motivation is equal.
+  - context: There is also a deeper motivation issue: not all motivation is equal.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - match: what experts call "quiet burnout."
+  - context: Today's workplace has introduced a new dimension to burnout: what experts call "quiet burnout."
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - match: correlation does not equal causation.
+  - context: However, researchers emphasize a crucial distinction: correlation does not equal causation.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: "It sounds like you're feeling..."
+  - context: Reflect back what you heard: "It sounds like you're feeling..."
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: motivation drops before competence rises.
+  - context: Here's a critical insight: motivation drops before competence rises.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: discipline doesn't require motivation.
+  - context: Here's a counterintuitive insight: discipline doesn't require motivation.
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - match: Don't change everything at once.
+  - context: Gradual Implementation: Don't change everything at once.
+- `fixtures/instagram/gpt_5_4/why-habits-fail-when-you-rely-on-willpower.md`
+  - match: 40 p.m.
+  - context: It drops when you are tired, stressed, rushed, sick, distracted, or one bad email away from eating cereal over the sink at 9:40 p.m.
+- `fixtures/instagram/gpt_5_4/why-people-lose-motivation-after-big-goals.md`
+  - match: 12 on a tired Wednesday.
+  - context: A goal like "get healthy" or "change my life" sounds powerful, but it gives you nothing to do at 7:12 on a tired Wednesday.
+- `fixtures/instagram/gpt_5_4_mini/why-overloaded-children-seem-rude.md`
+  - match: "I hear you.
+  - context: Try this in the moment: "I hear you.
+- `fixtures/linkedin/gpt_5_4/what-healthy-workplace-culture-looks-like.md`
+  - match: 17 p.m.
+  - context: Healthy workplace culture is less about perks and more about what happens on an ordinary Tuesday at 2:17 p.m.
+- `fixtures/linkedin/gpt_5_4/why-modern-work-makes-people-feel-constantly-behind.md`
+  - match: 30 p.m.
+  - context: There is always one more thread to answer, one more tab open, one more half-made decision sitting in your head at 9:30 p.m.
+- `fixtures/opus_4_6/why_couples_stop_communicating/article.md`
+  - match: it almost always is.
+  - context: The research is clear: it almost always is.
+- `fixtures/opus_4_6/why_friendships_fade/article.md`
+  - match: the friendship recession.
+  - context: Researchers at Harvard's Kennedy School have given this phenomenon a name: the friendship recession.
+- `fixtures/opus_4_6/why_friendships_fade/article.md`
+  - match: loneliness is self-reinforcing.
+  - context: The late neuroscientist John Cacioppo documented a particularly cruel mechanism: loneliness is self-reinforcing.
+- `fixtures/opus_4_6/why_friendships_fade/article.md`
+  - match: Does anyone else miss this?
+  - context: Some of them are sitting in their own silence, wondering the same thing you are: Does anyone else miss this?
+- `fixtures/opus_4_6/why_people_wake_up_tired/article.md`
+  - match: sleep inertia.
+  - context: That heavy, groggy, "can't think straight" feeling in the first minutes after waking has a name: sleep inertia.
+- `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - match: social structures help.
+  - context: The research linking procrastination to loneliness and showing that social support buffers procrastination in remote work contexts both point to the same practical recommendation: social structures help.
+- `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`
+  - match: it begins in enthusiasm.
+  - context: Burnout almost always begins somewhere that looks nothing like collapse: it begins in enthusiasm.
+- `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`
+  - match: taking the signs seriously.
+  - context: The first step toward recovery is also the simplest, and the one most often deferred: taking the signs seriously.
+- `fixtures/sonnet_4_6/screen_time_and_child_attention/article.md`
+  - match: Concentration on homework deteriorates noticeably.
+  - context: Cognitive and academic signs: Concentration on homework deteriorates noticeably.
+- `fixtures/sonnet_4_6/why_friendships_fade/article.md`
+  - match: the friendship recession.
+  - context: Researchers have given this trend a name: the friendship recession.
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: Uninformed Optimism.
+  - context: Stage 1: Uninformed Optimism.
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: Informed Pessimism.
+  - context: Stage 2: Informed Pessimism.
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: The Valley of Despair.
+  - context: Stage 3: The Valley of Despair.
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: Informed Optimism.
+  - context: Stage 4: Informed Optimism.
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: Fulfillment.
+  - context: Stage 5: Fulfillment.
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: Is this goal achievable?
+  - context: It pulls people out of what Gollwitzer calls the implemental mindset — action-oriented, optimistic, focused on execution — and back into the deliberative mindset, where every decision reopens: Is this goal achievable?
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - match: the fantasy feels like progress.
+  - context: Positive thinking alone reduces motivation by creating symbolic completion: the fantasy feels like progress.
+- `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/article.md`
+  - match: this behavior is worth repeating.
+  - context: Dopamine fires in anticipation of a reward, not just upon receiving one, and it acts as a learning signal that tells the brain: this behavior is worth repeating.
+- `fixtures/sonnet_4_6/why_people_wake_up_tired/article.md`
+  - match: See your doctor.
+  - context: What to do: See your doctor.
+- `fixtures/twitter/gpt_5_4/why-children-have-tantrums.md`
+  - match: escalation works.
+  - context: If screaming gets candy, more screen time, or a delayed bedtime, the child learns a clean lesson: escalation works.
+- `fixtures/twitter/gpt_5_4_mini/why-adults-procrastinate-and-what-helps.md`
+  - match: “I delayed it.
+  - context: A calmer response works better: “I delayed it.
+- `fixtures/twitter/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: this works.
+  - context: If screaming sometimes wins candy, screen time, or a delay, the tantrum gets a lesson: this works.
+
+## em-dashes
+
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 2
+  - context: Procrastination—the act of delaying tasks until the last moment—is a nearly universal human experience.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 1
+  - context: At its core, procrastination is a form of emotion regulation—albeit an ineffective one.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 1
+  - context: Research shows that people who procrastinate often don't view themselves as capable of changing the situation, so instead of focusing on the work itself, they focus on managing their emotional reactions—a strategy that leaves tasks undone and stress mounting.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 1
+  - context: The fear that work won't meet impossibly high standards can be paralyzing, leading people to delay starting until they feel ready or inspired—a moment that often never comes.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 2
+  - context: Self-efficacy—the belief in one's ability to succeed—plays a crucial role in procrastination.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 2
+  - context: Chronic procrastination raises cortisol levels—the body's primary stress hormone—which impairs memory, focus, concentration, and overall mental health.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 2
+  - context: The negative emotions associated with procrastination—boredom, helplessness, anger, and shame—accumulate and compound, creating a mental health burden that extends well beyond the specific task being avoided.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 2
+  - context: Rather than responding to procrastination with shame and self-criticism—emotions that often worsen the cycle—practice self-compassion.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 2
+  - context: Setting specific implementation intentions—"When X happens, I will do Y"—has been shown to be particularly effective in overcoming procrastination.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 2
+  - context: Regular check-ins with an accountability partner—whether a colleague, friend, or professional—can provide motivation and help you stay committed to your goals.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 2
+  - context: Sometimes the simplest interventions—removing your phone from sight or closing unnecessary browser tabs—can have outsized effects on your ability to focus.
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - match: —
+  - match_count: 1
+  - context: The path forward doesn't require perfection—just consistent, compassionate action toward the person you want to become.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - match: —
+  - match_count: 1
+  - context: A 2026 trend report reveals that 55% of the workforce is currently "quietly cracking"—maintaining their professional performance on the surface while experiencing significant internal distress.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - match: —
+  - match_count: 2
+  - context: This persistent exhaustion—that continues throughout the workday and isn't relieved by rest—signals deeper workplace strain rather than simple fatigue.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - match: —
+  - match_count: 1
+  - context: Some people experience reduced empathy or compassion—a notable shift from their typical personality.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - match: —
+  - match_count: 1
+  - context: Additionally, burnout can trigger metabolic syndrome and increase concentrations of proinflammatory cytokines—immune signaling molecules associated with chronic disease.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - match: —
+  - match_count: 1
+  - context: Mental rest means giving your brain breaks from decision-making and problem-solving—activities like meditating, being in nature, or creative pursuits that don't involve work.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - match: —
+  - match_count: 1
+  - context: Create a ritual that marks the end of your workday—such as changing clothes, taking a different route home, or a short walk.
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - match: —
+  - match_count: 2
+  - context: Rather than pushing through or hoping burnout will resolve on its own, addressing it directly—through rest, professional support, boundary-setting, and lifestyle changes—enables genuine recovery.
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - match: —
+  - match_count: 1
+  - context: The relationship appears bidirectional—excessive screen time may contribute to attention problems, but children with existing attention difficulties may also gravitate toward screens more readily.
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - match: —
+  - match_count: 2
+  - context: Fast-paced, visually stimulating media—such as action-filled video games or rapid-fire cartoons—appears more detrimental to attention span development than slower, interactive content.
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - match: —
+  - match_count: 2
+  - context: When children transition from this stimulating digital environment to slower-paced, real-world activities—like reading a book, doing homework, or having a conversation—their brains struggle with the adjustment.
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - match: —
+  - match_count: 1
+  - context: Children with excessive screen exposure often struggle with executive function—the mental processes needed for planning, organizing, and completing complex tasks.
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - match: —
+  - match_count: 2
+  - context: Create Tech-Free Zones and Times: Designate certain areas of your home—particularly bedrooms—as screen-free spaces.
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - match: —
+  - match_count: 2
+  - context: The goal is not necessarily to eliminate screens entirely—a futile endeavor in today's world—but to ensure that screen time doesn't dominate children's days or interfere with the sleep, physical activity, face-to-face social interaction, and unstructured play that are essential for healthy development and the cultivation of sustained attention.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - match: —
+  - match_count: 2
+  - context: Additionally, neurotransmitters like serotonin and dopamine—chemical messengers in the brain—play roles in mood regulation and reward processing, and imbalances in these systems can contribute to anxiety symptoms.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - match: —
+  - match_count: 2
+  - context: Children raised in emotionally inconsistent environments—receiving warmth one moment and coldness the next—are significantly more likely to develop social anxiety in adulthood.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - match: —
+  - match_count: 2
+  - context: A range of effective approaches—from professional treatment to self-help strategies—can help people manage their symptoms and build confidence in social situations.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - match: —
+  - match_count: 2
+  - context: Mindfulness and Relaxation: Practicing mindfulness—being present without judgment—has been shown to reduce social anxiety symptoms and improve overall quality of life.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - match: —
+  - match_count: 2
+  - context: Prioritizing good sleep hygiene—maintaining a consistent sleep schedule, limiting caffeine, and creating a relaxing bedtime routine—can significantly improve overall anxiety levels.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - match: —
+  - match_count: 2
+  - context: Its manifestations—from racing heart and trembling hands to negative self-talk and avoidance patterns—are real and understandable.
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - match: —
+  - match_count: 2
+  - context: Combined with practical self-help strategies—mindfulness, gradual exposure, healthy sleep, exercise, and building meaningful connections—most people can significantly reduce their social anxiety and reclaim their quality of life.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - match: —
+  - match_count: 2
+  - context: Through both nerve and hormonal signals, this system prompts the adrenal glands—located atop the kidneys—to release a surge of hormones, particularly adrenaline and cortisol.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - match: —
+  - match_count: 2
+  - context: Psychosomatic conditions—where physical symptoms are caused or worsened by psychological stress—are particularly important to understand.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - match: —
+  - match_count: 1
+  - context: When cortisol remains chronically elevated, it can produce central obesity, muscle wasting, hypertension, and glucose intolerance—conditions previously associated only with primary hormonal disorders.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - match: —
+  - match_count: 1
+  - context: Breathing Techniques: Controlled breathing is particularly effective because it directly stimulates the parasympathetic nervous system—your "rest and digest" system.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - match: —
+  - match_count: 2
+  - context: Even brief daily practice—as little as 5-10 minutes—can produce measurable benefits over time.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - match: —
+  - match_count: 1
+  - context: The connection between stress and physical symptoms is not a matter of mind over matter or willpower—it is a well-established biological reality rooted in our nervous system, hormonal systems, and every organ in our body.
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - match: —
+  - match_count: 1
+  - context: In our increasingly fast-paced world, stress management is not a luxury—it is a necessity for maintaining long-term health and well-being.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 2
+  - context: Understanding why this happens—and what couples can do about it—is essential for maintaining a healthy, fulfilling partnership.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 2
+  - context: The irony is that communication—the very tool that could help manage stress and strengthen the relationship—gets neglected precisely when couples need it most.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 1
+  - context: Long-term couples often drift into what therapists call "logistics mode"—discussing only practical matters: the kids' schedules, household repairs, bills, and groceries.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 2
+  - context: The deeper conversations that sustained them early on—dreams, fears, personal growth, philosophical questions, appreciation—fade into the background.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 1
+  - context: When couples are together, their minds may still be elsewhere—checking emails, scrolling social media, or watching shows.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 2
+  - context: Childhood experiences with communication—whether characterized by openness, conflict avoidance, criticism, or emotional shutdown—shape how adults communicate with partners.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 2
+  - context: Research shows that assumptions in relationships—including the belief that we understand our partner's thoughts without verification—can lead to communication breakdown.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 2
+  - context: Active listening—reflecting back what you hear without judgment—is crucial for effective couples communication.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 2
+  - context: Improving couple communication requires intentional effort, but the benefits—greater intimacy, stronger partnership, and better conflict resolution—are well worth it.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 2
+  - context: Ask questions about your partner's internal world—their dreams, fears, and experiences—as if you're still getting to know them.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 1
+  - context: They acknowledge that communication is a skill requiring practice and that misunderstandings are inevitable—but so are repair and reconnection.
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - match: —
+  - match_count: 2
+  - context: The conversations you have—or choose to have—shape the relationship you create together.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 1
+  - context: We've all experienced it—that unsettling moment when you realize you haven't spoken to a close friend in months, or worse, years.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 1
+  - context: Alarmingly, Gen Z is reporting a higher average of friendships fading than previous generations—a troubling indicator of a broader "friendship recession" affecting American society.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 2
+  - context: The old model—where friendships were built on shared physical spaces like schools, workplaces, or regular community gatherings—has fragmented.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 1
+  - context: When friendships are no longer anchored by proximity, maintaining them requires deliberate effort—something most of us fail to provide consistently.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 1
+  - context: The shift from high school to college, from college to career, from single to partnered, from childless to parenthood—each transition reshapes our priorities, available time, and social circles.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 2
+  - context: What once bonded you—shared college experiences, similar humor, recreational habits—may no longer resonate.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 1
+  - context: While we often acknowledge the pain of romantic breakups, we rarely grant the same emotional legitimacy to friendship loss—yet research demonstrates these losses are deeply painful.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 1
+  - context: When a friendship fades, especially one formed during formative years, we lose a part of ourselves—a version of who we were when that friendship was vital.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 2
+  - context: When you lose touch with multiple friends simultaneously—a common pattern—you risk becoming socially isolated.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 1
+  - context: Eventually, reaching out feels impossible—too much time has passed, too much has changed.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 2
+  - context: Send a message—via social media, email, or text—expressing that you've been thinking of them and missing them in your life.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 1
+  - context: Some friendships are seasonal—they serve their purpose during a particular life chapter and naturally fade when that season ends.
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - match: —
+  - match_count: 1
+  - context: Vulnerability is the antidote to the silence that kills friendships—and it may be the most valuable investment you make in your own well-being.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: You set a ambitious goal—start a new business, lose 50 pounds, write a novel, or learn a new skill.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: But this phenomenon isn't a personal failure or a sign of weakness—it's a predictable psychological pattern rooted in how our brains and emotions process change.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: The initial motivation isn't actually commitment—it's temporary excitement.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: This isn't a failure of willpower—it's a failure of mental proximity.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: It's actually a sign you're making progress—you're moving from fantasy to reality.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: Your identity shifts—you don't have to force yourself anymore because you've become someone who does this work.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 2
+  - context: The most powerful motivation research reveals that intrinsic goals—those that genuinely matter to you—create longer-lasting satisfaction than extrinsic goals chased for external rewards.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: Your daily task should be small enough that it doesn't require motivation—it requires only commitment.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: That's not a signal to quit—that's confirmation that you're following a normal human progression.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 2
+  - context: When people commit to a consistent routine—doing the work at the same time each day—they learn to perform the work regardless of temporary moods or distractions.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: You no longer need to generate willpower—you're just following the routine.
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - match: —
+  - match_count: 1
+  - context: Motivation loss after setting big goals isn't a tragedy—it's a feature of human psychology.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 1
+  - context: The struggle to build good habits is universal, but it's not a character flaw—it's neuroscience.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 1
+  - context: Research from cognitive neuroscience shows that getting the balance between these systems right is crucial—an imbalance can leave us vulnerable to action slips, impulsive behaviors, and even compulsive cycles.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 1
+  - context: Many people believe the "21-day rule"—the idea that any habit can be formed in just three weeks.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 1
+  - context: One of the most underestimated obstacles to habit formation is environmental friction—the friction between intention and action.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 1
+  - context: Stress doesn't just make us feel bad—it literally changes how our brain operates.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 2
+  - context: When someone lapses—misses a workout, eats a piece of cake on a diet, sleeps through meditation—they often interpret it as evidence that they "can't stick with anything."
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 1
+  - context: Research shows that flexibility within routines is actually protective—people who occasionally vary how they implement a habit (running different routes, meditating at different times) are more resilient to disruption.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 1
+  - context: You already have dozens of habits operating automatically—brushing your teeth, making coffee, checking email.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 1
+  - context: Environmental design is powerful because it doesn't require you to be "good"—it makes the desired behavior the path of least resistance.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 2
+  - context: This seems counterintuitive—shouldn't habits be consistent?—but research shows that introducing planned variability makes the behavior more resilient to disruption.
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - match: —
+  - match_count: 2
+  - context: Intrinsic motivation—motivation that comes from within—does.
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - match: —
+  - match_count: 1
+  - context: You've done everything right—you went to bed at a reasonable hour, slept for eight hours or more, and yet you still wake up feeling utterly exhausted.
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - match: —
+  - match_count: 1
+  - context: The issue is that healthy sleep requires more than just duration—it depends on good quality, appropriate timing, regularity, and freedom from sleep disorders.
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - match: —
+  - match_count: 1
+  - context: This is a quality issue—your time in bed isn't translating to actual recovery.
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - match: —
+  - match_count: 1
+  - context: Manage Sleep Inertia: If you're experiencing sleep inertia, expose yourself to bright light immediately upon waking—open your blinds, turn on lights, or use a light therapy lamp.
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - match: —
+  - match_count: 1
+  - context: The solution isn't necessarily to sleep more—it's to sleep better.
+
+## exclamation-density
+
+- `fixtures/instagram/gpt_5_4_mini/why-overloaded-children-seem-rude.md`
+  - context: The sharp tone, eye roll, "No!" or "Leave me alone!" is often a child hitting the edge of their capacity. They may be tired, hungry, overstimulated, rushed, embarrassed, or unable to find better words fast enough.
+
+## sentence-case
+
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - context: Why Some People Feel Anxious in Social Situations, and How to Manage It
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - context: How Burnout Develops at Work: Warning Signs, Long-Term Effects, and Recovery Strategies
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - context: Common Mistakes Couples Make
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - context: What Helps Couples Communicate Better
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - context: Why Communication Breaks Down
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - context: Why Couples Stop Communicating Well Over Time
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - context: How Procrastination Affects Daily Life
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - context: Practical Strategies to Overcome Procrastination
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - context: The Procrastination Problem: Why Adults Delay and How to Take Control
+- `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`
+  - context: The Root Causes of Adult Procrastination
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - context: The Long-Term Health Consequences
+- `fixtures/haiku/how_burnout_develops_at_work/article.md`
+  - context: Understanding Workplace Burnout: Warning Signs, Long-Term Effects, and Recovery Strategies
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - context: Content Matters More Than You Think
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - context: Does Screen Time Harm Children's Attention Spans? What the Research Shows
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - context: The Evidence: What Research Shows
+- `fixtures/haiku/screen_time_and_child_attention/article.md`
+  - context: Warning Signs That Screen Time May Be Affecting Your Child
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - context: How Social Anxiety Shows Up: Recognition and Manifestation
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - context: Managing Social Anxiety: Practical and Evidence-Based Strategies
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - context: The Roots of Social Anxiety: Understanding the Causes
+- `fixtures/haiku/social_anxiety_in_daily_life/article.md`
+  - context: Understanding Social Anxiety: Causes, Manifestations, and Management Strategies
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - context: Common Physical Symptoms of Stress
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - context: Strategies to Reduce Stress and Its Physical Impact
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - context: The Biological Mechanism: How Stress Affects the Body
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - context: The Body-Mind Connection: How Stress Causes Physical Symptoms
+- `fixtures/haiku/stress_and_physical_symptoms/article.md`
+  - context: The Systemic Impact of Chronic Stress
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - context: Common Mistakes Couples Make
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - context: Practical Advice for Reconnecting Through Communication
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - context: The Silent Drift: Why Couples Stop Communicating Well Over Time
+- `fixtures/haiku/why_couples_stop_communicating/article.md`
+  - context: Why Communication Deteriorates: The Root Causes
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - context: Rebuilding Connection: Practical Pathways Forward
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - context: The Emotional Toll of Fading Friendships
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - context: The Fading Friendships Crisis: Why Modern Connections Wither and How to Rebuild Them
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - context: The Modern Friendship Paradox
+- `fixtures/haiku/why_friendships_fade/article.md`
+  - context: Why Friendships Fade in the Modern Era
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - context: Conclusion: The Long Game
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - context: Practical Strategies for Staying Consistent
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - context: The Emotional Cycle of Change: Understanding Your Journey
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - context: The Root Causes: Why Big Goals Lead to Motivation Loss
+- `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`
+  - context: Why We Lose Motivation After Setting Big Goals: Understanding the Cycle and Building Lasting Change
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - context: Common Obstacles to Habit Success
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - context: Practical Strategies That Actually Work
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - context: The Psychology Behind Habit Formation Struggles
+- `fixtures/haiku/why_people_struggle_to_build_habits/article.md`
+  - context: Why Building Good Habits Is So Hard: The Psychology, Obstacles, and Strategies That Actually Work
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - context: How to Identify What's Causing Your Morning Fatigue
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - context: The Problem: Sleep Quantity Doesn't Equal Sleep Quality
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - context: What to Do About It
+- `fixtures/haiku/why_people_wake_up_tired/article.md`
+  - context: Why You Wake Up Tired Even After a Full Night of Sleep: Causes, Identification, and Solutions
+- `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - context: How Procrastination Affects Daily Life
+- `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - context: Practical Strategies to Overcome Procrastination
+- `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - context: The Real Causes of Procrastination
+- `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - context: Why Adults Procrastinate — and How to Finally Stop
+- `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`
+  - context: Finding Your Way Back: Evidence-Based Recovery Strategies
+- `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`
+  - context: How Burnout Takes Root
+- `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`
+  - context: The Long Shadow: What Burnout Does Over Time
+- `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`
+  - context: The Slow Burn: How Workplace Burnout Develops, What It Does to You, and How to Recover
+- `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`
+  - context: The Warning Signs Most People Miss
+- `fixtures/opus_4_6/screen_time_and_child_attention/article.md`
+  - context: Does Screen Time Harm Children's Attention Spans? What the Evidence Says and What Parents Can Do
+- `fixtures/opus_4_6/screen_time_and_child_attention/article.md`
+  - context: Warning Signs That Screen Time May Be Affecting Your Child
+- `fixtures/opus_4_6/screen_time_and_child_attention/article.md`
+  - context: What Happens Inside the Developing Brain
+- `fixtures/opus_4_6/screen_time_and_child_attention/article.md`
+  - context: What Parents Can Do
+- `fixtures/opus_4_6/social_anxiety_in_daily_life/article.md`
+  - context: How Social Anxiety Shows Up
+- `fixtures/opus_4_6/social_anxiety_in_daily_life/article.md`
+  - context: Where Social Anxiety Comes From
+- `fixtures/opus_4_6/social_anxiety_in_daily_life/article.md`
+  - context: Why Social Situations Make Some People Anxious — and What Actually Helps
+- `fixtures/opus_4_6/stress_and_physical_symptoms/article.md`
+  - context: Common Physical Symptoms of Stress
+- `fixtures/opus_4_6/stress_and_physical_symptoms/article.md`
+  - context: Evidence-Based Ways to Reduce the Physical Impact of Stress
+- `fixtures/opus_4_6/stress_and_physical_symptoms/article.md`
+  - context: The Science Behind Stress and the Body
+- `fixtures/opus_4_6/stress_and_physical_symptoms/article.md`
+  - context: When Stress Gets Physical: How Your Mind Can Make Your Body Sick
+- `fixtures/opus_4_6/stress_and_physical_symptoms/article.md`
+  - context: Why Chronic Stress Is Especially Dangerous
+- `fixtures/opus_4_6/why_couples_stop_communicating/article.md`
+  - context: Common Mistakes Beyond the Horsemen
+- `fixtures/opus_4_6/why_couples_stop_communicating/article.md`
+  - context: Starting the Conversation About Conversation
+- `fixtures/opus_4_6/why_couples_stop_communicating/article.md`
+  - context: The Four Horsemen: Patterns That Predict Failure
+- `fixtures/opus_4_6/why_couples_stop_communicating/article.md`
+  - context: The Slow Fade: Why Communication Erodes Over Time
+- `fixtures/opus_4_6/why_couples_stop_communicating/article.md`
+  - context: What Actually Works: Evidence-Based Strategies
+- `fixtures/opus_4_6/why_couples_stop_communicating/article.md`
+  - context: Why Couples Stop Talking: The Science Behind Communication Breakdown and How to Fix It
+- `fixtures/opus_4_6/why_friendships_fade/article.md`
+  - context: Rebuilding What Was Lost
+- `fixtures/opus_4_6/why_friendships_fade/article.md`
+  - context: The Quiet Loss: Why Modern Friendships Fade and How to Fight Back
+- `fixtures/opus_4_6/why_friendships_fade/article.md`
+  - context: The Work That Matters Most
+- `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: Staying in the Game: What Actually Works
+- `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: The Dopamine Trap: Why Setting the Goal Feels Better Than Chasing It
+- `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: The Emotional Arc: From Fire to Fog
+- `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: The Hidden Causes: Why Willpower Is Not the Problem
+- `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: The Real Goal Behind the Goal
+- `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: Why Big Goals Kill Your Motivation — and How to Get It Back
+- `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`
+  - context: Strategies That Actually Work
+- `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`
+  - context: The Neuroscience of the Habit Loop
+- `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`
+  - context: Why Building Good Habits Is So Hard — and What Actually Works
+- `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`
+  - context: Why We Struggle: The Five Core Obstacles
+- `fixtures/opus_4_6/why_people_wake_up_tired/article.md`
+  - context: How to Identify Your Problem
+- `fixtures/opus_4_6/why_people_wake_up_tired/article.md`
+  - context: Sleep Quantity Is Not the Same as Sleep Quality
+- `fixtures/opus_4_6/why_people_wake_up_tired/article.md`
+  - context: What to Do About It
+- `fixtures/opus_4_6/why_people_wake_up_tired/article.md`
+  - context: Why You Wake Up Tired After a Full Night of Sleep — and What to Do About It
+- `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - context: How Procrastination Affects Daily Life
+- `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - context: Practical Ways to Overcome Procrastination
+- `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - context: The Real Reason We Procrastinate
+- `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/article.md`
+  - context: Why We Procrastinate — And How to Finally Stop
+- `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`
+  - context: Burned Out: How Exhaustion Becomes a Crisis — and How to Come Back
+- `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`
+  - context: How Burnout Takes Hold
+- `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`
+  - context: Recovery: What the Evidence Actually Supports
+- `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`
+  - context: The Long-Term Costs of Ignoring It
+- `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`
+  - context: The Warning Signs: What to Watch For
+- `fixtures/sonnet_4_6/screen_time_and_child_attention/article.md`
+  - context: Is Screen Time Shortening Your Child's Attention Span? What the Science Says
+- `fixtures/sonnet_4_6/screen_time_and_child_attention/article.md`
+  - context: Not All Screen Time Is the Same
+- `fixtures/sonnet_4_6/screen_time_and_child_attention/article.md`
+  - context: The Mechanisms Behind the Harm
+- `fixtures/sonnet_4_6/screen_time_and_child_attention/article.md`
+  - context: Warning Signs Parents Should Know
+- `fixtures/sonnet_4_6/screen_time_and_child_attention/article.md`
+  - context: What Parents Can Do
+- `fixtures/sonnet_4_6/social_anxiety_in_daily_life/article.md`
+  - context: How Social Anxiety Shows Up
+- `fixtures/sonnet_4_6/social_anxiety_in_daily_life/article.md`
+  - context: Realistic Ways to Manage Social Anxiety
+- `fixtures/sonnet_4_6/social_anxiety_in_daily_life/article.md`
+  - context: What Is Social Anxiety, and How Common Is It?
+- `fixtures/sonnet_4_6/social_anxiety_in_daily_life/article.md`
+  - context: Why It Develops: The Causes of Social Anxiety
+- `fixtures/sonnet_4_6/social_anxiety_in_daily_life/article.md`
+  - context: Why Some People Feel Anxious in Social Situations — and What Actually Helps
+- `fixtures/sonnet_4_6/stress_and_physical_symptoms/article.md`
+  - context: A Body Under Siege: Common Physical Symptoms of Chronic Stress
+- `fixtures/sonnet_4_6/stress_and_physical_symptoms/article.md`
+  - context: Breaking the Cycle: Evidence-Based Approaches
+- `fixtures/sonnet_4_6/stress_and_physical_symptoms/article.md`
+  - context: The Body's Emergency System Gone Wrong
+- `fixtures/sonnet_4_6/stress_and_physical_symptoms/article.md`
+  - context: When Worry Becomes Physical: How Stress Affects Your Body and What to Do About It
+- `fixtures/sonnet_4_6/why_couples_stop_communicating/article.md`
+  - context: Common Mistakes That Accelerate the Breakdown
+- `fixtures/sonnet_4_6/why_couples_stop_communicating/article.md`
+  - context: How Communication Erodes Over Time
+- `fixtures/sonnet_4_6/why_couples_stop_communicating/article.md`
+  - context: The Four Warning Signs Research Identifies Most Clearly
+- `fixtures/sonnet_4_6/why_couples_stop_communicating/article.md`
+  - context: The Slow Fade: Why Couples Stop Talking — and How to Start Again
+- `fixtures/sonnet_4_6/why_couples_stop_communicating/article.md`
+  - context: What the Research Says Actually Works
+- `fixtures/sonnet_4_6/why_friendships_fade/article.md`
+  - context: Rebuilding What Was Lost
+- `fixtures/sonnet_4_6/why_friendships_fade/article.md`
+  - context: The Scaffolding We Lose
+- `fixtures/sonnet_4_6/why_friendships_fade/article.md`
+  - context: The Slow Goodbye: Why Modern Friendships Fade and How to Get Them Back
+- `fixtures/sonnet_4_6/why_friendships_fade/article.md`
+  - context: The Weight of What We Lose
+- `fixtures/sonnet_4_6/why_friendships_fade/article.md`
+  - context: Why Adults Drift Apart
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: Practical Strategies for Staying Consistent
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: The Emotional Cycle of Change
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: The Neuroscience of Wanting vs. Doing
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: The Planning Fallacy and the Motivation–Habit Gap
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: When Doubt Becomes a Crisis
+- `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`
+  - context: Why Big Goals Kill Motivation (And How to Fix It)
+- `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/article.md`
+  - context: The Brain Is Not Built for New Habits
+- `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/article.md`
+  - context: The Myths That Set You Up to Fail
+- `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/article.md`
+  - context: What This All Means
+- `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/article.md`
+  - context: Why Good Habits Are So Hard to Build — And What Actually Works
+- `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/article.md`
+  - context: Why Your Environment Matters More Than Your Motivation
+- `fixtures/sonnet_4_6/why_people_wake_up_tired/article.md`
+  - context: Common Causes — and How to Recognize Them
+- `fixtures/sonnet_4_6/why_people_wake_up_tired/article.md`
+  - context: How to Find Your Answer
+- `fixtures/sonnet_4_6/why_people_wake_up_tired/article.md`
+  - context: The Difference Between Sleep Time and Sleep Quality
+- `fixtures/sonnet_4_6/why_people_wake_up_tired/article.md`
+  - context: Why You Wake Up Tired Even After a Full Night's Sleep
+
+## smart-quotes
+
+- `fixtures/explainers/gpt_5_4_mini/burnout-at-work.md`
+  - match: ’
+  - match_count: 1
+  - context: Mayo Clinic’s guidance is blunt and useful here: talk to your boss, set realistic goals, ask for support, look for relaxing activities, exercise, sleep, and practice mindfulness.
+- `fixtures/explainers/gpt_5_4_mini/burnout-at-work.md`
+  - match: “”
+  - match_count: 2
+  - context: If the job is causing symptoms and the symptoms are causing more mistakes, the issue is no longer “I am tired.”
+- `fixtures/explainers/gpt_5_4_mini/burnout-at-work.md`
+  - match: “”
+  - match_count: 2
+  - context: If you want a plan that is more realistic than “rest more,” use this:
+- `fixtures/explainers/gpt_5_4_mini/how-chronic-stress-affects-the-body.md`
+  - match: ’
+  - match_count: 1
+  - context: Mayo Clinic and the Office on Women’s Health both link long-term stress with higher risk of heart disease and stroke, and the Mayo page also warns that chest pain with shortness of breath, sweating, dizziness, nausea, or pain into the jaw or arm needs urgent medical care.
+- `fixtures/explainers/gpt_5_4_mini/how-chronic-stress-affects-the-body.md`
+  - match: “”
+  - match_count: 2
+  - context: This is where people get into trouble by assuming every symptom is “just stress.”
+- `fixtures/explainers/gpt_5_4_mini/how-chronic-stress-affects-the-body.md`
+  - match: ’
+  - match_count: 1
+  - context: The Office on Women’s Health notes that chronic stress can make digestive symptoms worse and can aggravate irritable bowel syndrome.
+- `fixtures/explainers/gpt_5_4_mini/how-chronic-stress-affects-the-body.md`
+  - match: ’
+  - match_count: 1
+  - context: The point is to interrupt the body’s alarm loop long enough for it to cool off.
+- `fixtures/explainers/gpt_5_4_mini/how-loneliness-affects-mental-and-physical-health.md`
+  - match: “”
+  - match_count: 2
+  - context: “Want to grab lunch on Thursday?”
+- `fixtures/explainers/gpt_5_4_mini/how-loneliness-affects-mental-and-physical-health.md`
+  - match: “”
+  - match_count: 2
+  - context: is more useful than “We should catch up sometime,” which is how plans go to die.
+- `fixtures/explainers/gpt_5_4_mini/how-loneliness-affects-mental-and-physical-health.md`
+  - match: “”
+  - match_count: 2
+  - context: If hearing loss, disability, chronic illness, caregiving demands, or money problems are part of the picture, the answer is usually not “try harder.”
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: ’
+  - match_count: 1
+  - context: They are usually signs that the child’s brain and body are overloaded and they do not yet have the tools to handle the pressure cleanly.
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: “”“”
+  - match_count: 4
+  - context: The child is hitting the wall between “I want it” and “I cannot have it.”
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: ’
+  - match_count: 1
+  - context: A move, a new sibling, conflict at home, daycare problems, family illness, travel, or a disrupted routine can all raise a child’s baseline arousal.
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: ’
+  - match_count: 1
+  - context: Sometimes tantrums are a child’s stress signal.
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: “”
+  - match_count: 2
+  - context: “We are leaving now.”
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: “”
+  - match_count: 2
+  - context: “No, you may not hit.”
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: “”
+  - match_count: 2
+  - context: “The tablet is done.”
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: “’”“”“”“’”“”
+  - match_count: 12
+  - context: Teach simple phrases like “I’m mad,” “help me,” “one more minute,” “I’m hungry,” and “I need a break.”
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: “”“”
+  - match_count: 4
+  - context: If “no” sometimes means “yes after 12 minutes of screaming,” tantrums become part of the decision tree.
+- `fixtures/explainers/gpt_5_4_mini/why-children-have-tantrums.md`
+  - match: ’
+  - match_count: 1
+  - context: It will improve when the child’s body is regulated, the environment is predictable, and the child slowly learns better ways to ask for what they need.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: ’
+  - match_count: 1
+  - context: John Gottman’s work is famous for a reason.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: ’
+  - match_count: 1
+  - context: They are part of the relationship’s operating system.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: ’
+  - match_count: 1
+  - context: It means keeping track of each other’s priorities and making room for them.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: “”
+  - match_count: 2
+  - context: Ask, “What felt heavy today?”
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: “”
+  - match_count: 2
+  - context: or “What do you need from me this week?”
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: “”
+  - match_count: 2
+  - context: “You never listen” is sludge.
+- `fixtures/explainers/gpt_5_4_mini/why-couples-stop-communicating-well.md`
+  - match: “”
+  - match_count: 2
+  - context: “You looked at your phone three times while I was talking about school pickup” gives the other person something real to respond to.
+- `fixtures/explainers/gpt_5_4_mini/why-modern-friendships-fade-over-time.md`
+  - match: “”
+  - match_count: 2
+  - context: Now it means planning ahead, crossing time zones, and remembering that “we should catch up” is not a plan.
+- `fixtures/explainers/gpt_5_4_mini/why-modern-friendships-fade-over-time.md`
+  - match: ’
+  - match_count: 1
+  - context: Robin Dunbar’s 2025 review in Annals of the New York Academy of Sciences argues that close friendships are expensive to create and maintain because they cost time and cognitive effort.
+- `fixtures/explainers/gpt_5_4_mini/why-modern-friendships-fade-over-time.md`
+  - match: ’
+  - match_count: 1
+  - context: Dunbar’s review links friendship loss and loneliness to adverse mental and physical effects.
+- `fixtures/explainers/gpt_5_4_mini/why-modern-friendships-fade-over-time.md`
+  - match: “”
+  - match_count: 2
+  - context: Romance gets “date night” and friendship gets forgotten until a birthday card arrives.
+- `fixtures/explainers/gpt_5_4_mini/why-modern-friendships-fade-over-time.md`
+  - match: “”
+  - match_count: 2
+  - context: “I miss you.”
+- `fixtures/explainers/gpt_5_4_mini/why-modern-friendships-fade-over-time.md`
+  - match: “”
+  - match_count: 2
+  - context: “We keep meaning to talk and never do.”
+- `fixtures/explainers/gpt_5_4_mini/why-modern-friendships-fade-over-time.md`
+  - match: “”
+  - match_count: 2
+  - context: “Can we put something on the calendar?”
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: ’
+  - match_count: 1
+  - context: The best known review in the field, Steel’s 2007 meta-analytic and theoretical paper, treats procrastination as a self-regulation failure.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: “”
+  - match_count: 2
+  - context: “Work on report” is not a task.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: “”
+  - match_count: 2
+  - context: “Open document, write three bullet points, send outline to Sam” is a task.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: ’
+  - match_count: 1
+  - context: Steel’s 2007 review remains one of the clearest summaries of the field.
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: “”
+  - match_count: 2
+  - context: The fix is not “try harder.”
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: “”
+  - match_count: 2
+  - context: Do not ask, “How do I finish this?”
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: “”
+  - match_count: 2
+  - context: Ask, “What is the next visible action?”
+- `fixtures/explainers/gpt_5_4_mini/why-people-procrastinate.md`
+  - match: “”“”
+  - match_count: 4
+  - context: “This makes me feel exposed” is more useful than “I am lazy.”
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: ’
+  - match_count: 1
+  - context: Another useful line of work comes from Wendy Wood and Dennis Runger’s 2016 review, Psychology of Habit.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: ’
+  - match_count: 1
+  - context: Linking a behavior to a routine-based cue or a time-based cue helped habit formation, and the study’s practical message was blunt: people should keep doing the planned behavior in response to the same cue if they want the habit to stick.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: “”
+  - match_count: 2
+  - context: “I want to be healthier” is not a habit plan.
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: “”
+  - match_count: 2
+  - context: “If I finish lunch, then I walk for ten minutes.”
+- `fixtures/explainers/gpt_5_4_mini/why-people-struggle-to-build-habits.md`
+  - match: “”
+  - match_count: 2
+  - context: “If I brush my teeth, then I take my evening medicine.”
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: You tidy, you check email, you “quickly” research something, and the day slips.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Avoiding the task reduces that feeling in the moment, which teaches your brain that avoidance is “helpful.”
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “Work on the project” is not a startable instruction.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: These options provide immediate stimulation and a clear next step (“watch the next clip”), while your task offers delayed reward and uncertain effort.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: Add a common belief like “I’ll do it later when I feel motivated,” and procrastination becomes the default.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: In relationships, it can look like not caring: late replies, forgotten plans, chores left undone, and constant “I’ll do it later” promises that create tension.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: When you feel stuck, ask: “What is the next physical action I can do in two minutes?”
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: This lowers the perceived cost and bypasses the “I need a big block of time” myth.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: Procrastination often means “I don’t want to feel what this task makes me feel.”
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: “I’m avoiding this because I feel anxious / bored / resentful / unsure.”
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Anxiety often needs a smaller first step and a “good enough” standard.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Call it “v0.”
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: If the “avoid” option is one tap away and the “work” option takes five minutes of setup, your brain will keep choosing avoid.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “If I want to check my phone, I will write one more sentence first.”
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “If I feel stuck, I will write a question at the top of the page and answer it.”
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: A coworking session, a brief daily check-in, or a clear “I’ll send you the draft by Friday at 4” commitment can make starting easier.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Track “starts” (number of work sprints) instead of waiting to reward yourself only at completion.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: Sometimes you apply the “next action” and “short timer” approach and still stall.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”“”“”
+  - match_count: 6
+  - context: Replace “plan the whole project” with “make a three-line outline” or “write the ugly first paragraph.”
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If everything feels urgent and you bounce between tasks, choose one “needle mover” for the day.
+- `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: But the long-term cost is stress, rushed work, strained relationships, and goals stuck in “someday.”
+- `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: It builds in the background: a long stretch of “just until this deadline,” recovery time that never quite happens, and a growing sense that work is taking more out of you than it gives back.
+- `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: If you also notice thoughts like “I can’t do this anymore” becoming frequent or alarming, do not try to power through alone.
+- `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Recovery is not just “self-care.”
+- `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If your life is already constrained by caregiving or unpredictable demands, choose “good enough” boundaries you can keep, not perfect rules you will break.
+- `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If you answer “yes” to several of these, treat burnout as an active problem to solve:
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Social anxiety is not a character flaw, and it is not simply “being shy.”
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Anxiety is the brain’s way of preparing you for danger.
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: In social anxiety, the “danger” is usually not physical harm.
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: It is the possibility of negative evaluation: being judged, rejected, embarrassed, exposed as incompetent, or seen as “weird.”
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: Those sensations can then become part of the fear: “If I blush or shake, everyone will know I’m anxious.”
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: ’“”
+  - match_count: 3
+  - context: When the body’s alarm is easy to trigger, it takes less social “risk” to set off anxiety.
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Social anxiety often runs on predictable thinking habits: overestimating how harshly you will be judged, underestimating your ability to recover from awkwardness, and treating “not perfect” as unacceptable.
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: That “internal spotlight” can make conversation feel unnatural and can even cause blanking or speaking too quickly.
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: The problem is that your brain then concludes, “I survived because I did my safety move,” rather than “I can handle this.”
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Many people experience pre-event worry (“What if I mess up?”)
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”“’”“’”
+  - match_count: 8
+  - context: During the event, the mind may run a harsh commentary track: “That sounded stupid,” “They’re bored,” “I’m being awkward.”
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Afterward, there is often rumination: replaying conversations, scanning for mistakes, and rewriting what you “should have” said.
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Social anxiety can trigger a real fight-or-flight response: racing heart, sweating, trembling, blushing, nausea, muscle tension, shallow breathing, or a foggy “blank mind.”
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Conversations can become overly “safe,” with lots of polite agreement and very little authenticity.
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”“”“”
+  - match_count: 6
+  - context: Social anxiety can expand from “public speaking” to “speaking in meetings” to “speaking at all.”
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Over time, many people develop shame, telling themselves they are lazy, defective, or “bad at people.”
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: A better goal is: “I can feel anxious and still participate.”
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Build a simple “ladder” from easiest to hardest and practice one step repeatedly (say hello, ask one question in a meeting, stay at a gathering for 20 minutes).
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The learning happens when you stay without the usual “protection” and discover you can handle it.
+- `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Use body tools to stay present, not as a desperate attempt to “prove” you are not anxious.
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Stress is your body’s response to a perceived challenge.
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: When the stress response turns on, the body shifts into “high readiness” mode.
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: These symptoms are not “imagined.”
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Muscles and joints: general aches, back pain, muscle cramps, and a “wired” body that struggles to relax.
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Nervous system sensations: shakiness, dizziness, tingling, and feeling “on edge,” often tied to breathing changes and heightened alertness.
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Helpful basics include a consistent wake time, a caffeine cutoff that works for you, and a short wind-down routine (lower lights, fewer stimulating screens, a predictable “off ramp”).
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If you snore loudly, have pauses in breathing, or feel persistently sleepy during the day, consider evaluation for sleep apnea, which can masquerade as “stress fatigue.”
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The point is not forced calm; it is telling the nervous system, “we are not in immediate danger,” so the body stops amplifying symptoms.
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The aim is not “positive thinking.”
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Stress often pushes people into patterns that mimic anxiety in the body: skipped meals, dehydration, lots of caffeine, and “revenge bedtime.”
+- `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Stress is not “all in your head.”
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: For: "I’m overwhelmed.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Not: "You’re not romantic anymore."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: If you get flooded, call a timeout with a return time: "I’m too heated.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: I’m not abandoning this.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Let’s resume at 7:30."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Start with a reset that rebuilds safety: "I miss feeling like we’re on the same team.
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ’’
+  - match_count: 2
+  - context: "Here’s one thing I’ll do differently this week: ____."
+- `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`
+  - match: ’’
+  - match_count: 2
+  - context: "Here’s one small thing I’m asking from you this week: ____."
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “’”“”
+  - match_count: 5
+  - context: “Let’s hang soon” turns into months of silence, and you realize someone you once talked to every week now lives in the category of “people I hope are doing well.”
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: But even when nobody did anything “wrong,” drift still hurts.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: ’
+  - match_count: 1
+  - context: If you want more connection in adulthood, it helps to understand the forces that pull friendships apart and then design for the opposite: lower friction, clearer expectations, and small, repeatable ways of staying in each other’s lives.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Friendship is easy to treat as “optional” because it is not tied to a paycheck or a dependent.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: When the context disappears, the friendship has to transform from “we see each other by default” to “we choose each other on purpose.”
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: Time zones, travel time, and mismatched routines turn “let’s catch up” into a mini project.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: ’
+  - match_count: 1
+  - context: The longer the gap, the harder it can feel to re-enter each other’s lives, even when the affection is still there.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Digital life offers endless low-effort “social” moments: liking a post, replying with an emoji, skimming a story.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: In one stage of life, “close friends” might mean daily contact.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “’”“”
+  - match_count: 5
+  - context: Because friendship expectations are rarely talked about directly, mismatches are interpreted personally: “They don’t care,” instead of, “Our lives changed and we never updated the rules.”
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Many people have few scripts for repairing friendship hurt, so they avoid, withdraw, or “downgrade” the relationship rather than naming the issue.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: That ambiguity invites rumination: “Did I do something wrong?”
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “Was I replaceable?”
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: “Why didn’t I try harder?”
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “We should catch up” is polite but non-actionable.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: It is healthier to have a small network: activity friends, talk friends, work friends, “messy day” friends.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The simplest strategy is to replace “we should” with defaults.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “
+  - match_count: 1
+  - context: If you notice imbalance, name it gently before resentment grows: “I miss you and I want to stay in touch.
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: ”
+  - match_count: 1
+  - context: What cadence is realistic for you right now?”
+- `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “Good enough” friendship might mean you talk every few weeks, see each other a few times a year, and still feel safe, respected, and real.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “Good habits” often ask for the opposite: effort now, payoff later.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: When something becomes habitual, you stop having to “decide” so often.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: A long-term benefit like “lower risk of disease” competes poorly against an immediate benefit like “relief, comfort, fun, or escape.”
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Many “bad habits” are not random; they are coping strategies.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: People are more consistent with behaviors that match their identity (“I’m someone who keeps promises to myself”) than with behaviors that feel like temporary self-improvement projects.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “Eat healthier” is not a behavior; it is a wish.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “’”“”
+  - match_count: 5
+  - context: People frequently choose habits at the level of the desired identity (“I’m a fit person”) rather than at the level of the next repeatable action (“I walk for 10 minutes after dinner”).
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: The mind says, “I already ruined it, so it doesn’t matter,” and the gap grows.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: When you are drained, the “good habit” competes with survival mode.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The point of strategy is not to “hack” yourself.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “After I pour my morning coffee, I will write for 10 minutes.”
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: “After I brush my teeth at night, I will set out tomorrow’s gym clothes.”
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “When I sit on the couch after dinner, I will first walk for 5 minutes.”
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: You are not asking, “Should I do it?”
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Reduce the “startup cost”:
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Because the brain cares about now, build in a “now” payoff:
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: ’
+  - match_count: 1
+  - context: The habit’s long-term benefits still matter, but you should not expect your brain to live on long-term benefits alone.
+- `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If I travel, then my habit becomes “10 minutes of walking and 5 minutes of stretching.”
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: You did the “right” thing, you were in bed for eight hours, and you still feel like your brain is wrapped in wet wool.
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: But there are two easy ways “I slept eight hours” becomes a mirage:
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: Your brain reads the sleep environment as “safe to stay asleep” or “stay alert.”
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: Others hide behind “I sleep a lot but I’m always tired.”
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: Insomnia is not just “can’t fall asleep.”
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: You can be asleep and still be “on alert.”
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Use this as a quick “triage” to decide what to try first.
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Pattern C: You sleep “fine,” but wake with headaches, dry mouth, or your partner reports snoring/gasping.
+- `fixtures/gpt_5_2_chat/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If you wake up tired after a “full night,” assume you have a signal worth decoding, not a moral failing.
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Over time, procrastination narrows a person’s life.
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Instead of "deal with taxes," try "find last year’s return," "download the W-2," or "email the accountant."
+- `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md`
+  - match: ’
+  - match_count: 1
+  - context: I’m starting with ten minutes now."
+- `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: This matters because burnout is not just “being tired.”
+- `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If a person is deeply depleted, the goal is not to “push through smarter.”
+- `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “I need better balance” is not specific enough to protect anyone.
+- `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Friends, partners, mentors, coaches, or therapists can provide perspective when burnout has narrowed a person’s thinking down to pure survival.
+- `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md`
+  - match: ’
+  - match_count: 1
+  - context: For another it is emotional labor, role confusion, a combative boss, or being the reliable one who gets everyone else’s overflow.
+- `fixtures/gpt_5_4/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The core question is less “Are screens evil?”
+- `fixtures/gpt_5_4/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: and more “What kind of screen use is happening, in what amount, and at the expense of what else?”
+- `fixtures/gpt_5_4/screen_time_and_child_attention/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: “No screen” lands differently than “no screen, but here is a familiar alternative.”
+- `fixtures/gpt_5_4/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: A parent who says “screens are bad” while checking messages every thirty seconds is teaching confusion, not moderation.
+- `fixtures/gpt_5_4/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The brain learns, “Being seen is dangerous,” and then keeps applying that lesson long after the original setting is gone.
+- `fixtures/gpt_5_4/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “Everyone thinks I sounded stupid” is usually a story, not a fact.
+- `fixtures/gpt_5_4/stress_and_physical_symptoms/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Others fall asleep fine but wake at 3 a.m. with their nervous system already halfway into the next day’s panic.
+- `fixtures/gpt_5_4/stress_and_physical_symptoms/article.md`
+  - match: “”
+  - match_count: 2
+  - context: People sometimes worry that if stress is causing their symptoms, the symptoms are “all in their head.”
+- `fixtures/gpt_5_4/stress_and_physical_symptoms/article.md`
+  - match: ’
+  - match_count: 1
+  - context: What stress often does is amplify the body’s signal system.
+- `fixtures/gpt_5_4/stress_and_physical_symptoms/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: The right approach is “stress may be part of this” rather than “it must be stress.”
+- `fixtures/gpt_5_4/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Each person waits for their turn to defend themselves or point out the other person’s flaw.
+- `fixtures/gpt_5_4/why_couples_stop_communicating/article.md`
+  - match: “”
+  - match_count: 2
+  - context: One partner assumes the other “should know” what is wrong, what is needed, or why something hurt.
+- `fixtures/gpt_5_4/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: A serious discussion that begins at 11 p.m. after a bad week rarely brings out anyone’s best relational thinking.
+- `fixtures/gpt_5_4/why_couples_stop_communicating/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “You never care about me” is emotionally understandable but hard to work with.
+- `fixtures/gpt_5_4/why_couples_stop_communicating/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “When you stayed on your phone while I was talking about something important, I felt dismissed” is far more usable.
+- `fixtures/gpt_5_4/why_couples_stop_communicating/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: Saying “I felt hurt” tends to go further than “You were selfish.”
+- `fixtures/gpt_5_4/why_friendships_fade/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Seeing someone’s photos, stories, and life updates can trick the brain into feeling connected while the actual friendship is quietly starving.
+- `fixtures/gpt_5_4/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: One common pattern is the “we should hang out soon” loop.
+- `fixtures/gpt_5_4/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: A simple message that says, “I miss you, want to grab coffee next week?”
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Someone wants to become a runner but still thinks of themselves as “not athletic.”
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: “I’ll meditate whenever I find time” is weak.
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: “I’ll meditate for five minutes after brushing my teeth” is much stronger.
+- `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: One missed day turns into “I blew it,” which turns into a week off.
+- `fixtures/gpt_5_4/why_people_wake_up_tired/article.md`
+  - match: ’
+  - match_count: 1
+  - context: If sleep is frequently interrupted, too shallow, or out of sync with the body’s internal clock, a person may spend enough hours asleep without getting the kind of restoration they expect.
+- `fixtures/gpt_5_4/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: That is why “I sleep enough but still feel awful” should not automatically be dismissed as lifestyle laziness.
+- `fixtures/gpt_5_4/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “I slept enough” is useful information.
+- `fixtures/gpt_5_4/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: It is not the same thing as “my body actually recovered.”
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: That is why the obvious long-term payoff of “finish the report on time” loses to the very specific short-term payoff of “do literally anything else.”
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: Bedtime procrastination, the classic “I know I should go to bed, but I’m staying up anyway,” is tied to worse sleep quality and daytime fatigue (A daily diary study on sleep quality and procrastination at work, Bedtime procrastination partially mediates the impact of personality characteristics on daytime fatigue resulting from sleep deficiency).
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: “Work on taxes” is fog.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: “Find last year’s return and list missing forms” is a move.
+- `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If the internal script is “I always do this, so why try,” nothing moves.
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Burnout is not just “being tired.”
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Mayo Clinic’s guidance on job burnout points to the same cluster of causes: lack of control, conflict, overload or underload, lack of support, and poor work-life balance.
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - match: ’
+  - match_count: 1
+  - context: The CDC’s NIOSH materials frame burnout as a chronic condition tied to persistent demand overload and a lack of recovery.
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Burnout thrives in “always on” cultures.
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Sometimes the right answer is not “try harder.”
+- `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`
+  - match: “”
+  - match_count: 2
+  - context: It is “work differently.”
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Do Screens Harm Children’s Attention Spans?
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Children’s attention problems are real.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The claim that “screen time ruins attention spans,” though, is too blunt to be useful.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The research does not support a simple rule like “more screens equals damaged focus.”
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: That distinction matters because “screen time” is not one thing.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: That does not mean gaming is “good” for attention in every case.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: It means the category “screen time” hides more than it reveals.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: That does not mean a child has “addiction” in the clinical sense.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: ’’’
+  - match_count: 3
+  - context: The American Academy of Pediatrics explicitly notes that parents often see the problem when kids can’t sleep, can’t concentrate, or can’t walk away from screens.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: By adolescence, the pattern changes: social media, group chats, and late-night use may affect attention more through sleep loss, stress, and constant interruption than through any direct damage to “attention span.”
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: ’
+  - match_count: 1
+  - context: HealthyChildren, the AAP’s parent-facing guidance, lists several red flags for problematic media use:
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If a device is replacing sleep, homework, reading, outdoor play, or ordinary family conversation, the problem is not “attention span” in the abstract.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: ’
+  - match_count: 1
+  - context: The problem is that screen use has started to reorganize the child’s day.
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: It also helps to ask a better question than “How much screen time is too much?”
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Try: “What is this screen replacing?”
+- `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: If the answer is “nothing important” or “something the child genuinely benefits from,” the concern is lower.
+- `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`
+  - match: ’
+  - match_count: 1
+  - context: It usually develops from a mix of temperament, genetics, early experience, learned habits, and the brain’s threat system working overtime.
+- `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`
+  - match: ’
+  - match_count: 1
+  - context: The brain’s fear circuitry matters too.
+- `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`
+  - match: “”
+  - match_count: 2
+  - context: They may use “safety behaviors” that keep anxiety alive, such as rehearsing every sentence, avoiding eye contact, speaking very softly, hiding in the bathroom, or drinking before events to take the edge off.
+- `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/article.md`
+  - match: ’
+  - match_count: 1
+  - context: It can do that quickly, through the body’s immediate alarm system, and it can do that slowly, through repeated activation that wears the system down.
+- `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Sleep, movement, breathing, support, and professional care when needed can reduce the body’s stress load and make the symptoms less stubborn.
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: A couple may start out talking constantly, finishing each other’s sentences, and assuming goodwill.
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Both end up confirming the other’s worst expectations.
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: “”
+  - match_count: 2
+  - context: What starts as “Can we talk about the bills?”
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: “”
+  - match_count: 2
+  - context: becomes “You never take anything seriously.”
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: In Gottman’s research tradition, it is one of the strongest warning signs of relationship decline.
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Important conversations do not need to be constant, but they do need better timing than “right after the worst moment of the day.”
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: “She’s quiet, so she must be angry.”
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: “’”
+  - match_count: 3
+  - context: “He said that briefly, so he doesn’t care.”
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Communication weakens when couples trust their guesses more than each other’s words.
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: “”“”“’”“’”
+  - match_count: 10
+  - context: Couples start with a specific problem and end with universal claims: “You always,” “You never,” “You don’t care,” “You’re impossible.”
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Some couples believe they have “great communication” because they rarely argue.
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: “’”“”
+  - match_count: 5
+  - context: “I’m feeling overwhelmed by how we handle the evenings” is more useful than “You make every night miserable.”
+- `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`
+  - match: “”“”“”
+  - match_count: 6
+  - context: A repair can be as small as “That came out harsher than I meant,” “Let me try that again,” or “I can see how that landed badly.”
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: That sounds high until you remember how often friendship maintenance consists of things like “Want to get coffee?”
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: That is not just “feeling a bit off.”
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: ’
+  - match_count: 1
+  - context: A 2025 multi-study analysis found that lonely individuals were less accurate at predicting others’ emotional shifts and were more likely to expect other people to be volatile.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: ’
+  - match_count: 1
+  - context: The CDC and Surgeon General’s advisory both treat social connection as a health issue, not decorative advice from someone with a linen shirt.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: ’
+  - match_count: 1
+  - context: You can keep up with someone’s photo of a dog without building the kind of mutual dependence that makes a friendship feel alive.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Not “we should catch up sometime,” which is how friendships go to die in a group chat.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: “
+  - match_count: 1
+  - context: Try: “I was thinking about that terrible Thai place near campus.
+- `fixtures/gpt_5_4_mini/why_friendships_fade/article.md`
+  - match: ”
+  - match_count: 1
+  - context: Want to grab lunch next Thursday?”
+- `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/article.md`
+  - match: “”“”“”
+  - match_count: 6
+  - context: A goal like “get fit,” “build a business,” or “write a book” gives you a clean identity and a satisfying future self to admire.
+- `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/article.md`
+  - match: ’
+  - match_count: 1
+  - context: The brain is decent at liking the idea of future success and terrible at paying today’s price for it.
+- `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/article.md`
+  - match: ’
+  - match_count: 1
+  - context: The National Cancer Institute’s review of implementation intentions notes that people often translate intentions into action only part of the time, and that the intention-to-action gap is large enough to need a separate planning strategy NCI implementation intentions.
+- `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The emotional pattern is usually not “I stopped caring.”
+- `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The gap between fantasy and execution is where people start telling themselves the story that they “lost motivation,” when in fact the plan never had enough structure to survive friction.
+- `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Once you see that, “lost motivation” looks less like a mysterious collapse and more like a predictable system failure.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: ’
+  - match_count: 1
+  - context: Change the commute, the schedule, the kids’ sleep, or the job, and the cue disappears.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: “”“”
+  - match_count: 4
+  - context: These are simple if-then plans, like, “If I finish lunch, then I walk for ten minutes,” or “If I make coffee, then I write one paragraph.”
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: ’
+  - match_count: 1
+  - context: After coffee, after shower, after putting your bag down, after the kid’s bedtime, after locking your laptop.
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: The useful question is not “What is wrong with me?”
+- `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/article.md`
+  - match: “”
+  - match_count: 2
+  - context: It is “What part of the setup keeps breaking?”
+- `fixtures/gpt_5_4_mini/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: Sometimes it is the timing, the combination, or the assumption that a side effect is just “how life feels now.”
+- `fixtures/gpt_5_4_mini/why_people_wake_up_tired/article.md`
+  - match: “”
+  - match_count: 2
+  - context: If the tiredness comes with low mood, loss of interest, headaches, weight change, palpitations, heavy periods, pain, or unusual shortness of breath, do not assume the answer is “better sleep hygiene.”
+- `fixtures/instagram/gpt_5_4/what-stress-does-to-the-body-and-how-to-slow-it-down.md`
+  - match: “”
+  - match_count: 2
+  - context: A lot of people think they are just “bad at coping” when the body is doing exactly what an overloaded body does.
+- `fixtures/instagram/gpt_5_4/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: “”
+  - match_count: 2
+  - context: That is why “just be more disciplined” helps for about six minutes.
+- `fixtures/instagram/gpt_5_4/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: “”
+  - match_count: 2
+  - context: If you want to procrastinate less, stop asking, “How do I force myself to finish this?”
+- `fixtures/instagram/gpt_5_4/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: “”
+  - match_count: 2
+  - context: Ask, “What is the next visible step?”
+- `fixtures/instagram/gpt_5_4/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: “”
+  - match_count: 2
+  - context: Not “work on the project.”
+- `fixtures/instagram/gpt_5_4/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: “”
+  - match_count: 2
+  - context: Decide what “done for today” means before you begin.
+- `fixtures/instagram/gpt_5_4/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: “’”
+  - match_count: 3
+  - context: “I won’t let you hit.”
+- `fixtures/instagram/gpt_5_4/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: “”
+  - match_count: 2
+  - context: “We are leaving now.”
+- `fixtures/instagram/gpt_5_4/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: “’”
+  - match_count: 3
+  - context: “I’m here when your body is ready.”
+- `fixtures/instagram/gpt_5_4/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: “”
+  - match_count: 2
+  - context: “You were tired.”
+- `fixtures/instagram/gpt_5_4/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: “”
+  - match_count: 2
+  - context: “You were mad it ended.”
+- `fixtures/instagram/gpt_5_4/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: “”
+  - match_count: 2
+  - context: “You wanted to do it yourself.”
+- `fixtures/instagram/gpt_5_4/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: “”
+  - match_count: 2
+  - context: Sometimes the behavior is the clue that a child needs more help than “better behavior” can fix.
+- `fixtures/instagram/gpt_5_4/why-loneliness-shows-up-in-busy-lives.md`
+  - match: “”“”
+  - match_count: 4
+  - context: Fewer know how to say, “I miss people,” or “I do not feel close to anyone right now.”
+- `fixtures/instagram/gpt_5_4/why-rest-is-not-the-same-as-recovery.md`
+  - match: “”
+  - match_count: 2
+  - context: If you feel constantly tired, ask a better question than “Did I rest?”
+- `fixtures/instagram/gpt_5_4_mini/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: “”
+  - match_count: 2
+  - context: That is why “just do it” falls flat.
+- `fixtures/instagram/gpt_5_4_mini/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: “”
+  - match_count: 2
+  - context: Not “finish the project.”
+- `fixtures/instagram/gpt_5_4_mini/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: “”
+  - match_count: 2
+  - context: “Work on taxes” is a trap.
+- `fixtures/instagram/gpt_5_4_mini/why-adults-procrastinate-and-what-to-do-instead.md`
+  - match: “”
+  - match_count: 2
+  - context: “Find the receipt folder and open the form” is a start.
+- `fixtures/instagram/gpt_5_4_mini/why-children-have-tantrums-and-how-to-respond-calmly.md`
+  - match: “”“’”“”“”
+  - match_count: 9
+  - context: It also means teaching your child a few simple scripts before the next hard moment arrives: “help me,” “I’m mad,” “one more minute,” “I need a break.”
+- `fixtures/instagram/gpt_5_4_mini/why-habits-fail-when-you-rely-on-willpower.md`
+  - match: “”
+  - match_count: 2
+  - context: If the only plan is “I will be disciplined,” the plan is fragile.
+- `fixtures/instagram/gpt_5_4_mini/why-school-drop-off-is-hard.md`
+  - match: “”
+  - match_count: 2
+  - context: You are handing your child to the day while trying to stay calm, on time, and not emotionally wrecked by the third “one more hug.”
+- `fixtures/instagram/gpt_5_4_mini/why-school-drop-off-is-hard.md`
+  - match: “”
+  - match_count: 2
+  - context: Use a simple script like, “I will drop you off, your teacher will help, and I will be back after school.”
+- `fixtures/linkedin/gpt_5_4/what-people-get-wrong-about-habit-building.md`
+  - match: ’
+  - match_count: 1
+  - context: Most people build habits like they are setting a New Year’s resolution: big target, strong intention, unrealistic schedule.
+- `fixtures/linkedin/gpt_5_4/why-most-people-misunderstand-leadership.md`
+  - match: “’”
+  - match_count: 3
+  - context: They were willing to say, “I don’t know yet,” without making the room feel abandoned.
+- `fixtures/linkedin/gpt_5_4/why-most-people-misunderstand-leadership.md`
+  - match: “”
+  - match_count: 2
+  - context: It is creating enough safety for someone to say, “We are off track,” before the damage gets expensive.
+- `fixtures/linkedin/gpt_5_4_mini/what-people-get-wrong-about-habit-building.md`
+  - match: ’
+  - match_count: 1
+  - context: Most people build habits like they are setting a New Year’s resolution: big target, strong intention, unrealistic schedule.
+- `fixtures/linkedin/gpt_5_4_mini/why-modern-work-makes-people-feel-constantly-behind.md`
+  - match: “”
+  - match_count: 2
+  - context: You finish the deck, then someone wants a different version with “just a few changes.”
+- `fixtures/linkedin/gpt_5_4_mini/why-smart-people-overcomplicate-simple-problems.md`
+  - match: “”
+  - match_count: 2
+  - context: They can say, “This is the real issue.”
+- `fixtures/medicaloutline/how-can-i-help-my-child-with-adhd-without-medication.md`
+  - match: ’
+  - match_count: 1
+  - context: However, please note that it’s important to consult with a qualified healthcare professional, such as a pediatrician or a child psychologist, for personalized advice and to discuss the best course of action for your child.
+- `fixtures/medicaloutline/how-can-i-help-my-child-with-adhd-without-medication.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s important to work closely with healthcare professionals, educators, and your child to develop an individualized plan that meets their specific needs.
+- `fixtures/medicaloutline/what-are-90-of-all-cancers.md`
+  - match: ’
+  - match_count: 1
+  - context: As a language model, I don’t have access to real-time data, and my knowledge is based on my training data up until September 2021.
+- `fixtures/medicaloutline/what-are-90-of-all-cancers.md`
+  - match: ’
+  - match_count: 1
+  - context: However, based on historical data and general medical knowledge, it’s important to note that the distribution of cancer types can vary by region, population, and time period.
+- `fixtures/medicaloutline/what-are-90-of-all-cancers.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s important to note that cancer incidence and prevalence can vary by country, population, and other factors, and these rankings may change over time.
+- `fixtures/medicaloutline/what-are-90-of-all-cancers.md`
+  - match: ’
+  - match_count: 1
+  - context: Therefore, it’s always best to consult up-to-date, reliable sources for the most accurate and current information on cancer statistics.
+- `fixtures/medicaloutline/what-are-90-of-all-cancers.md`
+  - match: ’
+  - match_count: 1
+  - context: If you have concerns about cancer, it’s important to speak with a qualified healthcare professional for proper diagnosis, treatment, and advice.
+- `fixtures/medicaloutline/what-are-the-10-most-common-skin-disorders.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s important to consult with a qualified healthcare professional for an accurate diagnosis and appropriate treatment plan if you suspect you have a skin disorder.
+- `fixtures/medicaloutline/what-are-the-10-worst-cancers.md`
+  - match: ’
+  - match_count: 1
+  - context: As a language model, I don’t have real-time data and my knowledge cutoff date is September 2021.
+- `fixtures/medicaloutline/what-cancers-cannot-be-cured.md`
+  - match: ’
+  - match_count: 1
+  - context: However, it’s important to note that the field of oncology is constantly evolving, and new treatments and therapies may become available that could potentially change the outcomes for different types of cancers.
+- `fixtures/medicaloutline/what-cancers-cannot-be-cured.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s important to note that every cancer case is unique, and treatment outcomes can vary depending on many factors, including the stage of cancer, the overall health of the patient, and the availability of advanced treatments.
+- `fixtures/medicaloutline/what-cancers-cannot-be-cured.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s always best to consult with a qualified healthcare professional for accurate and up-to-date information on specific types of cancers and their treatment options.
+- `fixtures/medicaloutline/what-food-is-not-good-for-eczema.md`
+  - match: ’’’
+  - match_count: 3
+  - context: However, it’s important to note that eczema triggers can vary from person to person, and what may trigger one person’s eczema may not necessarily trigger another’s.
+- `fixtures/medicaloutline/what-food-is-not-good-for-eczema.md`
+  - match: ’
+  - match_count: 1
+  - context: If you suspect that certain foods are exacerbating your eczema, it’s recommended to consult with a qualified healthcare professional for personalized advice.
+- `fixtures/medicaloutline/what-food-is-not-good-for-eczema.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s important to remember that eczema triggers can be highly individual, and what triggers eczema in one person may not necessarily trigger it in another.
+- `fixtures/medicaloutline/what-food-is-not-good-for-eczema.md`
+  - match: ’
+  - match_count: 1
+  - context: If you suspect that certain foods are affecting your eczema, it’s best to keep a food diary and work with a qualified healthcare professional, such as a dermatologist or a registered dietitian, to identify and manage potential triggers.
+- `fixtures/medicaloutline/what-food-should-psoriasis-patients-avoid.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s always best to consult with a qualified healthcare professional or a registered dietitian for personalized dietary advice.
+- `fixtures/medicaloutline/what-food-should-psoriasis-patients-avoid.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s important to note that triggers for psoriasis can vary greatly from person to person, and what may trigger symptoms in one individual may not affect another.
+- `fixtures/medicaloutline/what-foods-should-adhd-children-avoid.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s important to note that dietary changes should always be discussed with a qualified healthcare professional, and any dietary modifications should be part of a comprehensive treatment plan for ADHD.
+- `fixtures/medicaloutline/what-foods-should-adhd-children-avoid.md`
+  - match: ’
+  - match_count: 1
+  - context: A qualified healthcare professional, such as a pediatrician or a registered dietitian, can provide personalized advice and guidance based on your child’s specific needs and medical history.
+- `fixtures/medicaloutline/what-is-end-stage-bipolar.md`
+  - match: ’
+  - match_count: 1
+  - context: As a language model AI, I don’t have access to the most up-to-date medical information or the ability to provide a diagnosis.
+- `fixtures/medicaloutline/what-is-end-stage-bipolar.md`
+  - match: “”
+  - match_count: 2
+  - context: Additionally, “end stage bipolar” is not a recognized medical term.
+- `fixtures/medicaloutline/what-is-end-stage-bipolar.md`
+  - match: “”
+  - match_count: 2
+  - context: These episodes can vary in severity and frequency, but there is no specific “end stage” of bipolar disorder.
+- `fixtures/medicaloutline/what-is-end-stage-bipolar.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s important to note that bipolar disorder is a chronic condition that requires ongoing management and treatment, and with appropriate care, many people with bipolar disorder are able to lead fulfilling and productive lives.
+- `fixtures/medicaloutline/what-is-end-stage-bipolar.md`
+  - match: ’
+  - match_count: 1
+  - context: If you or someone you know is struggling with bipolar symptoms, it’s important to seek professional medical advice for an accurate diagnosis and appropriate treatment plan.
+- `fixtures/twitter/gpt_5_4/what-people-misunderstand-about-anxiety.md`
+  - match: “”
+  - match_count: 2
+  - context: 7/10 “Just relax” is weak advice.
+- `fixtures/twitter/gpt_5_4/why-adults-procrastinate-and-what-helps.md`
+  - match: “”
+  - match_count: 2
+  - context: “Work on presentation” is fog.
+- `fixtures/twitter/gpt_5_4/why-adults-procrastinate-and-what-helps.md`
+  - match: “”
+  - match_count: 2
+  - context: “Open slides, write 3 bullet points for slide one” gives your brain something it can do without negotiating for 20 minutes first.
+- `fixtures/twitter/gpt_5_4/why-children-have-tantrums.md`
+  - match: ’
+  - match_count: 1
+  - context: Hunger, fatigue, illness, pain, constipation, sensory overload, and missed naps lower a child’s ability to cope fast.
+- `fixtures/twitter/gpt_5_4/why-children-have-tantrums.md`
+  - match: “’”“’”“”
+  - match_count: 8
+  - context: If a child cannot explain “I’m tired,” “I’m frustrated,” or “I need help,” the feeling still has to go somewhere.
+- `fixtures/twitter/gpt_5_4/why-children-have-tantrums.md`
+  - match: “”
+  - match_count: 2
+  - context: “You were mad.”
+- `fixtures/twitter/gpt_5_4/why-children-have-tantrums.md`
+  - match: “”
+  - match_count: 2
+  - context: “You wanted to stay.”
+- `fixtures/twitter/gpt_5_4/why-children-have-tantrums.md`
+  - match: “”
+  - match_count: 2
+  - context: “You calmed down.”
+- `fixtures/twitter/gpt_5_4_mini/what-stress-does-to-the-body.md`
+  - match: ’
+  - match_count: 1
+  - context: It is the body’s alarm system, and it changes how you sleep, think, digest, and recover.
+- `fixtures/twitter/gpt_5_4_mini/why-adults-procrastinate-and-what-helps.md`
+  - match: “”
+  - match_count: 2
+  - context: 2/10 That is why “just do it” fails so often.
+- `fixtures/twitter/gpt_5_4_mini/why-adults-procrastinate-and-what-helps.md`
+  - match: “”
+  - match_count: 2
+  - context: “Work on report” is not a task.
+- `fixtures/twitter/gpt_5_4_mini/why-adults-procrastinate-and-what-helps.md`
+  - match: “”
+  - match_count: 2
+  - context: “Open doc, write three bullets, send outline” is a task.
+- `fixtures/twitter/gpt_5_4_mini/why-adults-procrastinate-and-what-helps.md`
+  - match: “
+  - match_count: 1
+  - context: A calmer response works better: “I delayed it.
+- `fixtures/twitter/gpt_5_4_mini/why-adults-procrastinate-and-what-helps.md`
+  - match: ”
+  - match_count: 1
+  - context: Start now.”
+- `fixtures/twitter/gpt_5_4_mini/why-burnout-happens-gradually.md`
+  - match: “”
+  - match_count: 2
+  - context: Then normal becomes the new baseline, and everyone calls it “busy.”
+- `fixtures/twitter/gpt_5_4_mini/why-people-wake-up-tired-even-after-enough-sleep.md`
+  - match: “”
+  - match_count: 2
+  - context: Waking often, snoring, or gasping can leave you tired even when bedtime looks “normal.”
+- `fixtures/twitter/gpt_5_4_mini/why-people-wake-up-tired-even-after-enough-sleep.md`
+  - match: “”
+  - match_count: 2
+  - context: “I slept enough” is useful information, but it is not a diagnosis.
+- `fixtures/why_do_we_dream.md`
+  - match: ’
+  - match_count: 1
+  - context: In this blog post, we’ll explore some of the fascinating aspects of dreaming and what they can reveal about our mental state and health.
+- `fixtures/why_do_we_dream.md`
+  - match: ’
+  - match_count: 1
+  - context: As I delve into the topic of why we dream when we sleep, it’s important to first understand what exactly dreams are.
+- `fixtures/why_do_we_dream.md`
+  - match: ’
+  - match_count: 1
+  - context: Essentially, REM sleep helps our brain process and organize our experiences from the day before, which in turn helps us function better when we’re awake.
+- `fixtures/why_do_we_dream.md`
+  - match: ’’
+  - match_count: 2
+  - context: It’s fascinating to consider how our brains continue to work even when we’re asleep.
+- `fixtures/why_do_we_dream.md`
+  - match: ’
+  - match_count: 1
+  - context: However, it’s worth noting that dreams can also impact the quality of our sleep.
+- `fixtures/why_do_we_dream.md`
+  - match: ’’’
+  - match_count: 3
+  - context: It’s also important to remember that not everyone remembers their dreams, but that doesn’t mean they’re not still occurring.
+- `fixtures/why_do_we_dream.md`
+  - match: ’’
+  - match_count: 2
+  - context: Regardless of whether we can recall them, our dreams can still impact our sleep quality, so it’s essential to pay attention to how we’re feeling when we wake up in the morning.
+- `fixtures/why_do_we_dream.md`
+  - match: ’
+  - match_count: 1
+  - context: The boost in brain activity during lucid dreams suggests that they serve a purpose in the brain’s overall function.
+- `fixtures/why_do_we_dream.md`
+  - match: ’’
+  - match_count: 2
+  - context: But, it’s not just the brainstem that’s involved in dream sleep.
+- `fixtures/why_do_we_dream.md`
+  - match: ’
+  - match_count: 1
+  - context: As we delve deeper into the topic of dreaming during sleep, it’s essential to understand the purpose behind it.
+- `fixtures/why_do_we_dream.md`
+  - match: ’
+  - match_count: 1
+  - context: As we’ve discussed in previous sections, REM sleep plays a vital role in the generation of dreams.
+- `fixtures/why_do_we_dream.md`
+  - match: ’
+  - match_count: 1
+  - context: It’s important to note that factors such as the time of night and the sequence of NREM-REM cycles also influence the neurochemistry of REM sleep and the subsequent dreaming experience.
+
