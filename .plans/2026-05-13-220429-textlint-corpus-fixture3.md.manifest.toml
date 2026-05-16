@@ -1,0 +1,115 @@
+plan = ".plans/2026-05-13-220429-textlint-corpus-fixture3.md"
+
+[[tree]]
+path = "behavior/fixtures/textlint-rules/corpus"
+kind = "directory"
+
+[[tree]]
+path = "behavior/golden/textlint-rules-corpus"
+kind = "directory"
+
+[[tree]]
+path = ".fixture3/textlint-rules-corpus"
+kind = "directory"
+generated = true
+
+[[corpus_file]]
+path = "behavior/fixtures/textlint-rules/corpus/positive.md"
+role = "positive"
+required_headings = ["# Textlint positive corpus"]
+
+[[corpus_file]]
+path = "behavior/fixtures/textlint-rules/corpus/negative.md"
+role = "negative"
+required_headings = ["# Textlint negative corpus"]
+
+[[corpus_file]]
+path = "behavior/fixtures/textlint-rules/corpus/mixed.md"
+role = "mixed"
+required_headings = ["# Textlint mixed corpus"]
+
+[[corpus_file]]
+path = "behavior/fixtures/textlint-rules/corpus/clean.md"
+role = "clean"
+required_headings = ["# Textlint clean corpus"]
+
+[[fixture_source]]
+path = "behavior/fixtures/textlint-rules/generated-slop-corpus"
+role = "mining-source"
+must_remain_separate = true
+
+[[fixture_source]]
+path = "behavior/fixtures/textlint-rules/sunstone-arden-cassia"
+role = "mining-source"
+must_remain_separate = true
+
+[[review_ledger]]
+path = ".plans/textlint-hit-review"
+required_files = [
+  "index.md",
+  "semantic-thinness-good-catches.md",
+  "semantic-thinness-bad-catches.md",
+]
+
+[[fixture3_suite]]
+name = "textlint-rules-corpus"
+manifest = "fixture3.yaml"
+fixtures = ["behavior/fixtures/textlint-rules/corpus/*.md"]
+command = ["scripts/behavior-replay.sh", "{fixtures}"]
+ok_exit_codes = [0, 1]
+output_format = "json"
+normalizer = ["python3", "scripts/normalize-textlint-golden-output.py"]
+approved_dir = "behavior/golden/textlint-rules-corpus"
+received_dir = ".fixture3/textlint-rules-corpus"
+diff_dir = ".fixture3/textlint-rules-corpus"
+
+[[golden_output]]
+path = "behavior/golden/textlint-rules-corpus/approved.normalized.json"
+kind = "approved-output"
+format = "json"
+
+[[golden_output]]
+path = "behavior/golden/textlint-rules-corpus/approved.meta.json"
+kind = "approved-metadata"
+format = "json"
+
+[[required_command]]
+path = "scripts/behavior-replay.sh"
+reason = "fixture3 project command"
+
+[[required_command]]
+path = "scripts/normalize-textlint-golden-output.py"
+reason = "fixture3 output normalizer"
+
+[[required_command]]
+path = "scripts/verify-textlint-corpus-fixture3-manifest.py"
+reason = "manifest verifier"
+
+[[retired_after_approval]]
+path = "behavior/baselines/textlint-rules"
+kind = "directory"
+
+[[retired_after_approval]]
+path = "scripts/behavior-baseline.sh"
+kind = "file"
+
+[[retired_after_approval]]
+path = "scripts/behavior-diff.sh"
+kind = "file"
+
+[[retired_after_approval]]
+path = "scripts/behavior-verify.sh"
+kind = "file"
+
+[[retired_after_approval]]
+path = "scripts/behavior-accept.sh"
+kind = "file"
+
+[[verification]]
+command = "python3 scripts/verify-textlint-corpus-fixture3-manifest.py --manifest .plans/2026-05-13-220429-textlint-corpus-fixture3.md.manifest.toml all"
+
+[[verification]]
+command = "scripts/fixture3.sh check --suite textlint-rules-corpus"
+
+[[verification]]
+command = "npm run validate --workspace packages/textlint-rules"

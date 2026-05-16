@@ -1,0 +1,359 @@
+# Readability Metrics Rust Good Catches
+
+Source command: `cargo run -q -p prosesmasher -- check ../../fixtures --config presets/full-config-en.json --format json --include-checks --check flesch-kincaid,gunning-fog,coleman-liau,avg-sentence-length`.
+
+## Counts
+
+- `avg-sentence-length`: 34
+- `coleman-liau`: 79
+- `flesch-kincaid`: 127
+- `gunning-fog`: 106
+
+## Evidence
+
+- `avg-sentence-length` in `fixtures/chatgpt_answer1.md`: average_words_per_sentence=41, total_sentences=5, total_words=209
+- `flesch-kincaid` in `fixtures/chatgpt_answer1.md`: score=34.87689952153113, total_sentences=5, total_syllables=320, total_words=209
+- `gunning-fog` in `fixtures/chatgpt_answer1.md`: complex_word_count=24, score=21.3133014354067, total_sentences=5, total_words=209
+- `flesch-kincaid` in `fixtures/explainers/gpt_5_4_mini/burnout-at-work.md`: score=47.63966115923228, total_sentences=73, total_syllables=1836, total_words=1077
+- `flesch-kincaid` in `fixtures/explainers/gpt_5_4_mini/how-loneliness-affects-mental-and-physical-health.md`: score=45.40681999491063, total_sentences=110, total_syllables=2504, total_words=1429
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/article.md`: score=45.106399435421864, total_sentences=102, total_syllables=2368, total_words=1351
+- `avg-sentence-length` in `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/prompt.md`: average_words_per_sentence=25, total_sentences=1, total_words=25
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/prompt.md`: score=29.180000000000017, total_sentences=1, total_syllables=45, total_words=25
+- `gunning-fog` in `fixtures/gpt_5_2_chat/adult_procrastination_causes_and_fixes/prompt.md`: complex_word_count=5, score=18.0, total_sentences=1, total_words=25
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/article.md`: score=38.812264880952405, total_sentences=60, total_syllables=1619, total_words=896
+- `gunning-fog` in `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/article.md`: complex_word_count=196, score=14.723333333333336, total_sentences=60, total_words=896
+- `coleman-liau` in `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/prompt.md`: score=14.102608695652169, total_letters=122, total_sentences=1, total_words=23
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/prompt.md`: score=32.681304347826114, total_sentences=1, total_syllables=41, total_words=23
+- `gunning-fog` in `fixtures/gpt_5_2_chat/how_burnout_develops_at_work/prompt.md`: complex_word_count=6, score=19.634782608695655, total_sentences=1, total_words=23
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/screen_time_and_child_attention/article.md`: score=49.26326225045374, total_sentences=76, total_syllables=1683, total_words=986
+- `coleman-liau` in `fixtures/gpt_5_2_chat/screen_time_and_child_attention/prompt.md`: score=14.816666666666668, total_letters=130, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/screen_time_and_child_attention/prompt.md`: score=30.900000000000013, total_sentences=1, total_syllables=43, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_2_chat/screen_time_and_child_attention/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`: score=38.82745800395259, total_sentences=88, total_syllables=2294, total_words=1265
+- `gunning-fog` in `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/article.md`: complex_word_count=269, score=14.255928853754941, total_sentences=88, total_words=1265
+- `avg-sentence-length` in `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/prompt.md`: score=36.40785714285716, total_sentences=1, total_syllables=47, total_words=28
+- `gunning-fog` in `fixtures/gpt_5_2_chat/social_anxiety_in_daily_life/prompt.md`: complex_word_count=5, score=18.34285714285714, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`: score=12.80455696202532, total_letters=6592, total_sentences=88, total_words=1264
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`: score=40.79245972382049, total_sentences=88, total_syllables=2263, total_words=1264
+- `gunning-fog` in `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/article.md`: complex_word_count=268, score=14.226467203682393, total_sentences=88, total_words=1264
+- `coleman-liau` in `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/prompt.md`: score=13.836666666666664, total_letters=126, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/prompt.md`: score=34.42500000000002, total_sentences=1, total_syllables=42, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_2_chat/stress_and_physical_symptoms/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/why_couples_stop_communicating/article.md`: score=46.66816412525236, total_sentences=155, total_syllables=2669, total_words=1502
+- `coleman-liau` in `fixtures/gpt_5_2_chat/why_couples_stop_communicating/prompt.md`: score=15.551666666666668, total_letters=133, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/why_couples_stop_communicating/prompt.md`: score=9.750000000000037, total_sentences=1, total_syllables=49, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_2_chat/why_couples_stop_communicating/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/why_friendships_fade/article.md`: score=48.70685000000002, total_sentences=84, total_syllables=1922, total_words=1125
+- `coleman-liau` in `fixtures/gpt_5_2_chat/why_friendships_fade/prompt.md`: score=16.041666666666664, total_letters=135, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/why_friendships_fade/prompt.md`: score=13.275000000000022, total_sentences=1, total_syllables=48, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_2_chat/why_friendships_fade/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/why_people_lose_motivation_after_big_goals/article.md`: score=48.716863092783534, total_sentences=97, total_syllables=2143, total_words=1250
+- `avg-sentence-length` in `fixtures/gpt_5_2_chat/why_people_lose_motivation_after_big_goals/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/gpt_5_2_chat/why_people_lose_motivation_after_big_goals/prompt.md`: score=15.062857142857144, total_letters=152, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/why_people_lose_motivation_after_big_goals/prompt.md`: score=12.2364285714286, total_sentences=1, total_syllables=55, total_words=28
+- `gunning-fog` in `fixtures/gpt_5_2_chat/why_people_lose_motivation_after_big_goals/prompt.md`: complex_word_count=8, score=22.62857142857143, total_sentences=1, total_words=28
+- `avg-sentence-length` in `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/prompt.md`: average_words_per_sentence=26, total_sentences=1, total_words=26
+- `coleman-liau` in `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/prompt.md`: score=14.270769230769227, total_letters=138, total_sentences=1, total_words=26
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/prompt.md`: score=30.76807692307695, total_sentences=1, total_syllables=46, total_words=26
+- `gunning-fog` in `fixtures/gpt_5_2_chat/why_people_struggle_to_build_habits/prompt.md`: complex_word_count=6, score=19.630769230769232, total_sentences=1, total_words=26
+- `avg-sentence-length` in `fixtures/gpt_5_2_chat/why_people_wake_up_tired/prompt.md`: average_words_per_sentence=33, total_sentences=1, total_words=33
+- `flesch-kincaid` in `fixtures/gpt_5_2_chat/why_people_wake_up_tired/prompt.md`: score=47.7218181818182, total_sentences=1, total_syllables=49, total_words=33
+- `gunning-fog` in `fixtures/gpt_5_2_chat/why_people_wake_up_tired/prompt.md`: complex_word_count=3, score=16.83636363636364, total_sentences=1, total_words=33
+- `flesch-kincaid` in `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/article.md`: score=49.08853113983551, total_sentences=161, total_syllables=2898, total_words=1665
+- `avg-sentence-length` in `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/prompt.md`: average_words_per_sentence=25, total_sentences=1, total_words=25
+- `flesch-kincaid` in `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/prompt.md`: score=29.180000000000017, total_sentences=1, total_syllables=45, total_words=25
+- `gunning-fog` in `fixtures/gpt_5_4/adult_procrastination_causes_and_fixes/prompt.md`: complex_word_count=5, score=18.0, total_sentences=1, total_words=25
+- `flesch-kincaid` in `fixtures/gpt_5_4/how_burnout_develops_at_work/article.md`: score=42.13260876375867, total_sentences=127, total_syllables=2721, total_words=1508
+- `coleman-liau` in `fixtures/gpt_5_4/how_burnout_develops_at_work/prompt.md`: score=14.102608695652169, total_letters=122, total_sentences=1, total_words=23
+- `flesch-kincaid` in `fixtures/gpt_5_4/how_burnout_develops_at_work/prompt.md`: score=32.681304347826114, total_sentences=1, total_syllables=41, total_words=23
+- `gunning-fog` in `fixtures/gpt_5_4/how_burnout_develops_at_work/prompt.md`: complex_word_count=6, score=19.634782608695655, total_sentences=1, total_words=23
+- `coleman-liau` in `fixtures/gpt_5_4/screen_time_and_child_attention/article.md`: score=13.054607916355483, total_letters=7044, total_sentences=94, total_words=1339
+- `flesch-kincaid` in `fixtures/gpt_5_4/screen_time_and_child_attention/article.md`: score=37.39248164714857, total_sentences=94, total_syllables=2453, total_words=1339
+- `gunning-fog` in `fixtures/gpt_5_4/screen_time_and_child_attention/article.md`: complex_word_count=296, score=14.540292056631657, total_sentences=94, total_words=1339
+- `coleman-liau` in `fixtures/gpt_5_4/screen_time_and_child_attention/prompt.md`: score=14.816666666666668, total_letters=130, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4/screen_time_and_child_attention/prompt.md`: score=30.900000000000013, total_sentences=1, total_syllables=43, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_4/screen_time_and_child_attention/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/gpt_5_4/social_anxiety_in_daily_life/article.md`: score=13.146127527216171, total_letters=6814, total_sentences=96, total_words=1286
+- `flesch-kincaid` in `fixtures/gpt_5_4/social_anxiety_in_daily_life/article.md`: score=34.36653398781754, total_sentences=96, total_syllables=2415, total_words=1286
+- `gunning-fog` in `fixtures/gpt_5_4/social_anxiety_in_daily_life/article.md`: complex_word_count=299, score=14.65848885432867, total_sentences=96, total_words=1286
+- `avg-sentence-length` in `fixtures/gpt_5_4/social_anxiety_in_daily_life/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/gpt_5_4/social_anxiety_in_daily_life/prompt.md`: score=36.40785714285716, total_sentences=1, total_syllables=47, total_words=28
+- `gunning-fog` in `fixtures/gpt_5_4/social_anxiety_in_daily_life/prompt.md`: complex_word_count=5, score=18.34285714285714, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/gpt_5_4/stress_and_physical_symptoms/article.md`: score=12.914451063829791, total_letters=6181, total_sentences=88, total_words=1175
+- `flesch-kincaid` in `fixtures/gpt_5_4/stress_and_physical_symptoms/article.md`: score=40.210443181818206, total_sentences=88, total_syllables=2126, total_words=1175
+- `coleman-liau` in `fixtures/gpt_5_4/stress_and_physical_symptoms/prompt.md`: score=13.836666666666664, total_letters=126, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4/stress_and_physical_symptoms/prompt.md`: score=34.42500000000002, total_sentences=1, total_syllables=42, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_4/stress_and_physical_symptoms/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/gpt_5_4/why_couples_stop_communicating/article.md`: score=13.802090345438438, total_letters=6157, total_sentences=94, total_words=1129
+- `flesch-kincaid` in `fixtures/gpt_5_4/why_couples_stop_communicating/article.md`: score=34.51116404085711, total_sentences=94, total_syllables=2137, total_words=1129
+- `gunning-fog` in `fixtures/gpt_5_4/why_couples_stop_communicating/article.md`: complex_word_count=264, score=14.157665416580294, total_sentences=94, total_words=1129
+- `coleman-liau` in `fixtures/gpt_5_4/why_couples_stop_communicating/prompt.md`: score=15.551666666666668, total_letters=133, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4/why_couples_stop_communicating/prompt.md`: score=9.750000000000037, total_sentences=1, total_syllables=49, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_4/why_couples_stop_communicating/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4/why_friendships_fade/article.md`: score=41.248377767518825, total_sentences=93, total_syllables=2027, total_words=1118
+- `coleman-liau` in `fixtures/gpt_5_4/why_friendships_fade/prompt.md`: score=16.041666666666664, total_letters=135, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4/why_friendships_fade/prompt.md`: score=13.275000000000022, total_sentences=1, total_syllables=48, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_4/why_friendships_fade/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `avg-sentence-length` in `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/prompt.md`: score=15.062857142857144, total_letters=152, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/prompt.md`: score=12.2364285714286, total_sentences=1, total_syllables=55, total_words=28
+- `gunning-fog` in `fixtures/gpt_5_4/why_people_lose_motivation_after_big_goals/prompt.md`: complex_word_count=8, score=22.62857142857143, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/gpt_5_4/why_people_struggle_to_build_habits/article.md`: score=45.522124165890105, total_sentences=113, total_syllables=2301, total_words=1301
+- `avg-sentence-length` in `fixtures/gpt_5_4/why_people_struggle_to_build_habits/prompt.md`: average_words_per_sentence=26, total_sentences=1, total_words=26
+- `coleman-liau` in `fixtures/gpt_5_4/why_people_struggle_to_build_habits/prompt.md`: score=14.270769230769227, total_letters=138, total_sentences=1, total_words=26
+- `flesch-kincaid` in `fixtures/gpt_5_4/why_people_struggle_to_build_habits/prompt.md`: score=30.76807692307695, total_sentences=1, total_syllables=46, total_words=26
+- `gunning-fog` in `fixtures/gpt_5_4/why_people_struggle_to_build_habits/prompt.md`: complex_word_count=6, score=19.630769230769232, total_sentences=1, total_words=26
+- `flesch-kincaid` in `fixtures/gpt_5_4/why_people_wake_up_tired/article.md`: score=43.71260703363916, total_sentences=84, total_syllables=1932, total_words=1090
+- `avg-sentence-length` in `fixtures/gpt_5_4/why_people_wake_up_tired/prompt.md`: average_words_per_sentence=33, total_sentences=1, total_words=33
+- `flesch-kincaid` in `fixtures/gpt_5_4/why_people_wake_up_tired/prompt.md`: score=47.7218181818182, total_sentences=1, total_syllables=49, total_words=33
+- `gunning-fog` in `fixtures/gpt_5_4/why_people_wake_up_tired/prompt.md`: complex_word_count=3, score=16.83636363636364, total_sentences=1, total_words=33
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/article.md`: score=38.511748578764006, total_sentences=123, total_syllables=2927, total_words=1596
+- `avg-sentence-length` in `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/prompt.md`: average_words_per_sentence=25, total_sentences=1, total_words=25
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/prompt.md`: score=29.180000000000017, total_sentences=1, total_syllables=45, total_words=25
+- `gunning-fog` in `fixtures/gpt_5_4_mini/adult_procrastination_causes_and_fixes/prompt.md`: complex_word_count=5, score=18.0, total_sentences=1, total_words=25
+- `coleman-liau` in `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`: score=12.516494252873564, total_letters=7222, total_sentences=103, total_words=1392
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/article.md`: score=41.1172874121192, total_sentences=103, total_syllables=2501, total_words=1392
+- `coleman-liau` in `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/prompt.md`: score=14.102608695652169, total_letters=122, total_sentences=1, total_words=23
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/prompt.md`: score=32.681304347826114, total_sentences=1, total_syllables=41, total_words=23
+- `gunning-fog` in `fixtures/gpt_5_4_mini/how_burnout_develops_at_work/prompt.md`: complex_word_count=6, score=19.634782608695655, total_sentences=1, total_words=23
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/screen_time_and_child_attention/article.md`: score=43.90560585817717, total_sentences=69, total_syllables=1968, total_words=1139
+- `coleman-liau` in `fixtures/gpt_5_4_mini/screen_time_and_child_attention/prompt.md`: score=14.816666666666668, total_letters=130, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/screen_time_and_child_attention/prompt.md`: score=30.900000000000013, total_sentences=1, total_syllables=43, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_4_mini/screen_time_and_child_attention/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/article.md`: score=44.86793319900808, total_sentences=116, total_syllables=2819, total_words=1613
+- `avg-sentence-length` in `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/prompt.md`: score=36.40785714285716, total_sentences=1, total_syllables=47, total_words=28
+- `gunning-fog` in `fixtures/gpt_5_4_mini/social_anxiety_in_daily_life/prompt.md`: complex_word_count=5, score=18.34285714285714, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/prompt.md`: score=13.836666666666664, total_letters=126, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/prompt.md`: score=34.42500000000002, total_sentences=1, total_syllables=42, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_4_mini/stress_and_physical_symptoms/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/why_couples_stop_communicating/article.md`: score=43.136171813928215, total_sentences=122, total_syllables=2594, total_words=1447
+- `coleman-liau` in `fixtures/gpt_5_4_mini/why_couples_stop_communicating/prompt.md`: score=15.551666666666668, total_letters=133, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/why_couples_stop_communicating/prompt.md`: score=9.750000000000037, total_sentences=1, total_syllables=49, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_4_mini/why_couples_stop_communicating/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/gpt_5_4_mini/why_friendships_fade/prompt.md`: score=16.041666666666664, total_letters=135, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/why_friendships_fade/prompt.md`: score=13.275000000000022, total_sentences=1, total_syllables=48, total_words=24
+- `gunning-fog` in `fixtures/gpt_5_4_mini/why_friendships_fade/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/article.md`: score=41.89987225645643, total_sentences=101, total_syllables=2545, total_words=1430
+- `avg-sentence-length` in `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/prompt.md`: score=15.062857142857144, total_letters=152, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/prompt.md`: score=12.2364285714286, total_sentences=1, total_syllables=55, total_words=28
+- `gunning-fog` in `fixtures/gpt_5_4_mini/why_people_lose_motivation_after_big_goals/prompt.md`: complex_word_count=8, score=22.62857142857143, total_sentences=1, total_words=28
+- `avg-sentence-length` in `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/prompt.md`: average_words_per_sentence=26, total_sentences=1, total_words=26
+- `coleman-liau` in `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/prompt.md`: score=14.270769230769227, total_letters=138, total_sentences=1, total_words=26
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/prompt.md`: score=30.76807692307695, total_sentences=1, total_syllables=46, total_words=26
+- `gunning-fog` in `fixtures/gpt_5_4_mini/why_people_struggle_to_build_habits/prompt.md`: complex_word_count=6, score=19.630769230769232, total_sentences=1, total_words=26
+- `avg-sentence-length` in `fixtures/gpt_5_4_mini/why_people_wake_up_tired/prompt.md`: average_words_per_sentence=33, total_sentences=1, total_words=33
+- `flesch-kincaid` in `fixtures/gpt_5_4_mini/why_people_wake_up_tired/prompt.md`: score=47.7218181818182, total_sentences=1, total_syllables=49, total_words=33
+- `gunning-fog` in `fixtures/gpt_5_4_mini/why_people_wake_up_tired/prompt.md`: complex_word_count=3, score=16.83636363636364, total_sentences=1, total_words=33
+- `coleman-liau` in `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`: score=17.333170731707312, total_letters=8293, total_sentences=87, total_words=1394
+- `flesch-kincaid` in `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`: score=13.48214012434244, total_sentences=87, total_syllables=2918, total_words=1394
+- `gunning-fog` in `fixtures/haiku/adult_procrastination_causes_and_fixes/article.md`: complex_word_count=438, score=18.977344613202725, total_sentences=87, total_words=1394
+- `avg-sentence-length` in `fixtures/haiku/adult_procrastination_causes_and_fixes/prompt.md`: average_words_per_sentence=25, total_sentences=1, total_words=25
+- `flesch-kincaid` in `fixtures/haiku/adult_procrastination_causes_and_fixes/prompt.md`: score=29.180000000000017, total_sentences=1, total_syllables=45, total_words=25
+- `gunning-fog` in `fixtures/haiku/adult_procrastination_causes_and_fixes/prompt.md`: complex_word_count=5, score=18.0, total_sentences=1, total_words=25
+- `coleman-liau` in `fixtures/haiku/how_burnout_develops_at_work/article.md`: score=16.833181208053695, total_letters=8818, total_sentences=109, total_words=1490
+- `flesch-kincaid` in `fixtures/haiku/how_burnout_develops_at_work/article.md`: score=18.877276337663957, total_sentences=109, total_syllables=3066, total_words=1490
+- `gunning-fog` in `fixtures/haiku/how_burnout_develops_at_work/article.md`: complex_word_count=458, score=17.763191921679702, total_sentences=109, total_words=1490
+- `coleman-liau` in `fixtures/haiku/how_burnout_develops_at_work/prompt.md`: score=14.102608695652169, total_letters=122, total_sentences=1, total_words=23
+- `flesch-kincaid` in `fixtures/haiku/how_burnout_develops_at_work/prompt.md`: score=32.681304347826114, total_sentences=1, total_syllables=41, total_words=23
+- `gunning-fog` in `fixtures/haiku/how_burnout_develops_at_work/prompt.md`: complex_word_count=6, score=19.634782608695655, total_sentences=1, total_words=23
+- `coleman-liau` in `fixtures/haiku/screen_time_and_child_attention/article.md`: score=17.38208365019011, total_letters=7743, total_sentences=64, total_words=1315
+- `flesch-kincaid` in `fixtures/haiku/screen_time_and_child_attention/article.md`: score=12.726842027091259, total_sentences=64, total_syllables=2693, total_words=1315
+- `gunning-fog` in `fixtures/haiku/screen_time_and_child_attention/article.md`: complex_word_count=376, score=19.65601235741445, total_sentences=64, total_words=1315
+- `coleman-liau` in `fixtures/haiku/screen_time_and_child_attention/prompt.md`: score=14.816666666666668, total_letters=130, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/haiku/screen_time_and_child_attention/prompt.md`: score=30.900000000000013, total_sentences=1, total_syllables=43, total_words=24
+- `gunning-fog` in `fixtures/haiku/screen_time_and_child_attention/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/haiku/social_anxiety_in_daily_life/article.md`: score=16.87135822081017, total_letters=7373, total_sentences=75, total_words=1259
+- `flesch-kincaid` in `fixtures/haiku/social_anxiety_in_daily_life/article.md`: score=13.406541276145104, total_sentences=75, total_syllables=2625, total_words=1259
+- `gunning-fog` in `fixtures/haiku/social_anxiety_in_daily_life/article.md`: complex_word_count=417, score=19.963276674609478, total_sentences=75, total_words=1259
+- `avg-sentence-length` in `fixtures/haiku/social_anxiety_in_daily_life/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/haiku/social_anxiety_in_daily_life/prompt.md`: score=36.40785714285716, total_sentences=1, total_syllables=47, total_words=28
+- `gunning-fog` in `fixtures/haiku/social_anxiety_in_daily_life/prompt.md`: complex_word_count=5, score=18.34285714285714, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/haiku/stress_and_physical_symptoms/article.md`: score=17.967197452229296, total_letters=7530, total_sentences=63, total_words=1256
+- `flesch-kincaid` in `fixtures/haiku/stress_and_physical_symptoms/article.md`: score=8.845145081387155, total_sentences=63, total_syllables=2639, total_words=1256
+- `gunning-fog` in `fixtures/haiku/stress_and_physical_symptoms/article.md`: complex_word_count=429, score=21.63702355676878, total_sentences=63, total_words=1256
+- `coleman-liau` in `fixtures/haiku/stress_and_physical_symptoms/prompt.md`: score=13.836666666666664, total_letters=126, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/haiku/stress_and_physical_symptoms/prompt.md`: score=34.42500000000002, total_sentences=1, total_syllables=42, total_words=24
+- `gunning-fog` in `fixtures/haiku/stress_and_physical_symptoms/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/haiku/why_couples_stop_communicating/article.md`: score=18.58363780778395, total_letters=7795, total_sentences=86, total_words=1259
+- `flesch-kincaid` in `fixtures/haiku/why_couples_stop_communicating/article.md`: score=13.032424912721451, total_sentences=86, total_syllables=2663, total_words=1259
+- `gunning-fog` in `fixtures/haiku/why_couples_stop_communicating/article.md`: complex_word_count=392, score=18.310142785895046, total_sentences=86, total_words=1259
+- `coleman-liau` in `fixtures/haiku/why_couples_stop_communicating/prompt.md`: score=15.551666666666668, total_letters=133, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/haiku/why_couples_stop_communicating/prompt.md`: score=9.750000000000037, total_sentences=1, total_syllables=49, total_words=24
+- `gunning-fog` in `fixtures/haiku/why_couples_stop_communicating/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/haiku/why_friendships_fade/article.md`: score=15.709679300291542, total_letters=7906, total_sentences=110, total_words=1372
+- `flesch-kincaid` in `fixtures/haiku/why_friendships_fade/article.md`: score=25.59179989398359, total_sentences=110, total_syllables=2734, total_words=1372
+- `gunning-fog` in `fixtures/haiku/why_friendships_fade/article.md`: complex_word_count=382, score=16.126117148157967, total_sentences=110, total_words=1372
+- `coleman-liau` in `fixtures/haiku/why_friendships_fade/prompt.md`: score=16.041666666666664, total_letters=135, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/haiku/why_friendships_fade/prompt.md`: score=13.275000000000022, total_sentences=1, total_syllables=48, total_words=24
+- `gunning-fog` in `fixtures/haiku/why_friendships_fade/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/haiku/why_people_lose_motivation_after_big_goals/article.md`: score=43.373345280764646, total_sentences=135, total_syllables=3036, total_words=1705
+- `avg-sentence-length` in `fixtures/haiku/why_people_lose_motivation_after_big_goals/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/haiku/why_people_lose_motivation_after_big_goals/prompt.md`: score=15.062857142857144, total_letters=152, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/haiku/why_people_lose_motivation_after_big_goals/prompt.md`: score=12.2364285714286, total_sentences=1, total_syllables=55, total_words=28
+- `gunning-fog` in `fixtures/haiku/why_people_lose_motivation_after_big_goals/prompt.md`: complex_word_count=8, score=22.62857142857143, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/haiku/why_people_struggle_to_build_habits/article.md`: score=13.74785619174434, total_letters=8026, total_sentences=95, total_words=1502
+- `flesch-kincaid` in `fixtures/haiku/why_people_struggle_to_build_habits/article.md`: score=32.00742231410754, total_sentences=95, total_syllables=2819, total_words=1502
+- `gunning-fog` in `fixtures/haiku/why_people_struggle_to_build_habits/article.md`: complex_word_count=338, score=15.325542084238558, total_sentences=95, total_words=1502
+- `avg-sentence-length` in `fixtures/haiku/why_people_struggle_to_build_habits/prompt.md`: average_words_per_sentence=26, total_sentences=1, total_words=26
+- `coleman-liau` in `fixtures/haiku/why_people_struggle_to_build_habits/prompt.md`: score=14.270769230769227, total_letters=138, total_sentences=1, total_words=26
+- `flesch-kincaid` in `fixtures/haiku/why_people_struggle_to_build_habits/prompt.md`: score=30.76807692307695, total_sentences=1, total_syllables=46, total_words=26
+- `gunning-fog` in `fixtures/haiku/why_people_struggle_to_build_habits/prompt.md`: complex_word_count=6, score=19.630769230769232, total_sentences=1, total_words=26
+- `coleman-liau` in `fixtures/haiku/why_people_wake_up_tired/article.md`: score=13.936899911426037, total_letters=6052, total_sentences=68, total_words=1129
+- `flesch-kincaid` in `fixtures/haiku/why_people_wake_up_tired/article.md`: score=28.50117236752985, total_sentences=68, total_syllables=2155, total_words=1129
+- `gunning-fog` in `fixtures/haiku/why_people_wake_up_tired/article.md`: complex_word_count=306, score=17.482629083520035, total_sentences=68, total_words=1129
+- `avg-sentence-length` in `fixtures/haiku/why_people_wake_up_tired/prompt.md`: average_words_per_sentence=33, total_sentences=1, total_words=33
+- `flesch-kincaid` in `fixtures/haiku/why_people_wake_up_tired/prompt.md`: score=47.7218181818182, total_sentences=1, total_syllables=49, total_words=33
+- `gunning-fog` in `fixtures/haiku/why_people_wake_up_tired/prompt.md`: complex_word_count=3, score=16.83636363636364, total_sentences=1, total_words=33
+- `coleman-liau` in `fixtures/medicaloutline/how-can-i-help-my-child-with-adhd-without-medication.md`: score=12.600396039603956, total_letters=513, total_sentences=5, total_words=101
+- `flesch-kincaid` in `fixtures/medicaloutline/how-can-i-help-my-child-with-adhd-without-medication.md`: score=34.72209900990101, total_sentences=5, total_syllables=181, total_words=101
+- `gunning-fog` in `fixtures/medicaloutline/how-can-i-help-my-child-with-adhd-without-medication.md`: complex_word_count=27, score=18.773069306930694, total_sentences=5, total_words=101
+- `avg-sentence-length` in `fixtures/medicaloutline/is-yolanda-hadid-still-ill.md`: average_words_per_sentence=27, total_sentences=3, total_words=81
+- `flesch-kincaid` in `fixtures/medicaloutline/is-yolanda-hadid-still-ill.md`: score=26.94111111111113, total_sentences=3, total_syllables=146, total_words=81
+- `gunning-fog` in `fixtures/medicaloutline/is-yolanda-hadid-still-ill.md`: complex_word_count=19, score=20.18271604938272, total_sentences=3, total_words=81
+- `coleman-liau` in `fixtures/medicaloutline/what-are-90-of-all-cancers.md`: score=12.79367231638418, total_letters=901, total_sentences=8, total_words=177
+- `flesch-kincaid` in `fixtures/medicaloutline/what-are-90-of-all-cancers.md`: score=25.215413135593238, total_sentences=8, total_syllables=333, total_words=177
+- `gunning-fog` in `fixtures/medicaloutline/what-are-90-of-all-cancers.md`: complex_word_count=39, score=17.6635593220339, total_sentences=8, total_words=177
+- `flesch-kincaid` in `fixtures/medicaloutline/what-are-the-10-most-common-skin-disorders.md`: score=32.63803652968039, total_sentences=3, total_syllables=129, total_words=73
+- `gunning-fog` in `fixtures/medicaloutline/what-are-the-10-most-common-skin-disorders.md`: complex_word_count=17, score=19.048401826484017, total_sentences=3, total_words=73
+- `coleman-liau` in `fixtures/medicaloutline/what-are-the-10-worst-cancers.md`: score=12.892203389830506, total_letters=303, total_sentences=3, total_words=59
+- `flesch-kincaid` in `fixtures/medicaloutline/what-are-the-10-worst-cancers.md`: score=16.239435028248614, total_sentences=3, total_syllables=119, total_words=59
+- `gunning-fog` in `fixtures/medicaloutline/what-are-the-10-worst-cancers.md`: complex_word_count=16, score=18.714124293785314, total_sentences=3, total_words=59
+- `avg-sentence-length` in `fixtures/medicaloutline/what-cancers-cannot-be-cured.md`: average_words_per_sentence=29, total_sentences=6, total_words=176
+- `coleman-liau` in `fixtures/medicaloutline/what-cancers-cannot-be-cured.md`: score=13.192272727272728, total_letters=898, total_sentences=6, total_words=176
+- `flesch-kincaid` in `fixtures/medicaloutline/what-cancers-cannot-be-cured.md`: score=16.51393939393942, total_sentences=6, total_syllables=334, total_words=176
+- `gunning-fog` in `fixtures/medicaloutline/what-cancers-cannot-be-cured.md`: complex_word_count=44, score=21.733333333333334, total_sentences=6, total_words=176
+- `avg-sentence-length` in `fixtures/medicaloutline/what-food-is-not-good-for-eczema.md`: average_words_per_sentence=25, total_sentences=6, total_words=150
+- `coleman-liau` in `fixtures/medicaloutline/what-food-is-not-good-for-eczema.md`: score=13.748799999999996, total_letters=784, total_sentences=6, total_words=150
+- `flesch-kincaid` in `fixtures/medicaloutline/what-food-is-not-good-for-eczema.md`: score=16.772000000000016, total_sentences=6, total_syllables=292, total_words=150
+- `gunning-fog` in `fixtures/medicaloutline/what-food-is-not-good-for-eczema.md`: complex_word_count=43, score=21.46666666666667, total_sentences=6, total_words=150
+- `coleman-liau` in `fixtures/medicaloutline/what-food-should-psoriasis-patients-avoid.md`: score=15.588176100628923, total_letters=884, total_sentences=7, total_words=159
+- `flesch-kincaid` in `fixtures/medicaloutline/what-food-should-psoriasis-patients-avoid.md`: score=10.855471698113208, total_sentences=7, total_syllables=325, total_words=159
+- `gunning-fog` in `fixtures/medicaloutline/what-food-should-psoriasis-patients-avoid.md`: complex_word_count=50, score=21.664330637915544, total_sentences=7, total_words=159
+- `coleman-liau` in `fixtures/medicaloutline/what-foods-should-adhd-children-avoid.md`: score=15.618390804597702, total_letters=970, total_sentences=8, total_words=174
+- `flesch-kincaid` in `fixtures/medicaloutline/what-foods-should-adhd-children-avoid.md`: score=13.127715517241402, total_sentences=8, total_syllables=353, total_words=174
+- `gunning-fog` in `fixtures/medicaloutline/what-foods-should-adhd-children-avoid.md`: complex_word_count=59, score=22.263218390804596, total_sentences=8, total_words=174
+- `coleman-liau` in `fixtures/medicaloutline/what-is-end-stage-bipolar.md`: score=14.00435897435897, total_letters=831, total_sentences=8, total_words=156
+- `flesch-kincaid` in `fixtures/medicaloutline/what-is-end-stage-bipolar.md`: score=14.046346153846185, total_sentences=8, total_syllables=319, total_words=156
+- `gunning-fog` in `fixtures/medicaloutline/what-is-end-stage-bipolar.md`: complex_word_count=56, score=22.158974358974362, total_sentences=8, total_words=156
+- `coleman-liau` in `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/article.md`: score=14.101815582558965, total_letters=7648, total_sentences=106, total_words=1399
+- `flesch-kincaid` in `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/article.md`: score=31.3745834288643, total_sentences=106, total_syllables=2680, total_words=1399
+- `gunning-fog` in `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/article.md`: complex_word_count=351, score=15.314985097171835, total_sentences=106, total_words=1399
+- `avg-sentence-length` in `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/prompt.md`: average_words_per_sentence=25, total_sentences=1, total_words=25
+- `flesch-kincaid` in `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/prompt.md`: score=29.180000000000017, total_sentences=1, total_syllables=45, total_words=25
+- `gunning-fog` in `fixtures/opus_4_6/adult_procrastination_causes_and_fixes/prompt.md`: complex_word_count=5, score=18.0, total_sentences=1, total_words=25
+- `coleman-liau` in `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`: score=15.801765744555622, total_letters=9695, total_sentences=112, total_words=1699
+- `flesch-kincaid` in `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`: score=21.291726567098305, total_sentences=112, total_syllables=3417, total_words=1699
+- `gunning-fog` in `fixtures/opus_4_6/how_burnout_develops_at_work/article.md`: complex_word_count=495, score=17.721771209955435, total_sentences=112, total_words=1699
+- `coleman-liau` in `fixtures/opus_4_6/how_burnout_develops_at_work/prompt.md`: score=14.102608695652169, total_letters=122, total_sentences=1, total_words=23
+- `flesch-kincaid` in `fixtures/opus_4_6/how_burnout_develops_at_work/prompt.md`: score=32.681304347826114, total_sentences=1, total_syllables=41, total_words=23
+- `gunning-fog` in `fixtures/opus_4_6/how_burnout_develops_at_work/prompt.md`: complex_word_count=6, score=19.634782608695655, total_sentences=1, total_words=23
+- `coleman-liau` in `fixtures/opus_4_6/screen_time_and_child_attention/article.md`: score=14.555542021924483, total_letters=8945, total_sentences=93, total_words=1642
+- `flesch-kincaid` in `fixtures/opus_4_6/screen_time_and_child_attention/article.md`: score=28.576123073094724, total_sentences=93, total_syllables=3112, total_words=1642
+- `gunning-fog` in `fixtures/opus_4_6/screen_time_and_child_attention/article.md`: complex_word_count=405, score=16.928382643773002, total_sentences=93, total_words=1642
+- `coleman-liau` in `fixtures/opus_4_6/screen_time_and_child_attention/prompt.md`: score=14.816666666666668, total_letters=130, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/opus_4_6/screen_time_and_child_attention/prompt.md`: score=30.900000000000013, total_sentences=1, total_syllables=43, total_words=24
+- `gunning-fog` in `fixtures/opus_4_6/screen_time_and_child_attention/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/opus_4_6/social_anxiety_in_daily_life/article.md`: score=15.517152188112345, total_letters=8572, total_sentences=83, total_words=1531
+- `flesch-kincaid` in `fixtures/opus_4_6/social_anxiety_in_daily_life/article.md`: score=17.917886096967887, total_sentences=83, total_syllables=3080, total_words=1531
+- `gunning-fog` in `fixtures/opus_4_6/social_anxiety_in_daily_life/article.md`: complex_word_count=443, score=18.95244780559206, total_sentences=83, total_words=1531
+- `avg-sentence-length` in `fixtures/opus_4_6/social_anxiety_in_daily_life/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/opus_4_6/social_anxiety_in_daily_life/prompt.md`: score=36.40785714285716, total_sentences=1, total_syllables=47, total_words=28
+- `gunning-fog` in `fixtures/opus_4_6/social_anxiety_in_daily_life/prompt.md`: complex_word_count=5, score=18.34285714285714, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/opus_4_6/stress_and_physical_symptoms/article.md`: score=15.073785617367701, total_letters=8117, total_sentences=75, total_words=1474
+- `flesch-kincaid` in `fixtures/opus_4_6/stress_and_physical_symptoms/article.md`: score=25.262986069651767, total_sentences=75, total_syllables=2816, total_words=1474
+- `gunning-fog` in `fixtures/opus_4_6/stress_and_physical_symptoms/article.md`: complex_word_count=388, score=18.39050565355043, total_sentences=75, total_words=1474
+- `coleman-liau` in `fixtures/opus_4_6/stress_and_physical_symptoms/prompt.md`: score=13.836666666666664, total_letters=126, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/opus_4_6/stress_and_physical_symptoms/prompt.md`: score=34.42500000000002, total_sentences=1, total_syllables=42, total_words=24
+- `gunning-fog` in `fixtures/opus_4_6/stress_and_physical_symptoms/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/opus_4_6/why_couples_stop_communicating/article.md`: score=13.854826883910386, total_letters=7897, total_sentences=93, total_words=1473
+- `flesch-kincaid` in `fixtures/opus_4_6/why_couples_stop_communicating/article.md`: score=31.03528808882466, total_sentences=93, total_syllables=2781, total_words=1473
+- `gunning-fog` in `fixtures/opus_4_6/why_couples_stop_communicating/article.md`: complex_word_count=354, score=15.948518494185667, total_sentences=93, total_words=1473
+- `coleman-liau` in `fixtures/opus_4_6/why_couples_stop_communicating/prompt.md`: score=15.551666666666668, total_letters=133, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/opus_4_6/why_couples_stop_communicating/prompt.md`: score=9.750000000000037, total_sentences=1, total_syllables=49, total_words=24
+- `gunning-fog` in `fixtures/opus_4_6/why_couples_stop_communicating/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/opus_4_6/why_friendships_fade/article.md`: score=39.541090045862695, total_sentences=113, total_syllables=2964, total_words=1644
+- `coleman-liau` in `fixtures/opus_4_6/why_friendships_fade/prompt.md`: score=16.041666666666664, total_letters=135, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/opus_4_6/why_friendships_fade/prompt.md`: score=13.275000000000022, total_sentences=1, total_syllables=48, total_words=24
+- `gunning-fog` in `fixtures/opus_4_6/why_friendships_fade/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/article.md`: score=42.09777625726995, total_sentences=111, total_syllables=2933, total_words=1659
+- `gunning-fog` in `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/article.md`: complex_word_count=337, score=14.103755111350049, total_sentences=111, total_words=1659
+- `avg-sentence-length` in `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/prompt.md`: score=15.062857142857144, total_letters=152, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/prompt.md`: score=12.2364285714286, total_sentences=1, total_syllables=55, total_words=28
+- `gunning-fog` in `fixtures/opus_4_6/why_people_lose_motivation_after_big_goals/prompt.md`: complex_word_count=8, score=22.62857142857143, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`: score=40.41821428571431, total_sentences=84, total_syllables=2583, total_words=1470
+- `gunning-fog` in `fixtures/opus_4_6/why_people_struggle_to_build_habits/article.md`: complex_word_count=300, score=15.16326530612245, total_sentences=84, total_words=1470
+- `avg-sentence-length` in `fixtures/opus_4_6/why_people_struggle_to_build_habits/prompt.md`: average_words_per_sentence=26, total_sentences=1, total_words=26
+- `coleman-liau` in `fixtures/opus_4_6/why_people_struggle_to_build_habits/prompt.md`: score=14.270769230769227, total_letters=138, total_sentences=1, total_words=26
+- `flesch-kincaid` in `fixtures/opus_4_6/why_people_struggle_to_build_habits/prompt.md`: score=30.76807692307695, total_sentences=1, total_syllables=46, total_words=26
+- `gunning-fog` in `fixtures/opus_4_6/why_people_struggle_to_build_habits/prompt.md`: complex_word_count=6, score=19.630769230769232, total_sentences=1, total_words=26
+- `flesch-kincaid` in `fixtures/opus_4_6/why_people_wake_up_tired/article.md`: score=41.87025312686124, total_sentences=69, total_syllables=2262, total_words=1314
+- `gunning-fog` in `fixtures/opus_4_6/why_people_wake_up_tired/article.md`: complex_word_count=263, score=15.623479584408711, total_sentences=69, total_words=1314
+- `avg-sentence-length` in `fixtures/opus_4_6/why_people_wake_up_tired/prompt.md`: average_words_per_sentence=33, total_sentences=1, total_words=33
+- `flesch-kincaid` in `fixtures/opus_4_6/why_people_wake_up_tired/prompt.md`: score=47.7218181818182, total_sentences=1, total_syllables=49, total_words=33
+- `gunning-fog` in `fixtures/opus_4_6/why_people_wake_up_tired/prompt.md`: complex_word_count=3, score=16.83636363636364, total_sentences=1, total_words=33
+- `coleman-liau` in `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/article.md`: score=15.254321608040193, total_letters=8866, total_sentences=91, total_words=1592
+- `flesch-kincaid` in `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/article.md`: score=23.863629686896047, total_sentences=91, total_syllables=3109, total_words=1592
+- `gunning-fog` in `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/article.md`: complex_word_count=436, score=17.952576067148932, total_sentences=91, total_words=1592
+- `avg-sentence-length` in `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/prompt.md`: average_words_per_sentence=25, total_sentences=1, total_words=25
+- `flesch-kincaid` in `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/prompt.md`: score=29.180000000000017, total_sentences=1, total_syllables=45, total_words=25
+- `gunning-fog` in `fixtures/sonnet_4_6/adult_procrastination_causes_and_fixes/prompt.md`: complex_word_count=5, score=18.0, total_sentences=1, total_words=25
+- `coleman-liau` in `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`: score=15.177363580625382, total_letters=9106, total_sentences=102, total_words=1631
+- `flesch-kincaid` in `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`: score=21.40495098039218, total_sentences=102, total_syllables=3262, total_words=1631
+- `gunning-fog` in `fixtures/sonnet_4_6/how_burnout_develops_at_work/article.md`: complex_word_count=461, score=17.702025702985058, total_sentences=102, total_words=1631
+- `coleman-liau` in `fixtures/sonnet_4_6/how_burnout_develops_at_work/prompt.md`: score=14.102608695652169, total_letters=122, total_sentences=1, total_words=23
+- `flesch-kincaid` in `fixtures/sonnet_4_6/how_burnout_develops_at_work/prompt.md`: score=32.681304347826114, total_sentences=1, total_syllables=41, total_words=23
+- `gunning-fog` in `fixtures/sonnet_4_6/how_burnout_develops_at_work/prompt.md`: complex_word_count=6, score=19.634782608695655, total_sentences=1, total_words=23
+- `coleman-liau` in `fixtures/sonnet_4_6/screen_time_and_child_attention/article.md`: score=14.393961322520273, total_letters=8609, total_sentences=75, total_words=1603
+- `flesch-kincaid` in `fixtures/sonnet_4_6/screen_time_and_child_attention/article.md`: score=26.021291245581217, total_sentences=75, total_syllables=3015, total_words=1603
+- `gunning-fog` in `fixtures/sonnet_4_6/screen_time_and_child_attention/article.md`: complex_word_count=386, score=18.181273445622793, total_sentences=75, total_words=1603
+- `coleman-liau` in `fixtures/sonnet_4_6/screen_time_and_child_attention/prompt.md`: score=14.816666666666668, total_letters=130, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/sonnet_4_6/screen_time_and_child_attention/prompt.md`: score=30.900000000000013, total_sentences=1, total_syllables=43, total_words=24
+- `gunning-fog` in `fixtures/sonnet_4_6/screen_time_and_child_attention/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/sonnet_4_6/social_anxiety_in_daily_life/article.md`: score=14.612440073755376, total_letters=8838, total_sentences=84, total_words=1627
+- `flesch-kincaid` in `fixtures/sonnet_4_6/social_anxiety_in_daily_life/article.md`: score=21.199264238885494, total_sentences=84, total_syllables=3192, total_words=1627
+- `gunning-fog` in `fixtures/sonnet_4_6/social_anxiety_in_daily_life/article.md`: complex_word_count=442, score=18.614244739075716, total_sentences=84, total_words=1627
+- `avg-sentence-length` in `fixtures/sonnet_4_6/social_anxiety_in_daily_life/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/sonnet_4_6/social_anxiety_in_daily_life/prompt.md`: score=36.40785714285716, total_sentences=1, total_syllables=47, total_words=28
+- `gunning-fog` in `fixtures/sonnet_4_6/social_anxiety_in_daily_life/prompt.md`: complex_word_count=5, score=18.34285714285714, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/sonnet_4_6/stress_and_physical_symptoms/article.md`: score=15.330285714285715, total_letters=8431, total_sentences=92, total_words=1505
+- `flesch-kincaid` in `fixtures/sonnet_4_6/stress_and_physical_symptoms/article.md`: score=23.448066770186347, total_sentences=92, total_syllables=2967, total_words=1505
+- `gunning-fog` in `fixtures/sonnet_4_6/stress_and_physical_symptoms/article.md`: complex_word_count=429, score=17.945471616351295, total_sentences=92, total_words=1505
+- `coleman-liau` in `fixtures/sonnet_4_6/stress_and_physical_symptoms/prompt.md`: score=13.836666666666664, total_letters=126, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/sonnet_4_6/stress_and_physical_symptoms/prompt.md`: score=34.42500000000002, total_sentences=1, total_syllables=42, total_words=24
+- `gunning-fog` in `fixtures/sonnet_4_6/stress_and_physical_symptoms/prompt.md`: complex_word_count=5, score=17.933333333333334, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/sonnet_4_6/why_couples_stop_communicating/article.md`: score=15.932800000000004, total_letters=8818, total_sentences=90, total_words=1550
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_couples_stop_communicating/article.md`: score=18.134960573476718, total_sentences=90, total_syllables=3137, total_words=1550
+- `gunning-fog` in `fixtures/sonnet_4_6/why_couples_stop_communicating/article.md`: complex_word_count=443, score=18.32114695340502, total_sentences=90, total_words=1550
+- `coleman-liau` in `fixtures/sonnet_4_6/why_couples_stop_communicating/prompt.md`: score=15.551666666666668, total_letters=133, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_couples_stop_communicating/prompt.md`: score=9.750000000000037, total_sentences=1, total_syllables=49, total_words=24
+- `gunning-fog` in `fixtures/sonnet_4_6/why_couples_stop_communicating/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `coleman-liau` in `fixtures/sonnet_4_6/why_friendships_fade/article.md`: score=14.503766233766228, total_letters=8425, total_sentences=97, total_words=1540
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_friendships_fade/article.md`: score=28.057839737582036, total_sentences=97, total_syllables=2961, total_words=1540
+- `gunning-fog` in `fixtures/sonnet_4_6/why_friendships_fade/article.md`: complex_word_count=375, score=16.090775204177266, total_sentences=97, total_words=1540
+- `coleman-liau` in `fixtures/sonnet_4_6/why_friendships_fade/prompt.md`: score=16.041666666666664, total_letters=135, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_friendships_fade/prompt.md`: score=13.275000000000022, total_sentences=1, total_syllables=48, total_words=24
+- `gunning-fog` in `fixtures/sonnet_4_6/why_friendships_fade/prompt.md`: complex_word_count=7, score=21.26666666666667, total_sentences=1, total_words=24
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`: score=37.23876820668929, total_sentences=128, total_syllables=3005, total_words=1622
+- `gunning-fog` in `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/article.md`: complex_word_count=384, score=14.538540382244143, total_sentences=128, total_words=1622
+- `avg-sentence-length` in `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/prompt.md`: average_words_per_sentence=28, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/prompt.md`: score=15.062857142857144, total_letters=152, total_sentences=1, total_words=28
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/prompt.md`: score=12.2364285714286, total_sentences=1, total_syllables=55, total_words=28
+- `gunning-fog` in `fixtures/sonnet_4_6/why_people_lose_motivation_after_big_goals/prompt.md`: complex_word_count=8, score=22.62857142857143, total_sentences=1, total_words=28
+- `coleman-liau` in `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/article.md`: score=12.655467671060892, total_letters=8137, total_sentences=85, total_words=1593
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/article.md`: score=32.951688933200415, total_sentences=85, total_syllables=2916, total_words=1593
+- `gunning-fog` in `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/article.md`: complex_word_count=380, score=17.038215723200768, total_sentences=85, total_words=1593
+- `avg-sentence-length` in `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/prompt.md`: average_words_per_sentence=26, total_sentences=1, total_words=26
+- `coleman-liau` in `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/prompt.md`: score=14.270769230769227, total_letters=138, total_sentences=1, total_words=26
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/prompt.md`: score=30.76807692307695, total_sentences=1, total_syllables=46, total_words=26
+- `gunning-fog` in `fixtures/sonnet_4_6/why_people_struggle_to_build_habits/prompt.md`: complex_word_count=6, score=19.630769230769232, total_sentences=1, total_words=26
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_people_wake_up_tired/article.md`: score=40.89327280083779, total_sentences=101, total_syllables=2935, total_words=1664
+- `gunning-fog` in `fixtures/sonnet_4_6/why_people_wake_up_tired/article.md`: complex_word_count=329, score=14.498752856054836, total_sentences=101, total_words=1664
+- `avg-sentence-length` in `fixtures/sonnet_4_6/why_people_wake_up_tired/prompt.md`: average_words_per_sentence=33, total_sentences=1, total_words=33
+- `flesch-kincaid` in `fixtures/sonnet_4_6/why_people_wake_up_tired/prompt.md`: score=47.7218181818182, total_sentences=1, total_syllables=49, total_words=33
+- `gunning-fog` in `fixtures/sonnet_4_6/why_people_wake_up_tired/prompt.md`: complex_word_count=3, score=16.83636363636364, total_sentences=1, total_words=33
+- `flesch-kincaid` in `fixtures/why_do_we_dream.md`: score=41.82900478053022, total_sentences=78, total_syllables=2630, total_words=1534
+- `gunning-fog` in `fixtures/why_do_we_dream.md`: complex_word_count=300, score=15.68935245545415, total_sentences=78, total_words=1534

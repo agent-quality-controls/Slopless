@@ -1,0 +1,208 @@
+plan = ".plans/2026-05-13-180323-semantic-thinness-rule.md"
+manifest_version = 1
+supersedes = [".plans/2026-05-13-172644-semantic-thinness-pattern-data.md"]
+
+[package]
+path = "packages/textlint-rules"
+name = "@prosesmasher/textlint-rules"
+type = "module"
+private = true
+
+[rule]
+id = "semantic-thinness"
+family = "semantic-thinness"
+path = "packages/textlint-rules/src/families/semantic-thinness/semantic-thinness.ts"
+registry_path = "packages/textlint-rules/src/registries/semantic-thinness.ts"
+private_matcher_path = "packages/textlint-rules/src/families/semantic-thinness/private/pattern-matcher.ts"
+export_key = "./families/semantic-thinness/semantic-thinness"
+export_value = "./dist/families/semantic-thinness/semantic-thinness.js"
+message_substring = "Semantic thinness ("
+message_parts = ["match.purpose", "match.signal"]
+
+[pattern_inventory]
+root = "packages/textlint-rules/src/families/semantic-thinness/patterns"
+closed = true
+required_fields = [
+  "id",
+  "class",
+  "purpose",
+  "templates",
+  "slots",
+  "rejectIf",
+  "positiveExamples",
+  "negativeExamples",
+  "notes",
+]
+required_string_fields = ["id", "class", "purpose"]
+required_list_fields = [
+  "templates",
+  "rejectIf",
+  "positiveExamples",
+  "negativeExamples",
+  "notes",
+]
+required_object_fields = ["slots"]
+min_templates = 1
+min_slot_groups = 1
+min_values_per_slot = 1
+min_positive_examples = 1
+min_negative_examples = 1
+
+[behavior_fixture]
+path = "behavior/fixtures/textlint-rules/semantic-thinness/family.md"
+config = "behavior/fixtures/textlint-rules/semantic-thinness/.textlintrc.json"
+metadata = "behavior/fixtures/textlint-rules/semantic-thinness/fixture.toml"
+rulesdir = "packages/textlint-rules/dist/families/semantic-thinness"
+min_findings = 10
+required_rule_id = "semantic-thinness"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/semantic-thinness"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/semantic-thinness/private"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns"
+
+[[pattern_data]]
+id = "abstract-contrast"
+class = "abstract-contrast"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/abstract-contrast.json"
+
+[[pattern_data]]
+id = "abstract-metaphor-claim"
+class = "abstract-metaphor"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/abstract-metaphor-claim.json"
+
+[[pattern_data]]
+id = "body-emotion-shorthand"
+class = "body-emotion"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/body-emotion-shorthand.json"
+
+[[pattern_data]]
+id = "body-knows"
+class = "wellness-abstraction"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/body-knows.json"
+
+[[pattern_data]]
+id = "deictic-summary"
+class = "deictic-summary"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/deictic-summary.json"
+
+[[pattern_data]]
+id = "point-is-frame"
+class = "summary-frame"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/point-is-frame.json"
+
+[[pattern_data]]
+id = "real-work-begins"
+class = "work-payoff"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/real-work-begins.json"
+
+[[pattern_data]]
+id = "silence-as-actor"
+class = "abstract-atmosphere"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/silence-as-actor.json"
+
+[[pattern_data]]
+id = "something-shifted"
+class = "vague-change"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/something-shifted.json"
+
+[[pattern_data]]
+id = "truth-answer-moves"
+class = "abstract-revelation"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/truth-answer-moves.json"
+
+[[pattern_data]]
+id = "empty-atmosphere-shift"
+class = "atmosphere-shift"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/empty-atmosphere-shift.json"
+
+[[pattern_data]]
+id = "empty-emotional-weather"
+class = "emotional-weather"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/empty-emotional-weather.json"
+
+[[pattern_data]]
+id = "empty-scene-state"
+class = "scene-state"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/empty-scene-state.json"
+
+[[pattern_data]]
+id = "empty-scene-transition"
+class = "transition-change"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/empty-scene-transition.json"
+
+[[pattern_data]]
+id = "generic-lesson-extraction"
+class = "lesson-extraction"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/generic-lesson-extraction.json"
+
+[[pattern_data]]
+id = "generic-pressure-or-stakes"
+class = "stakes"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/generic-pressure-or-stakes.json"
+
+[[pattern_data]]
+id = "generic-realization"
+class = "realization"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/generic-realization.json"
+
+[[pattern_data]]
+id = "gaze-choreography"
+class = "body-camera"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/gaze-choreography.json"
+
+[[pattern_data]]
+id = "hollow-significance"
+class = "significance"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/hollow-significance.json"
+
+[[pattern_data]]
+id = "low-information-physical-blocking"
+class = "physical-blocking"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/low-information-physical-blocking.json"
+
+[[pattern_data]]
+id = "vague-connective-payoff"
+class = "connective-payoff"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/vague-connective-payoff.json"
+
+[[pattern_data]]
+id = "vague-threshold-change"
+class = "threshold-change"
+path = "packages/textlint-rules/src/families/semantic-thinness/patterns/vague-threshold-change.json"
+
+[[preset_rule]]
+path = "packages/textlint-rules/src/presets/everything.ts"
+rule_id = "semantic-thinness"
+
+[[private_data_module]]
+path = "packages/textlint-rules/src/families/semantic-thinness/private/pattern-data-a.ts"
+
+[[private_data_module]]
+path = "packages/textlint-rules/src/families/semantic-thinness/private/pattern-data-b.ts"
+
+[[private_data_module]]
+path = "packages/textlint-rules/src/families/semantic-thinness/private/pattern-data.ts"
+
+[[private_data_module]]
+path = "packages/textlint-rules/src/families/semantic-thinness/private/pattern-data-c.ts"
+
+[[private_data_module]]
+path = "packages/textlint-rules/src/families/semantic-thinness/private/pattern-data-d.ts"
+
+[[index_registry]]
+path = "packages/textlint-rules/src/index.ts"
+import_name = "semanticThinnessRules"
+import_path = "./registries/semantic-thinness.js"
+
+[[behavior_replay_rulesdir]]
+path = "scripts/behavior-replay.sh"
+rulesdir = "dist/families/semantic-thinness"
+
+[[verification_command]]
+path = "scripts/verify-semantic-thinness-rule-manifest.py"
+command = "python3 scripts/verify-semantic-thinness-rule-manifest.py --manifest .plans/2026-05-13-180323-semantic-thinness-rule.md.manifest.toml all"

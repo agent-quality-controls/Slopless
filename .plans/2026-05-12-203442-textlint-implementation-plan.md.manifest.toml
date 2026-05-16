@@ -1,0 +1,534 @@
+plan = ".plans/2026-05-12-203442-textlint-implementation-plan.md"
+manifest_version = 1
+
+[package]
+path = "packages/textlint-rules"
+name = "@prosesmasher/textlint-rules"
+type = "module"
+private = true
+
+runtime_dependencies = [
+  "@lunarisapp/readability",
+  "@textlint/types",
+  "sentence-splitter",
+  "textlint",
+  "textlint-rule-helper",
+  "textlint-util-to-string",
+]
+
+dev_dependencies = [
+  "@typescript-eslint/eslint-plugin",
+  "@typescript-eslint/parser",
+  "eslint",
+  "typescript",
+]
+
+forbidden_dependencies = [
+  "escape-string-regexp",
+  "natural",
+  "nlcst-search",
+  "retext-english",
+  "retext-equality",
+  "retext-readability",
+  "retext-simplify",
+  "split-string-words",
+]
+
+[g3ts]
+config_path = "packages/textlint-rules/guardrail3-ts.toml"
+required = true
+run_on_package = "packages/textlint-rules"
+
+[[tree]]
+path = "packages/textlint-rules"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/markdown-layout"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/orthography"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/metrics"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/term-policy"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/words"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/phrases"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/syntactic-patterns"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/syntactic-patterns/llm-artifacts"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/syntactic-patterns/lead-ins"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/syntactic-patterns/contrast"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/syntactic-patterns/closers"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/syntactic-patterns/repetition"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/syntactic-patterns/authority"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/syntactic-patterns/generalization"
+
+[[tree]]
+path = "packages/textlint-rules/src/families/semantic-thinness"
+
+[[tree]]
+path = "packages/textlint-rules/src/presets"
+
+[[tree]]
+path = "packages/textlint-rules/src/registries"
+
+[[tree]]
+path = "packages/textlint-rules/src/shared/text"
+
+[[tree]]
+path = "packages/textlint-rules/src/shared/matchers"
+
+[[tree]]
+path = "behavior/fixtures/textlint-rules"
+
+[[tree]]
+path = "behavior/baselines/textlint-rules"
+
+[[tree]]
+path = "behavior/deltas/textlint-rules"
+
+[[tree]]
+path = "behavior/schemas/textlint-rules"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/text/document.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/text/normalize.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/text/quotes.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/text/tokens.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/text/sentences.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/text/sections.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/text/traverse.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/text/whitespace.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/matchers/phrases.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/matchers/syntactic-templates.ts"
+
+[[shared_file]]
+path = "packages/textlint-rules/src/shared/matchers/llm-slop.ts"
+
+[[rule]]
+id = "em-dashes"
+family = "orthography"
+path = "packages/textlint-rules/src/families/orthography/em-dashes.ts"
+rust_rule = "em-dashes"
+
+[[rule]]
+id = "smart-quotes"
+family = "orthography"
+path = "packages/textlint-rules/src/families/orthography/smart-quotes.ts"
+rust_rule = "smart-quotes"
+
+[[rule]]
+id = "sentence-case"
+family = "orthography"
+path = "packages/textlint-rules/src/families/orthography/sentence-case.ts"
+rust_rule = "sentence-case"
+
+[[rule]]
+id = "exclamation-density"
+family = "orthography"
+path = "packages/textlint-rules/src/families/orthography/exclamation-density.ts"
+rust_rule = "exclamation-density"
+
+[[rule]]
+id = "fake-timestamps"
+family = "orthography"
+path = "packages/textlint-rules/src/families/orthography/fake-timestamps.ts"
+rust_rule = "fake-timestamps"
+
+[[rule]]
+id = "colon-dramatic"
+family = "orthography"
+path = "packages/textlint-rules/src/families/orthography/colon-dramatic.ts"
+rust_rule = "colon-dramatic"
+
+[[rule]]
+id = "paragraph-length"
+family = "metrics"
+path = "packages/textlint-rules/src/families/metrics/paragraph-length.ts"
+rust_rule = "paragraph-length"
+
+[[rule]]
+id = "word-repetition"
+family = "metrics"
+path = "packages/textlint-rules/src/families/metrics/word-repetition.ts"
+rust_rule = "word-repetition"
+
+[[rule]]
+id = "flesch-kincaid"
+family = "metrics"
+path = "packages/textlint-rules/src/families/metrics/flesch-kincaid.ts"
+rust_rule = "flesch-kincaid"
+
+[[rule]]
+id = "gunning-fog"
+family = "metrics"
+path = "packages/textlint-rules/src/families/metrics/gunning-fog.ts"
+rust_rule = "gunning-fog"
+
+[[rule]]
+id = "coleman-liau"
+family = "metrics"
+path = "packages/textlint-rules/src/families/metrics/coleman-liau.ts"
+rust_rule = "coleman-liau"
+
+[[rule]]
+id = "avg-sentence-length"
+family = "metrics"
+path = "packages/textlint-rules/src/families/metrics/avg-sentence-length.ts"
+rust_rule = "avg-sentence-length"
+
+[[rule]]
+id = "prohibited-words"
+family = "words"
+path = "packages/textlint-rules/src/families/words/prohibited-words.ts"
+rust_rule = "prohibited-terms"
+rust_match_subset = "single-token"
+data_path = "packages/textlint-rules/src/families/words/data/prohibited-words.json"
+
+[[rule]]
+id = "hedge-stacking"
+family = "words"
+path = "packages/textlint-rules/src/families/words/hedge-stacking.ts"
+rust_rule = "hedge-stacking"
+
+[[rule]]
+id = "llm-vocabulary"
+family = "words"
+path = "packages/textlint-rules/src/families/words/llm-vocabulary.ts"
+rust_rule = "llm-vocabulary"
+
+[[rule]]
+id = "simplicity"
+family = "words"
+path = "packages/textlint-rules/src/families/words/simplicity.ts"
+rust_rule = "simplicity"
+data_path = "packages/textlint-rules/src/families/words/data/simplicity-pairs.json"
+
+[[rule]]
+id = "prohibited-phrases"
+family = "phrases"
+path = "packages/textlint-rules/src/families/phrases/prohibited-phrases.ts"
+rust_rule = "prohibited-terms"
+rust_match_subset = "multi-token"
+data_path = "packages/textlint-rules/src/families/phrases/data/prohibited-phrases.json"
+
+[[rule]]
+id = "llm-disclaimer"
+family = "phrases"
+path = "packages/textlint-rules/src/families/phrases/llm-disclaimer.ts"
+rust_rule = "llm-disclaimer"
+
+[[rule]]
+id = "required-terms"
+family = "term-policy"
+path = "packages/textlint-rules/src/families/term-policy/required-terms.ts"
+rust_rule = "required-terms"
+
+[[rule]]
+id = "recommended-terms"
+family = "term-policy"
+path = "packages/textlint-rules/src/families/term-policy/recommended-terms.ts"
+rust_rule = "recommended-terms"
+
+[[rule]]
+id = "humble-bragger"
+family = "phrases"
+path = "packages/textlint-rules/src/families/phrases/humble-bragger.ts"
+rust_rule = "humble-bragger"
+
+[[rule]]
+id = "jargon-faker"
+family = "phrases"
+path = "packages/textlint-rules/src/families/phrases/jargon-faker.ts"
+rust_rule = "jargon-faker"
+
+[[rule]]
+id = "response-wrapper"
+family = "syntactic-patterns/llm-artifacts"
+path = "packages/textlint-rules/src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts"
+rust_rule = "response-wrapper"
+
+[[rule]]
+id = "generic-signposting"
+family = "syntactic-patterns/lead-ins"
+path = "packages/textlint-rules/src/families/syntactic-patterns/lead-ins/generic-signposting.ts"
+rust_rule = "generic-signposting"
+
+[[rule]]
+id = "boilerplate-framing"
+family = "syntactic-patterns/lead-ins"
+path = "packages/textlint-rules/src/families/syntactic-patterns/lead-ins/boilerplate-framing.ts"
+rust_rule = "boilerplate-framing"
+
+[[rule]]
+id = "lesson-framing"
+family = "syntactic-patterns/lead-ins"
+path = "packages/textlint-rules/src/families/syntactic-patterns/lead-ins/lesson-framing.ts"
+rust_rule = "lesson-framing"
+
+[[rule]]
+id = "observer-guidance"
+family = "syntactic-patterns/lead-ins"
+path = "packages/textlint-rules/src/families/syntactic-patterns/lead-ins/observer-guidance.ts"
+rust_rule = "observer-guidance"
+
+[[rule]]
+id = "negation-reframe"
+family = "syntactic-patterns/contrast"
+path = "packages/textlint-rules/src/families/syntactic-patterns/contrast/negation-reframe.ts"
+rust_rule = "negation-reframe"
+
+[[rule]]
+id = "contrastive-aphorism"
+family = "syntactic-patterns/contrast"
+path = "packages/textlint-rules/src/families/syntactic-patterns/contrast/contrastive-aphorism.ts"
+rust_rule = "contrastive-aphorism"
+
+[[rule]]
+id = "blame-reframe"
+family = "syntactic-patterns/contrast"
+path = "packages/textlint-rules/src/families/syntactic-patterns/contrast/blame-reframe.ts"
+rust_rule = "blame-reframe"
+
+[[rule]]
+id = "fragment-stacking"
+family = "syntactic-patterns/repetition"
+path = "packages/textlint-rules/src/families/syntactic-patterns/repetition/fragment-stacking.ts"
+rust_rule = "fragment-stacking"
+
+[[rule]]
+id = "empty-emphasis"
+family = "syntactic-patterns/repetition"
+path = "packages/textlint-rules/src/families/syntactic-patterns/repetition/empty-emphasis.ts"
+rust_rule = "empty-emphasis"
+
+[[rule]]
+id = "triple-repeat"
+family = "syntactic-patterns/repetition"
+path = "packages/textlint-rules/src/families/syntactic-patterns/repetition/triple-repeat.ts"
+rust_rule = "triple-repeat"
+
+[[rule]]
+id = "demonstrative-emphasis"
+family = "syntactic-patterns/repetition"
+path = "packages/textlint-rules/src/families/syntactic-patterns/repetition/demonstrative-emphasis.ts"
+rust_rule = "demonstrative-emphasis"
+
+[[rule]]
+id = "llm-openers"
+family = "syntactic-patterns/lead-ins"
+path = "packages/textlint-rules/src/families/syntactic-patterns/lead-ins/llm-openers.ts"
+rust_rule = "llm-openers"
+
+[[rule]]
+id = "affirmation-closers"
+family = "syntactic-patterns/closers"
+path = "packages/textlint-rules/src/families/syntactic-patterns/closers/affirmation-closers.ts"
+rust_rule = "affirmation-closers"
+
+[[rule]]
+id = "summative-closer"
+family = "syntactic-patterns/closers"
+path = "packages/textlint-rules/src/families/syntactic-patterns/closers/summative-closer.ts"
+rust_rule = "summative-closer"
+
+[[rule]]
+id = "false-question"
+family = "syntactic-patterns/closers"
+path = "packages/textlint-rules/src/families/syntactic-patterns/closers/false-question.ts"
+rust_rule = "false-question"
+
+[[rule]]
+id = "boilerplate-conclusion"
+family = "syntactic-patterns/closers"
+path = "packages/textlint-rules/src/families/syntactic-patterns/closers/boilerplate-conclusion.ts"
+rust_rule = "boilerplate-conclusion"
+
+[[rule]]
+id = "authority-padding"
+family = "syntactic-patterns/authority"
+path = "packages/textlint-rules/src/families/syntactic-patterns/authority/authority-padding.ts"
+rust_rule = "authority-padding"
+
+[[rule]]
+id = "softening-language"
+family = "syntactic-patterns/generalization"
+path = "packages/textlint-rules/src/families/syntactic-patterns/generalization/softening-language.ts"
+rust_rule = "softening-language"
+
+[[rule]]
+id = "universalizing-claims"
+family = "syntactic-patterns/generalization"
+path = "packages/textlint-rules/src/families/syntactic-patterns/generalization/universalizing-claims.ts"
+rust_rule = "universalizing-claims"
+
+[[preset]]
+id = "everything"
+path = "packages/textlint-rules/src/presets/everything.ts"
+rules = [
+  "affirmation-closers",
+  "authority-padding",
+  "avg-sentence-length",
+  "blame-reframe",
+  "boilerplate-conclusion",
+  "boilerplate-framing",
+  "colon-dramatic",
+  "coleman-liau",
+  "contrastive-aphorism",
+  "demonstrative-emphasis",
+  "em-dashes",
+  "empty-emphasis",
+  "exclamation-density",
+  "fake-timestamps",
+  "false-question",
+  "flesch-kincaid",
+  "fragment-stacking",
+  "generic-signposting",
+  "gunning-fog",
+  "hedge-stacking",
+  "humble-bragger",
+  "jargon-faker",
+  "lesson-framing",
+  "llm-disclaimer",
+  "llm-openers",
+  "llm-vocabulary",
+  "observer-guidance",
+  "paragraph-length",
+  "prohibited-words",
+  "prohibited-phrases",
+  "recommended-terms",
+  "negation-reframe",
+  "response-wrapper",
+  "required-terms",
+  "sentence-case",
+  "simplicity",
+  "softening-language",
+  "smart-quotes",
+  "summative-closer",
+  "triple-repeat",
+  "universalizing-claims",
+  "word-repetition",
+]
+
+[[regex_guardrail]]
+kind = "syntax"
+selector = "Literal[regex]"
+scope = "packages/textlint-rules/src/families"
+
+[[regex_guardrail]]
+kind = "syntax"
+selector = "NewExpression[callee.name='RegExp']"
+scope = "packages/textlint-rules/src/families"
+
+[[regex_guardrail]]
+kind = "syntax"
+selector = "CallExpression[callee.name='RegExp']"
+scope = "packages/textlint-rules/src/families"
+
+[[regex_guardrail]]
+kind = "import"
+package = "escape-string-regexp"
+scope = "packages/textlint-rules/src/families"
+
+[[fixture_family]]
+id = "markdown-layout"
+fixture = "behavior/fixtures/textlint-rules/markdown-layout/family.md"
+metadata = "behavior/fixtures/textlint-rules/markdown-layout/fixture.toml"
+
+[[skipped_family]]
+id = "markdown-layout"
+reason = "Document-policy layout checks are intentionally skipped during the readability metrics migration."
+
+[[fixture_family]]
+id = "orthography"
+fixture = "behavior/fixtures/textlint-rules/orthography/family.md"
+metadata = "behavior/fixtures/textlint-rules/orthography/fixture.toml"
+
+[[fixture_family]]
+id = "metrics"
+fixture = "behavior/fixtures/textlint-rules/metrics/family.md"
+metadata = "behavior/fixtures/textlint-rules/metrics/fixture.toml"
+
+[[fixture_family]]
+id = "term-policy"
+fixture = "behavior/fixtures/textlint-rules/term-policy/family.md"
+metadata = "behavior/fixtures/textlint-rules/term-policy/fixture.toml"
+
+[[fixture_family]]
+id = "words"
+fixture = "behavior/fixtures/textlint-rules/words/family.md"
+metadata = "behavior/fixtures/textlint-rules/words/fixture.toml"
+
+[[fixture_family]]
+id = "phrases"
+fixture = "behavior/fixtures/textlint-rules/phrases/family.md"
+metadata = "behavior/fixtures/textlint-rules/phrases/fixture.toml"
+
+[[fixture_family]]
+id = "syntactic-patterns"
+fixture = "behavior/fixtures/textlint-rules/syntactic-patterns/family.md"
+metadata = "behavior/fixtures/textlint-rules/syntactic-patterns/fixture.toml"
+
+[[fixture_family]]
+id = "semantic-thinness"
+fixture = "behavior/fixtures/textlint-rules/semantic-thinness/family.md"
+metadata = "behavior/fixtures/textlint-rules/semantic-thinness/fixture.toml"
+
+[[behavior_script]]
+id = "baseline"
+path = "scripts/behavior-baseline.sh"
+
+[[behavior_script]]
+id = "replay"
+path = "scripts/behavior-replay.sh"
+
+[[behavior_script]]
+id = "diff"
+path = "scripts/behavior-diff.sh"
+
+[[behavior_script]]
+id = "accept"
+path = "scripts/behavior-accept.sh"
+
+[[behavior_script]]
+id = "verify"
+path = "scripts/behavior-verify.sh"

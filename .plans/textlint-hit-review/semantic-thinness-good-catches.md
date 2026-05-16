@@ -1,0 +1,368 @@
+# Semantic Thinness Good Catches
+
+Accepted findings from the current semantic-thinness rule over all textlint behavior fixtures. Generated-corpus borderline matches are kept for now.
+
+Total: 105
+
+## Counts By Pattern
+
+- `deictic-summary`: 32
+- `something-shifted`: 12
+- `point-is-frame`: 10
+- `body-knows`: 7
+- `empty-scene-state`: 6
+- `silence-as-actor`: 6
+- `body-emotion-shorthand`: 5
+- `gaze-choreography`: 4
+- `real-work-begins`: 4
+- `truth-answer-moves`: 4
+- `generic-lesson-extraction`: 3
+- `vague-connective-payoff`: 3
+- `empty-scene-transition`: 2
+- `abstract-metaphor-claim`: 1
+- `empty-emotional-weather`: 1
+- `generic-pressure-or-stakes`: 1
+- `generic-realization`: 1
+- `hollow-significance`: 1
+- `low-information-physical-blocking`: 1
+- `vague-threshold-change`: 1
+
+## Counts By Fixture Group
+
+- `generated-slop-corpus`: 78
+- `semantic-thinness`: 12
+- `sunstone-arden-cassia`: 12
+- `syntactic-patterns`: 2
+- `orthography`: 1
+
+## Findings
+
+### generated-slop-corpus
+
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-a-02.md:13` [silence-as-actor] The silence was not empty.
+  - Template: `{silenceSubject} {linkingVerb} not {thinState}.`
+  - Signal: Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-a-03.md:21` [something-shifted] Just a thin seam of light, a breath of colder air, and the sense that the day had crossed a line it could not cross back over.
+  - Template: `{genericSubject} had {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-a-04.md:15` [something-shifted] But something in the arrangement of the day had shifted, and she could feel it in the way people turned, paused, purchased, and moved on as if all of them were carrying a private understanding they had not yet shared.
+  - Template: `{genericSubject} had {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-a-08.md:19` [something-shifted] Ana took one step forward, then another, and understood in a very general way that whatever happened next would probably be described later as the moment everything changed.
+  - Template: `{genericSubject} {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-01.md:3` [real-work-begins] People spend years chasing better systems, better habits, better teams, and better outcomes, but the real work begins when they stop hiding behind noise and start naming what matters.
+  - Template: `{workSubject} {startVerb}.`
+  - Signal: Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-01.md:3` [deictic-summary] That is where progress lives.
+  - Template: `{deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-01.md:11` [point-is-frame] So the point is not to be perfect.
+  - Template: `the {summaryNoun} {linkingVerb} not to {abstractAction}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-01.md:11` [point-is-frame] The point is to be honest enough to see what is actually there.
+  - Template: `the {summaryNoun} {linkingVerb} to {abstractAction}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-02.md:5` [deictic-summary] That is the part nobody wants to hear because it sounds too simple, yet simple is often the only thing that survives contact with reality.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-02.md:11` [body-knows] The body learns the pattern.
+  - Template: `{wisdomSubject} {wisdomVerb}.`
+  - Signal: Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-02.md:11` [deictic-summary] That is the real promise, and it is enough.
+  - Template: `{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-04.md:11` [deictic-summary] Nothing extraordinary happened, but that was the point.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-03.md:9` [deictic-summary] That is the strange truth no one says out loud soon enough.
+  - Template: `{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-03.md:11` [real-work-begins] They knew the real work begins after the excitement fades and the system has to earn its place.
+  - Template: `{workSubject} {startVerb}.`
+  - Signal: Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-05.md:5` [deictic-summary] That is the nature of the game.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-06.md:3` [something-shifted] Nobody could say exactly what would happen next, but everyone sensed that the day had crossed a line.
+  - Template: `{genericSubject} had {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-07.md:7` [body-knows] The body notices what happens often.
+  - Template: `{wisdomSubject} {wisdomVerb}.`
+  - Signal: Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-08.md:7` [deictic-summary] This is the part fans love because it feels emotional in a clean way.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-09.md:7` [body-knows] The body notices everything before the mind wants to admit it.
+  - Template: `{wisdomSubject} {wisdomVerb}.`
+  - Signal: Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-09.md:7` [truth-answer-moves] Eventually the truth surfaces.
+  - Template: `{truthSubject} {emergenceVerb}.`
+  - Signal: Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-09.md:11` [deictic-summary] That is the strange reward of persistence.
+  - Template: `{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-10.md:11` [deictic-summary] That is the lesson, and it applies more widely than people think.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-01.md:5` [silence-as-actor] It only made the silence feel arranged.
+  - Template: `{deicticSubject} only made {silenceSubject} feel {thinState}.`
+  - Signal: Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-01.md:11` [something-shifted] Something had shifted.
+  - Template: `{genericSubject} had {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-03.md:9` [truth-answer-moves] Everything looked ordinary in the way an ordinary crime scene always does before the truth starts moving around.
+  - Template: `{truthSubject} starts {motionVerb}.`
+  - Signal: Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-05.md:3` [silence-as-actor] By Thursday the office had gone quiet in the way offices do when everyone is pretending not to notice the deadline.
+  - Template: `{placeSubject} had gone quiet in {mannerFrame}.`
+  - Signal: Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-06.md:7` [something-shifted] The room shifted in tiny ways.
+  - Template: `{genericSubject} {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-06.md:11` [empty-scene-state] The room looked unchanged.
+  - Template: `{placeSubject} {linkingVerb} {thinState}.`
+  - Signal: Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-01.md:5` [deictic-summary] That is the point, really.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-01.md:5` [point-is-frame] The point is not performance.
+  - Template: `the {summaryNoun} {linkingVerb} not {abstractNoun}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-01.md:9` [real-work-begins] The real work begins when we stop calling our distractions a personality and start calling them signals.
+  - Template: `{workSubject} {startVerb}.`
+  - Signal: Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-02.md:3` [body-knows] The body knows what it knows.
+  - Template: `{wisdomSubject} {wisdomVerb}.`
+  - Signal: Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-02.md:9` [something-shifted] And yes, something shifted this month.
+  - Template: `{genericSubject} {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-02.md:11` [point-is-frame] The invitation is to trust that the fog is also part of the path.
+  - Template: `the {summaryNoun} {linkingVerb} to {abstractAction}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-03.md:3` [silence-as-actor] In the main room, the silence was not empty.
+  - Template: `{silenceSubject} {linkingVerb} not {thinState}.`
+  - Signal: Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-03.md:11` [point-is-frame] The point was not revelation for its own sake.
+  - Template: `the {summaryNoun} {linkingVerb} not {abstractNoun}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-04.md:5` [truth-answer-moves] Sometimes the answer arrives as a body sensation before it becomes language.
+  - Template: `{truthSubject} {emergenceVerb}.`
+  - Signal: Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-04.md:7` [deictic-summary] This is the invitation.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-04.md:11` [deictic-summary] This is where the shift begins.
+  - Template: `{deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-05.md:7` [deictic-summary] That was the shift.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-05.md:9` [point-is-frame] The point was not perfection.
+  - Template: `the {summaryNoun} {linkingVerb} not {abstractNoun}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-07.md:11` [something-shifted] Something shifted when I stopped trying to name the exact point of it.
+  - Template: `{genericSubject} {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-08.md:13` [deictic-summary] That is the lesson, if we are willing to call it one.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-10.md:7` [truth-answer-moves] Sometimes the meaning arrives later, if it needs to at all.
+  - Template: `{truthSubject} {emergenceVerb}.`
+  - Signal: Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-10.md:9` [deictic-summary] That was the shift.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-10.md:11` [body-knows] Not because every session was profound, but because the practice kept revealing something simple and durable: the breath is both ordinary and sacred, and the body knows the difference between strain and safety long before the mind admits it.
+  - Template: `{wisdomSubject} {wisdomVerb}.`
+  - Signal: Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-09.md:3` [body-knows] The mind may insist on continuity, but the nervous system knows when it is time to change clothes, change rhythms, change expectations, change the way the day is held.
+  - Template: `{wisdomSubject} {wisdomVerb}.`
+  - Signal: Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-09.md:9` [point-is-frame] The point is not to be loyal to what is familiar.
+  - Template: `the {summaryNoun} {linkingVerb} not to {abstractAction}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-09.md:11` [something-shifted] Something shifted when I stopped calling transition a disruption and started calling it a doorway.
+  - Template: `{genericSubject} {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md:3` [real-work-begins] We have shipped the first layer, learned from the market, and now the real work begins.
+  - Template: `{workSubject} {startVerb}.`
+  - Signal: Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md:5` [deictic-summary] This is the point where clarity matters more than speed.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md:7` [deictic-summary] That is the part most people miss.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md:13` [deictic-summary] That is the lesson.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md:15` [point-is-frame] When people ask what changed, the answer is simple.
+  - Template: `the {summaryNoun} {linkingVerb} {thinComplement}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-02.md:7` [deictic-summary] That is the part many teams skip.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-02.md:13` [deictic-summary] And that is the lesson for founders and operators alike.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-03.md:11` [deictic-summary] That is the part that changes culture.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-03.md:15` [generic-lesson-extraction] The lesson is simple.
+  - Template: `The {summaryNoun} {linkingVerb} {thinComplement}.`
+  - Signal: Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-04.md:7` [deictic-summary] That is the part that drains momentum.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-04.md:15` [deictic-summary] That is the lesson.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-05.md:7` [vague-connective-payoff] That is the part that matters.
+  - Template: `{payoffOpener} {payoffComplement}.`
+  - Signal: Catch connective payoff sentences that signal a conclusion without adding the conclusion.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-05.md:15` [deictic-summary] That is the part worth designing for.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-06.md:9` [deictic-summary] That is the lesson behind every durable plan.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-09.md:11` [deictic-summary] That is the part a lot of companies skip.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-09.md:15` [generic-lesson-extraction] The lesson is simple.
+  - Template: `The {summaryNoun} {linkingVerb} {thinComplement}.`
+  - Signal: Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-07.md:13` [deictic-summary] That is the part that gets missed in a lot of executive conversations.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-07.md:17` [deictic-summary] That is the lesson.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-08.md:9` [deictic-summary] That is the part that shapes the experience every day.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-08.md:15` [deictic-summary] That is the lesson from the room.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-10.md:7` [deictic-summary] That is the part where many organizations lose clarity.
+  - Template: `{deicticSubject} {linkingVerb} the {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-10.md:17` [deictic-summary] That is the real lesson.
+  - Template: `{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.`
+  - Signal: Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-02.md:11` [something-shifted] Something in the room had shifted, though nothing visible had moved.
+  - Template: `{genericSubject} had {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-02.md:11` [empty-scene-state] The air felt different.
+  - Template: `{sceneElement} {linkingVerb} {thinState}.`
+  - Signal: Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-03.md:9` [point-is-frame] Oren closed his eyes and said the lesson was simple: if you stand still long enough, the world will reveal its hidden shape.
+  - Template: `the {summaryNoun} {linkingVerb} {thinComplement}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-04.md:5` [silence-as-actor] Nothing moved, and yet the room felt busy with stillness, as though every surface had been taught to listen.
+  - Template: `{silenceSubject} {linkingVerb} {thinState}.`
+  - Signal: Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-06.md:7` [silence-as-actor] The silence was not empty.
+  - Template: `{silenceSubject} {linkingVerb} not {thinState}.`
+  - Signal: Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-07.md:13` [body-knows] She held it anyway, because sometimes holding is the only form of faith left, and because the body learns what the heart cannot yet say: that loss is real, and so is the quiet after it, and both deserve to be witnessed.
+  - Template: `{wisdomSubject} {wisdomVerb}.`
+  - Signal: Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning.
+- `behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-08.md:13` [something-shifted] He only knew the room had shifted, and that the shift had given weight to everything that had seemed ordinary before.
+  - Template: `{genericSubject} had {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+
+### orthography
+
+- `behavior/fixtures/textlint-rules/orthography/family.md:21` [something-shifted] And then it hit me: everything changed.
+  - Template: `{genericSubject} {changeVerb}.`
+  - Signal: Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change.
+
+### semantic-thinness
+
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:3` [empty-scene-transition] Everything shifted.
+  - Template: `{genericSubject} {changeVerb}.`
+  - Signal: Catch generic transition lines that declare change, passage, or motion without naming what changed or why.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:4` [empty-scene-state] The room felt still.
+  - Template: `{placeSubject} {linkingVerb} {thinState}.`
+  - Signal: Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:5` [empty-emotional-weather] Silence sat between them.
+  - Template: `{atmosphereSubject} {weatherVerb} {placePhrase}.`
+  - Signal: Catch atmospheric abstract nouns that move through a scene without concrete source, action, or consequence.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:6` [generic-lesson-extraction] The lesson was simple.
+  - Template: `The {summaryNoun} {linkingVerb} {thinComplement}.`
+  - Signal: Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:7` [generic-pressure-or-stakes] The stakes felt real.
+  - Template: `{stakesSubject} {linkingVerb} {thinStakesComplement}.`
+  - Signal: Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:8` [generic-realization] She realized the truth.
+  - Template: `{humanSubject} {realizationVerb} {genericObject}.`
+  - Signal: Catch realization lines that announce understanding without naming what was learned.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:9` [hollow-significance] That mattered more than it seemed.
+  - Template: `{deicticSubject} {significanceVerb} {intensifier}.`
+  - Signal: Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:10` [low-information-physical-blocking] They just stood there.
+  - Template: `{humanSubject} {weakAdverb} {bodyVerb} {weakLocative}.`
+  - Signal: Catch bland physical action beats that move bodies around without adding object, goal, cause, or consequence.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:11` [vague-connective-payoff] And that is where the work begins.
+  - Template: `{payoffOpener} {payoffComplement}.`
+  - Signal: Catch connective payoff sentences that signal a conclusion without adding the conclusion.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:12` [vague-threshold-change] Things got harder.
+  - Template: `{genericSubject} {thresholdVerb} {evaluativeComplement}.`
+  - Signal: Catch vague threshold or evaluation changes without named scale, cause, or concrete state.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:13` [abstract-metaphor-claim] Prevention lives in rehearsal.
+  - Template: `{abstractSubject} {metaphorVerb} in {abstractObject}.`
+  - Signal: Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent.
+- `behavior/fixtures/textlint-rules/semantic-thinness/family.md:14` [empty-scene-transition] The moment passed.
+  - Template: `{genericSubject} {passageVerb}.`
+  - Signal: Catch generic transition lines that declare change, passage, or motion without naming what changed or why.
+
+### sunstone-arden-cassia
+
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_1.md:5` [gaze-choreography] His gold eyes measured the line of small chests.
+  - Template: `{gazeSubject} {gazeVerb} {gazeTarget}.`
+  - Signal: Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_1.md:26` [body-emotion-shorthand] Her chest felt a sudden, heavy thump.
+  - Template: `{bodySubject} {feltVerb} {bodySensation}.`
+  - Signal: Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_1.md:35` [gaze-choreography] Cassia traced the trail with her eyes.
+  - Template: `{humanSubject} traced {objectSubject} with {possessive} eyes.`
+  - Signal: Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_1.md:37` [gaze-choreography] They followed her gaze to the dark rim of the clay.
+  - Template: `{humanSubject} followed {possessive} gaze to {gazeTarget}.`
+  - Signal: Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md:5` [empty-scene-state] The yard went quiet.
+  - Template: `{placeSubject} went {thinState}.`
+  - Signal: Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md:17` [body-emotion-shorthand] Cassia's breath caught in her throat.
+  - Template: `{breathSubject} caught in {throatTarget}.`
+  - Signal: Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md:18` [gaze-choreography] Her gaze fell to the ground.
+  - Template: `{gazeSubject} {gazeVerb} {gazeTarget}.`
+  - Signal: Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md:33` [empty-scene-state] Everything was quiet.
+  - Template: `{placeSubject} {linkingVerb} {thinState}.`
+  - Signal: Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md:33` [empty-scene-state] The rooms were just... empty."
+  - Template: `{placeSubject} {linkingVerb} {weakBeforeState} {thinState}.`
+  - Signal: Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md:49` [body-emotion-shorthand] The silver badge on her chest felt like a weight.
+  - Template: `{objectSubject} {feltVerb} like {weightImage}.`
+  - Signal: Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_4.md:3` [body-emotion-shorthand] Cassia's chest felt tight.
+  - Template: `{bodySubject} {feltVerb} {bodySensation}.`
+  - Signal: Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure.
+- `behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_5.md:26` [body-emotion-shorthand] Her breath caught in her throat.
+  - Template: `{breathSubject} caught in {throatTarget}.`
+  - Signal: Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure.
+
+### syntactic-patterns
+
+- `behavior/fixtures/textlint-rules/syntactic-patterns/negation-reframe-master.md:1138` [point-is-frame] The goal is not to be perfect.
+  - Template: `the {summaryNoun} {linkingVerb} not to {abstractAction}.`
+  - Signal: Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim.
+- `behavior/fixtures/textlint-rules/syntactic-patterns/family.md:85` [vague-connective-payoff] That is the point.
+  - Template: `{payoffOpener} {payoffComplement}.`
+  - Signal: Catch connective payoff sentences that signal a conclusion without adding the conclusion.

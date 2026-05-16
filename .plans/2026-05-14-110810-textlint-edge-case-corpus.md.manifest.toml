@@ -1,0 +1,119 @@
+plan = ".plans/2026-05-14-110810-textlint-edge-case-corpus.md"
+
+[[tree]]
+path = "behavior/fixtures/textlint-rules/edge-cases"
+kind = "directory"
+
+[[tree]]
+path = "behavior/fixtures/textlint-rules/edge-cases/generated"
+kind = "directory"
+
+[[tree]]
+path = "behavior/reports/textlint-edge-cases"
+kind = "directory"
+
+[[tree]]
+path = "behavior/golden/textlint-rules-edge-cases"
+kind = "directory"
+
+[[case_spec]]
+path = "behavior/fixtures/textlint-rules/edge-cases/metrics.cases.toml"
+family = "metrics"
+min_cases = 18
+
+[[case_spec]]
+path = "behavior/fixtures/textlint-rules/edge-cases/orthography.cases.toml"
+family = "orthography"
+min_cases = 18
+
+[[case_spec]]
+path = "behavior/fixtures/textlint-rules/edge-cases/words.cases.toml"
+family = "words"
+min_cases = 12
+
+[[case_spec]]
+path = "behavior/fixtures/textlint-rules/edge-cases/phrases.cases.toml"
+family = "phrases"
+min_cases = 24
+
+[[case_spec]]
+path = "behavior/fixtures/textlint-rules/edge-cases/syntactic-patterns.cases.toml"
+family = "syntactic-patterns"
+min_cases = 60
+
+[[case_spec]]
+path = "behavior/fixtures/textlint-rules/edge-cases/semantic-thinness.cases.toml"
+family = "semantic-thinness"
+min_cases = 40
+
+[[generated_fixture_group]]
+path = "behavior/fixtures/textlint-rules/edge-cases/generated"
+glob = "*.md"
+min_files = 240
+
+[[generated_artifact]]
+path = "behavior/fixtures/textlint-rules/edge-cases/generated/case-map.json"
+format = "json"
+
+[[report]]
+path = "behavior/reports/textlint-edge-cases/feature-coverage.md"
+
+[[report]]
+path = "behavior/reports/textlint-edge-cases/expected-misses.md"
+
+[[report]]
+path = "behavior/reports/textlint-edge-cases/unexpected-hits.md"
+
+[[report]]
+path = "behavior/reports/textlint-edge-cases/wrong-rule-hits.md"
+
+[[fixture3_suite]]
+name = "textlint-rules-edge-cases"
+manifest = "fixture3.yaml"
+fixtures = ["behavior/fixtures/textlint-rules/edge-cases/generated/*.md"]
+command = ["scripts/behavior-replay.sh", "{fixtures}"]
+ok_exit_codes = [0, 1]
+output_format = "json"
+normalizer = ["python3", "scripts/normalize-textlint-golden-output.py"]
+approved_dir = "behavior/golden/textlint-rules-edge-cases"
+received_dir = ".fixture3/textlint-rules-edge-cases"
+diff_dir = ".fixture3/textlint-rules-edge-cases"
+
+[[required_command]]
+path = "scripts/generate-textlint-edge-cases.py"
+
+[[required_command]]
+path = "scripts/verify-textlint-edge-cases.py"
+
+[[required_command]]
+path = "scripts/behavior-replay.sh"
+
+[[required_command]]
+path = "scripts/fixture3.sh"
+
+[[required_command]]
+path = "scripts/normalize-textlint-golden-output.py"
+
+[[case_kind]]
+value = "positive"
+
+[[case_kind]]
+value = "negative"
+
+[[case_kind]]
+value = "collision"
+
+[[case_kind]]
+value = "known-miss"
+
+[[verification]]
+command = "python3 scripts/generate-textlint-edge-cases.py --check"
+
+[[verification]]
+command = "python3 scripts/verify-textlint-edge-cases.py --manifest .plans/2026-05-14-110810-textlint-edge-case-corpus.md.manifest.toml all"
+
+[[verification]]
+command = "scripts/fixture3.sh check --suite textlint-rules-edge-cases"
+
+[[verification]]
+command = "npm run validate"

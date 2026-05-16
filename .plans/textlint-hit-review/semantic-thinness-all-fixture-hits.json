@@ -1,0 +1,850 @@
+[
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-a-02.md",
+    "line": 13,
+    "pattern": "silence-as-actor",
+    "snippet": "The silence was not empty.",
+    "template": "{silenceSubject} {linkingVerb} not {thinState}.",
+    "purpose": "Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-a-03.md",
+    "line": 21,
+    "pattern": "something-shifted",
+    "snippet": "Just a thin seam of light, a breath of colder air, and the sense that the day had crossed a line it could not cross back over.",
+    "template": "{genericSubject} had {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-a-04.md",
+    "line": 15,
+    "pattern": "something-shifted",
+    "snippet": "But something in the arrangement of the day had shifted, and she could feel it in the way people turned, paused, purchased, and moved on as if all of them were carrying a private understanding they had not yet shared.",
+    "template": "{genericSubject} had {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-a-08.md",
+    "line": 19,
+    "pattern": "something-shifted",
+    "snippet": "Ana took one step forward, then another, and understood in a very general way that whatever happened next would probably be described later as the moment everything changed.",
+    "template": "{genericSubject} {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-01.md",
+    "line": 3,
+    "pattern": "real-work-begins",
+    "snippet": "People spend years chasing better systems, better habits, better teams, and better outcomes, but the real work begins when they stop hiding behind noise and start naming what matters.",
+    "template": "{workSubject} {startVerb}.",
+    "purpose": "Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-01.md",
+    "line": 3,
+    "pattern": "deictic-summary",
+    "snippet": "That is where progress lives.",
+    "template": "{deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-01.md",
+    "line": 11,
+    "pattern": "point-is-frame",
+    "snippet": "So the point is not to be perfect.",
+    "template": "the {summaryNoun} {linkingVerb} not to {abstractAction}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-01.md",
+    "line": 11,
+    "pattern": "point-is-frame",
+    "snippet": "The point is to be honest enough to see what is actually there.",
+    "template": "the {summaryNoun} {linkingVerb} to {abstractAction}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-02.md",
+    "line": 5,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part nobody wants to hear because it sounds too simple, yet simple is often the only thing that survives contact with reality.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-02.md",
+    "line": 11,
+    "pattern": "body-knows",
+    "snippet": "The body learns the pattern.",
+    "template": "{wisdomSubject} {wisdomVerb}.",
+    "purpose": "Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-02.md",
+    "line": 11,
+    "pattern": "deictic-summary",
+    "snippet": "That is the real promise, and it is enough.",
+    "template": "{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-04.md",
+    "line": 11,
+    "pattern": "deictic-summary",
+    "snippet": "Nothing extraordinary happened, but that was the point.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-03.md",
+    "line": 9,
+    "pattern": "deictic-summary",
+    "snippet": "That is the strange truth no one says out loud soon enough.",
+    "template": "{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-03.md",
+    "line": 11,
+    "pattern": "real-work-begins",
+    "snippet": "They knew the real work begins after the excitement fades and the system has to earn its place.",
+    "template": "{workSubject} {startVerb}.",
+    "purpose": "Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-05.md",
+    "line": 5,
+    "pattern": "deictic-summary",
+    "snippet": "That is the nature of the game.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-06.md",
+    "line": 3,
+    "pattern": "something-shifted",
+    "snippet": "Nobody could say exactly what would happen next, but everyone sensed that the day had crossed a line.",
+    "template": "{genericSubject} had {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-07.md",
+    "line": 7,
+    "pattern": "body-knows",
+    "snippet": "The body notices what happens often.",
+    "template": "{wisdomSubject} {wisdomVerb}.",
+    "purpose": "Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-08.md",
+    "line": 7,
+    "pattern": "deictic-summary",
+    "snippet": "This is the part fans love because it feels emotional in a clean way.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-09.md",
+    "line": 7,
+    "pattern": "body-knows",
+    "snippet": "The body notices everything before the mind wants to admit it.",
+    "template": "{wisdomSubject} {wisdomVerb}.",
+    "purpose": "Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-09.md",
+    "line": 7,
+    "pattern": "truth-answer-moves",
+    "snippet": "Eventually the truth surfaces.",
+    "template": "{truthSubject} {emergenceVerb}.",
+    "purpose": "Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-09.md",
+    "line": 11,
+    "pattern": "deictic-summary",
+    "snippet": "That is the strange reward of persistence.",
+    "template": "{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-b-10.md",
+    "line": 11,
+    "pattern": "deictic-summary",
+    "snippet": "That is the lesson, and it applies more widely than people think.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-01.md",
+    "line": 5,
+    "pattern": "silence-as-actor",
+    "snippet": "It only made the silence feel arranged.",
+    "template": "{deicticSubject} only made {silenceSubject} feel {thinState}.",
+    "purpose": "Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-01.md",
+    "line": 11,
+    "pattern": "something-shifted",
+    "snippet": "Something had shifted.",
+    "template": "{genericSubject} had {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-03.md",
+    "line": 9,
+    "pattern": "truth-answer-moves",
+    "snippet": "Everything looked ordinary in the way an ordinary crime scene always does before the truth starts moving around.",
+    "template": "{truthSubject} starts {motionVerb}.",
+    "purpose": "Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-05.md",
+    "line": 3,
+    "pattern": "silence-as-actor",
+    "snippet": "By Thursday the office had gone quiet in the way offices do when everyone is pretending not to notice the deadline.",
+    "template": "{placeSubject} had gone quiet in {mannerFrame}.",
+    "purpose": "Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-06.md",
+    "line": 7,
+    "pattern": "something-shifted",
+    "snippet": "The room shifted in tiny ways.",
+    "template": "{genericSubject} {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-c-06.md",
+    "line": 11,
+    "pattern": "empty-scene-state",
+    "snippet": "The room looked unchanged.",
+    "template": "{placeSubject} {linkingVerb} {thinState}.",
+    "purpose": "Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-01.md",
+    "line": 5,
+    "pattern": "deictic-summary",
+    "snippet": "That is the point, really.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-01.md",
+    "line": 5,
+    "pattern": "point-is-frame",
+    "snippet": "The point is not performance.",
+    "template": "the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-01.md",
+    "line": 9,
+    "pattern": "real-work-begins",
+    "snippet": "The real work begins when we stop calling our distractions a personality and start calling them signals.",
+    "template": "{workSubject} {startVerb}.",
+    "purpose": "Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-02.md",
+    "line": 3,
+    "pattern": "body-knows",
+    "snippet": "The body knows what it knows.",
+    "template": "{wisdomSubject} {wisdomVerb}.",
+    "purpose": "Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-02.md",
+    "line": 9,
+    "pattern": "something-shifted",
+    "snippet": "And yes, something shifted this month.",
+    "template": "{genericSubject} {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-02.md",
+    "line": 11,
+    "pattern": "point-is-frame",
+    "snippet": "The invitation is to trust that the fog is also part of the path.",
+    "template": "the {summaryNoun} {linkingVerb} to {abstractAction}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-03.md",
+    "line": 3,
+    "pattern": "silence-as-actor",
+    "snippet": "In the main room, the silence was not empty.",
+    "template": "{silenceSubject} {linkingVerb} not {thinState}.",
+    "purpose": "Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-03.md",
+    "line": 11,
+    "pattern": "point-is-frame",
+    "snippet": "The point was not revelation for its own sake.",
+    "template": "the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-04.md",
+    "line": 5,
+    "pattern": "truth-answer-moves",
+    "snippet": "Sometimes the answer arrives as a body sensation before it becomes language.",
+    "template": "{truthSubject} {emergenceVerb}.",
+    "purpose": "Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-04.md",
+    "line": 7,
+    "pattern": "deictic-summary",
+    "snippet": "This is the invitation.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-04.md",
+    "line": 11,
+    "pattern": "deictic-summary",
+    "snippet": "This is where the shift begins.",
+    "template": "{deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-05.md",
+    "line": 7,
+    "pattern": "deictic-summary",
+    "snippet": "That was the shift.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-05.md",
+    "line": 9,
+    "pattern": "point-is-frame",
+    "snippet": "The point was not perfection.",
+    "template": "the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-07.md",
+    "line": 11,
+    "pattern": "something-shifted",
+    "snippet": "Something shifted when I stopped trying to name the exact point of it.",
+    "template": "{genericSubject} {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-08.md",
+    "line": 13,
+    "pattern": "deictic-summary",
+    "snippet": "That is the lesson, if we are willing to call it one.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-10.md",
+    "line": 7,
+    "pattern": "truth-answer-moves",
+    "snippet": "Sometimes the meaning arrives later, if it needs to at all.",
+    "template": "{truthSubject} {emergenceVerb}.",
+    "purpose": "Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-10.md",
+    "line": 9,
+    "pattern": "deictic-summary",
+    "snippet": "That was the shift.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-10.md",
+    "line": 11,
+    "pattern": "body-knows",
+    "snippet": "Not because every session was profound, but because the practice kept revealing something simple and durable: the breath is both ordinary and sacred, and the body knows the difference between strain and safety long before the mind admits it.",
+    "template": "{wisdomSubject} {wisdomVerb}.",
+    "purpose": "Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-09.md",
+    "line": 3,
+    "pattern": "body-knows",
+    "snippet": "The mind may insist on continuity, but the nervous system knows when it is time to change clothes, change rhythms, change expectations, change the way the day is held.",
+    "template": "{wisdomSubject} {wisdomVerb}.",
+    "purpose": "Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-09.md",
+    "line": 9,
+    "pattern": "point-is-frame",
+    "snippet": "The point is not to be loyal to what is familiar.",
+    "template": "the {summaryNoun} {linkingVerb} not to {abstractAction}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-d-09.md",
+    "line": 11,
+    "pattern": "something-shifted",
+    "snippet": "Something shifted when I stopped calling transition a disruption and started calling it a doorway.",
+    "template": "{genericSubject} {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md",
+    "line": 3,
+    "pattern": "real-work-begins",
+    "snippet": "We have shipped the first layer, learned from the market, and now the real work begins.",
+    "template": "{workSubject} {startVerb}.",
+    "purpose": "Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md",
+    "line": 5,
+    "pattern": "deictic-summary",
+    "snippet": "This is the point where clarity matters more than speed.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md",
+    "line": 7,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part most people miss.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md",
+    "line": 13,
+    "pattern": "deictic-summary",
+    "snippet": "That is the lesson.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-01.md",
+    "line": 15,
+    "pattern": "point-is-frame",
+    "snippet": "When people ask what changed, the answer is simple.",
+    "template": "the {summaryNoun} {linkingVerb} {thinComplement}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-02.md",
+    "line": 7,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part many teams skip.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-02.md",
+    "line": 13,
+    "pattern": "deictic-summary",
+    "snippet": "And that is the lesson for founders and operators alike.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-03.md",
+    "line": 11,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part that changes culture.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-03.md",
+    "line": 15,
+    "pattern": "generic-lesson-extraction",
+    "snippet": "The lesson is simple.",
+    "template": "The {summaryNoun} {linkingVerb} {thinComplement}.",
+    "purpose": "Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-04.md",
+    "line": 7,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part that drains momentum.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-04.md",
+    "line": 15,
+    "pattern": "deictic-summary",
+    "snippet": "That is the lesson.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-05.md",
+    "line": 7,
+    "pattern": "vague-connective-payoff",
+    "snippet": "That is the part that matters.",
+    "template": "{payoffOpener} {payoffComplement}.",
+    "purpose": "Catch connective payoff sentences that signal a conclusion without adding the conclusion."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-05.md",
+    "line": 15,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part worth designing for.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-06.md",
+    "line": 9,
+    "pattern": "deictic-summary",
+    "snippet": "That is the lesson behind every durable plan.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-09.md",
+    "line": 11,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part a lot of companies skip.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-09.md",
+    "line": 15,
+    "pattern": "generic-lesson-extraction",
+    "snippet": "The lesson is simple.",
+    "template": "The {summaryNoun} {linkingVerb} {thinComplement}.",
+    "purpose": "Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-07.md",
+    "line": 13,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part that gets missed in a lot of executive conversations.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-07.md",
+    "line": 17,
+    "pattern": "deictic-summary",
+    "snippet": "That is the lesson.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-08.md",
+    "line": 9,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part that shapes the experience every day.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-08.md",
+    "line": 15,
+    "pattern": "deictic-summary",
+    "snippet": "That is the lesson from the room.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-10.md",
+    "line": 7,
+    "pattern": "deictic-summary",
+    "snippet": "That is the part where many organizations lose clarity.",
+    "template": "{deicticSubject} {linkingVerb} the {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-e-10.md",
+    "line": 17,
+    "pattern": "deictic-summary",
+    "snippet": "That is the real lesson.",
+    "template": "{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.",
+    "purpose": "Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-02.md",
+    "line": 11,
+    "pattern": "something-shifted",
+    "snippet": "Something in the room had shifted, though nothing visible had moved.",
+    "template": "{genericSubject} had {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-02.md",
+    "line": 11,
+    "pattern": "empty-scene-state",
+    "snippet": "The air felt different.",
+    "template": "{sceneElement} {linkingVerb} {thinState}.",
+    "purpose": "Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-03.md",
+    "line": 9,
+    "pattern": "point-is-frame",
+    "snippet": "Oren closed his eyes and said the lesson was simple: if you stand still long enough, the world will reveal its hidden shape.",
+    "template": "the {summaryNoun} {linkingVerb} {thinComplement}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-04.md",
+    "line": 5,
+    "pattern": "silence-as-actor",
+    "snippet": "Nothing moved, and yet the room felt busy with stillness, as though every surface had been taught to listen.",
+    "template": "{silenceSubject} {linkingVerb} {thinState}.",
+    "purpose": "Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-06.md",
+    "line": 7,
+    "pattern": "silence-as-actor",
+    "snippet": "The silence was not empty.",
+    "template": "{silenceSubject} {linkingVerb} not {thinState}.",
+    "purpose": "Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-07.md",
+    "line": 13,
+    "pattern": "body-knows",
+    "snippet": "She held it anyway, because sometimes holding is the only form of faith left, and because the body learns what the heart cannot yet say: that loss is real, and so is the quiet after it, and both deserve to be witnessed.",
+    "template": "{wisdomSubject} {wisdomVerb}.",
+    "purpose": "Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/generated-slop-corpus/batch-f-08.md",
+    "line": 13,
+    "pattern": "something-shifted",
+    "snippet": "He only knew the room had shifted, and that the shift had given weight to everything that had seemed ordinary before.",
+    "template": "{genericSubject} had {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/orthography/family.md",
+    "line": 21,
+    "pattern": "something-shifted",
+    "snippet": "And then it hit me: everything changed.",
+    "template": "{genericSubject} {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_1.md",
+    "line": 5,
+    "pattern": "gaze-choreography",
+    "snippet": "His gold eyes measured the line of small chests.",
+    "template": "{gazeSubject} {gazeVerb} {gazeTarget}.",
+    "purpose": "Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_1.md",
+    "line": 26,
+    "pattern": "body-emotion-shorthand",
+    "snippet": "Her chest felt a sudden, heavy thump.",
+    "template": "{bodySubject} {feltVerb} {bodySensation}.",
+    "purpose": "Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_1.md",
+    "line": 35,
+    "pattern": "gaze-choreography",
+    "snippet": "Cassia traced the trail with her eyes.",
+    "template": "{humanSubject} traced {objectSubject} with {possessive} eyes.",
+    "purpose": "Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_1.md",
+    "line": 37,
+    "pattern": "gaze-choreography",
+    "snippet": "They followed her gaze to the dark rim of the clay.",
+    "template": "{humanSubject} followed {possessive} gaze to {gazeTarget}.",
+    "purpose": "Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md",
+    "line": 5,
+    "pattern": "empty-scene-state",
+    "snippet": "The yard went quiet.",
+    "template": "{placeSubject} went {thinState}.",
+    "purpose": "Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md",
+    "line": 17,
+    "pattern": "body-emotion-shorthand",
+    "snippet": "Cassia's breath caught in her throat.",
+    "template": "{breathSubject} caught in {throatTarget}.",
+    "purpose": "Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md",
+    "line": 18,
+    "pattern": "gaze-choreography",
+    "snippet": "Her gaze fell to the ground.",
+    "template": "{gazeSubject} {gazeVerb} {gazeTarget}.",
+    "purpose": "Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md",
+    "line": 33,
+    "pattern": "empty-scene-state",
+    "snippet": "Everything was quiet.",
+    "template": "{placeSubject} {linkingVerb} {thinState}.",
+    "purpose": "Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md",
+    "line": 33,
+    "pattern": "empty-scene-state",
+    "snippet": "The rooms were just... empty.\"",
+    "template": "{placeSubject} {linkingVerb} {weakBeforeState} {thinState}.",
+    "purpose": "Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_2.md",
+    "line": 49,
+    "pattern": "body-emotion-shorthand",
+    "snippet": "The silver badge on her chest felt like a weight.",
+    "template": "{objectSubject} {feltVerb} like {weightImage}.",
+    "purpose": "Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 3,
+    "pattern": "empty-scene-transition",
+    "snippet": "Everything shifted.",
+    "template": "{genericSubject} {changeVerb}.",
+    "purpose": "Catch generic transition lines that declare change, passage, or motion without naming what changed or why."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 4,
+    "pattern": "empty-scene-state",
+    "snippet": "The room felt still.",
+    "template": "{placeSubject} {linkingVerb} {thinState}.",
+    "purpose": "Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 5,
+    "pattern": "empty-emotional-weather",
+    "snippet": "Silence sat between them.",
+    "template": "{atmosphereSubject} {weatherVerb} {placePhrase}.",
+    "purpose": "Catch atmospheric abstract nouns that move through a scene without concrete source, action, or consequence."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 6,
+    "pattern": "generic-lesson-extraction",
+    "snippet": "The lesson was simple.",
+    "template": "The {summaryNoun} {linkingVerb} {thinComplement}.",
+    "purpose": "Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 7,
+    "pattern": "generic-pressure-or-stakes",
+    "snippet": "The stakes felt real.",
+    "template": "{stakesSubject} {linkingVerb} {thinStakesComplement}.",
+    "purpose": "Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 8,
+    "pattern": "generic-realization",
+    "snippet": "She realized the truth.",
+    "template": "{humanSubject} {realizationVerb} {genericObject}.",
+    "purpose": "Catch realization lines that announce understanding without naming what was learned."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 9,
+    "pattern": "hollow-significance",
+    "snippet": "That mattered more than it seemed.",
+    "template": "{deicticSubject} {significanceVerb} {intensifier}.",
+    "purpose": "Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 10,
+    "pattern": "low-information-physical-blocking",
+    "snippet": "They just stood there.",
+    "template": "{humanSubject} {weakAdverb} {bodyVerb} {weakLocative}.",
+    "purpose": "Catch bland physical action beats that move bodies around without adding object, goal, cause, or consequence."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 11,
+    "pattern": "vague-connective-payoff",
+    "snippet": "And that is where the work begins.",
+    "template": "{payoffOpener} {payoffComplement}.",
+    "purpose": "Catch connective payoff sentences that signal a conclusion without adding the conclusion."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 12,
+    "pattern": "vague-threshold-change",
+    "snippet": "Things got harder.",
+    "template": "{genericSubject} {thresholdVerb} {evaluativeComplement}.",
+    "purpose": "Catch vague threshold or evaluation changes without named scale, cause, or concrete state."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 13,
+    "pattern": "abstract-metaphor-claim",
+    "snippet": "Prevention lives in rehearsal.",
+    "template": "{abstractSubject} {metaphorVerb} in {abstractObject}.",
+    "purpose": "Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 14,
+    "pattern": "empty-scene-transition",
+    "snippet": "The moment passed.",
+    "template": "{genericSubject} {passageVerb}.",
+    "purpose": "Catch generic transition lines that declare change, passage, or motion without naming what changed or why."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/semantic-thinness/family.md",
+    "line": 16,
+    "pattern": "something-shifted",
+    "snippet": "Everything shifted after the new tax rule took effect.",
+    "template": "{genericSubject} {changeVerb}.",
+    "purpose": "Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_4.md",
+    "line": 3,
+    "pattern": "body-emotion-shorthand",
+    "snippet": "Cassia's chest felt tight.",
+    "template": "{bodySubject} {feltVerb} {bodySensation}.",
+    "purpose": "Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/sunstone-arden-cassia/book_1_chapter_5.md",
+    "line": 26,
+    "pattern": "body-emotion-shorthand",
+    "snippet": "Her breath caught in her throat.",
+    "template": "{breathSubject} caught in {throatTarget}.",
+    "purpose": "Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/syntactic-patterns/negation-reframe-master.md",
+    "line": 1138,
+    "pattern": "point-is-frame",
+    "snippet": "The goal is not to be perfect.",
+    "template": "the {summaryNoun} {linkingVerb} not to {abstractAction}.",
+    "purpose": "Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim."
+  },
+  {
+    "path": "behavior/fixtures/textlint-rules/syntactic-patterns/family.md",
+    "line": 85,
+    "pattern": "vague-connective-payoff",
+    "snippet": "That is the point.",
+    "template": "{payoffOpener} {payoffComplement}.",
+    "purpose": "Catch connective payoff sentences that signal a conclusion without adding the conclusion."
+  }
+]
