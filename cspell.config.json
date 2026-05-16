@@ -36,6 +36,7 @@
     "websmasher"
   ],
   "ignorePaths": [
+    "behavior/golden",
     "dist",
     "node_modules",
     "package-lock.json",
