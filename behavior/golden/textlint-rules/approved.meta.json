@@ -1,10 +1,10 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-16T20-42-02.548307Z-f3c41e06",
-  "run_commit": "48cf8ed",
-  "working_tree": "clean",
-  "recorded_at": "2026-05-16T20:42:02.548307Z",
+  "run_id": "2026-05-16T20-56-55.363294Z-f3c41e06",
+  "run_commit": "8490250",
+  "working_tree": "dirty",
+  "recorded_at": "2026-05-16T20:56:55.363294Z",
   "fixture_hash": "sha256:7d4964cacf953ab32b1c90154f741537c035be447b0485619dc2d0b0465a9b88",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.7",
@@ -99,5 +99,5 @@
       "sha256": "sha256:4b1656a649b7cb391fa25e35728489e2e7686996754d49ba167eb6e0f6298e82"
     }
   ],
-  "comment": "Initialize standalone Slopless fixture baseline"
+  "comment": "Update approved paths after lowercase repo move"
 }

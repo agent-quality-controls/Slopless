@@ -8,7 +8,7 @@ const DEFAULT_TARGET = "**/*.md";
 const FORMAT_FLAGS = new Set(["--format", "-f"]);
 const HELP_FLAGS = new Set(["--help", "-h"]);
 const VERSION_FLAGS = new Set(["--version", "-v"]);
-const VERSION = "0.2.2";
+const VERSION = "0.2.3";
 const HELP_TEXT = `Slopless checks Markdown prose for deterministic slop signals and writes JSON.
 
 Install:
