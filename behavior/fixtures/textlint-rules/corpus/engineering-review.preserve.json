@@ -38,7 +38,7 @@
       "line": 29
     },
     {
-      "text": "The point is to rotate the signing key every thirty days.",
+      "text": "Rotate the signing key every thirty days.",
       "family": "semantic-thinness",
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
@@ -59,7 +59,7 @@
       "line": 45
     },
     {
-      "text": "Everything shifted after the new tax rule took effect.",
+      "text": "The new tax rule raised quarterly payments by twelve percent.",
       "family": "semantic-thinness",
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
@@ -2070,6 +2070,13 @@
     {
       "text": "The bug is not in the parser. It is in the offset mapper.",
       "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 925
+    },
+    {
+      "text": "The offset mapper caused the bug; the parser produced the expected tree.",
+      "family": "syntactic-patterns",
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 57
@@ -2098,9 +2105,30 @@
     {
       "text": "The goal is to make starting boring enough to repeat.",
       "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 927
+    },
+    {
+      "text": "Make starting boring enough to repeat.",
+      "family": "syntactic-patterns",
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 71
+    },
+    {
+      "text": "The job is to reduce the fuel, hold the limit, and teach the next repair.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 929
+    },
+    {
+      "text": "Reduce the fuel, hold the limit, and teach the next repair.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 73
     },
     {
       "text": "The data supports this conclusion.",
@@ -2125,6 +2153,13 @@
     },
     {
       "text": "The core fact is that nothing here needed a grand finale.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 931
+    },
+    {
+      "text": "Nothing here needed a grand finale.",
       "family": "syntactic-patterns",
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",

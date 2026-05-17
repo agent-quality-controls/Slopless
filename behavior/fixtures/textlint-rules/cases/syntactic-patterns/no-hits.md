@@ -54,7 +54,7 @@ The parasympathetic
 
 The parasympathetic rest system, which normally acts as a brake on the stress response, cannot do its job.
 
-The bug is not in the parser. It is in the offset mapper.
+The offset mapper caused the bug; the parser produced the expected tree.
 
 Leadership is not status. It is not personal magnetism.
 
@@ -68,9 +68,9 @@ Crucially, not all time counts equally.
 
 The control sentence says the test did not run because the command was missing.
 
-The goal is to make starting boring enough to repeat.
+Make starting boring enough to repeat.
 
-The job is to reduce the fuel, hold the limit, and teach the next repair.
+Reduce the fuel, hold the limit, and teach the next repair.
 
 Nobody noticed the change at first.
 
@@ -86,7 +86,7 @@ So who's going to build the alternative?
 
 That's the neighborhood school we use every day.
 
-The core fact is that nothing here needed a grand finale.
+Nothing here needed a grand finale.
 
 The report goes deeper into a specific outage window.
 

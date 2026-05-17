@@ -425,8 +425,8 @@
     {
       "text": "The moment passed.",
       "family": "semantic-thinness",
-      "bucket": "no-hits",
-      "source": "cases/semantic-thinness/no-hits.md",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
       "line": 47
     },
     {
@@ -451,7 +451,7 @@
       "line": 55
     },
     {
-      "text": "They stood by the north exit at 8:13.",
+      "text": "They stood by the north exit at thirteen minutes after eight.",
       "family": "semantic-thinness",
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
@@ -649,8 +649,8 @@
     {
       "text": "The job is to reduce the fuel, hold the limit, and teach the next repair.",
       "family": "syntactic-patterns",
-      "bucket": "no-hits",
-      "source": "cases/syntactic-patterns/no-hits.md",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
       "line": 73
     },
     {

@@ -132,7 +132,7 @@ The stakes felt real when the board rejected the loan.
 
 She realized the truth when the invoice matched the ledger.
 
-They stood by the north exit at 8:13.
+They stood by the north exit at thirteen minutes after eight.
 
 The lesson was simple: rotate the signing key every 30 days.
 

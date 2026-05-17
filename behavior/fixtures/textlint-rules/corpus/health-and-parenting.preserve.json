@@ -1296,6 +1296,41 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 83
+    },
+    {
+      "text": "Rotate the signing key every thirty days.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 33
+    },
+    {
+      "text": "The meeting ended after the clerk stamped the permit.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 47
+    },
+    {
+      "text": "The new tax rule raised quarterly payments by twelve percent.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 49
+    },
+    {
+      "text": "They stood by the north exit at thirteen minutes after eight.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 57
+    },
+    {
+      "text": "The moment passed.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 91
     }
   ]
 }

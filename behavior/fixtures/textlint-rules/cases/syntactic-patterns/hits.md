@@ -922,6 +922,14 @@ And that's what makes this approach so powerful.
 
 That's why it matters, isn't that the point?
 
+The bug is not in the parser. It is in the offset mapper.
+
+The goal is to make starting boring enough to repeat.
+
+The job is to reduce the fuel, hold the limit, and teach the next repair.
+
+The core fact is that nothing here needed a grand finale.
+
 Let's delve into the deployment plan before naming the risk.
 
 Okay, let's delve into the tradeoffs.

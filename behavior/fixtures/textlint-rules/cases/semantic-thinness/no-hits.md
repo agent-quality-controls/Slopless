@@ -30,7 +30,7 @@ That mattered because it removed the last failing repayment case.
 
 She looked around for the missing inhaler.
 
-The point is to rotate the signing key every thirty days.
+Rotate the signing key every thirty days.
 
 The masonry crew starts work at half past eight.
 
@@ -44,9 +44,9 @@ This is how the parser maps the sentence offset back to the original paragraph.
 
 The work became more complicated because the API added pagination.
 
-The moment passed.
+The meeting ended after the clerk stamped the permit.
 
-Everything shifted after the new tax rule took effect.
+The new tax rule raised quarterly payments by twelve percent.
 
 The room felt still because the HVAC shut down.
 
@@ -54,6 +54,6 @@ The stakes felt real when the board rejected the loan.
 
 She realized the truth when the invoice matched the ledger.
 
-They stood by the north exit at 8:13.
+They stood by the north exit at thirteen minutes after eight.
 
 The lesson was simple: rotate the signing key every 30 days.

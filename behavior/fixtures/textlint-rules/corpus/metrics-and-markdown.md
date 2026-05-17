@@ -42,11 +42,11 @@ Administrative constitutional pharmaceutical neurological epidemiological microb
 
 metric001 metric002 metric003 metric004 metric005 metric006 metric007 metric008 metric009 metric010 metric011 metric012 metric013 metric014 metric015 metric016 metric017 metric018 metric019 metric020 metric021 metric022 metric023 metric024 metric025 metric026 metric027 metric028 metric029 metric030 metric031 metric032 metric033 metric034 metric035 metric036 metric037 metric038 metric039 metric040 metric041 metric042 metric043 metric044 metric045 metric046 metric047 metric048 metric049 metric050 metric001 metric002 metric003 metric004 metric005 metric006 metric007 metric008 metric009 metric010 metric011 metric012 metric013 metric014 metric015 metric016 metric017 metric018 metric019 metric020 metric021 metric022 metric023 metric024 metric025 metric026 metric027 metric028 metric029 metric030 metric031 metric032 metric033 metric034 metric035 metric036 metric037 metric038 metric039 metric040 metric041 metric042 metric043 metric044 metric045 metric046 metric047 metric048 metric049 metric050 metric001 metric002 metric003 metric004 metric005 metric006 metric007 metric008 metric009 metric010 metric011 metric012 metric013 metric014 metric015 metric016 metric017 metric018 metric019 metric020 metric021 metric022 metric023 metric024 metric025 metric026 metric027 metric028 metric029 metric030 metric031 metric032 metric033 metric034 metric035 metric036 metric037 metric038 metric039 metric040 metric041 metric042 metric043 metric044 metric045 metric046 metric047 metric048 metric049 metric050 metric001 metric002 metric003 metric004 metric005 metric006 metric007 metric008 metric009 metric010 metric011 metric012 metric013 metric014 metric015 metric016 metric017 metric018 metric019 metric020 metric021 metric022 metric023 metric024 metric025 metric026 metric027 metric028 metric029 metric030 metric031 metric032 metric033 metric034 metric035 metric036 metric037 metric038 metric039 metric040 metric041 metric042 metric043 metric044 metric045 metric046 metric047 metric048 metric049 metric050 metric001 metric002 metric003 metric004 metric005 metric006 metric007 metric008 metric009 metric010 metric011 metric012 metric013 metric014 metric015 metric016 metric017 metric018 metric019 metric020 metric021 metric022 metric023 metric024 metric025 metric026 metric027 metric028 metric029 metric030 metric031 metric032 metric033 metric034 metric035 metric036 metric037 metric038 metric039 metric040 metric041 metric042 metric043 metric044 metric045 metric046 metric047 metric048 metric049 metric050.
 
-We go. We rest. We look. We wait. We plan. We read.
+We go. The team rests. We look. They wait. We plan. Readers check.
 
-We go. We rest. We look. We wait.
+We go. The team rests. We look. They wait.
 
-We plan. We read. We stop. We eat.
+We plan. Readers check. We stop. They eat.
 
 Home cooks keep home notes while home teams map home risks and home wins.
 
@@ -88,4 +88,4 @@ The compiler accepts borrowed values when traits describe the behavior.
 
 This plain paragraph keeps the fixture readable and avoids unrelated metric findings while kids read small books near the table. A cup rests by the window as the path turns near the garden and a clock ticks on the wall.
 
-Ownership and borrowing shape the compiler model. Async traits can hold borrowed lifetimes when the contract is clear.
+Ownership and borrowing shape the compiler model in this example. Async traits can hold borrowed lifetimes when the contract is clear. The section explains the Rust terms in ordinary prose.

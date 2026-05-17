@@ -1,4 +1,4 @@
-They wrote "bosom peril".
+A note quotes "bosom peril" from an old draft. The final text says cancer. It is plain and short. The lab can use it for a clean check. Staff can read it. Staff can test it.
 
 The paper discusses artificial intelligence methods in cancer diagnosis.
 

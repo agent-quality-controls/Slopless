@@ -129,21 +129,21 @@
       "line": 33
     },
     {
-      "text": "We go. We rest. We look. We wait. We plan. We read.",
+      "text": "We go. The team rests. We look. They wait. We plan. Readers check.",
       "family": "metrics",
       "bucket": "no-hits",
       "source": "cases/metrics/no-hits.md",
       "line": 1
     },
     {
-      "text": "We go. We rest. We look. We wait.",
+      "text": "We go. The team rests. We look. They wait.",
       "family": "metrics",
       "bucket": "no-hits",
       "source": "cases/metrics/no-hits.md",
       "line": 3
     },
     {
-      "text": "We plan. We read. We stop. We eat.",
+      "text": "We plan. Readers check. We stop. They eat.",
       "family": "metrics",
       "bucket": "no-hits",
       "source": "cases/metrics/no-hits.md",
@@ -276,7 +276,7 @@
       "line": 5
     },
     {
-      "text": "Ownership and borrowing shape the compiler model. Async traits can hold borrowed lifetimes when the contract is clear.",
+      "text": "Ownership and borrowing shape the compiler model in this example. Async traits can hold borrowed lifetimes when the contract is clear. The section explains the Rust terms in ordinary prose.",
       "family": "term-policy",
       "bucket": "no-hits",
       "source": "cases/term-policy/no-hits.md",

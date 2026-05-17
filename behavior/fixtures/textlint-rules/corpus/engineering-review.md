@@ -14,13 +14,13 @@ She realized the router was still using the old DNS record.
 
 That mattered because it removed the last failing repayment case.
 
-The point is to rotate the signing key every thirty days.
+Rotate the signing key every thirty days.
 
 This is how the parser maps the sentence offset back to the original paragraph.
 
 The work became more complicated because the API added pagination.
 
-Everything shifted after the new tax rule took effect.
+The new tax rule raised quarterly payments by twelve percent.
 
 ## syntactic-patterns
 
@@ -645,6 +645,16 @@ So who's going to build the alternative?
 That's the neighborhood school we use every day.
 
 The core fact is that nothing here needed a grand finale.
+
+The job is to reduce the fuel, hold the limit, and teach the next repair.
+
+The offset mapper caused the bug; the parser produced the expected tree.
+
+Make starting boring enough to repeat.
+
+Reduce the fuel, hold the limit, and teach the next repair.
+
+Nothing here needed a grand finale.
 
 ## false question goal
 

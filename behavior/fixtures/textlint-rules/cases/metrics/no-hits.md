@@ -1,8 +1,8 @@
-We go. We rest. We look. We wait. We plan. We read.
+We go. The team rests. We look. They wait. We plan. Readers check.
 
-We go. We rest. We look. We wait.
+We go. The team rests. We look. They wait.
 
-We plan. We read. We stop. We eat.
+We plan. Readers check. We stop. They eat.
 
 Home cooks keep home notes while home teams map home risks and home wins.
 
