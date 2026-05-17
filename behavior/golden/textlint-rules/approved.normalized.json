@@ -808,23 +808,46 @@
         "type": "lint"
       },
       {
-        "column": 25,
-        "index": 2910,
+        "column": 45,
+        "index": 2930,
         "line": 117,
         "loc": {
           "end": {
-            "column": 35,
+            "column": 61,
             "line": 117
           },
           "start": {
-            "column": 25,
+            "column": 45,
             "line": 117
+          }
+        },
+        "message": "Cliche found: \"on the same page\". Replace it with specific wording.",
+        "range": [
+          2930,
+          2946
+        ],
+        "ruleId": "cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 25,
+        "index": 2973,
+        "line": 119,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 119
+          },
+          "start": {
+            "column": 25,
+            "line": 119
           }
         },
         "message": "Corporate-speak phrase found: \"drill-down\". Replace it with specific wording.",
         "range": [
-          2910,
-          2920
+          2973,
+          2983
         ],
         "ruleId": "corporate-speak",
         "severity": 2,
@@ -832,22 +855,22 @@
       },
       {
         "column": 1,
-        "index": 2951,
-        "line": 119,
+        "index": 3014,
+        "line": 121,
         "loc": {
           "end": {
             "column": 10,
-            "line": 119
+            "line": 121
           },
           "start": {
             "column": 1,
-            "line": 119
+            "line": 121
           }
         },
         "message": "Skunked term found: \"Hopefully\". Replace it with a less disputed word.",
         "range": [
-          2951,
-          2960
+          3014,
+          3023
         ],
         "ruleId": "skunked-terms",
         "severity": 2,
@@ -855,22 +878,22 @@
       },
       {
         "column": 23,
-        "index": 3031,
-        "line": 121,
+        "index": 3094,
+        "line": 123,
         "loc": {
           "end": {
             "column": 30,
-            "line": 121
+            "line": 123
           },
           "start": {
             "column": 23,
-            "line": 121
+            "line": 123
           }
         },
         "message": "Skunked term found: \"FULSOME\". Replace it with a less disputed word.",
         "range": [
-          3031,
-          3038
+          3094,
+          3101
         ],
         "ruleId": "skunked-terms",
         "severity": 2,
@@ -878,22 +901,22 @@
       },
       {
         "column": 31,
-        "index": 3162,
-        "line": 125,
+        "index": 3225,
+        "line": 127,
         "loc": {
           "end": {
             "column": 42,
-            "line": 125
+            "line": 127
           },
           "start": {
             "column": 31,
-            "line": 125
+            "line": 127
           }
         },
         "message": "Uncomparable phrase found: \"very unique\". Remove the modifier.",
         "range": [
-          3162,
-          3173
+          3225,
+          3236
         ],
         "ruleId": "uncomparables",
         "severity": 2,
@@ -901,22 +924,22 @@
       },
       {
         "column": 34,
-        "index": 3226,
-        "line": 127,
+        "index": 3289,
+        "line": 129,
         "loc": {
           "end": {
             "column": 47,
-            "line": 127
+            "line": 129
           },
           "start": {
             "column": 34,
-            "line": 127
+            "line": 129
           }
         },
         "message": "Uncomparable phrase found: \"Most Complete\". Remove the modifier.",
         "range": [
-          3226,
-          3239
+          3289,
+          3302
         ],
         "ruleId": "uncomparables",
         "severity": 2,
@@ -924,22 +947,45 @@
       },
       {
         "column": 1,
-        "index": 3249,
-        "line": 129,
+        "index": 3312,
+        "line": 131,
         "loc": {
           "end": {
             "column": 22,
-            "line": 129
+            "line": 131
           },
           "start": {
             "column": 1,
-            "line": 129
+            "line": 131
+          }
+        },
+        "message": "Cliche found: \"At the end of the day\". Replace it with specific wording.",
+        "range": [
+          3312,
+          3333
+        ],
+        "ruleId": "cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3312,
+        "line": 131,
+        "loc": {
+          "end": {
+            "column": 22,
+            "line": 131
+          },
+          "start": {
+            "column": 1,
+            "line": 131
           }
         },
         "message": "Corporate-speak phrase found: \"At the end of the day\". Replace it with specific wording.",
         "range": [
-          3249,
-          3270
+          3312,
+          3333
         ],
         "ruleId": "corporate-speak",
         "severity": 2,
@@ -947,22 +993,22 @@
       },
       {
         "column": 1,
-        "index": 3249,
-        "line": 129,
+        "index": 3312,
+        "line": 131,
         "loc": {
           "end": {
             "column": 22,
-            "line": 129
+            "line": 131
           },
           "start": {
             "column": 1,
-            "line": 129
+            "line": 131
           }
         },
         "message": "Prohibited phrase found: \"At the end of the day\". Rewrite without this phrase.",
         "range": [
-          3249,
-          3270
+          3312,
+          3333
         ],
         "ruleId": "prohibited-phrases",
         "severity": 2,
@@ -970,22 +1016,22 @@
       },
       {
         "column": 34,
-        "index": 3346,
-        "line": 131,
+        "index": 3409,
+        "line": 133,
         "loc": {
           "end": {
             "column": 59,
-            "line": 131
+            "line": 133
           },
           "start": {
             "column": 34,
-            "line": 131
+            "line": 133
           }
         },
         "message": "Cliche found: \"back to the drawing board\". Replace it with specific wording.",
         "range": [
-          3346,
-          3371
+          3409,
+          3434
         ],
         "ruleId": "cliches",
         "severity": 2,
@@ -993,22 +1039,22 @@
       },
       {
         "column": 34,
-        "index": 3346,
-        "line": 131,
+        "index": 3409,
+        "line": 133,
         "loc": {
           "end": {
             "column": 59,
-            "line": 131
+            "line": 133
           },
           "start": {
             "column": 34,
-            "line": 131
+            "line": 133
           }
         },
         "message": "Corporate-speak phrase found: \"back to the drawing board\". Replace it with specific wording.",
         "range": [
-          3346,
-          3371
+          3409,
+          3434
         ],
         "ruleId": "corporate-speak",
         "severity": 2,
@@ -1016,22 +1062,22 @@
       },
       {
         "column": 1,
-        "index": 3374,
-        "line": 133,
+        "index": 3437,
+        "line": 135,
         "loc": {
           "end": {
             "column": 17,
-            "line": 133
+            "line": 135
           },
           "start": {
             "column": 1,
-            "line": 133
+            "line": 135
           }
         },
         "message": "Humble-bragging phrase found: \"In my experience\". Remove the credentialing lead-in.",
         "range": [
-          3374,
-          3390
+          3437,
+          3453
         ],
         "ruleId": "humble-bragger",
         "severity": 2,
@@ -1039,22 +1085,22 @@
       },
       {
         "column": 32,
-        "index": 3405,
-        "line": 133,
+        "index": 3468,
+        "line": 135,
         "loc": {
           "end": {
             "column": 46,
-            "line": 133
+            "line": 135
           },
           "start": {
             "column": 32,
-            "line": 133
+            "line": 135
           }
         },
         "message": "Fake jargon phrase found: \"optimizing for\". Replace the borrowed tech metaphor with plain language.",
         "range": [
-          3405,
-          3419
+          3468,
+          3482
         ],
         "ruleId": "jargon-faker",
         "severity": 2,
@@ -1062,22 +1108,22 @@
       },
       {
         "column": 1,
-        "index": 3449,
-        "line": 135,
+        "index": 3512,
+        "line": 137,
         "loc": {
           "end": {
             "column": 70,
-            "line": 135
+            "line": 137
           },
           "start": {
             "column": 1,
-            "line": 135
+            "line": 137
           }
         },
         "message": "LLM disclaimer found: \"as a language model\". Remove assistant leakage.",
         "range": [
-          3449,
-          3518
+          3512,
+          3581
         ],
         "ruleId": "llm-disclaimer",
         "severity": 2,
@@ -1085,22 +1131,22 @@
       },
       {
         "column": 22,
-        "index": 3470,
-        "line": 135,
+        "index": 3533,
+        "line": 137,
         "loc": {
           "end": {
             "column": 35,
-            "line": 135
+            "line": 137
           },
           "start": {
             "column": 22,
-            "line": 135
+            "line": 137
           }
         },
         "message": "Prohibited phrase found: \"in conclusion\". Rewrite without this phrase.",
         "range": [
-          3470,
-          3483
+          3533,
+          3546
         ],
         "ruleId": "prohibited-phrases",
         "severity": 2,
@@ -1108,22 +1154,22 @@
       },
       {
         "column": 1,
-        "index": 3520,
-        "line": 137,
+        "index": 3583,
+        "line": 139,
         "loc": {
           "end": {
             "column": 28,
-            "line": 137
+            "line": 139
           },
           "start": {
             "column": 1,
-            "line": 137
+            "line": 139
           }
         },
         "message": "Prohibited phrase found: \"In today's fast-paced world\". Rewrite without this phrase.",
         "range": [
-          3520,
-          3547
+          3583,
+          3610
         ],
         "ruleId": "prohibited-phrases",
         "severity": 2,
@@ -1131,22 +1177,22 @@
       },
       {
         "column": 46,
-        "index": 3565,
-        "line": 137,
+        "index": 3628,
+        "line": 139,
         "loc": {
           "end": {
             "column": 59,
-            "line": 137
+            "line": 139
           },
           "start": {
             "column": 46,
-            "line": 137
+            "line": 139
           }
         },
         "message": "Prohibited phrase found: \"let's dive in\". Rewrite without this phrase.",
         "range": [
-          3565,
-          3578
+          3628,
+          3641
         ],
         "ruleId": "prohibited-phrases",
         "severity": 2,
@@ -1154,22 +1200,22 @@
       },
       {
         "column": 1,
-        "index": 3606,
-        "line": 139,
+        "index": 3669,
+        "line": 141,
         "loc": {
           "end": {
             "column": 17,
-            "line": 139
+            "line": 141
           },
           "start": {
             "column": 1,
-            "line": 139
+            "line": 141
           }
         },
         "message": "Humble-bragging phrase found: \"In my experience\". Remove the credentialing lead-in.",
         "range": [
-          3606,
-          3622
+          3669,
+          3685
         ],
         "ruleId": "humble-bragger",
         "severity": 2,
@@ -1177,22 +1223,22 @@
       },
       {
         "column": 1,
-        "index": 3696,
-        "line": 141,
+        "index": 3759,
+        "line": 143,
         "loc": {
           "end": {
             "column": 19,
-            "line": 141
+            "line": 143
           },
           "start": {
             "column": 1,
-            "line": 141
+            "line": 143
           }
         },
         "message": "Humble-bragging phrase found: \"As someone who has\". Remove the credentialing lead-in.",
         "range": [
-          3696,
-          3714
+          3759,
+          3777
         ],
         "ruleId": "humble-bragger",
         "severity": 2,
@@ -1200,22 +1246,22 @@
       },
       {
         "column": 17,
-        "index": 3804,
-        "line": 143,
+        "index": 3867,
+        "line": 145,
         "loc": {
           "end": {
             "column": 31,
-            "line": 143
+            "line": 145
           },
           "start": {
             "column": 17,
-            "line": 143
+            "line": 145
           }
         },
         "message": "Fake jargon phrase found: \"optimizing for\". Replace the borrowed tech metaphor with plain language.",
         "range": [
-          3804,
-          3818
+          3867,
+          3881
         ],
         "ruleId": "jargon-faker",
         "severity": 2,
@@ -1223,22 +1269,22 @@
       },
       {
         "column": 8,
-        "index": 3879,
-        "line": 145,
+        "index": 3942,
+        "line": 147,
         "loc": {
           "end": {
             "column": 18,
-            "line": 145
+            "line": 147
           },
           "start": {
             "column": 8,
-            "line": 145
+            "line": 147
           }
         },
         "message": "Fake jargon phrase found: \"debug your\". Replace the borrowed tech metaphor with plain language.",
         "range": [
-          3879,
-          3889
+          3942,
+          3952
         ],
         "ruleId": "jargon-faker",
         "severity": 2,
@@ -1246,22 +1292,22 @@
       },
       {
         "column": 15,
-        "index": 3952,
-        "line": 147,
+        "index": 4015,
+        "line": 149,
         "loc": {
           "end": {
             "column": 33,
-            "line": 147
+            "line": 149
           },
           "start": {
             "column": 15,
-            "line": 147
+            "line": 149
           }
         },
         "message": "Cliche found: \"back to square one\". Replace it with specific wording.",
         "range": [
-          3952,
-          3970
+          4015,
+          4033
         ],
         "ruleId": "cliches",
         "severity": 2,
@@ -1269,22 +1315,22 @@
       },
       {
         "column": 27,
-        "index": 4023,
-        "line": 149,
+        "index": 4086,
+        "line": 151,
         "loc": {
           "end": {
             "column": 44,
-            "line": 149
+            "line": 151
           },
           "start": {
             "column": 27,
-            "line": 149
+            "line": 151
           }
         },
         "message": "Corporate-speak phrase found: \"low-hanging fruit\". Replace it with specific wording.",
         "range": [
-          4023,
-          4040
+          4086,
+          4103
         ],
         "ruleId": "corporate-speak",
         "severity": 2,
@@ -1292,22 +1338,22 @@
       },
       {
         "column": 1,
-        "index": 4074,
-        "line": 151,
+        "index": 4137,
+        "line": 153,
         "loc": {
           "end": {
             "column": 10,
-            "line": 151
+            "line": 153
           },
           "start": {
             "column": 1,
-            "line": 151
+            "line": 153
           }
         },
         "message": "Skunked term found: \"Hopefully\". Replace it with a less disputed word.",
         "range": [
-          4074,
-          4083
+          4137,
+          4146
         ],
         "ruleId": "skunked-terms",
         "severity": 2,
@@ -1315,22 +1361,22 @@
       },
       {
         "column": 30,
-        "index": 4163,
-        "line": 153,
+        "index": 4226,
+        "line": 155,
         "loc": {
           "end": {
             "column": 41,
-            "line": 153
+            "line": 155
           },
           "start": {
             "column": 30,
-            "line": 153
+            "line": 155
           }
         },
         "message": "Uncomparable phrase found: \"very unique\". Remove the modifier.",
         "range": [
-          4163,
-          4174
+          4226,
+          4237
         ],
         "ruleId": "uncomparables",
         "severity": 2,
@@ -1338,22 +1384,22 @@
       },
       {
         "column": 1,
-        "index": 4209,
-        "line": 155,
+        "index": 4272,
+        "line": 157,
         "loc": {
           "end": {
             "column": 68,
-            "line": 155
+            "line": 157
           },
           "start": {
             "column": 1,
-            "line": 155
+            "line": 157
           }
         },
         "message": "LLM disclaimer found: \"as a language model\". Remove assistant leakage.",
         "range": [
-          4209,
-          4276
+          4272,
+          4339
         ],
         "ruleId": "llm-disclaimer",
         "severity": 2,
@@ -1361,22 +1407,22 @@
       },
       {
         "column": 1,
-        "index": 5596,
-        "line": 199,
+        "index": 5715,
+        "line": 203,
         "loc": {
           "end": {
             "column": 60,
-            "line": 199
+            "line": 203
           },
           "start": {
             "column": 1,
-            "line": 199
+            "line": 203
           }
         },
         "message": "Hedge stacking found: 2 hedge words in one sentence. Keep fewer than 2.",
         "range": [
-          5596,
-          5655
+          5715,
+          5774
         ],
         "ruleId": "hedge-stacking",
         "severity": 2,
@@ -1384,22 +1430,22 @@
       },
       {
         "column": 1,
-        "index": 5657,
-        "line": 201,
+        "index": 5776,
+        "line": 205,
         "loc": {
           "end": {
             "column": 49,
-            "line": 201
+            "line": 205
           },
           "start": {
             "column": 1,
-            "line": 201
+            "line": 205
           }
         },
         "message": "Hedge stacking found: 2 hedge words in one sentence. Keep fewer than 2.",
         "range": [
-          5657,
-          5705
+          5776,
+          5824
         ],
         "ruleId": "hedge-stacking",
         "severity": 2,
@@ -1407,22 +1453,22 @@
       },
       {
         "column": 36,
-        "index": 5790,
-        "line": 205,
+        "index": 5909,
+        "line": 209,
         "loc": {
           "end": {
             "column": 43,
-            "line": 205
+            "line": 209
           },
           "start": {
             "column": 36,
-            "line": 205
+            "line": 209
           }
         },
         "message": "LLM vocabulary found: \"pivotal\". Replace the stock diction with a concrete word.",
         "range": [
-          5790,
-          5797
+          5909,
+          5916
         ],
         "ruleId": "llm-vocabulary",
         "severity": 2,
@@ -1430,22 +1476,22 @@
       },
       {
         "column": 21,
-        "index": 5833,
-        "line": 207,
+        "index": 5952,
+        "line": 211,
         "loc": {
           "end": {
             "column": 28,
-            "line": 207
+            "line": 211
           },
           "start": {
             "column": 21,
-            "line": 207
+            "line": 211
           }
         },
         "message": "LLM vocabulary found: \"vibrant\". Replace the stock diction with a concrete word.",
         "range": [
-          5833,
-          5840
+          5952,
+          5959
         ],
         "ruleId": "llm-vocabulary",
         "severity": 2,
@@ -1453,22 +1499,22 @@
       },
       {
         "column": 22,
-        "index": 5932,
-        "line": 211,
+        "index": 6051,
+        "line": 215,
         "loc": {
           "end": {
             "column": 30,
-            "line": 211
+            "line": 215
           },
           "start": {
             "column": 22,
-            "line": 211
+            "line": 215
           }
         },
         "message": "Prohibited word found: \"leverage\". Rewrite without this term.",
         "range": [
-          5932,
-          5940
+          6051,
+          6059
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -1476,22 +1522,22 @@
       },
       {
         "column": 30,
-        "index": 5988,
-        "line": 213,
+        "index": 6107,
+        "line": 217,
         "loc": {
           "end": {
             "column": 36,
-            "line": 213
+            "line": 217
           },
           "start": {
             "column": 30,
-            "line": 213
+            "line": 217
           }
         },
         "message": "Prohibited word found: \"ROBUST\". Rewrite without this term.",
         "range": [
-          5988,
-          5994
+          6107,
+          6113
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -1499,22 +1545,22 @@
       },
       {
         "column": 26,
-        "index": 6042,
-        "line": 215,
+        "index": 6161,
+        "line": 219,
         "loc": {
           "end": {
             "column": 33,
-            "line": 215
+            "line": 219
           },
           "start": {
             "column": 26,
-            "line": 215
+            "line": 219
           }
         },
         "message": "Complex word found: \"utilize\". Use \"use\" instead.",
         "range": [
-          6042,
-          6049
+          6161,
+          6168
         ],
         "ruleId": "simplicity",
         "severity": 2,
@@ -1522,22 +1568,22 @@
       },
       {
         "column": 22,
-        "index": 6089,
-        "line": 217,
+        "index": 6208,
+        "line": 221,
         "loc": {
           "end": {
             "column": 32,
-            "line": 217
+            "line": 221
           },
           "start": {
             "column": 22,
-            "line": 217
+            "line": 221
           }
         },
         "message": "Complex word found: \"FACILITATE\". Use \"help\" instead.",
         "range": [
-          6089,
-          6099
+          6208,
+          6218
         ],
         "ruleId": "simplicity",
         "severity": 2,
@@ -1545,22 +1591,22 @@
       },
       {
         "column": 39,
-        "index": 6206,
-        "line": 221,
+        "index": 6325,
+        "line": 225,
         "loc": {
           "end": {
             "column": 44,
-            "line": 221
+            "line": 225
           },
           "start": {
             "column": 39,
-            "line": 221
+            "line": 225
           }
         },
         "message": "LLM vocabulary found: \"realm\". Replace the stock diction with a concrete word.",
         "range": [
-          6206,
-          6211
+          6325,
+          6330
         ],
         "ruleId": "llm-vocabulary",
         "severity": 2,
@@ -1568,22 +1614,22 @@
       },
       {
         "column": 39,
-        "index": 6206,
-        "line": 221,
+        "index": 6325,
+        "line": 225,
         "loc": {
           "end": {
             "column": 44,
-            "line": 221
+            "line": 225
           },
           "start": {
             "column": 39,
-            "line": 221
+            "line": 225
           }
         },
         "message": "Prohibited word found: \"realm\". Rewrite without this term.",
         "range": [
-          6206,
-          6211
+          6325,
+          6330
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -1591,22 +1637,22 @@
       },
       {
         "column": 29,
-        "index": 6257,
-        "line": 223,
+        "index": 6376,
+        "line": 227,
         "loc": {
           "end": {
             "column": 36,
-            "line": 223
+            "line": 227
           },
           "start": {
             "column": 29,
-            "line": 223
+            "line": 227
           }
         },
         "message": "Complex word found: \"utilize\". Use \"use\" instead.",
         "range": [
-          6257,
-          6264
+          6376,
+          6383
         ],
         "ruleId": "simplicity",
         "severity": 2,
@@ -1614,22 +1660,22 @@
       },
       {
         "column": 39,
-        "index": 6267,
-        "line": 223,
+        "index": 6386,
+        "line": 227,
         "loc": {
           "end": {
             "column": 45,
-            "line": 223
+            "line": 227
           },
           "start": {
             "column": 39,
-            "line": 223
+            "line": 227
           }
         },
         "message": "Prohibited word found: \"robust\". Rewrite without this term.",
         "range": [
-          6267,
-          6273
+          6386,
+          6392
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -1637,22 +1683,22 @@
       },
       {
         "column": 46,
-        "index": 6274,
-        "line": 223,
+        "index": 6393,
+        "line": 227,
         "loc": {
           "end": {
             "column": 54,
-            "line": 223
+            "line": 227
           },
           "start": {
             "column": 46,
-            "line": 223
+            "line": 227
           }
         },
         "message": "LLM vocabulary found: \"tapestry\". Replace the stock diction with a concrete word.",
         "range": [
-          6274,
-          6282
+          6393,
+          6401
         ],
         "ruleId": "llm-vocabulary",
         "severity": 2,
@@ -1660,22 +1706,22 @@
       },
       {
         "column": 46,
-        "index": 6274,
-        "line": 223,
+        "index": 6393,
+        "line": 227,
         "loc": {
           "end": {
             "column": 54,
-            "line": 223
+            "line": 227
           },
           "start": {
             "column": 46,
-            "line": 223
+            "line": 227
           }
         },
         "message": "Prohibited word found: \"tapestry\". Rewrite without this term.",
         "range": [
-          6274,
-          6282
+          6393,
+          6401
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -1683,22 +1729,22 @@
       },
       {
         "column": 23,
-        "index": 6317,
-        "line": 225,
+        "index": 6436,
+        "line": 229,
         "loc": {
           "end": {
             "column": 31,
-            "line": 225
+            "line": 229
           },
           "start": {
             "column": 23,
-            "line": 225
+            "line": 229
           }
         },
         "message": "Prohibited word found: \"leverage\". Rewrite without this term.",
         "range": [
-          6317,
-          6325
+          6436,
+          6444
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -1706,22 +1752,22 @@
       },
       {
         "column": 34,
-        "index": 6328,
-        "line": 225,
+        "index": 6447,
+        "line": 229,
         "loc": {
           "end": {
             "column": 40,
-            "line": 225
+            "line": 229
           },
           "start": {
             "column": 34,
-            "line": 225
+            "line": 229
           }
         },
         "message": "Prohibited word found: \"robust\". Rewrite without this term.",
         "range": [
-          6328,
-          6334
+          6447,
+          6453
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -1729,22 +1775,22 @@
       },
       {
         "column": 45,
-        "index": 6339,
-        "line": 225,
+        "index": 6458,
+        "line": 229,
         "loc": {
           "end": {
             "column": 53,
-            "line": 225
+            "line": 229
           },
           "start": {
             "column": 45,
-            "line": 225
+            "line": 229
           }
         },
         "message": "Prohibited word found: \"seamless\". Rewrite without this term.",
         "range": [
-          6339,
-          6347
+          6458,
+          6466
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -1752,22 +1798,22 @@
       },
       {
         "column": 1,
-        "index": 6358,
-        "line": 227,
+        "index": 6477,
+        "line": 231,
         "loc": {
           "end": {
             "column": 66,
-            "line": 227
+            "line": 231
           },
           "start": {
             "column": 1,
-            "line": 227
+            "line": 231
           }
         },
         "message": "Hedge stacking found: 2 hedge words in one sentence. Keep fewer than 2.",
         "range": [
-          6358,
-          6423
+          6477,
+          6542
         ],
         "ruleId": "hedge-stacking",
         "severity": 2,
@@ -1775,22 +1821,22 @@
       },
       {
         "column": 18,
-        "index": 6375,
-        "line": 227,
+        "index": 6494,
+        "line": 231,
         "loc": {
           "end": {
             "column": 25,
-            "line": 227
+            "line": 231
           },
           "start": {
             "column": 18,
-            "line": 227
+            "line": 231
           }
         },
         "message": "Complex word found: \"utilize\". Use \"use\" instead.",
         "range": [
-          6375,
-          6382
+          6494,
+          6501
         ],
         "ruleId": "simplicity",
         "severity": 2,
@@ -1798,22 +1844,22 @@
       },
       {
         "column": 26,
-        "index": 6383,
-        "line": 227,
+        "index": 6502,
+        "line": 231,
         "loc": {
           "end": {
             "column": 34,
-            "line": 227
+            "line": 231
           },
           "start": {
             "column": 26,
-            "line": 227
+            "line": 231
           }
         },
         "message": "Complex word found: \"numerous\". Use \"many\" instead.",
         "range": [
-          6383,
-          6391
+          6502,
+          6510
         ],
         "ruleId": "simplicity",
         "severity": 2,
@@ -1821,22 +1867,22 @@
       },
       {
         "column": 44,
-        "index": 6401,
-        "line": 227,
+        "index": 6520,
+        "line": 231,
         "loc": {
           "end": {
             "column": 54,
-            "line": 227
+            "line": 231
           },
           "start": {
             "column": 44,
-            "line": 227
+            "line": 231
           }
         },
         "message": "Complex word found: \"facilitate\". Use \"help\" instead.",
         "range": [
-          6401,
-          6411
+          6520,
+          6530
         ],
         "ruleId": "simplicity",
         "severity": 2,
@@ -1844,22 +1890,22 @@
       },
       {
         "column": 6,
-        "index": 6430,
-        "line": 229,
+        "index": 6549,
+        "line": 233,
         "loc": {
           "end": {
             "column": 13,
-            "line": 229
+            "line": 233
           },
           "start": {
             "column": 6,
-            "line": 229
+            "line": 233
           }
         },
         "message": "LLM vocabulary found: \"vibrant\". Replace the stock diction with a concrete word.",
         "range": [
-          6430,
-          6437
+          6549,
+          6556
         ],
         "ruleId": "llm-vocabulary",
         "severity": 2,
@@ -1867,22 +1913,22 @@
       },
       {
         "column": 14,
-        "index": 6438,
-        "line": 229,
+        "index": 6557,
+        "line": 233,
         "loc": {
           "end": {
             "column": 23,
-            "line": 229
+            "line": 233
           },
           "start": {
             "column": 14,
-            "line": 229
+            "line": 233
           }
         },
         "message": "LLM vocabulary found: \"landscape\". Replace the stock diction with a concrete word.",
         "range": [
-          6438,
-          6447
+          6557,
+          6566
         ],
         "ruleId": "llm-vocabulary",
         "severity": 2,
@@ -1890,22 +1936,22 @@
       },
       {
         "column": 43,
-        "index": 6467,
-        "line": 229,
+        "index": 6586,
+        "line": 233,
         "loc": {
           "end": {
             "column": 48,
-            "line": 229
+            "line": 233
           },
           "start": {
             "column": 43,
-            "line": 229
+            "line": 233
           }
         },
         "message": "LLM vocabulary found: \"delve\". Replace the stock diction with a concrete word.",
         "range": [
-          6467,
-          6472
+          6586,
+          6591
         ],
         "ruleId": "llm-vocabulary",
         "severity": 2,
@@ -1913,22 +1959,22 @@
       },
       {
         "column": 43,
-        "index": 6467,
-        "line": 229,
+        "index": 6586,
+        "line": 233,
         "loc": {
           "end": {
             "column": 48,
-            "line": 229
+            "line": 233
           },
           "start": {
             "column": 43,
-            "line": 229
+            "line": 233
           }
         },
         "message": "Prohibited word found: \"delve\". Rewrite without this term.",
         "range": [
-          6467,
-          6472
+          6586,
+          6591
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -1936,22 +1982,22 @@
       },
       {
         "column": 57,
-        "index": 6481,
-        "line": 229,
+        "index": 6600,
+        "line": 233,
         "loc": {
           "end": {
             "column": 66,
-            "line": 229
+            "line": 233
           },
           "start": {
             "column": 57,
-            "line": 229
+            "line": 233
           }
         },
         "message": "LLM vocabulary found: \"intricate\". Replace the stock diction with a concrete word.",
         "range": [
-          6481,
-          6490
+          6600,
+          6609
         ],
         "ruleId": "llm-vocabulary",
         "severity": 2,
@@ -1959,22 +2005,22 @@
       },
       {
         "column": 67,
-        "index": 6491,
-        "line": 229,
+        "index": 6610,
+        "line": 233,
         "loc": {
           "end": {
             "column": 75,
-            "line": 229
+            "line": 233
           },
           "start": {
             "column": 67,
-            "line": 229
+            "line": 233
           }
         },
         "message": "LLM vocabulary found: \"tapestry\". Replace the stock diction with a concrete word.",
         "range": [
-          6491,
-          6499
+          6610,
+          6618
         ],
         "ruleId": "llm-vocabulary",
         "severity": 2,
@@ -1982,22 +2028,22 @@
       },
       {
         "column": 67,
-        "index": 6491,
-        "line": 229,
+        "index": 6610,
+        "line": 233,
         "loc": {
           "end": {
             "column": 75,
-            "line": 229
+            "line": 233
           },
           "start": {
             "column": 67,
-            "line": 229
+            "line": 233
           }
         },
         "message": "Prohibited word found: \"tapestry\". Rewrite without this term.",
         "range": [
-          6491,
-          6499
+          6610,
+          6618
         ],
         "ruleId": "prohibited-words",
         "severity": 2,
@@ -16220,23 +16266,46 @@
         "type": "lint"
       },
       {
-        "column": 25,
-        "index": 932,
+        "column": 45,
+        "index": 952,
         "line": 29,
         "loc": {
           "end": {
-            "column": 35,
+            "column": 61,
             "line": 29
           },
           "start": {
-            "column": 25,
+            "column": 45,
             "line": 29
+          }
+        },
+        "message": "Cliche found: \"on the same page\". Replace it with specific wording.",
+        "range": [
+          952,
+          968
+        ],
+        "ruleId": "cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 25,
+        "index": 995,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 31
+          },
+          "start": {
+            "column": 25,
+            "line": 31
           }
         },
         "message": "Corporate-speak phrase found: \"drill-down\". Replace it with specific wording.",
         "range": [
-          932,
-          942
+          995,
+          1005
         ],
         "ruleId": "corporate-speak",
         "severity": 2,
@@ -16244,22 +16313,22 @@
       },
       {
         "column": 1,
-        "index": 973,
-        "line": 31,
+        "index": 1036,
+        "line": 33,
         "loc": {
           "end": {
             "column": 10,
-            "line": 31
+            "line": 33
           },
           "start": {
             "column": 1,
-            "line": 31
+            "line": 33
           }
         },
         "message": "Skunked term found: \"Hopefully\". Replace it with a less disputed word.",
         "range": [
-          973,
-          982
+          1036,
+          1045
         ],
         "ruleId": "skunked-terms",
         "severity": 2,
@@ -16267,22 +16336,22 @@
       },
       {
         "column": 23,
-        "index": 1053,
-        "line": 33,
+        "index": 1116,
+        "line": 35,
         "loc": {
           "end": {
             "column": 30,
-            "line": 33
+            "line": 35
           },
           "start": {
             "column": 23,
-            "line": 33
+            "line": 35
           }
         },
         "message": "Skunked term found: \"FULSOME\". Replace it with a less disputed word.",
         "range": [
-          1053,
-          1060
+          1116,
+          1123
         ],
         "ruleId": "skunked-terms",
         "severity": 2,
@@ -16290,22 +16359,22 @@
       },
       {
         "column": 31,
-        "index": 1184,
-        "line": 37,
+        "index": 1247,
+        "line": 39,
         "loc": {
           "end": {
             "column": 42,
-            "line": 37
+            "line": 39
           },
           "start": {
             "column": 31,
-            "line": 37
+            "line": 39
           }
         },
         "message": "Uncomparable phrase found: \"very unique\". Remove the modifier.",
         "range": [
-          1184,
-          1195
+          1247,
+          1258
         ],
         "ruleId": "uncomparables",
         "severity": 2,
@@ -16313,22 +16382,22 @@
       },
       {
         "column": 34,
-        "index": 1248,
-        "line": 39,
+        "index": 1311,
+        "line": 41,
         "loc": {
           "end": {
             "column": 47,
-            "line": 39
+            "line": 41
           },
           "start": {
             "column": 34,
-            "line": 39
+            "line": 41
           }
         },
         "message": "Uncomparable phrase found: \"Most Complete\". Remove the modifier.",
         "range": [
-          1248,
-          1261
+          1311,
+          1324
         ],
         "ruleId": "uncomparables",
         "severity": 2,
@@ -16336,22 +16405,45 @@
       },
       {
         "column": 1,
-        "index": 1271,
-        "line": 41,
+        "index": 1334,
+        "line": 43,
         "loc": {
           "end": {
             "column": 22,
-            "line": 41
+            "line": 43
           },
           "start": {
             "column": 1,
-            "line": 41
+            "line": 43
+          }
+        },
+        "message": "Cliche found: \"At the end of the day\". Replace it with specific wording.",
+        "range": [
+          1334,
+          1355
+        ],
+        "ruleId": "cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1334,
+        "line": 43,
+        "loc": {
+          "end": {
+            "column": 22,
+            "line": 43
+          },
+          "start": {
+            "column": 1,
+            "line": 43
           }
         },
         "message": "Corporate-speak phrase found: \"At the end of the day\". Replace it with specific wording.",
         "range": [
-          1271,
-          1292
+          1334,
+          1355
         ],
         "ruleId": "corporate-speak",
         "severity": 2,
@@ -16359,22 +16451,22 @@
       },
       {
         "column": 1,
-        "index": 1271,
-        "line": 41,
+        "index": 1334,
+        "line": 43,
         "loc": {
           "end": {
             "column": 22,
-            "line": 41
+            "line": 43
           },
           "start": {
             "column": 1,
-            "line": 41
+            "line": 43
           }
         },
         "message": "Prohibited phrase found: \"At the end of the day\". Rewrite without this phrase.",
         "range": [
-          1271,
-          1292
+          1334,
+          1355
         ],
         "ruleId": "prohibited-phrases",
         "severity": 2,
@@ -16382,22 +16474,22 @@
       },
       {
         "column": 34,
-        "index": 1368,
-        "line": 43,
+        "index": 1431,
+        "line": 45,
         "loc": {
           "end": {
             "column": 59,
-            "line": 43
+            "line": 45
           },
           "start": {
             "column": 34,
-            "line": 43
+            "line": 45
           }
         },
         "message": "Cliche found: \"back to the drawing board\". Replace it with specific wording.",
         "range": [
-          1368,
-          1393
+          1431,
+          1456
         ],
         "ruleId": "cliches",
         "severity": 2,
@@ -16405,22 +16497,22 @@
       },
       {
         "column": 34,
-        "index": 1368,
-        "line": 43,
+        "index": 1431,
+        "line": 45,
         "loc": {
           "end": {
             "column": 59,
-            "line": 43
+            "line": 45
           },
           "start": {
             "column": 34,
-            "line": 43
+            "line": 45
           }
         },
         "message": "Corporate-speak phrase found: \"back to the drawing board\". Replace it with specific wording.",
         "range": [
-          1368,
-          1393
+          1431,
+          1456
         ],
         "ruleId": "corporate-speak",
         "severity": 2,
@@ -16428,22 +16520,22 @@
       },
       {
         "column": 1,
-        "index": 1396,
-        "line": 45,
+        "index": 1459,
+        "line": 47,
         "loc": {
           "end": {
             "column": 17,
-            "line": 45
+            "line": 47
           },
           "start": {
             "column": 1,
-            "line": 45
+            "line": 47
           }
         },
         "message": "Humble-bragging phrase found: \"In my experience\". Remove the credentialing lead-in.",
         "range": [
-          1396,
-          1412
+          1459,
+          1475
         ],
         "ruleId": "humble-bragger",
         "severity": 2,
@@ -16451,22 +16543,22 @@
       },
       {
         "column": 32,
-        "index": 1427,
-        "line": 45,
+        "index": 1490,
+        "line": 47,
         "loc": {
           "end": {
             "column": 46,
-            "line": 45
+            "line": 47
           },
           "start": {
             "column": 32,
-            "line": 45
+            "line": 47
           }
         },
         "message": "Fake jargon phrase found: \"optimizing for\". Replace the borrowed tech metaphor with plain language.",
         "range": [
-          1427,
-          1441
+          1490,
+          1504
         ],
         "ruleId": "jargon-faker",
         "severity": 2,
@@ -16474,22 +16566,22 @@
       },
       {
         "column": 1,
-        "index": 1471,
-        "line": 47,
+        "index": 1534,
+        "line": 49,
         "loc": {
           "end": {
             "column": 70,
-            "line": 47
+            "line": 49
           },
           "start": {
             "column": 1,
-            "line": 47
+            "line": 49
           }
         },
         "message": "LLM disclaimer found: \"as a language model\". Remove assistant leakage.",
         "range": [
-          1471,
-          1540
+          1534,
+          1603
         ],
         "ruleId": "llm-disclaimer",
         "severity": 2,
@@ -16497,22 +16589,22 @@
       },
       {
         "column": 22,
-        "index": 1492,
-        "line": 47,
+        "index": 1555,
+        "line": 49,
         "loc": {
           "end": {
             "column": 35,
-            "line": 47
+            "line": 49
           },
           "start": {
             "column": 22,
-            "line": 47
+            "line": 49
           }
         },
         "message": "Prohibited phrase found: \"in conclusion\". Rewrite without this phrase.",
         "range": [
-          1492,
-          1505
+          1555,
+          1568
         ],
         "ruleId": "prohibited-phrases",
         "severity": 2,
@@ -16520,22 +16612,22 @@
       },
       {
         "column": 1,
-        "index": 1542,
-        "line": 49,
+        "index": 1605,
+        "line": 51,
         "loc": {
           "end": {
             "column": 28,
-            "line": 49
+            "line": 51
           },
           "start": {
             "column": 1,
-            "line": 49
+            "line": 51
           }
         },
         "message": "Prohibited phrase found: \"In today's fast-paced world\". Rewrite without this phrase.",
         "range": [
-          1542,
-          1569
+          1605,
+          1632
         ],
         "ruleId": "prohibited-phrases",
         "severity": 2,
@@ -16543,22 +16635,22 @@
       },
       {
         "column": 46,
-        "index": 1587,
-        "line": 49,
+        "index": 1650,
+        "line": 51,
         "loc": {
           "end": {
             "column": 59,
-            "line": 49
+            "line": 51
           },
           "start": {
             "column": 46,
-            "line": 49
+            "line": 51
           }
         },
         "message": "Prohibited phrase found: \"let's dive in\". Rewrite without this phrase.",
         "range": [
-          1587,
-          1600
+          1650,
+          1663
         ],
         "ruleId": "prohibited-phrases",
         "severity": 2,
@@ -16566,22 +16658,22 @@
       },
       {
         "column": 1,
-        "index": 1628,
-        "line": 51,
+        "index": 1691,
+        "line": 53,
         "loc": {
           "end": {
             "column": 17,
-            "line": 51
+            "line": 53
           },
           "start": {
             "column": 1,
-            "line": 51
+            "line": 53
           }
         },
         "message": "Humble-bragging phrase found: \"In my experience\". Remove the credentialing lead-in.",
         "range": [
-          1628,
-          1644
+          1691,
+          1707
         ],
         "ruleId": "humble-bragger",
         "severity": 2,
@@ -16589,22 +16681,22 @@
       },
       {
         "column": 1,
-        "index": 1718,
-        "line": 53,
+        "index": 1781,
+        "line": 55,
         "loc": {
           "end": {
             "column": 19,
-            "line": 53
+            "line": 55
           },
           "start": {
             "column": 1,
-            "line": 53
+            "line": 55
           }
         },
         "message": "Humble-bragging phrase found: \"As someone who has\". Remove the credentialing lead-in.",
         "range": [
-          1718,
-          1736
+          1781,
+          1799
         ],
         "ruleId": "humble-bragger",
         "severity": 2,
@@ -16612,22 +16704,22 @@
       },
       {
         "column": 17,
-        "index": 1826,
-        "line": 55,
+        "index": 1889,
+        "line": 57,
         "loc": {
           "end": {
             "column": 31,
-            "line": 55
+            "line": 57
           },
           "start": {
             "column": 17,
-            "line": 55
+            "line": 57
           }
         },
         "message": "Fake jargon phrase found: \"optimizing for\". Replace the borrowed tech metaphor with plain language.",
         "range": [
-          1826,
-          1840
+          1889,
+          1903
         ],
         "ruleId": "jargon-faker",
         "severity": 2,
@@ -16635,22 +16727,22 @@
       },
       {
         "column": 8,
-        "index": 1901,
-        "line": 57,
+        "index": 1964,
+        "line": 59,
         "loc": {
           "end": {
             "column": 18,
-            "line": 57
+            "line": 59
           },
           "start": {
             "column": 8,
-            "line": 57
+            "line": 59
           }
         },
         "message": "Fake jargon phrase found: \"debug your\". Replace the borrowed tech metaphor with plain language.",
         "range": [
-          1901,
-          1911
+          1964,
+          1974
         ],
         "ruleId": "jargon-faker",
         "severity": 2,
@@ -16658,22 +16750,22 @@
       },
       {
         "column": 15,
-        "index": 1974,
-        "line": 59,
+        "index": 2037,
+        "line": 61,
         "loc": {
           "end": {
             "column": 33,
-            "line": 59
+            "line": 61
           },
           "start": {
             "column": 15,
-            "line": 59
+            "line": 61
           }
         },
         "message": "Cliche found: \"back to square one\". Replace it with specific wording.",
         "range": [
-          1974,
-          1992
+          2037,
+          2055
         ],
         "ruleId": "cliches",
         "severity": 2,
@@ -16681,22 +16773,22 @@
       },
       {
         "column": 27,
-        "index": 2045,
-        "line": 61,
+        "index": 2108,
+        "line": 63,
         "loc": {
           "end": {
             "column": 44,
-            "line": 61
+            "line": 63
           },
           "start": {
             "column": 27,
-            "line": 61
+            "line": 63
           }
         },
         "message": "Corporate-speak phrase found: \"low-hanging fruit\". Replace it with specific wording.",
         "range": [
-          2045,
-          2062
+          2108,
+          2125
         ],
         "ruleId": "corporate-speak",
         "severity": 2,
@@ -16704,22 +16796,22 @@
       },
       {
         "column": 1,
-        "index": 2096,
-        "line": 63,
+        "index": 2159,
+        "line": 65,
         "loc": {
           "end": {
             "column": 10,
-            "line": 63
+            "line": 65
           },
           "start": {
             "column": 1,
-            "line": 63
+            "line": 65
           }
         },
         "message": "Skunked term found: \"Hopefully\". Replace it with a less disputed word.",
         "range": [
-          2096,
-          2105
+          2159,
+          2168
         ],
         "ruleId": "skunked-terms",
         "severity": 2,
@@ -16727,22 +16819,22 @@
       },
       {
         "column": 30,
-        "index": 2185,
-        "line": 65,
+        "index": 2248,
+        "line": 67,
         "loc": {
           "end": {
             "column": 41,
-            "line": 65
+            "line": 67
           },
           "start": {
             "column": 30,
-            "line": 65
+            "line": 67
           }
         },
         "message": "Uncomparable phrase found: \"very unique\". Remove the modifier.",
         "range": [
-          2185,
-          2196
+          2248,
+          2259
         ],
         "ruleId": "uncomparables",
         "severity": 2,
@@ -16750,22 +16842,22 @@
       },
       {
         "column": 1,
-        "index": 2231,
-        "line": 67,
+        "index": 2294,
+        "line": 69,
         "loc": {
           "end": {
             "column": 68,
-            "line": 67
+            "line": 69
           },
           "start": {
             "column": 1,
-            "line": 67
+            "line": 69
           }
         },
         "message": "LLM disclaimer found: \"as a language model\". Remove assistant leakage.",
         "range": [
-          2231,
-          2298
+          2294,
+          2361
         ],
         "ruleId": "llm-disclaimer",
         "severity": 2,

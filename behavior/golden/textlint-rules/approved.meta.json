@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-16T20-56-55.363294Z-f3c41e06",
-  "run_commit": "8490250",
+  "run_id": "2026-05-17T11-31-56.911037Z-f3c41e06",
+  "run_commit": "58d4125",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-16T20:56:55.363294Z",
-  "fixture_hash": "sha256:7d4964cacf953ab32b1c90154f741537c035be447b0485619dc2d0b0465a9b88",
+  "recorded_at": "2026-05-17T11:31:56.911037Z",
+  "fixture_hash": "sha256:ec51fc201b5f40543d3b909d9c1f0a55b388d04a2f561e1661ca6180f4c4b88a",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.7",
   "output_schema_version": "1",
@@ -36,11 +36,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/hits.md",
-      "sha256": "sha256:f9226901d35732b2b3851a117ba42051604a3cd806517d8b006f8708b331bbf8"
+      "sha256": "sha256:c2d0c9a133e9a4c682608cd6d40c2fa9e62b7a7017dbdb6d3514e60b5bd1a61d"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md",
-      "sha256": "sha256:50839ff11d736c8c71caf91eb5cfc3fb2d00b3b22e658af18a2eb106339f963b"
+      "sha256": "sha256:092976c3791c69c0167058a4114ea3d31b2a5143a9b580a102d758fff83d6173"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
@@ -76,7 +76,7 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/editorial-style.md",
-      "sha256": "sha256:c2a039b2a3f2533a2a311f38d785bde822958cc9ef32aea4868c915af80ca5d7"
+      "sha256": "sha256:ef1e07bc262ac66effb151edd712cda7a31af7785969ba3c3ebb6b5313a4beac"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/engineering-review.md",
@@ -99,5 +99,5 @@
       "sha256": "sha256:4b1656a649b7cb391fa25e35728489e2e7686996754d49ba167eb6e0f6298e82"
     }
   ],
-  "comment": "Update approved paths after lowercase repo move"
+  "comment": "Expand cliche lexicon from Vale proselint"
 }

@@ -114,6 +114,8 @@ The proposal calls the rewrite a Clean Slate for billing.
 
 The roadmap labels account cleanup as low-hanging fruit.
 
+The status memo says everyone needs to stay on the same page.
+
 The manager requested a drill-down before approving the budget.
 
 Hopefully the release note explains the customer impact.
@@ -167,6 +169,8 @@ The service team is optimizing for latency on the upload path.
 The glossary uses "back to square one" as an example of vague wording.
 
 The acid testers labeled each vial before the audit.
+
+The patient reported pain in the neck after the crash.
 
 The transcript quotes "let's touch base" as a phrase to remove.
 

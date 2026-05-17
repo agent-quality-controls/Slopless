@@ -26,6 +26,8 @@ The proposal calls the rewrite a Clean Slate for billing.
 
 The roadmap labels account cleanup as low-hanging fruit.
 
+The status memo says everyone needs to stay on the same page.
+
 The manager requested a drill-down before approving the budget.
 
 Hopefully the release note explains the customer impact.

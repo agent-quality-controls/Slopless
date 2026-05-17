@@ -381,6 +381,13 @@
       "line": 27
     },
     {
+      "text": "The status memo says everyone needs to stay on the same page.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 29
+    },
+    {
       "text": "The manager requested a drill-down before approving the budget.",
       "family": "phrases",
       "bucket": "hits",
@@ -568,6 +575,13 @@
       "bucket": "no-hits",
       "source": "cases/phrases/no-hits.md",
       "line": 13
+    },
+    {
+      "text": "The patient reported pain in the neck after the crash.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 15
     },
     {
       "text": "The transcript quotes \"let's touch base\" as a phrase to remove.",

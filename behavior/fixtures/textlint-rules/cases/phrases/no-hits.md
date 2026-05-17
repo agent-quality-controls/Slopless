@@ -12,6 +12,8 @@ The glossary uses "back to square one" as an example of vague wording.
 
 The acid testers labeled each vial before the audit.
 
+The patient reported pain in the neck after the crash.
+
 The transcript quotes "let's touch base" as a phrase to remove.
 
 The paper measured synergistic effects between the two drugs.
