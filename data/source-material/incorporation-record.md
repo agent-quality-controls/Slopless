@@ -11,10 +11,10 @@ Research material that is not implemented stays in `data/source-material/derived
 - Source: `no-cliches@0.3.0`
 - URL: https://github.com/duereg/no-cliches
 - Rule data:
-  - `src/families/phrases/data/cliches.json`
-  - `src/families/phrases/data/cliches.source.md`
+  - `src/rules/phrases/data/cliches.json`
+  - `src/rules/phrases/data/cliches.source.md`
 - Rule:
-  - `src/families/phrases/cliches.ts`
+  - `src/rules/phrases/cliches.ts`
 - Implemented as:
   - literal phrase lexicon
 - Local changes:
@@ -26,10 +26,10 @@ Research material that is not implemented stays in `data/source-material/derived
 - Source: Vale package `proselint/proselint/Cliches.yml`
 - URL: https://github.com/errata-ai/proselint
 - Rule data:
-  - `src/families/phrases/data/cliches.json`
-  - `src/families/phrases/data/cliches.source.md`
+  - `src/rules/phrases/data/cliches.json`
+  - `src/rules/phrases/data/cliches.source.md`
 - Rule:
-  - `src/families/phrases/cliches.ts`
+  - `src/rules/phrases/cliches.ts`
 - Implemented as:
   - literal phrase lexicon
 - Local changes:
@@ -47,10 +47,10 @@ Research material that is not implemented stays in `data/source-material/derived
 - Cross-check source:
   - Vale `proselint/CorporateSpeak.yml`
 - Rule data:
-  - `src/families/phrases/data/corporate-speak.json`
-  - `src/families/phrases/data/corporate-speak.source.md`
+  - `src/rules/phrases/data/corporate-speak.json`
+  - `src/rules/phrases/data/corporate-speak.source.md`
 - Rule:
-  - `src/families/phrases/corporate-speak.ts`
+  - `src/rules/phrases/corporate-speak.ts`
 - Implemented as:
   - literal phrase lexicon
 - Local changes:
@@ -65,10 +65,10 @@ Research material that is not implemented stays in `data/source-material/derived
 - Cross-check source:
   - Vale `proselint/Skunked.yml`
 - Rule data:
-  - `src/families/phrases/data/skunked-terms.json`
-  - `src/families/phrases/data/skunked-terms.source.md`
+  - `src/rules/phrases/data/skunked-terms.json`
+  - `src/rules/phrases/data/skunked-terms.source.md`
 - Rule:
-  - `src/families/phrases/skunked-terms.ts`
+  - `src/rules/phrases/skunked-terms.ts`
 - Implemented as:
   - literal phrase lexicon
 - Local changes:
@@ -84,10 +84,10 @@ Research material that is not implemented stays in `data/source-material/derived
 - Cross-check source:
   - Vale `proselint/Uncomparables.yml`
 - Rule data:
-  - `src/families/phrases/data/uncomparables.json`
-  - `src/families/phrases/data/uncomparables.source.md`
+  - `src/rules/phrases/data/uncomparables.json`
+  - `src/rules/phrases/data/uncomparables.source.md`
 - Rule:
-  - `src/families/phrases/uncomparables.ts`
+  - `src/rules/phrases/uncomparables.ts`
 - Implemented as:
   - comparator list
   - adjective list
@@ -110,10 +110,10 @@ Research material that is not implemented stays in `data/source-material/derived
   - `.plans/textlint-hit-review/semantic-thinness-good-catches.md`
   - `.plans/textlint-hit-review/semantic-thinness-bad-catches.md`
 - Rule data:
-  - `src/families/semantic-thinness/patterns/*.json`
-  - `src/families/semantic-thinness/private/pattern-data*.ts`
+  - `src/rules/semantic-thinness/patterns/*.json`
+  - `src/rules/semantic-thinness/private/pattern-data*.ts`
 - Rule:
-  - `src/families/semantic-thinness/semantic-thinness.ts`
+  - `src/rules/semantic-thinness/semantic-thinness.ts`
 - Implemented as:
   - local pattern families
   - slot-based templates
@@ -145,13 +145,13 @@ Research material that is not implemented stays in `data/source-material/derived
   - `.plans/2026-05-13-023908-migrate-llm-slop-textlint.md`
   - `.plans/textlint-hit-review/`
 - Rule folders:
-  - `src/families/syntactic-patterns/authority`
-  - `src/families/syntactic-patterns/closers`
-  - `src/families/syntactic-patterns/contrast`
-  - `src/families/syntactic-patterns/generalization`
-  - `src/families/syntactic-patterns/lead-ins`
-  - `src/families/syntactic-patterns/llm-artifacts`
-  - `src/families/syntactic-patterns/repetition`
+  - `src/rules/syntactic-patterns/authority`
+  - `src/rules/syntactic-patterns/closers`
+  - `src/rules/syntactic-patterns/contrast`
+  - `src/rules/syntactic-patterns/generalization`
+  - `src/rules/syntactic-patterns/lead-ins`
+  - `src/rules/syntactic-patterns/llm-artifacts`
+  - `src/rules/syntactic-patterns/repetition`
 - Implemented as:
   - rule-local pattern arrays
   - token sequence checks
@@ -176,7 +176,7 @@ Research material that is not implemented stays in `data/source-material/derived
 - Source:
   - hand-picked AI-slop vocabulary from fixture review and earlier generated corpus work
 - Rule:
-  - `src/families/words/llm-vocabulary.ts`
+  - `src/rules/words/llm-vocabulary.ts`
 - Implemented as:
   - small literal word set
 - False-positive control:
@@ -188,8 +188,8 @@ Research material that is not implemented stays in `data/source-material/derived
   - observed assistant-output leakage forms
   - hand-authored examples from LLM response conventions
 - Rules:
-  - `src/families/phrases/llm-disclaimer.ts`
-  - `src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts`
+  - `src/rules/phrases/llm-disclaimer.ts`
+  - `src/rules/syntactic-patterns/llm-artifacts/response-wrapper.ts`
 - Implemented as:
   - sentence-start patterns
   - contains patterns
@@ -205,33 +205,33 @@ Research material that is not implemented stays in `data/source-material/derived
 ## Implemented Source-Derived Pattern Data
 
 - Wordiness:
-  - `src/families/phrases/wordiness.ts`
-  - `src/families/phrases/data/wordiness-patterns.json`
+  - `src/rules/phrases/wordiness.ts`
+  - `src/rules/phrases/data/wordiness-patterns.json`
   - newly implemented exact phrases: `in view of the fact that`, `the question as to whether`, `until such time as`
 - Redundancy:
-  - `src/families/phrases/redundancy.ts`
-  - `src/families/phrases/data/redundancy-patterns.json`
+  - `src/rules/phrases/redundancy.ts`
+  - `src/rules/phrases/data/redundancy-patterns.json`
   - newly implemented exact phrases: `interact with each other`, `visible to the eye`, `while at the same time`
 - Cliche templates:
-  - `src/families/phrases/cliches.ts`
-  - `src/families/phrases/data/cliche-templates.json`
+  - `src/rules/phrases/cliches.ts`
+  - `src/rules/phrases/data/cliche-templates.json`
 - Corporate abstraction:
-  - `src/families/phrases/corporate-speak.ts`
-  - `src/families/phrases/data/corporate-abstraction-patterns.json`
+  - `src/rules/phrases/corporate-speak.ts`
+  - `src/rules/phrases/data/corporate-abstraction-patterns.json`
   - newly implemented template: `serves as a testament to the power of`
 - LLM disclaimers:
-  - `src/families/phrases/llm-disclaimer.ts`
-  - `src/families/phrases/data/llm-disclaimer-expansions.json`
+  - `src/rules/phrases/llm-disclaimer.ts`
+  - `src/rules/phrases/data/llm-disclaimer-expansions.json`
 - Response wrappers:
-  - `src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts`
-  - `src/families/syntactic-patterns/llm-artifacts/data/response-wrapper-patterns.json`
+  - `src/rules/syntactic-patterns/llm-artifacts/response-wrapper.ts`
+  - `src/rules/syntactic-patterns/llm-artifacts/data/response-wrapper-patterns.json`
   - newly implemented paragraph-start wrappers: `it is important to note`, `it's important to note`, `it is worth noting`, `it's worth noting`
 - Narrative cliches:
-  - `src/families/narrative-slop/narrative-cliches.ts`
-  - `src/families/narrative-slop/data/narrative-cliches.json`
+  - `src/rules/narrative-slop/narrative-cliches.ts`
+  - `src/rules/narrative-slop/data/narrative-cliches.json`
 - Academic tortured phrases:
-  - `src/families/academic-slop/tortured-phrases.ts`
-  - `src/families/academic-slop/data/tortured-phrases.json`
+  - `src/rules/academic-slop/tortured-phrases.ts`
+  - `src/rules/academic-slop/data/tortured-phrases.json`
   - newly implemented exact phrases: `data and interchanges innovation`, `man-made reasoning`, `shut circuit tv`
 - Local transformations:
   - broad source regex groups were converted only when they mapped to closed slots
@@ -248,11 +248,11 @@ Research material that is not implemented stays in `data/source-material/derived
 - Source:
   - user-supplied Sunstone prose cases recorded in `data/source-material/derived/sunstone-slop-cases.md`
 - Rules:
-  - `src/families/semantic-thinness/semantic-thinness.ts`
-  - `src/families/syntactic-patterns/contrast/negation-reframe.ts`
-  - `src/families/narrative-slop/perception-verb-density.ts`
-  - `src/families/narrative-slop/body-action-density.ts`
-  - `src/families/narrative-slop/flat-action-cadence.ts`
+  - `src/rules/semantic-thinness/semantic-thinness.ts`
+  - `src/rules/syntactic-patterns/contrast/negation-reframe.ts`
+  - `src/rules/narrative-slop/perception-verb-density.ts`
+  - `src/rules/narrative-slop/body-action-density.ts`
+  - `src/rules/narrative-slop/flat-action-cadence.ts`
 - Implemented as:
   - semantic template expansions
   - contrast-pivot sentence-pair matching
@@ -277,9 +277,9 @@ Research material that is not implemented stays in `data/source-material/derived
   - generated variant notes in `data/source-material/derived/sunstone-emotion-substance-variants.md`
   - generated variant notes in `data/source-material/derived/sunstone-action-density-variants.md`
 - Rules:
-  - `src/families/semantic-thinness/semantic-thinness.ts`
-  - `src/families/narrative-slop/body-action-density.ts`
-  - `src/families/narrative-slop/flat-action-cadence.ts`
+  - `src/rules/semantic-thinness/semantic-thinness.ts`
+  - `src/rules/narrative-slop/body-action-density.ts`
+  - `src/rules/narrative-slop/flat-action-cadence.ts`
 - Implemented as:
   - `emotion-as-substance` semantic template
   - `summary-fog-transition` semantic template
@@ -304,7 +304,7 @@ Current rules use Textlint only for traversal, reporting, ranges, and rule execu
 
 - Used for phrase datasets such as cliches, corporate speak, skunked terms, and prohibited phrases.
 - Implemented with local token normalization and phrase matching.
-- Source data is stored as JSON under `src/families/phrases/data`.
+- Source data is stored as JSON under `src/rules/phrases/data`.
 - Reports include the exact matched phrase where the rule can identify it.
 
 ### Token And Sentence Pattern Matching

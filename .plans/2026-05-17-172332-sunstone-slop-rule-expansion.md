@@ -29,10 +29,10 @@ Implement the Sunstone slop categories as runnable Textlint rules and pattern ex
 - `.plans/2026-05-17-172332-sunstone-slop-rule-expansion.md.manifest.toml`
 - `scripts/verify-sunstone-slop-rule-expansion.py`
 - `scripts/verify-all.sh`
-- `src/families/semantic-thinness/patterns/*.json`
-- `src/families/syntactic-patterns/contrast/private/*`
-- `src/families/syntactic-patterns/contrast/negation-reframe.ts`
-- `src/families/narrative-slop/*.ts`
+- `src/rules/semantic-thinness/patterns/*.json`
+- `src/rules/syntactic-patterns/contrast/private/*`
+- `src/rules/syntactic-patterns/contrast/negation-reframe.ts`
+- `src/rules/narrative-slop/*.ts`
 - `src/registries/narrative-slop.ts`
 - `src/presets/everything.ts`
 - `package.json`

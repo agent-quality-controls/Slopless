@@ -37,11 +37,11 @@ The implementation should add emotion-as-substance semantic templates, summary-f
 - `data/source-material/derived/sunstone-action-density-variants.md`
 - `data/source-material/derived/sunstone-slop-cases.md`
 - `data/source-material/incorporation-record.md`
-- `src/families/semantic-thinness/patterns/*.json`
-- `src/families/semantic-thinness/private/pattern-data*.ts`
-- `src/families/narrative-slop/body-action-density.ts`
-- `src/families/narrative-slop/flat-action-cadence.ts`
-- `src/families/narrative-slop/perception-verb-density.ts`
+- `src/rules/semantic-thinness/patterns/*.json`
+- `src/rules/semantic-thinness/private/pattern-data*.ts`
+- `src/rules/narrative-slop/body-action-density.ts`
+- `src/rules/narrative-slop/flat-action-cadence.ts`
+- `src/rules/narrative-slop/perception-verb-density.ts`
 - `behavior/fixtures/textlint-rules/cases/semantic-thinness/*`
 - `behavior/fixtures/textlint-rules/cases/narrative-slop/*`
 - `behavior/fixtures/textlint-rules/corpus/narrative-scenes.md`

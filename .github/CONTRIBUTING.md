@@ -29,9 +29,9 @@ Runs build, eslint, stylelint, prettier check, cspell, type-coverage at 100%, an
 
 ## Adding a rule
 
-1. Pick a family under `src/families/` that fits (or propose a new one in an issue first).
+1. Pick a group under `src/rules/` that fits (or propose a new one in an issue first).
 2. Add the rule module. Export `id`, `meta`, and a textlint reporter.
-3. Register it in the family index and in `src/rules.ts`.
+3. Register it in `src/registries/`.
 4. Add fixtures under `data/` covering positives, negatives, and known false positives.
 5. Run `npm run validate`.
 6. Update `README.md` with a one-line rule entry under the right section.

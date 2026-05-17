@@ -13,7 +13,7 @@ MANIFEST = (
     ROOT
     / ".plans/2026-05-17-181310-emotion-substance-and-density-expansion.md.manifest.toml"
 )
-PATTERN_DATA_DIR = ROOT / "src/families/semantic-thinness/private"
+PATTERN_DATA_DIR = ROOT / "src/rules/semantic-thinness/private"
 GOLDEN_OUTPUT = ROOT / "behavior/golden/textlint-rules/approved.normalized.json"
 
 

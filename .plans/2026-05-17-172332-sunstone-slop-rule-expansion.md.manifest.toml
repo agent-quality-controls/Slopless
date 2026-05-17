@@ -6,7 +6,7 @@ golden_acceptance = "blocked_until_false_positive_review"
 [[expanded_rule]]
 id = "semantic-thinness"
 family = "semantic-thinness"
-path = "src/families/semantic-thinness/semantic-thinness.ts"
+path = "src/rules/semantic-thinness/semantic-thinness.ts"
 cases_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
 corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
@@ -28,7 +28,7 @@ required_no_hit_text = [
 [[expanded_rule]]
 id = "negation-reframe"
 family = "syntactic-patterns"
-path = "src/families/syntactic-patterns/contrast/negation-reframe.ts"
+path = "src/rules/syntactic-patterns/contrast/negation-reframe.ts"
 cases_hits = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
 corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
@@ -46,9 +46,9 @@ required_no_hit_text = [
 [[new_rule]]
 id = "perception-verb-density"
 family = "narrative-slop"
-path = "src/families/narrative-slop/perception-verb-density.ts"
+path = "src/rules/narrative-slop/perception-verb-density.ts"
 registry = "src/registries/narrative-slop.ts"
-export = "./families/narrative-slop/perception-verb-density"
+export = "./rules/narrative-slop/perception-verb-density"
 preset = true
 cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
@@ -64,9 +64,9 @@ required_no_hit_text = [
 [[new_rule]]
 id = "body-action-density"
 family = "narrative-slop"
-path = "src/families/narrative-slop/body-action-density.ts"
+path = "src/rules/narrative-slop/body-action-density.ts"
 registry = "src/registries/narrative-slop.ts"
-export = "./families/narrative-slop/body-action-density"
+export = "./rules/narrative-slop/body-action-density"
 preset = true
 cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
@@ -82,9 +82,9 @@ required_no_hit_text = [
 [[new_rule]]
 id = "flat-action-cadence"
 family = "narrative-slop"
-path = "src/families/narrative-slop/flat-action-cadence.ts"
+path = "src/rules/narrative-slop/flat-action-cadence.ts"
 registry = "src/registries/narrative-slop.ts"
-export = "./families/narrative-slop/flat-action-cadence"
+export = "./rules/narrative-slop/flat-action-cadence"
 preset = true
 cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"

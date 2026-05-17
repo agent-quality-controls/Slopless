@@ -29,7 +29,8 @@ Defaults:
 
 - `src/cli.ts`: thin JSON-only wrapper around textlint's CLI
 - `src/index.ts`: textlint preset export
-- `src/families`: rule implementations grouped by family
+- `src/rules`: rule implementations grouped by family
+- `src/reporting`: reusable report policies, including density thresholds
 - `src/shared`: shared text traversal, matching, and normalization helpers
 - `src/presets/everything.ts`: default enabled rule set
 - `src/registries`: maps family rule IDs to rule modules

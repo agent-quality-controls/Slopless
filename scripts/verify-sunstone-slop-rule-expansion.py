@@ -15,7 +15,7 @@ MANIFEST = (
 )
 PACKAGE_JSON = ROOT / "package.json"
 PRESET = ROOT / "src/presets/everything.ts"
-SEMANTIC_PATTERNS = ROOT / "src/families/semantic-thinness/patterns"
+SEMANTIC_PATTERNS = ROOT / "src/rules/semantic-thinness/patterns"
 
 
 def read_text(path: Path) -> str:

@@ -1,13 +1,13 @@
-import cliches from "../families/phrases/cliches.js";
-import corporateSpeak from "../families/phrases/corporate-speak.js";
-import humbleBragger from "../families/phrases/humble-bragger.js";
-import jargonFaker from "../families/phrases/jargon-faker.js";
-import llmDisclaimer from "../families/phrases/llm-disclaimer.js";
-import prohibitedPhrases from "../families/phrases/prohibited-phrases.js";
-import redundancy from "../families/phrases/redundancy.js";
-import skunkedTerms from "../families/phrases/skunked-terms.js";
-import uncomparables from "../families/phrases/uncomparables.js";
-import wordiness from "../families/phrases/wordiness.js";
+import cliches from "../rules/phrases/cliches.js";
+import corporateSpeak from "../rules/phrases/corporate-speak.js";
+import humbleBragger from "../rules/phrases/humble-bragger.js";
+import jargonFaker from "../rules/phrases/jargon-faker.js";
+import llmDisclaimer from "../rules/phrases/llm-disclaimer.js";
+import prohibitedPhrases from "../rules/phrases/prohibited-phrases.js";
+import redundancy from "../rules/phrases/redundancy.js";
+import skunkedTerms from "../rules/phrases/skunked-terms.js";
+import uncomparables from "../rules/phrases/uncomparables.js";
+import wordiness from "../rules/phrases/wordiness.js";
 
 export const phraseRules = {
   cliches,

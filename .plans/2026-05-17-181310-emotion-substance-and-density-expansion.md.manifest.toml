@@ -24,7 +24,7 @@ required_text = [
 
 [[semantic_pattern]]
 id = "emotion-as-substance"
-path = "src/families/semantic-thinness/patterns/emotion-as-substance.json"
+path = "src/rules/semantic-thinness/patterns/emotion-as-substance.json"
 cases_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
 corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
@@ -52,7 +52,7 @@ required_no_hit_text = [
 
 [[semantic_pattern]]
 id = "summary-fog-transition"
-path = "src/families/semantic-thinness/patterns/summary-fog-transition.json"
+path = "src/rules/semantic-thinness/patterns/summary-fog-transition.json"
 cases_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
 corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
@@ -73,7 +73,7 @@ required_no_hit_text = [
 
 [[narrative_rule]]
 id = "body-action-density"
-path = "src/families/narrative-slop/body-action-density.ts"
+path = "src/rules/narrative-slop/body-action-density.ts"
 cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
 corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
@@ -91,7 +91,7 @@ required_no_hit_text = [
 
 [[narrative_rule]]
 id = "flat-action-cadence"
-path = "src/families/narrative-slop/flat-action-cadence.ts"
+path = "src/rules/narrative-slop/flat-action-cadence.ts"
 cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
 corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"

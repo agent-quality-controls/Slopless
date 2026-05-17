@@ -17,21 +17,21 @@ fi
 
 CONFIG_ARGS=(--no-textlintrc)
 RULE_ARGS=(
-  --rulesdir "$ROOT/dist/families/academic-slop"
-  --rulesdir "$ROOT/dist/families/metrics"
-  --rulesdir "$ROOT/dist/families/narrative-slop"
-  --rulesdir "$ROOT/dist/families/orthography"
-  --rulesdir "$ROOT/dist/families/words"
-  --rulesdir "$ROOT/dist/families/phrases"
-  --rulesdir "$ROOT/dist/families/semantic-thinness"
-  --rulesdir "$ROOT/dist/families/term-policy"
-  --rulesdir "$ROOT/dist/families/syntactic-patterns/authority"
-  --rulesdir "$ROOT/dist/families/syntactic-patterns/closers"
-  --rulesdir "$ROOT/dist/families/syntactic-patterns/contrast"
-  --rulesdir "$ROOT/dist/families/syntactic-patterns/generalization"
-  --rulesdir "$ROOT/dist/families/syntactic-patterns/lead-ins"
-  --rulesdir "$ROOT/dist/families/syntactic-patterns/llm-artifacts"
-  --rulesdir "$ROOT/dist/families/syntactic-patterns/repetition"
+  --rulesdir "$ROOT/dist/rules/academic-slop"
+  --rulesdir "$ROOT/dist/rules/metrics"
+  --rulesdir "$ROOT/dist/rules/narrative-slop"
+  --rulesdir "$ROOT/dist/rules/orthography"
+  --rulesdir "$ROOT/dist/rules/words"
+  --rulesdir "$ROOT/dist/rules/phrases"
+  --rulesdir "$ROOT/dist/rules/semantic-thinness"
+  --rulesdir "$ROOT/dist/rules/term-policy"
+  --rulesdir "$ROOT/dist/rules/syntactic-patterns/authority"
+  --rulesdir "$ROOT/dist/rules/syntactic-patterns/closers"
+  --rulesdir "$ROOT/dist/rules/syntactic-patterns/contrast"
+  --rulesdir "$ROOT/dist/rules/syntactic-patterns/generalization"
+  --rulesdir "$ROOT/dist/rules/syntactic-patterns/lead-ins"
+  --rulesdir "$ROOT/dist/rules/syntactic-patterns/llm-artifacts"
+  --rulesdir "$ROOT/dist/rules/syntactic-patterns/repetition"
 )
 run_textlint_json() {
   local output="$1"
@@ -64,7 +64,7 @@ for FILE in "${FILES[@]}"; do
     run_textlint_json \
       "$CONFIG_OUTPUT" \
       --config "$FIXTURE_CONFIG" \
-      --rules-base-directory "$ROOT/dist/families/$FAMILY" \
+      --rules-base-directory "$ROOT/dist/rules/$FAMILY" \
       "$FILE"
     JSON_OUTPUTS+=("$CONFIG_OUTPUT")
   fi
@@ -81,7 +81,7 @@ for FILE in "${FILES[@]}"; do
     run_textlint_json \
       "$CONFIG_OUTPUT" \
       --config "$FIXTURE_CONFIG" \
-      --rules-base-directory "$ROOT/dist/families/$FAMILY" \
+      --rules-base-directory "$ROOT/dist/rules/$FAMILY" \
       "$FILE"
     JSON_OUTPUTS+=("$CONFIG_OUTPUT")
   done

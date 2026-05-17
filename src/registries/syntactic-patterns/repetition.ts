@@ -1,7 +1,7 @@
-import demonstrativeEmphasis from "../../families/syntactic-patterns/repetition/demonstrative-emphasis.js";
-import emptyEmphasis from "../../families/syntactic-patterns/repetition/empty-emphasis.js";
-import fragmentStacking from "../../families/syntactic-patterns/repetition/fragment-stacking.js";
-import tripleRepeat from "../../families/syntactic-patterns/repetition/triple-repeat.js";
+import demonstrativeEmphasis from "../../rules/syntactic-patterns/repetition/demonstrative-emphasis.js";
+import emptyEmphasis from "../../rules/syntactic-patterns/repetition/empty-emphasis.js";
+import fragmentStacking from "../../rules/syntactic-patterns/repetition/fragment-stacking.js";
+import tripleRepeat from "../../rules/syntactic-patterns/repetition/triple-repeat.js";
 
 export const repetitionRules = {
   "demonstrative-emphasis": demonstrativeEmphasis,

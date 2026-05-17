@@ -1,7 +1,8 @@
 import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
+import { firstDensityMatch } from "../../reporting/report-density.js";
+import type { Detection } from "../../reporting/types.js";
 import { allParagraphs } from "../../shared/text/sections.js";
-import { splitSentences } from "../../shared/text/sentences.js";
 import { type Token, wordTokens } from "../../shared/text/tokens.js";
 
 const MOVEMENT_CUES = new Set([
@@ -91,14 +92,6 @@ type PhraseCue = {
   readonly tokens: readonly string[];
 };
 
-type DenseMatch = {
-  readonly count: number;
-  readonly end: number;
-  readonly group: CueGroup;
-  readonly start: number;
-  readonly words: readonly string[];
-};
-
 const PHRASE_CUES: readonly PhraseCue[] = [
   { group: "movement cue", tokens: ["crossed", "her", "arms"] },
   { group: "movement cue", tokens: ["crossed", "his", "arms"] },
@@ -118,13 +111,6 @@ const PHRASE_CUES: readonly PhraseCue[] = [
   { group: "body cue", tokens: ["paws", "shifted"] },
   { group: "body cue", tokens: ["paws", "trembled"] }
 ];
-
-type CueHit = {
-  readonly end: number;
-  readonly group: CueGroup;
-  readonly start: number;
-  readonly word: string;
-};
 
 function markCovered(
   covered: Set<number>,
@@ -162,8 +148,9 @@ function tokensMatchAt(
   );
 }
 
-function cueHits(tokens: readonly Token[]): CueHit[] {
-  const hits: CueHit[] = [];
+function cueDetections(text: string): Detection<CueGroup>[] {
+  const tokens = wordTokens(text);
+  const detections: Detection<CueGroup>[] = [];
   const phraseCovered = new Set<number>();
 
   for (let index = 0; index < tokens.length; index += 1) {
@@ -182,11 +169,11 @@ function cueHits(tokens: readonly Token[]): CueHit[] {
         continue;
       }
 
-      hits.push({
+      detections.push({
         end: last.end,
         group: phrase.group,
-        start: token.start,
-        word: phrase.tokens.join(" ")
+        label: phrase.tokens.join(" "),
+        start: token.start
       });
       markCovered(phraseCovered, index, phrase.tokens.length);
     }
@@ -200,87 +187,16 @@ function cueHits(tokens: readonly Token[]): CueHit[] {
 
     const group = cueGroup(token);
     if (group !== undefined) {
-      hits.push({
+      detections.push({
         end: token.end,
         group,
-        start: token.start,
-        word: token.normalized
+        label: token.normalized,
+        start: token.start
       });
     }
   }
 
-  return hits.sort((left, right) => left.start - right.start);
-}
-
-function denseMatchForSpan(
-  text: string,
-  start: number,
-  end: number
-): DenseMatch | undefined {
-  const byGroup = new Map<CueGroup, CueHit[]>();
-
-  for (const hit of cueHits(wordTokens(text.slice(start, end)))) {
-    byGroup.set(hit.group, [...(byGroup.get(hit.group) ?? []), hit]);
-  }
-
-  for (const group of ["movement cue", "body cue"] as const) {
-    const hits = byGroup.get(group) ?? [];
-    if (hits.length < MIN_GROUP_HITS) {
-      continue;
-    }
-
-    const first = hits[0];
-    const last = hits.at(-1);
-    if (first === undefined || last === undefined) {
-      continue;
-    }
-
-    return {
-      count: hits.length,
-      end: start + last.end,
-      group,
-      start: start + first.start,
-      words: [...new Set(hits.map((hit) => hit.word))]
-    };
-  }
-
-  return undefined;
-}
-
-function firstDenseMatch(text: string): DenseMatch | undefined {
-  if (wordTokens(text).length <= MAX_PARAGRAPH_TOKENS) {
-    const paragraphMatch = denseMatchForSpan(text, 0, text.length);
-    if (paragraphMatch !== undefined) {
-      return paragraphMatch;
-    }
-  }
-
-  const sentences = splitSentences(text);
-  for (let index = 0; index < sentences.length; index += 1) {
-    const window = sentences.slice(index, index + WINDOW_SENTENCES);
-    if (window.length < 2) {
-      continue;
-    }
-
-    const first = window[0];
-    const last = window.at(-1);
-    if (first === undefined || last === undefined) {
-      continue;
-    }
-
-    if (
-      wordTokens(text.slice(first.start, last.end)).length > MAX_WINDOW_TOKENS
-    ) {
-      continue;
-    }
-
-    const windowMatch = denseMatchForSpan(text, first.start, last.end);
-    if (windowMatch !== undefined) {
-      return windowMatch;
-    }
-  }
-
-  return undefined;
+  return detections.sort((left, right) => left.start - right.start);
 }
 
 const rule: TextlintRuleModule = (context) => {
@@ -289,7 +205,15 @@ const rule: TextlintRuleModule = (context) => {
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
       for (const item of allParagraphs(node)) {
-        const match = firstDenseMatch(item.text);
+        const match = firstDensityMatch(item.text, {
+          detect: cueDetections,
+          groups: ["movement cue", "body cue"],
+          maxParagraphTokens: MAX_PARAGRAPH_TOKENS,
+          maxWindowTokens: MAX_WINDOW_TOKENS,
+          paragraphMinimumHits: MIN_GROUP_HITS,
+          windowMinimumHits: MIN_GROUP_HITS,
+          windowSentences: WINDOW_SENTENCES
+        });
         if (match === undefined) {
           continue;
         }
@@ -297,7 +221,7 @@ const rule: TextlintRuleModule = (context) => {
         report(
           item.paragraph,
           new RuleError(
-            `Body-action density: ${match.count} ${match.group}s in a short span (${match.words.join(", ")}).`,
+            `Body-action density: ${match.count} ${match.group}s in a short span (${match.labels.join(", ")}).`,
             {
               padding: locator.range([
                 item.source.originalStartFor(match.start),

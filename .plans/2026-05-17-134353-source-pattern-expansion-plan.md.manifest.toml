@@ -5,7 +5,7 @@ golden_acceptance = "blocked_until_full_review"
 [[family]]
 id = "phrases"
 registry = "src/registries/phrases.ts"
-rulesdir = "dist/families/phrases"
+rulesdir = "dist/rules/phrases"
 cases_hits = "behavior/fixtures/textlint-rules/cases/phrases/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md"
 
@@ -13,13 +13,13 @@ cases_no_hits = "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md"
 id = "syntactic-patterns"
 registry = "src/registries/syntactic-patterns.ts"
 rulesdirs = [
-  "dist/families/syntactic-patterns/authority",
-  "dist/families/syntactic-patterns/closers",
-  "dist/families/syntactic-patterns/contrast",
-  "dist/families/syntactic-patterns/generalization",
-  "dist/families/syntactic-patterns/lead-ins",
-  "dist/families/syntactic-patterns/llm-artifacts",
-  "dist/families/syntactic-patterns/repetition"
+  "dist/rules/syntactic-patterns/authority",
+  "dist/rules/syntactic-patterns/closers",
+  "dist/rules/syntactic-patterns/contrast",
+  "dist/rules/syntactic-patterns/generalization",
+  "dist/rules/syntactic-patterns/lead-ins",
+  "dist/rules/syntactic-patterns/llm-artifacts",
+  "dist/rules/syntactic-patterns/repetition"
 ]
 cases_hits = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
@@ -27,14 +27,14 @@ cases_no_hits = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hi
 [[family]]
 id = "semantic-thinness"
 registry = "src/registries/semantic-thinness.ts"
-rulesdir = "dist/families/semantic-thinness"
+rulesdir = "dist/rules/semantic-thinness"
 cases_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
 
 [[family]]
 id = "words"
 registry = "src/registries/words.ts"
-rulesdir = "dist/families/words"
+rulesdir = "dist/rules/words"
 cases_hits = "behavior/fixtures/textlint-rules/cases/words/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/words/no-hits.md"
 
@@ -42,7 +42,7 @@ cases_no_hits = "behavior/fixtures/textlint-rules/cases/words/no-hits.md"
 id = "narrative-slop"
 registry = "src/registries/narrative-slop.ts"
 index_export = "narrativeSlopRules"
-rulesdir = "dist/families/narrative-slop"
+rulesdir = "dist/rules/narrative-slop"
 cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
 
@@ -50,132 +50,132 @@ cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.m
 id = "academic-slop"
 registry = "src/registries/academic-slop.ts"
 index_export = "academicSlopRules"
-rulesdir = "dist/families/academic-slop"
+rulesdir = "dist/rules/academic-slop"
 cases_hits = "behavior/fixtures/textlint-rules/cases/academic-slop/hits.md"
 cases_no_hits = "behavior/fixtures/textlint-rules/cases/academic-slop/no-hits.md"
 
 [[rule]]
 id = "wordiness"
 family = "phrases"
-path = "src/families/phrases/wordiness.ts"
-export = "./families/phrases/wordiness"
+path = "src/rules/phrases/wordiness.ts"
+export = "./rules/phrases/wordiness"
 preset = true
 kind = "new"
 
 [[rule]]
 id = "redundancy"
 family = "phrases"
-path = "src/families/phrases/redundancy.ts"
-export = "./families/phrases/redundancy"
+path = "src/rules/phrases/redundancy.ts"
+export = "./rules/phrases/redundancy"
 preset = true
 kind = "new"
 
 [[rule]]
 id = "cliches"
 family = "phrases"
-path = "src/families/phrases/cliches.ts"
-export = "./families/phrases/cliches"
+path = "src/rules/phrases/cliches.ts"
+export = "./rules/phrases/cliches"
 preset = true
 kind = "expanded"
 
 [[rule]]
 id = "corporate-speak"
 family = "phrases"
-path = "src/families/phrases/corporate-speak.ts"
-export = "./families/phrases/corporate-speak"
+path = "src/rules/phrases/corporate-speak.ts"
+export = "./rules/phrases/corporate-speak"
 preset = true
 kind = "expanded"
 
 [[rule]]
 id = "llm-disclaimer"
 family = "phrases"
-path = "src/families/phrases/llm-disclaimer.ts"
-export = "./families/phrases/llm-disclaimer"
+path = "src/rules/phrases/llm-disclaimer.ts"
+export = "./rules/phrases/llm-disclaimer"
 preset = true
 kind = "expanded"
 
 [[rule]]
 id = "response-wrapper"
 family = "syntactic-patterns"
-path = "src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts"
+path = "src/rules/syntactic-patterns/llm-artifacts/response-wrapper.ts"
 registry = "src/registries/syntactic-patterns/llm-artifacts.ts"
-export = "./families/syntactic-patterns/llm-artifacts/response-wrapper"
+export = "./rules/syntactic-patterns/llm-artifacts/response-wrapper"
 preset = true
 kind = "expanded"
 
 [[rule]]
 id = "semantic-thinness"
 family = "semantic-thinness"
-path = "src/families/semantic-thinness/semantic-thinness.ts"
-export = "./families/semantic-thinness/semantic-thinness"
+path = "src/rules/semantic-thinness/semantic-thinness.ts"
+export = "./rules/semantic-thinness/semantic-thinness"
 preset = true
 kind = "expanded"
 
 [[rule]]
 id = "llm-vocabulary"
 family = "words"
-path = "src/families/words/llm-vocabulary.ts"
-export = "./families/words/llm-vocabulary"
+path = "src/rules/words/llm-vocabulary.ts"
+export = "./rules/words/llm-vocabulary"
 preset = true
 kind = "expanded"
 
 [[rule]]
 id = "narrative-cliches"
 family = "narrative-slop"
-path = "src/families/narrative-slop/narrative-cliches.ts"
-export = "./families/narrative-slop/narrative-cliches"
+path = "src/rules/narrative-slop/narrative-cliches.ts"
+export = "./rules/narrative-slop/narrative-cliches"
 preset = true
 kind = "new"
 
 [[rule]]
 id = "tortured-phrases"
 family = "academic-slop"
-path = "src/families/academic-slop/tortured-phrases.ts"
-export = "./families/academic-slop/tortured-phrases"
+path = "src/rules/academic-slop/tortured-phrases.ts"
+export = "./rules/academic-slop/tortured-phrases"
 preset = true
 kind = "new"
 
 [[pattern_data]]
 id = "wordiness-patterns"
-path = "src/families/phrases/data/wordiness-patterns.json"
+path = "src/rules/phrases/data/wordiness-patterns.json"
 source_note = "data/source-material/derived/wordiness-pattern-candidates.md"
-used_by = ["src/families/phrases/wordiness.ts"]
+used_by = ["src/rules/phrases/wordiness.ts"]
 
 [[pattern_data]]
 id = "redundancy-patterns"
-path = "src/families/phrases/data/redundancy-patterns.json"
+path = "src/rules/phrases/data/redundancy-patterns.json"
 source_note = "data/source-material/derived/redundancy-pattern-candidates.md"
-used_by = ["src/families/phrases/redundancy.ts"]
+used_by = ["src/rules/phrases/redundancy.ts"]
 
 [[pattern_data]]
 id = "cliche-templates"
-path = "src/families/phrases/data/cliche-templates.json"
+path = "src/rules/phrases/data/cliche-templates.json"
 source_note = "data/source-material/derived/cliche-template-candidates.md"
-used_by = ["src/families/phrases/cliches.ts"]
+used_by = ["src/rules/phrases/cliches.ts"]
 
 [[pattern_data]]
 id = "corporate-abstraction-patterns"
-path = "src/families/phrases/data/corporate-abstraction-patterns.json"
+path = "src/rules/phrases/data/corporate-abstraction-patterns.json"
 source_note = "data/source-material/derived/corporate-abstraction-candidates.md"
-used_by = ["src/families/phrases/corporate-speak.ts"]
+used_by = ["src/rules/phrases/corporate-speak.ts"]
 
 [[pattern_data]]
 id = "narrative-cliche-patterns"
-path = "src/families/narrative-slop/data/narrative-cliches.json"
+path = "src/rules/narrative-slop/data/narrative-cliches.json"
 source_note = "data/source-material/derived/narrative-slop-candidates.md"
-used_by = ["src/families/narrative-slop/narrative-cliches.ts"]
+used_by = ["src/rules/narrative-slop/narrative-cliches.ts"]
 
 [[pattern_data]]
 id = "tortured-phrases"
-path = "src/families/academic-slop/data/tortured-phrases.json"
+path = "src/rules/academic-slop/data/tortured-phrases.json"
 source_note = "data/source-material/derived/academic-slop-candidates.md"
-used_by = ["src/families/academic-slop/tortured-phrases.ts"]
+used_by = ["src/rules/academic-slop/tortured-phrases.ts"]
 
 [[pattern_data]]
 id = "llm-pattern-expansion"
-path = "src/families/phrases/data/llm-disclaimer-expansions.json"
+path = "src/rules/phrases/data/llm-disclaimer-expansions.json"
 source_note = "data/source-material/derived/llm-artifact-candidates.md"
-used_by = ["src/families/phrases/llm-disclaimer.ts"]
+used_by = ["src/rules/phrases/llm-disclaimer.ts"]
 
 [[fixture_corpus]]
 path = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"

@@ -1,4 +1,4 @@
-import torturedPhrases from "../families/academic-slop/tortured-phrases.js";
+import torturedPhrases from "../rules/academic-slop/tortured-phrases.js";
 
 export const academicSlopRules = {
   "tortured-phrases": torturedPhrases

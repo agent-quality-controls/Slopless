@@ -2,13 +2,12 @@
 
 [![npm](https://img.shields.io/npm/v/slopless?label=npm)](https://www.npmjs.com/package/slopless)
 [![downloads](https://img.shields.io/npm/dm/slopless)](https://www.npmjs.com/package/slopless)
-[![license](https://img.shields.io/github/license/agent-quality-controls/slopless)](LICENSE)
+[![license](https://img.shields.io/npm/l/slopless)](LICENSE)
 [![node](https://img.shields.io/node/v/slopless)](package.json)
-
 
 Catch AI and human slop in Markdown without calling an LLM. Slopless ships 50+ deterministic textlint rules and a CLI that emits structured JSON findings.
 
-For design rationale and how slopless compares to proselint, write-good, alex, vale, and other linters, see the [wiki](https://github.com/agent-quality-controls/slopless/wiki).
+For design rationale and how slopless compares to proselint, write-good, alex, vale, and other linters, see the repository wiki.
 
 It reports patterns that make prose padded, vague, generic, formulaic, or mechanically careless. It does not call an LLM. Output is always textlint JSON.
 

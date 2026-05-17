@@ -2,7 +2,7 @@
 
 Raw source files gathered for Slopless lexicons, patterns, and templates.
 
-Implemented rule data lives under `src/families/*`.
+Implemented rule data lives under `src/rules/*`.
 
 Implemented source records live in `incorporation-record.md`.
 
