@@ -32,6 +32,7 @@ Examples:
 - `He didn't look at the music box. Instead, he looked at their dusty, oil-matted fur.`
 - `The correct next step is not more guessing. It is to rerun reduction on those three.`
 - `She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling`
+- `She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.`
 
 Notes:
 
@@ -114,6 +115,7 @@ Examples:
 - `Marius looked at Cassia and Arden. He didn't look at the other cubs.`
 - `Cassia watched him leave. Her father had told her to observe and listen. She looked at Arden. The caracal boy was already looking back at her.`
 - `Cassia stepped up to the window. She rested her paws on the wooden sill. She looked at the slope of the roof and the dark tiles.`
+- `She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.`
 
 Notes:
 
@@ -201,16 +203,44 @@ Generalized catch:
 
 - `a solid front of competence and shared experience`
 - abstract noun pile presented as observed fact
+- `empty evaluative group summary or abstract-personification line replacing concrete behavior`
 
 Examples:
 
 - `a solid front of competence and shared experience.`
 - `Fear had no place in her schedule.`
+- `The target is not any abstract noun phrase. The target is an empty evaluative group summary or abstract-personification line replacing concrete behavior.`
 
 Notes:
 
 - This needs more examples before implementation.
 - The target is not any abstract noun phrase. The target is an empty evaluative group summary or abstract-personification line replacing concrete behavior.
+
+## Straight Rhythm And Flat Sentence Cadence
+
+Likely family: `narrative-slop` or `metrics`.
+
+Generalized catch:
+
+- 3 or more adjacent short sentences with the same simple clause shape
+- `Name verb object. Pronoun verb object. Pronoun did not verb object. Possessive noun verb complement.`
+- repeated sentence-initial subject plus simple past-tense verb
+- long run of action beats with little causal or sensory variation
+
+Examples:
+
+- `The little snow leopard girl sat on the wide sill. She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.`
+- `Liska turned her head. Her brown eyes looked tired. She crossed her arms over her chest and waited.`
+- `Liska blinked. She sat up straighter on the sill. The anger finally melted out of her posture. She looked past Cassia toward the group of guards in the yard.`
+- `Remal walked over to the window. The heavy African golden cat stopped next to Cassia. He looked up at the small girl on the sill.`
+- `Cassia stepped out of the shadows. She picked up the practice sword. The wood was cold in her paw.`
+- `The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions.`
+
+Notes:
+
+- This is not only sentence length. The bad signal is repeated simple rhythm and repeated grammatical shape.
+- A safe first implementation should probably report only dense runs with repeated subject-openers, simple past action verbs, and no conjunction/subordination variety.
+- Good no-hit controls need intentionally plain prose where short sentences are used for clarity or young-reader pacing.
 
 ## Dialogue And Punctuation Artifact
 
