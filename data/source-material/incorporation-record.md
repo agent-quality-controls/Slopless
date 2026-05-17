@@ -1,45 +1,36 @@
 # Incorporation Record
 
-This file records what Slopless has already incorporated into active rules.
+This file records source material already implemented in Slopless rules.
 
-It is separate from `data/source-material/README.md`, which records source material that has been archived but not necessarily used.
+Research material that is not implemented stays in `data/source-material/derived/*.md`. Those files must not repeat implemented phrases or templates.
 
-## Status Terms
-
-- `active`: used by a shipped textlint rule.
-- `archived`: downloaded under `data/source-material`, not yet used by a shipped rule.
-- `candidate`: reviewed as useful, but not active yet.
-- `rejected`: reviewed and deliberately not used.
-
-## Active External Sources
+## Implemented External Sources
 
 ### `no-cliches`
 
-- Status: `active`
 - Source: `no-cliches@0.3.0`
 - URL: https://github.com/duereg/no-cliches
-- Active rule data:
+- Rule data:
   - `src/families/phrases/data/cliches.json`
   - `src/families/phrases/data/cliches.source.md`
-- Active rule:
+- Rule:
   - `src/families/phrases/cliches.ts`
-- Incorporated as:
+- Implemented as:
   - literal phrase lexicon
 - Local changes:
   - trimmed, deduplicated, sorted
   - unsafe broad entries removed where fixture review showed false-positive risk
 
-### Vale `proselint` cliches
+### Vale `proselint` Cliches
 
-- Status: `active`
 - Source: Vale package `proselint/proselint/Cliches.yml`
 - URL: https://github.com/errata-ai/proselint
-- Active rule data:
+- Rule data:
   - `src/families/phrases/data/cliches.json`
   - `src/families/phrases/data/cliches.source.md`
-- Active rule:
+- Rule:
   - `src/families/phrases/cliches.ts`
-- Incorporated as:
+- Implemented as:
   - literal phrase lexicon
 - Local changes:
   - merged into the existing cliche list
@@ -47,71 +38,67 @@ It is separate from `data/source-material/README.md`, which records source mater
   - converted `whet (?:the|your) appetite` into literal phrases
   - kept `pain in the` excluded because it catches literal medical prose such as `pain in the neck`
 
-### `proselint` corporate speak
+### `proselint` Corporate Speak
 
-- Status: `active`
 - Source: `proselint==0.16.0`
 - URL: https://github.com/amperser/proselint
 - Imported file:
   - `proselint/checks/industrial_language/corporate_speak.py`
 - Cross-check source:
   - Vale `proselint/CorporateSpeak.yml`
-- Active rule data:
+- Rule data:
   - `src/families/phrases/data/corporate-speak.json`
   - `src/families/phrases/data/corporate-speak.source.md`
-- Active rule:
+- Rule:
   - `src/families/phrases/corporate-speak.ts`
-- Incorporated as:
+- Implemented as:
   - literal phrase lexicon
 - Local changes:
   - trimmed, deduplicated, sorted
 
-### `proselint` skunked terms
+### `proselint` Skunked Terms
 
-- Status: `active`
 - Source: `proselint==0.16.0`
 - URL: https://github.com/amperser/proselint
 - Imported file:
   - `proselint/checks/skunked_terms.py`
 - Cross-check source:
   - Vale `proselint/Skunked.yml`
-- Active rule data:
+- Rule data:
   - `src/families/phrases/data/skunked-terms.json`
   - `src/families/phrases/data/skunked-terms.source.md`
-- Active rule:
+- Rule:
   - `src/families/phrases/skunked-terms.ts`
-- Incorporated as:
+- Implemented as:
   - literal phrase lexicon
 - Local changes:
   - trimmed, deduplicated, sorted
   - normalized trailing punctuation from `Thankfully,`
 
-### `proselint` uncomparables
+### `proselint` Uncomparables
 
-- Status: `active`
 - Source: `proselint==0.16.0`
 - URL: https://github.com/amperser/proselint
 - Imported file:
   - `proselint/checks/uncomparables.py`
 - Cross-check source:
   - Vale `proselint/Uncomparables.yml`
-- Active rule data:
+- Rule data:
   - `src/families/phrases/data/uncomparables.json`
   - `src/families/phrases/data/uncomparables.source.md`
-- Active rule:
+- Rule:
   - `src/families/phrases/uncomparables.ts`
-- Incorporated as:
+- Implemented as:
   - comparator list
   - adjective list
   - exception list
 - Local changes:
   - added runtime exception for `least possible`
 
-## Active Internal Sources
+## Implemented Internal Sources
 
-### Generated slop corpus mining
+### Generated Slop Corpus Mining
 
-- Status: `active`
 - Source:
   - generated slop fixtures and mined findings from earlier Slopless development
   - Sunstone generated prose samples supplied as fixture material
@@ -122,12 +109,12 @@ It is separate from `data/source-material/README.md`, which records source mater
   - `.plans/2026-05-13-194300-semantic-thinness-hit-ledger.md`
   - `.plans/textlint-hit-review/semantic-thinness-good-catches.md`
   - `.plans/textlint-hit-review/semantic-thinness-bad-catches.md`
-- Active rule data:
+- Rule data:
   - `src/families/semantic-thinness/patterns/*.json`
   - `src/families/semantic-thinness/private/pattern-data*.ts`
-- Active rule:
+- Rule:
   - `src/families/semantic-thinness/semantic-thinness.ts`
-- Incorporated as:
+- Implemented as:
   - local pattern families
   - slot-based templates
   - positive and negative fixture cases
@@ -147,9 +134,8 @@ It is separate from `data/source-material/README.md`, which records source mater
   - hand-picked high-confidence examples into pattern files
   - added negative examples for concrete movement, concrete scene changes, measurements, dates, and other likely false positives
 
-### Hand-authored syntactic slop patterns
+### Hand-Authored Syntactic Slop Patterns
 
-- Status: `active`
 - Source:
   - reviewed fixture hits
   - hand-authored patterns from observed AI and bad-prose output
@@ -158,7 +144,7 @@ It is separate from `data/source-material/README.md`, which records source mater
   - `.plans/2026-05-12-180446-textlint-rule-taxonomy.md`
   - `.plans/2026-05-13-023908-migrate-llm-slop-textlint.md`
   - `.plans/textlint-hit-review/`
-- Active rule folders:
+- Rule folders:
   - `src/families/syntactic-patterns/authority`
   - `src/families/syntactic-patterns/closers`
   - `src/families/syntactic-patterns/contrast`
@@ -166,7 +152,7 @@ It is separate from `data/source-material/README.md`, which records source mater
   - `src/families/syntactic-patterns/lead-ins`
   - `src/families/syntactic-patterns/llm-artifacts`
   - `src/families/syntactic-patterns/repetition`
-- Incorporated as:
+- Implemented as:
   - rule-local pattern arrays
   - token sequence checks
   - sentence-sequence checks
@@ -185,29 +171,26 @@ It is separate from `data/source-material/README.md`, which records source mater
   - no shared semantic slots unless reuse is proven
   - matchers stay inside each family when ownership is local
 
-### Current LLM vocabulary seed list
+### Current LLM Vocabulary Seed List
 
-- Status: `active`
 - Source:
   - hand-picked AI-slop vocabulary from fixture review and earlier generated corpus work
-- Active rule:
+- Rule:
   - `src/families/words/llm-vocabulary.ts`
-- Incorporated as:
+- Implemented as:
   - small literal word set
-- Current risk:
-  - intentionally small
-  - external empirical LLM word sources are archived but not yet active because broad words have high false-positive risk
+- False-positive control:
+  - external empirical LLM word sources are not implemented because broad words have high false-positive risk
 
-### Assistant leakage and response-wrapper patterns
+### Assistant Leakage And Response-Wrapper Patterns
 
-- Status: `active`
 - Source:
   - observed assistant-output leakage forms
   - hand-authored examples from LLM response conventions
-- Active rules:
+- Rules:
   - `src/families/phrases/llm-disclaimer.ts`
   - `src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts`
-- Incorporated as:
+- Implemented as:
   - sentence-start patterns
   - contains patterns
   - capability and limitation frames
@@ -219,169 +202,47 @@ It is separate from `data/source-material/README.md`, which records source mater
   - `i can provide`
   - `i cannot diagnose`
 
-## Archived But Not Yet Active
+## Implemented Source-Derived Pattern Data
 
-### Empirical LLM excess-vocabulary sources
-
-- Status: `archived`
-- Sources:
-  - `data/source-material/llm-excess-vocab/berenslab/excess_words.csv`
-  - `data/source-material/llm-excess-vocab/detect-chatgpt/ges_selected_lemma.csv`
-- Intended use:
-  - candidate word scores
-  - weak signals
-  - possible domain-specific academic detector
-- Not active because:
-  - many items are broad or domain-specific
-  - default prose rules need fixture review before import
-
-### Slop Forensics
-
-- Status: `archived`
-- Source:
-  - `data/source-material/llm-slop-lists/slop-forensics/`
-- Intended use:
-  - direct ngram candidates
-  - phrase-count mining
-  - template generation
-- Not active because:
-  - creative-writing lists include names and genre terms
-  - phrases need false-positive review before import
-
-### `llm-cliches` and community ChatGPT lists
-
-- Status: `archived`
-- Sources:
-  - `data/source-material/llm-slop-lists/llm-cliches/`
-  - `data/source-material/llm-slop-lists/detect-ai-text-easily/`
-  - `data/source-material/llm-slop-lists/community-gists/`
-- Intended use:
-  - candidate word and phrase review
-  - fixture generation
-  - rule ideas
-- Not active because:
-  - provenance and precision vary by source
-  - broad words need fixture review
-
-### Prose-linter packages not yet imported
-
-- Status: `archived`
-- Sources:
-  - `write-good`
-  - `too-wordy`
-  - `weasel-words`
-  - `adverb-where`
-  - npm `cliches`
-  - extra `proselint` folders beyond active phrase data
-- Intended use:
-  - wordiness lexicons
-  - hedge/weasel lists
-  - adverb and weakener patterns
-  - regex-like cliche templates that can be converted to token templates
-- Not active because:
-  - several lists are broad
-  - several upstream rules are regex or helper-code behavior, not direct Slopless data
-
-### Vale style guides
-
-- Status: `archived`
-- Sources:
-  - Microsoft
-  - Google
-  - Elastic
-  - Joblint
-- Intended use:
-  - replacement pairs
-  - wordiness candidates
-  - domain-specific technical or hiring language
-  - pattern ideas for punctuation and passive voice
-- Not active because:
-  - style-guide policy is not identical to Slopless default prose quality
-  - domain-specific rules should stay separate from default slop detection
-
-### Plain-English sources
-
-- Status: `archived`
-- Sources:
-  - GOV.UK
-  - GCA
-  - Plain English Campaign
-  - Peter Occil
-- Intended use:
-  - wordiness candidates
-  - replacement pairs
-  - formal filler phrases
-  - template candidates with placeholders
-- Not active because:
-  - requires normalization into candidate lists and fixtures first
-
-### Academic tortured phrases
-
-- Status: `partially active`
-- Sources:
-  - Cabanac 2021
-  - Problematic Paper Screener
-  - Zenodo humanities/social-science tortured phrase data
-- Intended use:
-  - academic-specific phrase-pair detector
-  - paraphrase-template mining
-- Active rule:
-  - `src/families/academic-slop/tortured-phrases.ts`
-- Active data:
-  - `src/families/academic-slop/data/tortured-phrases.json`
-- Incorporated now:
-  - exact phrase matches only
-  - first active set: `bosom peril`, `counterfeit consciousness`, `sign to clamor`
-- Caveat:
-  - broader Zenodo-derived phrase rows remain source candidates until fixture review
-
-### Source-derived wordiness, redundancy, cliche, corporate, LLM, and narrative pattern notes
-
-- Status: `active candidate notes`
-- Sources:
-  - `data/source-material/derived/wordiness-pattern-candidates.md`
-  - `data/source-material/derived/redundancy-pattern-candidates.md`
-  - `data/source-material/derived/cliche-template-candidates.md`
-  - `data/source-material/derived/corporate-abstraction-candidates.md`
-  - `data/source-material/derived/llm-artifact-candidates.md`
-  - `data/source-material/derived/narrative-slop-candidates.md`
-  - `data/source-material/derived/academic-slop-candidates.md`
-- Active rules:
+- Wordiness:
   - `src/families/phrases/wordiness.ts`
-  - `src/families/phrases/redundancy.ts`
-  - `src/families/phrases/cliches.ts`
-  - `src/families/phrases/corporate-speak.ts`
-  - `src/families/phrases/llm-disclaimer.ts`
-  - `src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts`
-  - `src/families/narrative-slop/narrative-cliches.ts`
-  - `src/families/academic-slop/tortured-phrases.ts`
-- Active data:
   - `src/families/phrases/data/wordiness-patterns.json`
+- Redundancy:
+  - `src/families/phrases/redundancy.ts`
   - `src/families/phrases/data/redundancy-patterns.json`
+- Cliche templates:
+  - `src/families/phrases/cliches.ts`
   - `src/families/phrases/data/cliche-templates.json`
+- Corporate abstraction:
+  - `src/families/phrases/corporate-speak.ts`
   - `src/families/phrases/data/corporate-abstraction-patterns.json`
+- LLM disclaimers:
+  - `src/families/phrases/llm-disclaimer.ts`
   - `src/families/phrases/data/llm-disclaimer-expansions.json`
+- Response wrappers:
+  - `src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts`
   - `src/families/syntactic-patterns/llm-artifacts/data/response-wrapper-patterns.json`
+- Narrative cliches:
+  - `src/families/narrative-slop/narrative-cliches.ts`
   - `src/families/narrative-slop/data/narrative-cliches.json`
+- Academic tortured phrases:
+  - `src/families/academic-slop/tortured-phrases.ts`
   - `src/families/academic-slop/data/tortured-phrases.json`
-- Incorporation type:
-  - literal phrase lists for wordiness, redundancy, LLM leakage, and tortured phrases
-  - token templates with reviewed slots for cliches, corporate abstraction, and narrative cliches
 - Local transformations:
   - broad source regex groups were converted only when they mapped to closed slots
   - empirical LLM ngrams were reduced to reviewed frames instead of imported wholesale
-  - assistant identity and knowledge-limit candidates were added to `llm-disclaimer`
-  - chat scaffold candidates were added to existing `response-wrapper`, not a duplicate rule
+  - assistant identity and knowledge-limit phrases were added to `llm-disclaimer`
+  - chat scaffold phrases were added to existing `response-wrapper`, not a duplicate rule
 - False-positive controls:
   - quoted phrase examples are skipped by phrase matchers
   - academic checks use exact known tortured phrases
-  - narrative checks use narrow reviewed frames and keep their own family
+  - narrative checks use narrow reviewed frames and skip concrete-cause sentences
 
 ## Matching Architecture We Built Ourselves
 
 Slopless does not run upstream prose-linter plugins directly.
 
-Current active rules use Textlint only for traversal, reporting, ranges, and rule execution. The actual slop detection is local TypeScript.
+Current rules use Textlint only for traversal, reporting, ranges, and rule execution. The slop detection is local TypeScript.
 
 ### Literal Phrase Matching
 
@@ -424,17 +285,17 @@ Current active rules use Textlint only for traversal, reporting, ranges, and rul
 - Corpus fixtures preserve the same expected signals as cases where practical.
 - Golden output is maintained through Fixture3.
 - Reviewed findings are recorded under `.plans/textlint-hit-review`.
-- Good and bad catches from generated corpus runs were used to decide which semantic and syntactic patterns became active.
+- Good and bad catches from generated corpus runs were used to decide which semantic and syntactic patterns were implemented.
 
 ## Update Rule
 
-When a source moves from `archived` to `active`, update this file in the same commit as the rule data and fixtures.
+When source material is implemented, update this file in the same commit as the rule data and fixtures.
 
 Each update must include:
 
 - source name and URL
-- active rule file
-- active data file, if any
-- incorporation type: literal lexicon, replacement pair, token pattern, sentence pattern, semantic template, or domain-specific source
+- rule file
+- data file, if any
+- implementation type: literal lexicon, replacement pair, token pattern, sentence pattern, semantic template, or domain-specific source
 - local transformations
 - false-positive exclusions or reviewed caveats
