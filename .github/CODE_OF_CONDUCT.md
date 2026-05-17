@@ -28,10 +28,8 @@ Examples of unacceptable behavior include:
 
 Community leaders are responsible for clarifying and enforcing our standards and will take appropriate and fair corrective action in response to any behavior they deem inappropriate, threatening, offensive, or harmful.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the maintainers at eugene@trtk.me. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by opening a private issue or contacting the maintainers via the repository discussions. All complaints will be reviewed and investigated promptly and fairly.
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
-
-[homepage]: https://www.contributor-covenant.org
+Adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.1.

@@ -4,12 +4,11 @@
 
 ## Why
 
-<!-- 1-2 sentences. What problem does it solve? -->
+<!-- 1-2 sentences. What problem does it solve? Reference the issue if one exists. -->
 
 ## Checklist
 
-- [ ] `npm run validate` passes locally
-- [ ] Tests / fixtures cover the change
-- [ ] Rule list in `README.md` updated if rules changed
-- [ ] Changelog entry added if user-facing
-- [ ] No new lint suppressions, or each is justified in the PR description
+- [ ] Pre-commit hooks (G3TS) pass locally
+- [ ] Fixtures cover the change, including known false positives
+- [ ] Rule list in the wiki Rules page updated if rules changed
+- [ ] Linked issue closes when merged

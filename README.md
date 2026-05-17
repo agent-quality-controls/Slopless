@@ -28,5 +28,4 @@ Slopless requires a file path, glob, or stdin input. A bare `npx slopless` exits
 - [Rules](https://github.com/agent-quality-controls/slopless/wiki/Rules) - full 50+ rule inventory across seven families.
 - [Behavior](https://github.com/agent-quality-controls/slopless/wiki/Behavior) - CLI flags, exit codes, JSON output shape, direct textlint integration.
 - [Ignore rules](https://github.com/agent-quality-controls/slopless/wiki/Ignore-Rules) - inline `textlint-disable` block syntax.
-- [Contributing](.github/CONTRIBUTING.md) - adding rules, dev setup, validation.
-- [Security policy](.github/SECURITY.md) - vulnerability disclosure.
+- [Contributing](.github/CONTRIBUTING.md) - open a detailed issue first; PRs must pass the G3TS pre-commit gate.
