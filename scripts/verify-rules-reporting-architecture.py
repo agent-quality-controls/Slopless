@@ -126,11 +126,15 @@ def verify_boundary_public_api(errors: list[str]) -> None:
             "oneToOneReports",
         },
         "src/adapters/textlint/report.ts": {
+            "emitTextlintDetection",
+            "emitTextlintFinding",
+            "emitTextlintNodeFinding",
             "emitTextlintReport",
             "emitTextlintReports",
         },
         "src/adapters/textlint/units.ts": {
             "paragraphUnits",
+            "textUnitForNode",
         },
     }
 
