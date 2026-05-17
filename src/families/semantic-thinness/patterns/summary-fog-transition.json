@@ -1,0 +1,30 @@
+{
+  "id": "summary-fog-transition",
+  "class": "summary-fog",
+  "purpose": "Catch vague transition lines that replace an event sequence with blur, haze, or fog.",
+  "templates": ["{summarySpan} was a {fogNoun}."],
+  "slots": {
+    "summarySpan": [
+      "the rest of the drill",
+      "the rest of the morning",
+      "the rest of the walk",
+      "the next hour",
+      "everything after that",
+      "everything after the bell"
+    ],
+    "fogNoun": ["blur", "haze", "fog"]
+  },
+  "rejectIf": [
+    "sentence describes literal image blur, smoke, fog, haze, or optical conditions",
+    "sentence includes a concrete cause"
+  ],
+  "positiveExamples": [
+    "The rest of the drill was a blur.",
+    "Everything after that was a haze."
+  ],
+  "negativeExamples": [
+    "The blur in the photo came from a cracked lens.",
+    "The haze over the harbor came from smoke after the warehouse fire."
+  ],
+  "notes": ["This is a summary-fog transition, not a literal visual condition."]
+}

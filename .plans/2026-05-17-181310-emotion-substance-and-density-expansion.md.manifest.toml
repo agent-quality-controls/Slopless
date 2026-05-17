@@ -1,0 +1,112 @@
+[meta]
+plan = ".plans/2026-05-17-181310-emotion-substance-and-density-expansion.md"
+golden_acceptance = "blocked_until_false_positive_review"
+
+[[source_note]]
+path = "data/source-material/derived/sunstone-emotion-substance-variants.md"
+required_text = [
+  "Positive Category 1: Emotion Drained",
+  "Positive Category 2: Emotion Washed",
+  "Positive Category 3: Emotion Settled",
+  "Positive Category 4: Emotion Rose",
+  "Positive Category 5: Emotion Carried"
+]
+
+[[source_note]]
+path = "data/source-material/derived/sunstone-action-density-variants.md"
+required_text = [
+  "Positive: Body-Position Beats",
+  "Positive: Blocking And Staging Movement",
+  "Positive: Perception Choreography",
+  "Positive: Animal Body Cues",
+  "Positive: Flat Cadence"
+]
+
+[[semantic_pattern]]
+id = "emotion-as-substance"
+path = "src/families/semantic-thinness/patterns/emotion-as-substance.json"
+cases_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+required_slots = [
+  "abstractEmotion",
+  "substanceMotion",
+  "bodyContainer",
+  "personTarget",
+  "placeTarget"
+]
+required_hit_text = [
+  "The anger finally melted out of her posture.",
+  "Relief washed over Cassia.",
+  "Tension settled over the room.",
+  "Panic rose in her chest.",
+  "Regret rested in his voice."
+]
+required_no_hit_text = [
+  "The wax melted out of the mold because the kiln overheated.",
+  "Water washed over the stones after the bucket tipped.",
+  "The measured tension settled after the cable was loosened.",
+  "Panic rose in her chest because the asthma attack started.",
+  "The anger melted out of her posture because the doctor adjusted the brace."
+]
+
+[[semantic_pattern]]
+id = "summary-fog-transition"
+path = "src/families/semantic-thinness/patterns/summary-fog-transition.json"
+cases_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+required_slots = [
+  "summarySpan",
+  "fogNoun"
+]
+required_hit_text = [
+  "The rest of the drill was a blur.",
+  "Everything after that was a haze."
+]
+required_no_hit_text = [
+  "The blur in the photo came from a cracked lens.",
+  "The haze over the harbor came from smoke after the warehouse fire.",
+  "The rest of the drill was a blur because the camera lens cracked.",
+  "Everything after the bell was a haze because smoke filled the hall."
+]
+
+[[narrative_rule]]
+id = "body-action-density"
+path = "src/families/narrative-slop/body-action-density.ts"
+cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+required_hit_text = [
+  "Liska turned her head. Her brown eyes looked tired. She crossed her arms over her chest and waited.",
+  "Remal walked over to the window. The heavy African golden cat stopped next to Cassia. He looked up at the small girl on the sill.",
+  "Cassia's ears flattened. Her tail flicked once. Her paws shifted against the tile."
+]
+required_no_hit_text = [
+  "Liska crossed her arms to keep the cold compress against her ribs.",
+  "Remal walked to the window to lift the latch and vent the smoke.",
+  "Cassia crossed her arms to pin the splint. She waited while the medic tied the bandage.",
+  "Cassia walked over to count the scratches. She stopped next to Arden and marked the third scratch."
+]
+
+[[narrative_rule]]
+id = "flat-action-cadence"
+path = "src/families/narrative-slop/flat-action-cadence.ts"
+cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+required_hit_text = [
+  "Liska blinked slowly. She sat up straighter on the sill. She looked past Cassia toward the group of guards in the yard.",
+  "The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions."
+]
+required_no_hit_text = [
+  "The chapter uses short sentences because the reader is six and the scene must stay clear."
+]
+
+[[source_record]]
+path = "data/source-material/incorporation-record.md"
+required_text = [
+  "emotion-as-substance",
+  "summary-fog-transition",
+  "multi-word event phrases"
+]

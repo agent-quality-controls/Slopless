@@ -31,3 +31,13 @@ Young readers need short lines, so the draft keeps the scene clear with plain wo
 Cassia looked for the torn stitch under the table and found it beside the left leg.
 
 Arden climbed the crates to reach the broken pulley, then wedged the rope under the iron hook.
+
+Liska crossed her arms to keep the cold compress against her ribs.
+
+Remal walked to the window to lift the latch and vent the smoke.
+
+Cassia crossed her arms to pin the splint. She waited while the medic tied the bandage.
+
+Cassia walked over to count the scratches. She stopped next to Arden and marked the third scratch.
+
+The chapter uses short sentences because the reader is six and the scene must stay clear.

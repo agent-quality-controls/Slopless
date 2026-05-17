@@ -18755,7 +18755,7 @@
         "line": 29,
         "loc": {
           "end": {
-            "column": 54,
+            "column": 62,
             "line": 29
           },
           "start": {
@@ -18763,12 +18763,219 @@
             "line": 29
           }
         },
-        "message": "Body-action density: 3 body cues in a short span (ears, tail, paws).",
+        "message": "Body-action density: 3 body cues in a short span (ears twitched, tail angled, paws shifted).",
         "range": [
           1195,
-          1239
+          1247
         ],
         "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1267,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 100,
+            "line": 31
+          },
+          "start": {
+            "column": 1,
+            "line": 31
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (turned, looked, crossed). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1267,
+          1366
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 1273,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 31
+          },
+          "start": {
+            "column": 7,
+            "line": 31
+          }
+        },
+        "message": "Body-action density: 3 movement cues in a short span (turned, crossed her arms, waited).",
+        "range": [
+          1273,
+          1365
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1368,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 130,
+            "line": 33
+          },
+          "start": {
+            "column": 1,
+            "line": 33
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (walked, stopped, looked). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1368,
+          1497
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 1374,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 102,
+            "line": 33
+          },
+          "start": {
+            "column": 7,
+            "line": 33
+          }
+        },
+        "message": "Body-action density: 3 movement cues in a short span (walked over, stopped next to, looked up at).",
+        "range": [
+          1374,
+          1469
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1499,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 83,
+            "line": 35
+          },
+          "start": {
+            "column": 1,
+            "line": 35
+          }
+        },
+        "message": "Fragment stack found: Cassia's ears flattened. Her tail flicked once. Her paws shifted against the tile. Rewrite the clipped cadence as normal prose.",
+        "range": [
+          1499,
+          1581
+        ],
+        "ruleId": "fragment-stacking",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 1508,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 65,
+            "line": 35
+          },
+          "start": {
+            "column": 10,
+            "line": 35
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (ears flattened, tail flicked, paws shifted).",
+        "range": [
+          1508,
+          1563
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1583,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 120,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (blinked, sat, looked). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1583,
+          1702
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1704,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 39
+          },
+          "start": {
+            "column": 1,
+            "line": 39
+          }
+        },
+        "message": "Semantic thinness (summary-fog-transition): Catch vague transition lines that replace an event sequence with blur, haze, or fog. Matched template: {summarySpan} was a {fogNoun}.",
+        "range": [
+          1704,
+          1737
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1704,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 118,
+            "line": 39
+          },
+          "start": {
+            "column": 1,
+            "line": 39
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (was, tied, hear). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1704,
+          1821
+        ],
+        "ruleId": "flat-action-cadence",
         "severity": 2,
         "type": "lint"
       }
@@ -23612,6 +23819,167 @@
         "range": [
           1634,
           1707
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1709,
+        "line": 99,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 99
+          },
+          "start": {
+            "column": 1,
+            "line": 99
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: the {abstractEmotion} finally {substanceMotion} out of {bodyContainer}.",
+        "range": [
+          1709,
+          1753
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1755,
+        "line": 101,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 101
+          },
+          "start": {
+            "column": 1,
+            "line": 101
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} over {personTarget}.",
+        "range": [
+          1755,
+          1781
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1783,
+        "line": 103,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 103
+          },
+          "start": {
+            "column": 1,
+            "line": 103
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} over {placeTarget}.",
+        "range": [
+          1783,
+          1813
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1815,
+        "line": 105,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 105
+          },
+          "start": {
+            "column": 1,
+            "line": 105
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} in {bodyContainer}.",
+        "range": [
+          1815,
+          1839
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1841,
+        "line": 107,
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 107
+          },
+          "start": {
+            "column": 1,
+            "line": 107
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} in {bodyContainer}.",
+        "range": [
+          1841,
+          1868
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1870,
+        "line": 109,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 109
+          },
+          "start": {
+            "column": 1,
+            "line": 109
+          }
+        },
+        "message": "Semantic thinness (summary-fog-transition): Catch vague transition lines that replace an event sequence with blur, haze, or fog. Matched template: {summarySpan} was a {fogNoun}.",
+        "range": [
+          1870,
+          1903
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1905,
+        "line": 111,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 111
+          },
+          "start": {
+            "column": 1,
+            "line": 111
+          }
+        },
+        "message": "Semantic thinness (summary-fog-transition): Catch vague transition lines that replace an event sequence with blur, haze, or fog. Matched template: {summarySpan} was a {fogNoun}.",
+        "range": [
+          1905,
+          1938
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -41082,7 +41450,7 @@
         "line": 261,
         "loc": {
           "end": {
-            "column": 54,
+            "column": 62,
             "line": 261
           },
           "start": {
@@ -41090,12 +41458,380 @@
             "line": 261
           }
         },
-        "message": "Body-action density: 3 body cues in a short span (ears, tail, paws).",
+        "message": "Body-action density: 3 body cues in a short span (ears twitched, tail angled, paws shifted).",
         "range": [
           8207,
-          8251
+          8259
         ],
         "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8750,
+        "line": 275,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 275
+          },
+          "start": {
+            "column": 1,
+            "line": 275
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: the {abstractEmotion} finally {substanceMotion} out of {bodyContainer}.",
+        "range": [
+          8750,
+          8794
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8796,
+        "line": 277,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 277
+          },
+          "start": {
+            "column": 1,
+            "line": 277
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} over {personTarget}.",
+        "range": [
+          8796,
+          8822
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8824,
+        "line": 279,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 279
+          },
+          "start": {
+            "column": 1,
+            "line": 279
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} over {placeTarget}.",
+        "range": [
+          8824,
+          8854
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8856,
+        "line": 281,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 281
+          },
+          "start": {
+            "column": 1,
+            "line": 281
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} in {bodyContainer}.",
+        "range": [
+          8856,
+          8880
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8882,
+        "line": 283,
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 283
+          },
+          "start": {
+            "column": 1,
+            "line": 283
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} in {bodyContainer}.",
+        "range": [
+          8882,
+          8909
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8911,
+        "line": 285,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 285
+          },
+          "start": {
+            "column": 1,
+            "line": 285
+          }
+        },
+        "message": "Semantic thinness (summary-fog-transition): Catch vague transition lines that replace an event sequence with blur, haze, or fog. Matched template: {summarySpan} was a {fogNoun}.",
+        "range": [
+          8911,
+          8944
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8946,
+        "line": 287,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 287
+          },
+          "start": {
+            "column": 1,
+            "line": 287
+          }
+        },
+        "message": "Semantic thinness (summary-fog-transition): Catch vague transition lines that replace an event sequence with blur, haze, or fog. Matched template: {summarySpan} was a {fogNoun}.",
+        "range": [
+          8946,
+          8979
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8981,
+        "line": 289,
+        "loc": {
+          "end": {
+            "column": 100,
+            "line": 289
+          },
+          "start": {
+            "column": 1,
+            "line": 289
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (turned, looked, crossed). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          8981,
+          9080
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 8987,
+        "line": 289,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 289
+          },
+          "start": {
+            "column": 7,
+            "line": 289
+          }
+        },
+        "message": "Body-action density: 3 movement cues in a short span (turned, crossed her arms, waited).",
+        "range": [
+          8987,
+          9079
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9082,
+        "line": 291,
+        "loc": {
+          "end": {
+            "column": 130,
+            "line": 291
+          },
+          "start": {
+            "column": 1,
+            "line": 291
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (walked, stopped, looked). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          9082,
+          9211
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 9088,
+        "line": 291,
+        "loc": {
+          "end": {
+            "column": 102,
+            "line": 291
+          },
+          "start": {
+            "column": 7,
+            "line": 291
+          }
+        },
+        "message": "Body-action density: 3 movement cues in a short span (walked over, stopped next to, looked up at).",
+        "range": [
+          9088,
+          9183
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9213,
+        "line": 293,
+        "loc": {
+          "end": {
+            "column": 83,
+            "line": 293
+          },
+          "start": {
+            "column": 1,
+            "line": 293
+          }
+        },
+        "message": "Fragment stack found: Cassia's ears flattened. Her tail flicked once. Her paws shifted against the tile. Rewrite the clipped cadence as normal prose.",
+        "range": [
+          9213,
+          9295
+        ],
+        "ruleId": "fragment-stacking",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 9222,
+        "line": 293,
+        "loc": {
+          "end": {
+            "column": 65,
+            "line": 293
+          },
+          "start": {
+            "column": 10,
+            "line": 293
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (ears flattened, tail flicked, paws shifted).",
+        "range": [
+          9222,
+          9277
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9297,
+        "line": 295,
+        "loc": {
+          "end": {
+            "column": 120,
+            "line": 295
+          },
+          "start": {
+            "column": 1,
+            "line": 295
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (blinked, sat, looked). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          9297,
+          9416
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9418,
+        "line": 297,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 297
+          },
+          "start": {
+            "column": 1,
+            "line": 297
+          }
+        },
+        "message": "Semantic thinness (summary-fog-transition): Catch vague transition lines that replace an event sequence with blur, haze, or fog. Matched template: {summarySpan} was a {fogNoun}.",
+        "range": [
+          9418,
+          9451
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9418,
+        "line": 297,
+        "loc": {
+          "end": {
+            "column": 118,
+            "line": 297
+          },
+          "start": {
+            "column": 1,
+            "line": 297
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (was, tied, hear). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          9418,
+          9535
+        ],
+        "ruleId": "flat-action-cadence",
         "severity": 2,
         "type": "lint"
       }

@@ -1,0 +1,95 @@
+{
+  "id": "emotion-as-substance",
+  "class": "emotion-physicalization",
+  "purpose": "Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups.",
+  "maxTokens": 14,
+  "templates": [
+    "the {abstractEmotion} finally {substanceMotion} out of {bodyContainer}.",
+    "the {abstractEmotion} {substanceMotion} out of {bodyContainer}.",
+    "{abstractEmotion} {substanceMotion} out of {bodyContainer}.",
+    "{abstractEmotion} {substanceMotion} over {personTarget}.",
+    "{abstractEmotion} {substanceMotion} over {placeTarget}.",
+    "{abstractEmotion} {substanceMotion} in {bodyContainer}."
+  ],
+  "slots": {
+    "abstractEmotion": [
+      "anger",
+      "dread",
+      "fear",
+      "guilt",
+      "panic",
+      "regret",
+      "relief",
+      "shame",
+      "tension"
+    ],
+    "substanceMotion": [
+      "built",
+      "coiled",
+      "drained",
+      "flooded",
+      "left",
+      "melted",
+      "rolled",
+      "rose",
+      "sat",
+      "settled",
+      "rested",
+      "hung",
+      "washed"
+    ],
+    "bodyContainer": [
+      "her chest",
+      "his chest",
+      "their chest",
+      "her posture",
+      "his posture",
+      "their posture",
+      "her voice",
+      "his voice",
+      "their voice",
+      "her eyes",
+      "his eyes",
+      "their eyes"
+    ],
+    "personTarget": [
+      "cassia",
+      "arden",
+      "liska",
+      "her",
+      "him",
+      "them",
+      "the girl",
+      "the group"
+    ],
+    "placeTarget": [
+      "the room",
+      "the yard",
+      "the courtyard",
+      "the alley",
+      "the group",
+      "the table"
+    ]
+  },
+  "rejectIf": [
+    "sentence describes a literal fluid, wax, gas, weather, or measured physical substance",
+    "sentence includes a cause clause",
+    "sentence names the concrete action causing the feeling"
+  ],
+  "positiveExamples": [
+    "The anger finally melted out of her posture.",
+    "Relief washed over Cassia.",
+    "Tension settled over the room.",
+    "Panic rose in her chest.",
+    "Regret rested in his voice."
+  ],
+  "negativeExamples": [
+    "The wax melted out of the mold because the kiln overheated.",
+    "Water washed over the stones after the bucket tipped.",
+    "The measured tension settled after the cable was loosened."
+  ],
+  "notes": [
+    "The slots deliberately abstract the emotion as a moving physical substance.",
+    "This catches stock emotional physics, not literal physical substances."
+  ]
+}

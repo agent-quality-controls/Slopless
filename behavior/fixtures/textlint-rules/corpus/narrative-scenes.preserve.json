@@ -427,7 +427,7 @@
       "family": "semantic-thinness",
       "bucket": "hits",
       "source": "cases/semantic-thinness/hits.md",
-      "line": 47
+      "line": 91
     },
     {
       "text": "The room felt still because the HVAC shut down.",
@@ -784,133 +784,315 @@
       "family": "narrative-slop",
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
-      "line": 0
+      "line": 19
     },
     {
       "text": "His breath caught in his throat because the peanut lodged there.",
       "family": "narrative-slop",
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
-      "line": 0
+      "line": 21
     },
     {
       "text": "Her voice was barely a whisper because the microphone gain was set too low.",
       "family": "narrative-slop",
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
-      "line": 0
+      "line": 23
     },
     {
       "text": "The air was thick with tension because the cable had been tightened past its rating.",
       "family": "narrative-slop",
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
-      "line": 0
+      "line": 25
     },
     {
       "text": "The sun dipped below the horizon because the sensor was mounted on a moving rig.",
       "family": "narrative-slop",
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
-      "line": 0
+      "line": 27
     },
     {
       "text": "Fear had no place in her schedule.",
       "family": "semantic-thinness",
       "bucket": "hits",
       "source": "cases/semantic-thinness/hits.md",
-      "line": 0
+      "line": 93
     },
     {
       "text": "The south pier was a graveyard of shadows and salt spray.",
       "family": "semantic-thinness",
       "bucket": "hits",
       "source": "cases/semantic-thinness/hits.md",
-      "line": 0
+      "line": 95
     },
     {
       "text": "The courtyard smelled of disturbed dust and old ash instead of hot metal.",
       "family": "semantic-thinness",
       "bucket": "hits",
       "source": "cases/semantic-thinness/hits.md",
-      "line": 0
+      "line": 97
     },
     {
       "text": "The little snow leopard girl sat on the wide sill. She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.",
       "family": "narrative-slop",
       "bucket": "hits",
       "source": "cases/narrative-slop/hits.md",
-      "line": 0
+      "line": 19
     },
     {
       "text": "Cassia stepped out of the shadows. She picked up the practice sword. The wood was cold in her paw.",
       "family": "narrative-slop",
       "bucket": "hits",
       "source": "cases/narrative-slop/hits.md",
-      "line": 0
+      "line": 21
     },
     {
       "text": "Cassia watched him leave. Her father had told her to observe and listen. She looked at Arden. The caracal boy was already looking back at her.",
       "family": "narrative-slop",
       "bucket": "hits",
       "source": "cases/narrative-slop/hits.md",
-      "line": 0
+      "line": 23
     },
     {
       "text": "She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.",
       "family": "narrative-slop",
       "bucket": "hits",
       "source": "cases/narrative-slop/hits.md",
-      "line": 0
+      "line": 25
     },
     {
       "text": "Arden climbed the crates next to her. He pulled himself up to the roof edge. Arden walked along the parapet that separated the workshop roof from the neighbor's building. He crouched low and ran his fingers over the stone.",
       "family": "narrative-slop",
       "bucket": "hits",
       "source": "cases/narrative-slop/hits.md",
-      "line": 0
+      "line": 27
     },
     {
       "text": "Cassia's ears twitched. Her tail angled low. Her paws shifted on the roof tile.",
       "family": "narrative-slop",
       "bucket": "hits",
       "source": "cases/narrative-slop/hits.md",
-      "line": 0
+      "line": 29
     },
     {
       "text": "Fear had no place in the posted evacuation plan because the exits were marked and staffed.",
       "family": "semantic-thinness",
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
-      "line": 0
+      "line": 61
     },
     {
       "text": "The courtyard smelled of ash because the kiln had cracked during firing.",
       "family": "semantic-thinness",
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
-      "line": 0
+      "line": 63
     },
     {
       "text": "Young readers need short lines, so the draft keeps the scene clear with plain words.",
       "family": "narrative-slop",
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
-      "line": 0
+      "line": 29
     },
     {
       "text": "Cassia looked for the torn stitch under the table and found it beside the left leg.",
       "family": "narrative-slop",
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
-      "line": 0
+      "line": 31
     },
     {
       "text": "Arden climbed the crates to reach the broken pulley, then wedged the rope under the iron hook.",
       "family": "narrative-slop",
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
-      "line": 0
+      "line": 33
+    },
+    {
+      "text": "The anger finally melted out of her posture.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 99
+    },
+    {
+      "text": "Relief washed over Cassia.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 101
+    },
+    {
+      "text": "Tension settled over the room.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 103
+    },
+    {
+      "text": "Panic rose in her chest.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 105
+    },
+    {
+      "text": "Regret rested in his voice.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 107
+    },
+    {
+      "text": "The rest of the drill was a blur.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 109
+    },
+    {
+      "text": "Everything after that was a haze.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 111
+    },
+    {
+      "text": "Liska turned her head. Her brown eyes looked tired. She crossed her arms over her chest and waited.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 31
+    },
+    {
+      "text": "Remal walked over to the window. The heavy African golden cat stopped next to Cassia. He looked up at the small girl on the sill.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 33
+    },
+    {
+      "text": "Cassia's ears flattened. Her tail flicked once. Her paws shifted against the tile.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 35
+    },
+    {
+      "text": "Liska blinked slowly. She sat up straighter on the sill. She looked past Cassia toward the group of guards in the yard.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 37
+    },
+    {
+      "text": "The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 39
+    },
+    {
+      "text": "The wax melted out of the mold because the kiln overheated.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 65
+    },
+    {
+      "text": "Water washed over the stones after the bucket tipped.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 67
+    },
+    {
+      "text": "The measured tension settled after the cable was loosened.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 69
+    },
+    {
+      "text": "The blur in the photo came from a cracked lens.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 75
+    },
+    {
+      "text": "The haze over the harbor came from smoke after the warehouse fire.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 77
+    },
+    {
+      "text": "Liska crossed her arms to keep the cold compress against her ribs.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 35
+    },
+    {
+      "text": "Remal walked to the window to lift the latch and vent the smoke.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 37
+    },
+    {
+      "text": "The chapter uses short sentences because the reader is six and the scene must stay clear.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 43
+    },
+    {
+      "text": "Panic rose in her chest because the asthma attack started.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 71
+    },
+    {
+      "text": "The anger melted out of her posture because the doctor adjusted the brace.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 73
+    },
+    {
+      "text": "The rest of the drill was a blur because the camera lens cracked.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 79
+    },
+    {
+      "text": "Everything after the bell was a haze because smoke filled the hall.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 81
+    },
+    {
+      "text": "Cassia crossed her arms to pin the splint. She waited while the medic tied the bandage.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 39
+    },
+    {
+      "text": "Cassia walked over to count the scratches. She stopped next to Arden and marked the third scratch.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 41
     }
   ]
 }

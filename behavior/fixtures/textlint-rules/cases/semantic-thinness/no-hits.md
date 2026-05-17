@@ -61,3 +61,21 @@ The lesson was simple: rotate the signing key every 30 days.
 Fear had no place in the posted evacuation plan because the exits were marked and staffed.
 
 The courtyard smelled of ash because the kiln had cracked during firing.
+
+The wax melted out of the mold because the kiln overheated.
+
+Water washed over the stones after the bucket tipped.
+
+The measured tension settled after the cable was loosened.
+
+Panic rose in her chest because the asthma attack started.
+
+The anger melted out of her posture because the doctor adjusted the brace.
+
+The blur in the photo came from a cracked lens.
+
+The haze over the harbor came from smoke after the warehouse fire.
+
+The rest of the drill was a blur because the camera lens cracked.
+
+Everything after the bell was a haze because smoke filled the hall.

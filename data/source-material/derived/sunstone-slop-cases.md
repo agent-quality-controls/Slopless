@@ -12,6 +12,8 @@ Implemented examples were moved to `data/source-material/incorporation-record.md
 
 Likely family: `syntactic-patterns/contrast`.
 
+Implementation: moved to `data/source-material/incorporation-record.md`.
+
 Generalized catch:
 
 - `subject did not X. subject went/did Y.`
@@ -19,17 +21,6 @@ Generalized catch:
 - `no longer just X. now Y.`
 - `not X. it is Y.`
 - `didn't X. instead, subject Y.`
-
-Examples:
-
-- `It was no longer a target. It was noise.`
-- `The Captain didn't shout. He remained seated at his desk.`
-- `This isn't an accident. This is a deliberate attempt to break our map.`
-- `"They didn't give up, Arden," [Cassia said. She looked toward the docks.] "They've changed the game."`
-- `He didn't look at the gates.`
-- `Imani didn't waste a second.`
-- `The correct next step is not more guessing. It is to rerun reduction on those three.`
-- `She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling`
 
 Notes:
 
@@ -95,22 +86,13 @@ Notes:
 
 Likely family: `narrative-slop`.
 
+Implementation: moved to `data/source-material/incorporation-record.md`.
+
 Generalized catch:
 
 - high density of `look/looked/looking/watch/watched/gaze/stare` in a short span
 - reciprocal looking choreography: `X looked at Y. Y was already looking back`
 - `looked at X, then back at Y`
-
-Examples:
-
-- `She looked at her work. The signal was gone. The mark on her own gate was now just one of many.`
-- `Cassia looked at the warehouse. It was heavily guarded by red-pawed tabbies.`
-- `Cassia looked back at the city, where the first lamps were being lit.`
-- `Arden looked at the warehouse, then back at Cassia.`
-- `The group watched her eyes move.`
-- `Mya Nanda looked at Marius.`
-- `Marius looked at Cassia and Arden. He didn't look at the other cubs.`
-- `Cassia stepped up to the window. She rested her paws on the wooden sill. She looked at the slope of the roof and the dark tiles.`
 
 Notes:
 
@@ -121,18 +103,14 @@ Notes:
 
 Likely family: `syntactic-patterns/repetition` or `narrative-slop`.
 
+Implementation: moved to `data/source-material/incorporation-record.md`.
+
 Generalized catch:
 
 - same subject repeated across 3 or more short clauses
 - `subject verbed. subject verbed. subject verbed.`
 - `they X. they Y. then they Z.`
 - repeated low-information movement verbs
-
-Examples:
-
-- `Remal stood in the doorway beside Cassia. He crossed his thick arms over his chest. He looked at the empty room and nodded slowly.`
-- `Cassia stepped up to the window. She rested her paws on the wooden sill. She looked at the slope of the roof and the dark tiles.`
-- `They came in over the roof. They left through the back door. Then they rolled the cart away`
 
 Notes:
 
@@ -143,6 +121,8 @@ Notes:
 
 Likely family: `semantic-thinness` or `narrative-slop`.
 
+Implementation: moved to `data/source-material/incorporation-record.md`.
+
 Generalized catch:
 
 - `A was a B of C and D`
@@ -150,13 +130,6 @@ Generalized catch:
 - `X hit her/him/them like a physical weight`
 - `place smelled of X and Y instead of Z`
 - scene noun plus overloaded abstract image stack
-
-Examples:
-
-- `The catwalk felt like a tightrope over a pit of vipers.`
-- `The morning yard smelled of dry tea and old hemp.`
-- `The X [...] hit her like a physical weight.`
-- `Cassia froze. The chalk in her pocket felt like a burning coal.`
 
 Notes:
 
@@ -167,18 +140,14 @@ Notes:
 
 Likely family: `semantic-thinness`.
 
+Implementation: moved to `data/source-material/incorporation-record.md`.
+
 Generalized catch:
 
 - `they had stolen a life`
 - `they were hunting the entire pack`
 - `changed the game`
 - `target/noise` summary contrast after a concrete mark/signal
-
-Examples:
-
-- `She looked at her work. The signal was gone. The mark on her own gate was now just one of many.`
-- `It was no longer a target. It was noise.`
-- `"They didn't give up, Arden," [Cassia said. She looked toward the docks.] "They've changed the game."`
 
 Notes:
 
@@ -189,16 +158,13 @@ Notes:
 
 Likely family: `semantic-thinness`.
 
+Implementation: moved to `data/source-material/incorporation-record.md`.
+
 Generalized catch:
 
 - `a solid front of competence and shared experience`
 - abstract noun pile presented as observed fact
 - `empty evaluative group summary or abstract-personification line replacing concrete behavior`
-
-Examples:
-
-- `a solid front of competence and shared experience.`
-- `The target is not any abstract noun phrase. The target is an empty evaluative group summary or abstract-personification line replacing concrete behavior.`
 
 Notes:
 
@@ -209,19 +175,14 @@ Notes:
 
 Likely family: `narrative-slop` or `metrics`.
 
+Implementation: moved to `data/source-material/incorporation-record.md`.
+
 Generalized catch:
 
 - 3 or more adjacent short sentences with the same simple clause shape
 - `Name verb object. Pronoun verb object. Pronoun did not verb object. Possessive noun verb complement.`
 - repeated sentence-initial subject plus simple past-tense verb
 - long run of action beats with little causal or sensory variation
-
-Examples:
-
-- `Liska turned her head. Her brown eyes looked tired. She crossed her arms over her chest and waited.`
-- `Liska blinked. She sat up straighter on the sill. The anger finally melted out of her posture. She looked past Cassia toward the group of guards in the yard.`
-- `Remal walked over to the window. The heavy African golden cat stopped next to Cassia. He looked up at the small girl on the sill.`
-- `The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions.`
 
 Notes:
 

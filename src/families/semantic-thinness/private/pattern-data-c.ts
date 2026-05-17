@@ -4,6 +4,7 @@ import emptyAtmosphereShift from "../patterns/empty-atmosphere-shift.json" with 
 import fixedMetaphorFrame from "../patterns/fixed-metaphor-frame.json" with { type: "json" };
 import gazeChoreography from "../patterns/gaze-choreography.json" with { type: "json" };
 import sensoryInsteadOfFrame from "../patterns/sensory-instead-of-frame.json" with { type: "json" };
+import summaryFogTransition from "../patterns/summary-fog-transition.json" with { type: "json" };
 import type { SemanticThinnessPattern } from "./pattern-matcher.js";
 
 export const semanticThinnessPatternSetC: readonly SemanticThinnessPattern[] = [
@@ -12,5 +13,6 @@ export const semanticThinnessPatternSetC: readonly SemanticThinnessPattern[] = [
   emptyAtmosphereShift,
   fixedMetaphorFrame,
   gazeChoreography,
-  sensoryInsteadOfFrame
+  sensoryInsteadOfFrame,
+  summaryFogTransition
 ];

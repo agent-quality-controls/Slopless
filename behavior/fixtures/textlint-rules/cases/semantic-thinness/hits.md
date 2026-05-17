@@ -95,3 +95,17 @@ Fear had no place in her schedule.
 The south pier was a graveyard of shadows and salt spray.
 
 The courtyard smelled of disturbed dust and old ash instead of hot metal.
+
+The anger finally melted out of her posture.
+
+Relief washed over Cassia.
+
+Tension settled over the room.
+
+Panic rose in her chest.
+
+Regret rested in his voice.
+
+The rest of the drill was a blur.
+
+Everything after that was a haze.
