@@ -1,6 +1,6 @@
-# Redundancy Pattern Candidates
+# Redundancy Patterns Not Implemented
 
-## Source file paths used
+## Source File Paths Used
 
 - `data/source-material/prose-linters/proselint/proselint/checks/redundancy/misc.py`
 - `data/source-material/prose-linters/proselint/proselint/checks/redundancy/garner`
@@ -9,45 +9,43 @@
 - `data/source-material/style-guides/microsoft/rules/Wordiness.yml`
 - `data/source-material/style-guides/elastic/rules/Wordiness.yml`
 
-## Candidate templates or exact phrases
+## Not Implemented
 
-- `{redundantModifier} {baseNoun}`
-- `{joinVerb} together`
-- `{repeatVerb} again`
-- `{returnVerb} back`
-- `{continueVerb} on`
-- `surrounded on all sides`
-- `throughout the entire`
+- `absolute necessity`
+- `complete stranger`
+- `emergency situation`
+- `software program`
+- `visible to the eye`
+- `consolidate together`
+- `consolidates together`
+- `consolidated together`
+- `couple together`
+- `couples together`
+- `coupled together`
+- `meld together`
+- `melds together`
+- `melded together`
+- `mingle together`
+- `mingles together`
+- `mingled together`
+- `pool together`
+- `pools together`
+- `pooled together`
+- `continue on`
+- `continues on`
+- `continued on`
 - `while at the same time`
 - `interact with each other`
-- `the whole entire nation`
 
-## Slots
+## Why Not Implemented
 
-- `redundantModifier + baseNoun`: `basic fundamentals`, `actual fact`, `true facts`, `future plans`, `free gift`, `serious crisis`, `close proximity`, `new innovation`, `absolute necessity`, `complete stranger`, `emergency situation`, `software program`, `visible to the eye`
-- `joinVerb`: `blend`, `collaborate`, `combine`, `connect`, `consolidate`, `couple`, `gather`, `meld`, `merge`, `mingle`, `mix`, `pool`
-- `repeatVerb`: `repeat`, `repeats`, `repeated`, `reiterate`, `reiterates`, `reiterated`, `restate`, `restates`, `restated`
-- `returnVerb`: `refer`, `regress`, `repay`, `retreat`, `return`
-- `continueVerb`: `continue`, `continues`, `continued`
+- The implemented redundancy rule uses fixed pairs and small verb slots that already have hit/no-hit coverage.
+- These remaining pairs need more no-hits because several can be normal in technical or literal contexts.
+- `software program` is especially risky in educational prose and older documentation.
+- `continue on` can be idiomatic navigation or UI copy.
 
-## Risk controls
+## Required Fixture Work Before Implementation
 
-- Keep this to fixed pairs and small verb slots.
-- Do not add a general adjective-plus-noun redundancy detector.
-- Do not flag every use of `together`, `again`, `back`, or `on`.
-- Require the redundant modifier and base noun in sequence for pair matches.
-- Add no-hit cases for ordinary motion or direction, such as `came back`, `looked back`, and `walked together`.
-
-## Hit example lines
-
-- `The plan repeats the same migration step again.`
-- `The memo promises a new innovation for scheduling.`
-- `The services must merge together before the release.`
-- `The file is surrounded on all sides by generated data.`
-
-## No-hit example lines
-
-- `The workers walked together after the meeting.`
-- `The test failed again after the dependency update.`
-- `The process came back online at noon.`
-- `The outer wall surrounded the courtyard on the north side only.`
+- Add no-hits for UI navigation, literal pooling, physical coupling, emergency-response terminology, and educational software prose.
+- Add hits only where the repeated meaning is clear.
+- Keep matching exact phrases, not general adjective-plus-noun redundancy.

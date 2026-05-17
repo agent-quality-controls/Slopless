@@ -1,6 +1,6 @@
-# Wordiness Pattern Candidates
+# Wordiness Patterns Not Implemented
 
-## Source file paths used
+## Source File Paths Used
 
 - `data/source-material/prose-linters/npm-packages/too-wordy-0.3.6/too-wordy.js`
 - `data/source-material/style-guides/microsoft/rules/Wordiness.yml`
@@ -9,57 +9,34 @@
 - `data/source-material/plain-english/extracted/govuk-style-guide-words-to-avoid.md`
 - `data/source-material/plain-english/extracted/gca-words-not-to-use.md`
 
-## Candidate templates or exact phrases
+## Not Implemented
 
-- `{causeLead} the fact that`
-- `based on the fact that`
-- `despite the fact that`
-- `in spite of the fact that`
 - `in view of the fact that`
-- `at {timePoint} time`
-- `during the {periodWord} of`
 - `for the duration of`
-- `{purposeLead} to`
-- `{purposeLead} of`
-- `{abilityVerb} the {abilityNoun} to`
-- `{workVerb} a {reviewNoun} of`
-- `{referenceVerb} reference to`
-- `{takeVerb} into account`
+- `has the capacity to`
+- `have the capacity to`
+- `had the capacity to`
+- `has the opportunity to`
+- `have the opportunity to`
+- `had the opportunity to`
+- `conduct a review of`
+- `perform a review of`
+- `carry out a review of`
+- `taken into account`
 - `until such time as`
 - `the question as to whether`
 - `with the exception of`
 
-## Slots
+## Why Not Implemented
 
-- `causeLead`: `because of`, `due to`, `owing to`, `in light of`, `by virtue of`
-- `timePoint`: `this point in`, `this moment in`, `the present`
-- `periodWord`: `course`, `period`, `time`
-- `purposeLead`: `in order`, `in an effort`, `as a means`, `for the purpose`
-- `abilityVerb`: `has`, `have`, `had`
-- `abilityNoun`: `ability`, `capacity`, `opportunity`
-- `workVerb`: `conduct`, `perform`, `carry out`
-- `reviewNoun`: `review`, `assessment`, `evaluation`, `investigation`
-- `referenceVerb`: `make`, `made`
-- `takeVerb`: `take`, `takes`, `took`, `taken`
+- The implemented wordiness rule uses exact token templates that already have fixture coverage.
+- Capacity and opportunity phrases can be semantically necessary in legal, clinical, accessibility, or scheduling prose.
+- Review phrases can describe formal procedures.
+- `taken into account` needs tense and surrounding-context coverage before activation.
+- `with the exception of` can be precise legal or policy wording.
 
-## Risk controls
+## Required Fixture Work Before Implementation
 
-- Match exact token templates, not substrings.
-- Report only the wordy phrase span.
-- Do not import broad single words such as `however`, `objective`, `monitor`, `purchase`, `validate`, or `focus`.
-- Keep plain-English government guidance as source evidence, not automatic default word bans.
-- Add no-hit cases for technical uses where the phrase is literal or necessary.
-
-## Hit example lines
-
-- `We delayed the release due to the fact that the migration failed.`
-- `The team met in order to review the incident.`
-- `The report made reference to the retired endpoint.`
-- `The policy remains active until such time as the board replaces it.`
-
-## No-hit example lines
-
-- `The fact that the migration failed changed the schedule.`
-- `The committee issued an order to review the incident.`
-- `The pointer stores a reference to the retired endpoint.`
-- `The board will replace the policy when the review ends.`
+- Add no-hits for legal, policy, scheduling, and formal-review contexts.
+- Add hits where a shorter phrase is clearly equivalent.
+- Keep matching exact phrase spans only.

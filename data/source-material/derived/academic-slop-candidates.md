@@ -1,6 +1,6 @@
-# Academic Slop Candidates
+# Academic Slop Not Implemented
 
-## Source file paths used
+## Source File Paths Used
 
 - `data/source-material/academic-slop/tortured-phrases/extracted/cabanac-2021-concept-note.md`
 - `data/source-material/academic-slop/tortured-phrases/problematic-paper-screener.md`
@@ -9,9 +9,8 @@
 - `data/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/20241114_social_sciences_fingerprints.csv`
 - `data/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/Tortured_abbreviations.csv`
 
-## Candidate templates or exact phrases
+## Not Implemented
 
-- `counterfeit consciousness`
 - `man-made reasoning`
 - `casting a ballot`
 - `casting a ballot system`
@@ -32,31 +31,15 @@
 - `human immunodeficiency infection`
 - `shut circuit tv`
 
-## Slots
+## Why Not Implemented
 
-- No broad semantic slots for the first implementation.
-- Optional closed abbreviation slot only when the source row provides it, such as `(AI)`, `(ICT)`, `(R&D)`, `(HIV)`, or `(CCTV)`.
-- Optional case-folding because source rows mix title case and all caps.
+- Some strings are translation artifacts that can appear in quoted examples, legal discussion, or source titles.
+- Some strings are near normal domain terms and need phrase-pair context before reporting.
+- Abbreviation rows need a separate academic-only rule shape that can distinguish incorrect expansion from normal prose.
+- The implemented rule currently uses only exact high-confidence tortured phrases with fixtures.
 
-## Risk controls
+## Required Fixture Work Before Implementation
 
-- Keep academic tortured phrases separate from general style families.
-- Use exact known phrase pairs only.
-- Do not classify normal scientific terminology as bad.
-- Report the tortured phrase, not the expected phrase.
-- Require source provenance for every phrase added to active data.
-- Add no-hit cases for the correct terms: `artificial intelligence`, `voting system`, `electoral integrity`, `information technology`, and `research and development`.
-
-## Hit example lines
-
-- `The paper models counterfeit consciousness in autonomous planning agents.`
-- `The survey describes a casting a ballot framework for local elections.`
-- `The abstract calls the method man-made reasoning.`
-- `The appendix discusses data and interchanges innovation in schools.`
-
-## No-hit example lines
-
-- `The paper models artificial intelligence in autonomous planning agents.`
-- `The survey describes a voting system for local elections.`
-- `The abstract calls the method machine reasoning.`
-- `The appendix discusses information and communications technology in schools.`
+- Add hits for each exact tortured phrase selected.
+- Add no-hits for the correct terms: `artificial intelligence`, `voting system`, `electoral integrity`, `information technology`, `research and development`, `HIV`, and `CCTV`.
+- Add quote no-hits where the tortured phrase is discussed as an example.
