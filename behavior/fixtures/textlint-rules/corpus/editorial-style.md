@@ -450,6 +450,76 @@ The editor revised the paragraph while at the same time preserving the data.
 
 The milestone serves as a testament to the power of collaboration.
 
+The migration note calls the cleanup an absolute necessity before it names the owner. It also says a complete stranger changed the config, which turns an audit finding into theater. The same paragraph calls the outage an emergency situation and describes the editor as a software program.
+
+The department memo says the teams consolidate together after the budget vote. It says the scripts couple together unrelated startup steps. The appendix says the drafts meld together separate claims, the introductions mingle together context and conclusion, and the teams pool together the same budget.
+
+The outage note says the service stayed unstable for the duration of the review. It says the router has the capacity to retry the upload and the trainee has the opportunity to update the report. The closeout says the team will conduct a review of the queue, perform a review of the queue, and carry out a review of the queue.
+
+The final policy says the outage was taken into account during planning. It also says the rule applies with the exception of test accounts.
+
+The migration note calls the cleanup an absolute necessity.
+
+The incident report says a complete stranger changed the config.
+
+The alert labels the outage an emergency situation.
+
+The training guide calls the editor a software program.
+
+The departments consolidate together after the budget vote.
+
+The departments consolidates together after the budget vote.
+
+The departments consolidated together after the budget vote.
+
+The scripts couple together unrelated startup steps.
+
+The scripts couples together unrelated startup steps.
+
+The scripts coupled together unrelated startup steps.
+
+The drafts meld together two separate claims.
+
+The drafts melds together two separate claims.
+
+The drafts melded together two separate claims.
+
+The introductions mingle together context and conclusion.
+
+The introductions mingles together context and conclusion.
+
+The introductions mingled together context and conclusion.
+
+The teams pool together the same budget.
+
+The teams pools together the same budget.
+
+The teams pooled together the same budget.
+
+The outage lasted for the duration of the review.
+
+The router has the capacity to retry the upload.
+
+The routers have the capacity to retry the upload.
+
+The retired tool had the capacity to export logs.
+
+The trainee has the opportunity to update the report.
+
+The trainees have the opportunity to update the report.
+
+The trainee had the opportunity to update the report.
+
+The team will conduct a review of the queue.
+
+The team will perform a review of the queue.
+
+The team will carry out a review of the queue.
+
+The outage was taken into account during planning.
+
+The policy applies with the exception of test accounts.
+
 The docs link to [on the same page](https://example.com) as a glossary anchor.
 
 The editor copied an unfinished quote: "at the end of the day
@@ -469,3 +539,19 @@ The editor preserved the data while revising the paragraph.
 The article quotes "serves as a testament to the power of" as promotional prose.
 
 The witness serves as a testament in the hearing about power rates.
+
+The emergency team opened a situation room after the alarm.
+
+The teacher installed software for the classroom program.
+
+The editor quoted "complete stranger" as a redundancy example.
+
+The policy quoted "with the exception of" as a phrase to review.
+
+The technician coupled the hose to the pump before testing pressure.
+
+The crews pooled water behind the temporary dam.
+
+The board scheduled a formal review for May.
+
+The candidate has legal capacity under the statute.

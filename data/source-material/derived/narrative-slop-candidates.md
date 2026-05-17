@@ -11,26 +11,12 @@
 
 ## Not Implemented
 
-- `{character} took a deep breath`
-- `{character} let out a breath`
-- `{voice} was low`
-- `{smile} played on {lips}`
+No remaining narrative slop candidates are waiting in this file.
 
-## Slots
+The previously listed breath, low-voice, and smile-played frames were implemented as density-gated candidate cues in `src/rules/narrative-slop/body-action-density.ts`.
 
-- `character`: pronoun or named character before the phrase, capped at 4 tokens
-- `voice`: `his voice`, `her voice`, `their voice`, `my voice`, `the voice`
-- `smile`: `a smile`, `the smile`
-- `lips`: `his lips`, `her lips`, `their lips`
+## Implementation Boundary
 
-## Why Not Implemented
-
-- Breathing, low voice, and smiles are ordinary physical actions.
-- The implemented narrative rule skips sentences with concrete causes and uses only stock frames with stronger signal.
-- These remaining frames need either density logic or stricter surrounding context before they are safe.
-
-## Required Fixture Work Before Implementation
-
-- Add medical, sports, performance, and literal-action no-hits.
-- Add hits only when the sentence is stock emotional shorthand.
-- Consider reporting only repeated use inside one passage.
+- Breathing, low voice, and smiles are ordinary physical actions in isolation.
+- They are reportable only through repeated body-cue density, not as one-off literal phrase matches.
+- Medical, sports, performance, and task-oriented no-hits were added with the implementation.

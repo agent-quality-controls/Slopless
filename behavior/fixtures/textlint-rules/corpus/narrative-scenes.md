@@ -296,6 +296,12 @@ Liska blinked slowly. She sat up straighter on the sill. She looked past Cassia 
 
 The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions.
 
+Liska took a deep breath. Her voice was low. A smile played on her lips.
+
+Arden let out a breath. His voice was low. A smile played on his lips.
+
+Cassia took a deep breath. She let out a breath. Her voice was low.
+
 The wax melted out of the mold because the kiln overheated.
 
 Water washed over the stones after the bucket tipped.
@@ -323,3 +329,13 @@ Cassia crossed her arms to pin the splint. She waited while the medic tied the b
 Cassia walked over to count the scratches. She stopped next to Arden and marked the third scratch.
 
 The chapter uses short sentences because the reader is six and the scene must stay clear.
+
+The singer took a deep breath before the long note.
+
+The diver let out a breath after surfacing beside the dock.
+
+The dispatcher said the voice was low because the radio battery was failing.
+
+The actor practiced a smile played on his lips until the director stopped him.
+
+Liska took a deep breath, counted the rope knots, and tied the loose end to the post.

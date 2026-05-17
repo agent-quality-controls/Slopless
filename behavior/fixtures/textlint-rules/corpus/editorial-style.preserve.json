@@ -1604,6 +1604,279 @@
       "bucket": "no-hits",
       "source": "cases/phrases/no-hits.md",
       "line": 69
+    },
+    {
+      "text": "The emergency team opened a situation room after the alarm.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 71
+    },
+    {
+      "text": "The teacher installed software for the classroom program.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 73
+    },
+    {
+      "text": "The technician coupled the hose to the pump before testing pressure.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 79
+    },
+    {
+      "text": "The crews pooled water behind the temporary dam.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 81
+    },
+    {
+      "text": "The board scheduled a formal review for May.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 85
+    },
+    {
+      "text": "The migration note calls the cleanup an absolute necessity.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 263
+    },
+    {
+      "text": "The incident report says a complete stranger changed the config.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 265
+    },
+    {
+      "text": "The alert labels the outage an emergency situation.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 267
+    },
+    {
+      "text": "The training guide calls the editor a software program.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 269
+    },
+    {
+      "text": "The departments consolidate together after the budget vote.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 271
+    },
+    {
+      "text": "The departments consolidates together after the budget vote.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 273
+    },
+    {
+      "text": "The departments consolidated together after the budget vote.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 275
+    },
+    {
+      "text": "The scripts couple together unrelated startup steps.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 277
+    },
+    {
+      "text": "The scripts couples together unrelated startup steps.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 279
+    },
+    {
+      "text": "The scripts coupled together unrelated startup steps.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 281
+    },
+    {
+      "text": "The drafts meld together two separate claims.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 283
+    },
+    {
+      "text": "The drafts melds together two separate claims.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 285
+    },
+    {
+      "text": "The drafts melded together two separate claims.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 287
+    },
+    {
+      "text": "The introductions mingle together context and conclusion.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 289
+    },
+    {
+      "text": "The introductions mingles together context and conclusion.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 291
+    },
+    {
+      "text": "The introductions mingled together context and conclusion.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 293
+    },
+    {
+      "text": "The teams pool together the same budget.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 295
+    },
+    {
+      "text": "The teams pools together the same budget.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 297
+    },
+    {
+      "text": "The teams pooled together the same budget.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 299
+    },
+    {
+      "text": "The outage lasted for the duration of the review.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 301
+    },
+    {
+      "text": "The router has the capacity to retry the upload.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 303
+    },
+    {
+      "text": "The routers have the capacity to retry the upload.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 305
+    },
+    {
+      "text": "The retired tool had the capacity to export logs.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 307
+    },
+    {
+      "text": "The trainee has the opportunity to update the report.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 309
+    },
+    {
+      "text": "The trainees have the opportunity to update the report.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 311
+    },
+    {
+      "text": "The trainee had the opportunity to update the report.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 313
+    },
+    {
+      "text": "The team will conduct a review of the queue.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 315
+    },
+    {
+      "text": "The team will perform a review of the queue.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 317
+    },
+    {
+      "text": "The team will carry out a review of the queue.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 319
+    },
+    {
+      "text": "The outage was taken into account during planning.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 321
+    },
+    {
+      "text": "The policy applies with the exception of test accounts.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 323
+    },
+    {
+      "text": "The editor quoted \"complete stranger\" as a redundancy example.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 75
+    },
+    {
+      "text": "The policy quoted \"with the exception of\" as a phrase to review.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 77
+    },
+    {
+      "text": "The candidate has legal capacity under the statute.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 83
     }
   ]
 }

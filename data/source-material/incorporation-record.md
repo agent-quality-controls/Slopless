@@ -208,10 +208,12 @@ Research material that is not implemented stays in `data/source-material/derived
   - `src/rules/phrases/wordiness.ts`
   - `src/rules/phrases/data/wordiness-patterns.json`
   - newly implemented exact phrases: `in view of the fact that`, `the question as to whether`, `until such time as`
+  - newly implemented remaining exact phrases: `for the duration of`, `has the capacity to`, `have the capacity to`, `had the capacity to`, `has the opportunity to`, `have the opportunity to`, `had the opportunity to`, `conduct a review of`, `perform a review of`, `carry out a review of`, `taken into account`, `with the exception of`
 - Redundancy:
   - `src/rules/phrases/redundancy.ts`
   - `src/rules/phrases/data/redundancy-patterns.json`
   - newly implemented exact phrases: `interact with each other`, `visible to the eye`, `while at the same time`
+  - newly implemented remaining exact phrases: `absolute necessity`, `complete stranger`, `emergency situation`, `software program`, `consolidate together`, `consolidates together`, `consolidated together`, `couple together`, `couples together`, `coupled together`, `meld together`, `melds together`, `melded together`, `mingle together`, `mingles together`, `mingled together`, `pool together`, `pools together`, `pooled together`
 - Cliche templates:
   - `src/rules/phrases/cliches.ts`
   - `src/rules/phrases/data/cliche-templates.json`
@@ -229,6 +231,7 @@ Research material that is not implemented stays in `data/source-material/derived
 - Narrative cliches:
   - `src/rules/narrative-slop/narrative-cliches.ts`
   - `src/rules/narrative-slop/data/narrative-cliches.json`
+  - remaining breath, low-voice, and smile-played source frames were not added here because they are unsafe as single-hit cliche reports
 - Academic tortured phrases:
   - `src/rules/academic-slop/tortured-phrases.ts`
   - `src/rules/academic-slop/data/tortured-phrases.json`
@@ -288,11 +291,13 @@ Research material that is not implemented stays in `data/source-material/derived
 - Local transformations:
   - abstracted emotion/state slots as physical substance motion
   - mapped phrase cues such as `crossed her arms`, `sat up`, `walked over`, `stopped next to`, and `looked up at` to one event each
+  - mapped remaining narrative source frames such as `took a deep breath`, `let out a breath`, `voice was low`, and `smile played on her lips` to body-cue density candidates
   - kept literal physical substance, weather, measurement, and cause examples as no-hit controls
 - False-positive controls:
   - semantic-thinness cause-clause rejection blocks literal or caused physical cases
   - narrative no-hit controls include goal clauses and deliberate short-sentence pacing
   - density rules require repeated event-class hits, not one isolated action
+  - breath, voice, and smile frames report only when clustered with enough body-cue density
 
 ## Matching Architecture We Built Ourselves
 

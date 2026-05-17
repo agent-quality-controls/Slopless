@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-17T17-38-31.232629Z-f3c41e06",
-  "run_commit": "20130de",
+  "run_id": "2026-05-17T19-00-42.011407Z-f3c41e06",
+  "run_commit": "a01dfa8",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-17T17:38:31.232629Z",
-  "fixture_hash": "sha256:b527768707f81247e48192922bae7af6f4826116d32368c5bc6374850f6a4c17",
+  "recorded_at": "2026-05-17T19:00:42.011407Z",
+  "fixture_hash": "sha256:088a7df25395855a8e20b2b90458b9b107e6a4a8a9bf6f891678b929e3881eef",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -32,11 +32,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md",
-      "sha256": "sha256:76155230ca74277ce9a7eb76803859d6889403ec3795552ecfc9e24a956b58a5"
+      "sha256": "sha256:5add178fdd76fbda5114ab955dcd54674a2256f24069d75b221dfa5b933ea63c"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md",
-      "sha256": "sha256:b5904dcaa8ad79121b00279bafd8add3072edd2ebb255e0062e192d527c3db1e"
+      "sha256": "sha256:d9c77785d29a5b7d5227542c85f4fe12a077bad969fbb045d9580c5ca084143d"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/no-signal/no-hits.md",
@@ -52,11 +52,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/hits.md",
-      "sha256": "sha256:6d4ed7a33ced41f07ff2f5e5a40c7d660eb5ea03c37ea18ed314d9687fcc20c4"
+      "sha256": "sha256:d80699bcfeb726cc22fc59761999310c8165137250980c9a2557b8254517b673"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md",
-      "sha256": "sha256:fd2a91d8725215cc0cebc7d910e3639f117fcb853c2a38aab3b2e4d8763cdb2d"
+      "sha256": "sha256:3aa8325879e5aef2e60c499bfeabbfa6c62ee03f709bcae6f90ad34dd1cf0952"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
@@ -92,7 +92,7 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/editorial-style.md",
-      "sha256": "sha256:0408e7dbc523b5400b02c3b5a90848491fda4c8b9411e79e3d07c28b3f43d369"
+      "sha256": "sha256:26b48d86de7e7d15ade2a24fed6b9b1012fc9d3d866f452c4ff2ee700e3dbf5e"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/engineering-review.md",
@@ -108,12 +108,12 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
-      "sha256": "sha256:f6e35dc3a8492c720ab0e21382a378f785ea35976b38d8be161ffe2a66c7dd07"
+      "sha256": "sha256:54451dce857c6e2edd886c366fc9e19dfdaa2672cc13d77cc03df744468f005c"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/technical-terminology.md",
       "sha256": "sha256:bf69c066e8560de8c1dc151e5ee486fa1c47e2b6fbe178f07eba5ce96193a9e6"
     }
   ],
-  "comment": "Fix emotion substance and density false positives"
+  "comment": "Add corpus coverage for remaining source candidates"
 }

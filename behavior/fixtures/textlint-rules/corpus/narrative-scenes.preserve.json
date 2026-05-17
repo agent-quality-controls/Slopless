@@ -1093,6 +1093,62 @@
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
       "line": 41
+    },
+    {
+      "text": "Liska took a deep breath. Her voice was low. A smile played on her lips.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 41
+    },
+    {
+      "text": "Arden let out a breath. His voice was low. A smile played on his lips.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 43
+    },
+    {
+      "text": "Cassia took a deep breath. She let out a breath. Her voice was low.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 45
+    },
+    {
+      "text": "The singer took a deep breath before the long note.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 45
+    },
+    {
+      "text": "The diver let out a breath after surfacing beside the dock.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 47
+    },
+    {
+      "text": "The dispatcher said the voice was low because the radio battery was failing.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 49
+    },
+    {
+      "text": "The actor practiced a smile played on his lips until the director stopped him.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 51
+    },
+    {
+      "text": "Liska took a deep breath, counted the rope knots, and tied the loose end to the post.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 53
     }
   ]
 }

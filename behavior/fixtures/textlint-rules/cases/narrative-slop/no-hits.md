@@ -41,3 +41,13 @@ Cassia crossed her arms to pin the splint. She waited while the medic tied the b
 Cassia walked over to count the scratches. She stopped next to Arden and marked the third scratch.
 
 The chapter uses short sentences because the reader is six and the scene must stay clear.
+
+The singer took a deep breath before the long note.
+
+The diver let out a breath after surfacing beside the dock.
+
+The dispatcher said the voice was low because the radio battery was failing.
+
+The actor practiced a smile played on his lips until the director stopped him.
+
+Liska took a deep breath, counted the rope knots, and tied the loose end to the post.

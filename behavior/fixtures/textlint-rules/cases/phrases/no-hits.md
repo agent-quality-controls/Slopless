@@ -67,3 +67,19 @@ The editor preserved the data while revising the paragraph.
 The article quotes "serves as a testament to the power of" as promotional prose.
 
 The witness serves as a testament in the hearing about power rates.
+
+The emergency team opened a situation room after the alarm.
+
+The teacher installed software for the classroom program.
+
+The editor quoted "complete stranger" as a redundancy example.
+
+The policy quoted "with the exception of" as a phrase to review.
+
+The technician coupled the hose to the pump before testing pressure.
+
+The crews pooled water behind the temporary dam.
+
+The candidate has legal capacity under the statute.
+
+The board scheduled a formal review for May.

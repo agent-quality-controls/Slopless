@@ -37,3 +37,9 @@ Cassia's ears flattened. Her tail flicked once. Her paws shifted against the til
 Liska blinked slowly. She sat up straighter on the sill. She looked past Cassia toward the group of guards in the yard.
 
 The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions.
+
+Liska took a deep breath. Her voice was low. A smile played on her lips.
+
+Arden let out a breath. His voice was low. A smile played on his lips.
+
+Cassia took a deep breath. She let out a breath. Her voice was low.

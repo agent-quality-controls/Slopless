@@ -259,3 +259,65 @@ The two teams interact with each other before handoff.
 The editor revised the paragraph while at the same time preserving the data.
 
 The milestone serves as a testament to the power of collaboration.
+
+The migration note calls the cleanup an absolute necessity.
+
+The incident report says a complete stranger changed the config.
+
+The alert labels the outage an emergency situation.
+
+The training guide calls the editor a software program.
+
+The departments consolidate together after the budget vote.
+
+The departments consolidates together after the budget vote.
+
+The departments consolidated together after the budget vote.
+
+The scripts couple together unrelated startup steps.
+
+The scripts couples together unrelated startup steps.
+
+The scripts coupled together unrelated startup steps.
+
+The drafts meld together two separate claims.
+
+The drafts melds together two separate claims.
+
+The drafts melded together two separate claims.
+
+The introductions mingle together context and conclusion.
+
+The introductions mingles together context and conclusion.
+
+The introductions mingled together context and conclusion.
+
+The teams pool together the same budget.
+
+The teams pools together the same budget.
+
+The teams pooled together the same budget.
+
+The outage lasted for the duration of the review.
+
+The router has the capacity to retry the upload.
+
+The routers have the capacity to retry the upload.
+
+The retired tool had the capacity to export logs.
+
+The trainee has the opportunity to update the report.
+
+The trainees have the opportunity to update the report.
+
+The trainee had the opportunity to update the report.
+
+The team will conduct a review of the queue.
+
+The team will perform a review of the queue.
+
+The team will carry out a review of the queue.
+
+The outage was taken into account during planning.
+
+The policy applies with the exception of test accounts.
