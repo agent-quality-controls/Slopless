@@ -269,3 +269,57 @@ Young readers need short lines, so the draft keeps the scene clear with plain wo
 Cassia looked for the torn stitch under the table and found it beside the left leg.
 
 Arden climbed the crates to reach the broken pulley, then wedged the rope under the iron hook.
+
+## expanded Sunstone source patterns
+
+The anger finally melted out of her posture.
+
+Relief washed over Cassia.
+
+Tension settled over the room.
+
+Panic rose in her chest.
+
+Regret rested in his voice.
+
+The rest of the drill was a blur.
+
+Everything after that was a haze.
+
+Liska turned her head. Her brown eyes looked tired. She crossed her arms over her chest and waited.
+
+Remal walked over to the window. The heavy African golden cat stopped next to Cassia. He looked up at the small girl on the sill.
+
+Cassia's ears flattened. Her tail flicked once. Her paws shifted against the tile.
+
+Liska blinked slowly. She sat up straighter on the sill. She looked past Cassia toward the group of guards in the yard.
+
+The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions.
+
+The wax melted out of the mold because the kiln overheated.
+
+Water washed over the stones after the bucket tipped.
+
+The measured tension settled after the cable was loosened.
+
+Panic rose in her chest because the asthma attack started.
+
+The anger melted out of her posture because the doctor adjusted the brace.
+
+The blur in the photo came from a cracked lens.
+
+The haze over the harbor came from smoke after the warehouse fire.
+
+The rest of the drill was a blur because the camera lens cracked.
+
+Everything after the bell was a haze because smoke filled the hall.
+
+Liska crossed her arms to keep the cold compress against her ribs.
+
+Remal walked to the window to lift the latch and vent the smoke.
+
+Cassia crossed her arms to pin the splint. She waited while the medic tied the bandage.
+
+Cassia walked over to count the scratches. She stopped next to Arden and marked the third scratch.
+
+The chapter uses short sentences because the reader is six and the scene must stay clear.

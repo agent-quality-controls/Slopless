@@ -270,6 +270,30 @@ Research material that is not implemented stays in `data/source-material/derived
   - body-action controls require repeated event-class density rather than one action
   - flat cadence requires adjacent short simple sentence runs, not sentence length alone
 
+### Emotion Substance And Action Density Expansion
+
+- Source:
+  - user-supplied Sunstone prose cases recorded in `data/source-material/derived/sunstone-slop-cases.md`
+  - generated variant notes in `data/source-material/derived/sunstone-emotion-substance-variants.md`
+  - generated variant notes in `data/source-material/derived/sunstone-action-density-variants.md`
+- Rules:
+  - `src/families/semantic-thinness/semantic-thinness.ts`
+  - `src/families/narrative-slop/body-action-density.ts`
+  - `src/families/narrative-slop/flat-action-cadence.ts`
+- Implemented as:
+  - `emotion-as-substance` semantic template
+  - `summary-fog-transition` semantic template
+  - multi-word event phrases in narrative density checks
+  - expanded flat cadence weak-action and state complements
+- Local transformations:
+  - abstracted emotion/state slots as physical substance motion
+  - mapped phrase cues such as `crossed her arms`, `sat up`, `walked over`, `stopped next to`, and `looked up at` to one event each
+  - kept literal physical substance, weather, measurement, and cause examples as no-hit controls
+- False-positive controls:
+  - semantic-thinness cause-clause rejection blocks literal or caused physical cases
+  - narrative no-hit controls include goal clauses and deliberate short-sentence pacing
+  - density rules require repeated event-class hits, not one isolated action
+
 ## Matching Architecture We Built Ourselves
 
 Slopless does not run upstream prose-linter plugins directly.

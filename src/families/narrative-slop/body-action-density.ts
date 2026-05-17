@@ -52,7 +52,15 @@ const MOVEMENT_CUES = new Set([
   "pick",
   "picks",
   "picked",
-  "picking"
+  "picking",
+  "flatten",
+  "flattens",
+  "flattened",
+  "flattening",
+  "flick",
+  "flicks",
+  "flicked",
+  "flicking"
 ]);
 
 const BODY_CUES = new Set([
@@ -78,6 +86,10 @@ const MIN_GROUP_HITS = 3;
 const WINDOW_SENTENCES = 4;
 
 type CueGroup = "body cue" | "movement cue";
+type PhraseCue = {
+  readonly group: CueGroup;
+  readonly tokens: readonly string[];
+};
 
 type DenseMatch = {
   readonly count: number;
@@ -86,6 +98,43 @@ type DenseMatch = {
   readonly start: number;
   readonly words: readonly string[];
 };
+
+const PHRASE_CUES: readonly PhraseCue[] = [
+  { group: "movement cue", tokens: ["crossed", "her", "arms"] },
+  { group: "movement cue", tokens: ["crossed", "his", "arms"] },
+  { group: "movement cue", tokens: ["crossed", "their", "arms"] },
+  { group: "movement cue", tokens: ["sat", "up"] },
+  { group: "movement cue", tokens: ["walked", "over"] },
+  { group: "movement cue", tokens: ["stopped", "next", "to"] },
+  { group: "movement cue", tokens: ["looked", "up", "at"] },
+  { group: "movement cue", tokens: ["rested", "her", "paws"] },
+  { group: "movement cue", tokens: ["rested", "his", "paws"] },
+  { group: "movement cue", tokens: ["rested", "their", "paws"] },
+  { group: "body cue", tokens: ["looked", "tired"] },
+  { group: "body cue", tokens: ["ears", "twitched"] },
+  { group: "body cue", tokens: ["ears", "flattened"] },
+  { group: "body cue", tokens: ["tail", "angled"] },
+  { group: "body cue", tokens: ["tail", "flicked"] },
+  { group: "body cue", tokens: ["paws", "shifted"] },
+  { group: "body cue", tokens: ["paws", "trembled"] }
+];
+
+type CueHit = {
+  readonly end: number;
+  readonly group: CueGroup;
+  readonly start: number;
+  readonly word: string;
+};
+
+function markCovered(
+  covered: Set<number>,
+  start: number,
+  length: number
+): void {
+  for (let offset = 0; offset < length; offset += 1) {
+    covered.add(start + offset);
+  }
+}
 
 function cueGroup(token: Token): CueGroup | undefined {
   if (MOVEMENT_CUES.has(token.normalized)) {
@@ -99,20 +148,79 @@ function cueGroup(token: Token): CueGroup | undefined {
   return undefined;
 }
 
+function tokensMatchAt(
+  tokens: readonly Token[],
+  expected: readonly string[],
+  start: number
+): boolean {
+  if (start + expected.length > tokens.length) {
+    return false;
+  }
+
+  return expected.every(
+    (word, index) => tokens[start + index]?.normalized === word
+  );
+}
+
+function cueHits(tokens: readonly Token[]): CueHit[] {
+  const hits: CueHit[] = [];
+  const phraseCovered = new Set<number>();
+
+  for (let index = 0; index < tokens.length; index += 1) {
+    const token = tokens[index];
+    if (token === undefined) {
+      continue;
+    }
+
+    for (const phrase of PHRASE_CUES) {
+      if (!tokensMatchAt(tokens, phrase.tokens, index)) {
+        continue;
+      }
+
+      const last = tokens[index + phrase.tokens.length - 1];
+      if (last === undefined) {
+        continue;
+      }
+
+      hits.push({
+        end: last.end,
+        group: phrase.group,
+        start: token.start,
+        word: phrase.tokens.join(" ")
+      });
+      markCovered(phraseCovered, index, phrase.tokens.length);
+    }
+  }
+
+  for (let index = 0; index < tokens.length; index += 1) {
+    const token = tokens[index];
+    if (token === undefined || phraseCovered.has(index)) {
+      continue;
+    }
+
+    const group = cueGroup(token);
+    if (group !== undefined) {
+      hits.push({
+        end: token.end,
+        group,
+        start: token.start,
+        word: token.normalized
+      });
+    }
+  }
+
+  return hits.sort((left, right) => left.start - right.start);
+}
+
 function denseMatchForSpan(
   text: string,
   start: number,
   end: number
 ): DenseMatch | undefined {
-  const byGroup = new Map<CueGroup, Token[]>();
+  const byGroup = new Map<CueGroup, CueHit[]>();
 
-  for (const token of wordTokens(text.slice(start, end))) {
-    const group = cueGroup(token);
-    if (group === undefined) {
-      continue;
-    }
-
-    byGroup.set(group, [...(byGroup.get(group) ?? []), token]);
+  for (const hit of cueHits(wordTokens(text.slice(start, end)))) {
+    byGroup.set(hit.group, [...(byGroup.get(hit.group) ?? []), hit]);
   }
 
   for (const group of ["movement cue", "body cue"] as const) {
@@ -132,7 +240,7 @@ function denseMatchForSpan(
       end: start + last.end,
       group,
       start: start + first.start,
-      words: [...new Set(hits.map((token) => token.normalized))]
+      words: [...new Set(hits.map((hit) => hit.word))]
     };
   }
 

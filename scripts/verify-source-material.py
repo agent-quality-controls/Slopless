@@ -151,6 +151,20 @@ def verify_zip() -> None:
         fail(f"invalid zip archive: {path.relative_to(ROOT)}\n{result.stderr}")
 
 
+def verify_binary_implementation_state() -> None:
+    text = require_file("derived/sunstone-slop-cases.md").read_text(encoding="utf-8")
+    implemented_examples = [
+        "It was no longer a target. It was noise.",
+        "Liska turned her head. Her brown eyes looked tired. She crossed her arms over her chest and waited.",
+        "The anger finally melted out of her posture.",
+        "Remal walked over to the window. The heavy African golden cat stopped next to Cassia. He looked up at the small girl on the sill.",
+        "The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions."
+    ]
+    for example in implemented_examples:
+        if example in text:
+            fail(f"implemented example remains in not-implemented source material: {example}")
+
+
 def main() -> None:
     if not DATA.is_dir():
         fail("missing data/source-material directory")
@@ -159,6 +173,7 @@ def main() -> None:
     verify_yaml_files()
     verify_counts()
     verify_zip()
+    verify_binary_implementation_state()
     print("source material verification passed")
 
 

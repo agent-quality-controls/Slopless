@@ -27,3 +27,13 @@ She stared out at the dark roofline. She did not look down at the older kids. He
 Arden climbed the crates next to her. He pulled himself up to the roof edge. Arden walked along the parapet that separated the workshop roof from the neighbor's building. He crouched low and ran his fingers over the stone.
 
 Cassia's ears twitched. Her tail angled low. Her paws shifted on the roof tile.
+
+Liska turned her head. Her brown eyes looked tired. She crossed her arms over her chest and waited.
+
+Remal walked over to the window. The heavy African golden cat stopped next to Cassia. He looked up at the small girl on the sill.
+
+Cassia's ears flattened. Her tail flicked once. Her paws shifted against the tile.
+
+Liska blinked slowly. She sat up straighter on the sill. She looked past Cassia toward the group of guards in the yard.
+
+The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions.
