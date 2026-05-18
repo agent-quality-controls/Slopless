@@ -187,9 +187,12 @@ Active source candidates stay in `legacy/source-material/derived/*.md`. Reviewed
 - Source:
   - observed assistant-output leakage forms
   - hand-authored examples from LLM response conventions
+  - source-backed candidates from `legacy/source-material/expansion-2026-05-18/ai-slop/derived/high-confidence-deterministic-candidates.json`
+  - source-backed candidates from `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/high-confidence-candidates.json`
 - Rules:
   - `src/rules/phrases/llm-disclaimer.ts`
   - `src/rules/syntactic-patterns/llm-artifacts/response-wrapper.ts`
+  - `src/rules/syntactic-patterns/lead-ins/llm-openers.ts`
 - Implemented as:
   - sentence-start patterns
   - contains patterns
@@ -201,6 +204,53 @@ Active source candidates stay in `legacy/source-material/derived/*.md`. Reviewed
   - `i do not have access to real-time information`
   - `i can provide`
   - `i cannot diagnose`
+  - `would you like me to`
+  - `if you'd like, i can`
+  - `here are a few options`
+  - `great question`
+  - `in today's fast-paced world`
+  - `in the ever-evolving landscape`
+  - `in the realm of`
+
+### AI Slop Gap Batch From 2026-05-18 Expansion Research
+
+- Source:
+  - `legacy/source-material/expansion-2026-05-18/ai-slop/derived/high-confidence-deterministic-candidates.json`
+  - `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/high-confidence-candidates.json`
+- Archive record:
+  - `legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-ai-slop-gaps.md`
+- Remaining active queue:
+  - `legacy/source-material/expansion-2026-05-18/remaining-candidates.md`
+- Rules:
+  - `src/rules/orthography/hidden-unicode-controls.ts`
+  - `src/rules/phrases/llm-disclaimer.ts`
+  - `src/rules/syntactic-patterns/llm-artifacts/response-wrapper.ts`
+  - `src/rules/syntactic-patterns/lead-ins/llm-openers.ts`
+  - `src/rules/syntactic-patterns/contrast/negation-reframe.ts`
+- Implemented as:
+  - hidden Unicode character inventory
+  - assistant leakage phrase expansion
+  - response-wrapper phrase expansion
+  - section-opener phrase expansion
+  - bounded negative-pivot sentence and sentence-pair patterns
+- Pattern examples:
+  - U+200B ZERO WIDTH SPACE
+  - U+202E RIGHT-TO-LEFT OVERRIDE
+  - `as an ai`
+  - `up to my last training`
+  - `would you like me to`
+  - `here are a few options`
+  - `not only X`
+  - `X is not the problem. Y is.`
+  - `Not because X. Because Y.`
+- Local changes:
+  - kept raw source captures in place for provenance
+  - archived implemented candidates out of the active review queue
+  - kept incomplete assistant-artifact and Markdown placeholder candidates active for future work
+- False-positive controls:
+  - hidden Unicode reports embedded control characters, not textual names like `U+200B`
+  - phrase rules skip quoted examples where supported by the matcher
+  - negative-pivot fixtures include cause and ordinary contrast no-hits
 
 ## Implemented Source-Derived Pattern Data
 
