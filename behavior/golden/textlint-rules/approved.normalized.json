@@ -14245,6 +14245,29 @@
         "type": "lint"
       },
       {
+        "column": 27,
+        "index": 23793,
+        "line": 565,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 565
+          },
+          "start": {
+            "column": 27,
+            "line": 565
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          23793,
+          23824
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
         "index": 23826,
         "line": 567,
@@ -27391,29 +27414,6 @@
       },
       {
         "column": 1,
-        "index": 1207,
-        "line": 73,
-        "loc": {
-          "end": {
-            "column": 41,
-            "line": 73
-          },
-          "start": {
-            "column": 1,
-            "line": 73
-          }
-        },
-        "message": "Semantic thinness (something-shifted): Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change. Matched template: {genericSubject} {changeVerb}.",
-        "range": [
-          1207,
-          1247
-        ],
-        "ruleId": "semantic-thinness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
         "index": 1249,
         "line": 75,
         "loc": {
@@ -28097,6 +28097,213 @@
         "range": [
           2357,
           2409
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2411,
+        "line": 131,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 131
+          },
+          "start": {
+            "column": 1,
+            "line": 131
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          2411,
+          2456
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 2434,
+        "line": 131,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 131
+          },
+          "start": {
+            "column": 24,
+            "line": 131
+          }
+        },
+        "message": "Dramatic colon found: \"tools collect signals.\". Rewrite without the short reveal after the colon.",
+        "range": [
+          2434,
+          2456
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2458,
+        "line": 133,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 133
+          },
+          "start": {
+            "column": 1,
+            "line": 133
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {feelingVerb} {weakJudgment}.",
+        "range": [
+          2458,
+          2488
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2490,
+        "line": 135,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 135
+          },
+          "start": {
+            "column": 1,
+            "line": 135
+          }
+        },
+        "message": "Semantic thinness (vague-threshold-change): Catch vague threshold or evaluation changes without named scale, cause, or concrete state. Matched template: {genericSubject} {thresholdVerb} {evaluativeComplement}.",
+        "range": [
+          2490,
+          2514
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2516,
+        "line": 137,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 137
+          },
+          "start": {
+            "column": 1,
+            "line": 137
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {importanceComplement}.",
+        "range": [
+          2516,
+          2551
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2553,
+        "line": 139,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 139
+          },
+          "start": {
+            "column": 1,
+            "line": 139
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {summaryVerb} the {evaluativeAdjective} {summaryNoun}.",
+        "range": [
+          2553,
+          2583
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2585,
+        "line": 141,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 141
+          },
+          "start": {
+            "column": 1,
+            "line": 141
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          2585,
+          2623
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2625,
+        "line": 143,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 143
+          },
+          "start": {
+            "column": 1,
+            "line": 143
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          2625,
+          2658
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2660,
+        "line": 145,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 145
+          },
+          "start": {
+            "column": 1,
+            "line": 145
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: {abstractPersonifiedSubject} has a poor {businessMetric} in {businessDomain}.",
+        "range": [
+          2660,
+          2715
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -41218,6 +41425,29 @@
         "type": "lint"
       },
       {
+        "column": 27,
+        "index": 45054,
+        "line": 919,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 919
+          },
+          "start": {
+            "column": 27,
+            "line": 919
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          45054,
+          45085
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
         "index": 45087,
         "line": 921,
@@ -43185,6 +43415,241 @@
     ]
   },
   {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/linkedin-ai-search.md",
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Flesch Reading Ease is 59.72. Keep it at 61 or higher.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 155,
+        "line": 7,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 7
+          },
+          "start": {
+            "column": 1,
+            "line": 7
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          155,
+          200
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 178,
+        "line": 7,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 7
+          },
+          "start": {
+            "column": 24,
+            "line": 7
+          }
+        },
+        "message": "Dramatic colon found: \"tools collect signals.\". Rewrite without the short reveal after the colon.",
+        "range": [
+          178,
+          200
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 577,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 19
+          },
+          "start": {
+            "column": 1,
+            "line": 19
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {summaryVerb} the {evaluativeAdjective} {summaryNoun}.",
+        "range": [
+          577,
+          607
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 689,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 23
+          },
+          "start": {
+            "column": 1,
+            "line": 23
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {feelingVerb} {weakJudgment}.",
+        "range": [
+          689,
+          719
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 808,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 27
+          },
+          "start": {
+            "column": 1,
+            "line": 27
+          }
+        },
+        "message": "Semantic thinness (vague-threshold-change): Catch vague threshold or evaluation changes without named scale, cause, or concrete state. Matched template: {genericSubject} {thresholdVerb} {evaluativeComplement}.",
+        "range": [
+          808,
+          832
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 920,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 31
+          },
+          "start": {
+            "column": 1,
+            "line": 31
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {importanceComplement}.",
+        "range": [
+          920,
+          955
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1227,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          1227,
+          1265
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1625,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 47
+          },
+          "start": {
+            "column": 1,
+            "line": 47
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          1625,
+          1658
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1660,
+        "line": 49,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 49
+          },
+          "start": {
+            "column": 1,
+            "line": 49
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: {abstractPersonifiedSubject} has a poor {businessMetric} in {businessDomain}.",
+        "range": [
+          1660,
+          1715
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  },
+  {
     "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
     "messages": [
       {
@@ -44751,29 +45216,6 @@
         "range": [
           1608,
           1630
-        ],
-        "ruleId": "semantic-thinness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 1632,
-        "line": 81,
-        "loc": {
-          "end": {
-            "column": 41,
-            "line": 81
-          },
-          "start": {
-            "column": 1,
-            "line": 81
-          }
-        },
-        "message": "Semantic thinness (something-shifted): Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change. Matched template: {genericSubject} {changeVerb}.",
-        "range": [
-          1632,
-          1672
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,

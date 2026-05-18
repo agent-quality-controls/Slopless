@@ -127,3 +127,19 @@ The rollout was a remarkable success.
 The platform is a visionary approach to education.
 
 The launch had a devastating impact on the industry.
+
+The problem is simple: tools collect signals.
+
+The spreadsheet feels precise.
+
+The decisions get worse.
+
+The missing layer is page judgment.
+
+That changes the whole report.
+
+The boring fix is often the right one.
+
+The second one is less glamorous.
+
+Glamour has a poor conversion rate in technical audits.

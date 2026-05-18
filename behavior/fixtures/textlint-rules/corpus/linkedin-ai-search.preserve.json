@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "corpus": "linkedin-ai-search.md",
+  "preserve": [
+    {
+      "text": "The problem is simple: tools collect signals.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 131
+    },
+    {
+      "text": "The spreadsheet feels precise.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 133
+    },
+    {
+      "text": "The decisions get worse.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 135
+    },
+    {
+      "text": "The missing layer is page judgment.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 137
+    },
+    {
+      "text": "That changes the whole report.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 139
+    },
+    {
+      "text": "The boring fix is often the right one.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 141
+    },
+    {
+      "text": "The second one is less glamorous.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 143
+    },
+    {
+      "text": "Glamour has a poor conversion rate in technical audits.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 145
+    },
+    {
+      "text": "The problem is simple: GPTBot received the raw HTML shell before hydration.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 99
+    },
+    {
+      "text": "The spreadsheet feels precise because every row links to a revenue page and an owner.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 101
+    },
+    {
+      "text": "The decisions got worse after the team sorted by volume instead of qualified demand.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 103
+    },
+    {
+      "text": "The missing layer is page judgment: service pages get reviewed before archive pages.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 105
+    },
+    {
+      "text": "That changes the whole report because the crawler cannot see the service copy.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 107
+    },
+    {
+      "text": "The boring fix is often the right one when raw HTML lacks revenue-critical copy.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 109
+    }
+  ]
+}

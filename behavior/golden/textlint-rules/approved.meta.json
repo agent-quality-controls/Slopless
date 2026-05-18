@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-18T17-37-53.540325Z-f3c41e06",
-  "run_commit": "205b712",
+  "run_id": "2026-05-18T18-37-39.070936Z-f3c41e06",
+  "run_commit": "e0e12e0",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-18T17:37:53.540325Z",
-  "fixture_hash": "sha256:77b921d199a0ec60478f2ed312b84c690aead37377eec47c9e21ac839c2fbf2c",
+  "recorded_at": "2026-05-18T18:37:39.070936Z",
+  "fixture_hash": "sha256:85b7f086994106313ac14e572e5916d454d34f6663ecac01e6d3f39d402e771e",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -60,11 +60,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
-      "sha256": "sha256:e77ccf512aab268481430fe451a60b32fb698e571c0edad1cf1d23792b7207a7"
+      "sha256": "sha256:7954114280b1be4e043721abdac5974f1bf1c3955bc04b4da4cf098a9daf38b6"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
-      "sha256": "sha256:507205d7b8dde68cc0a898a59fdfe9a4dca1394911c8fe8be4e140285ed5f9d2"
+      "sha256": "sha256:ceff4a67691e9c6c4c2a33ff8d5d1b3e2d3972ecc92359e145f4ed7efb50967d"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
@@ -103,6 +103,10 @@
       "sha256": "sha256:3ec23258d0ff872bac6bc43914e78cf837c4422b072330dc7b3e19c8c24e708c"
     },
     {
+      "path": "behavior/fixtures/textlint-rules/corpus/linkedin-ai-search.md",
+      "sha256": "sha256:bda03c5dd2a3f506f257cc435301b994edd7a95eacd16e254bb7a2fd23ad67d3"
+    },
+    {
       "path": "behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
       "sha256": "sha256:4dfb3aadf405eefb187c3bcf18f674a412ed1153123e655e97e97a8b987c3451"
     },
@@ -115,5 +119,5 @@
       "sha256": "sha256:e56e6ed5b1d94558aecd64c1844affcea9a6e6b7189ece747581949b27d3a870"
     }
   ],
-  "comment": "Add summary vague and subjective prose checks"
+  "comment": "Add LinkedIn semantic thinness corpus coverage"
 }

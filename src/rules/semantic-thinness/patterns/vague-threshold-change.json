@@ -23,7 +23,23 @@
       "the day",
       "the moment",
       "the path",
-      "the choice"
+      "the choice",
+      "the problem",
+      "the fix",
+      "the report",
+      "the spreadsheet",
+      "the decision",
+      "the decisions",
+      "the audit",
+      "the strategy",
+      "the plan",
+      "the content",
+      "the page",
+      "the post",
+      "the source",
+      "the signal",
+      "the surface",
+      "the question"
     ],
     "thresholdVerb": [
       "got",
@@ -32,9 +48,20 @@
       "turned",
       "seemed",
       "stayed",
-      "remained"
+      "remained",
+      "get",
+      "gets"
     ],
-    "feelingVerb": ["felt", "looked", "sounded", "seemed"],
+    "feelingVerb": [
+      "feels",
+      "felt",
+      "looks",
+      "looked",
+      "sounds",
+      "sounded",
+      "seems",
+      "seemed"
+    ],
     "evaluativeComplement": [
       "different",
       "better",
@@ -49,7 +76,16 @@
       "simpler",
       "complicated",
       "possible",
-      "real"
+      "real",
+      "precise",
+      "thin",
+      "useful",
+      "useless",
+      "weak",
+      "strong",
+      "expensive",
+      "generic",
+      "specific"
     ],
     "comparativeComplement": [
       "more real",

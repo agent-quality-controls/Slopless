@@ -9,6 +9,11 @@
     "{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.",
     "{deicticSubject} {linkingVerb} the {summaryNoun} that {thinPredicate}.",
     "{deicticSubject} {linkingVerb} the {summaryNoun} {genericAudience} {reactionVerb}.",
+    "{deicticSubject} {summaryVerb} the {summaryNoun}.",
+    "{deicticSubject} {summaryVerb} the {evaluativeAdjective} {summaryNoun}.",
+    "{deicticSubject} {meaningVerb} {summaryNoun}.",
+    "{deicticSubject} {linkingVerb} the kind of {summaryNoun}.",
+    "{deicticSubject} {linkingVerb} the type of {summaryNoun}.",
     "{deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.",
     "{deicticSubject} {linkingVerb} how {abstractSubject} {abstractVerb}."
   ],
@@ -24,7 +29,13 @@
       "simple",
       "honest",
       "actual",
-      "central"
+      "central",
+      "boring",
+      "useful",
+      "missing",
+      "whole",
+      "right",
+      "wrong"
     ],
     "summaryNoun": [
       "part",
@@ -36,8 +47,31 @@
       "nature",
       "invitation",
       "shift",
-      "work"
+      "work",
+      "report",
+      "decision",
+      "decisions",
+      "fix",
+      "problem",
+      "question",
+      "audit question",
+      "strategy",
+      "plan",
+      "surface",
+      "layer",
+      "source material",
+      "issue",
+      "signal"
     ],
+    "summaryVerb": [
+      "changes",
+      "changed",
+      "shifts",
+      "shifted",
+      "maps to",
+      "maps cleanly to"
+    ],
+    "meaningVerb": ["means", "meant", "does not mean", "doesn't mean"],
     "genericAudience": [
       "nobody",
       "people",

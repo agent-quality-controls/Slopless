@@ -55,6 +55,13 @@ const REJECT_TOKENS = new Set([
   "which",
   "while"
 ]);
+const BROAD_PATTERN_IDS = new Set([
+  "deictic-summary",
+  "hollow-significance",
+  "puffery-evaluative-claim",
+  "vague-threshold-change"
+]);
+const BROAD_CONCRETE_TOKENS = new Set(["after", "before"]);
 
 function normalizedTokens(text: string): readonly string[] {
   return wordTokens(text).map((token) => token.normalized);
@@ -153,8 +160,56 @@ function hasDigit(text: string): boolean {
   return false;
 }
 
+function isAsciiUppercase(character: string): boolean {
+  return character >= "A" && character <= "Z";
+}
+
+function isAsciiLowercase(character: string): boolean {
+  return character >= "a" && character <= "z";
+}
+
+function hasTicketLikeMarker(text: string): boolean {
+  for (let index = 0; index < text.length - 3; index += 1) {
+    if (
+      isAsciiUppercase(text[index] ?? "") &&
+      isAsciiUppercase(text[index + 1] ?? "") &&
+      text[index + 2] === "-" &&
+      (text[index + 3] ?? "") >= "0" &&
+      (text[index + 3] ?? "") <= "9"
+    ) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function hasDottedIdentifier(text: string): boolean {
+  for (let index = 1; index < text.length - 1; index += 1) {
+    if (
+      text[index] === "." &&
+      isAsciiLowercase(text[index - 1] ?? "") &&
+      isAsciiLowercase(text[index + 1] ?? "")
+    ) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function hasConcreteMarker(text: string): boolean {
+  return (
+    text.includes("://") ||
+    text.includes("@") ||
+    text.includes("`") ||
+    hasTicketLikeMarker(text) ||
+    hasDottedIdentifier(text)
+  );
+}
+
 function shouldRejectCommon(text: string, tokens: readonly Token[]): boolean {
-  return tokens.length === 0 || hasDigit(text);
+  return tokens.length === 0 || hasDigit(text) || hasConcreteMarker(text);
 }
 
 function shouldRejectForPattern(
@@ -166,8 +221,9 @@ function shouldRejectForPattern(
   }
 
   return (
-    pattern.matchMode === "full" &&
-    tokens.some((token) => REJECT_TOKENS.has(token.normalized))
+    tokens.some((token) => REJECT_TOKENS.has(token.normalized)) ||
+    (BROAD_PATTERN_IDS.has(pattern.id) &&
+      tokens.some((token) => BROAD_CONCRETE_TOKENS.has(token.normalized)))
   );
 }
 

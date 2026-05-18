@@ -95,3 +95,15 @@ The rollout reduced failed invoices from 28 to 3.
 The 2025 audit called the platform a visionary approach to education.
 
 The launch delayed 42 container shipments at the west dock.
+
+The problem is simple: GPTBot received the raw HTML shell before hydration.
+
+The spreadsheet feels precise because every row links to a revenue page and an owner.
+
+The decisions got worse after the team sorted by volume instead of qualified demand.
+
+The missing layer is page judgment: service pages get reviewed before archive pages.
+
+That changes the whole report because the crawler cannot see the service copy.
+
+The boring fix is often the right one when raw HTML lacks revenue-critical copy.

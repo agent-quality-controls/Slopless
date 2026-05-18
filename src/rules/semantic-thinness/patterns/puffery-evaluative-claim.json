@@ -16,7 +16,9 @@
     "the {documentSubject} shows the {importanceNoun} of the {strategyNoun}.",
     "the {eventSubject} was a remarkable success.",
     "the {productSubject} is a visionary approach to {domainNoun}.",
-    "the {eventSubject} had a devastating impact on the {genericObject}."
+    "the {eventSubject} had a devastating impact on the {genericObject}.",
+    "the {comparativeSubject} is {comparativeJudgment}.",
+    "{abstractPersonifiedSubject} has a poor {businessMetric} in {businessDomain}."
   ],
   "slots": {
     "prestigeRole": [
@@ -41,7 +43,53 @@
       "vital importance",
       "significant value"
     ],
-    "strategyNoun": ["strategy", "approach", "method", "framework", "plan"]
+    "strategyNoun": ["strategy", "approach", "method", "framework", "plan"],
+    "comparativeSubject": [
+      "first one",
+      "second one",
+      "first version",
+      "second version",
+      "first option",
+      "second option",
+      "first approach",
+      "second approach"
+    ],
+    "comparativeJudgment": [
+      "less glamorous",
+      "more glamorous",
+      "more useful",
+      "less useful",
+      "more practical",
+      "less practical",
+      "more honest",
+      "less honest"
+    ],
+    "abstractPersonifiedSubject": [
+      "glamour",
+      "activity",
+      "diagnosis",
+      "specificity",
+      "engagement",
+      "visibility",
+      "content",
+      "strategy"
+    ],
+    "businessMetric": [
+      "conversion rate",
+      "return",
+      "payoff",
+      "signal",
+      "yield"
+    ],
+    "businessDomain": [
+      "technical audits",
+      "content strategy",
+      "search",
+      "seo",
+      "ai search",
+      "consulting",
+      "marketing"
+    ]
   },
   "rejectIf": [
     "sentence names a concrete metric, date, source, citation, title, quote, or named person",
