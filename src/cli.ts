@@ -1,14 +1,19 @@
 #!/usr/bin/env node
 
+import { cp, rm, stat } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { cli } from "textlint/lib/src/cli.js";
+
+type SkillTarget = "claude" | "codex";
 
 const FORMAT_FLAGS = new Set(["--format", "-f"]);
 const HELP_FLAGS = new Set(["--help", "-h"]);
 const STDIN_FLAGS = new Set(["--stdin"]);
 const VERSION_FLAGS = new Set(["--version", "-v"]);
 const CONFIG_FLAGS = new Set(["--config", "-c"]);
+const FORCE_FLAGS = new Set(["--force"]);
+const INSTALL_SKILL_COMMAND = "install-skill";
 const VALUE_OPTIONS = new Set([
   "--cache-location",
   "--config",
@@ -23,18 +28,28 @@ const VALUE_OPTIONS = new Set([
   "-c",
   "-o"
 ]);
-const VERSION = "0.2.5";
-const HELP_TEXT = `Slopless checks Markdown prose for deterministic AI and human slop signals.
+const VERSION = "0.2.7";
+const HELP_TEXT = `Slopless checks English Markdown prose for deterministic AI and human slop signals.
 
 It reports concrete patterns that make writing padded, vague, generic,
-formulaic, or mechanically careless. Output is always textlint JSON.
+formulaic, or mechanically careless. It is English-only. Output is always
+textlint JSON.
 
 Install:
   npm install -D slopless
 
 Run:
   npx slopless "docs/**/*.md"
-  npx slopless draft.md > slopless.json
+  npx slopless draft.md > .slopless/findings/2026-05-18-150000--draft.json
+
+Agent run:
+  npx slopless --help
+  mkdir -p .slopless/findings
+  npx slopless "docs/**/*.md" > ".slopless/findings/$(date +%Y-%m-%d-%H%M%S)--review.json"
+
+Agent skill install:
+  npx slopless install-skill codex
+  npx slopless install-skill claude
 
 Package script:
   {
@@ -45,6 +60,7 @@ Package script:
 
 Default behavior:
   - A file path, glob, or stdin input is required.
+  - Slopless is English-only.
   - Output is always JSON.
   - Exit 0 means no findings.
   - Exit 1 means Slopless found prose issues.
@@ -65,8 +81,13 @@ What it is not for:
 
 Useful forms:
   npx slopless --stdin --stdin-filename draft.md
-  npx slopless "docs/**/*.md" > slopless.json
+  npx slopless "docs/**/*.md" > .slopless/findings/review.json
   npx slopless "docs/**/*.md" --quiet
+
+Agent storage convention:
+  Agents should save raw JSON findings inside .slopless/findings/ in the
+  current working directory. Slopless does not choose filenames, slugs, or
+  timestamps for redirected output.
 
 Ignore one rule:
   <!-- textlint-disable slopless/semantic-thinness -->
@@ -78,6 +99,28 @@ Ignore one rule:
 Unsupported:
   --format and -f are rejected. JSON is the only output format.
 `;
+
+function skillDestination(target: SkillTarget): string {
+  switch (target) {
+    case "claude":
+      return ".claude/skills/slopless";
+    case "codex":
+      return ".agents/skills/slopless";
+  }
+}
+
+function isSkillTarget(value: string | undefined): value is SkillTarget {
+  return value === "claude" || value === "codex";
+}
+
+async function pathExists(path: string): Promise<boolean> {
+  try {
+    await stat(path);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function hasFormatOverride(args: readonly string[]): boolean {
   return args.some(
@@ -127,6 +170,37 @@ function packageNodeModules(): string {
   return resolve(packageRoot(), "..");
 }
 
+async function installSkill(
+  target: SkillTarget,
+  force: boolean
+): Promise<number> {
+  const source = resolve(packageRoot(), "skills", "slopless");
+  const destination = resolve(process.cwd(), skillDestination(target));
+
+  if ((await pathExists(destination)) && !force) {
+    process.stderr.write(
+      `Slopless skill already exists at ${skillDestination(target)}. Re-run with --force to replace it.\n`
+    );
+    return 2;
+  }
+
+  if (force) {
+    await rm(destination, { force: true, recursive: true });
+  }
+
+  await cp(source, destination, { recursive: true });
+  process.stdout.write(
+    [
+      `Installed Slopless skill for ${target}:`,
+      `${skillDestination(target)}/SKILL.md`,
+      "",
+      `Start a new ${target === "codex" ? "Codex" : "Claude Code"} session before relying on automatic skill discovery.`,
+      `If the skill is not visible, load ${skillDestination(target)}/SKILL.md as context.`
+    ].join("\n") + "\n"
+  );
+  return 0;
+}
+
 async function readStdin(): Promise<string> {
   let text = "";
   const stream = process.stdin.setEncoding("utf8") as AsyncIterable<string>;
@@ -149,6 +223,28 @@ async function main(): Promise<number> {
   if (hasFlag(userArgs, VERSION_FLAGS)) {
     process.stdout.write(`${VERSION}\n`);
     return 0;
+  }
+
+  if (userArgs[0] === INSTALL_SKILL_COMMAND) {
+    const target = userArgs[1];
+
+    if (!isSkillTarget(target)) {
+      process.stderr.write(
+        "Usage: slopless install-skill codex|claude [--force]\n"
+      );
+      return 2;
+    }
+
+    const extraArgs = userArgs.slice(2);
+
+    if (extraArgs.some((arg) => !FORCE_FLAGS.has(arg))) {
+      process.stderr.write(
+        "Usage: slopless install-skill codex|claude [--force]\n"
+      );
+      return 2;
+    }
+
+    return installSkill(target, hasFlag(extraArgs, FORCE_FLAGS));
   }
 
   if (hasFormatOverride(userArgs)) {

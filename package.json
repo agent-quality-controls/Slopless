@@ -1,6 +1,6 @@
 {
   "name": "slopless",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Deterministic textlint rules for detecting slop in prose.",
   "license": "MIT",
   "repository": {
@@ -24,11 +24,12 @@
     "lint:css": "stylelint --max-warnings 0 \"styles/**/*.css\"",
     "spellcheck": "cspell .",
     "typecov": "type-coverage --at-least 100",
-    "validate": "npm run build && npm run lint && npm run lint:css && npm run format:check && npm run spellcheck && npm run typecov && g3ts validate --path . --rules-only"
+    "validate": "npm run build && npm run lint && npm run lint:css && npm run format:check && npm run spellcheck && npm run typecov && scripts/validate-g3ts.sh"
   },
   "files": [
     "dist",
     "README.md",
+    "skills",
     "slopless.textlintrc.json"
   ],
   "bin": {
