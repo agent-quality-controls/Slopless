@@ -11,7 +11,7 @@ Raw captures and extraction reports stay in place as provenance. The list below 
 
 ## Best Next Implementation Candidates
 
-### 1. Markdown file artifacts
+### Deferred: Markdown file artifacts
 
 Source files:
 
@@ -35,11 +35,12 @@ Recommended implementation:
   - `markdown-layout:bold-heading`
 - Keep bold list lead-ins out of the first batch because they are common house style in technical docs.
 
-Why next:
+Why deferred:
 
 - It is deterministic.
 - The family already exists as an empty folder.
 - It expands Slopless beyond prose phrases into shipped Markdown defects.
+- It is not prose slop, so it is deferred while the active work stays focused on prose patterns.
 
 Required no-hit controls:
 
@@ -47,7 +48,7 @@ Required no-hit controls:
 - A valid Markdown table.
 - A heading that uses bold text inside the body but is not itself a fully bold heading.
 
-### 2. Formal transition opener density
+### 1. Formal transition opener density
 
 Source files:
 
@@ -86,7 +87,7 @@ Required no-hit controls:
 - Legal, academic, or technical prose with one formal transition.
 - A blockquote with repeated transitions.
 
-### 3. Uncited authority frames
+### 2. Uncited authority frames
 
 Source files:
 
@@ -130,7 +131,7 @@ Required no-hit controls:
 - `Studies have shown` followed by a Markdown citation link.
 - A quoted example of bad authority language.
 
-### 4. Repeated sentence starts
+### 3. Repeated sentence starts
 
 Source files:
 
@@ -245,9 +246,8 @@ Reason not first:
 
 Implement in this order:
 
-1. `markdown-layout` artifact rules
-2. `formal-transition-density`
-3. `uncited-authority`
-4. `repeated-sentence-starts`
+1. `formal-transition-density`
+2. `uncited-authority`
+3. `repeated-sentence-starts`
 
-Continue with Markdown artifact rules next.
+Keep `markdown-layout` deferred for now.
