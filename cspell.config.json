@@ -52,6 +52,7 @@
     ".plans",
     ".worklogs",
     "behavior/golden",
+    "datasets",
     "legacy",
     "dist",
     "node_modules",

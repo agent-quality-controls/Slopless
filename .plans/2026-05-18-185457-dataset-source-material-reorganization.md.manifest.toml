@@ -1,0 +1,137 @@
+plan = ".plans/2026-05-18-185457-dataset-source-material-reorganization.md"
+
+[[required_dir]]
+path = "datasets/labeled/academic-slop"
+
+[[required_dir]]
+path = "datasets/labeled/academic-nlp"
+
+[[required_dir]]
+path = "datasets/labeled/ai-slop"
+
+[[required_dir]]
+path = "datasets/labeled/plain-english"
+
+[[required_dir]]
+path = "datasets/labeled/prose-linter-lexicons"
+
+[[required_dir]]
+path = "datasets/labeled/style-guides"
+
+[[required_dir]]
+path = "datasets/labeled/writing-corpora"
+
+[[required_dir]]
+path = "legacy/source-material/reviewed/implemented"
+
+[[required_dir]]
+path = "legacy/source-material/reviewed/skipped"
+
+[[required_dir]]
+path = "legacy/source-material/reviewed/deferred"
+
+[[required_dir]]
+path = "legacy/source-material/raw-provenance"
+
+[[required_file]]
+path = "datasets/README.md"
+
+[[required_file]]
+path = "datasets/INVENTORY.md"
+
+[[required_file]]
+path = "legacy/source-material/INVENTORY.md"
+
+[[required_file]]
+path = "datasets/labeled/ai-slop/llm-excess-vocab/berenslab/excess_words.csv"
+
+[[required_file]]
+path = "datasets/labeled/ai-slop/llm-excess-vocab/detect-chatgpt/ges_selected_lemma.csv"
+
+[[required_file]]
+path = "datasets/labeled/ai-slop/llm-slop-lists/slop-forensics/slop_list.json"
+
+[[required_file]]
+path = "datasets/labeled/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/20241114_social_sciences_fingerprints.csv"
+
+[[required_file]]
+path = "datasets/labeled/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/Tortured_abbreviations.csv"
+
+[[required_file]]
+path = "datasets/labeled/academic-nlp/subjectivity/mpqa-subjectivity-lexicon.tff"
+
+[[required_file]]
+path = "datasets/labeled/academic-nlp/puffery/puffery-clean-peacockterms.txt"
+
+[[required_file]]
+path = "datasets/labeled/academic-nlp/specificity/specificity-twitter-cleaned-data-sample.tsv"
+
+[[required_file]]
+path = "datasets/labeled/academic-nlp/vagueness/vaquum-human-ratings-sample.csv"
+
+[[required_file]]
+path = "datasets/labeled/academic-nlp/mwe-idioms/magpie-sample.jsonl"
+
+[[required_file]]
+path = "datasets/labeled/plain-english/extracted/govuk-style-guide-words-to-avoid.md"
+
+[[required_file]]
+path = "datasets/labeled/prose-linter-lexicons/npm-packages/no-cliches-0.3.6/cliches.js"
+
+[[required_file]]
+path = "datasets/labeled/prose-linter-lexicons/proselint/proselint/checks/skunked_terms.py"
+
+[[required_file]]
+path = "datasets/labeled/style-guides/google/rules/vocab.txt"
+
+[[required_file]]
+path = "legacy/source-material/reviewed/implemented/incorporation-record.md"
+
+[[required_file]]
+path = "legacy/source-material/reviewed/skipped/sunstone-slop-cases.md"
+
+[[required_file]]
+path = "legacy/source-material/reviewed/deferred/remaining-candidates.md"
+
+[[forbidden_path]]
+path = "datasets/fixtures"
+
+[[forbidden_path]]
+path = "datasets/golden"
+
+[[forbidden_path]]
+path = "datasets/labeled/textlint-rules"
+
+[[forbidden_path]]
+path = "datasets/labeled/behavior"
+
+[[forbidden_path]]
+path = "legacy/source-material/llm-excess-vocab"
+
+[[forbidden_path]]
+path = "legacy/source-material/llm-slop-lists"
+
+[[forbidden_path]]
+path = "legacy/source-material/plain-english/extracted"
+
+[[inventory_contains]]
+path = "datasets/INVENTORY.md"
+values = [
+  "Fixture3 fixtures are not datasets",
+  "academic-slop",
+  "academic-nlp",
+  "ai-slop",
+  "plain-english",
+  "prose-linter-lexicons",
+  "style-guides",
+  "writing-corpora",
+]
+
+[[inventory_contains]]
+path = "legacy/source-material/INVENTORY.md"
+values = [
+  "implemented",
+  "skipped",
+  "deferred",
+  "raw-provenance",
+]

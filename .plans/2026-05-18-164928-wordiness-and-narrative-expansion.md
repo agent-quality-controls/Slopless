@@ -34,8 +34,8 @@ The end state is source-backed rule coverage, fixture cases, corpus prose, Fixtu
    - Prefer `narrative-scenes.md` for narrative cues.
 
 5. Update research bookkeeping.
-   - Add an implemented archive file under `legacy/source-material/expansion-2026-05-18/implemented/`.
-   - Update `legacy/source-material/incorporation-record.md`.
+   - Add an implemented archive file under `legacy/source-material/reviewed/implemented/`.
+   - Update `legacy/source-material/reviewed/implemented/incorporation-record.md`.
 
 6. Add deterministic verification.
    - Add `scripts/verify-wordiness-and-narrative-expansion.py`.
@@ -62,6 +62,6 @@ The end state is source-backed rule coverage, fixture cases, corpus prose, Fixtu
 - `behavior/fixtures/textlint-rules/corpus/editorial-style.preserve.json`
 - `behavior/fixtures/textlint-rules/corpus/narrative-scenes.md`
 - `behavior/fixtures/textlint-rules/corpus/narrative-scenes.preserve.json`
-- `legacy/source-material/incorporation-record.md`
-- `legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-wordiness-and-narrative-expansion.md`
+- `legacy/source-material/reviewed/implemented/incorporation-record.md`
+- `legacy/source-material/reviewed/implemented/2026-05-18-wordiness-and-narrative-expansion.md`
 - `scripts/verify-wordiness-and-narrative-expansion.py`

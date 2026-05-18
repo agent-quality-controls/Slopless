@@ -24,13 +24,13 @@ Primary source reports:
 
 Derived candidate files:
 
-- `legacy/source-material/expansion-2026-05-18/academic-nlp/derived/*.json`
-- `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/*.json`
-- `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/*.md`
-- `legacy/source-material/expansion-2026-05-18/ai-slop/derived/*.json`
-- `legacy/source-material/expansion-2026-05-18/ai-slop/derived/*.md`
-- `legacy/source-material/expansion-2026-05-18/writing-corpora/derived/*.json`
-- `legacy/source-material/expansion-2026-05-18/writing-corpora/derived/*.md`
+- `datasets/labeled/academic-nlp/derived/*.json`
+- `datasets/labeled/prose-linter-lexicons/expansion-2026-05-18/derived/*.json`
+- `datasets/labeled/prose-linter-lexicons/expansion-2026-05-18/derived/*.md`
+- `datasets/labeled/ai-slop/expansion-2026-05-18/derived/*.json`
+- `datasets/labeled/ai-slop/expansion-2026-05-18/derived/*.md`
+- `datasets/labeled/writing-corpora/expansion-2026-05-18/derived/*.json`
+- `datasets/labeled/writing-corpora/expansion-2026-05-18/derived/*.md`
 
 Current implementation references:
 
@@ -38,7 +38,7 @@ Current implementation references:
 - `src/registries/**`
 - `behavior/fixtures/textlint-rules/cases/**`
 - `behavior/fixtures/textlint-rules/corpus/**`
-- `legacy/source-material/incorporation-record.md`
+- `legacy/source-material/reviewed/implemented/incorporation-record.md`
 
 ## Output Files
 
@@ -162,7 +162,7 @@ For each candidate, compare against:
 - rule data JSON files
 - cases hits/no-hits
 - corpus fixtures
-- `legacy/source-material/incorporation-record.md`
+- `legacy/source-material/reviewed/implemented/incorporation-record.md`
 
 Mark overlap explicitly.
 

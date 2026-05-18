@@ -9,7 +9,7 @@ import stylePolicy from "g3ts-eslint-plugin-style-policy";
 
 export default [
   {
-    ignores: ["legacy/**", "dist/**", "node_modules/**"]
+    ignores: ["datasets/**", "legacy/**", "dist/**", "node_modules/**"]
   },
   {
     files: ["src/**/*.ts"],

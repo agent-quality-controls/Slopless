@@ -5,6 +5,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 scripts/verify-source-material.py
+scripts/verify-dataset-source-reorganization.py
 scripts/verify-ai-slop-gaps.py
 scripts/verify-artifact-placeholders-and-puffery.py
 scripts/verify-wordiness-and-narrative-expansion.py

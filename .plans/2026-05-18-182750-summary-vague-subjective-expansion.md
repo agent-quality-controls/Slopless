@@ -33,7 +33,7 @@ Excluded: light-verb wordiness. MAGPIE remains fixture/no-hit source material ra
 - `behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md`
 - `behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md`
 - `behavior/fixtures/textlint-rules/corpus/*.md`
-- `legacy/source-material/expansion-2026-05-18/remaining-candidates.md`
-- `legacy/source-material/incorporation-record.md`
+- `legacy/source-material/reviewed/deferred/remaining-candidates.md`
+- `legacy/source-material/reviewed/implemented/incorporation-record.md`
 - `scripts/verify-summary-vague-subjective-expansion.py`
 - `scripts/verify-all.sh`
