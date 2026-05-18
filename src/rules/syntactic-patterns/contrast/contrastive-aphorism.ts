@@ -226,6 +226,20 @@ function matchCurriculumPair(
   return undefined;
 }
 
+function matchLessMorePair(first: string, second: string): string | undefined {
+  const a = tokens(cleanSentence(first, PREFIXES));
+  const b = tokens(cleanSentence(second, PREFIXES));
+
+  if (
+    startsWithWords(a, ["it", "is", "less"]) &&
+    startsWithWords(b, ["it", "is", "more"])
+  ) {
+    return "it-is-less-it-is-more";
+  }
+
+  return undefined;
+}
+
 const rule = defineTextlintRule({
   detector: {
     detect: ({ units }) => {
@@ -253,7 +267,9 @@ const rule = defineTextlintRule({
           continue;
         }
 
-        const signal = matchCurriculumPair(current.text, next.text);
+        const signal =
+          matchCurriculumPair(current.text, next.text) ??
+          matchLessMorePair(current.text, next.text);
         if (signal !== undefined) {
           detections.push({
             evidence: signal,

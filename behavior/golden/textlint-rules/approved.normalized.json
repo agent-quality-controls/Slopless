@@ -28630,6 +28630,144 @@
         "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3293,
+        "line": 167,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 167
+          },
+          "start": {
+            "column": 1,
+            "line": 167
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {changeVerb} the {changeObject}.",
+        "range": [
+          3293,
+          3321
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3323,
+        "line": 169,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 169
+          },
+          "start": {
+            "column": 1,
+            "line": 169
+          }
+        },
+        "message": "Semantic thinness (missing-conversation-plan): Catch content and strategy plans described through missing-conversation metaphors instead of a concrete missing page, query, or decision. Matched template: the {planNoun} is missing the {abstractObject} after the {triggerNoun}.",
+        "range": [
+          3323,
+          3384
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3386,
+        "line": 171,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 171
+          },
+          "start": {
+            "column": 1,
+            "line": 171
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} fits the {abstractSituation}.",
+        "range": [
+          3386,
+          3416
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3418,
+        "line": 173,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 173
+          },
+          "start": {
+            "column": 1,
+            "line": 173
+          }
+        },
+        "message": "Semantic thinness (different-job-summary): Catch short deictic lines that label a distinction as a different job, problem, question, or conversation without naming the concrete operational difference. Matched template: {deicticSubject} {linkingVerb} a different {genericWorkNoun}.",
+        "range": [
+          3418,
+          3442
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3444,
+        "line": 175,
+        "loc": {
+          "end": {
+            "column": 38,
+            "line": 175
+          },
+          "start": {
+            "column": 1,
+            "line": 175
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {abstractSubject} still has work to do.",
+        "range": [
+          3444,
+          3481
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3483,
+        "line": 177,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 177
+          },
+          "start": {
+            "column": 1,
+            "line": 177
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {abstractSubject} now has {abstractPlural}, and the {abstractPlural} can {weakVerb}.",
+        "range": [
+          3483,
+          3538
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -43171,6 +43309,121 @@
         "ruleId": "repeated-predicate-end",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 47881,
+        "line": 1013,
+        "loc": {
+          "end": {
+            "column": 7,
+            "line": 1017
+          },
+          "start": {
+            "column": 1,
+            "line": 1013
+          }
+        },
+        "message": "Negation reframe found: \"So the audit question is not just: \"Can Google crawl this?\" It is:\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          47881,
+          47949
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48000,
+        "line": 1021,
+        "loc": {
+          "end": {
+            "column": 16,
+            "line": 1021
+          },
+          "start": {
+            "column": 1,
+            "line": 1021
+          }
+        },
+        "message": "Generic signposting found: the audit move. Replace the frame with the concrete claim.",
+        "range": [
+          48000,
+          48015
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48017,
+        "line": 1023,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 1023
+          },
+          "start": {
+            "column": 1,
+            "line": 1023
+          }
+        },
+        "message": "Generic signposting found: the lazy conclusion is. Replace the frame with the concrete claim.",
+        "range": [
+          48017,
+          48040
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48042,
+        "line": 1025,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 1025
+          },
+          "start": {
+            "column": 1,
+            "line": 1025
+          }
+        },
+        "message": "Generic signposting found: the better conclusion. Replace the frame with the concrete claim.",
+        "range": [
+          48042,
+          48064
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48066,
+        "line": 1027,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 1027
+          },
+          "start": {
+            "column": 1,
+            "line": 1027
+          }
+        },
+        "message": "Contrastive aphorism found: it-is-less-it-is-more. Replace the slogan with a concrete claim.",
+        "range": [
+          48066,
+          48097
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -44293,22 +44546,160 @@
       },
       {
         "column": 1,
-        "index": 2268,
-        "line": 75,
+        "index": 1779,
+        "line": 57,
         "loc": {
           "end": {
-            "column": 67,
-            "line": 75
+            "column": 29,
+            "line": 57
           },
           "start": {
             "column": 1,
-            "line": 75
+            "line": 57
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {changeVerb} the {changeObject}.",
+        "range": [
+          1779,
+          1807
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1809,
+        "line": 59,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 59
+          },
+          "start": {
+            "column": 1,
+            "line": 59
+          }
+        },
+        "message": "Semantic thinness (missing-conversation-plan): Catch content and strategy plans described through missing-conversation metaphors instead of a concrete missing page, query, or decision. Matched template: the {planNoun} is missing the {abstractObject} after the {triggerNoun}.",
+        "range": [
+          1809,
+          1870
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1872,
+        "line": 61,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 61
+          },
+          "start": {
+            "column": 1,
+            "line": 61
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} fits the {abstractSituation}.",
+        "range": [
+          1872,
+          1902
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1904,
+        "line": 63,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 63
+          },
+          "start": {
+            "column": 1,
+            "line": 63
+          }
+        },
+        "message": "Semantic thinness (different-job-summary): Catch short deictic lines that label a distinction as a different job, problem, question, or conversation without naming the concrete operational difference. Matched template: {deicticSubject} {linkingVerb} a different {genericWorkNoun}.",
+        "range": [
+          1904,
+          1928
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1930,
+        "line": 65,
+        "loc": {
+          "end": {
+            "column": 38,
+            "line": 65
+          },
+          "start": {
+            "column": 1,
+            "line": 65
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {abstractSubject} still has work to do.",
+        "range": [
+          1930,
+          1967
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1969,
+        "line": 67,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 67
+          },
+          "start": {
+            "column": 1,
+            "line": 67
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {abstractSubject} now has {abstractPlural}, and the {abstractPlural} can {weakVerb}.",
+        "range": [
+          1969,
+          2024
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2841,
+        "line": 99,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 99
+          },
+          "start": {
+            "column": 1,
+            "line": 99
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} means the {artifactNoun} has to contain {abstractObject} worth {abstractGerund}.",
         "range": [
-          2268,
-          2334
+          2841,
+          2907
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44316,22 +44707,22 @@
       },
       {
         "column": 1,
-        "index": 2336,
-        "line": 77,
+        "index": 2909,
+        "line": 101,
         "loc": {
           "end": {
             "column": 42,
-            "line": 77
+            "line": 101
           },
           "start": {
             "column": 1,
-            "line": 77
+            "line": 101
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
         "range": [
-          2336,
-          2377
+          2909,
+          2950
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44339,22 +44730,22 @@
       },
       {
         "column": 1,
-        "index": 2379,
-        "line": 79,
+        "index": 2952,
+        "line": 103,
         "loc": {
           "end": {
             "column": 42,
-            "line": 79
+            "line": 103
           },
           "start": {
             "column": 1,
-            "line": 79
+            "line": 103
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
         "range": [
-          2379,
-          2420
+          2952,
+          2993
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44362,22 +44753,22 @@
       },
       {
         "column": 1,
-        "index": 2379,
-        "line": 79,
+        "index": 2952,
+        "line": 103,
         "loc": {
           "end": {
             "column": 109,
-            "line": 79
+            "line": 103
           },
           "start": {
             "column": 1,
-            "line": 79
+            "line": 103
           }
         },
         "message": "Negation reframe found: \"That does not mean engagement is useless. It means the post has to contain source material worth retrieving.\". Rewrite without the not-X-then-Y construction.",
         "range": [
-          2379,
-          2487
+          2952,
+          3060
         ],
         "ruleId": "negation-reframe",
         "severity": 2,
@@ -44385,22 +44776,22 @@
       },
       {
         "column": 43,
-        "index": 2421,
-        "line": 79,
+        "index": 2994,
+        "line": 103,
         "loc": {
           "end": {
             "column": 109,
-            "line": 79
+            "line": 103
           },
           "start": {
             "column": 43,
-            "line": 79
+            "line": 103
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} means the {artifactNoun} has to contain {abstractObject} worth {abstractGerund}.",
         "range": [
-          2421,
-          2487
+          2994,
+          3060
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44408,22 +44799,22 @@
       },
       {
         "column": 1,
-        "index": 2489,
-        "line": 81,
+        "index": 3062,
+        "line": 105,
         "loc": {
           "end": {
             "column": 23,
-            "line": 85
+            "line": 109
           },
           "start": {
             "column": 1,
-            "line": 81
+            "line": 105
           }
         },
         "message": "Negation reframe found: \"So the audit question is not: \"How many warnings do we have?\" The audit question is:\". Rewrite without the not-X-then-Y construction.",
         "range": [
-          2489,
-          2575
+          3062,
+          3148
         ],
         "ruleId": "negation-reframe",
         "severity": 2,
@@ -44431,22 +44822,22 @@
       },
       {
         "column": 1,
-        "index": 2868,
-        "line": 95,
+        "index": 3441,
+        "line": 119,
         "loc": {
           "end": {
             "column": 18,
-            "line": 95
+            "line": 119
           },
           "start": {
             "column": 1,
-            "line": 95
+            "line": 119
           }
         },
         "message": "Generic signposting found: what-helped-more. Replace the frame with the concrete claim.",
         "range": [
-          2868,
-          2885
+          3441,
+          3458
         ],
         "ruleId": "generic-signposting",
         "severity": 2,
@@ -44454,22 +44845,22 @@
       },
       {
         "column": 14,
-        "index": 2968,
-        "line": 99,
+        "index": 3541,
+        "line": 123,
         "loc": {
           "end": {
             "column": 69,
-            "line": 99
+            "line": 123
           },
           "start": {
             "column": 14,
-            "line": 99
+            "line": 123
           }
         },
         "message": "Repeated sentence endings: 3 nearby sentences end with the same weak predicate (can help).",
         "range": [
-          2968,
-          3023
+          3541,
+          3596
         ],
         "ruleId": "repeated-predicate-end",
         "severity": 2,
@@ -44477,22 +44868,137 @@
       },
       {
         "column": 1,
-        "index": 3218,
-        "line": 107,
+        "index": 3618,
+        "line": 125,
         "loc": {
           "end": {
-            "column": 98,
-            "line": 107
+            "column": 7,
+            "line": 129
           },
           "start": {
             "column": 1,
-            "line": 107
+            "line": 125
+          }
+        },
+        "message": "Negation reframe found: \"So the audit question is not just: \"Can Google crawl this?\" It is:\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          3618,
+          3686
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3737,
+        "line": 133,
+        "loc": {
+          "end": {
+            "column": 16,
+            "line": 133
+          },
+          "start": {
+            "column": 1,
+            "line": 133
+          }
+        },
+        "message": "Generic signposting found: the audit move. Replace the frame with the concrete claim.",
+        "range": [
+          3737,
+          3752
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3754,
+        "line": 135,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 135
+          },
+          "start": {
+            "column": 1,
+            "line": 135
+          }
+        },
+        "message": "Generic signposting found: the lazy conclusion is. Replace the frame with the concrete claim.",
+        "range": [
+          3754,
+          3777
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3779,
+        "line": 137,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 137
+          },
+          "start": {
+            "column": 1,
+            "line": 137
+          }
+        },
+        "message": "Generic signposting found: the better conclusion. Replace the frame with the concrete claim.",
+        "range": [
+          3779,
+          3801
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3803,
+        "line": 139,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 139
+          },
+          "start": {
+            "column": 1,
+            "line": 139
+          }
+        },
+        "message": "Contrastive aphorism found: it-is-less-it-is-more. Replace the slogan with a concrete claim.",
+        "range": [
+          3803,
+          3834
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4174,
+        "line": 151,
+        "loc": {
+          "end": {
+            "column": 98,
+            "line": 151
+          },
+          "start": {
+            "column": 1,
+            "line": 151
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {linkingVerb} the kind of {summaryNoun}.",
         "range": [
-          3218,
-          3315
+          4174,
+          4271
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44500,22 +45006,22 @@
       },
       {
         "column": 1,
-        "index": 3317,
-        "line": 109,
+        "index": 4273,
+        "line": 153,
         "loc": {
           "end": {
             "column": 34,
-            "line": 109
+            "line": 153
           },
           "start": {
             "column": 1,
-            "line": 109
+            "line": 153
           }
         },
         "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
         "range": [
-          3317,
-          3350
+          4273,
+          4306
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44523,22 +45029,22 @@
       },
       {
         "column": 1,
-        "index": 3352,
-        "line": 111,
+        "index": 4308,
+        "line": 155,
         "loc": {
           "end": {
             "column": 56,
-            "line": 111
+            "line": 155
           },
           "start": {
             "column": 1,
-            "line": 111
+            "line": 155
           }
         },
         "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: {abstractPersonifiedSubject} has a poor {businessMetric} in {businessDomain}.",
         "range": [
-          3352,
-          3407
+          4308,
+          4363
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,

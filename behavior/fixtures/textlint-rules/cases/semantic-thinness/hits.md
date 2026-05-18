@@ -163,3 +163,15 @@ The practical plan is boring: remove the redirect chain.
 This check is boring, fast, and easy to prove in less than five minutes.
 
 All of that gets expensive when nobody knows which problem they are solving.
+
+That changes the page brief.
+
+The content plan is missing the conversation after the query.
+
+That fits the world we are in.
+
+That is a different job.
+
+Structured data still has work to do.
+
+Visibility now has layers, and the layers can disagree.

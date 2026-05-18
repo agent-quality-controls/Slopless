@@ -1009,3 +1009,19 @@ The audit question is:
 "Which warnings affect pages that should create demand?"
 
 More content can help. Technical fixes can help. Consulting can help. Agencies can help.
+
+So the audit question is not just:
+
+"Can Google crawl this?"
+
+It is:
+
+"Why would Google need this page in the index?"
+
+The audit move:
+
+The lazy conclusion is:
+
+The better conclusion:
+
+It is less screenshot-friendly. It is more useful for search systems.

@@ -323,6 +323,160 @@
       "bucket": "hits",
       "source": "cases/semantic-thinness/hits.md",
       "line": 163
+    },
+    {
+      "text": "That changes the page brief.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 167
+    },
+    {
+      "text": "The content plan is missing the conversation after the query.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 169
+    },
+    {
+      "text": "That fits the world we are in.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 171
+    },
+    {
+      "text": "That is a different job.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 173
+    },
+    {
+      "text": "Structured data still has work to do.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 175
+    },
+    {
+      "text": "Visibility now has layers, and the layers can disagree.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 177
+    },
+    {
+      "text": "That maps cleanly to SEO pages.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 131
+    },
+    {
+      "text": "The content plan is missing the pricing page after the CRM query.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 133
+    },
+    {
+      "text": "That fits the 2026 crawl data from Toronto.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 135
+    },
+    {
+      "text": "That is a different job ID in the queue.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 137
+    },
+    {
+      "text": "Structured data still has validation errors in Search Console.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 139
+    },
+    {
+      "text": "Visibility now has three dashboard layers because Finance requested them.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 141
+    },
+    {
+      "text": "So the audit question is not just:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1013
+    },
+    {
+      "text": "\"Can Google crawl this?\"",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1015
+    },
+    {
+      "text": "It is:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1017
+    },
+    {
+      "text": "\"Why would Google need this page in the index?\"",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1019
+    },
+    {
+      "text": "The audit move:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1021
+    },
+    {
+      "text": "The lazy conclusion is:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1023
+    },
+    {
+      "text": "The better conclusion:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1025
+    },
+    {
+      "text": "It is less screenshot-friendly. It is more useful for search systems.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1027
+    },
+    {
+      "text": "The issue is not just ready for crawlers because Google indexed it yesterday.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 157
+    },
+    {
+      "text": "It is less than five minutes from the station.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 159
     }
   ]
 }

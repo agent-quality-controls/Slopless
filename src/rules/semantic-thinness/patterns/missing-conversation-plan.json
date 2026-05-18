@@ -1,0 +1,44 @@
+{
+  "id": "missing-conversation-plan",
+  "class": "abstract-plan-metaphor",
+  "purpose": "Catch content and strategy plans described through missing-conversation metaphors instead of a concrete missing page, query, or decision.",
+  "matchMode": "contains",
+  "maxTokens": 28,
+  "templates": [
+    "the {planNoun} is missing the {abstractObject} after the {triggerNoun}.",
+    "the {planNoun} is missing the {abstractObject} beyond the {triggerNoun}.",
+    "the {planNoun} lacks the {abstractObject} after the {triggerNoun}."
+  ],
+  "slots": {
+    "planNoun": [
+      "content plan",
+      "page plan",
+      "keyword plan",
+      "seo plan",
+      "strategy"
+    ],
+    "abstractObject": [
+      "conversation",
+      "conversation path",
+      "journey",
+      "next step",
+      "follow-up path"
+    ],
+    "triggerNoun": ["query", "search", "click", "first question"]
+  },
+  "rejectIf": [
+    "sentence names a concrete missing page, link, or query",
+    "sentence describes a literal conversation transcript"
+  ],
+  "positiveExamples": [
+    "The content plan is missing the conversation after the query.",
+    "The page plan lacks the follow-up path after the search."
+  ],
+  "negativeExamples": [
+    "The content plan is missing the pricing page after the CRM query.",
+    "The transcript is missing the conversation after the moderator left."
+  ],
+  "notes": [
+    "This targets metaphorical planning language, not literal missing assets."
+  ]
+}

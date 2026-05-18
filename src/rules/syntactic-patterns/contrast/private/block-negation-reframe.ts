@@ -20,6 +20,7 @@ type TextBlock = {
 
 const LEADING_BLOCK_PIVOTS = new Set(["and", "but", "so"]);
 const MAX_BLOCK_REFRAME_LOOKAHEAD = 4;
+const OPTIONAL_NOT_FOLLOWERS = new Set(["just", "only", "merely"]);
 
 function firstNonWhitespaceIndex(text: string): number | undefined {
   for (let index = 0; index < text.length; index += 1) {
@@ -113,7 +114,9 @@ function colonNegatedSubject(tokens: readonly Token[]): readonly string[] {
     if (
       auxiliary !== undefined &&
       tokenWords[index + 1] === "not" &&
-      index + 2 === tokenWords.length &&
+      (index + 2 === tokenWords.length ||
+        (OPTIONAL_NOT_FOLLOWERS.has(tokenWords[index + 2] ?? "") &&
+          index + 3 === tokenWords.length)) &&
       validSubject(subject)
     ) {
       return subject;
@@ -134,6 +137,19 @@ function sameSubjectAffirmativeBlock(
     startsWithWords(blockTokens, subject) &&
     COPULAR_FORMS.get(tokenWords[subject.length] ?? "") !== undefined &&
     tokenWords[subject.length + 1] === undefined
+  );
+}
+
+function pronounAffirmativeBlock(tokens: readonly Token[]): boolean {
+  const blockTokens = stripLeadingBlockPivot(tokens);
+  const tokenWords = words(blockTokens);
+
+  return (
+    (startsWithWords(blockTokens, ["it"]) ||
+      startsWithWords(blockTokens, ["this"]) ||
+      startsWithWords(blockTokens, ["that"])) &&
+    COPULAR_FORMS.get(tokenWords[1] ?? "") !== undefined &&
+    tokenWords[2] === undefined
   );
 }
 
@@ -158,7 +174,11 @@ function blockPairReframe(
       continue;
     }
 
-    if (sameSubjectAffirmativeBlock(wordTokens(candidate.text), subject)) {
+    const candidateTokens = wordTokens(candidate.text);
+    if (
+      sameSubjectAffirmativeBlock(candidateTokens, subject) ||
+      pronounAffirmativeBlock(candidateTokens)
+    ) {
       return {
         end: candidate.end,
         start: current.start,

@@ -24,6 +24,7 @@ const CONSULTATION_PATTERNS = [
 ];
 const NOTE_PATTERNS = ["please note that", "please note"];
 const QUESTION_PATTERNS = [
+  "the audit move",
   "the useful question is",
   "the useful move is",
   "the practical move is",
@@ -31,6 +32,8 @@ const QUESTION_PATTERNS = [
   "the better question is"
 ];
 const ANSWER_PATTERNS = [
+  "the lazy conclusion is",
+  "the better conclusion",
   "the answer is simple",
   "the answer is straightforward",
   "the practical answer is",

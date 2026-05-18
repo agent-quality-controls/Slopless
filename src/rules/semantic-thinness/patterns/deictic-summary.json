@@ -17,6 +17,8 @@
     "{deicticSubject} means the {artifactNoun} has to contain {abstractObject} worth {abstractGerund}.",
     "{deicticSubject} {linkingVerb} the kind of {summaryNoun}.",
     "{deicticSubject} {linkingVerb} the type of {summaryNoun}.",
+    "{deicticSubject} fits the {abstractSituation}.",
+    "{deicticSubject} {changeVerb} the {changeObject}.",
     "{deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.",
     "{deicticSubject} {linkingVerb} how {abstractSubject} {abstractVerb}."
   ],
@@ -66,13 +68,25 @@
       "issue",
       "signal"
     ],
-    "summaryVerb": [
-      "changes",
-      "changed",
-      "shifts",
-      "shifted",
-      "maps to",
-      "maps cleanly to"
+    "summaryVerb": ["changes", "changed", "shifts", "shifted"],
+    "changeVerb": ["changes", "changed", "reshapes", "reframes"],
+    "changeObject": [
+      "brief",
+      "page brief",
+      "report",
+      "plan",
+      "strategy",
+      "conversation",
+      "decision"
+    ],
+    "abstractSituation": [
+      "world",
+      "world we are in",
+      "moment",
+      "reality",
+      "new reality",
+      "search reality",
+      "context"
     ],
     "meaningVerb": ["means", "meant", "does not mean", "doesn't mean"],
     "weakJudgment": [

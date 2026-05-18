@@ -127,3 +127,15 @@ The smoke detector check is boring but required.
 The migration got expensive when the API vendor raised the monthly bill.
 
 All of that cost 14 hours because the crawler retried broken URLs.
+
+That maps cleanly to SEO pages.
+
+The content plan is missing the pricing page after the CRM query.
+
+That fits the 2026 crawl data from Toronto.
+
+That is a different job ID in the queue.
+
+Structured data still has validation errors in Search Console.
+
+Visibility now has three dashboard layers because Finance requested them.
