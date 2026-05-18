@@ -65,6 +65,7 @@ const BROAD_PATTERN_IDS = new Set([
   "puffery-evaluative-claim",
   "vague-threshold-change"
 ]);
+const CONNECTOR_ALLOWED_PATTERN_IDS = new Set(["vague-summary-cost"]);
 function normalizedTokens(text: string): readonly string[] {
   return wordTokens(text).map((token) => token.normalized);
 }
@@ -165,7 +166,8 @@ function shouldRejectForPattern(
   }
 
   return (
-    tokens.some((token) => REJECT_TOKENS.has(token.normalized)) ||
+    (!CONNECTOR_ALLOWED_PATTERN_IDS.has(pattern.id) &&
+      tokens.some((token) => REJECT_TOKENS.has(token.normalized))) ||
     (BROAD_PATTERN_IDS.has(pattern.id) && hasConcreteExplanation(tokens))
   );
 }

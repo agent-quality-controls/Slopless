@@ -232,6 +232,97 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 149
+    },
+    {
+      "text": "The smoke detector check is boring but required.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 125
+    },
+    {
+      "text": "So the audit question is not:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1003
+    },
+    {
+      "text": "\"How many warnings do we have?\"",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1005
+    },
+    {
+      "text": "The audit question is:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1007
+    },
+    {
+      "text": "\"Which warnings affect pages that should create demand?\"",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1009
+    },
+    {
+      "text": "More content can help. Technical fixes can help. Consulting can help. Agencies can help.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1011
+    },
+    {
+      "text": "More content can help. Technical fixes can reduce hydration errors.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 155
+    },
+    {
+      "text": "All of that gets expensive when nobody knows which problem they are solving.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 165
+    },
+    {
+      "text": "The migration got expensive when the API vendor raised the monthly bill.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 127
+    },
+    {
+      "text": "All of that cost 14 hours because the crawler retried broken URLs.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 129
+    },
+    {
+      "text": "The issue is not reproducible because the test passes locally.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 151
+    },
+    {
+      "text": "The rule requires escaping user input.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 153
+    },
+    {
+      "text": "This check is boring, fast, and easy to prove in less than five minutes.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 163
     }
   ]
 }

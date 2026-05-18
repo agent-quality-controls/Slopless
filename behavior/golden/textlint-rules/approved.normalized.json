@@ -28584,6 +28584,52 @@
         "ruleId": "colon-dramatic",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3141,
+        "line": 163,
+        "loc": {
+          "end": {
+            "column": 73,
+            "line": 163
+          },
+          "start": {
+            "column": 1,
+            "line": 163
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: this {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          3141,
+          3213
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3215,
+        "line": 165,
+        "loc": {
+          "end": {
+            "column": 77,
+            "line": 165
+          },
+          "start": {
+            "column": 1,
+            "line": 165
+          }
+        },
+        "message": "Semantic thinness (vague-summary-cost): Catch vague all-of-that cost claims that summarize several actions as expensive or wasteful without naming the concrete waste. Matched template: {summarySubject} gets {costAdjective} when {ignoranceSubject} {knowledgeVerb} which {problemNoun} they are {workVerb}.",
+        "range": [
+          3215,
+          3291
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -43079,6 +43125,52 @@
         "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 47645,
+        "line": 1003,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 1007
+          },
+          "start": {
+            "column": 1,
+            "line": 1003
+          }
+        },
+        "message": "Negation reframe found: \"So the audit question is not: \"How many warnings do we have?\" The audit question is:\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          47645,
+          47731
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 14,
+        "index": 47804,
+        "line": 1011,
+        "loc": {
+          "end": {
+            "column": 69,
+            "line": 1011
+          },
+          "start": {
+            "column": 14,
+            "line": 1011
+          }
+        },
+        "message": "Repeated sentence endings: 3 nearby sentences end with the same weak predicate (can help).",
+        "range": [
+          47804,
+          47859
+        ],
+        "ruleId": "repeated-predicate-end",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -44155,22 +44247,68 @@
       },
       {
         "column": 1,
-        "index": 1924,
-        "line": 65,
+        "index": 1627,
+        "line": 53,
         "loc": {
           "end": {
-            "column": 67,
-            "line": 65
+            "column": 73,
+            "line": 53
           },
           "start": {
             "column": 1,
-            "line": 65
+            "line": 53
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: this {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          1627,
+          1699
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1701,
+        "line": 55,
+        "loc": {
+          "end": {
+            "column": 77,
+            "line": 55
+          },
+          "start": {
+            "column": 1,
+            "line": 55
+          }
+        },
+        "message": "Semantic thinness (vague-summary-cost): Catch vague all-of-that cost claims that summarize several actions as expensive or wasteful without naming the concrete waste. Matched template: {summarySubject} gets {costAdjective} when {ignoranceSubject} {knowledgeVerb} which {problemNoun} they are {workVerb}.",
+        "range": [
+          1701,
+          1777
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2268,
+        "line": 75,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 75
+          },
+          "start": {
+            "column": 1,
+            "line": 75
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} means the {artifactNoun} has to contain {abstractObject} worth {abstractGerund}.",
         "range": [
-          1924,
-          1990
+          2268,
+          2334
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44178,22 +44316,22 @@
       },
       {
         "column": 1,
-        "index": 1992,
-        "line": 67,
+        "index": 2336,
+        "line": 77,
         "loc": {
           "end": {
             "column": 42,
-            "line": 67
+            "line": 77
           },
           "start": {
             "column": 1,
-            "line": 67
+            "line": 77
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
         "range": [
-          1992,
-          2033
+          2336,
+          2377
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44201,22 +44339,22 @@
       },
       {
         "column": 1,
-        "index": 2035,
-        "line": 69,
+        "index": 2379,
+        "line": 79,
         "loc": {
           "end": {
             "column": 42,
-            "line": 69
+            "line": 79
           },
           "start": {
             "column": 1,
-            "line": 69
+            "line": 79
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
         "range": [
-          2035,
-          2076
+          2379,
+          2420
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44224,22 +44362,22 @@
       },
       {
         "column": 1,
-        "index": 2035,
-        "line": 69,
+        "index": 2379,
+        "line": 79,
         "loc": {
           "end": {
             "column": 109,
-            "line": 69
+            "line": 79
           },
           "start": {
             "column": 1,
-            "line": 69
+            "line": 79
           }
         },
         "message": "Negation reframe found: \"That does not mean engagement is useless. It means the post has to contain source material worth retrieving.\". Rewrite without the not-X-then-Y construction.",
         "range": [
-          2035,
-          2143
+          2379,
+          2487
         ],
         "ruleId": "negation-reframe",
         "severity": 2,
@@ -44247,22 +44385,22 @@
       },
       {
         "column": 43,
-        "index": 2077,
-        "line": 69,
+        "index": 2421,
+        "line": 79,
         "loc": {
           "end": {
             "column": 109,
-            "line": 69
+            "line": 79
           },
           "start": {
             "column": 43,
-            "line": 69
+            "line": 79
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} means the {artifactNoun} has to contain {abstractObject} worth {abstractGerund}.",
         "range": [
-          2077,
-          2143
+          2421,
+          2487
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44270,45 +44408,91 @@
       },
       {
         "column": 1,
-        "index": 2378,
-        "line": 77,
+        "index": 2489,
+        "line": 81,
         "loc": {
           "end": {
-            "column": 18,
-            "line": 77
+            "column": 23,
+            "line": 85
           },
           "start": {
             "column": 1,
-            "line": 77
+            "line": 81
+          }
+        },
+        "message": "Negation reframe found: \"So the audit question is not: \"How many warnings do we have?\" The audit question is:\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          2489,
+          2575
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2868,
+        "line": 95,
+        "loc": {
+          "end": {
+            "column": 18,
+            "line": 95
+          },
+          "start": {
+            "column": 1,
+            "line": 95
           }
         },
         "message": "Generic signposting found: what-helped-more. Replace the frame with the concrete claim.",
         "range": [
-          2378,
-          2395
+          2868,
+          2885
         ],
         "ruleId": "generic-signposting",
         "severity": 2,
         "type": "lint"
       },
       {
+        "column": 14,
+        "index": 2968,
+        "line": 99,
+        "loc": {
+          "end": {
+            "column": 69,
+            "line": 99
+          },
+          "start": {
+            "column": 14,
+            "line": 99
+          }
+        },
+        "message": "Repeated sentence endings: 3 nearby sentences end with the same weak predicate (can help).",
+        "range": [
+          2968,
+          3023
+        ],
+        "ruleId": "repeated-predicate-end",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
-        "index": 2465,
-        "line": 81,
+        "index": 3218,
+        "line": 107,
         "loc": {
           "end": {
             "column": 98,
-            "line": 81
+            "line": 107
           },
           "start": {
             "column": 1,
-            "line": 81
+            "line": 107
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {linkingVerb} the kind of {summaryNoun}.",
         "range": [
-          2465,
-          2562
+          3218,
+          3315
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44316,22 +44500,22 @@
       },
       {
         "column": 1,
-        "index": 2564,
-        "line": 83,
+        "index": 3317,
+        "line": 109,
         "loc": {
           "end": {
             "column": 34,
-            "line": 83
+            "line": 109
           },
           "start": {
             "column": 1,
-            "line": 83
+            "line": 109
           }
         },
         "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
         "range": [
-          2564,
-          2597
+          3317,
+          3350
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44339,22 +44523,22 @@
       },
       {
         "column": 1,
-        "index": 2599,
-        "line": 85,
+        "index": 3352,
+        "line": 111,
         "loc": {
           "end": {
             "column": 56,
-            "line": 85
+            "line": 111
           },
           "start": {
             "column": 1,
-            "line": 85
+            "line": 111
           }
         },
         "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: {abstractPersonifiedSubject} has a poor {businessMetric} in {businessDomain}.",
         "range": [
-          2599,
-          2654
+          3352,
+          3407
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,

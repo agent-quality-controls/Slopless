@@ -1,0 +1,34 @@
+{
+  "id": "vague-summary-cost",
+  "class": "vague-summary-cost",
+  "purpose": "Catch vague all-of-that cost claims that summarize several actions as expensive or wasteful without naming the concrete waste.",
+  "matchMode": "contains",
+  "maxTokens": 28,
+  "templates": [
+    "{summarySubject} gets {costAdjective} when {ignoranceSubject} {knowledgeVerb} which {problemNoun} they are {workVerb}.",
+    "{summarySubject} gets {costAdjective} when {ignoranceSubject} {knowledgeVerb} what {problemNoun} they are {workVerb}."
+  ],
+  "slots": {
+    "summarySubject": ["all of that", "all this", "all that"],
+    "costAdjective": ["expensive", "costly", "wasteful", "slow"],
+    "ignoranceSubject": ["nobody", "no one"],
+    "knowledgeVerb": ["knows", "understands"],
+    "problemNoun": ["problem", "issue", "question"],
+    "workVerb": ["solving", "answering", "fixing"]
+  },
+  "rejectIf": [
+    "sentence names the concrete cost, budget, invoice, time loss, or team affected",
+    "summary subject points to a specific preceding line item rather than a vague pile of activity"
+  ],
+  "positiveExamples": [
+    "All of that gets expensive when nobody knows which problem they are solving.",
+    "All this gets wasteful when no one knows what question they are answering."
+  ],
+  "negativeExamples": [
+    "The migration got expensive when the API vendor raised the monthly bill.",
+    "All of that cost 14 hours because the crawler retried broken URLs."
+  ],
+  "notes": [
+    "This pattern intentionally allows a when-clause because the slop frame is the vague summary subject plus abstract ignorance claim."
+  ]
+}

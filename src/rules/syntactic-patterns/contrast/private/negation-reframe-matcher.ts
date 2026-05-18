@@ -361,7 +361,9 @@ function sentencePairReframe(
   return undefined;
 }
 
-export function findNegationReframes(text: string): NegationReframeMatch[] {
+export function findSentenceNegationReframes(
+  text: string
+): NegationReframeMatch[] {
   const sentences = splitSentences(text);
   const matches: NegationReframeMatch[] = [];
 

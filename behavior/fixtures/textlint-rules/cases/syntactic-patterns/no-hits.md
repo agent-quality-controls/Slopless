@@ -147,3 +147,9 @@ Several important factors, including late customs paperwork and a missing invoic
 What helped more than the first patch was replacing the cache key.
 
 That does not mean engagement is useless because the cohort report measured renewal separately.
+
+The issue is not reproducible because the test passes locally.
+
+The rule requires escaping user input.
+
+More content can help. Technical fixes can reduce hydration errors.

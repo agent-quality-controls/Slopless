@@ -999,3 +999,13 @@ Various areas created meaningful impact across the organization.
 What helped more:
 
 That does not mean engagement is useless. It means the post has to contain source material worth retrieving.
+
+So the audit question is not:
+
+"How many warnings do we have?"
+
+The audit question is:
+
+"Which warnings affect pages that should create demand?"
+
+More content can help. Technical fixes can help. Consulting can help. Agencies can help.

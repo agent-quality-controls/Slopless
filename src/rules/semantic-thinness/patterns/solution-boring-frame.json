@@ -7,7 +7,10 @@
   "templates": [
     "the {solutionNoun} {linkingVerb} boring.",
     "the {solutionNoun} {linkingVerb} boring:",
+    "this {solutionNoun} {linkingVerb} boring.",
+    "this {solutionNoun} {linkingVerb} boring:",
     "the {solutionQualifier} {solutionNoun} {linkingVerb} boring.",
+    "this {solutionQualifier} {solutionNoun} {linkingVerb} boring.",
     "the {solutionQualifier} {solutionNoun} {linkingVerb} boring:"
   ],
   "slots": {
@@ -26,6 +29,7 @@
     "solutionNoun": [
       "answer",
       "approach",
+      "check",
       "choice",
       "fix",
       "method",
@@ -47,6 +51,8 @@
   "positiveExamples": [
     "The solution is boring.",
     "The solution is boring: move copy into raw HTML.",
+    "This check is boring, fast, and easy to prove in five minutes.",
+    "This check is boring, fast, and easy to prove in less than five minutes.",
     "The right solution is boring.",
     "The correct answer is boring.",
     "The practical plan is boring: remove the redirect chain."
@@ -55,7 +61,8 @@
     "The movie is boring.",
     "The party is boring.",
     "The audit is boring.",
-    "The report is boring."
+    "The report is boring.",
+    "The smoke detector check is boring but required."
   ],
   "notes": [
     "This intentionally excludes audit and report because those are process or document nouns, not solution-like nouns.",

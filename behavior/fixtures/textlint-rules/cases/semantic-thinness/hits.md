@@ -159,3 +159,7 @@ The strategy is boring: write the acceptance check first.
 The right solution is boring.
 
 The practical plan is boring: remove the redirect chain.
+
+This check is boring, fast, and easy to prove in less than five minutes.
+
+All of that gets expensive when nobody knows which problem they are solving.

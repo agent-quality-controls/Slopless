@@ -121,3 +121,9 @@ The party is boring.
 The audit is boring.
 
 The report is boring.
+
+The smoke detector check is boring but required.
+
+The migration got expensive when the API vendor raised the monthly bill.
+
+All of that cost 14 hours because the crawler retried broken URLs.

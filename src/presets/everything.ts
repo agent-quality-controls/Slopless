@@ -42,6 +42,7 @@ export const everything = {
     "prohibited-words": true,
     "recommended-terms": true,
     redundancy: true,
+    "repeated-predicate-end": true,
     "repeated-sentence-starts": true,
     "response-wrapper": true,
     "required-terms": true,
