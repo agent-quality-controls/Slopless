@@ -3,7 +3,14 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { sectionFirstSentences } from "../../../shared/text/sections.js";
 import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
-const OPENERS = ["the interesting part is", "in the world of"];
+const OPENERS = [
+  "the interesting part is",
+  "in the ever-evolving landscape",
+  "in the realm of",
+  "in the world of",
+  "in today's digital age",
+  "in today's fast-paced world"
+];
 
 const rule: TextlintRuleModule = (context) => {
   const { Syntax } = context;

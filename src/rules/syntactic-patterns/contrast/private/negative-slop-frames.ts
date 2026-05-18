@@ -147,11 +147,62 @@ function negativeActionReplacement(
   );
 }
 
+function notBecauseReframe(
+  aTokens: readonly Token[],
+  bTokens: readonly Token[]
+): boolean {
+  return (
+    startsWithWords(aTokens, ["not", "because"]) &&
+    startsWithWords(bTokens, ["because"])
+  );
+}
+
+function hasTrailingProblemFrame(tokens: readonly string[]): boolean {
+  return (
+    tokens.at(-3) === "not" &&
+    tokens.at(-2) === "the" &&
+    tokens.at(-1) === "problem"
+  );
+}
+
+function hasLeadingProblemFrame(tokens: readonly string[]): boolean {
+  return (
+    tokens[0] === "the" &&
+    tokens[1] === "problem" &&
+    tokens[2] === "is" &&
+    tokens[3] === "not"
+  );
+}
+
+function endsWithCopularPredicate(tokens: readonly string[]): boolean {
+  const last = tokens.at(-1);
+  return last === "is" || last === "was" || last === "are" || last === "were";
+}
+
+function notProblemReframe(
+  aTokens: readonly Token[],
+  bTokens: readonly Token[]
+): boolean {
+  const aWords = words(aTokens);
+  const bWords = words(bTokens);
+
+  return (
+    (hasTrailingProblemFrame(aWords) || hasLeadingProblemFrame(aWords)) &&
+    bWords.length <= 8 &&
+    endsWithCopularPredicate(bWords)
+  );
+}
+
 export function hasNegativeSlopPairSignal(tokens: readonly Token[]): boolean {
   const tokenWords = words(tokens);
 
-  return tokenWords.some(
-    (token, index) => token === "no" && tokenWords[index + 1] === "longer"
+  return (
+    tokenWords.some(
+      (token, index) => token === "no" && tokenWords[index + 1] === "longer"
+    ) ||
+    startsWithWords(tokens, ["not", "because"]) ||
+    hasTrailingProblemFrame(tokenWords) ||
+    hasLeadingProblemFrame(tokenWords)
   );
 }
 
@@ -162,6 +213,8 @@ export function negativeSlopReframe(
   return (
     noLongerCopularReframe(aTokens, bTokens) ||
     fragmentDefinitionReframe(aTokens, bTokens) ||
-    negativeActionReplacement(aTokens, bTokens)
+    negativeActionReplacement(aTokens, bTokens) ||
+    notBecauseReframe(aTokens, bTokens) ||
+    notProblemReframe(aTokens, bTokens)
   );
 }

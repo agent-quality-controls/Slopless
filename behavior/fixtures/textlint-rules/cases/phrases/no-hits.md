@@ -60,6 +60,8 @@ The review asks whether the vendor met the contract.
 
 The interface remains visible during calibration.
 
+The documentation quotes "as an AI" while explaining assistant leakage.
+
 The two teams exchange notes before handoff.
 
 The editor preserved the data while revising the paragraph.

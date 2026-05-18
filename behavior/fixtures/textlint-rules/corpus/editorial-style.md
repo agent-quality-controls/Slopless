@@ -92,6 +92,8 @@ This sentence has no dash and should stay clean.
 
 The second pass moves from surface marks to boilerplate and cliche usage in the same release note.
 
+## llm opener example
+
 In today's fast-paced world, the release note still needs a concrete claim.
 
 Let's dive in before the incident timeline gets longer.
@@ -569,3 +571,27 @@ The crews pooled water behind the temporary dam.
 The board scheduled a formal review for May.
 
 The candidate has legal capacity under the statute.
+
+The editor reviewed a short appendix on assistant leakage and invisible characters.
+
+Hidden zero width space sits in prose as in​side the word.
+
+Hidden right-to-left override sits in prose before ‮reordered text.
+
+Hidden soft hyphen sits in prose as soft­hyphen.
+
+The same appendix included clean explanatory controls.
+
+The Unicode note names U+200B as ZERO WIDTH SPACE without embedding it.
+
+The Unicode note names U+202E as RIGHT-TO-LEFT OVERRIDE without embedding it.
+
+The typography guide describes soft hyphen as a Unicode concept without embedding it.
+
+The rejected support draft still sounded like chat output. As an AI, I cannot browse the current deployment logs. Up to my last training, the old dashboard was still active. Would you like me to turn this into a launch checklist? Here are a few options for reducing review friction.
+
+The editor kept examples separate from live prose.
+
+The documentation quotes "as an AI" while explaining assistant leakage.
+
+The editor asked whether the team would like me to cut the aside before publication.

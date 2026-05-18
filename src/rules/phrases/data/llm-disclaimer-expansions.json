@@ -1,4 +1,11 @@
 {
-  "startsWith": ["my last knowledge update was", "my knowledge cutoff is"],
-  "contains": []
+  "startsWith": [
+    "as an ai",
+    "as of my last cutoff",
+    "i cannot browse",
+    "my last knowledge update was",
+    "my knowledge cutoff is",
+    "up to my last training"
+  ],
+  "contains": ["up to my last training"]
 }

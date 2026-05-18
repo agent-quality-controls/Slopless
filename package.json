@@ -52,6 +52,7 @@
     "./rules/orthography/em-dashes": "./dist/rules/orthography/em-dashes.js",
     "./rules/orthography/exclamation-density": "./dist/rules/orthography/exclamation-density.js",
     "./rules/orthography/fake-timestamps": "./dist/rules/orthography/fake-timestamps.js",
+    "./rules/orthography/hidden-unicode-controls": "./dist/rules/orthography/hidden-unicode-controls.js",
     "./rules/orthography/sentence-case": "./dist/rules/orthography/sentence-case.js",
     "./rules/orthography/smart-quotes": "./dist/rules/orthography/smart-quotes.js",
     "./rules/phrases/cliches": "./dist/rules/phrases/cliches.js",

@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-18T09-00-10.302105Z-f3c41e06",
-  "run_commit": "086840a",
+  "run_id": "2026-05-18T14-46-56.407856Z-f3c41e06",
+  "run_commit": "81f7d68",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-18T09:00:10.302105Z",
-  "fixture_hash": "sha256:b3ca826694aa09f7e87e04b9d4db6d82d984124177a0ead182df7931d95698d1",
+  "recorded_at": "2026-05-18T14:46:56.407856Z",
+  "fixture_hash": "sha256:85e49a37981ec1d203c6f2f5c8562e67a4e7c7ee923fd5688f74e613286a2d22",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -44,19 +44,19 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/orthography/hits.md",
-      "sha256": "sha256:43905e2045da0158644ec50667d5701956a195f4a108636432b97b63529eb583"
+      "sha256": "sha256:cb63c0ce816c53cd87195f5d421d5bbe452762d0161cc402768dd587d2b9cdb2"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/orthography/no-hits.md",
-      "sha256": "sha256:4f8ae7cc965a294275d60caa1e4eaba412ddba451fcece6aca9ac9e46555b4d0"
+      "sha256": "sha256:338803b8a7915a854bdab3c9624fa37806c9a0c9c0cc9fea21e6c12f4a47eb55"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/hits.md",
-      "sha256": "sha256:d80699bcfeb726cc22fc59761999310c8165137250980c9a2557b8254517b673"
+      "sha256": "sha256:237860b238c8a92cb855dfbba5051860f5710dcb3243176b186ee20bf2adbd64"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md",
-      "sha256": "sha256:3aa8325879e5aef2e60c499bfeabbfa6c62ee03f709bcae6f90ad34dd1cf0952"
+      "sha256": "sha256:3ef4a8c178b2bbddcab56636375ebbb812cb072f8ebe3a0036b2d71b9b2e2a96"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
@@ -68,11 +68,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
-      "sha256": "sha256:e6ddb71a00a068d9205adad2d447b8cee1019d9b6e17a77daf18e8743acf184d"
+      "sha256": "sha256:1431c8eddba24f65bea0a92539b4c25d0a0015792570a5da9dc8c80038d0ef55"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
-      "sha256": "sha256:edfb34e54888d5c1d189819864d7ac98472c3abe333734052cffe913299288de"
+      "sha256": "sha256:d689999fe3fc43b0b939ea205bfab9272a599e73dd664f33410510dd92aa4658"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
@@ -92,11 +92,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/editorial-style.md",
-      "sha256": "sha256:6e978ce90d05a16f97e5e4289702479749526e71596a765635a8b8c5a5464e8d"
+      "sha256": "sha256:d3082f7d1ebfba57175e26cb3efb3fc1e3f005e063be0371a1a446ee56e9fe7f"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/engineering-review.md",
-      "sha256": "sha256:a6491e5b9bb191a8bbb668c0e4fec966e958c51332d63f60abc3219f1ec97b7e"
+      "sha256": "sha256:e193bffcc37802505b9453657516450748a477b39c78fea05b7a33befc7583e3"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
@@ -115,5 +115,5 @@
       "sha256": "sha256:e56e6ed5b1d94558aecd64c1844affcea9a6e6b7189ece747581949b27d3a870"
     }
   ],
-  "comment": "Refresh corpus coverage metadata"
+  "comment": "approve AI slop gap coverage"
 }

@@ -35,3 +35,9 @@ This paragraph has too much excitement! It keeps going! It should stop!
 The fake diary starts at 5:47 PM, and should trigger.
 
 And then it hit me: everything changed.
+
+Hidden zero width space sits in prose as in​side the word.
+
+Hidden right-to-left override sits in prose before ‮reordered text.
+
+Hidden soft hyphen sits in prose as soft­hyphen.

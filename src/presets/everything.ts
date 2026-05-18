@@ -23,6 +23,7 @@ export const everything = {
     "fragment-stacking": true,
     "gunning-fog": true,
     "hedge-stacking": true,
+    "hidden-unicode-controls": true,
     "humble-bragger": true,
     "jargon-faker": true,
     "generic-signposting": true,

@@ -104,6 +104,8 @@ The report says it's worth noting that the sample size doubled.
 
 The article quotes "it is important to note" as boilerplate.
 
+The editor asked whether the team would like me to cut the aside before publication.
+
 She did not go to Arden because Arden had already left for the pier.
 
 He didn't look at the music box until Cassia opened the lid.
@@ -113,3 +115,9 @@ The beta endpoint is no longer available. It was removed after the migration.
 She did not wait because the clinic was closing.
 
 The status is not final because the review is still open.
+
+The tax credit is not the rebate.
+
+The test did not pass because the fixture path was wrong.
+
+The launch was not only late because the vendor missed the export.

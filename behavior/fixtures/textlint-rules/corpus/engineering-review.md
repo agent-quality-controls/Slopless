@@ -715,3 +715,21 @@ That's why it matters, isn't that the point?
 ## false question want
 
 And isn't that what we all want?
+
+## contrast review
+
+The rollout notes tried to turn missing ownership into a slogan.
+
+The problem is not the calendar. The queue is.
+
+Not because the team was lazy. Because ownership was missing.
+
+The launch was not only late. It exposed the missing rollback.
+
+The control notes stayed factual instead.
+
+The tax credit is not the rebate.
+
+The test did not pass because the fixture path was wrong.
+
+The launch was not only late because the vendor missed the export.

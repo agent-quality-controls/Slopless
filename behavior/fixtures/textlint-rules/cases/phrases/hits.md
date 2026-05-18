@@ -78,6 +78,10 @@ The roadmap says alignment plays a crucial role in shaping outcomes.
 
 Please let me know if you need a deeper summary.
 
+As an AI, I cannot browse the current deployment logs.
+
+Up to my last training, the old dashboard was still active.
+
 The draft says because of the fact that the owner is absent.
 
 The note says owing to the fact that the queue is blocked.
