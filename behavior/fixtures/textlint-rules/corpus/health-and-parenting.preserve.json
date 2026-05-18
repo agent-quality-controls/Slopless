@@ -1317,6 +1317,20 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 83
+    },
+    {
+      "text": "Experts at the World Health Organization describe sleep guidance in the public report.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 129
+    },
+    {
+      "text": "Research shows that children need sleep.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 131
     }
   ]
 }

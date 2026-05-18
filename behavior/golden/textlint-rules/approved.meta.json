@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-18T16-01-12.848736Z-f3c41e06",
-  "run_commit": "6d4b590",
+  "run_id": "2026-05-18T17-04-41.043272Z-f3c41e06",
+  "run_commit": "97fba4d",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-18T16:01:12.848736Z",
-  "fixture_hash": "sha256:38a4d809a76929ce52b8a2e6af1f699dbb85bba1d4e8bf9ec9f9a182815fd71e",
+  "recorded_at": "2026-05-18T17:04:41.043272Z",
+  "fixture_hash": "sha256:3ac0a5b602a3be5e3b6743c790064e5ee4291838f37bb423b381d4fc647c4a88",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -68,11 +68,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
-      "sha256": "sha256:1431c8eddba24f65bea0a92539b4c25d0a0015792570a5da9dc8c80038d0ef55"
+      "sha256": "sha256:000fb84f5c0fdf4b295cc41edcd02eb4f8401ddac5b12a0dcd76ae2702712fab"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
-      "sha256": "sha256:d689999fe3fc43b0b939ea205bfab9272a599e73dd664f33410510dd92aa4658"
+      "sha256": "sha256:68f4256326a6717b144696090293eb9eb9bf850198b9d78b0fa812e87478e682"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
@@ -96,11 +96,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/engineering-review.md",
-      "sha256": "sha256:b372128dc4cd10c2fd584d7c850fb68abe6eae85e84d336a11f9349cc07d7b89"
+      "sha256": "sha256:a50c693d21e6cd83c1e98ce2da9a774711508180c06acbb36aacf2dfcfe07582"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
-      "sha256": "sha256:5e89c439c994d1be15980e956e69db524f50f20174e6e1569676542aaf8c65c3"
+      "sha256": "sha256:5b32db2263dd6652c58d1ff56006b8bbd1947efd68fa8ca2792f4ff5270e7f9e"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
@@ -115,5 +115,5 @@
       "sha256": "sha256:e56e6ed5b1d94558aecd64c1844affcea9a6e6b7189ece747581949b27d3a870"
     }
   ],
-  "comment": "wordiness redundancy narrative expansion"
+  "comment": "Move new syntactic cases to preserve-stable tail"
 }

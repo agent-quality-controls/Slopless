@@ -2430,6 +2430,55 @@
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
       "line": 89
+    },
+    {
+      "text": "However, the launch note stayed vague. Therefore, the owner guessed at the rollback. Ultimately, the review became a ceremony instead of a decision.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 979
+    },
+    {
+      "text": "The report says the queue recovered. The report says the owners aligned. The report says the deadline moved.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 981
+    },
+    {
+      "text": "Experts agree that teams work better when meetings start with trust.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 983
+    },
+    {
+      "text": "Data shows that retention improves when owners publish rollback notes before launch.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 985
+    },
+    {
+      "text": "However, the rollback owner signed the launch note after the incident review.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 125
+    },
+    {
+      "text": "The report says the queue recovered. The owner signed the rollback. The deadline moved after finance approved the export.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 127
+    },
+    {
+      "text": "Data from the June retention cohort shows that renewal improved by four percent.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 133
     }
   ]
 }

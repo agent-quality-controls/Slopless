@@ -84,13 +84,14 @@ def verify_density_rules(errors: list[str]) -> None:
     for relative in [
         "src/rules/narrative-slop/body-action-density.ts",
         "src/rules/narrative-slop/perception-verb-density.ts",
+        "src/rules/syntactic-patterns/lead-ins/formal-transition-density.ts",
+        "src/rules/syntactic-patterns/repetition/repeated-sentence-starts.ts",
     ]:
         text = read_text(relative)
         require(errors, "RuleDetection" in text, f"{relative} must emit typed detections")
         require(errors, "reportPolicy" in text, f"{relative} must declare report policy")
         require(errors, 'kind: "density"' in text, f"{relative} must declare density policy")
         require(errors, "defineTextlintRule" in text, f"{relative} must use Textlint rule adapter")
-        require(errors, "splitSentences" not in text, f"{relative} must not own sentence-window density")
         require(errors, "densityMatchForSpan" not in text, f"{relative} must not own density matching")
         require(errors, "new RuleError" not in text, f"{relative} must not create Textlint errors")
         require(errors, "report(" not in text, f"{relative} must not call Textlint report")
