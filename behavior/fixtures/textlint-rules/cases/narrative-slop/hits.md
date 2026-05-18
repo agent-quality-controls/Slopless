@@ -43,3 +43,15 @@ Liska took a deep breath. Her voice was low. A smile played on her lips.
 Arden let out a breath. His voice was low. A smile played on his lips.
 
 Cassia took a deep breath. She let out a breath. Her voice was low.
+
+Little did she know, the map had already changed.
+
+Unbeknownst to him, the signal had failed before dawn.
+
+Maybe, just maybe, the alley would stay quiet.
+
+For what seemed like an eternity, the room stayed silent.
+
+Cassia could not help but feel the alley watching. Her eyes never leaving the shuttered door, she felt a surge of panic.
+
+Arden couldn't shake the feeling that the mark had moved. A ghost of a smile crossed the guard's face. A dangerous glint flashed in his eyes.

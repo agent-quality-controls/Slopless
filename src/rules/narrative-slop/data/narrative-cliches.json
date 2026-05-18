@@ -130,5 +130,32 @@
       "sun dipped below the horizon",
       "sun dipped beneath the horizon"
     ]
+  },
+  {
+    "category": "foreshadowing",
+    "id": "omniscient-foreshadowing",
+    "purpose": "Reports stock omniscient foreshadowing frames from fiction slop sources.",
+    "slots": {
+      "objectPronoun": ["her", "him", "me", "them", "us"],
+      "pronoun": ["he", "she", "they"]
+    },
+    "templates": ["little did {pronoun} know", "unbeknownst to {objectPronoun}"]
+  },
+  {
+    "category": "foreshadowing",
+    "id": "maybe-just-maybe",
+    "purpose": "Reports stock tentative hope phrasing from fiction slop sources.",
+    "slots": {},
+    "templates": ["maybe just maybe"]
+  },
+  {
+    "category": "time passage",
+    "id": "felt-like-eternity",
+    "purpose": "Reports stock inflated time-passage phrasing from fiction slop sources.",
+    "slots": {
+      "longTime": ["an eternity", "forever", "hours"],
+      "seeming": ["felt", "seemed"]
+    },
+    "templates": ["for what {seeming} like {longTime}"]
   }
 ]

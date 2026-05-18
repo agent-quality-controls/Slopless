@@ -68,6 +68,7 @@ export const PASSIVE_DEFINITION_VERBS = new Set([
   "produced"
 ]);
 const IRREGULAR_PAST_TENSE = new Map<string, string>([["go", "went"]]);
+const CONTRAST_PIVOT_AFTER_NOT = new Set(["just", "merely", "only"]);
 
 export type CopularNegation = {
   readonly affirmativeAux: string;
@@ -260,14 +261,17 @@ export function contrastPivotSubject(
       continue;
     }
 
-    if (tokenWords[index + 1] === "not" && tokenWords[index + 2] === "just") {
+    if (
+      tokenWords[index + 1] === "not" &&
+      CONTRAST_PIVOT_AFTER_NOT.has(tokenWords[index + 2] ?? "")
+    ) {
       return subject;
     }
 
     if (
       tokenWords[index + 1] === "no" &&
       tokenWords[index + 2] === "longer" &&
-      tokenWords[index + 3] === "just"
+      CONTRAST_PIVOT_AFTER_NOT.has(tokenWords[index + 3] ?? "")
     ) {
       return subject;
     }

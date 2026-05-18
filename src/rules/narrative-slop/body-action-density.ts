@@ -1,8 +1,5 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { emitTextlintReports } from "../../adapters/textlint/report.js";
+import { defineTextlintRule } from "../../adapters/textlint/rule.js";
 import { paragraphUnits } from "../../adapters/textlint/units.js";
-import { densityReports } from "../../reporting/reports.js";
 import type { RuleDetection, RuleId, TextUnit } from "../types.js";
 import { type Token, wordTokens } from "../../shared/text/tokens.js";
 
@@ -105,12 +102,49 @@ const PHRASE_CUES: readonly PhraseCue[] = [
   { group: "movement cue", tokens: ["rested", "her", "paws"] },
   { group: "movement cue", tokens: ["rested", "his", "paws"] },
   { group: "movement cue", tokens: ["rested", "their", "paws"] },
+  { group: "body cue", tokens: ["could", "not", "help", "but", "feel"] },
+  { group: "body cue", tokens: ["couldn't", "help", "but", "feel"] },
+  { group: "body cue", tokens: ["could", "not", "shake", "the", "feeling"] },
+  { group: "body cue", tokens: ["couldn't", "shake", "the", "feeling"] },
+  { group: "body cue", tokens: ["eyes", "never", "leaving"] },
+  { group: "body cue", tokens: ["felt", "a", "surge"] },
+  { group: "body cue", tokens: ["felt", "a", "profound", "sense"] },
+  { group: "body cue", tokens: ["ghost", "of", "a", "smile"] },
+  { group: "body cue", tokens: ["mischievous", "glint"] },
+  { group: "body cue", tokens: ["dangerous", "glint"] },
   { group: "body cue", tokens: ["took", "a", "deep", "breath"] },
   { group: "body cue", tokens: ["let", "out", "a", "breath"] },
+  {
+    group: "body cue",
+    tokens: ["breath", "she", "didn't", "know", "she", "was", "holding"]
+  },
+  {
+    group: "body cue",
+    tokens: ["breath", "he", "didn't", "know", "he", "was", "holding"]
+  },
+  {
+    group: "body cue",
+    tokens: ["breath", "they", "didn't", "know", "they", "were", "holding"]
+  },
   { group: "body cue", tokens: ["voice", "was", "low"] },
   { group: "body cue", tokens: ["smile", "played", "on", "her", "lips"] },
   { group: "body cue", tokens: ["smile", "played", "on", "his", "lips"] },
   { group: "body cue", tokens: ["smile", "played", "on", "their", "lips"] },
+  { group: "body cue", tokens: ["smile", "spread", "across", "her", "face"] },
+  { group: "body cue", tokens: ["smile", "spread", "across", "his", "face"] },
+  { group: "body cue", tokens: ["smile", "spread", "across", "their", "face"] },
+  {
+    group: "body cue",
+    tokens: ["smile", "spreading", "across", "her", "face"]
+  },
+  {
+    group: "body cue",
+    tokens: ["smile", "spreading", "across", "his", "face"]
+  },
+  {
+    group: "body cue",
+    tokens: ["smile", "spreading", "across", "their", "face"]
+  },
   { group: "body cue", tokens: ["looked", "tired"] },
   { group: "body cue", tokens: ["ears", "twitched"] },
   { group: "body cue", tokens: ["ears", "flattened"] },
@@ -211,29 +245,27 @@ function cueDetections(unit: TextUnit): RuleDetection<CueGroup>[] {
   return detections.sort((left, right) => left.range.start - right.range.start);
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      const units = paragraphUnits(node);
-      const unitsById = new Map(units.map((unit) => [unit.id, unit]));
-
-      for (const unit of units) {
-        const reports = densityReports(unit, cueDetections(unit), {
-          groups: ["movement cue", "body cue"],
-          maxParagraphTokens: MAX_PARAGRAPH_TOKENS,
-          maxWindowTokens: MAX_WINDOW_TOKENS,
-          message: (match) =>
-            `Body-action density: ${match.count} ${match.group}s in a short span (${match.labels.join(", ")}).`,
-          paragraphMinimumHits: MIN_GROUP_HITS,
-          windowMinimumHits: MIN_GROUP_HITS,
-          windowSentences: WINDOW_SENTENCES
-        });
-        emitTextlintReports(context, unitsById, reports);
-      }
-    }
-  };
-};
+const rule = defineTextlintRule({
+  detector: {
+    detect: ({ units }) => units.flatMap((unit) => cueDetections(unit)),
+    family: "narrative-slop",
+    id: RULE_ID
+  },
+  formatMessage: (report) => {
+    const first = report.detections[0];
+    const labels = [...new Set(report.detections.map((hit) => hit.label))];
+    return `Body-action density: ${report.detections.length} ${first?.group}s in a short span (${labels.join(", ")}).`;
+  },
+  reportPolicy: {
+    groups: ["movement cue", "body cue"],
+    kind: "density",
+    maxParagraphTokens: MAX_PARAGRAPH_TOKENS,
+    maxWindowTokens: MAX_WINDOW_TOKENS,
+    paragraphMinimumHits: MIN_GROUP_HITS,
+    windowMinimumHits: MIN_GROUP_HITS,
+    windowSentences: WINDOW_SENTENCES
+  },
+  units: (document) => paragraphUnits(document)
+});
 
 export default rule;

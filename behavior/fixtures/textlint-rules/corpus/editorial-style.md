@@ -92,6 +92,8 @@ This sentence has no dash and should stay clean.
 
 The second pass moves from surface marks to boilerplate and cliche usage in the same release note.
 
+## llm opener example
+
 In today's fast-paced world, the release note still needs a concrete claim.
 
 Let's dive in before the incident timeline gets longer.
@@ -161,6 +163,28 @@ Hopefully the final draft does not lean on disputed usage.
 The campaign calls the offer very unique without explaining what changed.
 
 As a language model, I do not have access to real-time information.
+
+The post explains the change by means of a vague diagram.
+
+The update repeats a number of unsupported benefits.
+
+The contract calls the refund an absolute guarantee.
+
+The memo says a second review is absolutely essential.
+
+The campaign promises an added bonus after signup.
+
+The team calls the prelaunch meeting advance planning.
+
+The note calls the backup an alternative choice.
+
+The report opens with a brief summary.
+
+The draft says the test will completely annihilate the backlog.
+
+The editor quoted "added bonus" as a redundancy example.
+
+The report says the guarantee is absolute after legal review.
 
 The key takeaways changed after the data review.
 
@@ -569,3 +593,45 @@ The crews pooled water behind the temporary dam.
 The board scheduled a formal review for May.
 
 The candidate has legal capacity under the statute.
+
+The editor reviewed a short appendix on assistant leakage and invisible characters.
+
+Hidden zero width space sits in prose as in​side the word.
+
+Hidden right-to-left override sits in prose before ‮reordered text.
+
+Hidden soft hyphen sits in prose as soft­hyphen.
+
+The same appendix included clean explanatory controls.
+
+The Unicode note names U+200B as ZERO WIDTH SPACE without embedding it.
+
+The Unicode note names U+202E as RIGHT-TO-LEFT OVERRIDE without embedding it.
+
+The typography guide describes soft hyphen as a Unicode concept without embedding it.
+
+The rejected support draft still sounded like chat output. As an AI, I cannot browse the current deployment logs. Up to my last training, the old dashboard was still active. Would you like me to turn this into a launch checklist? Here are a few options for reducing review friction.
+
+The editor kept examples separate from live prose.
+
+The documentation quotes "as an AI" while explaining assistant leakage.
+
+The editor asked whether the team would like me to cut the aside before publication.
+
+The published appendix still contained generated artifact residue.
+
+The report cites this result :contentReference[oaicite:3]{index=3}.
+
+The appendix points to sandbox:/mnt/data/results.csv.
+
+The draft still contains [CITATION NEEDED] in the final copy.
+
+The editor left [INSERT TEXT] in the published note.
+
+Lorem ipsum appears in the published article.
+
+The template guide quotes "[PLACEHOLDER]" as an unfinished marker.
+
+The style guide quotes "Lorem ipsum" while explaining placeholder copy.
+
+The security note mentions chatgpt.com without a tracking marker.

@@ -51,3 +51,7 @@ The dispatcher said the voice was low because the radio battery was failing.
 The actor practiced a smile played on his lips until the director stopped him.
 
 Liska took a deep breath, counted the rope knots, and tied the loose end to the post.
+
+The report says the phrase "little did she know" is a narrative cliche.
+
+The medic could not help but feel the pulse under the bandage.

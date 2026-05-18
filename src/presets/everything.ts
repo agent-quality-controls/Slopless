@@ -1,6 +1,7 @@
 export const everything = {
   rules: {
     "affirmation-closers": true,
+    "artifact-placeholders": true,
     "authority-padding": true,
     "avg-sentence-length": true,
     "blame-reframe": true,
@@ -23,6 +24,7 @@ export const everything = {
     "fragment-stacking": true,
     "gunning-fog": true,
     "hedge-stacking": true,
+    "hidden-unicode-controls": true,
     "humble-bragger": true,
     "jargon-faker": true,
     "generic-signposting": true,

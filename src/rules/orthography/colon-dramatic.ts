@@ -1,11 +1,8 @@
-import type { TxtParentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { RuleHelper } from "textlint-rule-helper";
-import { sourceText } from "../../shared/text/traverse.js";
 import { countWhitespaceSeparatedWords } from "../../shared/text/whitespace.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const MAX_DRAMATIC_AFTER_COLON_WORDS = 5;
+const CONTENT_REFERENCE_MARKER = ":contentReference[";
 
 type DramaticColonMatch = {
   readonly end: number;
@@ -83,6 +80,10 @@ function dramaticColonAt(
   text: string,
   colonIndex: number
 ): DramaticColonMatch | undefined {
+  if (isArtifactColon(text, colonIndex)) {
+    return undefined;
+  }
+
   const end = sentenceEndAfter(text, colonIndex + 1);
   const afterColon = text.slice(colonIndex + 1, end);
   const trimStart = firstNonWhitespaceIndex(afterColon);
@@ -108,6 +109,21 @@ function dramaticColonAt(
   };
 }
 
+function isArtifactColon(text: string, colonIndex: number): boolean {
+  const lowercase = text.toLocaleLowerCase("en");
+  const before = lowercase.slice(Math.max(0, colonIndex - 12), colonIndex + 1);
+
+  return (
+    lowercase.startsWith(
+      CONTENT_REFERENCE_MARKER.toLocaleLowerCase("en"),
+      colonIndex
+    ) ||
+    before.endsWith("[oaicite:") ||
+    before.endsWith("sandbox:") ||
+    text[colonIndex + 1] === "/"
+  );
+}
+
 function findDramaticColonMatches(text: string): DramaticColonMatch[] {
   const matches: DramaticColonMatch[] = [];
 
@@ -127,37 +143,18 @@ function findDramaticColonMatches(text: string): DramaticColonMatch[] {
   return matches;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-  const helper = new RuleHelper(context);
-  const ignoredParents = [
-    Syntax.List,
-    Syntax.ListItem,
-    Syntax.Table,
-    Syntax.TableCell
-  ];
-
-  return {
-    [Syntax.Paragraph](node: TxtParentNode): void {
-      if (helper.isChildNode(node, ignoredParents)) {
-        return;
-      }
-
-      const source = sourceText(node);
-
-      for (const match of findDramaticColonMatches(source.text)) {
-        emitTextlintFinding(context, {
-          node: node,
-          ruleId: "orthography:colon-dramatic",
-          message: `Dramatic colon found: "${match.text}". Rewrite without the short reveal after the colon.`,
-          range: {
-            start: source.originalStartFor(match.start),
-            end: source.originalEndFor(match.end)
-          }
-        });
-      }
-    }
-  };
-};
+const rule = oneToOneRule({
+  detect: (unit) =>
+    findDramaticColonMatches(unit.text).map((match) => ({
+      evidence: match.text,
+      label: match.text,
+      range: { start: match.start, end: match.end }
+    })),
+  family: "orthography",
+  formatMessage: (report) =>
+    `Dramatic colon found: "${report.evidence}". Rewrite without the short reveal after the colon.`,
+  ruleId: "orthography:colon-dramatic",
+  unitKind: "paragraph"
+});
 
 export default rule;

@@ -64,6 +64,10 @@ I can provide general information about queue backfills.
 
 I cannot provide a diagnosis for this production incident.
 
+Would you like me to turn this into a launch checklist?
+
+Here are a few options for reducing review friction.
+
 That sounds reasonable. These details were true. That sound was specific.
 
 However, that sound was specific. And those claims are inflated. So this part matters.
@@ -841,6 +845,12 @@ The fix is not to dream smaller in the timid, motivational-poster sense. The fix
 The goal is not to impress yourself. The goal is to repeat.
 
 The goal is not a life with zero stress. The goal is a body that gets enough recovery to stop acting like every Tuesday is a crisis.
+
+The problem is not the calendar. The queue is.
+
+Not because the team was lazy. Because ownership was missing.
+
+The launch was not only late. It exposed the missing rollback.
 
 The goal is not to be perfect. The goal is to make the behavior easy enough to repeat when your mood is flat and your brain is looking for the exit.
 

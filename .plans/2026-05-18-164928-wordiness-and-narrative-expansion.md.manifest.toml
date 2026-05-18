@@ -1,0 +1,111 @@
+plan = ".plans/2026-05-18-164928-wordiness-and-narrative-expansion.md"
+
+[[data_contains]]
+path = "src/rules/phrases/data/wordiness-patterns.json"
+values = [
+  "by means of",
+  "a number of"
+]
+
+[[data_contains]]
+path = "src/rules/phrases/data/redundancy-patterns.json"
+values = [
+  "absolute guarantee",
+  "absolutely essential",
+  "added bonus",
+  "advance planning",
+  "alternative choice",
+  "brief summary",
+  "completely annihilate"
+]
+
+[[data_contains]]
+path = "src/rules/narrative-slop/data/narrative-cliches.json"
+values = [
+  "little did {pronoun} know",
+  "unbeknownst to {objectPronoun}",
+  "maybe just maybe",
+  "for what {seeming} like {longTime}"
+]
+
+[[code_contains]]
+path = "src/rules/narrative-slop/body-action-density.ts"
+values = [
+  "[\"could\", \"not\", \"help\", \"but\", \"feel\"]",
+  "[\"couldn't\", \"help\", \"but\", \"feel\"]",
+  "[\"could\", \"not\", \"shake\", \"the\", \"feeling\"]",
+  "[\"couldn't\", \"shake\", \"the\", \"feeling\"]",
+  "[\"eyes\", \"never\", \"leaving\"]",
+  "[\"felt\", \"a\", \"surge\"]",
+  "[\"felt\", \"a\", \"profound\", \"sense\"]",
+  "[\"ghost\", \"of\", \"a\", \"smile\"]",
+  "[\"mischievous\", \"glint\"]",
+  "[\"dangerous\", \"glint\"]"
+]
+
+[[fixture_contains]]
+path = "behavior/fixtures/textlint-rules/cases/phrases/hits.md"
+values = [
+  "The post explains the change by means of a vague diagram.",
+  "The update repeats a number of unsupported benefits.",
+  "The campaign promises an added bonus after signup.",
+  "The note calls the backup an alternative choice."
+]
+
+[[fixture_contains]]
+path = "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md"
+values = [
+  "The editor quoted \"added bonus\" as a redundancy example.",
+  "The report says the guarantee is absolute after legal review."
+]
+
+[[fixture_contains]]
+path = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+values = [
+  "Little did she know, the map had already changed.",
+  "Unbeknownst to him, the signal had failed before dawn.",
+  "Maybe, just maybe, the alley would stay quiet.",
+  "For what seemed like an eternity, the room stayed silent."
+]
+
+[[fixture_contains]]
+path = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+values = [
+  "The report says the phrase \"little did she know\" is a narrative cliche.",
+  "The medic could not help but feel the pulse under the bandage."
+]
+
+[[fixture_contains]]
+path = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+values = [
+  "The post explains the change by means of a vague diagram.",
+  "The update repeats a number of unsupported benefits.",
+  "The campaign promises an added bonus after signup.",
+  "The note calls the backup an alternative choice.",
+  "The team calls the prelaunch meeting advance planning.",
+  "The memo says a second review is absolutely essential."
+]
+
+[[fixture_contains]]
+path = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+values = [
+  "Little did she know, the map had already changed.",
+  "Unbeknownst to him, the signal had failed before dawn.",
+  "Maybe, just maybe, the alley would stay quiet.",
+  "For what seemed like an eternity, the room stayed silent."
+]
+
+[[bookkeeping_contains]]
+path = "legacy/source-material/incorporation-record.md"
+values = [
+  "Wordiness And Redundancy Expansion From 2026-05-18 Research",
+  "Narrative Slop Expansion From 2026-05-18 Research"
+]
+
+[[bookkeeping_contains]]
+path = "legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-wordiness-and-narrative-expansion.md"
+values = [
+  "filler-wordiness-replacements",
+  "redundant-pair-replacements",
+  "fiction-slop-trigrams-and-body-cues"
+]

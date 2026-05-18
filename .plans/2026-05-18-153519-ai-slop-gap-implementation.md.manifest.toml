@@ -1,0 +1,144 @@
+plan = ".plans/2026-05-18-153519-ai-slop-gap-implementation.md"
+
+[[new_rule]]
+id = "hidden-unicode-controls"
+family = "orthography"
+rule_id = "orthography:hidden-unicode-controls"
+path = "src/rules/orthography/hidden-unicode-controls.ts"
+registry = "src/registries/orthography.ts"
+export = "./rules/orthography/hidden-unicode-controls"
+preset = true
+required_text = [
+  "ZERO WIDTH SPACE",
+  "LEFT-TO-RIGHT MARK",
+  "RIGHT-TO-LEFT OVERRIDE",
+  "SOFT HYPHEN",
+  "WORD JOINER"
+]
+
+[[pattern_expansion]]
+name = "llm-disclaimer-expansions"
+path = "src/rules/phrases/data/llm-disclaimer-expansions.json"
+required_text = [
+  "as an ai",
+  "up to my last training",
+  "as of my last cutoff",
+  "my last knowledge update was",
+  "i cannot browse"
+]
+
+[[pattern_expansion]]
+name = "response-wrapper-patterns"
+path = "src/rules/syntactic-patterns/llm-artifacts/data/response-wrapper-patterns.json"
+required_text = [
+  "would you like me to",
+  "if you'd like, i can",
+  "here are a few options",
+  "here are some options",
+  "great question",
+  "certainly"
+]
+
+[[pattern_expansion]]
+name = "llm-openers"
+path = "src/rules/syntactic-patterns/lead-ins/llm-openers.ts"
+required_text = [
+  "in today's fast-paced world",
+  "in today's digital age",
+  "in the ever-evolving landscape",
+  "in the realm of"
+]
+
+[[pattern_expansion]]
+name = "negative-pivot-parts"
+path = "src/rules/syntactic-patterns/contrast/private/negation-reframe-parts.ts"
+required_text = [
+  "CONTRAST_PIVOT_AFTER_NOT",
+  "\"only\"",
+  "\"merely\"",
+  "\"just\""
+]
+
+[[pattern_expansion]]
+name = "negative-slop-frames"
+path = "src/rules/syntactic-patterns/contrast/private/negative-slop-frames.ts"
+required_text = [
+  "notBecauseReframe",
+  "notProblemReframe"
+]
+
+[[fixture_case]]
+family = "orthography"
+kind = "hits"
+path = "behavior/fixtures/textlint-rules/cases/orthography/hits.md"
+required_text = [
+  "zero width space",
+  "right-to-left override",
+  "soft hyphen"
+]
+
+[[fixture_case]]
+family = "orthography"
+kind = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/orthography/no-hits.md"
+required_text = [
+  "U+200B",
+  "U+202E",
+  "soft hyphen as a Unicode concept"
+]
+
+[[fixture_case]]
+family = "phrases"
+kind = "hits"
+path = "behavior/fixtures/textlint-rules/cases/phrases/hits.md"
+required_text = [
+  "As an AI, I cannot browse",
+  "Up to my last training"
+]
+
+[[fixture_case]]
+family = "phrases"
+kind = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md"
+required_text = [
+  "The documentation quotes \"as an AI\""
+]
+
+[[fixture_case]]
+family = "syntactic-patterns"
+kind = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+required_text = [
+  "Would you like me to",
+  "Here are a few options",
+  "The problem is not the calendar.",
+  "Not because the team was lazy.",
+  "The launch was not only late."
+]
+
+[[fixture_case]]
+family = "syntactic-patterns"
+kind = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+required_text = [
+  "The editor asked whether the team would like me to cut the aside",
+  "The tax credit is not the rebate.",
+  "The test did not pass because the fixture path was wrong.",
+  "The launch was not only late because the vendor missed the export."
+]
+
+[[fixture_corpus]]
+path = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+required_text = [
+  "zero width space",
+  "As an AI, I cannot browse",
+  "Would you like me to"
+]
+
+[[fixture_corpus]]
+path = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+required_text = [
+  "The problem is not the calendar.",
+  "Not because the team was lazy.",
+  "The launch was not only late."
+]

@@ -39,3 +39,15 @@ The factual clock says fourteen thirty and should stay clean.
 There are three types: red, blue, and green.
 
 This sentence has no dash and should stay clean.
+
+The Unicode note names U+200B as ZERO WIDTH SPACE without embedding it.
+
+The Unicode note names U+202E as RIGHT-TO-LEFT OVERRIDE without embedding it.
+
+The typography guide describes soft hyphen as a Unicode concept without embedding it.
+
+The template guide quotes "[PLACEHOLDER]" as an unfinished marker.
+
+The style guide quotes "Lorem ipsum" while explaining placeholder copy.
+
+The security note mentions chatgpt.com without a tracking marker.

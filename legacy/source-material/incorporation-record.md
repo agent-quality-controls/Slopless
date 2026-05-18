@@ -187,9 +187,12 @@ Active source candidates stay in `legacy/source-material/derived/*.md`. Reviewed
 - Source:
   - observed assistant-output leakage forms
   - hand-authored examples from LLM response conventions
+  - source-backed candidates from `legacy/source-material/expansion-2026-05-18/ai-slop/derived/high-confidence-deterministic-candidates.json`
+  - source-backed candidates from `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/high-confidence-candidates.json`
 - Rules:
   - `src/rules/phrases/llm-disclaimer.ts`
   - `src/rules/syntactic-patterns/llm-artifacts/response-wrapper.ts`
+  - `src/rules/syntactic-patterns/lead-ins/llm-openers.ts`
 - Implemented as:
   - sentence-start patterns
   - contains patterns
@@ -201,6 +204,176 @@ Active source candidates stay in `legacy/source-material/derived/*.md`. Reviewed
   - `i do not have access to real-time information`
   - `i can provide`
   - `i cannot diagnose`
+  - `would you like me to`
+  - `if you'd like, i can`
+  - `here are a few options`
+  - `great question`
+  - `in today's fast-paced world`
+  - `in the ever-evolving landscape`
+  - `in the realm of`
+
+### AI Slop Gap Batch From 2026-05-18 Expansion Research
+
+- Source:
+  - `legacy/source-material/expansion-2026-05-18/ai-slop/derived/high-confidence-deterministic-candidates.json`
+  - `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/high-confidence-candidates.json`
+- Archive record:
+  - `legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-ai-slop-gaps.md`
+- Remaining active queue:
+  - `legacy/source-material/expansion-2026-05-18/remaining-candidates.md`
+- Rules:
+  - `src/rules/orthography/hidden-unicode-controls.ts`
+  - `src/rules/phrases/llm-disclaimer.ts`
+  - `src/rules/syntactic-patterns/llm-artifacts/response-wrapper.ts`
+  - `src/rules/syntactic-patterns/lead-ins/llm-openers.ts`
+  - `src/rules/syntactic-patterns/contrast/negation-reframe.ts`
+- Implemented as:
+  - hidden Unicode character inventory
+  - assistant leakage phrase expansion
+  - response-wrapper phrase expansion
+  - section-opener phrase expansion
+  - bounded negative-pivot sentence and sentence-pair patterns
+- Pattern examples:
+  - U+200B ZERO WIDTH SPACE
+  - U+202E RIGHT-TO-LEFT OVERRIDE
+  - `as an ai`
+  - `up to my last training`
+  - `would you like me to`
+  - `here are a few options`
+  - `not only X`
+  - `X is not the problem. Y is.`
+  - `Not because X. Because Y.`
+- Local changes:
+  - kept raw source captures in place for provenance
+  - archived implemented candidates out of the active review queue
+  - kept incomplete assistant-artifact and Markdown placeholder candidates active for future work
+- False-positive controls:
+  - hidden Unicode reports embedded control characters, not textual names like `U+200B`
+  - phrase rules skip quoted examples where supported by the matcher
+  - negative-pivot fixtures include cause and ordinary contrast no-hits
+
+### Artifact Placeholders
+
+- Source:
+  - `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/high-confidence-candidates.json`
+  - `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/fixture-corpus-ideas.md`
+  - `legacy/source-material/expansion-2026-05-18/ai-slop/raw/slop-guard-rs/lib.rs`
+- Archive record:
+  - `legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-artifact-placeholders-and-puffery.md`
+- Rule:
+  - `src/rules/orthography/artifact-placeholders.ts`
+- Implemented as:
+  - generated artifact marker scanner
+  - bracket-placeholder scanner
+  - link URL scanner
+- Pattern examples:
+  - `:contentReference[oaicite:N]{index=N}`
+  - `[oaicite:N]`
+  - `oai_citation`
+  - `sandbox:/mnt/data/`
+  - `utm_source=chatgpt.com`
+  - `[CITATION NEEDED]`
+  - `[INSERT TEXT]`
+  - `[PLACEHOLDER]`
+  - `Lorem ipsum`
+- Local changes:
+  - nested `[oaicite:N]` inside `:contentReference[...]` is suppressed so one artifact reports once
+  - `colon-dramatic` skips known artifact-marker colons
+- False-positive controls:
+  - quoted examples are skipped
+  - blockquote examples are skipped
+  - inline code and fenced code are not traversed by the rule
+
+### Puffery Evaluative Claim Frames
+
+- Source:
+  - `legacy/source-material/expansion-2026-05-18/academic-nlp/derived/subjectivity-and-puffery-candidates.json`
+  - `legacy/source-material/expansion-2026-05-18/academic-nlp/derived/wikipedia-quality-labels.json`
+- Archive record:
+  - `legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-artifact-placeholders-and-puffery.md`
+- Rule:
+  - `src/rules/semantic-thinness/semantic-thinness.ts`
+- Rule data:
+  - `src/rules/semantic-thinness/patterns/puffery-evaluative-claim.json`
+- Implemented as:
+  - bounded semantic-thinness templates
+- Pattern examples:
+  - `The renowned architect changed the city forever.`
+  - `The product represents an unprecedented breakthrough.`
+  - `The tool is a masterpiece of modern design.`
+  - `The launch created the best version of the workflow.`
+  - `The golden standard for automation has arrived.`
+- Local changes:
+  - broad evaluative words are not banned by themselves
+  - source puffery terms are used only inside closed frames
+- False-positive controls:
+  - no-hit controls cover named people, dates, numeric benchmark evidence, and quoted usage discussion
+
+### Wordiness And Redundancy Expansion From 2026-05-18 Research
+
+- Source:
+  - `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/high-confidence-candidates.json`
+- Archive record:
+  - `legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-wordiness-and-narrative-expansion.md`
+- Rules:
+  - `src/rules/phrases/wordiness.ts`
+  - `src/rules/phrases/redundancy.ts`
+- Rule data:
+  - `src/rules/phrases/data/wordiness-patterns.json`
+  - `src/rules/phrases/data/redundancy-patterns.json`
+- Implemented as:
+  - exact multiword phrase additions
+- Pattern examples:
+  - `by means of`
+  - `a number of`
+  - `absolute guarantee`
+  - `absolutely essential`
+  - `added bonus`
+  - `advance planning`
+  - `alternative choice`
+  - `brief summary`
+  - `completely annihilate`
+- Local changes:
+  - skipped broad one-word replacements such as `methodology` and `functionality`
+  - kept already covered candidates such as `utilize`, `leverage`, `due to the fact that`, and `close proximity` in their existing rule families
+- False-positive controls:
+  - quoted examples are skipped by the phrase matcher
+  - no-hit fixtures include quoted redundancy examples and non-redundant syntax
+
+### Narrative Slop Expansion From 2026-05-18 Research
+
+- Source:
+  - `legacy/source-material/expansion-2026-05-18/ai-slop/derived/high-confidence-deterministic-candidates.json`
+  - `legacy/source-material/expansion-2026-05-18/ai-slop/raw/llm-slop-detector/fiction.json`
+  - `legacy/source-material/expansion-2026-05-18/ai-slop/raw/slopsquid/trigrams.json`
+- Archive record:
+  - `legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-wordiness-and-narrative-expansion.md`
+- Rules:
+  - `src/rules/narrative-slop/body-action-density.ts`
+  - `src/rules/narrative-slop/narrative-cliches.ts`
+- Rule data:
+  - `src/rules/narrative-slop/data/narrative-cliches.json`
+- Implemented as:
+  - density-gated body cue phrases
+  - narrow one-to-one narrative cliche templates
+- Pattern examples:
+  - `could not help but feel`
+  - `couldn't shake the feeling`
+  - `eyes never leaving`
+  - `felt a surge`
+  - `ghost of a smile`
+  - `dangerous glint`
+  - `little did {pronoun} know`
+  - `unbeknownst to {objectPronoun}`
+  - `maybe just maybe`
+  - `for what {seeming} like {longTime}`
+- Local changes:
+  - kept ordinary breath, gaze, smile, and feeling cues density-gated instead of single-hit reports
+  - implemented only strongly formulaic foreshadowing and time-passage frames as one-to-one narrative cliches
+- False-positive controls:
+  - density rules require repeated body-cue hits in a short span
+  - narrative cliche matcher skips quoted phrase examples
+  - no-hit fixtures include medical and task-bound uses
 
 ## Implemented Source-Derived Pattern Data
 

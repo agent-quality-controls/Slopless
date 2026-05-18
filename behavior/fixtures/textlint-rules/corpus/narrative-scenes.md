@@ -220,6 +220,18 @@ Days turned into weeks before the letters arrived.
 
 The sun dipped below the horizon.
 
+Little did she know, the map had already changed.
+
+Unbeknownst to him, the signal had failed before dawn.
+
+Maybe, just maybe, the alley would stay quiet.
+
+For what seemed like an eternity, the room stayed silent.
+
+Cassia could not help but feel the alley watching. Her eyes never leaving the shuttered door, she felt a surge of panic.
+
+Arden couldn't shake the feeling that the mark had moved. A ghost of a smile crossed the guard's face. A dangerous glint flashed in his eyes.
+
 The control examples move the same words into medical, stage, billing, and sensor contexts.
 
 The cardiologist recorded her heart rate in her chart.
@@ -357,6 +369,10 @@ The dispatcher said the voice was low because the radio battery was failing.
 The actor practiced a smile played on his lips until the director stopped him.
 
 Liska took a deep breath, counted the rope knots, and tied the loose end to the post.
+
+The report says the phrase "little did she know" is a narrative cliche.
+
+The medic could not help but feel the pulse under the bandage.
 
 ## negative contrast frames
 

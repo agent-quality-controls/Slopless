@@ -53,7 +53,7 @@ homepage = "https://github.com/agent-quality-controls/slopless#readme"
 bugs_url = "https://github.com/agent-quality-controls/slopless/issues"
 bin_name = "slopless"
 bin_path = "dist/cli.js"
-files = ["dist", "README.md", "slopless.textlintrc.json"]
+files = ["dist", "README.md", "skills", "slopless.textlintrc.json"]
 
 [[forbidden_text]]
 path = "scripts/behavior-replay.sh"
