@@ -1,5 +1,6 @@
 import { defineTextlintRule } from "../../../adapters/textlint/rule.js";
 import { paragraphSequenceUnit } from "../../../adapters/textlint/units.js";
+import { hasConcreteInventorySubjects } from "../../../shared/matchers/concrete-evidence.js";
 import { splitSentences } from "../../../shared/text/sentences.js";
 import { wordTokens, type Token } from "../../../shared/text/tokens.js";
 import type { RuleDetection, RuleId, TextUnit } from "../../types.js";
@@ -96,9 +97,22 @@ function endingDetections(
       item.frame === undefined ? [] : [item.frame]
     )
   );
+  const concreteInventoryLabels = new Set(
+    [...repeatedLabels].filter((label) =>
+      hasConcreteInventorySubjects(
+        sentenceFrames.flatMap((item) =>
+          item.frame?.label === label ? [item.sentence.text] : []
+        )
+      )
+    )
+  );
 
   return sentenceFrames.flatMap(({ frame, sentence }) => {
-    if (frame === undefined || !repeatedLabels.has(frame.label)) {
+    if (
+      frame === undefined ||
+      !repeatedLabels.has(frame.label) ||
+      concreteInventoryLabels.has(frame.label)
+    ) {
       return [];
     }
 

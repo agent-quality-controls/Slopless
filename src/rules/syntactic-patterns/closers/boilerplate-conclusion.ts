@@ -1,5 +1,6 @@
 import { defineTextlintRule } from "../../../adapters/textlint/rule.js";
 import { sentenceUnits } from "../../../adapters/textlint/units.js";
+import { hasConcreteImplementationSummary } from "../../../shared/matchers/concrete-evidence.js";
 import {
   cleanSentence,
   containsAny,
@@ -148,7 +149,9 @@ function matchConclusion(
       return { kind: "formula-close", signal: formula };
     }
 
-    const summaryFrame = matchSummaryFrameClose(stripped);
+    const summaryFrame = hasConcreteImplementationSummary(stripped)
+      ? undefined
+      : matchSummaryFrameClose(stripped);
     if (summaryFrame !== undefined) {
       return { kind: "summary-frame-close", signal: summaryFrame };
     }
@@ -174,7 +177,9 @@ function matchConclusion(
     return { kind: "response-close", signal: response };
   }
 
-  const compression = containsAny(stripped, COMPRESSION_CLOSE_PATTERNS);
+  const compression = hasConcreteImplementationSummary(stripped)
+    ? undefined
+    : containsAny(stripped, COMPRESSION_CLOSE_PATTERNS);
   return compression === undefined
     ? undefined
     : { kind: "compression-close", signal: compression };

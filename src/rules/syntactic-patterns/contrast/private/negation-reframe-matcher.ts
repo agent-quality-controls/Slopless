@@ -23,6 +23,7 @@ import {
   negativeSlopReframe
 } from "./negative-slop-frames.js";
 import { makeMeaningReframe, meaningReframe } from "./meaning-reframe.js";
+import { hasConcreteCorrectionEvidence } from "../../../../shared/matchers/concrete-evidence.js";
 import {
   splitSentences,
   type SplitSentence
@@ -85,8 +86,9 @@ function inlineNegationContrast(
     return undefined;
   }
 
-  return hasCommaBeforeNegation(sentence.text, negation.start) ||
-    hasInlineContrastConnectorAfterNegation(tokens, negationIndex)
+  return !hasConcreteCorrectionEvidence(sentence.text) &&
+    (hasCommaBeforeNegation(sentence.text, negation.start) ||
+      hasInlineContrastConnectorAfterNegation(tokens, negationIndex))
     ? {
         end: sentence.end,
         start: sentence.start,
@@ -327,7 +329,8 @@ function sentencePairReframe(
     sameSubjectCopularReframe(aTokens, bTokens) ||
     pronounCopularReframe(aTokens, bTokens) ||
     progressiveVerbMirror(aTokens, bTokens) ||
-    startsWithExplicitReplacement(bTokens) ||
+    (startsWithExplicitReplacement(bTokens) &&
+      !hasConcreteCorrectionEvidence(`${a.text} ${b.text}`)) ||
     meaningReframe(aTokens, bTokens) ||
     makeMeaningReframe(aTokens, bTokens) ||
     needReframe(aTokens, bTokens) ||

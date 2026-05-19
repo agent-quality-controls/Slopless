@@ -1,3 +1,5 @@
+import type { AnyTxtNode } from "@textlint/ast-node-types";
+
 export type RuleFamilyId =
   | "academic-slop"
   | "markdown-layout"
@@ -27,7 +29,7 @@ export type SourceRange = {
 export type TextUnit = {
   readonly id: string;
   readonly kind: TextUnitKind;
-  readonly node: unknown;
+  readonly node: AnyTxtNode;
   readonly normalizedText: string;
   readonly range: SourceRange;
   readonly sourceRangeFor: (range: SourceRange) => SourceRange;
@@ -35,7 +37,7 @@ export type TextUnit = {
 };
 
 export type RuleInput<Options = unknown> = {
-  readonly options: Options;
+  readonly options: Options | undefined;
   readonly ruleId: RuleId;
   readonly units: readonly TextUnit[];
 };

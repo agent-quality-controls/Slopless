@@ -61,7 +61,8 @@ function matchesPattern(
   }
 
   for (let index = 0; index < pattern.length; index += 1) {
-    if (!partMatches(words[index], pattern[index] as Part)) {
+    const part = pattern[index];
+    if (part === undefined || !partMatches(words[index], part)) {
       return false;
     }
   }

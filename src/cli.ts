@@ -206,14 +206,20 @@ async function installSkill(
 }
 
 async function readStdin(): Promise<string> {
-  let text = "";
-  const stream = process.stdin.setEncoding("utf8") as AsyncIterable<string>;
+  return await new Promise<string>((resolve, reject) => {
+    const chunks: string[] = [];
+    process.stdin.setEncoding("utf8");
 
-  for await (const chunk of stream) {
-    text += chunk;
-  }
-
-  return text;
+    process.stdin.on("data", (chunk: Buffer | string) => {
+      chunks.push(typeof chunk === "string" ? chunk : chunk.toString("utf8"));
+    });
+    process.stdin.once("end", () => {
+      resolve(chunks.join(""));
+    });
+    process.stdin.once("error", (error: Error) => {
+      reject(error);
+    });
+  });
 }
 
 async function main(): Promise<number> {

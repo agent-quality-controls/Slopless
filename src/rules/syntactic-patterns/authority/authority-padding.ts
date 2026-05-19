@@ -1,3 +1,4 @@
+import { hasConcreteAuthorityEvidence } from "../../../shared/matchers/concrete-evidence.js";
 import {
   cleanSentence,
   tokens,
@@ -131,6 +132,10 @@ function matchesAdverbialSubjectPredicate(
 
 function matchAuthorityPadding(sentence: string): SentenceMatch | undefined {
   const stripped = cleanSentence(sentence, PREFIXES);
+
+  if (hasConcreteAuthorityEvidence(stripped)) {
+    return undefined;
+  }
 
   if (PRESTIGE_SUFFIXES.some((suffix) => stripped.includes(suffix))) {
     return { kind: "prestige-frame", signal: "work is famous for a reason" };

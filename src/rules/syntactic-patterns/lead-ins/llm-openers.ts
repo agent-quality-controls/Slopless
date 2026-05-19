@@ -1,3 +1,4 @@
+import { hasConcreteTechnicalToken } from "../../../shared/matchers/concrete-evidence.js";
 import { tokens } from "../../../shared/matchers/prose-patterns.js";
 import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
@@ -29,7 +30,7 @@ const FIRST_PERSON_REVERSAL_VERBS = [
 const REVERSAL_MARKERS = ["actually", "but", "now", "then", "until", "wrong"];
 
 function matchFirstPersonReversal(lower: string): string | undefined {
-  if (!lower.startsWith("i used to ")) {
+  if (!lower.startsWith("i used to ") || hasConcreteTechnicalToken(lower)) {
     return undefined;
   }
 

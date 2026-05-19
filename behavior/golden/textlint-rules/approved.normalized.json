@@ -6035,29 +6035,6 @@
     "messages": [
       {
         "column": 1,
-        "index": 442,
-        "line": 11,
-        "loc": {
-          "end": {
-            "column": 68,
-            "line": 11
-          },
-          "start": {
-            "column": 1,
-            "line": 11
-          }
-        },
-        "message": "Demonstrative emphasis found: \"That is where the repayment job must run before the invoice export.\". Reduce repeated short emphasis lines.",
-        "range": [
-          442,
-          509
-        ],
-        "ruleId": "demonstrative-emphasis",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
         "index": 1146,
         "line": 33,
         "loc": {
@@ -28191,29 +28168,6 @@
           1426
         ],
         "ruleId": "semantic-thinness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 1428,
-        "line": 87,
-        "loc": {
-          "end": {
-            "column": 68,
-            "line": 87
-          },
-          "start": {
-            "column": 1,
-            "line": 87
-          }
-        },
-        "message": "Demonstrative emphasis found: \"That is where the repayment job must run before the invoice export.\". Reduce repeated short emphasis lines.",
-        "range": [
-          1428,
-          1495
-        ],
-        "ruleId": "demonstrative-emphasis",
         "severity": 2,
         "type": "lint"
       },

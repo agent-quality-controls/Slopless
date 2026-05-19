@@ -1,5 +1,6 @@
 import { defineTextlintRule } from "../../../adapters/textlint/rule.js";
 import { paragraphUnits } from "../../../adapters/textlint/units.js";
+import { hasConcreteImplementationSummary } from "../../../shared/matchers/concrete-evidence.js";
 import {
   type SplitSentence,
   splitSentences
@@ -246,6 +247,10 @@ function classifyDemonstrativeNpCopular(
 function classify(sentence: SplitSentence): string | undefined {
   const normalized = normalizeText(sentence.text);
   const stripped = stripLeadingPrefix(normalized);
+  if (hasConcreteImplementationSummary(stripped)) {
+    return undefined;
+  }
+
   const tokens = splitWhitespace(stripped);
   if (tokens.length < 3 || tokens.length > MAX_SENTENCE_WORDS) {
     return undefined;

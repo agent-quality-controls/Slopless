@@ -43,7 +43,7 @@ type UnitKind =
 type DetectionRuleInput<Options extends object> = {
   readonly detect: (
     unit: TextUnit,
-    options: Readonly<Options>
+    options: Readonly<Options> | undefined
   ) => readonly LocalDetection[];
   readonly family: RuleFamilyId;
   readonly formatMessage: (report: RuleReport) => string;

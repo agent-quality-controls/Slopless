@@ -1,4 +1,5 @@
 import { cleanSentence } from "../../../shared/matchers/prose-patterns.js";
+import { hasConcreteCausalSummary } from "../../../shared/matchers/concrete-evidence.js";
 import { wordTokens, type Token } from "../../../shared/text/tokens.js";
 import {
   hasConcreteExplanation,
@@ -251,9 +252,13 @@ function templateMatchesPattern(
 
 function matchCompiledPattern(
   tokens: readonly Token[],
-  pattern: CompiledPattern
+  pattern: CompiledPattern,
+  text: string
 ): SemanticThinnessMatch | undefined {
-  if (shouldRejectForPattern(pattern, tokens)) {
+  if (
+    shouldRejectForPattern(pattern, tokens) ||
+    (BROAD_PATTERN_IDS.has(pattern.id) && hasConcreteCausalSummary(text))
+  ) {
     return undefined;
   }
 
@@ -283,7 +288,7 @@ export function findSemanticThinnessMatch(
   }
 
   for (const pattern of patterns) {
-    const match = matchCompiledPattern(tokens, pattern);
+    const match = matchCompiledPattern(tokens, pattern, cleaned);
     if (match !== undefined) {
       return match;
     }

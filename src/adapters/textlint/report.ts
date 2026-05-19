@@ -6,23 +6,13 @@ import { textUnitForNode } from "./units.js";
 import type { RuleReport } from "../../reporting/types.js";
 import { oneToOneReports } from "../../reporting/reports.js";
 
-type TextlintTextUnit = TextUnit & {
-  readonly node: TxtNode;
-};
-
-function isTextlintTextUnit(unit: TextUnit): unit is TextlintTextUnit {
-  return (
-    typeof unit.node === "object" && unit.node !== null && "type" in unit.node
-  );
-}
-
 export function emitTextlintReport(
   context: Readonly<TextlintRuleContext>,
   unitsById: ReadonlyMap<string, TextUnit>,
   report: RuleReport
 ): void {
   const unit = unitsById.get(report.unitId);
-  if (unit === undefined || !isTextlintTextUnit(unit)) {
+  if (unit === undefined) {
     return;
   }
 

@@ -1,3 +1,4 @@
+import { hasConcreteImplementationSummary } from "../../../shared/matchers/concrete-evidence.js";
 import {
   cleanSentence,
   containsAny,
@@ -254,7 +255,7 @@ function matchSignposting(sentence: string): SentenceMatch | undefined {
   const abstract = matchAbstractFrame(stripped);
   const formulaicSetup = matchFormulaicContentSetup(stripped);
 
-  if (abstract !== undefined) {
+  if (abstract !== undefined && !hasConcreteImplementationSummary(stripped)) {
     return { kind: "abstract-evaluation-frame", signal: abstract };
   }
   if (formulaicSetup !== undefined) {

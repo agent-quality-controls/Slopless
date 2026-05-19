@@ -1,5 +1,6 @@
 import { isWhitespace } from "../../shared/text/whitespace.js";
 import { oneToOneRule } from "../private/textlint-rule-builders.js";
+import type { LocalDetection } from "../private/textlint-rule-builders.js";
 
 const CLOSED_EM_DASH = "\u2014";
 
@@ -13,7 +14,7 @@ function isClosedEmDash(text: string, index: number): boolean {
 
 const rule = oneToOneRule({
   detect: (unit) => {
-    const detections = [];
+    const detections: LocalDetection[] = [];
     for (let index = 0; index < unit.text.length; index += 1) {
       if (!isClosedEmDash(unit.text, index)) {
         continue;
