@@ -189,3 +189,15 @@ Her eyes moved from the window to the floor because the chalk mark continued und
 The meeting room felt different after facilities removed the temporary wall.
 
 After that, the conversation shifted to the missing invoice export.
+
+Doubt entered the room after the auditor found two missing signatures.
+
+Water washed over the group after the roof seam split.
+
+The answer arrived as a signed email from the billing owner.
+
+The real work began at eight thirty with the masonry crew.
+
+The point was not control group B because the trial assigned it after screening.
+
+The recording measured the silence at 28 decibels after the generator shut down.

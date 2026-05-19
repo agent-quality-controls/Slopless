@@ -1837,7 +1837,7 @@
       "line": 31
     },
     {
-      "text": "The migration might finish after the config review.",
+      "text": "The change may finish after the review.",
       "family": "words",
       "bucket": "no-hits",
       "source": "cases/words/no-hits.md",
@@ -2157,6 +2157,48 @@
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
       "line": 97
+    },
+    {
+      "text": "Moreover, this scalable approach unlocks nuanced insight across the ecosystem.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 33
+    },
+    {
+      "text": "Ultimately, the transformative strategy elevates impact across every workflow.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 35
+    },
+    {
+      "text": "Furthermore, the scalable ecosystem unlocks nuanced transformation at every touchpoint.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 37
+    },
+    {
+      "text": "The scalable test fixture generated 4,000 rows before the benchmark stopped.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 15
+    },
+    {
+      "text": "The ecosystem survey counted 28 wetland species in the south basin.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 17
+    },
+    {
+      "text": "The editor quoted a three-word phrase about insight as the phrase to delete.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 19
     }
   ]
 }

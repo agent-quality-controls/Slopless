@@ -66,6 +66,7 @@ const AUTHORITY_CONCRETE_TOKENS = new Set([
 const IMPLEMENTATION_SUMMARY_TOKENS = new Set([
   "api",
   "authentication",
+  "audit",
   "body",
   "cache",
   "checklist",
@@ -76,6 +77,8 @@ const IMPLEMENTATION_SUMMARY_TOKENS = new Set([
   "inhaler",
   "invoice",
   "key",
+  "fuse",
+  "motor",
   "numbers",
   "locale",
   "microscope",
@@ -83,13 +86,17 @@ const IMPLEMENTATION_SUMMARY_TOKENS = new Set([
   "offsets",
   "page",
   "parser",
+  "rotate",
+  "rpm",
   "repayment",
   "returned",
   "signing",
   "slide",
   "source",
   "staging",
-  "tokens"
+  "table",
+  "tokens",
+  "voltage"
 ]);
 const MEDICAL_PLACE_TOKENS = new Set(["inhaler", "nurse"]);
 const CONCRETE_INVENTORY_HEADS = new Set(["dose", "patch", "rule", "test"]);

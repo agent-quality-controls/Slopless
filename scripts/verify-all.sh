@@ -16,6 +16,7 @@ scripts/verify-emotion-substance-and-density-expansion.py
 scripts/verify-negative-slop.py
 scripts/verify-new-density-checks.py
 scripts/verify-adversarial-widening.py
+scripts/verify-maximal-widening.py
 scripts/verify-fixture-corpus-coverage.py
 scripts/verify-rules-reporting-architecture.py
 scripts/verify-corpus-preserve.py

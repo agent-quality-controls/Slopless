@@ -6,12 +6,37 @@
   "maxTokens": 24,
   "templates": [
     "{abstractSubject} had no place in {thinContainer}.",
-    "{abstractSubject} entered {socialPlace}."
+    "{abstractSubject} entered {socialPlace}.",
+    "{abstractSubject} moved through {socialPlace}.",
+    "{abstractSubject} took over {socialPlace}."
   ],
   "slots": {
-    "abstractSubject": ["fear", "sadness", "doubt", "panic", "regret"],
-    "thinContainer": ["her schedule", "his schedule", "their schedule"],
-    "socialPlace": ["the room", "the conversation", "the meeting"]
+    "abstractSubject": [
+      "fear",
+      "sadness",
+      "doubt",
+      "panic",
+      "regret",
+      "shame",
+      "certainty",
+      "hope",
+      "pressure"
+    ],
+    "thinContainer": [
+      "her schedule",
+      "his schedule",
+      "their schedule",
+      "the plan",
+      "the room"
+    ],
+    "socialPlace": [
+      "the room",
+      "the conversation",
+      "the meeting",
+      "the call",
+      "the review",
+      "the table"
+    ]
   },
   "rejectIf": [
     "sentence includes a concrete policy, safety, legal, or logistical reason",

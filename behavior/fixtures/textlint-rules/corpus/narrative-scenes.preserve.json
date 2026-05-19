@@ -1366,6 +1366,104 @@
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
       "line": 83
+    },
+    {
+      "text": "In the silence after the vote, relief washed over the group.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 207
+    },
+    {
+      "text": "When the room went quiet, silence became heavy.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 215
+    },
+    {
+      "text": "Water washed over the group after the roof seam split.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 195
+    },
+    {
+      "text": "The recording measured the silence at 28 decibels after the generator shut down.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 203
+    },
+    {
+      "text": "A flicker of doubt crossed her face.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 65
+    },
+    {
+      "text": "His eyes flashed with something unreadable.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 67
+    },
+    {
+      "text": "She released a breath she did not know she was holding.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 69
+    },
+    {
+      "text": "Time seemed to slow around them.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 71
+    },
+    {
+      "text": "Cassia glanced at Arden. Her throat tightened. She stepped back. Her eyes found the door. She waited.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 73
+    },
+    {
+      "text": "A flicker of blue light crossed the signal lens after Cassia turned the crank.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 85
+    },
+    {
+      "text": "His eyes flashed red because the stage reflector caught the glass lenses.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 87
+    },
+    {
+      "text": "The diver released a breath after surfacing beside the dock.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 89
+    },
+    {
+      "text": "The timer seemed to slow because the display refreshed once per second.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 91
+    },
+    {
+      "text": "Cassia glanced at the chalk arrow, stepped to the gate, copied the symbol, and waited for Arden to count the guards.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 93
     }
   ]
 }

@@ -419,3 +419,9 @@ Cassia stepped to the sill, she rested her paws on the wood, and then she looked
 Arden scanned the alley. Cassia noticed the gate. Remal studied the roofline.
 
 The control passage kept the same surface vocabulary but tied it to evidence and tasks. Her eyes moved from the window to the floor because the chalk mark continued under the sill. She did not answer the guard because the bell drowned out his question. Cassia stepped to the sill, rested the pulley on the wood, and checked the knot number scratched into the post. Arden scanned the alley for the chalk arrow, counted two guards, and copied the mark onto his slate.
+
+The next rough scene leaned harder into stock emotional movement. In the silence after the vote, relief washed over the group. When the room went quiet, silence became heavy. A flicker of doubt crossed her face. His eyes flashed with something unreadable. She released a breath she did not know she was holding. Time seemed to slow around them.
+
+The mixed-beat sample stacked low-information movement, body, and looking beats. Cassia glanced at Arden. Her throat tightened. She stepped back. Her eyes found the door. She waited.
+
+The control scene kept similar words but gave each beat a task or physical cause. Water washed over the group after the roof seam split. The recording measured the silence at 28 decibels after the generator shut down. A flicker of blue light crossed the signal lens after Cassia turned the crank. His eyes flashed red because the stage reflector caught the glass lenses. The diver released a breath after surfacing beside the dock. The timer seemed to slow because the display refreshed once per second. Cassia glanced at the chalk arrow, stepped to the gate, copied the symbol, and waited for Arden to count the guards.

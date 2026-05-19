@@ -13,6 +13,12 @@ const SUMMATIVE_PATTERNS = [
   "that is why it matters",
   "that's why this matters",
   "that is why this matters",
+  "that is what makes",
+  "this is what makes",
+  "that is what makes the",
+  "this is what makes the",
+  "this is why it works",
+  "that is why it works",
   "that is the reason",
   "this is the reason",
   "this is why it matters",
@@ -23,12 +29,14 @@ const SUMMATIVE_PATTERNS = [
   "the main takeaway is",
   "the point is",
   "the practical takeaway is",
+  "the practical takeaway is clear",
   "the real lesson is",
   "the takeaway is",
   "to sum up",
   "to summarize"
 ];
 const CONCRETE_MARKERS = [
+  ":",
   "because",
   "by ",
   "from ",

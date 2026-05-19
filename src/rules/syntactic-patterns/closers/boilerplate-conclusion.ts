@@ -16,8 +16,13 @@ const PREFIXES = [
   "and ",
   "but "
 ];
-const IMPORTANCE_CUES = ["most important", "single most important", "deepest"];
-const SUMMARY_NOUNS = ["insight", "reason", "idea", "step"];
+const IMPORTANCE_CUES = [
+  "most important",
+  "single most important",
+  "deepest",
+  "powerful"
+];
+const SUMMARY_NOUNS = ["insight", "reason", "idea", "step", "method"];
 const AUTHORITY_CLOSE_PATTERNS = [
   "the research is clear",
   "science is clear",
@@ -37,6 +42,7 @@ const COMPRESSION_CLOSE_PATTERNS = [
   "the useful part",
   "the important part",
   "the practical point",
+  "the practical takeaway",
   "the rest is detail"
 ];
 const FORMULA_SUBJECTS = ["that", "this", "it"];
@@ -47,6 +53,7 @@ const FORMULA_NOUNS = [
   "game",
   "idea",
   "lesson",
+  "method",
   "move",
   "point",
   "rule",

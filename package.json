@@ -46,6 +46,7 @@
     "./rules/metrics/word-repetition": "./dist/rules/metrics/word-repetition.js",
     "./rules/narrative-slop/body-action-density": "./dist/rules/narrative-slop/body-action-density.js",
     "./rules/narrative-slop/flat-action-cadence": "./dist/rules/narrative-slop/flat-action-cadence.js",
+    "./rules/narrative-slop/low-information-beat-density": "./dist/rules/narrative-slop/low-information-beat-density.js",
     "./rules/narrative-slop/narrative-cliches": "./dist/rules/narrative-slop/narrative-cliches.js",
     "./rules/narrative-slop/perception-verb-density": "./dist/rules/narrative-slop/perception-verb-density.js",
     "./rules/orthography/artifact-placeholders": "./dist/rules/orthography/artifact-placeholders.js",
@@ -94,6 +95,7 @@
     "./rules/syntactic-patterns/repetition/repeated-sentence-starts": "./dist/rules/syntactic-patterns/repetition/repeated-sentence-starts.js",
     "./rules/syntactic-patterns/repetition/triple-repeat": "./dist/rules/syntactic-patterns/repetition/triple-repeat.js",
     "./rules/words/hedge-stacking": "./dist/rules/words/hedge-stacking.js",
+    "./rules/words/llm-vocabulary-density": "./dist/rules/words/llm-vocabulary-density.js",
     "./rules/words/llm-vocabulary": "./dist/rules/words/llm-vocabulary.js",
     "./rules/words/simplicity": "./dist/rules/words/simplicity.js",
     "./rules/words/prohibited-words": "./dist/rules/words/prohibited-words.js"

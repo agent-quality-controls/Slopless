@@ -61,6 +61,7 @@ const REJECT_TOKENS = new Set([
   "while"
 ]);
 const BROAD_PATTERN_IDS = new Set([
+  "abstract-personification-line",
   "body-emotion-shorthand",
   "deictic-summary",
   "empty-scene-state",
@@ -70,6 +71,8 @@ const BROAD_PATTERN_IDS = new Set([
   "generic-realization",
   "hollow-significance",
   "puffery-evaluative-claim",
+  "real-work-begins",
+  "truth-answer-moves",
   "vague-threshold-change"
 ]);
 const CONNECTOR_ALLOWED_PATTERN_IDS = new Set(["vague-summary-cost"]);

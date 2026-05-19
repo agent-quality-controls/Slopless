@@ -831,3 +831,13 @@ The SEO draft had the same slogan problem in a more polished voice. The fix is n
 This practical focus is the whole game. She did not answer the criticism. Instead, she shifted the frame.
 
 The factual controls used the same surface shapes with concrete anchors. The repair is not more dashboards but the invoice export named in the audit. The cache is less stable than the signed upload URL under retry load. A better strategy is documented in the rollback checklist. This practical focus is the microscope adjustment that keeps the slide centered.
+
+The broader semantic batch added a review paragraph that kept the bad abstractions visible in context. By the end of the meeting, doubt entered the room. By then, the answer had arrived as a small signal. That was where the real work began. The point was not control for its own sake.
+
+The matching controls used the same nouns but tied them to evidence. Doubt entered the room after the auditor found two missing signatures. The answer arrived as a signed email from the billing owner. The real work began at eight thirty with the masonry crew. The point was not control group B because the trial assigned it after screening.
+
+The syntactic batch used broad public-writing formulas. That is what makes the method powerful. This is why it works. The lesson here is simple. The practical takeaway is clear. Watch how the frame changes. You can see it everywhere now.
+
+The syntactic controls kept the same surface grammar with concrete anchors. That is what makes the motor rotate at 1,800 rpm. This is why the test failed when the token expired before retry. The lesson here is to rotate the signing key every 30 days. The practical takeaway is in Table 2 of the audit report. Watch how voltage changes after the fuse opens. You can see it in the microscope slide after the dye sets.
+
+The point was not control for its own sake. The practical takeaway is clear.

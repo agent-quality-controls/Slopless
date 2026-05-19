@@ -81,3 +81,13 @@ Cassia stepped to the sill, rested the pulley on the wood, and checked the knot 
 The patient's jaw tightened when the dentist adjusted the spacer.
 
 Arden scanned the alley for the chalk arrow, counted two guards, and copied the mark onto his slate.
+
+A flicker of blue light crossed the signal lens after Cassia turned the crank.
+
+His eyes flashed red because the stage reflector caught the glass lenses.
+
+The diver released a breath after surfacing beside the dock.
+
+The timer seemed to slow because the display refreshed once per second.
+
+Cassia glanced at the chalk arrow, stepped to the gate, copied the symbol, and waited for Arden to count the guards.

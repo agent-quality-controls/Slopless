@@ -61,3 +61,13 @@ Cassia stepped to the sill, she rested her paws on the wood, and then she looked
 Liska blinked. Her jaw tightened. Her shoulders stiffened.
 
 Arden scanned the alley. Cassia noticed the gate. Remal studied the roofline.
+
+A flicker of doubt crossed her face.
+
+His eyes flashed with something unreadable.
+
+She released a breath she did not know she was holding.
+
+Time seemed to slow around them.
+
+Cassia glanced at Arden. Her throat tightened. She stepped back. Her eyes found the door. She waited.

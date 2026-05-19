@@ -8,7 +8,8 @@
     "{workSubject} {startVerb}.",
     "{workSubject} {startVerb} when {genericSubject} {abstractAction}.",
     "{workSubject} {startVerb} after {abstractEvent} {fadesVerb}.",
-    "where {workSubject} {startVerb}."
+    "where {workSubject} {startVerb}.",
+    "that was where {workSubject} {pastStartVerb}."
   ],
   "slots": {
     "workSubject": [
@@ -20,6 +21,7 @@
       "the inner work"
     ],
     "startVerb": ["begins", "starts", "happens", "lives"],
+    "pastStartVerb": ["began", "started", "happened", "lived"],
     "genericSubject": ["we", "you", "they", "people", "the team"],
     "abstractAction": [
       "start naming what matters",

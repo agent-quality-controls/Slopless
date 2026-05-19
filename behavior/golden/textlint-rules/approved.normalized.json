@@ -2441,23 +2441,184 @@
         "type": "lint"
       },
       {
+        "column": 1,
+        "index": 8563,
+        "line": 277,
+        "loc": {
+          "end": {
+            "column": 9,
+            "line": 277
+          },
+          "start": {
+            "column": 1,
+            "line": 277
+          }
+        },
+        "message": "LLM vocabulary found: \"Moreover\". Replace the stock diction with a concrete word.",
+        "range": [
+          8563,
+          8571
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 16,
+        "index": 8578,
+        "line": 277,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 277
+          },
+          "start": {
+            "column": 16,
+            "line": 277
+          }
+        },
+        "message": "LLM vocabulary density: 6 stock abstraction words in a short span (scalable, approach, unlocks, nuanced, insight, ecosystem).",
+        "range": [
+          8578,
+          8640
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 8659,
+        "line": 279,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 279
+          },
+          "start": {
+            "column": 17,
+            "line": 279
+          }
+        },
+        "message": "Prohibited word found: \"transformative\". Rewrite without this term.",
+        "range": [
+          8659,
+          8673
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 8659,
+        "line": 279,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 279
+          },
+          "start": {
+            "column": 17,
+            "line": 279
+          }
+        },
+        "message": "LLM vocabulary density: 5 stock abstraction words in a short span (transformative, strategy, elevates, impact, workflow).",
+        "range": [
+          8659,
+          8720
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 18,
+        "index": 8740,
+        "line": 281,
+        "loc": {
+          "end": {
+            "column": 87,
+            "line": 281
+          },
+          "start": {
+            "column": 18,
+            "line": 281
+          }
+        },
+        "message": "LLM vocabulary density: 6 stock abstraction words in a short span (scalable, ecosystem, unlocks, nuanced, transformation, touchpoint).",
+        "range": [
+          8740,
+          8809
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8812,
+        "line": 283,
+        "loc": {
+          "end": {
+            "column": 214,
+            "line": 283
+          },
+          "start": {
+            "column": 1,
+            "line": 283
+          }
+        },
+        "message": "Triple repeat opener found: \"the\". Vary the sentence openers.",
+        "range": [
+          8812,
+          9025
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 70,
+        "index": 8881,
+        "line": 283,
+        "loc": {
+          "end": {
+            "column": 291,
+            "line": 283
+          },
+          "start": {
+            "column": 70,
+            "line": 283
+          }
+        },
+        "message": "Triple repeat opener found: \"the\". Vary the sentence openers.",
+        "range": [
+          8881,
+          9102
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 30,
-        "index": 8980,
-        "line": 289,
+        "index": 9594,
+        "line": 299,
         "loc": {
           "end": {
             "column": 50,
-            "line": 289
+            "line": 299
           },
           "start": {
             "column": 30,
-            "line": 289
+            "line": 299
           }
         },
         "message": "Wordy phrase found: \"due to the fact that\". Replace it with direct wording.",
         "range": [
-          8980,
-          9000
+          9594,
+          9614
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2465,22 +2626,22 @@
       },
       {
         "column": 20,
-        "index": 9043,
-        "line": 291,
+        "index": 9657,
+        "line": 301,
         "loc": {
           "end": {
             "column": 34,
-            "line": 291
+            "line": 301
           },
           "start": {
             "column": 20,
-            "line": 291
+            "line": 301
           }
         },
         "message": "Redundant phrase found: \"repeated again\". Remove the repeated meaning.",
         "range": [
-          9043,
-          9057
+          9657,
+          9671
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -2488,22 +2649,22 @@
       },
       {
         "column": 30,
-        "index": 9112,
-        "line": 293,
+        "index": 9726,
+        "line": 303,
         "loc": {
           "end": {
             "column": 53,
-            "line": 293
+            "line": 303
           },
           "start": {
             "column": 30,
-            "line": 293
+            "line": 303
           }
         },
         "message": "Cliche found: \"air their dirty laundry\". Replace it with specific wording.",
         "range": [
-          9112,
-          9135
+          9726,
+          9749
         ],
         "ruleId": "cliches",
         "severity": 2,
@@ -2511,22 +2672,22 @@
       },
       {
         "column": 28,
-        "index": 9165,
-        "line": 295,
+        "index": 9779,
+        "line": 305,
         "loc": {
           "end": {
             "column": 48,
-            "line": 295
+            "line": 305
           },
           "start": {
             "column": 28,
-            "line": 295
+            "line": 305
           }
         },
         "message": "Corporate-speak phrase found: \"plays a crucial role\". Replace it with specific wording.",
         "range": [
-          9165,
-          9185
+          9779,
+          9799
         ],
         "ruleId": "corporate-speak",
         "severity": 2,
@@ -2534,22 +2695,22 @@
       },
       {
         "column": 1,
-        "index": 9208,
-        "line": 297,
+        "index": 9822,
+        "line": 307,
         "loc": {
           "end": {
             "column": 49,
-            "line": 297
+            "line": 307
           },
           "start": {
             "column": 1,
-            "line": 297
+            "line": 307
           }
         },
         "message": "Response wrapper found: chat-scaffold (please let me know). Remove assistant response scaffolding.",
         "range": [
-          9208,
-          9256
+          9822,
+          9870
         ],
         "ruleId": "response-wrapper",
         "severity": 2,
@@ -2557,22 +2718,22 @@
       },
       {
         "column": 16,
-        "index": 9737,
-        "line": 311,
+        "index": 10351,
+        "line": 321,
         "loc": {
           "end": {
             "column": 40,
-            "line": 311
+            "line": 321
           },
           "start": {
             "column": 16,
-            "line": 311
+            "line": 321
           }
         },
         "message": "Wordy phrase found: \"because of the fact that\". Replace it with direct wording.",
         "range": [
-          9737,
-          9761
+          10351,
+          10375
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2580,22 +2741,22 @@
       },
       {
         "column": 15,
-        "index": 9798,
-        "line": 313,
+        "index": 10412,
+        "line": 323,
         "loc": {
           "end": {
             "column": 37,
-            "line": 313
+            "line": 323
           },
           "start": {
             "column": 15,
-            "line": 313
+            "line": 323
           }
         },
         "message": "Wordy phrase found: \"owing to the fact that\". Replace it with direct wording.",
         "range": [
-          9798,
-          9820
+          10412,
+          10434
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2603,22 +2764,22 @@
       },
       {
         "column": 15,
-        "index": 9858,
-        "line": 315,
+        "index": 10472,
+        "line": 325,
         "loc": {
           "end": {
             "column": 40,
-            "line": 315
+            "line": 325
           },
           "start": {
             "column": 15,
-            "line": 315
+            "line": 325
           }
         },
         "message": "Wordy phrase found: \"in light of the fact that\". Replace it with direct wording.",
         "range": [
-          9858,
-          9883
+          10472,
+          10497
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2626,22 +2787,22 @@
       },
       {
         "column": 17,
-        "index": 9921,
-        "line": 317,
+        "index": 10535,
+        "line": 327,
         "loc": {
           "end": {
             "column": 43,
-            "line": 317
+            "line": 327
           },
           "start": {
             "column": 17,
-            "line": 317
+            "line": 327
           }
         },
         "message": "Wordy phrase found: \"by virtue of the fact that\". Replace it with direct wording.",
         "range": [
-          9921,
-          9947
+          10535,
+          10561
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2649,22 +2810,22 @@
       },
       {
         "column": 18,
-        "index": 9985,
-        "line": 319,
+        "index": 10599,
+        "line": 329,
         "loc": {
           "end": {
             "column": 40,
-            "line": 319
+            "line": 329
           },
           "start": {
             "column": 18,
-            "line": 319
+            "line": 329
           }
         },
         "message": "Wordy phrase found: \"based on the fact that\". Replace it with direct wording.",
         "range": [
-          9985,
-          10007
+          10599,
+          10621
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2672,22 +2833,22 @@
       },
       {
         "column": 17,
-        "index": 10042,
-        "line": 321,
+        "index": 10656,
+        "line": 331,
         "loc": {
           "end": {
             "column": 38,
-            "line": 321
+            "line": 331
           },
           "start": {
             "column": 17,
-            "line": 321
+            "line": 331
           }
         },
         "message": "Wordy phrase found: \"despite the fact that\". Replace it with direct wording.",
         "range": [
-          10042,
-          10063
+          10656,
+          10677
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2695,22 +2856,22 @@
       },
       {
         "column": 17,
-        "index": 10102,
-        "line": 323,
+        "index": 10716,
+        "line": 333,
         "loc": {
           "end": {
             "column": 42,
-            "line": 323
+            "line": 333
           },
           "start": {
             "column": 17,
-            "line": 323
+            "line": 333
           }
         },
         "message": "Wordy phrase found: \"in spite of the fact that\". Replace it with direct wording.",
         "range": [
-          10102,
-          10127
+          10716,
+          10741
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2718,22 +2879,22 @@
       },
       {
         "column": 23,
-        "index": 10171,
-        "line": 325,
+        "index": 10785,
+        "line": 335,
         "loc": {
           "end": {
             "column": 44,
-            "line": 325
+            "line": 335
           },
           "start": {
             "column": 23,
-            "line": 325
+            "line": 335
           }
         },
         "message": "Wordy phrase found: \"at this point in time\". Replace it with direct wording.",
         "range": [
-          10171,
-          10192
+          10785,
+          10806
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2741,22 +2902,22 @@
       },
       {
         "column": 22,
-        "index": 10216,
-        "line": 327,
+        "index": 10830,
+        "line": 337,
         "loc": {
           "end": {
             "column": 41,
-            "line": 327
+            "line": 337
           },
           "start": {
             "column": 22,
-            "line": 327
+            "line": 337
           }
         },
         "message": "Wordy phrase found: \"at the present time\". Replace it with direct wording.",
         "range": [
-          10216,
-          10235
+          10830,
+          10849
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2764,22 +2925,22 @@
       },
       {
         "column": 22,
-        "index": 10259,
-        "line": 329,
+        "index": 10873,
+        "line": 339,
         "loc": {
           "end": {
             "column": 44,
-            "line": 329
+            "line": 339
           },
           "start": {
             "column": 22,
-            "line": 329
+            "line": 339
           }
         },
         "message": "Wordy phrase found: \"at this moment in time\". Replace it with direct wording.",
         "range": [
-          10259,
-          10281
+          10873,
+          10895
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -2787,122 +2948,7 @@
       },
       {
         "column": 20,
-        "index": 10303,
-        "line": 331,
-        "loc": {
-          "end": {
-            "column": 40,
-            "line": 331
-          },
-          "start": {
-            "column": 20,
-            "line": 331
-          }
-        },
-        "message": "Wordy phrase found: \"during the course of\". Replace it with direct wording.",
-        "range": [
-          10303,
-          10323
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 17,
-        "index": 10352,
-        "line": 333,
-        "loc": {
-          "end": {
-            "column": 37,
-            "line": 333
-          },
-          "start": {
-            "column": 17,
-            "line": 333
-          }
-        },
-        "message": "Wordy phrase found: \"during the period of\". Replace it with direct wording.",
-        "range": [
-          10352,
-          10372
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 30,
-        "index": 10411,
-        "line": 335,
-        "loc": {
-          "end": {
-            "column": 52,
-            "line": 335
-          },
-          "start": {
-            "column": 30,
-            "line": 335
-          }
-        },
-        "message": "Wordy phrase found: \"during the duration of\". Replace it with direct wording.",
-        "range": [
-          10411,
-          10433
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 14,
-        "index": 10460,
-        "line": 337,
-        "loc": {
-          "end": {
-            "column": 25,
-            "line": 337
-          },
-          "start": {
-            "column": 14,
-            "line": 337
-          }
-        },
-        "message": "Wordy phrase found: \"in order to\". Replace it with direct wording.",
-        "range": [
-          10460,
-          10471
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 14,
-        "index": 10507,
-        "line": 339,
-        "loc": {
-          "end": {
-            "column": 29,
-            "line": 339
-          },
-          "start": {
-            "column": 14,
-            "line": 339
-          }
-        },
-        "message": "Wordy phrase found: \"in an effort to\". Replace it with direct wording.",
-        "range": [
-          10507,
-          10522
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 22,
-        "index": 10559,
+        "index": 10917,
         "line": 341,
         "loc": {
           "end": {
@@ -2910,451 +2956,37 @@
             "line": 341
           },
           "start": {
-            "column": 22,
+            "column": 20,
             "line": 341
           }
         },
-        "message": "Wordy phrase found: \"for the purpose of\". Replace it with direct wording.",
+        "message": "Wordy phrase found: \"during the course of\". Replace it with direct wording.",
         "range": [
-          10559,
-          10577
+          10917,
+          10937
         ],
         "ruleId": "wordiness",
         "severity": 2,
         "type": "lint"
       },
       {
-        "column": 27,
-        "index": 10613,
+        "column": 17,
+        "index": 10966,
         "line": 343,
         "loc": {
           "end": {
-            "column": 40,
+            "column": 37,
             "line": 343
           },
           "start": {
-            "column": 27,
+            "column": 17,
             "line": 343
           }
         },
-        "message": "Wordy phrase found: \"as a means of\". Replace it with direct wording.",
+        "message": "Wordy phrase found: \"during the period of\". Replace it with direct wording.",
         "range": [
-          10613,
-          10626
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 13,
-        "index": 10649,
-        "line": 345,
-        "loc": {
-          "end": {
-            "column": 31,
-            "line": 345
-          },
-          "start": {
-            "column": 13,
-            "line": 345
-          }
-        },
-        "message": "Wordy phrase found: \"has the ability to\". Replace it with direct wording.",
-        "range": [
-          10649,
-          10667
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 13,
-        "index": 10699,
-        "line": 347,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 347
-          },
-          "start": {
-            "column": 13,
-            "line": 347
-          }
-        },
-        "message": "Wordy phrase found: \"have the ability to\". Replace it with direct wording.",
-        "range": [
-          10699,
-          10718
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 14,
-        "index": 10748,
-        "line": 349,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 349
-          },
-          "start": {
-            "column": 14,
-            "line": 349
-          }
-        },
-        "message": "Wordy phrase found: \"had the ability to\". Replace it with direct wording.",
-        "range": [
-          10748,
-          10766
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 10795,
-        "line": 351,
-        "loc": {
-          "end": {
-            "column": 39,
-            "line": 351
-          },
-          "start": {
-            "column": 15,
-            "line": 351
-          }
-        },
-        "message": "Wordy phrase found: \"conduct an assessment of\". Replace it with direct wording.",
-        "range": [
-          10795,
-          10819
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 10846,
-        "line": 353,
-        "loc": {
-          "end": {
-            "column": 39,
-            "line": 353
-          },
-          "start": {
-            "column": 15,
-            "line": 353
-          }
-        },
-        "message": "Wordy phrase found: \"conduct an evaluation of\". Replace it with direct wording.",
-        "range": [
-          10846,
-          10870
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 10898,
-        "line": 355,
-        "loc": {
-          "end": {
-            "column": 42,
-            "line": 355
-          },
-          "start": {
-            "column": 15,
-            "line": 355
-          }
-        },
-        "message": "Wordy phrase found: \"conduct an investigation of\". Replace it with direct wording.",
-        "range": [
-          10898,
-          10925
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 10953,
-        "line": 357,
-        "loc": {
-          "end": {
-            "column": 39,
-            "line": 357
-          },
-          "start": {
-            "column": 15,
-            "line": 357
-          }
-        },
-        "message": "Wordy phrase found: \"perform an assessment of\". Replace it with direct wording.",
-        "range": [
-          10953,
-          10977
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 11004,
-        "line": 359,
-        "loc": {
-          "end": {
-            "column": 39,
-            "line": 359
-          },
-          "start": {
-            "column": 15,
-            "line": 359
-          }
-        },
-        "message": "Wordy phrase found: \"perform an evaluation of\". Replace it with direct wording.",
-        "range": [
-          11004,
-          11028
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 11056,
-        "line": 361,
-        "loc": {
-          "end": {
-            "column": 42,
-            "line": 361
-          },
-          "start": {
-            "column": 15,
-            "line": 361
-          }
-        },
-        "message": "Wordy phrase found: \"perform an investigation of\". Replace it with direct wording.",
-        "range": [
-          11056,
-          11083
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 11111,
-        "line": 363,
-        "loc": {
-          "end": {
-            "column": 41,
-            "line": 363
-          },
-          "start": {
-            "column": 15,
-            "line": 363
-          }
-        },
-        "message": "Wordy phrase found: \"carry out an assessment of\". Replace it with direct wording.",
-        "range": [
-          11111,
-          11137
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 11164,
-        "line": 365,
-        "loc": {
-          "end": {
-            "column": 41,
-            "line": 365
-          },
-          "start": {
-            "column": 15,
-            "line": 365
-          }
-        },
-        "message": "Wordy phrase found: \"carry out an evaluation of\". Replace it with direct wording.",
-        "range": [
-          11164,
-          11190
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 11218,
-        "line": 367,
-        "loc": {
-          "end": {
-            "column": 44,
-            "line": 367
-          },
-          "start": {
-            "column": 15,
-            "line": 367
-          }
-        },
-        "message": "Wordy phrase found: \"carry out an investigation of\". Replace it with direct wording.",
-        "range": [
-          11218,
-          11247
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 11275,
-        "line": 369,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 369
-          },
-          "start": {
-            "column": 15,
-            "line": 369
-          }
-        },
-        "message": "Wordy phrase found: \"make reference to\". Replace it with direct wording.",
-        "range": [
-          11275,
-          11292
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 10,
-        "index": 11325,
-        "line": 371,
-        "loc": {
-          "end": {
-            "column": 28,
-            "line": 371
-          },
-          "start": {
-            "column": 10,
-            "line": 371
-          }
-        },
-        "message": "Wordy phrase found: \"makes reference to\". Replace it with direct wording.",
-        "range": [
-          11325,
-          11343
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 10,
-        "index": 11376,
-        "line": 373,
-        "loc": {
-          "end": {
-            "column": 27,
-            "line": 373
-          },
-          "start": {
-            "column": 10,
-            "line": 373
-          }
-        },
-        "message": "Wordy phrase found: \"made reference to\". Replace it with direct wording.",
-        "range": [
-          11376,
-          11393
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 11431,
-        "line": 375,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 375
-          },
-          "start": {
-            "column": 15,
-            "line": 375
-          }
-        },
-        "message": "Wordy phrase found: \"take into account\". Replace it with direct wording.",
-        "range": [
-          11431,
-          11448
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 10,
-        "index": 11478,
-        "line": 377,
-        "loc": {
-          "end": {
-            "column": 28,
-            "line": 377
-          },
-          "start": {
-            "column": 10,
-            "line": 377
-          }
-        },
-        "message": "Wordy phrase found: \"takes into account\". Replace it with direct wording.",
-        "range": [
-          11478,
-          11496
-        ],
-        "ruleId": "wordiness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 10,
-        "index": 11526,
-        "line": 379,
-        "loc": {
-          "end": {
-            "column": 27,
-            "line": 379
-          },
-          "start": {
-            "column": 10,
-            "line": 379
-          }
-        },
-        "message": "Wordy phrase found: \"took into account\". Replace it with direct wording.",
-        "range": [
-          11526,
-          11543
+          10966,
+          10986
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -3362,1149 +2994,91 @@
       },
       {
         "column": 30,
-        "index": 11593,
-        "line": 381,
+        "index": 11025,
+        "line": 345,
         "loc": {
           "end": {
-            "column": 48,
-            "line": 381
+            "column": 52,
+            "line": 345
           },
           "start": {
             "column": 30,
-            "line": 381
+            "line": 345
           }
         },
-        "message": "Redundant phrase found: \"basic fundamentals\". Remove the repeated meaning.",
+        "message": "Wordy phrase found: \"during the duration of\". Replace it with direct wording.",
         "range": [
-          11593,
-          11611
+          11025,
+          11047
         ],
-        "ruleId": "redundancy",
+        "ruleId": "wordiness",
         "severity": 2,
         "type": "lint"
       },
       {
-        "column": 29,
-        "index": 11661,
-        "line": 383,
+        "column": 14,
+        "index": 11074,
+        "line": 347,
         "loc": {
           "end": {
-            "column": 40,
-            "line": 383
+            "column": 25,
+            "line": 347
           },
           "start": {
+            "column": 14,
+            "line": 347
+          }
+        },
+        "message": "Wordy phrase found: \"in order to\". Replace it with direct wording.",
+        "range": [
+          11074,
+          11085
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 14,
+        "index": 11121,
+        "line": 349,
+        "loc": {
+          "end": {
             "column": 29,
-            "line": 383
-          }
-        },
-        "message": "Redundant phrase found: \"actual fact\". Remove the repeated meaning.",
-        "range": [
-          11661,
-          11672
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 18,
-        "index": 11692,
-        "line": 385,
-        "loc": {
-          "end": {
-            "column": 28,
-            "line": 385
+            "line": 349
           },
           "start": {
-            "column": 18,
-            "line": 385
+            "column": 14,
+            "line": 349
           }
         },
-        "message": "Redundant phrase found: \"true facts\". Remove the repeated meaning.",
+        "message": "Wordy phrase found: \"in an effort to\". Replace it with direct wording.",
         "range": [
-          11692,
-          11702
+          11121,
+          11136
         ],
-        "ruleId": "redundancy",
+        "ruleId": "wordiness",
         "severity": 2,
         "type": "lint"
       },
       {
         "column": 22,
-        "index": 11742,
-        "line": 387,
-        "loc": {
-          "end": {
-            "column": 34,
-            "line": 387
-          },
-          "start": {
-            "column": 22,
-            "line": 387
-          }
-        },
-        "message": "Redundant phrase found: \"future plans\". Remove the repeated meaning.",
-        "range": [
-          11742,
-          11754
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 23,
-        "index": 11791,
-        "line": 389,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 389
-          },
-          "start": {
-            "column": 23,
-            "line": 389
-          }
-        },
-        "message": "Redundant phrase found: \"free gift\". Remove the repeated meaning.",
-        "range": [
-          11791,
-          11800
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 29,
-        "index": 11844,
-        "line": 391,
-        "loc": {
-          "end": {
-            "column": 43,
-            "line": 391
-          },
-          "start": {
-            "column": 29,
-            "line": 391
-          }
-        },
-        "message": "Redundant phrase found: \"serious crisis\". Remove the repeated meaning.",
-        "range": [
-          11844,
-          11858
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 29,
-        "index": 11889,
-        "line": 393,
-        "loc": {
-          "end": {
-            "column": 44,
-            "line": 393
-          },
-          "start": {
-            "column": 29,
-            "line": 393
-          }
-        },
-        "message": "Redundant phrase found: \"close proximity\". Remove the repeated meaning.",
-        "range": [
-          11889,
-          11904
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 28,
-        "index": 11945,
-        "line": 395,
-        "loc": {
-          "end": {
-            "column": 42,
-            "line": 395
-          },
-          "start": {
-            "column": 28,
-            "line": 395
-          }
-        },
-        "message": "Redundant phrase found: \"new innovation\". Remove the repeated meaning.",
-        "range": [
-          11945,
-          11959
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 26,
-        "index": 11987,
-        "line": 397,
+        "index": 11173,
+        "line": 351,
         "loc": {
           "end": {
             "column": 40,
-            "line": 397
-          },
-          "start": {
-            "column": 26,
-            "line": 397
-          }
-        },
-        "message": "Redundant phrase found: \"blend together\". Remove the repeated meaning.",
-        "range": [
-          11987,
-          12001
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 26,
-        "index": 12046,
-        "line": 399,
-        "loc": {
-          "end": {
-            "column": 41,
-            "line": 399
-          },
-          "start": {
-            "column": 26,
-            "line": 399
-          }
-        },
-        "message": "Redundant phrase found: \"blends together\". Remove the repeated meaning.",
-        "range": [
-          12046,
-          12061
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 26,
-        "index": 12106,
-        "line": 401,
-        "loc": {
-          "end": {
-            "column": 42,
-            "line": 401
-          },
-          "start": {
-            "column": 26,
-            "line": 401
-          }
-        },
-        "message": "Redundant phrase found: \"blended together\". Remove the repeated meaning.",
-        "range": [
-          12106,
-          12122
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 26,
-        "index": 12167,
-        "line": 403,
-        "loc": {
-          "end": {
-            "column": 46,
-            "line": 403
-          },
-          "start": {
-            "column": 26,
-            "line": 403
-          }
-        },
-        "message": "Redundant phrase found: \"collaborate together\". Remove the repeated meaning.",
-        "range": [
-          12167,
-          12187
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 26,
-        "index": 12226,
-        "line": 405,
-        "loc": {
-          "end": {
-            "column": 47,
-            "line": 405
-          },
-          "start": {
-            "column": 26,
-            "line": 405
-          }
-        },
-        "message": "Redundant phrase found: \"collaborates together\". Remove the repeated meaning.",
-        "range": [
-          12226,
-          12247
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 26,
-        "index": 12286,
-        "line": 407,
-        "loc": {
-          "end": {
-            "column": 47,
-            "line": 407
-          },
-          "start": {
-            "column": 26,
-            "line": 407
-          }
-        },
-        "message": "Redundant phrase found: \"collaborated together\". Remove the repeated meaning.",
-        "range": [
-          12286,
-          12307
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 19,
-        "index": 12339,
-        "line": 409,
-        "loc": {
-          "end": {
-            "column": 35,
-            "line": 409
-          },
-          "start": {
-            "column": 19,
-            "line": 409
-          }
-        },
-        "message": "Redundant phrase found: \"combine together\". Remove the repeated meaning.",
-        "range": [
-          12339,
-          12355
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 19,
-        "index": 12396,
-        "line": 411,
-        "loc": {
-          "end": {
-            "column": 36,
-            "line": 411
-          },
-          "start": {
-            "column": 19,
-            "line": 411
-          }
-        },
-        "message": "Redundant phrase found: \"combines together\". Remove the repeated meaning.",
-        "range": [
-          12396,
-          12413
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 19,
-        "index": 12454,
-        "line": 413,
-        "loc": {
-          "end": {
-            "column": 36,
-            "line": 413
-          },
-          "start": {
-            "column": 19,
-            "line": 413
-          }
-        },
-        "message": "Redundant phrase found: \"combined together\". Remove the repeated meaning.",
-        "range": [
-          12454,
-          12471
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 32,
-        "index": 12525,
-        "line": 415,
-        "loc": {
-          "end": {
-            "column": 48,
-            "line": 415
-          },
-          "start": {
-            "column": 32,
-            "line": 415
-          }
-        },
-        "message": "Redundant phrase found: \"connect together\". Remove the repeated meaning.",
-        "range": [
-          12525,
-          12541
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 32,
-        "index": 12583,
-        "line": 417,
-        "loc": {
-          "end": {
-            "column": 49,
-            "line": 417
-          },
-          "start": {
-            "column": 32,
-            "line": 417
-          }
-        },
-        "message": "Redundant phrase found: \"connects together\". Remove the repeated meaning.",
-        "range": [
-          12583,
-          12600
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 32,
-        "index": 12642,
-        "line": 419,
-        "loc": {
-          "end": {
-            "column": 50,
-            "line": 419
-          },
-          "start": {
-            "column": 32,
-            "line": 419
-          }
-        },
-        "message": "Redundant phrase found: \"connected together\". Remove the repeated meaning.",
-        "range": [
-          12642,
-          12660
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 28,
-        "index": 12698,
-        "line": 421,
-        "loc": {
-          "end": {
-            "column": 42,
-            "line": 421
-          },
-          "start": {
-            "column": 28,
-            "line": 421
-          }
-        },
-        "message": "Redundant phrase found: \"merge together\". Remove the repeated meaning.",
-        "range": [
-          12698,
-          12712
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 28,
-        "index": 12752,
-        "line": 423,
-        "loc": {
-          "end": {
-            "column": 43,
-            "line": 423
-          },
-          "start": {
-            "column": 28,
-            "line": 423
-          }
-        },
-        "message": "Redundant phrase found: \"merges together\". Remove the repeated meaning.",
-        "range": [
-          12752,
-          12767
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 28,
-        "index": 12807,
-        "line": 425,
-        "loc": {
-          "end": {
-            "column": 43,
-            "line": 425
-          },
-          "start": {
-            "column": 28,
-            "line": 425
-          }
-        },
-        "message": "Redundant phrase found: \"merged together\". Remove the repeated meaning.",
-        "range": [
-          12807,
-          12822
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 16,
-        "index": 12850,
-        "line": 427,
-        "loc": {
-          "end": {
-            "column": 28,
-            "line": 427
-          },
-          "start": {
-            "column": 16,
-            "line": 427
-          }
-        },
-        "message": "Redundant phrase found: \"mix together\". Remove the repeated meaning.",
-        "range": [
-          12850,
-          12862
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 16,
-        "index": 12893,
-        "line": 429,
-        "loc": {
-          "end": {
-            "column": 30,
-            "line": 429
-          },
-          "start": {
-            "column": 16,
-            "line": 429
-          }
-        },
-        "message": "Redundant phrase found: \"mixes together\". Remove the repeated meaning.",
-        "range": [
-          12893,
-          12907
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 16,
-        "index": 12938,
-        "line": 431,
-        "loc": {
-          "end": {
-            "column": 30,
-            "line": 431
-          },
-          "start": {
-            "column": 16,
-            "line": 431
-          }
-        },
-        "message": "Redundant phrase found: \"mixed together\". Remove the repeated meaning.",
-        "range": [
-          12938,
-          12952
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 22,
-        "index": 12989,
-        "line": 433,
-        "loc": {
-          "end": {
-            "column": 37,
-            "line": 433
+            "line": 351
           },
           "start": {
             "column": 22,
-            "line": 433
+            "line": 351
           }
         },
-        "message": "Redundant phrase found: \"gather together\". Remove the repeated meaning.",
+        "message": "Wordy phrase found: \"for the purpose of\". Replace it with direct wording.",
         "range": [
-          12989,
-          13004
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 17,
-        "index": 13034,
-        "line": 435,
-        "loc": {
-          "end": {
-            "column": 33,
-            "line": 435
-          },
-          "start": {
-            "column": 17,
-            "line": 435
-          }
-        },
-        "message": "Redundant phrase found: \"gathers together\". Remove the repeated meaning.",
-        "range": [
-          13034,
-          13050
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 17,
-        "index": 13080,
-        "line": 437,
-        "loc": {
-          "end": {
-            "column": 34,
-            "line": 437
-          },
-          "start": {
-            "column": 17,
-            "line": 437
-          }
-        },
-        "message": "Redundant phrase found: \"gathered together\". Remove the repeated meaning.",
-        "range": [
-          13080,
-          13097
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 20,
-        "index": 13130,
-        "line": 439,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 439
-          },
-          "start": {
-            "column": 20,
-            "line": 439
-          }
-        },
-        "message": "Redundant phrase found: \"repeat again\". Remove the repeated meaning.",
-        "range": [
-          13130,
-          13142
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 13177,
-        "line": 441,
-        "loc": {
-          "end": {
-            "column": 28,
-            "line": 441
-          },
-          "start": {
-            "column": 15,
-            "line": 441
-          }
-        },
-        "message": "Redundant phrase found: \"repeats again\". Remove the repeated meaning.",
-        "range": [
-          13177,
-          13190
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 17,
-        "index": 13227,
-        "line": 443,
-        "loc": {
-          "end": {
-            "column": 30,
-            "line": 443
-          },
-          "start": {
-            "column": 17,
-            "line": 443
-          }
-        },
-        "message": "Redundant phrase found: \"restate again\". Remove the repeated meaning.",
-        "range": [
-          13227,
-          13240
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 12,
-        "index": 13266,
-        "line": 445,
-        "loc": {
-          "end": {
-            "column": 26,
-            "line": 445
-          },
-          "start": {
-            "column": 12,
-            "line": 445
-          }
-        },
-        "message": "Redundant phrase found: \"restates again\". Remove the repeated meaning.",
-        "range": [
-          13266,
-          13280
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 12,
-        "index": 13306,
-        "line": 447,
-        "loc": {
-          "end": {
-            "column": 26,
-            "line": 447
-          },
-          "start": {
-            "column": 12,
-            "line": 447
-          }
-        },
-        "message": "Redundant phrase found: \"restated again\". Remove the repeated meaning.",
-        "range": [
-          13306,
-          13320
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 13349,
-        "line": 449,
-        "loc": {
-          "end": {
-            "column": 30,
-            "line": 449
-          },
-          "start": {
-            "column": 15,
-            "line": 449
-          }
-        },
-        "message": "Redundant phrase found: \"reiterate again\". Remove the repeated meaning.",
-        "range": [
-          13349,
-          13364
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 10,
-        "index": 13388,
-        "line": 451,
-        "loc": {
-          "end": {
-            "column": 26,
-            "line": 451
-          },
-          "start": {
-            "column": 10,
-            "line": 451
-          }
-        },
-        "message": "Redundant phrase found: \"reiterates again\". Remove the repeated meaning.",
-        "range": [
-          13388,
-          13404
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 10,
-        "index": 13428,
-        "line": 453,
-        "loc": {
-          "end": {
-            "column": 26,
-            "line": 453
-          },
-          "start": {
-            "column": 10,
-            "line": 453
-          }
-        },
-        "message": "Redundant phrase found: \"reiterated again\". Remove the repeated meaning.",
-        "range": [
-          13428,
-          13444
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 18,
-        "index": 13476,
-        "line": 455,
-        "loc": {
-          "end": {
-            "column": 29,
-            "line": 455
-          },
-          "start": {
-            "column": 18,
-            "line": 455
-          }
-        },
-        "message": "Redundant phrase found: \"return back\". Remove the repeated meaning.",
-        "range": [
-          13476,
-          13487
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 13,
-        "index": 13515,
-        "line": 457,
-        "loc": {
-          "end": {
-            "column": 25,
-            "line": 457
-          },
-          "start": {
-            "column": 13,
-            "line": 457
-          }
-        },
-        "message": "Redundant phrase found: \"returns back\". Remove the repeated meaning.",
-        "range": [
-          13515,
-          13527
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 13,
-        "index": 13555,
-        "line": 459,
-        "loc": {
-          "end": {
-            "column": 26,
-            "line": 459
-          },
-          "start": {
-            "column": 13,
-            "line": 459
-          }
-        },
-        "message": "Redundant phrase found: \"returned back\". Remove the repeated meaning.",
-        "range": [
-          13555,
-          13568
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 13598,
-        "line": 461,
-        "loc": {
-          "end": {
-            "column": 25,
-            "line": 461
-          },
-          "start": {
-            "column": 15,
-            "line": 461
-          }
-        },
-        "message": "Redundant phrase found: \"refer back\". Remove the repeated meaning.",
-        "range": [
-          13598,
-          13608
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 10,
-        "index": 13635,
-        "line": 463,
-        "loc": {
-          "end": {
-            "column": 21,
-            "line": 463
-          },
-          "start": {
-            "column": 10,
-            "line": 463
-          }
-        },
-        "message": "Redundant phrase found: \"refers back\". Remove the repeated meaning.",
-        "range": [
-          13635,
-          13646
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 10,
-        "index": 13673,
-        "line": 465,
-        "loc": {
-          "end": {
-            "column": 23,
-            "line": 465
-          },
-          "start": {
-            "column": 10,
-            "line": 465
-          }
-        },
-        "message": "Redundant phrase found: \"referred back\". Remove the repeated meaning.",
-        "range": [
-          13673,
-          13686
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 18,
-        "index": 13721,
-        "line": 467,
-        "loc": {
-          "end": {
-            "column": 29,
-            "line": 467
-          },
-          "start": {
-            "column": 18,
-            "line": 467
-          }
-        },
-        "message": "Redundant phrase found: \"revert back\". Remove the repeated meaning.",
-        "range": [
-          13721,
-          13732
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 13,
-        "index": 13760,
-        "line": 469,
-        "loc": {
-          "end": {
-            "column": 25,
-            "line": 469
-          },
-          "start": {
-            "column": 13,
-            "line": 469
-          }
-        },
-        "message": "Redundant phrase found: \"reverts back\". Remove the repeated meaning.",
-        "range": [
-          13760,
-          13772
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 13,
-        "index": 13800,
-        "line": 471,
-        "loc": {
-          "end": {
-            "column": 26,
-            "line": 471
-          },
-          "start": {
-            "column": 13,
-            "line": 471
-          }
-        },
-        "message": "Redundant phrase found: \"reverted back\". Remove the repeated meaning.",
-        "range": [
-          13800,
-          13813
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 13,
-        "index": 13841,
-        "line": 473,
-        "loc": {
-          "end": {
-            "column": 36,
-            "line": 473
-          },
-          "start": {
-            "column": 13,
-            "line": 473
-          }
-        },
-        "message": "Redundant phrase found: \"surrounded on all sides\". Remove the repeated meaning.",
-        "range": [
-          13841,
-          13864
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 16,
-        "index": 13900,
-        "line": 475,
-        "loc": {
-          "end": {
-            "column": 37,
-            "line": 475
-          },
-          "start": {
-            "column": 16,
-            "line": 475
-          }
-        },
-        "message": "Redundant phrase found: \"throughout the entire\". Remove the repeated meaning.",
-        "range": [
-          13900,
-          13921
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 20,
-        "index": 13953,
-        "line": 477,
-        "loc": {
-          "end": {
-            "column": 36,
-            "line": 477
-          },
-          "start": {
-            "column": 20,
-            "line": 477
-          }
-        },
-        "message": "Redundant phrase found: \"the whole entire\". Remove the repeated meaning.",
-        "range": [
-          13953,
-          13969
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 29,
-        "index": 14105,
-        "line": 481,
-        "loc": {
-          "end": {
-            "column": 53,
-            "line": 481
-          },
-          "start": {
-            "column": 29,
-            "line": 481
-          }
-        },
-        "message": "Wordy phrase found: \"in view of the fact that\". Replace it with direct wording.",
-        "range": [
-          14105,
-          14129
+          11173,
+          11191
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -4512,68 +3086,1126 @@
       },
       {
         "column": 27,
-        "index": 14182,
-        "line": 483,
+        "index": 11227,
+        "line": 353,
         "loc": {
           "end": {
-            "column": 45,
-            "line": 483
+            "column": 40,
+            "line": 353
           },
           "start": {
             "column": 27,
-            "line": 483
+            "line": 353
           }
         },
-        "message": "Wordy phrase found: \"until such time as\". Replace it with direct wording.",
+        "message": "Wordy phrase found: \"as a means of\". Replace it with direct wording.",
         "range": [
-          14182,
-          14200
+          11227,
+          11240
         ],
         "ruleId": "wordiness",
         "severity": 2,
         "type": "lint"
       },
       {
-        "column": 17,
-        "index": 14241,
-        "line": 485,
+        "column": 13,
+        "index": 11263,
+        "line": 355,
         "loc": {
           "end": {
-            "column": 43,
-            "line": 485
+            "column": 31,
+            "line": 355
           },
           "start": {
-            "column": 17,
-            "line": 485
+            "column": 13,
+            "line": 355
           }
         },
-        "message": "Wordy phrase found: \"the question as to whether\". Replace it with direct wording.",
+        "message": "Wordy phrase found: \"has the ability to\". Replace it with direct wording.",
         "range": [
-          14241,
-          14267
+          11263,
+          11281
         ],
         "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 11313,
+        "line": 357,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 357
+          },
+          "start": {
+            "column": 13,
+            "line": 357
+          }
+        },
+        "message": "Wordy phrase found: \"have the ability to\". Replace it with direct wording.",
+        "range": [
+          11313,
+          11332
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 14,
+        "index": 11362,
+        "line": 359,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 359
+          },
+          "start": {
+            "column": 14,
+            "line": 359
+          }
+        },
+        "message": "Wordy phrase found: \"had the ability to\". Replace it with direct wording.",
+        "range": [
+          11362,
+          11380
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11409,
+        "line": 361,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 361
+          },
+          "start": {
+            "column": 15,
+            "line": 361
+          }
+        },
+        "message": "Wordy phrase found: \"conduct an assessment of\". Replace it with direct wording.",
+        "range": [
+          11409,
+          11433
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11460,
+        "line": 363,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 363
+          },
+          "start": {
+            "column": 15,
+            "line": 363
+          }
+        },
+        "message": "Wordy phrase found: \"conduct an evaluation of\". Replace it with direct wording.",
+        "range": [
+          11460,
+          11484
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11512,
+        "line": 365,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 365
+          },
+          "start": {
+            "column": 15,
+            "line": 365
+          }
+        },
+        "message": "Wordy phrase found: \"conduct an investigation of\". Replace it with direct wording.",
+        "range": [
+          11512,
+          11539
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11567,
+        "line": 367,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 367
+          },
+          "start": {
+            "column": 15,
+            "line": 367
+          }
+        },
+        "message": "Wordy phrase found: \"perform an assessment of\". Replace it with direct wording.",
+        "range": [
+          11567,
+          11591
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11618,
+        "line": 369,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 369
+          },
+          "start": {
+            "column": 15,
+            "line": 369
+          }
+        },
+        "message": "Wordy phrase found: \"perform an evaluation of\". Replace it with direct wording.",
+        "range": [
+          11618,
+          11642
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11670,
+        "line": 371,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 371
+          },
+          "start": {
+            "column": 15,
+            "line": 371
+          }
+        },
+        "message": "Wordy phrase found: \"perform an investigation of\". Replace it with direct wording.",
+        "range": [
+          11670,
+          11697
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11725,
+        "line": 373,
+        "loc": {
+          "end": {
+            "column": 41,
+            "line": 373
+          },
+          "start": {
+            "column": 15,
+            "line": 373
+          }
+        },
+        "message": "Wordy phrase found: \"carry out an assessment of\". Replace it with direct wording.",
+        "range": [
+          11725,
+          11751
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11778,
+        "line": 375,
+        "loc": {
+          "end": {
+            "column": 41,
+            "line": 375
+          },
+          "start": {
+            "column": 15,
+            "line": 375
+          }
+        },
+        "message": "Wordy phrase found: \"carry out an evaluation of\". Replace it with direct wording.",
+        "range": [
+          11778,
+          11804
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11832,
+        "line": 377,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 377
+          },
+          "start": {
+            "column": 15,
+            "line": 377
+          }
+        },
+        "message": "Wordy phrase found: \"carry out an investigation of\". Replace it with direct wording.",
+        "range": [
+          11832,
+          11861
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 11889,
+        "line": 379,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 379
+          },
+          "start": {
+            "column": 15,
+            "line": 379
+          }
+        },
+        "message": "Wordy phrase found: \"make reference to\". Replace it with direct wording.",
+        "range": [
+          11889,
+          11906
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 11939,
+        "line": 381,
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 381
+          },
+          "start": {
+            "column": 10,
+            "line": 381
+          }
+        },
+        "message": "Wordy phrase found: \"makes reference to\". Replace it with direct wording.",
+        "range": [
+          11939,
+          11957
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 11990,
+        "line": 383,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 383
+          },
+          "start": {
+            "column": 10,
+            "line": 383
+          }
+        },
+        "message": "Wordy phrase found: \"made reference to\". Replace it with direct wording.",
+        "range": [
+          11990,
+          12007
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 12045,
+        "line": 385,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 385
+          },
+          "start": {
+            "column": 15,
+            "line": 385
+          }
+        },
+        "message": "Wordy phrase found: \"take into account\". Replace it with direct wording.",
+        "range": [
+          12045,
+          12062
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 12092,
+        "line": 387,
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 387
+          },
+          "start": {
+            "column": 10,
+            "line": 387
+          }
+        },
+        "message": "Wordy phrase found: \"takes into account\". Replace it with direct wording.",
+        "range": [
+          12092,
+          12110
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 12140,
+        "line": 389,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 389
+          },
+          "start": {
+            "column": 10,
+            "line": 389
+          }
+        },
+        "message": "Wordy phrase found: \"took into account\". Replace it with direct wording.",
+        "range": [
+          12140,
+          12157
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 30,
+        "index": 12207,
+        "line": 391,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 391
+          },
+          "start": {
+            "column": 30,
+            "line": 391
+          }
+        },
+        "message": "Redundant phrase found: \"basic fundamentals\". Remove the repeated meaning.",
+        "range": [
+          12207,
+          12225
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 29,
+        "index": 12275,
+        "line": 393,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 393
+          },
+          "start": {
+            "column": 29,
+            "line": 393
+          }
+        },
+        "message": "Redundant phrase found: \"actual fact\". Remove the repeated meaning.",
+        "range": [
+          12275,
+          12286
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 18,
+        "index": 12306,
+        "line": 395,
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 395
+          },
+          "start": {
+            "column": 18,
+            "line": 395
+          }
+        },
+        "message": "Redundant phrase found: \"true facts\". Remove the repeated meaning.",
+        "range": [
+          12306,
+          12316
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 22,
+        "index": 12356,
+        "line": 397,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 397
+          },
+          "start": {
+            "column": 22,
+            "line": 397
+          }
+        },
+        "message": "Redundant phrase found: \"future plans\". Remove the repeated meaning.",
+        "range": [
+          12356,
+          12368
+        ],
+        "ruleId": "redundancy",
         "severity": 2,
         "type": "lint"
       },
       {
         "column": 23,
-        "index": 14320,
-        "line": 487,
+        "index": 12405,
+        "line": 399,
         "loc": {
           "end": {
-            "column": 41,
-            "line": 487
+            "column": 32,
+            "line": 399
           },
           "start": {
             "column": 23,
-            "line": 487
+            "line": 399
           }
         },
-        "message": "Redundant phrase found: \"visible to the eye\". Remove the repeated meaning.",
+        "message": "Redundant phrase found: \"free gift\". Remove the repeated meaning.",
         "range": [
-          14320,
-          14338
+          12405,
+          12414
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 29,
+        "index": 12458,
+        "line": 401,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 401
+          },
+          "start": {
+            "column": 29,
+            "line": 401
+          }
+        },
+        "message": "Redundant phrase found: \"serious crisis\". Remove the repeated meaning.",
+        "range": [
+          12458,
+          12472
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 29,
+        "index": 12503,
+        "line": 403,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 403
+          },
+          "start": {
+            "column": 29,
+            "line": 403
+          }
+        },
+        "message": "Redundant phrase found: \"close proximity\". Remove the repeated meaning.",
+        "range": [
+          12503,
+          12518
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 28,
+        "index": 12559,
+        "line": 405,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 405
+          },
+          "start": {
+            "column": 28,
+            "line": 405
+          }
+        },
+        "message": "Redundant phrase found: \"new innovation\". Remove the repeated meaning.",
+        "range": [
+          12559,
+          12573
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 12601,
+        "line": 407,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 407
+          },
+          "start": {
+            "column": 26,
+            "line": 407
+          }
+        },
+        "message": "Redundant phrase found: \"blend together\". Remove the repeated meaning.",
+        "range": [
+          12601,
+          12615
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 12660,
+        "line": 409,
+        "loc": {
+          "end": {
+            "column": 41,
+            "line": 409
+          },
+          "start": {
+            "column": 26,
+            "line": 409
+          }
+        },
+        "message": "Redundant phrase found: \"blends together\". Remove the repeated meaning.",
+        "range": [
+          12660,
+          12675
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 12720,
+        "line": 411,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 411
+          },
+          "start": {
+            "column": 26,
+            "line": 411
+          }
+        },
+        "message": "Redundant phrase found: \"blended together\". Remove the repeated meaning.",
+        "range": [
+          12720,
+          12736
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 12781,
+        "line": 413,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 413
+          },
+          "start": {
+            "column": 26,
+            "line": 413
+          }
+        },
+        "message": "Redundant phrase found: \"collaborate together\". Remove the repeated meaning.",
+        "range": [
+          12781,
+          12801
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 12840,
+        "line": 415,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 415
+          },
+          "start": {
+            "column": 26,
+            "line": 415
+          }
+        },
+        "message": "Redundant phrase found: \"collaborates together\". Remove the repeated meaning.",
+        "range": [
+          12840,
+          12861
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 12900,
+        "line": 417,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 417
+          },
+          "start": {
+            "column": 26,
+            "line": 417
+          }
+        },
+        "message": "Redundant phrase found: \"collaborated together\". Remove the repeated meaning.",
+        "range": [
+          12900,
+          12921
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 19,
+        "index": 12953,
+        "line": 419,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 419
+          },
+          "start": {
+            "column": 19,
+            "line": 419
+          }
+        },
+        "message": "Redundant phrase found: \"combine together\". Remove the repeated meaning.",
+        "range": [
+          12953,
+          12969
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 19,
+        "index": 13010,
+        "line": 421,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 421
+          },
+          "start": {
+            "column": 19,
+            "line": 421
+          }
+        },
+        "message": "Redundant phrase found: \"combines together\". Remove the repeated meaning.",
+        "range": [
+          13010,
+          13027
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 19,
+        "index": 13068,
+        "line": 423,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 423
+          },
+          "start": {
+            "column": 19,
+            "line": 423
+          }
+        },
+        "message": "Redundant phrase found: \"combined together\". Remove the repeated meaning.",
+        "range": [
+          13068,
+          13085
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 32,
+        "index": 13139,
+        "line": 425,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 425
+          },
+          "start": {
+            "column": 32,
+            "line": 425
+          }
+        },
+        "message": "Redundant phrase found: \"connect together\". Remove the repeated meaning.",
+        "range": [
+          13139,
+          13155
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 32,
+        "index": 13197,
+        "line": 427,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 427
+          },
+          "start": {
+            "column": 32,
+            "line": 427
+          }
+        },
+        "message": "Redundant phrase found: \"connects together\". Remove the repeated meaning.",
+        "range": [
+          13197,
+          13214
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 32,
+        "index": 13256,
+        "line": 429,
+        "loc": {
+          "end": {
+            "column": 50,
+            "line": 429
+          },
+          "start": {
+            "column": 32,
+            "line": 429
+          }
+        },
+        "message": "Redundant phrase found: \"connected together\". Remove the repeated meaning.",
+        "range": [
+          13256,
+          13274
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 28,
+        "index": 13312,
+        "line": 431,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 431
+          },
+          "start": {
+            "column": 28,
+            "line": 431
+          }
+        },
+        "message": "Redundant phrase found: \"merge together\". Remove the repeated meaning.",
+        "range": [
+          13312,
+          13326
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 28,
+        "index": 13366,
+        "line": 433,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 433
+          },
+          "start": {
+            "column": 28,
+            "line": 433
+          }
+        },
+        "message": "Redundant phrase found: \"merges together\". Remove the repeated meaning.",
+        "range": [
+          13366,
+          13381
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 28,
+        "index": 13421,
+        "line": 435,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 435
+          },
+          "start": {
+            "column": 28,
+            "line": 435
+          }
+        },
+        "message": "Redundant phrase found: \"merged together\". Remove the repeated meaning.",
+        "range": [
+          13421,
+          13436
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 16,
+        "index": 13464,
+        "line": 437,
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 437
+          },
+          "start": {
+            "column": 16,
+            "line": 437
+          }
+        },
+        "message": "Redundant phrase found: \"mix together\". Remove the repeated meaning.",
+        "range": [
+          13464,
+          13476
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 16,
+        "index": 13507,
+        "line": 439,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 439
+          },
+          "start": {
+            "column": 16,
+            "line": 439
+          }
+        },
+        "message": "Redundant phrase found: \"mixes together\". Remove the repeated meaning.",
+        "range": [
+          13507,
+          13521
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 16,
+        "index": 13552,
+        "line": 441,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 441
+          },
+          "start": {
+            "column": 16,
+            "line": 441
+          }
+        },
+        "message": "Redundant phrase found: \"mixed together\". Remove the repeated meaning.",
+        "range": [
+          13552,
+          13566
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 22,
+        "index": 13603,
+        "line": 443,
+        "loc": {
+          "end": {
+            "column": 37,
+            "line": 443
+          },
+          "start": {
+            "column": 22,
+            "line": 443
+          }
+        },
+        "message": "Redundant phrase found: \"gather together\". Remove the repeated meaning.",
+        "range": [
+          13603,
+          13618
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 13648,
+        "line": 445,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 445
+          },
+          "start": {
+            "column": 17,
+            "line": 445
+          }
+        },
+        "message": "Redundant phrase found: \"gathers together\". Remove the repeated meaning.",
+        "range": [
+          13648,
+          13664
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 13694,
+        "line": 447,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 447
+          },
+          "start": {
+            "column": 17,
+            "line": 447
+          }
+        },
+        "message": "Redundant phrase found: \"gathered together\". Remove the repeated meaning.",
+        "range": [
+          13694,
+          13711
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 20,
+        "index": 13744,
+        "line": 449,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 449
+          },
+          "start": {
+            "column": 20,
+            "line": 449
+          }
+        },
+        "message": "Redundant phrase found: \"repeat again\". Remove the repeated meaning.",
+        "range": [
+          13744,
+          13756
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -4581,22 +4213,551 @@
       },
       {
         "column": 15,
-        "index": 14374,
-        "line": 489,
+        "index": 13791,
+        "line": 451,
         "loc": {
           "end": {
-            "column": 39,
-            "line": 489
+            "column": 28,
+            "line": 451
           },
           "start": {
             "column": 15,
-            "line": 489
+            "line": 451
+          }
+        },
+        "message": "Redundant phrase found: \"repeats again\". Remove the repeated meaning.",
+        "range": [
+          13791,
+          13804
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 13841,
+        "line": 453,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 453
+          },
+          "start": {
+            "column": 17,
+            "line": 453
+          }
+        },
+        "message": "Redundant phrase found: \"restate again\". Remove the repeated meaning.",
+        "range": [
+          13841,
+          13854
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 12,
+        "index": 13880,
+        "line": 455,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 455
+          },
+          "start": {
+            "column": 12,
+            "line": 455
+          }
+        },
+        "message": "Redundant phrase found: \"restates again\". Remove the repeated meaning.",
+        "range": [
+          13880,
+          13894
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 12,
+        "index": 13920,
+        "line": 457,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 457
+          },
+          "start": {
+            "column": 12,
+            "line": 457
+          }
+        },
+        "message": "Redundant phrase found: \"restated again\". Remove the repeated meaning.",
+        "range": [
+          13920,
+          13934
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 13963,
+        "line": 459,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 459
+          },
+          "start": {
+            "column": 15,
+            "line": 459
+          }
+        },
+        "message": "Redundant phrase found: \"reiterate again\". Remove the repeated meaning.",
+        "range": [
+          13963,
+          13978
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 14002,
+        "line": 461,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 461
+          },
+          "start": {
+            "column": 10,
+            "line": 461
+          }
+        },
+        "message": "Redundant phrase found: \"reiterates again\". Remove the repeated meaning.",
+        "range": [
+          14002,
+          14018
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 14042,
+        "line": 463,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 463
+          },
+          "start": {
+            "column": 10,
+            "line": 463
+          }
+        },
+        "message": "Redundant phrase found: \"reiterated again\". Remove the repeated meaning.",
+        "range": [
+          14042,
+          14058
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 18,
+        "index": 14090,
+        "line": 465,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 465
+          },
+          "start": {
+            "column": 18,
+            "line": 465
+          }
+        },
+        "message": "Redundant phrase found: \"return back\". Remove the repeated meaning.",
+        "range": [
+          14090,
+          14101
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 14129,
+        "line": 467,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 467
+          },
+          "start": {
+            "column": 13,
+            "line": 467
+          }
+        },
+        "message": "Redundant phrase found: \"returns back\". Remove the repeated meaning.",
+        "range": [
+          14129,
+          14141
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 14169,
+        "line": 469,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 469
+          },
+          "start": {
+            "column": 13,
+            "line": 469
+          }
+        },
+        "message": "Redundant phrase found: \"returned back\". Remove the repeated meaning.",
+        "range": [
+          14169,
+          14182
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 14212,
+        "line": 471,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 471
+          },
+          "start": {
+            "column": 15,
+            "line": 471
+          }
+        },
+        "message": "Redundant phrase found: \"refer back\". Remove the repeated meaning.",
+        "range": [
+          14212,
+          14222
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 14249,
+        "line": 473,
+        "loc": {
+          "end": {
+            "column": 21,
+            "line": 473
+          },
+          "start": {
+            "column": 10,
+            "line": 473
+          }
+        },
+        "message": "Redundant phrase found: \"refers back\". Remove the repeated meaning.",
+        "range": [
+          14249,
+          14260
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 14287,
+        "line": 475,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 475
+          },
+          "start": {
+            "column": 10,
+            "line": 475
+          }
+        },
+        "message": "Redundant phrase found: \"referred back\". Remove the repeated meaning.",
+        "range": [
+          14287,
+          14300
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 18,
+        "index": 14335,
+        "line": 477,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 477
+          },
+          "start": {
+            "column": 18,
+            "line": 477
+          }
+        },
+        "message": "Redundant phrase found: \"revert back\". Remove the repeated meaning.",
+        "range": [
+          14335,
+          14346
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 14374,
+        "line": 479,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 479
+          },
+          "start": {
+            "column": 13,
+            "line": 479
+          }
+        },
+        "message": "Redundant phrase found: \"reverts back\". Remove the repeated meaning.",
+        "range": [
+          14374,
+          14386
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 14414,
+        "line": 481,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 481
+          },
+          "start": {
+            "column": 13,
+            "line": 481
+          }
+        },
+        "message": "Redundant phrase found: \"reverted back\". Remove the repeated meaning.",
+        "range": [
+          14414,
+          14427
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 14455,
+        "line": 483,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 483
+          },
+          "start": {
+            "column": 13,
+            "line": 483
+          }
+        },
+        "message": "Redundant phrase found: \"surrounded on all sides\". Remove the repeated meaning.",
+        "range": [
+          14455,
+          14478
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 16,
+        "index": 14514,
+        "line": 485,
+        "loc": {
+          "end": {
+            "column": 37,
+            "line": 485
+          },
+          "start": {
+            "column": 16,
+            "line": 485
+          }
+        },
+        "message": "Redundant phrase found: \"throughout the entire\". Remove the repeated meaning.",
+        "range": [
+          14514,
+          14535
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 20,
+        "index": 14567,
+        "line": 487,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 487
+          },
+          "start": {
+            "column": 20,
+            "line": 487
+          }
+        },
+        "message": "Redundant phrase found: \"the whole entire\". Remove the repeated meaning.",
+        "range": [
+          14567,
+          14583
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 29,
+        "index": 14719,
+        "line": 491,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 491
+          },
+          "start": {
+            "column": 29,
+            "line": 491
+          }
+        },
+        "message": "Wordy phrase found: \"in view of the fact that\". Replace it with direct wording.",
+        "range": [
+          14719,
+          14743
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 14796,
+        "line": 493,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 493
+          },
+          "start": {
+            "column": 27,
+            "line": 493
+          }
+        },
+        "message": "Wordy phrase found: \"until such time as\". Replace it with direct wording.",
+        "range": [
+          14796,
+          14814
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 14855,
+        "line": 495,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 495
+          },
+          "start": {
+            "column": 17,
+            "line": 495
+          }
+        },
+        "message": "Wordy phrase found: \"the question as to whether\". Replace it with direct wording.",
+        "range": [
+          14855,
+          14881
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 23,
+        "index": 14934,
+        "line": 497,
+        "loc": {
+          "end": {
+            "column": 41,
+            "line": 497
+          },
+          "start": {
+            "column": 23,
+            "line": 497
+          }
+        },
+        "message": "Redundant phrase found: \"visible to the eye\". Remove the repeated meaning.",
+        "range": [
+          14934,
+          14952
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 14988,
+        "line": 499,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 499
+          },
+          "start": {
+            "column": 15,
+            "line": 499
           }
         },
         "message": "Redundant phrase found: \"interact with each other\". Remove the repeated meaning.",
         "range": [
-          14374,
-          14398
+          14988,
+          15012
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -4604,228 +4765,21 @@
       },
       {
         "column": 34,
-        "index": 14449,
-        "line": 491,
+        "index": 15063,
+        "line": 501,
         "loc": {
           "end": {
             "column": 56,
-            "line": 491
+            "line": 501
           },
           "start": {
             "column": 34,
-            "line": 491
+            "line": 501
           }
         },
         "message": "Redundant phrase found: \"while at the same time\". Remove the repeated meaning.",
         "range": [
-          14449,
-          14471
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 15,
-        "index": 14508,
-        "line": 493,
-        "loc": {
-          "end": {
-            "column": 52,
-            "line": 493
-          },
-          "start": {
-            "column": 15,
-            "line": 493
-          }
-        },
-        "message": "Corporate-speak phrase found: \"serves as a testament to the power of\". Replace it with specific wording.",
-        "range": [
-          14508,
-          14545
-        ],
-        "ruleId": "corporate-speak",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 41,
-        "index": 14602,
-        "line": 495,
-        "loc": {
-          "end": {
-            "column": 59,
-            "line": 495
-          },
-          "start": {
-            "column": 41,
-            "line": 495
-          }
-        },
-        "message": "Redundant phrase found: \"absolute necessity\". Remove the repeated meaning.",
-        "range": [
-          14602,
-          14620
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 102,
-        "index": 14663,
-        "line": 495,
-        "loc": {
-          "end": {
-            "column": 119,
-            "line": 495
-          },
-          "start": {
-            "column": 102,
-            "line": 495
-          }
-        },
-        "message": "Redundant phrase found: \"complete stranger\". Remove the repeated meaning.",
-        "range": [
-          14663,
-          14680
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 222,
-        "index": 14783,
-        "line": 495,
-        "loc": {
-          "end": {
-            "column": 241,
-            "line": 495
-          },
-          "start": {
-            "column": 222,
-            "line": 495
-          }
-        },
-        "message": "Redundant phrase found: \"emergency situation\". Remove the repeated meaning.",
-        "range": [
-          14783,
-          14802
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 272,
-        "index": 14833,
-        "line": 495,
-        "loc": {
-          "end": {
-            "column": 288,
-            "line": 495
-          },
-          "start": {
-            "column": 272,
-            "line": 495
-          }
-        },
-        "message": "Redundant phrase found: \"software program\". Remove the repeated meaning.",
-        "range": [
-          14833,
-          14849
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 36,
-        "index": 14887,
-        "line": 497,
-        "loc": {
-          "end": {
-            "column": 56,
-            "line": 497
-          },
-          "start": {
-            "column": 36,
-            "line": 497
-          }
-        },
-        "message": "Redundant phrase found: \"consolidate together\". Remove the repeated meaning.",
-        "range": [
-          14887,
-          14907
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 100,
-        "index": 14951,
-        "line": 497,
-        "loc": {
-          "end": {
-            "column": 115,
-            "line": 497
-          },
-          "start": {
-            "column": 100,
-            "line": 497
-          }
-        },
-        "message": "Redundant phrase found: \"couple together\". Remove the repeated meaning.",
-        "range": [
-          14951,
-          14966
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 170,
-        "index": 15021,
-        "line": 497,
-        "loc": {
-          "end": {
-            "column": 183,
-            "line": 497
-          },
-          "start": {
-            "column": 170,
-            "line": 497
-          }
-        },
-        "message": "Redundant phrase found: \"meld together\". Remove the repeated meaning.",
-        "range": [
-          15021,
-          15034
-        ],
-        "ruleId": "redundancy",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 219,
-        "index": 15070,
-        "line": 497,
-        "loc": {
-          "end": {
-            "column": 234,
-            "line": 497
-          },
-          "start": {
-            "column": 219,
-            "line": 497
-          }
-        },
-        "message": "Redundant phrase found: \"mingle together\". Remove the repeated meaning.",
-        "range": [
-          15070,
+          15063,
           15085
         ],
         "ruleId": "redundancy",
@@ -4833,23 +4787,230 @@
         "type": "lint"
       },
       {
+        "column": 15,
+        "index": 15122,
+        "line": 503,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 503
+          },
+          "start": {
+            "column": 15,
+            "line": 503
+          }
+        },
+        "message": "Corporate-speak phrase found: \"serves as a testament to the power of\". Replace it with specific wording.",
+        "range": [
+          15122,
+          15159
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 41,
+        "index": 15216,
+        "line": 505,
+        "loc": {
+          "end": {
+            "column": 59,
+            "line": 505
+          },
+          "start": {
+            "column": 41,
+            "line": 505
+          }
+        },
+        "message": "Redundant phrase found: \"absolute necessity\". Remove the repeated meaning.",
+        "range": [
+          15216,
+          15234
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 102,
+        "index": 15277,
+        "line": 505,
+        "loc": {
+          "end": {
+            "column": 119,
+            "line": 505
+          },
+          "start": {
+            "column": 102,
+            "line": 505
+          }
+        },
+        "message": "Redundant phrase found: \"complete stranger\". Remove the repeated meaning.",
+        "range": [
+          15277,
+          15294
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 222,
+        "index": 15397,
+        "line": 505,
+        "loc": {
+          "end": {
+            "column": 241,
+            "line": 505
+          },
+          "start": {
+            "column": 222,
+            "line": 505
+          }
+        },
+        "message": "Redundant phrase found: \"emergency situation\". Remove the repeated meaning.",
+        "range": [
+          15397,
+          15416
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 272,
+        "index": 15447,
+        "line": 505,
+        "loc": {
+          "end": {
+            "column": 288,
+            "line": 505
+          },
+          "start": {
+            "column": 272,
+            "line": 505
+          }
+        },
+        "message": "Redundant phrase found: \"software program\". Remove the repeated meaning.",
+        "range": [
+          15447,
+          15463
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 36,
+        "index": 15501,
+        "line": 507,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 507
+          },
+          "start": {
+            "column": 36,
+            "line": 507
+          }
+        },
+        "message": "Redundant phrase found: \"consolidate together\". Remove the repeated meaning.",
+        "range": [
+          15501,
+          15521
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 100,
+        "index": 15565,
+        "line": 507,
+        "loc": {
+          "end": {
+            "column": 115,
+            "line": 507
+          },
+          "start": {
+            "column": 100,
+            "line": 507
+          }
+        },
+        "message": "Redundant phrase found: \"couple together\". Remove the repeated meaning.",
+        "range": [
+          15565,
+          15580
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 170,
+        "index": 15635,
+        "line": 507,
+        "loc": {
+          "end": {
+            "column": 183,
+            "line": 507
+          },
+          "start": {
+            "column": 170,
+            "line": 507
+          }
+        },
+        "message": "Redundant phrase found: \"meld together\". Remove the repeated meaning.",
+        "range": [
+          15635,
+          15648
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 219,
+        "index": 15684,
+        "line": 507,
+        "loc": {
+          "end": {
+            "column": 234,
+            "line": 507
+          },
+          "start": {
+            "column": 219,
+            "line": 507
+          }
+        },
+        "message": "Redundant phrase found: \"mingle together\". Remove the repeated meaning.",
+        "range": [
+          15684,
+          15699
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 273,
-        "index": 15124,
-        "line": 497,
+        "index": 15738,
+        "line": 507,
         "loc": {
           "end": {
             "column": 286,
-            "line": 497
+            "line": 507
           },
           "start": {
             "column": 273,
-            "line": 497
+            "line": 507
           }
         },
         "message": "Redundant phrase found: \"pool together\". Remove the repeated meaning.",
         "range": [
-          15124,
-          15137
+          15738,
+          15751
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -4857,22 +5018,22 @@
       },
       {
         "column": 50,
-        "index": 15205,
-        "line": 499,
+        "index": 15819,
+        "line": 509,
         "loc": {
           "end": {
             "column": 69,
-            "line": 499
+            "line": 509
           },
           "start": {
             "column": 50,
-            "line": 499
+            "line": 509
           }
         },
         "message": "Wordy phrase found: \"for the duration of\". Replace it with direct wording.",
         "range": [
-          15205,
-          15224
+          15819,
+          15838
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -4880,22 +5041,22 @@
       },
       {
         "column": 101,
-        "index": 15256,
-        "line": 499,
+        "index": 15870,
+        "line": 509,
         "loc": {
           "end": {
             "column": 120,
-            "line": 499
+            "line": 509
           },
           "start": {
             "column": 101,
-            "line": 499
+            "line": 509
           }
         },
         "message": "Wordy phrase found: \"has the capacity to\". Replace it with direct wording.",
         "range": [
-          15256,
-          15275
+          15870,
+          15889
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -4903,22 +5064,22 @@
       },
       {
         "column": 154,
-        "index": 15309,
-        "line": 499,
+        "index": 15923,
+        "line": 509,
         "loc": {
           "end": {
             "column": 176,
-            "line": 499
+            "line": 509
           },
           "start": {
             "column": 154,
-            "line": 499
+            "line": 509
           }
         },
         "message": "Wordy phrase found: \"has the opportunity to\". Replace it with direct wording.",
         "range": [
-          15309,
-          15331
+          15923,
+          15945
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -4926,22 +5087,22 @@
       },
       {
         "column": 228,
-        "index": 15383,
-        "line": 499,
+        "index": 15997,
+        "line": 509,
         "loc": {
           "end": {
             "column": 247,
-            "line": 499
+            "line": 509
           },
           "start": {
             "column": 228,
-            "line": 499
+            "line": 509
           }
         },
         "message": "Wordy phrase found: \"conduct a review of\". Replace it with direct wording.",
         "range": [
-          15383,
-          15402
+          15997,
+          16016
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -4949,22 +5110,22 @@
       },
       {
         "column": 259,
-        "index": 15414,
-        "line": 499,
+        "index": 16028,
+        "line": 509,
         "loc": {
           "end": {
             "column": 278,
-            "line": 499
+            "line": 509
           },
           "start": {
             "column": 259,
-            "line": 499
+            "line": 509
           }
         },
         "message": "Wordy phrase found: \"perform a review of\". Replace it with direct wording.",
         "range": [
-          15414,
-          15433
+          16028,
+          16047
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -4972,22 +5133,22 @@
       },
       {
         "column": 294,
-        "index": 15449,
-        "line": 499,
+        "index": 16063,
+        "line": 509,
         "loc": {
           "end": {
             "column": 315,
-            "line": 499
+            "line": 509
           },
           "start": {
             "column": 294,
-            "line": 499
+            "line": 509
           }
         },
         "message": "Wordy phrase found: \"carry out a review of\". Replace it with direct wording.",
         "range": [
-          15449,
-          15470
+          16063,
+          16084
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -4995,22 +5156,22 @@
       },
       {
         "column": 38,
-        "index": 15520,
-        "line": 501,
+        "index": 16134,
+        "line": 511,
         "loc": {
           "end": {
             "column": 56,
-            "line": 501
+            "line": 511
           },
           "start": {
             "column": 38,
-            "line": 501
+            "line": 511
           }
         },
         "message": "Wordy phrase found: \"taken into account\". Replace it with direct wording.",
         "range": [
-          15520,
-          15538
+          16134,
+          16152
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5018,22 +5179,22 @@
       },
       {
         "column": 104,
-        "index": 15586,
-        "line": 501,
+        "index": 16200,
+        "line": 511,
         "loc": {
           "end": {
             "column": 125,
-            "line": 501
+            "line": 511
           },
           "start": {
             "column": 104,
-            "line": 501
+            "line": 511
           }
         },
         "message": "Wordy phrase found: \"with the exception of\". Replace it with direct wording.",
         "range": [
-          15586,
-          15607
+          16200,
+          16221
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5041,22 +5202,22 @@
       },
       {
         "column": 41,
-        "index": 15664,
-        "line": 503,
+        "index": 16278,
+        "line": 513,
         "loc": {
           "end": {
             "column": 59,
-            "line": 503
+            "line": 513
           },
           "start": {
             "column": 41,
-            "line": 503
+            "line": 513
           }
         },
         "message": "Redundant phrase found: \"absolute necessity\". Remove the repeated meaning.",
         "range": [
-          15664,
-          15682
+          16278,
+          16296
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5064,22 +5225,22 @@
       },
       {
         "column": 28,
-        "index": 15712,
-        "line": 505,
+        "index": 16326,
+        "line": 515,
         "loc": {
           "end": {
             "column": 45,
-            "line": 505
+            "line": 515
           },
           "start": {
             "column": 28,
-            "line": 505
+            "line": 515
           }
         },
         "message": "Redundant phrase found: \"complete stranger\". Remove the repeated meaning.",
         "range": [
-          15712,
-          15729
+          16326,
+          16343
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5087,22 +5248,22 @@
       },
       {
         "column": 32,
-        "index": 15782,
-        "line": 507,
+        "index": 16396,
+        "line": 517,
         "loc": {
           "end": {
             "column": 51,
-            "line": 507
+            "line": 517
           },
           "start": {
             "column": 32,
-            "line": 507
+            "line": 517
           }
         },
         "message": "Redundant phrase found: \"emergency situation\". Remove the repeated meaning.",
         "range": [
-          15782,
-          15801
+          16396,
+          16415
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5110,22 +5271,22 @@
       },
       {
         "column": 39,
-        "index": 15842,
-        "line": 509,
+        "index": 16456,
+        "line": 519,
         "loc": {
           "end": {
             "column": 55,
-            "line": 509
+            "line": 519
           },
           "start": {
             "column": 39,
-            "line": 509
+            "line": 519
           }
         },
         "message": "Redundant phrase found: \"software program\". Remove the repeated meaning.",
         "range": [
-          15842,
-          15858
+          16456,
+          16472
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5133,22 +5294,22 @@
       },
       {
         "column": 17,
-        "index": 15877,
-        "line": 511,
+        "index": 16491,
+        "line": 521,
         "loc": {
           "end": {
             "column": 37,
-            "line": 511
+            "line": 521
           },
           "start": {
             "column": 17,
-            "line": 511
+            "line": 521
           }
         },
         "message": "Redundant phrase found: \"consolidate together\". Remove the repeated meaning.",
         "range": [
-          15877,
-          15897
+          16491,
+          16511
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5156,22 +5317,22 @@
       },
       {
         "column": 17,
-        "index": 15938,
-        "line": 513,
+        "index": 16552,
+        "line": 523,
         "loc": {
           "end": {
             "column": 38,
-            "line": 513
+            "line": 523
           },
           "start": {
             "column": 17,
-            "line": 513
+            "line": 523
           }
         },
         "message": "Redundant phrase found: \"consolidates together\". Remove the repeated meaning.",
         "range": [
-          15938,
-          15959
+          16552,
+          16573
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5179,22 +5340,22 @@
       },
       {
         "column": 17,
-        "index": 16000,
-        "line": 515,
+        "index": 16614,
+        "line": 525,
         "loc": {
           "end": {
             "column": 38,
-            "line": 515
+            "line": 525
           },
           "start": {
             "column": 17,
-            "line": 515
+            "line": 525
           }
         },
         "message": "Redundant phrase found: \"consolidated together\". Remove the repeated meaning.",
         "range": [
-          16000,
-          16021
+          16614,
+          16635
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5202,22 +5363,22 @@
       },
       {
         "column": 13,
-        "index": 16058,
-        "line": 517,
+        "index": 16672,
+        "line": 527,
         "loc": {
           "end": {
             "column": 28,
-            "line": 517
+            "line": 527
           },
           "start": {
             "column": 13,
-            "line": 517
+            "line": 527
           }
         },
         "message": "Redundant phrase found: \"couple together\". Remove the repeated meaning.",
         "range": [
-          16058,
-          16073
+          16672,
+          16687
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5225,22 +5386,22 @@
       },
       {
         "column": 13,
-        "index": 16112,
-        "line": 519,
+        "index": 16726,
+        "line": 529,
         "loc": {
           "end": {
             "column": 29,
-            "line": 519
+            "line": 529
           },
           "start": {
             "column": 13,
-            "line": 519
+            "line": 529
           }
         },
         "message": "Redundant phrase found: \"couples together\". Remove the repeated meaning.",
         "range": [
-          16112,
-          16128
+          16726,
+          16742
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5248,22 +5409,22 @@
       },
       {
         "column": 13,
-        "index": 16167,
-        "line": 521,
+        "index": 16781,
+        "line": 531,
         "loc": {
           "end": {
             "column": 29,
-            "line": 521
+            "line": 531
           },
           "start": {
             "column": 13,
-            "line": 521
+            "line": 531
           }
         },
         "message": "Redundant phrase found: \"coupled together\". Remove the repeated meaning.",
         "range": [
-          16167,
-          16183
+          16781,
+          16797
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5271,22 +5432,22 @@
       },
       {
         "column": 12,
-        "index": 16221,
-        "line": 523,
+        "index": 16835,
+        "line": 533,
         "loc": {
           "end": {
             "column": 25,
-            "line": 523
+            "line": 533
           },
           "start": {
             "column": 12,
-            "line": 523
+            "line": 533
           }
         },
         "message": "Redundant phrase found: \"meld together\". Remove the repeated meaning.",
         "range": [
-          16221,
-          16234
+          16835,
+          16848
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5294,22 +5455,22 @@
       },
       {
         "column": 12,
-        "index": 16268,
-        "line": 525,
+        "index": 16882,
+        "line": 535,
         "loc": {
           "end": {
             "column": 26,
-            "line": 525
+            "line": 535
           },
           "start": {
             "column": 12,
-            "line": 525
+            "line": 535
           }
         },
         "message": "Redundant phrase found: \"melds together\". Remove the repeated meaning.",
         "range": [
-          16268,
-          16282
+          16882,
+          16896
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5317,22 +5478,22 @@
       },
       {
         "column": 12,
-        "index": 16316,
-        "line": 527,
+        "index": 16930,
+        "line": 537,
         "loc": {
           "end": {
             "column": 27,
-            "line": 527
+            "line": 537
           },
           "start": {
             "column": 12,
-            "line": 527
+            "line": 537
           }
         },
         "message": "Redundant phrase found: \"melded together\". Remove the repeated meaning.",
         "range": [
-          16316,
-          16331
+          16930,
+          16945
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5340,22 +5501,22 @@
       },
       {
         "column": 19,
-        "index": 16372,
-        "line": 529,
+        "index": 16986,
+        "line": 539,
         "loc": {
           "end": {
             "column": 34,
-            "line": 529
+            "line": 539
           },
           "start": {
             "column": 19,
-            "line": 529
+            "line": 539
           }
         },
         "message": "Redundant phrase found: \"mingle together\". Remove the repeated meaning.",
         "range": [
-          16372,
-          16387
+          16986,
+          17001
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5363,22 +5524,22 @@
       },
       {
         "column": 19,
-        "index": 16431,
-        "line": 531,
+        "index": 17045,
+        "line": 541,
         "loc": {
           "end": {
             "column": 35,
-            "line": 531
+            "line": 541
           },
           "start": {
             "column": 19,
-            "line": 531
+            "line": 541
           }
         },
         "message": "Redundant phrase found: \"mingles together\". Remove the repeated meaning.",
         "range": [
-          16431,
-          16447
+          17045,
+          17061
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5386,22 +5547,22 @@
       },
       {
         "column": 19,
-        "index": 16491,
-        "line": 533,
+        "index": 17105,
+        "line": 543,
         "loc": {
           "end": {
             "column": 35,
-            "line": 533
+            "line": 543
           },
           "start": {
             "column": 19,
-            "line": 533
+            "line": 543
           }
         },
         "message": "Redundant phrase found: \"mingled together\". Remove the repeated meaning.",
         "range": [
-          16491,
-          16507
+          17105,
+          17121
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5409,22 +5570,22 @@
       },
       {
         "column": 11,
-        "index": 16543,
-        "line": 535,
+        "index": 17157,
+        "line": 545,
         "loc": {
           "end": {
             "column": 24,
-            "line": 535
+            "line": 545
           },
           "start": {
             "column": 11,
-            "line": 535
+            "line": 545
           }
         },
         "message": "Redundant phrase found: \"pool together\". Remove the repeated meaning.",
         "range": [
-          16543,
-          16556
+          17157,
+          17170
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5432,22 +5593,22 @@
       },
       {
         "column": 11,
-        "index": 16585,
-        "line": 537,
+        "index": 17199,
+        "line": 547,
         "loc": {
           "end": {
             "column": 25,
-            "line": 537
+            "line": 547
           },
           "start": {
             "column": 11,
-            "line": 537
+            "line": 547
           }
         },
         "message": "Redundant phrase found: \"pools together\". Remove the repeated meaning.",
         "range": [
-          16585,
-          16599
+          17199,
+          17213
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5455,22 +5616,22 @@
       },
       {
         "column": 11,
-        "index": 16628,
-        "line": 539,
+        "index": 17242,
+        "line": 549,
         "loc": {
           "end": {
             "column": 26,
-            "line": 539
+            "line": 549
           },
           "start": {
             "column": 11,
-            "line": 539
+            "line": 549
           }
         },
         "message": "Redundant phrase found: \"pooled together\". Remove the repeated meaning.",
         "range": [
-          16628,
-          16643
+          17242,
+          17257
         ],
         "ruleId": "redundancy",
         "severity": 2,
@@ -5478,22 +5639,22 @@
       },
       {
         "column": 19,
-        "index": 16680,
-        "line": 541,
+        "index": 17294,
+        "line": 551,
         "loc": {
           "end": {
             "column": 38,
-            "line": 541
+            "line": 551
           },
           "start": {
             "column": 19,
-            "line": 541
+            "line": 551
           }
         },
         "message": "Wordy phrase found: \"for the duration of\". Replace it with direct wording.",
         "range": [
-          16680,
-          16699
+          17294,
+          17313
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5501,22 +5662,22 @@
       },
       {
         "column": 12,
-        "index": 16724,
-        "line": 543,
+        "index": 17338,
+        "line": 553,
         "loc": {
           "end": {
             "column": 31,
-            "line": 543
+            "line": 553
           },
           "start": {
             "column": 12,
-            "line": 543
+            "line": 553
           }
         },
         "message": "Wordy phrase found: \"has the capacity to\". Replace it with direct wording.",
         "range": [
-          16724,
-          16743
+          17338,
+          17357
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5524,22 +5685,22 @@
       },
       {
         "column": 13,
-        "index": 16775,
-        "line": 545,
+        "index": 17389,
+        "line": 555,
         "loc": {
           "end": {
             "column": 33,
-            "line": 545
+            "line": 555
           },
           "start": {
             "column": 13,
-            "line": 545
+            "line": 555
           }
         },
         "message": "Wordy phrase found: \"have the capacity to\". Replace it with direct wording.",
         "range": [
-          16775,
-          16795
+          17389,
+          17409
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5547,22 +5708,22 @@
       },
       {
         "column": 18,
-        "index": 16832,
-        "line": 547,
+        "index": 17446,
+        "line": 557,
         "loc": {
           "end": {
             "column": 37,
-            "line": 547
+            "line": 557
           },
           "start": {
             "column": 18,
-            "line": 547
+            "line": 557
           }
         },
         "message": "Wordy phrase found: \"had the capacity to\". Replace it with direct wording.",
         "range": [
-          16832,
-          16851
+          17446,
+          17465
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5570,22 +5731,22 @@
       },
       {
         "column": 13,
-        "index": 16878,
-        "line": 549,
+        "index": 17492,
+        "line": 559,
         "loc": {
           "end": {
             "column": 35,
-            "line": 549
+            "line": 559
           },
           "start": {
             "column": 13,
-            "line": 549
+            "line": 559
           }
         },
         "message": "Wordy phrase found: \"has the opportunity to\". Replace it with direct wording.",
         "range": [
-          16878,
-          16900
+          17492,
+          17514
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5593,22 +5754,22 @@
       },
       {
         "column": 14,
-        "index": 16934,
-        "line": 551,
+        "index": 17548,
+        "line": 561,
         "loc": {
           "end": {
             "column": 37,
-            "line": 551
+            "line": 561
           },
           "start": {
             "column": 14,
-            "line": 551
+            "line": 561
           }
         },
         "message": "Wordy phrase found: \"have the opportunity to\". Replace it with direct wording.",
         "range": [
-          16934,
-          16957
+          17548,
+          17571
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5616,22 +5777,22 @@
       },
       {
         "column": 13,
-        "index": 16990,
-        "line": 553,
+        "index": 17604,
+        "line": 563,
         "loc": {
           "end": {
             "column": 35,
-            "line": 553
+            "line": 563
           },
           "start": {
             "column": 13,
-            "line": 553
+            "line": 563
           }
         },
         "message": "Wordy phrase found: \"had the opportunity to\". Replace it with direct wording.",
         "range": [
-          16990,
-          17012
+          17604,
+          17626
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5639,22 +5800,22 @@
       },
       {
         "column": 15,
-        "index": 17047,
-        "line": 555,
+        "index": 17661,
+        "line": 565,
         "loc": {
           "end": {
             "column": 34,
-            "line": 555
+            "line": 565
           },
           "start": {
             "column": 15,
-            "line": 555
+            "line": 565
           }
         },
         "message": "Wordy phrase found: \"conduct a review of\". Replace it with direct wording.",
         "range": [
-          17047,
-          17066
+          17661,
+          17680
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5662,22 +5823,22 @@
       },
       {
         "column": 15,
-        "index": 17093,
-        "line": 557,
+        "index": 17707,
+        "line": 567,
         "loc": {
           "end": {
             "column": 34,
-            "line": 557
+            "line": 567
           },
           "start": {
             "column": 15,
-            "line": 557
+            "line": 567
           }
         },
         "message": "Wordy phrase found: \"perform a review of\". Replace it with direct wording.",
         "range": [
-          17093,
-          17112
+          17707,
+          17726
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5685,22 +5846,22 @@
       },
       {
         "column": 15,
-        "index": 17139,
-        "line": 559,
+        "index": 17753,
+        "line": 569,
         "loc": {
           "end": {
             "column": 36,
-            "line": 559
+            "line": 569
           },
           "start": {
             "column": 15,
-            "line": 559
+            "line": 569
           }
         },
         "message": "Wordy phrase found: \"carry out a review of\". Replace it with direct wording.",
         "range": [
-          17139,
-          17160
+          17753,
+          17774
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5708,22 +5869,22 @@
       },
       {
         "column": 16,
-        "index": 17188,
-        "line": 561,
+        "index": 17802,
+        "line": 571,
         "loc": {
           "end": {
             "column": 34,
-            "line": 561
+            "line": 571
           },
           "start": {
             "column": 16,
-            "line": 561
+            "line": 571
           }
         },
         "message": "Wordy phrase found: \"taken into account\". Replace it with direct wording.",
         "range": [
-          17188,
-          17206
+          17802,
+          17820
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5731,22 +5892,22 @@
       },
       {
         "column": 20,
-        "index": 17244,
-        "line": 563,
+        "index": 17858,
+        "line": 573,
         "loc": {
           "end": {
             "column": 41,
-            "line": 563
+            "line": 573
           },
           "start": {
             "column": 20,
-            "line": 563
+            "line": 573
           }
         },
         "message": "Wordy phrase found: \"with the exception of\". Replace it with direct wording.",
         "range": [
-          17244,
-          17265
+          17858,
+          17879
         ],
         "ruleId": "wordiness",
         "severity": 2,
@@ -5754,22 +5915,22 @@
       },
       {
         "column": 44,
-        "index": 18518,
-        "line": 603,
+        "index": 19132,
+        "line": 613,
         "loc": {
           "end": {
             "column": 45,
-            "line": 603
+            "line": 613
           },
           "start": {
             "column": 44,
-            "line": 603
+            "line": 613
           }
         },
         "message": "Hidden Unicode control found: U+200B ZERO WIDTH SPACE. Remove the invisible character.",
         "range": [
-          18518,
-          18519
+          19132,
+          19133
         ],
         "ruleId": "hidden-unicode-controls",
         "severity": 2,
@@ -5777,22 +5938,22 @@
       },
       {
         "column": 52,
-        "index": 18586,
-        "line": 605,
+        "index": 19200,
+        "line": 615,
         "loc": {
           "end": {
             "column": 53,
-            "line": 605
+            "line": 615
           },
           "start": {
             "column": 52,
-            "line": 605
+            "line": 615
           }
         },
         "message": "Hidden Unicode control found: U+202E RIGHT-TO-LEFT OVERRIDE. Remove the invisible character.",
         "range": [
-          18586,
-          18587
+          19200,
+          19201
         ],
         "ruleId": "hidden-unicode-controls",
         "severity": 2,
@@ -5800,22 +5961,22 @@
       },
       {
         "column": 41,
-        "index": 18644,
-        "line": 607,
+        "index": 19258,
+        "line": 617,
         "loc": {
           "end": {
             "column": 42,
-            "line": 607
+            "line": 617
           },
           "start": {
             "column": 41,
-            "line": 607
+            "line": 617
           }
         },
         "message": "Hidden Unicode control found: U+00AD SOFT HYPHEN. Remove the invisible character.",
         "range": [
-          18644,
-          18645
+          19258,
+          19259
         ],
         "ruleId": "hidden-unicode-controls",
         "severity": 2,
@@ -5823,22 +5984,22 @@
       },
       {
         "column": 60,
-        "index": 19008,
-        "line": 617,
+        "index": 19622,
+        "line": 627,
         "loc": {
           "end": {
             "column": 114,
-            "line": 617
+            "line": 627
           },
           "start": {
             "column": 60,
-            "line": 617
+            "line": 627
           }
         },
         "message": "LLM disclaimer found: \"as an ai\". Remove assistant leakage.",
         "range": [
-          19008,
-          19062
+          19622,
+          19676
         ],
         "ruleId": "llm-disclaimer",
         "severity": 2,
@@ -5846,22 +6007,22 @@
       },
       {
         "column": 115,
-        "index": 19063,
-        "line": 617,
+        "index": 19677,
+        "line": 627,
         "loc": {
           "end": {
             "column": 174,
-            "line": 617
+            "line": 627
           },
           "start": {
             "column": 115,
-            "line": 617
+            "line": 627
           }
         },
         "message": "LLM disclaimer found: \"up to my last training\". Remove assistant leakage.",
         "range": [
-          19063,
-          19122
+          19677,
+          19736
         ],
         "ruleId": "llm-disclaimer",
         "severity": 2,
@@ -5869,22 +6030,22 @@
       },
       {
         "column": 175,
-        "index": 19123,
-        "line": 617,
+        "index": 19737,
+        "line": 627,
         "loc": {
           "end": {
             "column": 230,
-            "line": 617
+            "line": 627
           },
           "start": {
             "column": 175,
-            "line": 617
+            "line": 627
           }
         },
         "message": "Response wrapper found: chat-scaffold (would you like me to). Remove assistant response scaffolding.",
         "range": [
-          19123,
-          19178
+          19737,
+          19792
         ],
         "ruleId": "response-wrapper",
         "severity": 2,
@@ -5892,22 +6053,22 @@
       },
       {
         "column": 231,
-        "index": 19179,
-        "line": 617,
+        "index": 19793,
+        "line": 627,
         "loc": {
           "end": {
             "column": 283,
-            "line": 617
+            "line": 627
           },
           "start": {
             "column": 231,
-            "line": 617
+            "line": 627
           }
         },
         "message": "Response wrapper found: chat-scaffold (here are a few options). Remove assistant response scaffolding.",
         "range": [
-          19179,
-          19231
+          19793,
+          19845
         ],
         "ruleId": "response-wrapper",
         "severity": 2,
@@ -5915,22 +6076,22 @@
       },
       {
         "column": 30,
-        "index": 19541,
-        "line": 627,
+        "index": 20155,
+        "line": 637,
         "loc": {
           "end": {
             "column": 67,
-            "line": 627
+            "line": 637
           },
           "start": {
             "column": 30,
-            "line": 627
+            "line": 637
           }
         },
         "message": "Artifact placeholder found: OpenAI citation marker. Remove generated or unfinished placeholder residue.",
         "range": [
-          19541,
-          19578
+          20155,
+          20192
         ],
         "ruleId": "artifact-placeholders",
         "severity": 2,
@@ -5938,22 +6099,22 @@
       },
       {
         "column": 24,
-        "index": 19604,
-        "line": 629,
+        "index": 20218,
+        "line": 639,
         "loc": {
           "end": {
             "column": 42,
-            "line": 629
+            "line": 639
           },
           "start": {
             "column": 24,
-            "line": 629
+            "line": 639
           }
         },
         "message": "Artifact placeholder found: OpenAI sandbox path. Remove generated or unfinished placeholder residue.",
         "range": [
-          19604,
-          19622
+          20218,
+          20236
         ],
         "ruleId": "artifact-placeholders",
         "severity": 2,
@@ -5961,22 +6122,22 @@
       },
       {
         "column": 26,
-        "index": 19661,
-        "line": 631,
+        "index": 20275,
+        "line": 641,
         "loc": {
           "end": {
             "column": 43,
-            "line": 631
+            "line": 641
           },
           "start": {
             "column": 26,
-            "line": 631
+            "line": 641
           }
         },
         "message": "Artifact placeholder found: unfinished citation placeholder. Remove generated or unfinished placeholder residue.",
         "range": [
-          19661,
-          19678
+          20275,
+          20292
         ],
         "ruleId": "artifact-placeholders",
         "severity": 2,
@@ -5984,22 +6145,22 @@
       },
       {
         "column": 17,
-        "index": 19715,
-        "line": 633,
+        "index": 20329,
+        "line": 643,
         "loc": {
           "end": {
             "column": 30,
-            "line": 633
+            "line": 643
           },
           "start": {
             "column": 17,
-            "line": 633
+            "line": 643
           }
         },
         "message": "Artifact placeholder found: unfinished insert placeholder. Remove generated or unfinished placeholder residue.",
         "range": [
-          19715,
-          19728
+          20329,
+          20342
         ],
         "ruleId": "artifact-placeholders",
         "severity": 2,
@@ -6007,22 +6168,22 @@
       },
       {
         "column": 1,
-        "index": 19753,
-        "line": 635,
+        "index": 20367,
+        "line": 645,
         "loc": {
           "end": {
             "column": 12,
-            "line": 635
+            "line": 645
           },
           "start": {
             "column": 1,
-            "line": 635
+            "line": 645
           }
         },
         "message": "Artifact placeholder found: placeholder text. Remove generated or unfinished placeholder residue.",
         "range": [
-          19753,
-          19764
+          20367,
+          20378
         ],
         "ruleId": "artifact-placeholders",
         "severity": 2,
@@ -16290,6 +16451,627 @@
         "ruleId": "contrastive-aphorism",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 104,
+        "index": 32728,
+        "line": 835,
+        "loc": {
+          "end": {
+            "column": 154,
+            "line": 835
+          },
+          "start": {
+            "column": 104,
+            "line": 835
+          }
+        },
+        "message": "Semantic thinness (abstract-personification-line): Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause. Matched template: {abstractSubject} entered {socialPlace}.",
+        "range": [
+          32728,
+          32778
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 206,
+        "index": 32830,
+        "line": 835,
+        "loc": {
+          "end": {
+            "column": 241,
+            "line": 835
+          },
+          "start": {
+            "column": 206,
+            "line": 835
+          }
+        },
+        "message": "Demonstrative emphasis found: \"That was where the real work began.\". Reduce repeated short emphasis lines.",
+        "range": [
+          32830,
+          32865
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 206,
+        "index": 32830,
+        "line": 835,
+        "loc": {
+          "end": {
+            "column": 241,
+            "line": 835
+          },
+          "start": {
+            "column": 206,
+            "line": 835
+          }
+        },
+        "message": "Semantic thinness (real-work-begins): Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work. Matched template: that was where {workSubject} {pastStartVerb}.",
+        "range": [
+          32830,
+          32865
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 242,
+        "index": 32866,
+        "line": 835,
+        "loc": {
+          "end": {
+            "column": 285,
+            "line": 835
+          },
+          "start": {
+            "column": 242,
+            "line": 835
+          }
+        },
+        "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+        "range": [
+          32866,
+          32909
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 141,
+        "index": 33051,
+        "line": 837,
+        "loc": {
+          "end": {
+            "column": 341,
+            "line": 837
+          },
+          "start": {
+            "column": 141,
+            "line": 837
+          }
+        },
+        "message": "Triple repeat opener found: \"the\". Vary the sentence openers.",
+        "range": [
+          33051,
+          33251
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 33253,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 238,
+            "line": 839
+          },
+          "start": {
+            "column": 1,
+            "line": 839
+          }
+        },
+        "message": "Paragraph has 7 sentences. Keep paragraphs to 6 sentences or fewer.",
+        "range": [
+          33253,
+          33490
+        ],
+        "ruleId": "paragraph-length",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 57,
+        "index": 33309,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 96,
+            "line": 839
+          },
+          "start": {
+            "column": 57,
+            "line": 839
+          }
+        },
+        "message": "Demonstrative emphasis found: \"That is what makes the method powerful.\". Reduce repeated short emphasis lines.",
+        "range": [
+          33309,
+          33348
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 57,
+        "index": 33309,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 96,
+            "line": 839
+          },
+          "start": {
+            "column": 57,
+            "line": 839
+          }
+        },
+        "message": "Summative frame found: \"that is what makes\". State the concrete point instead.",
+        "range": [
+          33309,
+          33348
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 97,
+        "index": 33349,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 118,
+            "line": 839
+          },
+          "start": {
+            "column": 97,
+            "line": 839
+          }
+        },
+        "message": "Demonstrative emphasis found: \"This is why it works.\". Reduce repeated short emphasis lines.",
+        "range": [
+          33349,
+          33370
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 97,
+        "index": 33349,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 118,
+            "line": 839
+          },
+          "start": {
+            "column": 97,
+            "line": 839
+          }
+        },
+        "message": "Semantic thinness (vague-connective-payoff): Catch connective payoff sentences that signal a conclusion without adding the conclusion. Matched template: {payoffOpener} why {genericSubject} {importanceVerb}.",
+        "range": [
+          33349,
+          33370
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 97,
+        "index": 33349,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 118,
+            "line": 839
+          },
+          "start": {
+            "column": 97,
+            "line": 839
+          }
+        },
+        "message": "Summative frame found: \"this is why it works\". State the concrete point instead.",
+        "range": [
+          33349,
+          33370
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 119,
+        "index": 33371,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 145,
+            "line": 839
+          },
+          "start": {
+            "column": 119,
+            "line": 839
+          }
+        },
+        "message": "Generic signposting found: the-is-simple. Replace the frame with the concrete claim.",
+        "range": [
+          33371,
+          33397
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 119,
+        "index": 33371,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 145,
+            "line": 839
+          },
+          "start": {
+            "column": 119,
+            "line": 839
+          }
+        },
+        "message": "Lesson framing found: the lesson here is. Replace the wrapper with the lesson.",
+        "range": [
+          33371,
+          33397
+        ],
+        "ruleId": "lesson-framing",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 146,
+        "index": 33398,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 178,
+            "line": 839
+          },
+          "start": {
+            "column": 146,
+            "line": 839
+          }
+        },
+        "message": "Boilerplate conclusion found: the practical takeaway. Replace the closer with a specific ending.",
+        "range": [
+          33398,
+          33430
+        ],
+        "ruleId": "boilerplate-conclusion",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 146,
+        "index": 33398,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 178,
+            "line": 839
+          },
+          "start": {
+            "column": 146,
+            "line": 839
+          }
+        },
+        "message": "Generic signposting found: the-is-clear. Replace the frame with the concrete claim.",
+        "range": [
+          33398,
+          33430
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 146,
+        "index": 33398,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 178,
+            "line": 839
+          },
+          "start": {
+            "column": 146,
+            "line": 839
+          }
+        },
+        "message": "Summative frame found: \"the practical takeaway is\". State the concrete point instead.",
+        "range": [
+          33398,
+          33430
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 179,
+        "index": 33431,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 207,
+            "line": 839
+          },
+          "start": {
+            "column": 179,
+            "line": 839
+          }
+        },
+        "message": "Observer guidance found: watch how the frame changes. Replace the bridge with concrete evidence.",
+        "range": [
+          33431,
+          33459
+        ],
+        "ruleId": "observer-guidance",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 179,
+        "index": 33431,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 219,
+            "line": 839
+          },
+          "start": {
+            "column": 179,
+            "line": 839
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (watch, see).",
+        "range": [
+          33431,
+          33471
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 208,
+        "index": 33460,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 238,
+            "line": 839
+          },
+          "start": {
+            "column": 208,
+            "line": 839
+          }
+        },
+        "message": "Observer guidance found: you can see it everywhere now. Replace the bridge with concrete evidence.",
+        "range": [
+          33460,
+          33490
+        ],
+        "ruleId": "observer-guidance",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 33492,
+        "line": 841,
+        "loc": {
+          "end": {
+            "column": 416,
+            "line": 841
+          },
+          "start": {
+            "column": 1,
+            "line": 841
+          }
+        },
+        "message": "Paragraph has 7 sentences. Keep paragraphs to 6 sentences or fewer.",
+        "range": [
+          33492,
+          33907
+        ],
+        "ruleId": "paragraph-length",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 127,
+        "index": 33618,
+        "line": 841,
+        "loc": {
+          "end": {
+            "column": 191,
+            "line": 841
+          },
+          "start": {
+            "column": 127,
+            "line": 841
+          }
+        },
+        "message": "Demonstrative emphasis found: \"This is why the test failed when the token expired before retry.\". Reduce repeated short emphasis lines.",
+        "range": [
+          33618,
+          33682
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 310,
+        "index": 33801,
+        "line": 841,
+        "loc": {
+          "end": {
+            "column": 369,
+            "line": 841
+          },
+          "start": {
+            "column": 310,
+            "line": 841
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (watch, see).",
+        "range": [
+          33801,
+          33860
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 33909,
+        "line": 843,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 843
+          },
+          "start": {
+            "column": 1,
+            "line": 843
+          }
+        },
+        "message": "Boilerplate conclusion found: the-point-was. Replace the closer with a specific ending.",
+        "range": [
+          33909,
+          33952
+        ],
+        "ruleId": "boilerplate-conclusion",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 33909,
+        "line": 843,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 843
+          },
+          "start": {
+            "column": 1,
+            "line": 843
+          }
+        },
+        "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+        "range": [
+          33909,
+          33952
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 45,
+        "index": 33953,
+        "line": 843,
+        "loc": {
+          "end": {
+            "column": 77,
+            "line": 843
+          },
+          "start": {
+            "column": 45,
+            "line": 843
+          }
+        },
+        "message": "Boilerplate conclusion found: the-practical-takeaway-is. Replace the closer with a specific ending.",
+        "range": [
+          33953,
+          33985
+        ],
+        "ruleId": "boilerplate-conclusion",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 45,
+        "index": 33953,
+        "line": 843,
+        "loc": {
+          "end": {
+            "column": 77,
+            "line": 843
+          },
+          "start": {
+            "column": 45,
+            "line": 843
+          }
+        },
+        "message": "Generic signposting found: the-is-clear. Replace the frame with the concrete claim.",
+        "range": [
+          33953,
+          33985
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 45,
+        "index": 33953,
+        "line": 843,
+        "loc": {
+          "end": {
+            "column": 77,
+            "line": 843
+          },
+          "start": {
+            "column": 45,
+            "line": 843
+          }
+        },
+        "message": "Summative frame found: \"the practical takeaway is\". State the concrete point instead.",
+        "range": [
+          33953,
+          33985
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -22384,6 +23166,29 @@
         "type": "lint"
       },
       {
+        "column": 7,
+        "index": 1273,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 31
+          },
+          "start": {
+            "column": 7,
+            "line": 31
+          }
+        },
+        "message": "Low-information beat density: 5 weak body/action beats in a short span (turned, eyes, looked, chest, waited).",
+        "range": [
+          1273,
+          1365
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
         "index": 1368,
         "line": 33,
@@ -22863,6 +23668,167 @@
           2732
         ],
         "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2748,
+        "line": 65,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 65
+          },
+          "start": {
+            "column": 1,
+            "line": 65
+          }
+        },
+        "message": "Narrative cliche (face beat/flicker-crossed-face): Reports stock face-as-emotion-screen phrasing. Matched template: a flicker of {emotion} crossed {possessive} face",
+        "range": [
+          2748,
+          2783
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2786,
+        "line": 67,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 67
+          },
+          "start": {
+            "column": 1,
+            "line": 67
+          }
+        },
+        "message": "Narrative cliche (eye beat/eyes-unreadable): Reports stock unreadable-eye reaction beats. Matched template: {possessive} eyes {verb} with something unreadable",
+        "range": [
+          2786,
+          2828
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 2835,
+        "line": 69,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 69
+          },
+          "start": {
+            "column": 5,
+            "line": 69
+          }
+        },
+        "message": "Narrative cliche (body sensation/unknown-held-breath): Reports stock released-breath revelation beats. Matched template: released a breath she did not know she was holding",
+        "range": [
+          2835,
+          2885
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2888,
+        "line": 71,
+        "loc": {
+          "end": {
+            "column": 20,
+            "line": 71
+          },
+          "start": {
+            "column": 1,
+            "line": 71
+          }
+        },
+        "message": "Narrative cliche (time passage/time-slowed): Reports stock time-slowing drama beats. Matched template: time seemed to slow",
+        "range": [
+          2888,
+          2907
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 8,
+        "index": 2929,
+        "line": 73,
+        "loc": {
+          "end": {
+            "column": 101,
+            "line": 73
+          },
+          "start": {
+            "column": 8,
+            "line": 73
+          }
+        },
+        "message": "Low-information beat density: 7 weak body/action beats in a short span (glanced, throat, tightened, stepped, eyes, found, waited).",
+        "range": [
+          2929,
+          3022
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 2947,
+        "line": 73,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 73
+          },
+          "start": {
+            "column": 26,
+            "line": 73
+          }
+        },
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {bodyReactionVerb}.",
+        "range": [
+          2947,
+          2968
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 48,
+        "index": 2969,
+        "line": 73,
+        "loc": {
+          "end": {
+            "column": 65,
+            "line": 73
+          },
+          "start": {
+            "column": 48,
+            "line": 73
+          }
+        },
+        "message": "Semantic thinness (low-information-physical-blocking): Catch bland physical action beats that move bodies around without adding object, goal, cause, or consequence. Matched template: {humanSubject} {bodyVerb} {weakLocative}.",
+        "range": [
+          2969,
+          2986
+        ],
+        "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
       }
@@ -27863,29 +28829,6 @@
             "line": 13
           }
         },
-        "message": "Formula affirmation found: \"That is the real promise.\". Replace the empty formula line with substance.",
-        "range": [
-          262,
-          287
-        ],
-        "ruleId": "affirmation-closers",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 262,
-        "line": 13,
-        "loc": {
-          "end": {
-            "column": 26,
-            "line": 13
-          },
-          "start": {
-            "column": 1,
-            "line": 13
-          }
-        },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.",
         "range": [
           262,
@@ -30374,6 +31317,144 @@
         "range": [
           4151,
           4188
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4190,
+        "line": 205,
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 205
+          },
+          "start": {
+            "column": 1,
+            "line": 205
+          }
+        },
+        "message": "Semantic thinness (abstract-personification-line): Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause. Matched template: {abstractSubject} entered {socialPlace}.",
+        "range": [
+          4190,
+          4240
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4242,
+        "line": 207,
+        "loc": {
+          "end": {
+            "column": 61,
+            "line": 207
+          },
+          "start": {
+            "column": 1,
+            "line": 207
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} over {personTarget}.",
+        "range": [
+          4242,
+          4302
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4356,
+        "line": 211,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 211
+          },
+          "start": {
+            "column": 1,
+            "line": 211
+          }
+        },
+        "message": "Demonstrative emphasis found: \"That was where the real work began.\". Reduce repeated short emphasis lines.",
+        "range": [
+          4356,
+          4391
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4356,
+        "line": 211,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 211
+          },
+          "start": {
+            "column": 1,
+            "line": 211
+          }
+        },
+        "message": "Semantic thinness (real-work-begins): Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work. Matched template: that was where {workSubject} {pastStartVerb}.",
+        "range": [
+          4356,
+          4391
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4393,
+        "line": 213,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 213
+          },
+          "start": {
+            "column": 1,
+            "line": 213
+          }
+        },
+        "message": "Boilerplate conclusion found: the-point-was. Replace the closer with a specific ending.",
+        "range": [
+          4393,
+          4436
+        ],
+        "ruleId": "boilerplate-conclusion",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4393,
+        "line": 213,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 213
+          },
+          "start": {
+            "column": 1,
+            "line": 213
+          }
+        },
+        "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+        "range": [
+          4393,
+          4436
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44254,29 +45335,6 @@
         "type": "lint"
       },
       {
-        "column": 16,
-        "index": 45211,
-        "line": 927,
-        "loc": {
-          "end": {
-            "column": 40,
-            "line": 927
-          },
-          "start": {
-            "column": 16,
-            "line": 927
-          }
-        },
-        "message": "Formula affirmation found: \"That's the whole repair.\". Replace the empty formula line with substance.",
-        "range": [
-          45211,
-          45235
-        ],
-        "ruleId": "affirmation-closers",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
         "column": 1,
         "index": 45237,
         "line": 929,
@@ -45635,29 +46693,6 @@
       },
       {
         "column": 1,
-        "index": 48000,
-        "line": 1021,
-        "loc": {
-          "end": {
-            "column": 16,
-            "line": 1021
-          },
-          "start": {
-            "column": 1,
-            "line": 1021
-          }
-        },
-        "message": "Generic signposting found: the audit move. Replace the frame with the concrete claim.",
-        "range": [
-          48000,
-          48015
-        ],
-        "ruleId": "generic-signposting",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
         "index": 48017,
         "line": 1023,
         "loc": {
@@ -46092,6 +47127,282 @@
         "ruleId": "negation-reframe",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48989,
+        "line": 1057,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 1057
+          },
+          "start": {
+            "column": 1,
+            "line": 1057
+          }
+        },
+        "message": "Demonstrative emphasis found: \"That is what makes the method powerful.\". Reduce repeated short emphasis lines.",
+        "range": [
+          48989,
+          49028
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48989,
+        "line": 1057,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 1057
+          },
+          "start": {
+            "column": 1,
+            "line": 1057
+          }
+        },
+        "message": "Summative frame found: \"that is what makes\". State the concrete point instead.",
+        "range": [
+          48989,
+          49028
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49030,
+        "line": 1059,
+        "loc": {
+          "end": {
+            "column": 22,
+            "line": 1059
+          },
+          "start": {
+            "column": 1,
+            "line": 1059
+          }
+        },
+        "message": "Demonstrative emphasis found: \"This is why it works.\". Reduce repeated short emphasis lines.",
+        "range": [
+          49030,
+          49051
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49030,
+        "line": 1059,
+        "loc": {
+          "end": {
+            "column": 22,
+            "line": 1059
+          },
+          "start": {
+            "column": 1,
+            "line": 1059
+          }
+        },
+        "message": "Semantic thinness (vague-connective-payoff): Catch connective payoff sentences that signal a conclusion without adding the conclusion. Matched template: {payoffOpener} why {genericSubject} {importanceVerb}.",
+        "range": [
+          49030,
+          49051
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49030,
+        "line": 1059,
+        "loc": {
+          "end": {
+            "column": 22,
+            "line": 1059
+          },
+          "start": {
+            "column": 1,
+            "line": 1059
+          }
+        },
+        "message": "Summative frame found: \"this is why it works\". State the concrete point instead.",
+        "range": [
+          49030,
+          49051
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49053,
+        "line": 1061,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 1061
+          },
+          "start": {
+            "column": 1,
+            "line": 1061
+          }
+        },
+        "message": "Generic signposting found: the-is-simple. Replace the frame with the concrete claim.",
+        "range": [
+          49053,
+          49079
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49053,
+        "line": 1061,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 1061
+          },
+          "start": {
+            "column": 1,
+            "line": 1061
+          }
+        },
+        "message": "Lesson framing found: the lesson here is. Replace the wrapper with the lesson.",
+        "range": [
+          49053,
+          49079
+        ],
+        "ruleId": "lesson-framing",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49081,
+        "line": 1063,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 1063
+          },
+          "start": {
+            "column": 1,
+            "line": 1063
+          }
+        },
+        "message": "Boilerplate conclusion found: the-practical-takeaway-is. Replace the closer with a specific ending.",
+        "range": [
+          49081,
+          49113
+        ],
+        "ruleId": "boilerplate-conclusion",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49081,
+        "line": 1063,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 1063
+          },
+          "start": {
+            "column": 1,
+            "line": 1063
+          }
+        },
+        "message": "Generic signposting found: the-is-clear. Replace the frame with the concrete claim.",
+        "range": [
+          49081,
+          49113
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49081,
+        "line": 1063,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 1063
+          },
+          "start": {
+            "column": 1,
+            "line": 1063
+          }
+        },
+        "message": "Summative frame found: \"the practical takeaway is\". State the concrete point instead.",
+        "range": [
+          49081,
+          49113
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49115,
+        "line": 1065,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 1065
+          },
+          "start": {
+            "column": 1,
+            "line": 1065
+          }
+        },
+        "message": "Observer guidance found: watch how the frame changes. Replace the bridge with concrete evidence.",
+        "range": [
+          49115,
+          49143
+        ],
+        "ruleId": "observer-guidance",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49145,
+        "line": 1067,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 1067
+          },
+          "start": {
+            "column": 1,
+            "line": 1067
+          }
+        },
+        "message": "Observer guidance found: you can see it everywhere now. Replace the bridge with concrete evidence.",
+        "range": [
+          49145,
+          49175
+        ],
+        "ruleId": "observer-guidance",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -46163,7 +47474,30 @@
             "line": 1
           }
         },
-        "message": "Flesch Reading Ease is 59.92. Keep it at 61 or higher.",
+        "message": "Coleman-Liau is 12.63. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "coleman-liau",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Flesch Reading Ease is 48.12. Keep it at 61 or higher.",
         "range": [
           0,
           1
@@ -46813,6 +48147,121 @@
           903
         ],
         "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 906,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 9,
+            "line": 33
+          },
+          "start": {
+            "column": 1,
+            "line": 33
+          }
+        },
+        "message": "LLM vocabulary found: \"Moreover\". Replace the stock diction with a concrete word.",
+        "range": [
+          906,
+          914
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 16,
+        "index": 921,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 33
+          },
+          "start": {
+            "column": 16,
+            "line": 33
+          }
+        },
+        "message": "LLM vocabulary density: 6 stock abstraction words in a short span (scalable, approach, unlocks, nuanced, insight, ecosystem).",
+        "range": [
+          921,
+          983
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 1002,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 35
+          },
+          "start": {
+            "column": 17,
+            "line": 35
+          }
+        },
+        "message": "Prohibited word found: \"transformative\". Rewrite without this term.",
+        "range": [
+          1002,
+          1016
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 1002,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 35
+          },
+          "start": {
+            "column": 17,
+            "line": 35
+          }
+        },
+        "message": "LLM vocabulary density: 5 stock abstraction words in a short span (transformative, strategy, elevates, impact, workflow).",
+        "range": [
+          1002,
+          1063
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 18,
+        "index": 1083,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 87,
+            "line": 37
+          },
+          "start": {
+            "column": 18,
+            "line": 37
+          }
+        },
+        "message": "LLM vocabulary density: 6 stock abstraction words in a short span (scalable, ecosystem, unlocks, nuanced, transformation, touchpoint).",
+        "range": [
+          1083,
+          1152
+        ],
+        "ruleId": "llm-vocabulary-density",
         "severity": 2,
         "type": "lint"
       }
@@ -47646,29 +49095,6 @@
           3686
         ],
         "ruleId": "negation-reframe",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 3737,
-        "line": 133,
-        "loc": {
-          "end": {
-            "column": 16,
-            "line": 133
-          },
-          "start": {
-            "column": 1,
-            "line": 133
-          }
-        },
-        "message": "Generic signposting found: the audit move. Replace the frame with the concrete claim.",
-        "range": [
-          3737,
-          3752
-        ],
-        "ruleId": "generic-signposting",
         "severity": 2,
         "type": "lint"
       },
@@ -49036,29 +50462,6 @@
           685
         ],
         "ruleId": "semantic-thinness",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 687,
-        "line": 21,
-        "loc": {
-          "end": {
-            "column": 26,
-            "line": 21
-          },
-          "start": {
-            "column": 1,
-            "line": 21
-          }
-        },
-        "message": "Formula affirmation found: \"That is the real promise.\". Replace the empty formula line with substance.",
-        "range": [
-          687,
-          712
-        ],
-        "ruleId": "affirmation-closers",
         "severity": 2,
         "type": "lint"
       },
@@ -50742,29 +52145,6 @@
         "type": "lint"
       },
       {
-        "column": 16,
-        "index": 6287,
-        "line": 197,
-        "loc": {
-          "end": {
-            "column": 40,
-            "line": 197
-          },
-          "start": {
-            "column": 16,
-            "line": 197
-          }
-        },
-        "message": "Formula affirmation found: \"That's the whole repair.\". Replace the empty formula line with substance.",
-        "range": [
-          6287,
-          6311
-        ],
-        "ruleId": "affirmation-closers",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
         "column": 1,
         "index": 6313,
         "line": 199,
@@ -51685,6 +53065,29 @@
         "type": "lint"
       },
       {
+        "column": 7,
+        "index": 10637,
+        "line": 317,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 317
+          },
+          "start": {
+            "column": 7,
+            "line": 317
+          }
+        },
+        "message": "Low-information beat density: 5 weak body/action beats in a short span (turned, eyes, looked, chest, waited).",
+        "range": [
+          10637,
+          10729
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
         "index": 10732,
         "line": 319,
@@ -52076,6 +53479,29 @@
         "type": "lint"
       },
       {
+        "column": 8,
+        "index": 14722,
+        "line": 417,
+        "loc": {
+          "end": {
+            "column": 139,
+            "line": 417
+          },
+          "start": {
+            "column": 8,
+            "line": 417
+          }
+        },
+        "message": "Low-information beat density: 5 weak body/action beats in a short span (stepped, looked, blinked, tightened, shoulders).",
+        "range": [
+          14722,
+          14853
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 98,
         "index": 14812,
         "line": 417,
@@ -52118,6 +53544,259 @@
           14929
         ],
         "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 15412,
+        "line": 423,
+        "loc": {
+          "end": {
+            "column": 345,
+            "line": 423
+          },
+          "start": {
+            "column": 1,
+            "line": 423
+          }
+        },
+        "message": "Paragraph has 7 sentences. Keep paragraphs to 6 sentences or fewer.",
+        "range": [
+          15412,
+          15756
+        ],
+        "ruleId": "paragraph-length",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 67,
+        "index": 15478,
+        "line": 423,
+        "loc": {
+          "end": {
+            "column": 127,
+            "line": 423
+          },
+          "start": {
+            "column": 67,
+            "line": 423
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} over {personTarget}.",
+        "range": [
+          15478,
+          15538
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 176,
+        "index": 15587,
+        "line": 423,
+        "loc": {
+          "end": {
+            "column": 211,
+            "line": 423
+          },
+          "start": {
+            "column": 176,
+            "line": 423
+          }
+        },
+        "message": "Narrative cliche (face beat/flicker-crossed-face): Reports stock face-as-emotion-screen phrasing. Matched template: a flicker of {emotion} crossed {possessive} face",
+        "range": [
+          15587,
+          15622
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 213,
+        "index": 15624,
+        "line": 423,
+        "loc": {
+          "end": {
+            "column": 255,
+            "line": 423
+          },
+          "start": {
+            "column": 213,
+            "line": 423
+          }
+        },
+        "message": "Narrative cliche (eye beat/eyes-unreadable): Reports stock unreadable-eye reaction beats. Matched template: {possessive} eyes {verb} with something unreadable",
+        "range": [
+          15624,
+          15666
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 261,
+        "index": 15672,
+        "line": 423,
+        "loc": {
+          "end": {
+            "column": 311,
+            "line": 423
+          },
+          "start": {
+            "column": 261,
+            "line": 423
+          }
+        },
+        "message": "Narrative cliche (body sensation/unknown-held-breath): Reports stock released-breath revelation beats. Matched template: released a breath she did not know she was holding",
+        "range": [
+          15672,
+          15722
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 313,
+        "index": 15724,
+        "line": 423,
+        "loc": {
+          "end": {
+            "column": 332,
+            "line": 423
+          },
+          "start": {
+            "column": 313,
+            "line": 423
+          }
+        },
+        "message": "Narrative cliche (time passage/time-slowed): Reports stock time-slowing drama beats. Matched template: time seemed to slow",
+        "range": [
+          15724,
+          15743
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 67,
+        "index": 15824,
+        "line": 425,
+        "loc": {
+          "end": {
+            "column": 96,
+            "line": 425
+          },
+          "start": {
+            "column": 67,
+            "line": 425
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (looking, glanced).",
+        "range": [
+          15824,
+          15853
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 89,
+        "index": 15846,
+        "line": 425,
+        "loc": {
+          "end": {
+            "column": 182,
+            "line": 425
+          },
+          "start": {
+            "column": 89,
+            "line": 425
+          }
+        },
+        "message": "Low-information beat density: 7 weak body/action beats in a short span (glanced, throat, tightened, stepped, eyes, found, waited).",
+        "range": [
+          15846,
+          15939
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 107,
+        "index": 15864,
+        "line": 425,
+        "loc": {
+          "end": {
+            "column": 128,
+            "line": 425
+          },
+          "start": {
+            "column": 107,
+            "line": 425
+          }
+        },
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {bodyReactionVerb}.",
+        "range": [
+          15864,
+          15885
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 129,
+        "index": 15886,
+        "line": 425,
+        "loc": {
+          "end": {
+            "column": 146,
+            "line": 425
+          },
+          "start": {
+            "column": 129,
+            "line": 425
+          }
+        },
+        "message": "Semantic thinness (low-information-physical-blocking): Catch bland physical action beats that move bodies around without adding object, goal, cause, or consequence. Matched template: {humanSubject} {bodyVerb} {weakLocative}.",
+        "range": [
+          15886,
+          15903
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 15942,
+        "line": 427,
+        "loc": {
+          "end": {
+            "column": 621,
+            "line": 427
+          },
+          "start": {
+            "column": 1,
+            "line": 427
+          }
+        },
+        "message": "Paragraph has 8 sentences. Keep paragraphs to 6 sentences or fewer.",
+        "range": [
+          15942,
+          16562
+        ],
+        "ruleId": "paragraph-length",
         "severity": 2,
         "type": "lint"
       }

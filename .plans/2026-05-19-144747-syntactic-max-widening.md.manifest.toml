@@ -1,0 +1,107 @@
+[meta]
+plan = ".plans/2026-05-19-144747-syntactic-max-widening.md"
+surface = "syntactic"
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "That is what makes the method powerful."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "This is why it works."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The lesson here is simple."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The practical takeaway is clear."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "Watch how the frame changes."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "You can see it everywhere now."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "That is what makes the motor rotate at 1,800 rpm."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "This is why the test failed when the token expired before retry."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The lesson here is to rotate the signing key every 30 days."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The practical takeaway is in Table 2 of the audit report."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "Watch how voltage changes after the fuse opens."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "You can see it in the microscope slide after the dye sets."
+
+[[rule_widening]]
+path = "src/rules/syntactic-patterns/closers/summative-closer.ts"
+required_text = ["what makes", "why it works", "practical takeaway"]
+
+[[rule_widening]]
+path = "src/rules/syntactic-patterns/closers/affirmation-closers.ts"
+required_text = ["what matters", "whole point", "the real shift"]
+
+[[rule_widening]]
+path = "src/rules/syntactic-patterns/closers/boilerplate-conclusion.ts"
+required_text = ["practical takeaway", "method", "powerful"]
+
+[[rule_widening]]
+path = "src/rules/syntactic-patterns/lead-ins/lesson-framing.ts"
+required_text = ["lesson here", "takeaway", "clear"]
+
+[[rule_widening]]
+path = "src/rules/syntactic-patterns/lead-ins/observer-guidance.ts"
+required_text = ["watch how", "everywhere now", "frame changes"]

@@ -1,0 +1,111 @@
+[meta]
+plan = ".plans/2026-05-19-144747-semantic-max-widening.md"
+surface = "semantic"
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "By the end of the meeting, doubt entered the room."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "In the silence after the vote, relief washed over the group."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "By then, the answer had arrived as a small signal."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "That was where the real work began."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The point was not control for its own sake."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "When the room went quiet, silence became heavy."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "Doubt entered the room after the auditor found two missing signatures."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "Water washed over the group after the roof seam split."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The answer arrived as a signed email from the billing owner."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The real work began at eight thirty with the masonry crew."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The point was not control group B because the trial assigned it after screening."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "The recording measured the silence at 28 decibels after the generator shut down."
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/abstract-personification-line.json"
+required_text = ["doubt", "the call", "the review"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/emotion-as-substance.json"
+required_text = ["\"matchMode\": \"contains\"", "washed over the group", "tightened in"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/silence-as-actor.json"
+required_text = ["silence became", "silence turned", "thinState"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/truth-answer-moves.json"
+required_text = ["had arrived", "small signal", "show itself"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/real-work-begins.json"
+required_text = ["began", "where the real work"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/point-is-frame.json"
+required_text = ["for its own sake", "control"]

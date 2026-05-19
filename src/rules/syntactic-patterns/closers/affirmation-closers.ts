@@ -6,13 +6,23 @@ import {
 import { wordTokens } from "../../../shared/text/tokens.js";
 
 const CLOSERS = ["and that's the key.", "that's what matters."];
+const FORMULA_TAILS = [
+  "key",
+  "point",
+  "the real shift",
+  "real shift",
+  "whole point",
+  "thing",
+  "answer"
+];
 
 function isFormulaLine(text: string): boolean {
   const lower = text.toLocaleLowerCase("en");
 
   return (
     wordTokens(text).length <= 6 &&
-    (lower.startsWith("that's the ") || lower.startsWith("that is the "))
+    (lower.startsWith("that's the ") || lower.startsWith("that is the ")) &&
+    FORMULA_TAILS.some((tail) => lower.includes(tail))
   );
 }
 

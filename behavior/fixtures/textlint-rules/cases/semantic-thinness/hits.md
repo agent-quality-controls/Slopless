@@ -201,3 +201,15 @@ For a moment, her eyes moved from the window to the floor.
 By Friday, the meeting room felt different now.
 
 After that, the conversation shifted.
+
+By the end of the meeting, doubt entered the room.
+
+In the silence after the vote, relief washed over the group.
+
+By then, the answer had arrived as a small signal.
+
+That was where the real work began.
+
+The point was not control for its own sake.
+
+When the room went quiet, silence became heavy.

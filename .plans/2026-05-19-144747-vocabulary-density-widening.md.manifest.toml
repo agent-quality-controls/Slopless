@@ -1,0 +1,52 @@
+[meta]
+plan = ".plans/2026-05-19-144747-vocabulary-density-widening.md"
+surface = "vocabulary"
+
+[[case_line]]
+family = "words"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/words/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+text = "Moreover, this scalable approach unlocks nuanced insight across the ecosystem."
+
+[[case_line]]
+family = "words"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/words/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+text = "Ultimately, the transformative strategy elevates impact across every workflow."
+
+[[case_line]]
+family = "words"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/words/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+text = "Furthermore, the scalable ecosystem unlocks nuanced transformation at every touchpoint."
+
+[[case_line]]
+family = "words"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/words/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+text = "The scalable test fixture generated 4,000 rows before the benchmark stopped."
+
+[[case_line]]
+family = "words"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/words/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+text = "The ecosystem survey counted 28 wetland species in the south basin."
+
+[[case_line]]
+family = "words"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/words/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+text = "The editor quoted a three-word phrase about insight as the phrase to delete."
+
+[[new_rule]]
+id = "words:llm-vocabulary-density"
+path = "src/rules/words/llm-vocabulary-density.ts"
+registry = "src/registries/words.ts"
+package_export = "./rules/words/llm-vocabulary-density"
+required_text = ["scalable", "touchpoint", "density", "llm vocabulary"]

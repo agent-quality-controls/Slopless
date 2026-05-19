@@ -2843,6 +2843,146 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 199
+    },
+    {
+      "text": "By the end of the meeting, doubt entered the room.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 205
+    },
+    {
+      "text": "By then, the answer had arrived as a small signal.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 209
+    },
+    {
+      "text": "That was where the real work began.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 211
+    },
+    {
+      "text": "The point was not control for its own sake.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 213
+    },
+    {
+      "text": "Doubt entered the room after the auditor found two missing signatures.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 193
+    },
+    {
+      "text": "The answer arrived as a signed email from the billing owner.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 197
+    },
+    {
+      "text": "The real work began at eight thirty with the masonry crew.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 199
+    },
+    {
+      "text": "The point was not control group B because the trial assigned it after screening.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 201
+    },
+    {
+      "text": "That is what makes the method powerful.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1057
+    },
+    {
+      "text": "This is why it works.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1059
+    },
+    {
+      "text": "The lesson here is simple.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1061
+    },
+    {
+      "text": "The practical takeaway is clear.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1063
+    },
+    {
+      "text": "Watch how the frame changes.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1065
+    },
+    {
+      "text": "You can see it everywhere now.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1067
+    },
+    {
+      "text": "That is what makes the motor rotate at 1,800 rpm.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 203
+    },
+    {
+      "text": "This is why the test failed when the token expired before retry.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 205
+    },
+    {
+      "text": "The lesson here is to rotate the signing key every 30 days.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 207
+    },
+    {
+      "text": "The practical takeaway is in Table 2 of the audit report.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 209
+    },
+    {
+      "text": "Watch how voltage changes after the fuse opens.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 211
+    },
+    {
+      "text": "You can see it in the microscope slide after the dye sets.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 213
     }
   ]
 }

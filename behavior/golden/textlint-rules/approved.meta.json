@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-19T13-29-23.799282Z-f3c41e06",
-  "run_commit": "a03eeeb",
+  "run_id": "2026-05-19T14-09-56.530861Z-f3c41e06",
+  "run_commit": "57e99e5",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T13:29:23.799282Z",
-  "fixture_hash": "sha256:719d02c3a98f441cc6c424c5529efcf73b54baeb1a33c3327177b2ec286ef5eb",
+  "recorded_at": "2026-05-19T14:09:56.530861Z",
+  "fixture_hash": "sha256:563289242ac469da607de2dfff0f4550aab068bc29fbeadfa27aa6594941663e",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -32,11 +32,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md",
-      "sha256": "sha256:6a3c83158a84814eb0531567458a48cd475c5e2f4d9aadb70ef44ee87d300df2"
+      "sha256": "sha256:7e152f927e6aafc05bc21cbfea4f595bc1933d47c4f2c30f12541a4e51c737c9"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md",
-      "sha256": "sha256:00160e6cec075dd5a53ce80de41b1fb5d149f1a2dd1debbe98faa56be01fea13"
+      "sha256": "sha256:d393e0b793b67d89c3dee1c4c2c3173924017075d392bedb4a139a5cdb378481"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/no-signal/no-hits.md",
@@ -60,19 +60,19 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
-      "sha256": "sha256:f2f37d60e71d5fdac34b40fca9c6e2af69bafb61fd74389daaf6df47b60bcbeb"
+      "sha256": "sha256:98adb8f6fc144c2a64fe28c60243b8e1fec9a5f06cf4cc0f59f4b4dbf09ea45c"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
-      "sha256": "sha256:ced885088b62502d69f9872d5e3192826a75a751af32f825294a845d56b04853"
+      "sha256": "sha256:f3c704ca0628aded0308f30bc57f7268eb6194c6cd7b457eb8a835fb03cb1c39"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
-      "sha256": "sha256:6289881fd3c6700cfbf4e299df11052a75106c85d0d36c550d7e40e3d3912859"
+      "sha256": "sha256:7b9e1f7b6fef2330e0b259bb00df377991c500a04271ba7d4968d4c043236ab8"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
-      "sha256": "sha256:462afb2296577d83817b559a1a47d7d2f094b838d999e00275120dc317489f73"
+      "sha256": "sha256:73f63a791bca8e4e6fcdef9773a6f54218da3451ceda9091cddcd98d753ee81f"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
@@ -84,19 +84,19 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/words/hits.md",
-      "sha256": "sha256:2faa263a85be6aefa4ceca17ebc85be5c7c4234d654b917142a776282b25f59a"
+      "sha256": "sha256:9c76d08cd633c4d98760a24d5018cba00ab9baf29f6b1d82e9bdffe83c2c66c2"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/words/no-hits.md",
-      "sha256": "sha256:2160c3b5687441b5b1df56393e737760b49742f9100a17f8fd743d006275eaba"
+      "sha256": "sha256:bb30c9895914df7bc58c10a4e30bc7d95c5006a9e71ccc20975a0cc522918cdc"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/editorial-style.md",
-      "sha256": "sha256:f1ef9ede53a5276ae9272fa0edac8dc077e11053b85a48799fcf3e69509ad538"
+      "sha256": "sha256:3adca0fe7de12eef3d80d0529cb0e997e5dffd690d29764fc1dd08c7b09d2029"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/engineering-review.md",
-      "sha256": "sha256:0e491742a7635ec84249140a7228d7e69e49cd02fb48af58996ff335c3de876c"
+      "sha256": "sha256:9a2f7c416430f839bf96317e9cc8e80e4cfb8cc185886d7f7c1be8090ba5347d"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
@@ -112,12 +112,12 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
-      "sha256": "sha256:c8a91fd97ac11e996e5f970a82d3a2228191071fa3cb5cd551181b9a5e9f1c68"
+      "sha256": "sha256:db8b381b1a76a40d16e621b5398a015f7e77d5f6381b9cbadc565abc57807fe7"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/technical-terminology.md",
       "sha256": "sha256:e56e6ed5b1d94558aecd64c1844affcea9a6e6b7189ece747581949b27d3a870"
     }
   ],
-  "comment": "Adversarial widening pass"
+  "comment": "Align corpus coverage for maximal widening"
 }

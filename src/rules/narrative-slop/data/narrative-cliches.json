@@ -157,5 +157,54 @@
       "seeming": ["felt", "seemed"]
     },
     "templates": ["for what {seeming} like {longTime}"]
+  },
+  {
+    "category": "face beat",
+    "id": "flicker-crossed-face",
+    "purpose": "Reports stock face-as-emotion-screen phrasing.",
+    "slots": {
+      "emotion": ["doubt", "fear", "pain", "recognition", "surprise"],
+      "possessive": ["her", "his", "my", "their"]
+    },
+    "templates": ["a flicker of {emotion} crossed {possessive} face"]
+  },
+  {
+    "category": "eye beat",
+    "id": "eyes-unreadable",
+    "purpose": "Reports stock unreadable-eye reaction beats.",
+    "slots": {
+      "possessive": ["her", "his", "my", "their"],
+      "verb": ["darkened", "flashed", "glinted"]
+    },
+    "templates": ["{possessive} eyes {verb} with something unreadable"]
+  },
+  {
+    "category": "body sensation",
+    "id": "unknown-held-breath",
+    "purpose": "Reports stock released-breath revelation beats.",
+    "slots": {},
+    "templates": [
+      "released a breath she did not know she was holding",
+      "released a breath he did not know he was holding",
+      "released a breath they did not know they were holding",
+      "released a breath she didn't know she was holding",
+      "released a breath he didn't know he was holding",
+      "released a breath they didn't know they were holding"
+    ]
+  },
+  {
+    "category": "time passage",
+    "id": "time-slowed",
+    "purpose": "Reports stock time-slowing drama beats.",
+    "slots": {
+      "seeming": ["seemed to", "began to"]
+    },
+    "templates": [
+      "time seemed to slow",
+      "time {seeming} slow",
+      "time slowed around them",
+      "time slowed around her",
+      "time slowed around him"
+    ]
   }
 ]
