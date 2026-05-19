@@ -8,9 +8,11 @@
     "{placeSubject} {linkingVerb} {thinState} {weakModifier}.",
     "{placeSubject} {linkingVerb} {weakBeforeState} {thinState}.",
     "{placeSubject} went {thinState}.",
+    "{groupSubject} went {thinState}.",
     "{sceneElement} {linkingVerb} {thinState}.",
     "{sceneElement} {linkingVerb} {thinState} {weakModifier}.",
-    "{sceneElement} {linkingVerb} {weakBeforeState} {thinState}."
+    "{sceneElement} {linkingVerb} {weakBeforeState} {thinState}.",
+    "{sceneElement} filled {placeObject}."
   ],
   "slots": {
     "placeSubject": [
@@ -42,6 +44,7 @@
     "sceneElement": [
       "the air",
       "the silence",
+      "silence",
       "the space",
       "the light",
       "the morning",
@@ -52,6 +55,20 @@
       "the scene",
       "the atmosphere",
       "the quiet"
+    ],
+    "groupSubject": [
+      "everyone",
+      "the cubs",
+      "the children",
+      "the group",
+      "the team"
+    ],
+    "placeObject": [
+      "the yard",
+      "the room",
+      "the courtyard",
+      "the hallway",
+      "the street"
     ],
     "linkingVerb": [
       "was",

@@ -227,3 +227,7 @@ The body map labels the femur, pelvis, and lower spine.
 The answer was closer to 47 than to 52 after rounding.
 
 The conversation transcript says the speaker used the word clarity twice.
+
+Everyone went quiet because Marius raised one paw.
+
+Silence filled the yard after the sound meter stopped at 28 decibels.

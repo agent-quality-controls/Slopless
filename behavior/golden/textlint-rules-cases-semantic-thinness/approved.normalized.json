@@ -3313,6 +3313,52 @@
         "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 5873,
+        "line": 257,
+        "loc": {
+          "end": {
+            "column": 21,
+            "line": 257
+          },
+          "start": {
+            "column": 1,
+            "line": 257
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {groupSubject} went {thinState}.",
+        "range": [
+          5873,
+          5893
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 22,
+        "index": 5894,
+        "line": 257,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 257
+          },
+          "start": {
+            "column": 22,
+            "line": 257
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {sceneElement} filled {placeObject}.",
+        "range": [
+          5894,
+          5918
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },

@@ -22,7 +22,12 @@ import {
   hasFactualConnectorAfterNegation,
   hasMetaContext
 } from "./negation-context-gates.js";
+import { hasInlineContrastConnectorAfterNegation } from "./inline-contrast-connector.js";
 import { inlineNotBecauseReframe } from "./inline-not-because-reframe.js";
+import {
+  inlineNotJustCopularReframe,
+  inlineShortNegatedBeat
+} from "./inline-short-negation.js";
 import {
   hasNegativeSlopPairSignal,
   negativeSlopReframe
@@ -47,29 +52,6 @@ const INLINE_NON_CONTRAST_NEGATION_FOLLOWERS = new Set([
   "every",
   "too"
 ]);
-const INLINE_CONTRAST_CONNECTORS = new Set([
-  "also",
-  "but",
-  "instead",
-  "rather"
-]);
-
-function hasInlineContrastConnectorAfterNegation(
-  tokens: readonly Token[],
-  negationIndex: number
-): boolean {
-  if (
-    tokens[negationIndex + 1]?.normalized === "help" &&
-    tokens[negationIndex + 2]?.normalized === "but"
-  ) {
-    return false;
-  }
-
-  return tokens
-    .slice(negationIndex + 1)
-    .some((token) => INLINE_CONTRAST_CONNECTORS.has(token.normalized));
-}
-
 function inlineNegationContrast(
   sentence: SplitSentence
 ): NegationReframeMatch | undefined {
@@ -85,6 +67,16 @@ function inlineNegationContrast(
   const notBecauseMatch = inlineNotBecauseReframe(sentence, tokens);
   if (notBecauseMatch !== undefined) {
     return notBecauseMatch;
+  }
+
+  const notJustCopularMatch = inlineNotJustCopularReframe(sentence, tokens);
+  if (notJustCopularMatch !== undefined) {
+    return notJustCopularMatch;
+  }
+
+  const shortBeatMatch = inlineShortNegatedBeat(sentence, tokens);
+  if (shortBeatMatch !== undefined) {
+    return shortBeatMatch;
   }
 
   if (

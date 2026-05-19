@@ -24,6 +24,7 @@ const CONCRETE_EXPLANATION_TOKENS = new Set([
   "ledger",
   "masonry",
   "mark",
+  "meter",
   "named",
   "offset",
   "parser",

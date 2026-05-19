@@ -1534,6 +1534,34 @@
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
       "line": 103
+    },
+    {
+      "text": "It wasn't just a sound because the meter also recorded a vibration in the floor.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 237
+    },
+    {
+      "text": "The script didn't wait for input because the timeout was zero.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 239
+    },
+    {
+      "text": "Everyone went quiet because Marius raised one paw.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 231
+    },
+    {
+      "text": "Silence filled the yard after the sound meter stopped at 28 decibels.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 233
     }
   ]
 }

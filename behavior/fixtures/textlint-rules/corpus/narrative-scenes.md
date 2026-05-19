@@ -445,3 +445,5 @@ The field biologist watched the fox, counted the kits, noted the den, and logged
 The runner crossed the line, stopped the timer, checked her pulse, and drank water.
 
 Cassia copied the arrow, checked the gate symbol, counted the guards, and marked the map.
+
+The new controls keep short negation and silence lines literal when the cause is named. It wasn't just a sound because the meter also recorded a vibration in the floor. The script didn't wait for input because the timeout was zero. Everyone went quiet because Marius raised one paw. Silence filled the yard after the sound meter stopped at 28 decibels.

@@ -233,3 +233,7 @@ Change is not a destination field in the schema.
 Momentum is not speed in the physics worksheet.
 
 Alignment is not agreement in this contract clause.
+
+It wasn't just a sound because the meter also recorded a vibration in the floor.
+
+The script didn't wait for input because the timeout was zero.

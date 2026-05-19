@@ -1,23 +1,23 @@
 {
   "suite": "textlint-rules-cases-semantic-thinness",
   "kind": "approved",
-  "run_id": "2026-05-19T20-52-35.693946Z-df22e59a",
-  "run_commit": "b606f67",
+  "run_id": "2026-05-19T21-21-11.196297Z-04547efb",
+  "run_commit": "cca3d6b",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T20:52:35.693946Z",
-  "fixture_hash": "sha256:9330e62f5afa9063d2e47b4fa37d55544378544cfa7eb5b45e9cfdbd51b8b5a5",
-  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "recorded_at": "2026-05-19T21:21:11.196297Z",
+  "fixture_hash": "sha256:160c5d2039408623301f14622b8794aff564f95666af4f2c65c9b6377ba15430",
+  "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
-      "sha256": "sha256:e8a4ca4113f3f0773760237a841dd11b81d2d3ffe3d454f9e0861ff146ec952a"
+      "sha256": "sha256:6a815200233d2c26a33644e3689fb76e5cd3c933eb2512804268f10166339ccd"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
-      "sha256": "sha256:48d9d84196a4f7e3723ed90ab4d883bd8af814c3c02c06aaa250fd508a0d3de8"
+      "sha256": "sha256:36f23dd4883462dae296b5aa16a3e26da44365d7cd3d75011ad91c7febf81793"
     }
   ],
-  "comment": "Implement second fresh corpus expansions"
+  "comment": "Catch Arden polished chapter slop"
 }

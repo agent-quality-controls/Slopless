@@ -253,3 +253,5 @@ The next level asks for a version of you that can hold more truth.
 The path forward is obvious once the noise is no longer allowed to lead.
 
 The real opportunity is to let the work teach us what the work is.
+
+Everyone went quiet. Silence filled the yard.

@@ -1099,3 +1099,7 @@ Momentum is not speed; it is coordinated energy.
 Alignment is not agreement; it is shared motion.
 
 Execution is not activity; it is intention made visible.
+
+It wasn't just a sound; it was a vibration that traveled through the dusty ground and tickled Cassia's paws.
+
+Bella didn't wait.

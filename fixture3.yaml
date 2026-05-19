@@ -19,6 +19,7 @@ features:
       - textlint-rules-corpus-linkedin-ai-search
       - textlint-rules-corpus-metrics-and-markdown
       - textlint-rules-corpus-narrative-scenes
+      - textlint-rules-corpus-arden-chapter-1-polished
       - textlint-rules-corpus-technical-terminology
 suites:
   textlint-rules-cases-academic-slop:
@@ -163,6 +164,14 @@ suites:
       approved_dir: "behavior/golden/textlint-rules-corpus-narrative-scenes"
       received_dir: ".fixture3/textlint-rules-corpus-narrative-scenes"
       diff_dir: ".fixture3/textlint-rules-corpus-narrative-scenes"
+  textlint-rules-corpus-arden-chapter-1-polished:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/corpus/arden-chapter-1-polished.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-corpus-arden-chapter-1-polished"
+      received_dir: ".fixture3/textlint-rules-corpus-arden-chapter-1-polished"
+      diff_dir: ".fixture3/textlint-rules-corpus-arden-chapter-1-polished"
   textlint-rules-corpus-technical-terminology:
     fixtures:
       - "behavior/fixtures/textlint-rules/corpus/technical-terminology.md"

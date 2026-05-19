@@ -12881,6 +12881,52 @@
         "ruleId": "contrastive-aphorism",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 50250,
+        "line": 1103,
+        "loc": {
+          "end": {
+            "column": 109,
+            "line": 1103
+          },
+          "start": {
+            "column": 1,
+            "line": 1103
+          }
+        },
+        "message": "Negation reframe found: \"It wasn't just a sound; it was a vibration that traveled through the dusty ground and tickled Cassia's paws.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          50250,
+          50358
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 50360,
+        "line": 1105,
+        "loc": {
+          "end": {
+            "column": 19,
+            "line": 1105
+          },
+          "start": {
+            "column": 1,
+            "line": 1105
+          }
+        },
+        "message": "Negation reframe found: \"Bella didn't wait.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          50360,
+          50378
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
