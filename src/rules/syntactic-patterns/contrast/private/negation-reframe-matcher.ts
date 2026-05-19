@@ -22,6 +22,7 @@ import {
   hasFactualConnectorAfterNegation,
   hasMetaContext
 } from "./negation-context-gates.js";
+import { inlineNotBecauseReframe } from "./inline-not-because-reframe.js";
 import {
   hasNegativeSlopPairSignal,
   negativeSlopReframe
@@ -80,6 +81,11 @@ function inlineNegationContrast(
   }
 
   const negation = tokens[negationIndex];
+
+  const notBecauseMatch = inlineNotBecauseReframe(sentence, tokens);
+  if (notBecauseMatch !== undefined) {
+    return notBecauseMatch;
+  }
 
   if (
     negation?.normalized !== "not" ||

@@ -16,7 +16,7 @@
             "line": 1
           }
         },
-        "message": "Coleman-Liau is 16.38. Keep it at 12 or lower.",
+        "message": "Coleman-Liau is 16.76. Keep it at 12 or lower.",
         "range": [
           0,
           1
@@ -39,7 +39,7 @@
             "line": 1
           }
         },
-        "message": "Flesch Reading Ease is 22.17. Keep it at 61 or higher.",
+        "message": "Flesch Reading Ease is 21.69. Keep it at 61 or higher.",
         "range": [
           0,
           1
@@ -62,7 +62,7 @@
             "line": 1
           }
         },
-        "message": "Gunning Fog is 16.1. Keep it at 12 or lower.",
+        "message": "Gunning Fog is 16.83. Keep it at 12 or lower.",
         "range": [
           0,
           1
@@ -206,6 +206,167 @@
           463
         ],
         "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 503,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 95,
+            "line": 13
+          },
+          "start": {
+            "column": 1,
+            "line": 13
+          }
+        },
+        "message": "Academic formula frame found: \"The paper contributes a fresh perspective to the ongoing dialogue about pedagogical innovation\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          503,
+          597
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 600,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 81,
+            "line": 15
+          },
+          "start": {
+            "column": 1,
+            "line": 15
+          }
+        },
+        "message": "Academic formula frame found: \"The findings indicate that mentorship can unlock new forms of academic belonging\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          600,
+          680
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 43,
+        "index": 642,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 15
+          },
+          "start": {
+            "column": 43,
+            "line": 15
+          }
+        },
+        "message": "Prohibited word found: \"unlock\". Rewrite without this term.",
+        "range": [
+          642,
+          648
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 683,
+        "line": 17,
+        "loc": {
+          "end": {
+            "column": 85,
+            "line": 17
+          },
+          "start": {
+            "column": 1,
+            "line": 17
+          }
+        },
+        "message": "Academic formula frame found: \"The article situates these practices within a broader matrix of institutional change\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          683,
+          767
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 770,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 103,
+            "line": 19
+          },
+          "start": {
+            "column": 1,
+            "line": 19
+          }
+        },
+        "message": "Academic formula frame found: \"The study offers a roadmap for scholars seeking to navigate the complexities of interdisciplinary work\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          770,
+          872
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 875,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 90,
+            "line": 21
+          },
+          "start": {
+            "column": 1,
+            "line": 21
+          }
+        },
+        "message": "Academic formula frame found: \"The discussion reveals how meaning making practices shape the contours of student success\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          875,
+          964
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 967,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 97,
+            "line": 23
+          },
+          "start": {
+            "column": 1,
+            "line": 23
+          }
+        },
+        "message": "Academic formula frame found: \"The study reveals the potential of cross sector partnerships to catalyze systemic transformation\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          967,
+          1063
+        ],
+        "ruleId": "academic-formula-frames",
         "severity": 2,
         "type": "lint"
       }

@@ -1,0 +1,84 @@
+{
+  "id": "abstract-agency-personification",
+  "class": "abstract-personification",
+  "purpose": "Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior.",
+  "matchMode": "contains",
+  "maxTokens": 34,
+  "templates": [
+    "{abstractAgent} seemed to {cognitionVerb} that {emptyShift}.",
+    "{abstractAgent} wanted to become {selfEvaluation}.",
+    "{abstractAgent} had been waiting for {abstractPayoff} to {becomingVerb}.",
+    "{abstractContainer} held {humanGroup} until {abstractPayoff} arrived.",
+    "{abstractMeaning} lives in what it {availabilityVerb}."
+  ],
+  "slots": {
+    "abstractAgent": [
+      "the brand",
+      "the conversation",
+      "the decision",
+      "the energy",
+      "the moment",
+      "the room",
+      "the strategy",
+      "the system",
+      "the work"
+    ],
+    "cognitionVerb": ["know", "realize", "remember", "understand"],
+    "emptyShift": [
+      "something important was beginning to shift",
+      "something needed to change",
+      "the next chapter was ready",
+      "the work was becoming clearer"
+    ],
+    "selfEvaluation": [
+      "more honest with itself",
+      "more human",
+      "more intentional",
+      "what it was meant to be"
+    ],
+    "abstractPayoff": [
+      "alignment",
+      "clarity",
+      "courage",
+      "meaning",
+      "possibility",
+      "purpose"
+    ],
+    "becomingVerb": [
+      "arrive",
+      "become what it was always becoming",
+      "show up",
+      "take shape"
+    ],
+    "abstractContainer": [
+      "the conversation",
+      "the moment",
+      "the room",
+      "the work"
+    ],
+    "humanGroup": ["everyone", "the group", "the team", "them", "us"],
+    "abstractMeaning": [
+      "the meaning of the decision",
+      "the truth of the moment",
+      "the value of the work"
+    ],
+    "availabilityVerb": ["makes available", "opens", "reveals"]
+  },
+  "rejectIf": [
+    "sentence names a concrete actor, document, sensor, transcript, trademark, or measurement",
+    "sentence states an actual causal mechanism"
+  ],
+  "positiveExamples": [
+    "The room seemed to understand that something important was beginning to shift.",
+    "The strategy wanted to become more honest with itself.",
+    "The conversation held the team until the next layer of clarity arrived."
+  ],
+  "negativeExamples": [
+    "The room sensor reported that occupancy increased after the doors opened.",
+    "The strategy document lists Mara as owner and May 31 as the review date."
+  ],
+  "notes": [
+    "This expands abstract-personification without adding exact literal sentences.",
+    "The broad-pattern concrete guard rejects technical and documentary readings."
+  ]
+}

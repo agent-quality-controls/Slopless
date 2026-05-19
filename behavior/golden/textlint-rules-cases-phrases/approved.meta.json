@@ -1,23 +1,23 @@
 {
   "suite": "textlint-rules-cases-phrases",
   "kind": "approved",
-  "run_id": "2026-05-19T17-36-55.3409Z-df22e59a",
-  "run_commit": "e21d316",
+  "run_id": "2026-05-19T18-50-03.180009Z-df22e59a",
+  "run_commit": "1356572",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T17:36:55.3409Z",
-  "fixture_hash": "sha256:ce641f2da6e756d39ec9805896bceca7ecaa1baf20e188195ca4fd28a632777e",
+  "recorded_at": "2026-05-19T18:50:03.180009Z",
+  "fixture_hash": "sha256:0f9dbc9f674530e19157c4d168e06b653069f9318609d1e32c52275d41777cb9",
   "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/hits.md",
-      "sha256": "sha256:f57e22bb8abfceea91a698f39cf940ca6dfcc7e67930128b42913329a0edad3c"
+      "sha256": "sha256:2981efe3623fe680e9fecdd8b4e39d8843dfe1545c2fbb3cc00b57eb0339493b"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md",
-      "sha256": "sha256:a69b5bda977c9c24d9f8958a4b637f0e85e18f38f48f4f8ae46028444d81a760"
+      "sha256": "sha256:34c21d07e4e2f01820987a2a02a213266201b519b9a1997e00f50776707e8d7b"
     }
   ],
-  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+  "comment": "Implement mined rule expansions except em dashes"
 }

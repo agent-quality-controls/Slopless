@@ -38,6 +38,8 @@
   },
   "exports": {
     ".": "./dist/index.js",
+    "./rules/academic-slop/academic-boilerplate": "./dist/rules/academic-slop/academic-boilerplate.js",
+    "./rules/academic-slop/academic-formula-frames": "./dist/rules/academic-slop/academic-formula-frames.js",
     "./rules/academic-slop/tortured-phrases": "./dist/rules/academic-slop/tortured-phrases.js",
     "./rules/metrics/avg-sentence-length": "./dist/rules/metrics/avg-sentence-length.js",
     "./rules/metrics/coleman-liau": "./dist/rules/metrics/coleman-liau.js",

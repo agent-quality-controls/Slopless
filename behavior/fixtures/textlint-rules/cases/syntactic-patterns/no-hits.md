@@ -211,3 +211,11 @@ The practical takeaway is in Table 2 of the audit report.
 Watch how voltage changes after the fuse opens.
 
 You can see it in the microscope slide after the dye sets.
+
+Not because the server failed, but because the token expired.
+
+Not because the sample was contaminated, but because the vial cracked.
+
+The fixture quotes "Not because the work is easy, but because the work matters" as a detector example.
+
+Not because the patient refused care, but because the clinic closed at noon.

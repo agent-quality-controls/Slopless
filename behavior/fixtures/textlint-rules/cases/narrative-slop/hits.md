@@ -71,3 +71,13 @@ She released a breath she did not know she was holding.
 Time seemed to slow around them.
 
 Cassia glanced at Arden. Her throat tightened. She stepped back. Her eyes found the door. She waited.
+
+Lila's ears twitched, her tail flicked, her eyes narrowed, and the silence around her seemed to lean closer.
+
+She blinked, swallowed, shifted her weight, and glanced at the floor while the air changed in a way no one named.
+
+The captain walked to the rail, looked across the water, looked back at the crew, and let the moment settle on his shoulders.
+
+Her shoulders tensed, her breath slipped out, her fingers brushed the scar, and she looked away.
+
+He blinked, looked down, looked up, and felt the moment settle like dust across his skin.

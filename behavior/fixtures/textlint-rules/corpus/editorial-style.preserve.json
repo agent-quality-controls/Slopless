@@ -2199,6 +2199,139 @@
       "bucket": "no-hits",
       "source": "cases/words/no-hits.md",
       "line": 19
+    },
+    {
+      "text": "This is a game-changer for teams ready to embrace the next horizon.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 347
+    },
+    {
+      "text": "Our mission is to empower teams to unlock their full potential.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 349
+    },
+    {
+      "text": "We need to double-click on the opportunity before we socialize the proposal.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 351
+    },
+    {
+      "text": "This work sits at the intersection of innovation, empathy, and execution.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 353
+    },
+    {
+      "text": "The campaign invites leaders to unlock their full potential across the next horizon.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 355
+    },
+    {
+      "text": "Double-click on the file icon to open the installer.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 93
+    },
+    {
+      "text": "The survey crew met at the intersection of Pine Street, Oak Street, and River Road.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 95
+    },
+    {
+      "text": "The trainer helped the dogs socialize before the adoption event.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 97
+    },
+    {
+      "text": "The style guide quotes \"game-changer\" as a phrase to delete.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 99
+    },
+    {
+      "text": "The product title is \"Unlock Your Full Potential\" in the blocked-example list.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 101
+    },
+    {
+      "text": "The platform delivers a holistic experience that empowers users to navigate complexity with confidence.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 39
+    },
+    {
+      "text": "The initiative is designed to amplify momentum, catalyze change, and create sustainable value.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 41
+    },
+    {
+      "text": "The product experience should feel elegant, seamless, accessible, and emotionally resonant.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 43
+    },
+    {
+      "text": "The strategy empowers teams to navigate complexity and unlock holistic value.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 45
+    },
+    {
+      "text": "The palladium can catalyze the test at 40 C.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 21
+    },
+    {
+      "text": "The confidence level was 95 percent.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 23
+    },
+    {
+      "text": "The track was frictionless in the physics lab.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 25
+    },
+    {
+      "text": "The report lists sustainable fuel use.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 27
+    },
+    {
+      "text": "The value was five dollars.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 29
     }
   ]
 }

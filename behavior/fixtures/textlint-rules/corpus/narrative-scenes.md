@@ -425,3 +425,23 @@ The next rough scene leaned harder into stock emotional movement. In the silence
 The mixed-beat sample stacked low-information movement, body, and looking beats. Cassia glanced at Arden. Her throat tightened. She stepped back. Her eyes found the door. She waited.
 
 The control scene kept similar words but gave each beat a task or physical cause. Water washed over the group after the roof seam split. The recording measured the silence at 28 decibels after the generator shut down. A flicker of blue light crossed the signal lens after Cassia turned the crank. His eyes flashed red because the stage reflector caught the glass lenses. The diver released a breath after surfacing beside the dock. The timer seemed to slow because the display refreshed once per second. Cassia glanced at the chalk arrow, stepped to the gate, copied the symbol, and waited for Arden to count the guards.
+
+Lila's ears twitched, her tail flicked, her eyes narrowed, and the silence around her seemed to lean closer.
+
+She blinked, swallowed, shifted her weight, and glanced at the floor while the air changed in a way no one named.
+
+The captain walked to the rail, looked across the water, looked back at the crew, and let the moment settle on his shoulders.
+
+Her shoulders tensed, her breath slipped out, her fingers brushed the scar, and she looked away.
+
+He blinked, looked down, looked up, and felt the moment settle like dust across his skin.
+
+The nurse checked his pulse, counted his breaths, recorded his temperature, and adjusted the cuff.
+
+The stage manager marked the tape, moved the chair, checked the light, and called the actor.
+
+The field biologist watched the fox, counted the kits, noted the den, and logged the time.
+
+The runner crossed the line, stopped the timer, checked her pulse, and drank water.
+
+Cassia copied the arrow, checked the gate symbol, counted the guards, and marked the map.

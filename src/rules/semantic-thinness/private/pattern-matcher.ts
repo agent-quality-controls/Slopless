@@ -61,6 +61,7 @@ const REJECT_TOKENS = new Set([
   "while"
 ]);
 const BROAD_PATTERN_IDS = new Set([
+  "abstract-agency-personification",
   "abstract-personification-line",
   "body-emotion-shorthand",
   "deictic-summary",

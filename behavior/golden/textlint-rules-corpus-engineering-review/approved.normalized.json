@@ -8733,29 +8733,6 @@
             "line": 843
           }
         },
-        "message": "Boilerplate conclusion found: the-point-was. Replace the closer with a specific ending.",
-        "range": [
-          33909,
-          33952
-        ],
-        "ruleId": "boilerplate-conclusion",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 33909,
-        "line": 843,
-        "loc": {
-          "end": {
-            "column": 44,
-            "line": 843
-          },
-          "start": {
-            "column": 1,
-            "line": 843
-          }
-        },
         "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} not {abstractNoun}.",
         "range": [
           33909,
@@ -8779,7 +8756,7 @@
             "line": 843
           }
         },
-        "message": "Boilerplate conclusion found: the-practical-takeaway-is. Replace the closer with a specific ending.",
+        "message": "Boilerplate conclusion found: the practical takeaway. Replace the closer with a specific ending.",
         "range": [
           33953,
           33985
@@ -8831,6 +8808,351 @@
           33985
         ],
         "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 33987,
+        "line": 845,
+        "loc": {
+          "end": {
+            "column": 95,
+            "line": 845
+          },
+          "start": {
+            "column": 1,
+            "line": 845
+          }
+        },
+        "message": "Academic formula frame found: \"The paper contributes a fresh perspective to the ongoing dialogue about pedagogical innovation\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          33987,
+          34081
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 34084,
+        "line": 847,
+        "loc": {
+          "end": {
+            "column": 81,
+            "line": 847
+          },
+          "start": {
+            "column": 1,
+            "line": 847
+          }
+        },
+        "message": "Academic formula frame found: \"The findings indicate that mentorship can unlock new forms of academic belonging\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          34084,
+          34164
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 43,
+        "index": 34126,
+        "line": 847,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 847
+          },
+          "start": {
+            "column": 43,
+            "line": 847
+          }
+        },
+        "message": "Prohibited word found: \"unlock\". Rewrite without this term.",
+        "range": [
+          34126,
+          34132
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 34167,
+        "line": 849,
+        "loc": {
+          "end": {
+            "column": 85,
+            "line": 849
+          },
+          "start": {
+            "column": 1,
+            "line": 849
+          }
+        },
+        "message": "Academic formula frame found: \"The article situates these practices within a broader matrix of institutional change\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          34167,
+          34251
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 34254,
+        "line": 851,
+        "loc": {
+          "end": {
+            "column": 103,
+            "line": 851
+          },
+          "start": {
+            "column": 1,
+            "line": 851
+          }
+        },
+        "message": "Academic formula frame found: \"The study offers a roadmap for scholars seeking to navigate the complexities of interdisciplinary work\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          34254,
+          34356
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 34359,
+        "line": 853,
+        "loc": {
+          "end": {
+            "column": 90,
+            "line": 853
+          },
+          "start": {
+            "column": 1,
+            "line": 853
+          }
+        },
+        "message": "Academic formula frame found: \"The discussion reveals how meaning making practices shape the contours of student success\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          34359,
+          34448
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 34451,
+        "line": 855,
+        "loc": {
+          "end": {
+            "column": 97,
+            "line": 855
+          },
+          "start": {
+            "column": 1,
+            "line": 855
+          }
+        },
+        "message": "Academic formula frame found: \"The study reveals the potential of cross sector partnerships to catalyze systemic transformation\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          34451,
+          34547
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 34989,
+        "line": 867,
+        "loc": {
+          "end": {
+            "column": 60,
+            "line": 867
+          },
+          "start": {
+            "column": 1,
+            "line": 867
+          }
+        },
+        "message": "Negation reframe found: \"Not because the work is easy, but because the work matters.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          34989,
+          35048
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 35135,
+        "line": 871,
+        "loc": {
+          "end": {
+            "column": 76,
+            "line": 871
+          },
+          "start": {
+            "column": 1,
+            "line": 871
+          }
+        },
+        "message": "Negation reframe found: \"Not because everyone agrees, but because the direction is becoming clearer.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          35135,
+          35210
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 35212,
+        "line": 873,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 873
+          },
+          "start": {
+            "column": 1,
+            "line": 873
+          }
+        },
+        "message": "Negation reframe found: \"Not because the launch is loud, but because the change has to mean something.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          35212,
+          35289
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 35608,
+        "line": 883,
+        "loc": {
+          "end": {
+            "column": 79,
+            "line": 883
+          },
+          "start": {
+            "column": 1,
+            "line": 883
+          }
+        },
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractAgent} seemed to {cognitionVerb} that {emptyShift}.",
+        "range": [
+          35608,
+          35686
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 35688,
+        "line": 885,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 885
+          },
+          "start": {
+            "column": 1,
+            "line": 885
+          }
+        },
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractAgent} wanted to become {selfEvaluation}.",
+        "range": [
+          35688,
+          35742
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 35744,
+        "line": 887,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 887
+          },
+          "start": {
+            "column": 1,
+            "line": 887
+          }
+        },
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractAgent} had been waiting for {abstractPayoff} to {becomingVerb}.",
+        "range": [
+          35744,
+          35821
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 35823,
+        "line": 889,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 889
+          },
+          "start": {
+            "column": 1,
+            "line": 889
+          }
+        },
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractContainer} held {humanGroup} until {abstractPayoff} arrived.",
+        "range": [
+          35823,
+          35876
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 35878,
+        "line": 891,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 891
+          },
+          "start": {
+            "column": 1,
+            "line": 891
+          }
+        },
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractMeaning} lives in what it {availabilityVerb}.",
+        "range": [
+          35878,
+          35939
+        ],
+        "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
       }

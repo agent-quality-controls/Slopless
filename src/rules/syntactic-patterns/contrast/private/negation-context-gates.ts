@@ -72,6 +72,12 @@ export function hasAbstractCommaContrast(
   );
 }
 
+export function hasAbstractNegationPayoff(tokens: readonly Token[]): boolean {
+  return tokens.some((token) =>
+    INLINE_COMMA_ABSTRACT_WORDS.has(token.normalized)
+  );
+}
+
 export function hasFactualConnectorAfterNegation(
   tokens: readonly Token[],
   negationIndex: number

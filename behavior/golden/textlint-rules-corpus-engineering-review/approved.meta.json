@@ -1,19 +1,19 @@
 {
   "suite": "textlint-rules-corpus-engineering-review",
   "kind": "approved",
-  "run_id": "2026-05-19T17-37-27.573541Z-df22e59a",
-  "run_commit": "e21d316",
+  "run_id": "2026-05-19T18-50-35.097423Z-df22e59a",
+  "run_commit": "1356572",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T17:37:27.573541Z",
-  "fixture_hash": "sha256:d3ad0c6fa4adc9ad489bf62645926ed22f09402600492e4ba39fbbcb16ca88ff",
+  "recorded_at": "2026-05-19T18:50:35.097423Z",
+  "fixture_hash": "sha256:6791704df49b2e15fa1970afa0e637b0a6b9477b31911beeda79e94a9053f120",
   "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
     {
       "path": "behavior/fixtures/textlint-rules/corpus/engineering-review.md",
-      "sha256": "sha256:9a2f7c416430f839bf96317e9cc8e80e4cfb8cc185886d7f7c1be8090ba5347d"
+      "sha256": "sha256:29d88db8c982b6856920e70d015705edfd62d96578f6a74f2bc552c43733806c"
     }
   ],
-  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+  "comment": "Implement mined rule expansions except em dashes"
 }

@@ -1,23 +1,23 @@
 {
   "suite": "textlint-rules-cases-semantic-thinness",
   "kind": "approved",
-  "run_id": "2026-05-19T17-36-59.617298Z-df22e59a",
-  "run_commit": "e21d316",
+  "run_id": "2026-05-19T18-50-07.441101Z-df22e59a",
+  "run_commit": "1356572",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T17:36:59.617298Z",
-  "fixture_hash": "sha256:77c79b72bebe176db4af0328a1bd27c8821f9f2b4a13afa0954d88acd9bd3b9c",
+  "recorded_at": "2026-05-19T18:50:07.441101Z",
+  "fixture_hash": "sha256:05e09e4fb7005258bd1d10a73420a55df12a11d476cade5c53eff2b558ecf09d",
   "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
-      "sha256": "sha256:98adb8f6fc144c2a64fe28c60243b8e1fec9a5f06cf4cc0f59f4b4dbf09ea45c"
+      "sha256": "sha256:29ed68c2c306ef5976f6c7e32c7ac0cecf4e2dcd5ce74e13d8ca5b2efa5788bf"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
-      "sha256": "sha256:f3c704ca0628aded0308f30bc57f7268eb6194c6cd7b457eb8a835fb03cb1c39"
+      "sha256": "sha256:a7f4ded0ab33594565eddcde9bf3b9fa8132244340ec1efa730dd15b9365f238"
     }
   ],
-  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+  "comment": "Implement mined rule expansions except em dashes"
 }

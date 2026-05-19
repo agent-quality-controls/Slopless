@@ -3474,6 +3474,98 @@
         "ruleId": "paragraph-length",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 16590,
+        "line": 429,
+        "loc": {
+          "end": {
+            "column": 101,
+            "line": 429
+          },
+          "start": {
+            "column": 27,
+            "line": 429
+          }
+        },
+        "message": "Low-information beat density: 5 weak body/action beats in a short span (tail, flicked, eyes, narrowed, lean).",
+        "range": [
+          16590,
+          16664
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 16678,
+        "line": 431,
+        "loc": {
+          "end": {
+            "column": 69,
+            "line": 431
+          },
+          "start": {
+            "column": 5,
+            "line": 431
+          }
+        },
+        "message": "Low-information beat density: 5 weak body/action beats in a short span (blinked, swallowed, shifted, glanced, floor).",
+        "range": [
+          16678,
+          16742
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 16920,
+        "line": 435,
+        "loc": {
+          "end": {
+            "column": 91,
+            "line": 435
+          },
+          "start": {
+            "column": 5,
+            "line": 435
+          }
+        },
+        "message": "Low-information beat density: 4 weak body/action beats in a short span (shoulders, breath, fingers, looked).",
+        "range": [
+          16920,
+          17006
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 4,
+        "index": 17017,
+        "line": 437,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 437
+          },
+          "start": {
+            "column": 4,
+            "line": 437
+          }
+        },
+        "message": "Low-information beat density: 4 weak body/action beats in a short span (blinked, looked, felt).",
+        "range": [
+          17017,
+          17058
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   }

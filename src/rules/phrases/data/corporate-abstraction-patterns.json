@@ -76,5 +76,34 @@
       "serves as a testament to the power of",
       "serve as a testament to the power of"
     ]
+  },
+  {
+    "id": "intersection-abstraction",
+    "slots": {
+      "abstractDomain": [
+        "alignment",
+        "belonging",
+        "clarity",
+        "collaboration",
+        "creativity",
+        "empathy",
+        "execution",
+        "growth",
+        "impact",
+        "innovation",
+        "insight",
+        "leadership",
+        "purpose",
+        "resilience",
+        "strategy",
+        "transformation",
+        "trust",
+        "value"
+      ]
+    },
+    "templates": [
+      "sits at the intersection of {abstractDomain} {abstractDomain} and {abstractDomain}",
+      "sit at the intersection of {abstractDomain} {abstractDomain} and {abstractDomain}"
+    ]
   }
 ]

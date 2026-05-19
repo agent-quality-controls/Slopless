@@ -91,3 +91,13 @@ The diver released a breath after surfacing beside the dock.
 The timer seemed to slow because the display refreshed once per second.
 
 Cassia glanced at the chalk arrow, stepped to the gate, copied the symbol, and waited for Arden to count the guards.
+
+The nurse checked his pulse, counted his breaths, recorded his temperature, and adjusted the cuff.
+
+The stage manager marked the tape, moved the chair, checked the light, and called the actor.
+
+The field biologist watched the fox, counted the kits, noted the den, and logged the time.
+
+The runner crossed the line, stopped the timer, checked her pulse, and drank water.
+
+Cassia copied the arrow, checked the gate symbol, counted the guards, and marked the map.

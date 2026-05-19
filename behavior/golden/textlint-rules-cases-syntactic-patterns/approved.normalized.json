@@ -12436,7 +12436,7 @@
             "line": 1063
           }
         },
-        "message": "Boilerplate conclusion found: the-practical-takeaway-is. Replace the closer with a specific ending.",
+        "message": "Boilerplate conclusion found: the practical takeaway. Replace the closer with a specific ending.",
         "range": [
           49081,
           49113
@@ -12534,6 +12534,75 @@
           49175
         ],
         "ruleId": "observer-guidance",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49177,
+        "line": 1069,
+        "loc": {
+          "end": {
+            "column": 60,
+            "line": 1069
+          },
+          "start": {
+            "column": 1,
+            "line": 1069
+          }
+        },
+        "message": "Negation reframe found: \"Not because the work is easy, but because the work matters.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          49177,
+          49236
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49323,
+        "line": 1073,
+        "loc": {
+          "end": {
+            "column": 76,
+            "line": 1073
+          },
+          "start": {
+            "column": 1,
+            "line": 1073
+          }
+        },
+        "message": "Negation reframe found: \"Not because everyone agrees, but because the direction is becoming clearer.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          49323,
+          49398
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 49400,
+        "line": 1075,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 1075
+          },
+          "start": {
+            "column": 1,
+            "line": 1075
+          }
+        },
+        "message": "Negation reframe found: \"Not because the launch is loud, but because the change has to mean something.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          49400,
+          49477
+        ],
+        "ruleId": "negation-reframe",
         "severity": 2,
         "type": "lint"
       }

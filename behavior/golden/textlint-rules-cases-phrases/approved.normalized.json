@@ -3980,6 +3980,236 @@
         "ruleId": "redundancy",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 11,
+        "index": 9684,
+        "line": 347,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 347
+          },
+          "start": {
+            "column": 11,
+            "line": 347
+          }
+        },
+        "message": "Corporate-speak phrase found: \"game-changer\". Replace it with specific wording.",
+        "range": [
+          9684,
+          9696
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 55,
+        "index": 9728,
+        "line": 347,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 347
+          },
+          "start": {
+            "column": 55,
+            "line": 347
+          }
+        },
+        "message": "Corporate-speak phrase found: \"next horizon\". Replace it with specific wording.",
+        "range": [
+          9728,
+          9740
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 36,
+        "index": 9778,
+        "line": 349,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 349
+          },
+          "start": {
+            "column": 36,
+            "line": 349
+          }
+        },
+        "message": "Prohibited word found: \"unlock\". Rewrite without this term.",
+        "range": [
+          9778,
+          9784
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 36,
+        "index": 9778,
+        "line": 349,
+        "loc": {
+          "end": {
+            "column": 63,
+            "line": 349
+          },
+          "start": {
+            "column": 36,
+            "line": 349
+          }
+        },
+        "message": "Corporate-speak phrase found: \"unlock their full potential\". Replace it with specific wording.",
+        "range": [
+          9778,
+          9805
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 12,
+        "index": 9819,
+        "line": 351,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 351
+          },
+          "start": {
+            "column": 12,
+            "line": 351
+          }
+        },
+        "message": "Corporate-speak phrase found: \"double-click on\". Replace it with specific wording.",
+        "range": [
+          9819,
+          9834
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 54,
+        "index": 9861,
+        "line": 351,
+        "loc": {
+          "end": {
+            "column": 76,
+            "line": 351
+          },
+          "start": {
+            "column": 54,
+            "line": 351
+          }
+        },
+        "message": "Corporate-speak phrase found: \"socialize the proposal\". Replace it with specific wording.",
+        "range": [
+          9861,
+          9883
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 11,
+        "index": 9896,
+        "line": 353,
+        "loc": {
+          "end": {
+            "column": 73,
+            "line": 353
+          },
+          "start": {
+            "column": 11,
+            "line": 353
+          }
+        },
+        "message": "Corporate-speak phrase found: \"sits at the intersection of innovation, empathy, and execution\". Replace it with specific wording.",
+        "range": [
+          9896,
+          9958
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 33,
+        "index": 9993,
+        "line": 355,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 355
+          },
+          "start": {
+            "column": 33,
+            "line": 355
+          }
+        },
+        "message": "Prohibited word found: \"unlock\". Rewrite without this term.",
+        "range": [
+          9993,
+          9999
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 33,
+        "index": 9993,
+        "line": 355,
+        "loc": {
+          "end": {
+            "column": 60,
+            "line": 355
+          },
+          "start": {
+            "column": 33,
+            "line": 355
+          }
+        },
+        "message": "Corporate-speak phrase found: \"unlock their full potential\". Replace it with specific wording.",
+        "range": [
+          9993,
+          10020
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 72,
+        "index": 10032,
+        "line": 355,
+        "loc": {
+          "end": {
+            "column": 84,
+            "line": 355
+          },
+          "start": {
+            "column": 72,
+            "line": 355
+          }
+        },
+        "message": "Corporate-speak phrase found: \"next horizon\". Replace it with specific wording.",
+        "range": [
+          10032,
+          10044
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },

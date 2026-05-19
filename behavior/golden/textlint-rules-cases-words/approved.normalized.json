@@ -16,7 +16,7 @@
             "line": 1
           }
         },
-        "message": "Coleman-Liau is 12.63. Keep it at 12 or lower.",
+        "message": "Coleman-Liau is 13.95. Keep it at 12 or lower.",
         "range": [
           0,
           1
@@ -39,12 +39,35 @@
             "line": 1
           }
         },
-        "message": "Flesch Reading Ease is 48.12. Keep it at 61 or higher.",
+        "message": "Flesch Reading Ease is 38.6. Keep it at 61 or higher.",
         "range": [
           0,
           1
         ],
         "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Gunning Fog is 14.16. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "gunning-fog",
         "severity": 2,
         "type": "lint"
       },
@@ -712,6 +735,121 @@
           1152
         ],
         "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 25,
+        "index": 1179,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 103,
+            "line": 39
+          },
+          "start": {
+            "column": 25,
+            "line": 39
+          }
+        },
+        "message": "LLM vocabulary density: 5 stock abstraction words in a short span (holistic, empowers, navigate, complexity, confidence).",
+        "range": [
+          1179,
+          1257
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 31,
+        "index": 1290,
+        "line": 41,
+        "loc": {
+          "end": {
+            "column": 94,
+            "line": 41
+          },
+          "start": {
+            "column": 31,
+            "line": 41
+          }
+        },
+        "message": "LLM vocabulary density: 4 stock abstraction words in a short span (amplify, catalyze, sustainable, value).",
+        "range": [
+          1290,
+          1353
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 45,
+        "index": 1400,
+        "line": 43,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 43
+          },
+          "start": {
+            "column": 45,
+            "line": 43
+          }
+        },
+        "message": "Prohibited word found: \"seamless\". Rewrite without this term.",
+        "range": [
+          1400,
+          1408
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 1453,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 77,
+            "line": 45
+          },
+          "start": {
+            "column": 5,
+            "line": 45
+          }
+        },
+        "message": "LLM vocabulary density: 7 stock abstraction words in a short span (strategy, empowers, navigate, complexity, unlock, holistic, value).",
+        "range": [
+          1453,
+          1525
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 56,
+        "index": 1504,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 45
+          },
+          "start": {
+            "column": 56,
+            "line": 45
+          }
+        },
+        "message": "Prohibited word found: \"unlock\". Rewrite without this term.",
+        "range": [
+          1504,
+          1510
+        ],
+        "ruleId": "prohibited-words",
         "severity": 2,
         "type": "lint"
       }

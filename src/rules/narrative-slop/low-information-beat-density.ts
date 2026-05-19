@@ -7,23 +7,33 @@ const RULE_ID = "narrative-slop:low-information-beat-density" satisfies RuleId;
 const GROUP = "low-information beat";
 const MAX_PARAGRAPH_TOKENS = 95;
 const MAX_WINDOW_TOKENS = 65;
-const MIN_HITS = 5;
+const MIN_HITS = 4;
 const WINDOW_SENTENCES = 5;
 
 const LOW_INFORMATION_WORDS = new Set([
   "blinked",
   "breath",
   "chest",
+  "fingers",
+  "flicked",
+  "floor",
   "eyes",
   "face",
   "felt",
   "found",
+  "gaze",
   "glanced",
   "heart",
+  "lean",
+  "look",
   "looked",
+  "narrowed",
+  "shifted",
   "shoulders",
   "stepped",
   "stomach",
+  "swallowed",
+  "tail",
   "throat",
   "tightened",
   "turned",
@@ -35,8 +45,21 @@ const CONCRETE_ACTION_WORDS = new Set([
   "copied",
   "count",
   "counted",
+  "cuff",
+  "den",
+  "drank",
+  "drill",
+  "field",
   "gate",
   "guards",
+  "kits",
+  "logged",
+  "map",
+  "measured",
+  "nurse",
+  "pulse",
+  "recorded",
+  "stage",
   "symbol"
 ]);
 

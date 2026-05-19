@@ -213,3 +213,13 @@ That was where the real work began.
 The point was not control for its own sake.
 
 When the room went quiet, silence became heavy.
+
+The room seemed to understand that something important was beginning to shift.
+
+The strategy wanted to become more honest with itself.
+
+The brand had been waiting for courage to become what it was always becoming.
+
+The conversation held the team until clarity arrived.
+
+The meaning of the decision lives in what it makes available.

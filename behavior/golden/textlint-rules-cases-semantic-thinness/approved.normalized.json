@@ -2822,33 +2822,125 @@
             "line": 213
           }
         },
-        "message": "Boilerplate conclusion found: the-point-was. Replace the closer with a specific ending.",
+        "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} not {abstractNoun}.",
         "range": [
           4393,
           4436
         ],
-        "ruleId": "boilerplate-conclusion",
+        "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
       },
       {
         "column": 1,
-        "index": 4393,
-        "line": 213,
+        "index": 4487,
+        "line": 217,
         "loc": {
           "end": {
-            "column": 44,
-            "line": 213
+            "column": 79,
+            "line": 217
           },
           "start": {
             "column": 1,
-            "line": 213
+            "line": 217
           }
         },
-        "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractAgent} seemed to {cognitionVerb} that {emptyShift}.",
         "range": [
-          4393,
-          4436
+          4487,
+          4565
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4567,
+        "line": 219,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 219
+          },
+          "start": {
+            "column": 1,
+            "line": 219
+          }
+        },
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractAgent} wanted to become {selfEvaluation}.",
+        "range": [
+          4567,
+          4621
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4623,
+        "line": 221,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 221
+          },
+          "start": {
+            "column": 1,
+            "line": 221
+          }
+        },
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractAgent} had been waiting for {abstractPayoff} to {becomingVerb}.",
+        "range": [
+          4623,
+          4700
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4702,
+        "line": 223,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 223
+          },
+          "start": {
+            "column": 1,
+            "line": 223
+          }
+        },
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractContainer} held {humanGroup} until {abstractPayoff} arrived.",
+        "range": [
+          4702,
+          4755
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4757,
+        "line": 225,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 225
+          },
+          "start": {
+            "column": 1,
+            "line": 225
+          }
+        },
+        "message": "Semantic thinness (abstract-agency-personification): Catch abstract systems, rooms, strategies, and conversations treated as intentional actors instead of naming concrete behavior. Matched template: {abstractMeaning} lives in what it {availabilityVerb}.",
+        "range": [
+          4757,
+          4818
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,

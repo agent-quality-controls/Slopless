@@ -2983,6 +2983,209 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 213
+    },
+    {
+      "text": "The paper contributes a fresh perspective to the ongoing dialogue about pedagogical innovation.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 13
+    },
+    {
+      "text": "The findings indicate that mentorship can unlock new forms of academic belonging.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 15
+    },
+    {
+      "text": "The article situates these practices within a broader matrix of institutional change.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 17
+    },
+    {
+      "text": "The study offers a roadmap for scholars seeking to navigate the complexities of interdisciplinary work.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 19
+    },
+    {
+      "text": "The discussion reveals how meaning making practices shape the contours of student success.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 21
+    },
+    {
+      "text": "The study reveals the potential of cross sector partnerships to catalyze systemic transformation.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 23
+    },
+    {
+      "text": "The paper reports that 42 students completed the tutoring program between March and June.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 21
+    },
+    {
+      "text": "The findings indicate that the control group scored 8 percent higher on the second exam.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 23
+    },
+    {
+      "text": "The article places the survey instrument in Appendix B with the consent script.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 25
+    },
+    {
+      "text": "The study gives a route map for the field team walking from station 3 to station 7.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 27
+    },
+    {
+      "text": "The discussion explains how attendance records changed after the schedule moved to Friday.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 29
+    },
+    {
+      "text": "Not because the work is easy, but because the work matters.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1069
+    },
+    {
+      "text": "Not because the old model was wrong, but because the next model needs to be better.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1071
+    },
+    {
+      "text": "Not because everyone agrees, but because the direction is becoming clearer.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1073
+    },
+    {
+      "text": "Not because the launch is loud, but because the change has to mean something.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1075
+    },
+    {
+      "text": "Not because the server failed, but because the token expired.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 215
+    },
+    {
+      "text": "Not because the sample was contaminated, but because the vial cracked.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 217
+    },
+    {
+      "text": "The fixture quotes \"Not because the work is easy, but because the work matters\" as a detector example.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 219
+    },
+    {
+      "text": "Not because the patient refused care, but because the clinic closed at noon.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 221
+    },
+    {
+      "text": "The room seemed to understand that something important was beginning to shift.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 217
+    },
+    {
+      "text": "The strategy wanted to become more honest with itself.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 219
+    },
+    {
+      "text": "The brand had been waiting for courage to become what it was always becoming.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 221
+    },
+    {
+      "text": "The conversation held the team until clarity arrived.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 223
+    },
+    {
+      "text": "The meaning of the decision lives in what it makes available.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 225
+    },
+    {
+      "text": "The room sensor reported that occupancy increased after the doors opened.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 205
+    },
+    {
+      "text": "The strategy document lists Mara as owner and May 31 as the review date.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 207
+    },
+    {
+      "text": "The brand record in the trademark filing uses the product name and class number.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 209
+    },
+    {
+      "text": "The conversation transcript names the speaker and the exact question.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 211
+    },
+    {
+      "text": "The audio engineer said clarity improved after the filter removed hiss.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 213
     }
   ]
 }

@@ -1464,6 +1464,76 @@
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
       "line": 93
+    },
+    {
+      "text": "Lila's ears twitched, her tail flicked, her eyes narrowed, and the silence around her seemed to lean closer.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 75
+    },
+    {
+      "text": "She blinked, swallowed, shifted her weight, and glanced at the floor while the air changed in a way no one named.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 77
+    },
+    {
+      "text": "The captain walked to the rail, looked across the water, looked back at the crew, and let the moment settle on his shoulders.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 79
+    },
+    {
+      "text": "Her shoulders tensed, her breath slipped out, her fingers brushed the scar, and she looked away.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 81
+    },
+    {
+      "text": "He blinked, looked down, looked up, and felt the moment settle like dust across his skin.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 83
+    },
+    {
+      "text": "The nurse checked his pulse, counted his breaths, recorded his temperature, and adjusted the cuff.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 95
+    },
+    {
+      "text": "The stage manager marked the tape, moved the chair, checked the light, and called the actor.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 97
+    },
+    {
+      "text": "The field biologist watched the fox, counted the kits, noted the den, and logged the time.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 99
+    },
+    {
+      "text": "The runner crossed the line, stopped the timer, checked her pulse, and drank water.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 101
+    },
+    {
+      "text": "Cassia copied the arrow, checked the gate symbol, counted the guards, and marked the map.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 103
     }
   ]
 }

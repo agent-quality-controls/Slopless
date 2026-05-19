@@ -1065,3 +1065,11 @@ The practical takeaway is clear.
 Watch how the frame changes.
 
 You can see it everywhere now.
+
+Not because the work is easy, but because the work matters.
+
+Not because the old model was wrong, but because the next model needs to be better.
+
+Not because everyone agrees, but because the direction is becoming clearer.
+
+Not because the launch is loud, but because the change has to mean something.

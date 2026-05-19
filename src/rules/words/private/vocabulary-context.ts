@@ -31,9 +31,27 @@ const META_CONTEXT_WORDS = new Set([
 
 const DOMAIN_CONTEXT_BY_WORD = new Map<string, ReadonlySet<string>>([
   [
+    "catalyze",
+    new Set(["catalyst", "chemistry", "palladium", "reaction", "substrate"])
+  ],
+  [
+    "catalyzed",
+    new Set(["catalyst", "chemistry", "palladium", "reaction", "substrate"])
+  ],
+  [
+    "catalyzes",
+    new Set(["catalyst", "chemistry", "palladium", "reaction", "substrate"])
+  ],
+  [
+    "catalyzing",
+    new Set(["catalyst", "chemistry", "palladium", "reaction", "substrate"])
+  ],
+  [
     "comprehensive",
     new Set(["bicarbonate", "chloride", "panel", "potassium", "sodium"])
   ],
+  ["confidence", new Set(["interval", "level", "statistic"])],
+  ["frictionless", new Set(["bearing", "physics", "surface", "track"])],
   [
     "landscape",
     new Set([
