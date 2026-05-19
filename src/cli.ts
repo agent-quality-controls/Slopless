@@ -1,9 +1,14 @@
 #!/usr/bin/env node
 
+import { readFileSync } from "node:fs";
 import { cp, rm, stat } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { cli } from "textlint/lib/src/cli.js";
+
+type PackageMetadata = {
+  readonly version?: unknown;
+};
 
 type SkillTarget = "claude" | "codex";
 
@@ -28,7 +33,6 @@ const VALUE_OPTIONS = new Set([
   "-c",
   "-o"
 ]);
-const VERSION = "0.2.8";
 const HELP_TEXT = `Slopless checks English Markdown prose for deterministic AI and human slop signals.
 
 It reports concrete patterns that make writing padded, vague, generic,
@@ -170,6 +174,16 @@ function packageRoot(): string {
   return dirname(dirname(fileURLToPath(import.meta.url)));
 }
 
+function packageVersion(): string {
+  const packageJson = JSON.parse(
+    readFileSync(resolve(packageRoot(), "package.json"), "utf8")
+  ) as PackageMetadata;
+
+  return typeof packageJson.version === "string"
+    ? packageJson.version
+    : "0.0.0";
+}
+
 function packageNodeModules(): string {
   return resolve(packageRoot(), "..");
 }
@@ -231,7 +245,7 @@ async function main(): Promise<number> {
   }
 
   if (hasFlag(userArgs, VERSION_FLAGS)) {
-    process.stdout.write(`${VERSION}\n`);
+    process.stdout.write(`${packageVersion()}\n`);
     return 0;
   }
 

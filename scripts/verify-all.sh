@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
+scripts/verify-cli-version.py
 scripts/verify-source-material.py
 scripts/verify-dataset-source-reorganization.py
 scripts/verify-ai-slop-gaps.py
