@@ -359,3 +359,31 @@ The library catalog lists a journal named Interdisciplinary Praxis.
 ---
 
 The paper quotes a participant: "I felt a deeper sense of agency after the workshop."
+
+---
+
+The article provides the survey instrument, codebook, and response counts.
+
+---
+
+The evidence suggests that the 12-volt battery failed after 300 cycles.
+
+---
+
+The framework offers a route for loading the module without circular imports.
+
+---
+
+The discussion highlights that section 4.2 contains the consent script.
+
+---
+
+The study reports that policy actors filed 18 comments before the deadline.
+
+---
+
+The literature review names each database query and inclusion criterion.
+
+---
+
+The chapter quotes "bridge theory and practice" as an example of vague academic prose.

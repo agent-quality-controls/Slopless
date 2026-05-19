@@ -407,3 +407,35 @@ The implementation plan lists one owner, one deadline, and one rollback command.
 ---
 
 The phrase file contains one Markdown list item per case.
+
+---
+
+Looking ahead through the windshield, Mara saw the bridge close.
+
+---
+
+The technician will pressure-test the valve before opening the line.
+
+---
+
+The compass needle moved when the magnet touched the case.
+
+---
+
+The lever on the press jammed before the operator could release it.
+
+---
+
+The flywheel cracked after the engine overheated.
+
+---
+
+The product manual says the device works with next-generation CPUs.
+
+---
+
+The customer-centric coordinate system uses the customer point as the origin.
+
+---
+
+The witness said the team moved forward after the door opened.
