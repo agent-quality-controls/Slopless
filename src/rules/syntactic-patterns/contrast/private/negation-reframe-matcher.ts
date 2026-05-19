@@ -41,6 +41,29 @@ const INLINE_NON_CONTRAST_NEGATION_FOLLOWERS = new Set([
   "every",
   "too"
 ]);
+const INLINE_CONTRAST_CONNECTORS = new Set([
+  "also",
+  "but",
+  "instead",
+  "rather"
+]);
+
+function hasInlineContrastConnectorAfterNegation(
+  tokens: readonly Token[],
+  negationIndex: number
+): boolean {
+  if (
+    tokens[negationIndex + 1]?.normalized === "help" &&
+    tokens[negationIndex + 2]?.normalized === "but"
+  ) {
+    return false;
+  }
+
+  return tokens
+    .slice(negationIndex + 1)
+    .some((token) => INLINE_CONTRAST_CONNECTORS.has(token.normalized));
+}
+
 function inlineNegationContrast(
   sentence: SplitSentence
 ): NegationReframeMatch | undefined {
@@ -57,17 +80,19 @@ function inlineNegationContrast(
     negation?.normalized !== "not" ||
     INLINE_NON_CONTRAST_NEGATION_FOLLOWERS.has(
       tokens[negationIndex + 1]?.normalized ?? ""
-    ) ||
-    !hasCommaBeforeNegation(sentence.text, negation.start)
+    )
   ) {
     return undefined;
   }
 
-  return {
-    end: sentence.end,
-    start: sentence.start,
-    text: sentence.text
-  };
+  return hasCommaBeforeNegation(sentence.text, negation.start) ||
+    hasInlineContrastConnectorAfterNegation(tokens, negationIndex)
+    ? {
+        end: sentence.end,
+        start: sentence.start,
+        text: sentence.text
+      }
+    : undefined;
 }
 
 function sameSubjectCopularReframe(
@@ -245,6 +270,12 @@ function explicitContrastPivotReframe(
   );
 }
 
+function startsWithExplicitReplacement(tokens: readonly Token[]): boolean {
+  return (
+    startsWithWords(tokens, ["instead"]) || startsWithWords(tokens, ["rather"])
+  );
+}
+
 function hasPairNegationSignal(tokens: readonly Token[]): boolean {
   return (
     findNegationIndex(tokens) !== undefined ||
@@ -296,6 +327,7 @@ function sentencePairReframe(
     sameSubjectCopularReframe(aTokens, bTokens) ||
     pronounCopularReframe(aTokens, bTokens) ||
     progressiveVerbMirror(aTokens, bTokens) ||
+    startsWithExplicitReplacement(bTokens) ||
     meaningReframe(aTokens, bTokens) ||
     makeMeaningReframe(aTokens, bTokens) ||
     needReframe(aTokens, bTokens) ||

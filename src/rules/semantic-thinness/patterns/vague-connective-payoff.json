@@ -6,9 +6,20 @@
     "{payoffOpener} {payoffComplement}.",
     "{payoffOpener} where {genericWork} {startVerb}.",
     "{payoffOpener} why {genericSubject} {importanceVerb}.",
-    "{payoffOpener} how {genericChange} {startVerb}."
+    "{payoffOpener} how {genericChange} {startVerb}.",
+    "{plainOpener} why {genericSubject} {importanceVerb}.",
+    "{plainOpener} where {genericWork} {startVerb}.",
+    "{plainOpener} how {genericChange} {startVerb}.",
+    "{plainOpener} the reason {genericSubject} {importanceVerb}."
   ],
   "slots": {
+    "plainOpener": [
+      "and that is",
+      "and this is",
+      "that is",
+      "this is",
+      "which is"
+    ],
     "payoffOpener": [
       "and that is",
       "and this is",
@@ -33,7 +44,9 @@
       "how the work begins",
       "the point",
       "the part that matters",
-      "the real work"
+      "the real work",
+      "the reason",
+      "the takeaway"
     ],
     "genericWork": [
       "the work",
@@ -52,9 +65,23 @@
       "the work",
       "the lesson",
       "the process",
-      "the change"
+      "the change",
+      "the answer",
+      "the focus",
+      "the plan",
+      "the problem",
+      "the report",
+      "the signal"
     ],
-    "importanceVerb": ["matters", "works", "sticks", "lasts", "changes things"],
+    "importanceVerb": [
+      "matters",
+      "works",
+      "sticks",
+      "lasts",
+      "counts",
+      "changes",
+      "changes things"
+    ],
     "genericChange": [
       "change",
       "repair",

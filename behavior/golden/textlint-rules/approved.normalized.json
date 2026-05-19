@@ -7289,12 +7289,58 @@
             "line": 121
           }
         },
+        "message": "Authority padding found: the research. Cite the actual evidence or remove the frame.",
+        "range": [
+          3801,
+          3869
+        ],
+        "ruleId": "authority-padding",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 61,
+        "index": 3801,
+        "line": 121,
+        "loc": {
+          "end": {
+            "column": 129,
+            "line": 121
+          },
+          "start": {
+            "column": 61,
+            "line": 121
+          }
+        },
         "message": "Uncited authority found: experts agree. Name the source, cite the evidence, or make the claim directly.",
         "range": [
           3801,
           3869
         ],
         "ruleId": "uncited-authority",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 130,
+        "index": 3870,
+        "line": 121,
+        "loc": {
+          "end": {
+            "column": 214,
+            "line": 121
+          },
+          "start": {
+            "column": 130,
+            "line": 121
+          }
+        },
+        "message": "Authority padding found: the research. Cite the actual evidence or remove the frame.",
+        "range": [
+          3870,
+          3954
+        ],
+        "ruleId": "authority-padding",
         "severity": 2,
         "type": "lint"
       },
@@ -10381,6 +10427,29 @@
         "type": "lint"
       },
       {
+        "column": 30,
+        "index": 13403,
+        "line": 351,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 351
+          },
+          "start": {
+            "column": 30,
+            "line": 351
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          13403,
+          13428
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
         "index": 13430,
         "line": 353,
@@ -12617,6 +12686,29 @@
         "line": 495,
         "loc": {
           "end": {
+            "column": 56,
+            "line": 495
+          },
+          "start": {
+            "column": 1,
+            "line": 495
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          20473,
+          20528
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 20473,
+        "line": 495,
+        "loc": {
+          "end": {
             "column": 127,
             "line": 495
           },
@@ -12681,6 +12773,29 @@
         "type": "lint"
       },
       {
+        "column": 57,
+        "index": 20529,
+        "line": 495,
+        "loc": {
+          "end": {
+            "column": 127,
+            "line": 495
+          },
+          "start": {
+            "column": 57,
+            "line": 495
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          20529,
+          20599
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
         "index": 20601,
         "line": 497,
@@ -12723,6 +12838,29 @@
           20699
         ],
         "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 20701,
+        "line": 499,
+        "loc": {
+          "end": {
+            "column": 38,
+            "line": 499
+          },
+          "start": {
+            "column": 1,
+            "line": 499
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          20701,
+          20738
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -12792,6 +12930,29 @@
           20783
         ],
         "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 39,
+        "index": 20739,
+        "line": 499,
+        "loc": {
+          "end": {
+            "column": 83,
+            "line": 499
+          },
+          "start": {
+            "column": 39,
+            "line": 499
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          20739,
+          20783
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -13031,6 +13192,29 @@
         "line": 511,
         "loc": {
           "end": {
+            "column": 32,
+            "line": 511
+          },
+          "start": {
+            "column": 1,
+            "line": 511
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          21361,
+          21392
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21361,
+        "line": 511,
+        "loc": {
+          "end": {
             "column": 99,
             "line": 511
           },
@@ -13091,6 +13275,52 @@
           21459
         ],
         "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 33,
+        "index": 21393,
+        "line": 511,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 511
+          },
+          "start": {
+            "column": 33,
+            "line": 511
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          21393,
+          21459
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21461,
+        "line": 513,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 513
+          },
+          "start": {
+            "column": 1,
+            "line": 513
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          21461,
+          21509
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -13445,6 +13675,29 @@
         "line": 525,
         "loc": {
           "end": {
+            "column": 31,
+            "line": 525
+          },
+          "start": {
+            "column": 1,
+            "line": 525
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          22167,
+          22197
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22167,
+        "line": 525,
+        "loc": {
+          "end": {
             "column": 117,
             "line": 525
           },
@@ -13482,6 +13735,29 @@
           22283
         ],
         "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 32,
+        "index": 22198,
+        "line": 525,
+        "loc": {
+          "end": {
+            "column": 117,
+            "line": 525
+          },
+          "start": {
+            "column": 32,
+            "line": 525
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          22198,
+          22283
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -14227,6 +14503,29 @@
         "line": 563,
         "loc": {
           "end": {
+            "column": 25,
+            "line": 563
+          },
+          "start": {
+            "column": 1,
+            "line": 563
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          23694,
+          23718
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 23694,
+        "line": 563,
+        "loc": {
+          "end": {
             "column": 72,
             "line": 563
           },
@@ -14287,6 +14586,29 @@
           23765
         ],
         "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 23719,
+        "line": 563,
+        "loc": {
+          "end": {
+            "column": 72,
+            "line": 563
+          },
+          "start": {
+            "column": 26,
+            "line": 563
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          23719,
+          23765
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -19637,6 +19959,29 @@
         "line": 375,
         "loc": {
           "end": {
+            "column": 43,
+            "line": 375
+          },
+          "start": {
+            "column": 1,
+            "line": 375
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          22312,
+          22354
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22312,
+        "line": 375,
+        "loc": {
+          "end": {
             "column": 123,
             "line": 375
           },
@@ -19697,6 +20042,29 @@
           22434
         ],
         "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 44,
+        "index": 22355,
+        "line": 375,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 375
+          },
+          "start": {
+            "column": 44,
+            "line": 375
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          22355,
+          22434
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -26590,6 +26958,29 @@
         "line": 1,
         "loc": {
           "end": {
+            "column": 26,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          0,
+          25
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
             "column": 47,
             "line": 1
           },
@@ -26650,6 +27041,29 @@
           46
         ],
         "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 26,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 1
+          },
+          "start": {
+            "column": 27,
+            "line": 1
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          26,
+          46
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -27345,6 +27759,29 @@
       },
       {
         "column": 1,
+        "index": 862,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Summative frame found: \"the lesson is\". State the concrete point instead.",
+        "range": [
+          862,
+          897
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
         "index": 899,
         "line": 55,
         "loc": {
@@ -27409,6 +27846,29 @@
           996
         ],
         "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 967,
+        "line": 59,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 59
+          },
+          "start": {
+            "column": 1,
+            "line": 59
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          967,
+          996
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -35031,6 +35491,29 @@
         "type": "lint"
       },
       {
+        "column": 30,
+        "index": 18059,
+        "line": 453,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 453
+          },
+          "start": {
+            "column": 30,
+            "line": 453
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          18059,
+          18084
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
         "index": 18086,
         "line": 455,
@@ -39958,6 +40441,29 @@
         "line": 815,
         "loc": {
           "end": {
+            "column": 43,
+            "line": 815
+          },
+          "start": {
+            "column": 1,
+            "line": 815
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          40362,
+          40404
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 40362,
+        "line": 815,
+        "loc": {
+          "end": {
             "column": 123,
             "line": 815
           },
@@ -40022,6 +40528,29 @@
         "type": "lint"
       },
       {
+        "column": 44,
+        "index": 40405,
+        "line": 815,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 815
+          },
+          "start": {
+            "column": 44,
+            "line": 815
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          40405,
+          40484
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 78,
         "index": 40439,
         "line": 815,
@@ -40041,6 +40570,29 @@
           40440
         ],
         "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 40486,
+        "line": 817,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 817
+          },
+          "start": {
+            "column": 1,
+            "line": 817
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          40486,
+          40541
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -40114,6 +40666,29 @@
         "type": "lint"
       },
       {
+        "column": 57,
+        "index": 40542,
+        "line": 817,
+        "loc": {
+          "end": {
+            "column": 127,
+            "line": 817
+          },
+          "start": {
+            "column": 57,
+            "line": 817
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          40542,
+          40612
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
         "index": 40614,
         "line": 819,
@@ -40156,6 +40731,29 @@
           40712
         ],
         "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 40714,
+        "line": 821,
+        "loc": {
+          "end": {
+            "column": 38,
+            "line": 821
+          },
+          "start": {
+            "column": 1,
+            "line": 821
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          40714,
+          40751
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -40225,6 +40823,29 @@
           40796
         ],
         "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 39,
+        "index": 40752,
+        "line": 821,
+        "loc": {
+          "end": {
+            "column": 83,
+            "line": 821
+          },
+          "start": {
+            "column": 39,
+            "line": 821
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          40752,
+          40796
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -40579,6 +41200,29 @@
         "line": 837,
         "loc": {
           "end": {
+            "column": 32,
+            "line": 837
+          },
+          "start": {
+            "column": 1,
+            "line": 837
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          41653,
+          41684
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 41653,
+        "line": 837,
+        "loc": {
+          "end": {
             "column": 99,
             "line": 837
           },
@@ -40639,6 +41283,52 @@
           41751
         ],
         "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 33,
+        "index": 41685,
+        "line": 837,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 837
+          },
+          "start": {
+            "column": 33,
+            "line": 837
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          41685,
+          41751
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 41753,
+        "line": 839,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 839
+          },
+          "start": {
+            "column": 1,
+            "line": 839
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          41753,
+          41801
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -41177,6 +41867,29 @@
         "line": 863,
         "loc": {
           "end": {
+            "column": 31,
+            "line": 863
+          },
+          "start": {
+            "column": 1,
+            "line": 863
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          43002,
+          43032
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 43002,
+        "line": 863,
+        "loc": {
+          "end": {
             "column": 117,
             "line": 863
           },
@@ -41214,6 +41927,29 @@
           43118
         ],
         "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 32,
+        "index": 43033,
+        "line": 863,
+        "loc": {
+          "end": {
+            "column": 117,
+            "line": 863
+          },
+          "start": {
+            "column": 32,
+            "line": 863
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          43033,
+          43118
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -42189,6 +42925,29 @@
         "line": 917,
         "loc": {
           "end": {
+            "column": 25,
+            "line": 917
+          },
+          "start": {
+            "column": 1,
+            "line": 917
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          44955,
+          44979
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 44955,
+        "line": 917,
+        "loc": {
+          "end": {
             "column": 72,
             "line": 917
           },
@@ -42249,6 +43008,29 @@
           45026
         ],
         "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 44980,
+        "line": 917,
+        "loc": {
+          "end": {
+            "column": 72,
+            "line": 917
+          },
+          "start": {
+            "column": 26,
+            "line": 917
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          44980,
+          45026
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -43370,12 +44152,58 @@
             "line": 983
           }
         },
+        "message": "Authority padding found: the research. Cite the actual evidence or remove the frame.",
+        "range": [
+          46968,
+          47036
+        ],
+        "ruleId": "authority-padding",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 46968,
+        "line": 983,
+        "loc": {
+          "end": {
+            "column": 69,
+            "line": 983
+          },
+          "start": {
+            "column": 1,
+            "line": 983
+          }
+        },
         "message": "Uncited authority found: experts agree. Name the source, cite the evidence, or make the claim directly.",
         "range": [
           46968,
           47036
         ],
         "ruleId": "uncited-authority",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 47038,
+        "line": 985,
+        "loc": {
+          "end": {
+            "column": 85,
+            "line": 985
+          },
+          "start": {
+            "column": 1,
+            "line": 985
+          }
+        },
+        "message": "Authority padding found: the research. Cite the actual evidence or remove the frame.",
+        "range": [
+          47038,
+          47122
+        ],
+        "ruleId": "authority-padding",
         "severity": 2,
         "type": "lint"
       },
@@ -46768,6 +47596,29 @@
         "line": 9,
         "loc": {
           "end": {
+            "column": 26,
+            "line": 9
+          },
+          "start": {
+            "column": 1,
+            "line": 9
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          425,
+          450
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 425,
+        "line": 9,
+        "loc": {
+          "end": {
             "column": 47,
             "line": 9
           },
@@ -46828,6 +47679,29 @@
           471
         ],
         "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 451,
+        "line": 9,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 9
+          },
+          "start": {
+            "column": 27,
+            "line": 9
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          451,
+          471
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },
@@ -47523,6 +48397,29 @@
       },
       {
         "column": 1,
+        "index": 1287,
+        "line": 61,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 61
+          },
+          "start": {
+            "column": 1,
+            "line": 61
+          }
+        },
+        "message": "Summative frame found: \"the lesson is\". State the concrete point instead.",
+        "range": [
+          1287,
+          1322
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
         "index": 1324,
         "line": 63,
         "loc": {
@@ -47587,6 +48484,29 @@
           1421
         ],
         "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1392,
+        "line": 67,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 67
+          },
+          "start": {
+            "column": 1,
+            "line": 67
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          1392,
+          1421
+        ],
+        "ruleId": "summative-closer",
         "severity": 2,
         "type": "lint"
       },

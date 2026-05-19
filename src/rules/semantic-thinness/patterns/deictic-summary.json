@@ -20,7 +20,10 @@
     "{deicticSubject} fits the {abstractSituation}.",
     "{deicticSubject} {changeVerb} the {changeObject}.",
     "{deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.",
-    "{deicticSubject} {linkingVerb} how {abstractSubject} {abstractVerb}."
+    "{deicticSubject} {linkingVerb} how {abstractSubject} {abstractVerb}.",
+    "{deicticSubject} {linkingVerb} why {abstractSubject} {importanceVerb}.",
+    "{deicticSubject} {linkingVerb} where {abstractSubject} {startVerb}.",
+    "{deicticSubject} {linkingVerb} the reason {abstractSubject} {importanceVerb}."
   ],
   "slots": {
     "deicticSubject": ["that", "this", "it"],
@@ -66,7 +69,9 @@
       "layer",
       "source material",
       "issue",
-      "signal"
+      "signal",
+      "reason",
+      "takeaway"
     ],
     "summaryVerb": ["changes", "changed", "shifts", "shifted"],
     "changeVerb": ["changes", "changed", "reshapes", "reframes"],
@@ -161,7 +166,15 @@
       "the work",
       "the shift",
       "the lesson",
-      "the story"
+      "the story",
+      "the answer",
+      "the focus",
+      "the strategy",
+      "the plan",
+      "the problem",
+      "the solution",
+      "the report",
+      "the decision"
     ],
     "abstractVerb": [
       "lives",
@@ -169,8 +182,13 @@
       "begins",
       "happens",
       "changes",
-      "settles"
-    ]
+      "settles",
+      "works",
+      "matters",
+      "moves"
+    ],
+    "importanceVerb": ["matters", "works", "changes", "counts", "sticks"],
+    "startVerb": ["starts", "begins", "happens", "shows up", "takes root"]
   },
   "rejectIf": [
     "sentence names the concrete lesson, truth, or decision",

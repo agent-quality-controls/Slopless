@@ -13,10 +13,17 @@ const ENDING_FRAMES = [
   ["can", "help"],
   ["can", "matter"],
   ["can", "work"],
+  ["changes"],
+  ["does", "the", "work"],
+  ["gets", "worse"],
   ["is", "enough"],
+  ["is", "the", "job"],
+  ["is", "the", "point"],
   ["is", "useful"],
   ["matters"],
-  ["helps"]
+  ["helps"],
+  ["still", "matters"],
+  ["works"]
 ] as const;
 
 type EndingFrame = {
