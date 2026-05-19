@@ -2,6 +2,7 @@
   "id": "emotion-as-substance",
   "class": "emotion-physicalization",
   "purpose": "Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups.",
+  "matchMode": "contains",
   "maxTokens": 14,
   "templates": [
     "the {abstractEmotion} finally {substanceMotion} out of {bodyContainer}.",
@@ -9,7 +10,9 @@
     "{abstractEmotion} {substanceMotion} out of {bodyContainer}.",
     "{abstractEmotion} {substanceMotion} over {personTarget}.",
     "{abstractEmotion} {substanceMotion} over {placeTarget}.",
-    "{abstractEmotion} {substanceMotion} in {bodyContainer}."
+    "{abstractEmotion} {substanceMotion} in {bodyContainer}.",
+    "{abstractEmotion} {substanceMotion} through {placeTarget}.",
+    "{abstractEmotion} tightened in {bodyContainer}."
   ],
   "slots": {
     "abstractEmotion": [
@@ -21,7 +24,9 @@
       "regret",
       "relief",
       "shame",
-      "tension"
+      "tension",
+      "certainty",
+      "confusion"
     ],
     "substanceMotion": [
       "built",
@@ -36,7 +41,10 @@
       "settled",
       "rested",
       "hung",
-      "washed"
+      "washed",
+      "tightened",
+      "spread",
+      "moved"
     ],
     "bodyContainer": [
       "her chest",
@@ -68,7 +76,8 @@
       "the courtyard",
       "the alley",
       "the group",
-      "the table"
+      "the table",
+      "the team"
     ]
   },
   "rejectIf": [
@@ -79,6 +88,7 @@
   "positiveExamples": [
     "The anger finally melted out of her posture.",
     "Relief washed over Cassia.",
+    "Relief washed over the group.",
     "Tension settled over the room.",
     "Panic rose in her chest.",
     "Regret rested in his voice."

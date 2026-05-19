@@ -1,3 +1,4 @@
+import { hasConcreteImplementationSummary } from "../../../shared/matchers/concrete-evidence.js";
 import {
   cleanSentence,
   startsWithAnyText,
@@ -8,6 +9,8 @@ import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const PREFIXES = ["and ", "but ", "so "];
 const LESSON_SUMMARY_PATTERNS = [
+  "the lesson here is clear",
+  "the takeaway is clear",
   "the biggest lesson was simple",
   "the practical lesson for me was simple",
   "the practical lesson was simple"
@@ -51,6 +54,9 @@ function matchSummaryFrame(text: string): string | undefined {
 
 function matchLessonFraming(sentence: string): SentenceMatch | undefined {
   const stripped = cleanSentence(sentence, PREFIXES);
+  if (hasConcreteImplementationSummary(stripped)) {
+    return undefined;
+  }
   const lesson = startsWithAnyText(stripped, LESSON_SUMMARY_PATTERNS);
 
   if (lesson !== undefined) {
@@ -60,6 +66,10 @@ function matchLessonFraming(sentence: string): SentenceMatch | undefined {
   const summary = matchSummaryFrame(stripped);
   if (summary !== undefined) {
     return { kind: "summary-frame", signal: summary };
+  }
+
+  if (stripped.startsWith("the lesson here is ")) {
+    return { kind: "lesson-here", signal: "the lesson here is" };
   }
 
   if (!stripped.startsWith("the fix is ")) {

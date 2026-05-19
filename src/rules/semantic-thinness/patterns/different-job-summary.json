@@ -1,0 +1,30 @@
+{
+  "id": "different-job-summary",
+  "class": "deictic-summary",
+  "purpose": "Catch short deictic lines that label a distinction as a different job, problem, question, or conversation without naming the concrete operational difference.",
+  "matchMode": "full",
+  "maxTokens": 8,
+  "templates": [
+    "{deicticSubject} {linkingVerb} a different {genericWorkNoun}."
+  ],
+  "slots": {
+    "deicticSubject": ["that", "this", "it"],
+    "linkingVerb": ["is", "was"],
+    "genericWorkNoun": ["job", "problem", "question", "conversation"]
+  },
+  "rejectIf": [
+    "sentence names a concrete job ID, queue item, ticket, or assigned role",
+    "sentence identifies the actual difference rather than labeling it"
+  ],
+  "positiveExamples": [
+    "That is a different job.",
+    "This is a different question."
+  ],
+  "negativeExamples": [
+    "That is a different job ID in the queue.",
+    "This is a different question because the API returns 404."
+  ],
+  "notes": [
+    "This is full-mode because contains-mode would flag concrete continuations such as job IDs."
+  ]
+}

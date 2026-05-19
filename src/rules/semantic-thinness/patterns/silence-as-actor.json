@@ -7,6 +7,8 @@
   "templates": [
     "{silenceSubject} {linkingVerb} not {thinState}.",
     "{silenceSubject} {linkingVerb} {thinState}.",
+    "{silenceSubject} became {thinState}.",
+    "{silenceSubject} turned {thinState}.",
     "{deicticSubject} only made {silenceSubject} feel {thinState}.",
     "{placeSubject} had gone quiet in {mannerFrame}.",
     "{humanSubject} could make {silenceSubject} feel {thinState}."
@@ -51,6 +53,8 @@
   "positiveExamples": [
     "The silence was not empty.",
     "The silence felt arranged.",
+    "The silence became heavy.",
+    "The silence turned strange.",
     "This only made the silence feel deliberate.",
     "The office had gone quiet in the way offices do.",
     "She could make silence feel crowded.",

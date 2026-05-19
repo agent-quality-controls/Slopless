@@ -1,5 +1,10 @@
 import { cleanSentence } from "../../../shared/matchers/prose-patterns.js";
+import { hasConcreteCausalSummary } from "../../../shared/matchers/concrete-evidence.js";
 import { wordTokens, type Token } from "../../../shared/text/tokens.js";
+import {
+  hasConcreteExplanation,
+  shouldRejectConcreteEvidence
+} from "./concrete-guards.js";
 
 export type SemanticThinnessPattern = {
   readonly class: string;
@@ -55,7 +60,22 @@ const REJECT_TOKENS = new Set([
   "which",
   "while"
 ]);
-
+const BROAD_PATTERN_IDS = new Set([
+  "abstract-personification-line",
+  "body-emotion-shorthand",
+  "deictic-summary",
+  "empty-scene-state",
+  "empty-scene-transition",
+  "gaze-choreography",
+  "generic-pressure-or-stakes",
+  "generic-realization",
+  "hollow-significance",
+  "puffery-evaluative-claim",
+  "real-work-begins",
+  "truth-answer-moves",
+  "vague-threshold-change"
+]);
+const CONNECTOR_ALLOWED_PATTERN_IDS = new Set(["vague-summary-cost"]);
 function normalizedTokens(text: string): readonly string[] {
   return wordTokens(text).map((token) => token.normalized);
 }
@@ -143,18 +163,8 @@ export function compileSemanticThinnessPatterns(
   }));
 }
 
-function hasDigit(text: string): boolean {
-  for (const character of text) {
-    if (character >= "0" && character <= "9") {
-      return true;
-    }
-  }
-
-  return false;
-}
-
 function shouldRejectCommon(text: string, tokens: readonly Token[]): boolean {
-  return tokens.length === 0 || hasDigit(text);
+  return tokens.length === 0 || shouldRejectConcreteEvidence(text, tokens);
 }
 
 function shouldRejectForPattern(
@@ -166,8 +176,9 @@ function shouldRejectForPattern(
   }
 
   return (
-    pattern.matchMode === "full" &&
-    tokens.some((token) => REJECT_TOKENS.has(token.normalized))
+    (!CONNECTOR_ALLOWED_PATTERN_IDS.has(pattern.id) &&
+      tokens.some((token) => REJECT_TOKENS.has(token.normalized))) ||
+    (BROAD_PATTERN_IDS.has(pattern.id) && hasConcreteExplanation(tokens))
   );
 }
 
@@ -250,9 +261,13 @@ function templateMatchesPattern(
 
 function matchCompiledPattern(
   tokens: readonly Token[],
-  pattern: CompiledPattern
+  pattern: CompiledPattern,
+  text: string
 ): SemanticThinnessMatch | undefined {
-  if (shouldRejectForPattern(pattern, tokens)) {
+  if (
+    shouldRejectForPattern(pattern, tokens) ||
+    (BROAD_PATTERN_IDS.has(pattern.id) && hasConcreteCausalSummary(text))
+  ) {
     return undefined;
   }
 
@@ -282,7 +297,7 @@ export function findSemanticThinnessMatch(
   }
 
   for (const pattern of patterns) {
-    const match = matchCompiledPattern(tokens, pattern);
+    const match = matchCompiledPattern(tokens, pattern, cleaned);
     if (match !== undefined) {
       return match;
     }

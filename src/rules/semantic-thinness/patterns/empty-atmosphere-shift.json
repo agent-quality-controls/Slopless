@@ -3,8 +3,10 @@
   "class": "atmosphere-shift",
   "purpose": "Catch atmosphere-shift lines that announce mood change in a place without concrete cause, action, or sensory detail.",
   "templates": [
+    "{placeSubject} {feltVerb} {atmosphereState}.",
     "{placeSubject} {feltVerb} {weakAdverb} {atmosphereState}.",
     "{placeSubject} {feltVerb} {atmosphereState} {weakModifier}.",
+    "{atmosphereSubject} {feltVerb} {atmosphereState}.",
     "{atmosphereSubject} {feltVerb} {atmosphereState} {weakModifier}.",
     "{atmosphereSubject} {feltVerb} {weakAdverb} {atmosphereState}."
   ],

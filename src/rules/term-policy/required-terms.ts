@@ -11,10 +11,10 @@ function presentTerms(text: string): ReadonlySet<string> {
 }
 
 function configuredTerms(
-  options: Readonly<RequiredTermsOptions>
+  options: Readonly<RequiredTermsOptions> | undefined
 ): readonly string[] {
   return (
-    options.terms?.map(normalizeForMatch).filter((term) => term.length > 0) ??
+    options?.terms?.map(normalizeForMatch).filter((term) => term.length > 0) ??
     []
   );
 }

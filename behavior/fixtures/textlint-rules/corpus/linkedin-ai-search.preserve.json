@@ -1,0 +1,664 @@
+{
+  "version": 1,
+  "corpus": "linkedin-ai-search.md",
+  "preserve": [
+    {
+      "text": "The problem is simple: tools collect signals.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 131
+    },
+    {
+      "text": "The spreadsheet feels precise.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 133
+    },
+    {
+      "text": "The decisions get worse.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 135
+    },
+    {
+      "text": "The missing layer is page judgment.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 137
+    },
+    {
+      "text": "That changes the whole report.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 139
+    },
+    {
+      "text": "The boring fix is often the right one.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 141
+    },
+    {
+      "text": "The second one is less glamorous.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 143
+    },
+    {
+      "text": "Glamour has a poor conversion rate in technical audits.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 145
+    },
+    {
+      "text": "The boring plan is often the right one.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 147
+    },
+    {
+      "text": "That is the kind of issue a technical audit should catch before the team writes another 20 pages.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 149
+    },
+    {
+      "text": "That does not mean engagement is useless.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 151
+    },
+    {
+      "text": "It means the post has to contain source material worth retrieving.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 153
+    },
+    {
+      "text": "What helped more:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 999
+    },
+    {
+      "text": "That does not mean engagement is useless. It means the post has to contain source material worth retrieving.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1001
+    },
+    {
+      "text": "The solution is boring.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 155
+    },
+    {
+      "text": "The strategy is boring: write the acceptance check first.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 157
+    },
+    {
+      "text": "The right solution is boring.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 159
+    },
+    {
+      "text": "The practical plan is boring: remove the redirect chain.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 161
+    },
+    {
+      "text": "The problem is simple: GPTBot received the raw HTML shell before hydration.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 99
+    },
+    {
+      "text": "The spreadsheet feels precise because every row links to a revenue page and an owner.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 101
+    },
+    {
+      "text": "The decisions got worse after the team sorted by volume instead of qualified demand.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 103
+    },
+    {
+      "text": "The missing layer is page judgment: service pages get reviewed before archive pages.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 105
+    },
+    {
+      "text": "That changes the whole report because the crawler cannot see the service copy.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 107
+    },
+    {
+      "text": "The boring fix is often the right one when raw HTML lacks revenue-critical copy.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 109
+    },
+    {
+      "text": "The boring report is final because the review board signed it.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 111
+    },
+    {
+      "text": "That does not mean engagement is useless because renewal fell by 14 percent.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 113
+    },
+    {
+      "text": "It means the parser has to map offsets before reporting.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 115
+    },
+    {
+      "text": "The movie is boring.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 117
+    },
+    {
+      "text": "The party is boring.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 119
+    },
+    {
+      "text": "The audit is boring.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 121
+    },
+    {
+      "text": "The report is boring.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 123
+    },
+    {
+      "text": "What helped more than the first patch was replacing the cache key.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 147
+    },
+    {
+      "text": "That does not mean engagement is useless because the cohort report measured renewal separately.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 149
+    },
+    {
+      "text": "The smoke detector check is boring but required.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 125
+    },
+    {
+      "text": "So the audit question is not:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1003
+    },
+    {
+      "text": "\"How many warnings do we have?\"",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1005
+    },
+    {
+      "text": "The audit question is:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1007
+    },
+    {
+      "text": "\"Which warnings affect pages that should create demand?\"",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1009
+    },
+    {
+      "text": "More content can help. Technical fixes can help. Consulting can help. Agencies can help.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1011
+    },
+    {
+      "text": "More content can help. Technical fixes can reduce hydration errors.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 155
+    },
+    {
+      "text": "All of that gets expensive when nobody knows which problem they are solving.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 165
+    },
+    {
+      "text": "The migration got expensive when the API vendor raised the monthly bill.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 127
+    },
+    {
+      "text": "All of that cost 14 hours because the crawler retried broken URLs.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 129
+    },
+    {
+      "text": "The issue is not reproducible because the test passes locally.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 151
+    },
+    {
+      "text": "The rule requires escaping user input.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 153
+    },
+    {
+      "text": "This check is boring, fast, and easy to prove in less than five minutes.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 163
+    },
+    {
+      "text": "That changes the page brief.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 167
+    },
+    {
+      "text": "The content plan is missing the conversation after the query.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 169
+    },
+    {
+      "text": "That fits the world we are in.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 171
+    },
+    {
+      "text": "That is a different job.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 173
+    },
+    {
+      "text": "Structured data still has work to do.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 175
+    },
+    {
+      "text": "Visibility now has layers, and the layers can disagree.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 177
+    },
+    {
+      "text": "That maps cleanly to SEO pages.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 131
+    },
+    {
+      "text": "The content plan is missing the pricing page after the CRM query.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 133
+    },
+    {
+      "text": "That fits the 2026 crawl data from Toronto.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 135
+    },
+    {
+      "text": "That is a different job ID in the queue.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 137
+    },
+    {
+      "text": "Structured data still has validation errors in Search Console.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 139
+    },
+    {
+      "text": "Visibility now has three dashboard layers because Finance requested them.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 141
+    },
+    {
+      "text": "So the audit question is not just:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1013
+    },
+    {
+      "text": "\"Can Google crawl this?\"",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1015
+    },
+    {
+      "text": "It is:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1017
+    },
+    {
+      "text": "\"Why would Google need this page in the index?\"",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1019
+    },
+    {
+      "text": "The audit move:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1021
+    },
+    {
+      "text": "The lazy conclusion is:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1023
+    },
+    {
+      "text": "The better conclusion:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1025
+    },
+    {
+      "text": "It is less screenshot-friendly. It is more useful for search systems.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1027
+    },
+    {
+      "text": "The issue is not just ready for crawlers because Google indexed it yesterday.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 157
+    },
+    {
+      "text": "It is less than five minutes from the station.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 159
+    },
+    {
+      "text": "The page cannot outsource its answer to metadata.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 179
+    },
+    {
+      "text": "The page is wearing a nice jacket over an empty shirt.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 181
+    },
+    {
+      "text": "The brand vanishes like a contractor after a vague scope call.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 183
+    },
+    {
+      "text": "Crawler access is plumbing with consequences.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 185
+    },
+    {
+      "text": "Local AI visibility behaves like a trust filter.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 187
+    },
+    {
+      "text": "AI Overviews add another layer to the diagnosis.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 189
+    },
+    {
+      "text": "Sadness entered the room.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 191
+    },
+    {
+      "text": "The page is wearing a jacket in the product photo.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 143
+    },
+    {
+      "text": "The brand vanished after the contractor missed the scope call.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 145
+    },
+    {
+      "text": "The plumber repaired the plumbing with replacement valves.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 147
+    },
+    {
+      "text": "The data model adds another layer to the diagnosis because the clinical report requires it.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 149
+    },
+    {
+      "text": "The local permit filter rejected the business because its address was outside the city boundary.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 151
+    },
+    {
+      "text": "The focus is practical.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1029
+    },
+    {
+      "text": "Each post has a source, a reveal, an audit check, and the next move for a buyer.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1031
+    },
+    {
+      "text": "That does not make structured data useless. It does mean the page cannot outsource its answer to metadata.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1033
+    },
+    {
+      "text": "That means \"should we block AI?\" is the wrong level of question.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1035
+    },
+    {
+      "text": "The better operating question is:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1037
+    },
+    {
+      "text": "The grown-up answer is log review, path rules, and a robots.txt file that matches the business model.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1039
+    },
+    {
+      "text": "I used to read traffic drops like a normal person.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1041
+    },
+    {
+      "text": "One prompt gives you a mood. A prompt panel gives you a measurement.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1043
+    },
+    {
+      "text": "A ranking problem gets one fix. A source-selection problem gets another.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1045
+    },
+    {
+      "text": "The problem is simple: GPTBot received the raw HTML shell before hydration.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 161
+    },
+    {
+      "text": "The dashboard gives you a trend. The export gives you a CSV.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 163
+    },
+    {
+      "text": "The patient gets one dose. The control group gets another dose.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 165
+    },
+    {
+      "text": "The better operating system is ready for the migration.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 167
+    },
+    {
+      "text": "The grown-up answer key is missing from the training packet.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 169
+    }
+  ]
+}

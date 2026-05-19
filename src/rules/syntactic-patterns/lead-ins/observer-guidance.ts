@@ -1,3 +1,4 @@
+import { hasConcreteImplementationSummary } from "../../../shared/matchers/concrete-evidence.js";
 import {
   cleanSentence,
   startsWithAnyText,
@@ -9,6 +10,7 @@ import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const PREFIXES = ["and ", "but ", "so "];
 const OBSERVER_PATTERNS = [
+  "you can see it everywhere now",
   "you see it everywhere",
   "you see it after almost every",
   "you can watch it happen in real time",
@@ -35,6 +37,11 @@ const SEE_PATTERNS = [
   "you can see this when",
   "you can see it when"
 ];
+const WATCH_PATTERNS = [
+  "watch how the frame changes",
+  "watch how",
+  "watch what happens"
+];
 
 function exactStart(
   text: string,
@@ -46,6 +53,9 @@ function exactStart(
 
 function matchObserverGuidance(sentence: string): SentenceMatch | undefined {
   const stripped = cleanSentence(sentence, PREFIXES);
+  if (hasConcreteImplementationSummary(stripped)) {
+    return undefined;
+  }
   const trimmed = trimTerminalPunctuation(stripped);
   const observer = exactStart(trimmed, OBSERVER_PATTERNS);
 
@@ -71,6 +81,15 @@ function matchObserverGuidance(sentence: string): SentenceMatch | undefined {
   const see = startsWithAnyText(stripped, SEE_PATTERNS);
   if (see !== undefined) {
     return { kind: "observer-frame", signal: see };
+  }
+
+  const watch = startsWithAnyText(stripped, WATCH_PATTERNS);
+  if (watch !== undefined) {
+    return { kind: "observer-frame", signal: watch };
+  }
+
+  if (stripped.startsWith("you can see it everywhere")) {
+    return { kind: "observer-frame", signal: "you-can-see-it-everywhere" };
   }
 
   const words = tokens(trimmed);

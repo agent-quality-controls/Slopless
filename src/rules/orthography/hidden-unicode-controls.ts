@@ -1,4 +1,5 @@
 import { oneToOneRule } from "../private/textlint-rule-builders.js";
+import type { LocalDetection } from "../private/textlint-rule-builders.js";
 
 const HIDDEN_UNICODE_CONTROLS = new Map([
   [0x00ad, "SOFT HYPHEN"],
@@ -26,7 +27,7 @@ function codePointLabel(codePoint: number): string {
 
 const rule = oneToOneRule({
   detect: (unit) => {
-    const detections = [];
+    const detections: LocalDetection[] = [];
     let start = 0;
 
     for (const character of unit.text) {

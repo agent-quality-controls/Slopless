@@ -1,5 +1,7 @@
+import { hasConcreteAuthorityEvidence } from "../../../shared/matchers/concrete-evidence.js";
 import {
   cleanSentence,
+  tokens,
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
 import { oneToOneRule } from "../../private/textlint-rule-builders.js";
@@ -7,9 +9,11 @@ import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 const PREFIXES = ["however, ", "but ", "and ", "so "];
 const EVIDENCE_SUBJECTS = [
   "the evidence",
+  "evidence",
   "the strongest evidence",
   "the recent evidence",
-  "the broader evidence"
+  "the broader evidence",
+  "the available evidence"
 ];
 const RESEARCH_SUBJECTS = [
   "the research",
@@ -18,34 +22,96 @@ const RESEARCH_SUBJECTS = [
   "the recent research",
   "the science",
   "the data",
+  "the dataset",
+  "the literature",
+  "data",
+  "research",
   "studies"
 ];
-const RESEARCHER_SUBJECTS = ["researchers", "scientists"];
-const EVIDENCE_PREDICATES = ["is strongest", "is not subtle", "points"];
-const RESEARCH_PREDICATES = [
+const RESEARCHER_SUBJECTS = [
+  "experts",
+  "researchers",
+  "scientists",
+  "specialists"
+];
+const EVIDENCE_PREDICATES = [
   "backs",
-  "does show is",
   "is clear",
-  "is not mysterious",
+  "is strongest",
+  "is not subtle",
   "points",
   "shows",
   "suggests"
 ];
-const RESEARCHER_PREDICATES = ["keep finding", "keep showing"];
+const RESEARCH_PREDICATES = [
+  "backs",
+  "confirms",
+  "does show is",
+  "is clear",
+  "is not mysterious",
+  "points",
+  "proves",
+  "shows",
+  "suggests"
+];
+const RESEARCHER_PREDICATES = [
+  "agree",
+  "keep finding",
+  "keep saying",
+  "keep showing",
+  "say"
+];
 const AUTHORITY_ADVERBS = ["clearly", "consistently", "strongly"];
+const ABSTRACT_AUTHORITY_COMPLEMENTS = [
+  "alignment",
+  "aligned",
+  "claim",
+  "content",
+  "decision",
+  "engagement",
+  "launch",
+  "meeting",
+  "meetings",
+  "owner",
+  "owners",
+  "progress",
+  "retention",
+  "rollback",
+  "strategy",
+  "teams",
+  "trust",
+  "visibility"
+];
 const PRESTIGE_SUFFIXES = [
   "'s work is famous for a reason",
   "\u2019s work is famous for a reason"
 ];
+
+function hasAbstractAuthorityComplement(text: string): boolean {
+  const words = tokens(text);
+  return ABSTRACT_AUTHORITY_COMPLEMENTS.some((word) => words.includes(word));
+}
 
 function matchesSubjectPredicate(
   text: string,
   subjects: readonly string[],
   predicates: readonly string[]
 ): boolean {
-  return subjects.some((subject) =>
-    predicates.some((predicate) => text.startsWith(`${subject} ${predicate}`))
-  );
+  return subjects.some((subject) => {
+    const subjectText = `${subject} `;
+    if (!text.startsWith(subjectText)) {
+      return false;
+    }
+
+    return predicates.some((predicate) => {
+      const predicateText = `${subjectText}${predicate}`;
+      if (!text.startsWith(predicateText)) {
+        return false;
+      }
+
+      return predicate.includes("is ") || hasAbstractAuthorityComplement(text);
+    });
+  });
 }
 
 function matchesAdverbialSubjectPredicate(
@@ -55,8 +121,10 @@ function matchesAdverbialSubjectPredicate(
 ): boolean {
   return subjects.some((subject) =>
     AUTHORITY_ADVERBS.some((adverb) =>
-      predicates.some((predicate) =>
-        text.startsWith(`${subject} ${adverb} ${predicate}`)
+      predicates.some(
+        (predicate) =>
+          text.startsWith(`${subject} ${adverb} ${predicate}`) &&
+          (predicate.includes("is ") || hasAbstractAuthorityComplement(text))
       )
     )
   );
@@ -64,6 +132,10 @@ function matchesAdverbialSubjectPredicate(
 
 function matchAuthorityPadding(sentence: string): SentenceMatch | undefined {
   const stripped = cleanSentence(sentence, PREFIXES);
+
+  if (hasConcreteAuthorityEvidence(stripped)) {
+    return undefined;
+  }
 
   if (PRESTIGE_SUFFIXES.some((suffix) => stripped.includes(suffix))) {
     return { kind: "prestige-frame", signal: "work is famous for a reason" };

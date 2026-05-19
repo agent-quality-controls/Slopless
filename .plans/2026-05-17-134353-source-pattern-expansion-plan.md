@@ -15,17 +15,17 @@ The desired end state is:
 
 ## 1. Normalize the source material into candidate groups
 
-Create reviewed source notes under `legacy/source-material/derived/`.
+Create reviewed source notes under `legacy/source-material/reviewed/skipped/`.
 
 Files:
 
-- `legacy/source-material/derived/wordiness-pattern-candidates.md`
-- `legacy/source-material/derived/redundancy-pattern-candidates.md`
-- `legacy/source-material/derived/cliche-template-candidates.md`
-- `legacy/source-material/derived/assistant-artifact-candidates.md`
-- `legacy/source-material/derived/narrative-slop-candidates.md`
-- `legacy/source-material/derived/corporate-abstraction-candidates.md`
-- `legacy/source-material/derived/academic-slop-candidates.md`
+- `legacy/source-material/reviewed/skipped/wordiness-pattern-candidates.md`
+- `legacy/source-material/reviewed/skipped/redundancy-pattern-candidates.md`
+- `legacy/source-material/reviewed/skipped/cliche-template-candidates.md`
+- `legacy/source-material/reviewed/skipped/assistant-artifact-candidates.md`
+- `legacy/source-material/reviewed/skipped/narrative-slop-candidates.md`
+- `legacy/source-material/reviewed/skipped/corporate-abstraction-candidates.md`
+- `legacy/source-material/reviewed/skipped/academic-slop-candidates.md`
 
 Each file lists:
 
@@ -188,10 +188,10 @@ Why separate:
 
 Sources:
 
-- `legacy/source-material/prose-linters/npm-packages/too-wordy-0.3.6/too-wordy.js`
-- `legacy/source-material/style-guides/microsoft/rules/Wordiness.yml`
-- `legacy/source-material/style-guides/elastic/rules/Wordiness.yml`
-- `legacy/source-material/plain-english/extracted/*.md`
+- `datasets/labeled/prose-linter-lexicons/npm-packages/too-wordy-0.3.6/too-wordy.js`
+- `datasets/labeled/style-guides/microsoft/rules/Wordiness.yml`
+- `datasets/labeled/style-guides/elastic/rules/Wordiness.yml`
+- `datasets/labeled/plain-english/extracted/*.md`
 
 Patterns:
 
@@ -230,8 +230,8 @@ Care controls:
 
 Sources:
 
-- `legacy/source-material/prose-linters/proselint/proselint/checks/redundancy/`
-- `legacy/source-material/prose-linters/proselint/proselint/checks/redundancy/misc.py`
+- `datasets/labeled/prose-linter-lexicons/proselint/proselint/checks/redundancy/`
+- `datasets/labeled/prose-linter-lexicons/proselint/proselint/checks/redundancy/misc.py`
 
 Patterns:
 
@@ -260,8 +260,8 @@ Care controls:
 
 Sources:
 
-- `legacy/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_phrases.jsonl`
-- `legacy/source-material/llm-slop-lists/community-gists/*.md`
+- `datasets/labeled/ai-slop/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_phrases.jsonl`
+- `datasets/labeled/ai-slop/llm-slop-lists/community-gists/*.md`
 - current `src/families/phrases/llm-disclaimer.ts`
 - current `src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts`
 
@@ -287,7 +287,7 @@ Care controls:
 
 Sources:
 
-- `legacy/source-material/prose-linters/npm-packages/cliches-1.0.6/glossary.js`
+- `datasets/labeled/prose-linter-lexicons/npm-packages/cliches-1.0.6/glossary.js`
 - existing `src/families/phrases/data/cliches.json`
 
 Patterns:
@@ -374,8 +374,8 @@ Care controls:
 
 Sources:
 
-- `legacy/source-material/llm-slop-lists/slop-forensics/slop_list_bigrams.json`
-- `legacy/source-material/llm-slop-lists/slop-forensics/slop_list_trigrams.json`
+- `datasets/labeled/ai-slop/llm-slop-lists/slop-forensics/slop_list_bigrams.json`
+- `datasets/labeled/ai-slop/llm-slop-lists/slop-forensics/slop_list_trigrams.json`
 - current `behavior/fixtures/textlint-rules/corpus/narrative-scenes.md`
 
 Patterns:
@@ -400,7 +400,7 @@ Care controls:
 
 Sources:
 
-- `legacy/source-material/academic-slop/tortured-phrases/*.md`
+- `datasets/labeled/academic-slop/tortured-phrases/*.md`
 
 Patterns:
 
@@ -417,9 +417,9 @@ Care controls:
 
 Sources:
 
-- `legacy/source-material/llm-excess-vocab/berenslab/excess_words.csv`
-- `legacy/source-material/llm-excess-vocab/detect-chatgpt/ges_selected_lemma.csv`
-- `legacy/source-material/llm-slop-lists/llm-cliches/*.txt`
+- `datasets/labeled/ai-slop/llm-excess-vocab/berenslab/excess_words.csv`
+- `datasets/labeled/ai-slop/llm-excess-vocab/detect-chatgpt/ges_selected_lemma.csv`
+- `datasets/labeled/ai-slop/llm-slop-lists/llm-cliches/*.txt`
 
 Use:
 
@@ -466,7 +466,7 @@ For each new rule:
 - add registry import under `src/registries/<family>.ts`
 - add package export in `package.json`
 - add README rule summary
-- add source record in `legacy/source-material/incorporation-record.md`
+- add source record in `legacy/source-material/reviewed/implemented/incorporation-record.md`
 
 For each new family:
 
@@ -509,8 +509,8 @@ scripts/fixture3.sh accept --suite textlint-rules
 
 Expected:
 
-- `legacy/source-material/derived/*.md`
-- `legacy/source-material/incorporation-record.md`
+- `legacy/source-material/reviewed/skipped/*.md`
+- `legacy/source-material/reviewed/implemented/incorporation-record.md`
 - `src/families/phrases/*.ts`
 - `src/families/phrases/data/*.json`
 - `src/families/semantic-thinness/patterns/*.json`

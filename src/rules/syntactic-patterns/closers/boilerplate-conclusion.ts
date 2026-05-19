@@ -1,5 +1,6 @@
 import { defineTextlintRule } from "../../../adapters/textlint/rule.js";
 import { sentenceUnits } from "../../../adapters/textlint/units.js";
+import { hasConcreteImplementationSummary } from "../../../shared/matchers/concrete-evidence.js";
 import {
   cleanSentence,
   containsAny,
@@ -15,8 +16,13 @@ const PREFIXES = [
   "and ",
   "but "
 ];
-const IMPORTANCE_CUES = ["most important", "single most important", "deepest"];
-const SUMMARY_NOUNS = ["insight", "reason", "idea", "step"];
+const IMPORTANCE_CUES = [
+  "most important",
+  "single most important",
+  "deepest",
+  "powerful"
+];
+const SUMMARY_NOUNS = ["insight", "reason", "idea", "step", "method"];
 const AUTHORITY_CLOSE_PATTERNS = [
   "the research is clear",
   "science is clear",
@@ -33,6 +39,10 @@ const BASIC_RULE_SIMPLE_PATTERN = "the basic rule is simple";
 const COMPRESSION_CLOSE_PATTERNS = [
   "the whole trick",
   "the core fact",
+  "the useful part",
+  "the important part",
+  "the practical point",
+  "the practical takeaway",
   "the rest is detail"
 ];
 const FORMULA_SUBJECTS = ["that", "this", "it"];
@@ -43,12 +53,21 @@ const FORMULA_NOUNS = [
   "game",
   "idea",
   "lesson",
+  "method",
   "move",
   "point",
   "rule",
   "test",
   "thing",
   "trick"
+];
+const SUMMARY_FRAME_NOUNS = [
+  "answer",
+  "lesson",
+  "point",
+  "reason",
+  "takeaway",
+  "truth"
 ];
 
 function matchInsightClose(text: string): string | undefined {
@@ -78,7 +97,7 @@ function matchResponseClose(text: string): string | undefined {
 function matchFormulaClose(text: string): string | undefined {
   const words = tokens(text);
 
-  if (words.length > 8) {
+  if (words.length > 12) {
     return undefined;
   }
 
@@ -97,6 +116,34 @@ function matchFormulaClose(text: string): string | undefined {
   return undefined;
 }
 
+function matchSummaryFrameClose(text: string): string | undefined {
+  const words = tokens(text);
+  const [first, second, third] = words;
+
+  if (
+    first === "the" &&
+    second !== undefined &&
+    SUMMARY_FRAME_NOUNS.includes(second) &&
+    (third === "is" || third === "was")
+  ) {
+    return `the-${second}-${third}`;
+  }
+
+  if (
+    first === "the" &&
+    second !== undefined &&
+    third !== undefined &&
+    words[3] !== undefined &&
+    ["real", "practical", "useful", "simple", "main", "big"].includes(second) &&
+    SUMMARY_FRAME_NOUNS.includes(third) &&
+    (words[3] === "is" || words[3] === "was")
+  ) {
+    return `the-${second}-${third}-${words[3]}`;
+  }
+
+  return undefined;
+}
+
 function matchConclusion(
   sentence: string,
   isTail: boolean
@@ -107,6 +154,13 @@ function matchConclusion(
     const formula = matchFormulaClose(stripped);
     if (formula !== undefined) {
       return { kind: "formula-close", signal: formula };
+    }
+
+    const summaryFrame = hasConcreteImplementationSummary(stripped)
+      ? undefined
+      : matchSummaryFrameClose(stripped);
+    if (summaryFrame !== undefined) {
+      return { kind: "summary-frame-close", signal: summaryFrame };
     }
 
     const insight = matchInsightClose(stripped);
@@ -130,7 +184,9 @@ function matchConclusion(
     return { kind: "response-close", signal: response };
   }
 
-  const compression = containsAny(stripped, COMPRESSION_CLOSE_PATTERNS);
+  const compression = hasConcreteImplementationSummary(stripped)
+    ? undefined
+    : containsAny(stripped, COMPRESSION_CLOSE_PATTERNS);
   return compression === undefined
     ? undefined
     : { kind: "compression-close", signal: compression };

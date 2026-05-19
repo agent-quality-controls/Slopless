@@ -8,3 +8,6 @@ stylelint_css_globs = ["styles/**/*.css"]
 [style]
 source_globs = ["src/**/*.ts"]
 stylelint_css_globs = ["styles/**/*.css"]
+
+[typecov]
+minimum = 100

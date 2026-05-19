@@ -6,6 +6,7 @@
   "maxTokens": 80,
   "templates": [
     "{truthSubject} {emergenceVerb}.",
+    "{truthSubject} had {emergenceVerb}.",
     "{truthSubject} starts {motionVerb}.",
     "{truthSubject} began to {motionVerb}.",
     "{truthSubject} {arrivalVerb} as {abstractForm}.",
@@ -57,6 +58,7 @@
   "positiveExamples": [
     "Eventually the truth surfaces.",
     "The answer arrives as a body sensation.",
+    "The answer had arrived as a small signal.",
     "The meaning arrives later.",
     "The truth starts moving around.",
     "The answer began to take shape.",

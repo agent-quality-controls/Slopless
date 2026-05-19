@@ -3,6 +3,7 @@ node_modules
 target
 package-lock.json
 behavior/golden
+datasets
 .plans
 .worklogs
 legacy

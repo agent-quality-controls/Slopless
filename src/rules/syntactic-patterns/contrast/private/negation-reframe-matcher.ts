@@ -22,6 +22,8 @@ import {
   hasNegativeSlopPairSignal,
   negativeSlopReframe
 } from "./negative-slop-frames.js";
+import { makeMeaningReframe, meaningReframe } from "./meaning-reframe.js";
+import { hasConcreteCorrectionEvidence } from "../../../../shared/matchers/concrete-evidence.js";
 import {
   splitSentences,
   type SplitSentence
@@ -40,6 +42,29 @@ const INLINE_NON_CONTRAST_NEGATION_FOLLOWERS = new Set([
   "every",
   "too"
 ]);
+const INLINE_CONTRAST_CONNECTORS = new Set([
+  "also",
+  "but",
+  "instead",
+  "rather"
+]);
+
+function hasInlineContrastConnectorAfterNegation(
+  tokens: readonly Token[],
+  negationIndex: number
+): boolean {
+  if (
+    tokens[negationIndex + 1]?.normalized === "help" &&
+    tokens[negationIndex + 2]?.normalized === "but"
+  ) {
+    return false;
+  }
+
+  return tokens
+    .slice(negationIndex + 1)
+    .some((token) => INLINE_CONTRAST_CONNECTORS.has(token.normalized));
+}
+
 function inlineNegationContrast(
   sentence: SplitSentence
 ): NegationReframeMatch | undefined {
@@ -56,17 +81,20 @@ function inlineNegationContrast(
     negation?.normalized !== "not" ||
     INLINE_NON_CONTRAST_NEGATION_FOLLOWERS.has(
       tokens[negationIndex + 1]?.normalized ?? ""
-    ) ||
-    !hasCommaBeforeNegation(sentence.text, negation.start)
+    )
   ) {
     return undefined;
   }
 
-  return {
-    end: sentence.end,
-    start: sentence.start,
-    text: sentence.text
-  };
+  return !hasConcreteCorrectionEvidence(sentence.text) &&
+    (hasCommaBeforeNegation(sentence.text, negation.start) ||
+      hasInlineContrastConnectorAfterNegation(tokens, negationIndex))
+    ? {
+        end: sentence.end,
+        start: sentence.start,
+        text: sentence.text
+      }
+    : undefined;
 }
 
 function sameSubjectCopularReframe(
@@ -140,56 +168,6 @@ function progressiveVerbMirror(
       negation.affirmativeAux,
       verb
     ])
-  );
-}
-
-function meaningReframe(
-  aTokens: readonly Token[],
-  bTokens: readonly Token[]
-): boolean {
-  const tokenWords = words(aTokens);
-
-  for (let index = 0; index < tokenWords.length; index += 1) {
-    const current = tokenWords[index];
-    const next = tokenWords[index + 1];
-    const subject = tokenWords.slice(0, index);
-
-    if (!validSubject(subject)) {
-      continue;
-    }
-
-    if (DO_NEGATIONS.has(current ?? "")) {
-      const meaningIndex = skipOptionalAdverbs(tokenWords, index + 1);
-
-      if (tokenWords[meaningIndex] === "mean") {
-        return startsWithMeaningAffirmative(bTokens, subject);
-      }
-    }
-
-    if (EXPLICIT_DO_AUXILIARIES.has(current ?? "") && next === "not") {
-      const meaningIndex = skipOptionalAdverbs(tokenWords, index + 2);
-
-      if (tokenWords[meaningIndex] === "mean") {
-        return startsWithMeaningAffirmative(bTokens, subject);
-      }
-    }
-  }
-
-  return false;
-}
-
-function startsWithMeaningAffirmative(
-  bTokens: readonly Token[],
-  subject: readonly string[]
-): boolean {
-  return (
-    startsWithWords(bTokens, [...subject, "means"]) ||
-    startsWithWords(bTokens, [...subject, "mean"]) ||
-    startsWithWords(bTokens, [...subject, "does", "mean"]) ||
-    startsWithWords(bTokens, [...subject, "do", "mean"]) ||
-    startsWithWords(bTokens, ["it", "means"]) ||
-    startsWithWords(bTokens, ["this", "means"]) ||
-    startsWithWords(bTokens, ["that", "means"])
   );
 }
 
@@ -294,6 +272,12 @@ function explicitContrastPivotReframe(
   );
 }
 
+function startsWithExplicitReplacement(tokens: readonly Token[]): boolean {
+  return (
+    startsWithWords(tokens, ["instead"]) || startsWithWords(tokens, ["rather"])
+  );
+}
+
 function hasPairNegationSignal(tokens: readonly Token[]): boolean {
   return (
     findNegationIndex(tokens) !== undefined ||
@@ -345,7 +329,10 @@ function sentencePairReframe(
     sameSubjectCopularReframe(aTokens, bTokens) ||
     pronounCopularReframe(aTokens, bTokens) ||
     progressiveVerbMirror(aTokens, bTokens) ||
+    (startsWithExplicitReplacement(bTokens) &&
+      !hasConcreteCorrectionEvidence(`${a.text} ${b.text}`)) ||
     meaningReframe(aTokens, bTokens) ||
+    makeMeaningReframe(aTokens, bTokens) ||
     needReframe(aTokens, bTokens) ||
     actionVerbMirror(aTokens, bTokens) ||
     negativeSlopReframe(aTokens, bTokens) ||
@@ -361,7 +348,9 @@ function sentencePairReframe(
   return undefined;
 }
 
-export function findNegationReframes(text: string): NegationReframeMatch[] {
+export function findSentenceNegationReframes(
+  text: string
+): NegationReframeMatch[] {
   const sentences = splitSentences(text);
   const matches: NegationReframeMatch[] = [];
 

@@ -2430,6 +2430,559 @@
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
       "line": 89
+    },
+    {
+      "text": "However, the launch note stayed vague. Therefore, the owner guessed at the rollback. Ultimately, the review became a ceremony instead of a decision.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 979
+    },
+    {
+      "text": "The report says the queue recovered. The report says the owners aligned. The report says the deadline moved.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 981
+    },
+    {
+      "text": "Experts agree that teams work better when meetings start with trust.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 983
+    },
+    {
+      "text": "Data shows that retention improves when owners publish rollback notes before launch.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 985
+    },
+    {
+      "text": "However, the rollback owner signed the launch note after the incident review.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 125
+    },
+    {
+      "text": "The report says the queue recovered. Its owner signed the rollback. Finance approved the export before the deadline moved.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 127
+    },
+    {
+      "text": "Data from the June retention cohort shows that renewal improved by four percent.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 133
+    },
+    {
+      "text": "In summary, the roadmap proves that everything is aligned.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 987
+    },
+    {
+      "text": "The bottom line is that the process shows meaningful progress.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 989
+    },
+    {
+      "text": "Some critics argue that the redesign represents a major turning point for teams.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 991
+    },
+    {
+      "text": "Many believe the platform is known for changing how work happens.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 993
+    },
+    {
+      "text": "Several important factors shaped the final outcome.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 995
+    },
+    {
+      "text": "Various areas created meaningful impact across the organization.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 997
+    },
+    {
+      "text": "In summary, invoices failed because the retry worker used the old token.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 135
+    },
+    {
+      "text": "The bottom line is that cache misses rose from 4 percent to 11 percent.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 137
+    },
+    {
+      "text": "Seven supplier delays shaped the final outcome.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 143
+    },
+    {
+      "text": "Several important factors, including late customs paperwork and a missing invoice, shaped the final outcome.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 145
+    },
+    {
+      "text": "This changes the invoice total because the tax rate moved from 6 percent to 8 percent.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 153
+    },
+    {
+      "text": "That shows the crawler received a 403 before the body copy rendered.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 155
+    },
+    {
+      "text": "It explains why the queue stalled after the retry worker lost its token.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 157
+    },
+    {
+      "text": "The missing layer is access control: only billing admins can export invoices.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 159
+    },
+    {
+      "text": "The practical answer is to rotate the signing key before the deployment.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 161
+    },
+    {
+      "text": "The useful version is the one with line numbers and source offsets.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 163
+    },
+    {
+      "text": "The air felt heavy because smoke from the kiln filled the courtyard.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 165
+    },
+    {
+      "text": "The room went silent after the generator stopped.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 167
+    },
+    {
+      "text": "The market felt different because three stalls moved after the fire.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 169
+    },
+    {
+      "text": "Her stomach tightened because the harness strap pulled across the bruise.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 171
+    },
+    {
+      "text": "His shoulders sank after the doctor lowered the weighted brace.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 173
+    },
+    {
+      "text": "Her throat closed because the peanut lodged below the tongue.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 175
+    },
+    {
+      "text": "The weight settled on the scale at 12 kilograms.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 177
+    },
+    {
+      "text": "The words hit the paper banner like rain because the roof leaked.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 179
+    },
+    {
+      "text": "The route is easy because the trail is paved and marked.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 171
+    },
+    {
+      "text": "The movie is different because the director restored the missing scene.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 173
+    },
+    {
+      "text": "The repair gives you a receipt. The warranty gives you a serial number.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 175
+    },
+    {
+      "text": "The dashboard gets one chart. The export gets another column.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 177
+    },
+    {
+      "text": "The patient gets one dose. The nurse records another dose.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 179
+    },
+    {
+      "text": "The answer key is straightforward because every page lists the worked solution.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 181
+    },
+    {
+      "text": "The practical guide is useful because it names the commands and flags.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 183
+    },
+    {
+      "text": "What changed after the first patch was the cache key.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 185
+    },
+    {
+      "text": "What works better than the old endpoint is the signed upload URL.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 187
+    },
+    {
+      "text": "The missing layer is authentication because the staging API rejects public tokens.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 189
+    },
+    {
+      "text": "The focus is practical optics in the microscope calibration note.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 191
+    },
+    {
+      "text": "By the end of the review, she realized what mattered.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 193
+    },
+    {
+      "text": "After the third revision, the stakes felt real.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 195
+    },
+    {
+      "text": "By Friday, the meeting room felt different now.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 201
+    },
+    {
+      "text": "After that, the conversation shifted.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 203
+    },
+    {
+      "text": "By the end of the review, she realized the CDN rule still pointed at the old host.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 181
+    },
+    {
+      "text": "After the third revision, the stakes were real because the contract penalty started Monday.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 183
+    },
+    {
+      "text": "The meeting room felt different after facilities removed the temporary wall.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 189
+    },
+    {
+      "text": "After that, the conversation shifted to the missing invoice export.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 191
+    },
+    {
+      "text": "The fix is not more dashboards but better judgment.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1047
+    },
+    {
+      "text": "The work is less about volume than judgment.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1049
+    },
+    {
+      "text": "A better strategy is boring.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1051
+    },
+    {
+      "text": "This practical focus is the whole game.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1053
+    },
+    {
+      "text": "She did not answer the criticism. Instead, she shifted the frame.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1055
+    },
+    {
+      "text": "The repair is not more dashboards but the invoice export named in the audit.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 193
+    },
+    {
+      "text": "The cache is less stable than the signed upload URL under retry load.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 195
+    },
+    {
+      "text": "A better strategy is documented in the rollback checklist.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 197
+    },
+    {
+      "text": "This practical focus is the microscope adjustment that keeps the slide centered.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 199
+    },
+    {
+      "text": "By the end of the meeting, doubt entered the room.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 205
+    },
+    {
+      "text": "By then, the answer had arrived as a small signal.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 209
+    },
+    {
+      "text": "That was where the real work began.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 211
+    },
+    {
+      "text": "The point was not control for its own sake.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 213
+    },
+    {
+      "text": "Doubt entered the room after the auditor found two missing signatures.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 193
+    },
+    {
+      "text": "The answer arrived as a signed email from the billing owner.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 197
+    },
+    {
+      "text": "The real work began at eight thirty with the masonry crew.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 199
+    },
+    {
+      "text": "The point was not control group B because the trial assigned it after screening.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 201
+    },
+    {
+      "text": "That is what makes the method powerful.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1057
+    },
+    {
+      "text": "This is why it works.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1059
+    },
+    {
+      "text": "The lesson here is simple.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1061
+    },
+    {
+      "text": "The practical takeaway is clear.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1063
+    },
+    {
+      "text": "Watch how the frame changes.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1065
+    },
+    {
+      "text": "You can see it everywhere now.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1067
+    },
+    {
+      "text": "That is what makes the motor rotate at 1,800 rpm.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 203
+    },
+    {
+      "text": "This is why the test failed when the token expired before retry.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 205
+    },
+    {
+      "text": "The lesson here is to rotate the signing key every 30 days.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 207
+    },
+    {
+      "text": "The practical takeaway is in Table 2 of the audit report.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 209
+    },
+    {
+      "text": "Watch how voltage changes after the fuse opens.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 211
+    },
+    {
+      "text": "You can see it in the microscope slide after the dye sets.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 213
     }
   ]
 }

@@ -8,7 +8,7 @@ import { reportsForPolicy } from "../../reporting/reports.js";
 type TextlintUnitProvider<Options extends object> = (
   document: TxtDocumentNode,
   context: Readonly<TextlintRuleContext>,
-  options: Readonly<Options>
+  options: Readonly<Options> | undefined
 ) => readonly TextUnit[];
 
 type TextlintRuleDefinition<Options extends object> =
@@ -19,7 +19,7 @@ type TextlintRuleDefinition<Options extends object> =
 export function defineTextlintRule<
   Options extends object = Record<string, never>
 >(definition: TextlintRuleDefinition<Options>): TextlintRuleModule<Options> {
-  return (context, options = {} as Options) => {
+  return (context, options) => {
     const { Syntax } = context;
 
     return {

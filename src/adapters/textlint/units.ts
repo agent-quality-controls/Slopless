@@ -99,6 +99,29 @@ export function documentUnit(document: TxtDocumentNode): TextUnit {
   };
 }
 
+type RawDocumentNode = TxtDocumentNode & {
+  readonly raw?: unknown;
+};
+
+function rawDocumentText(document: TxtDocumentNode): string {
+  const raw = (document as RawDocumentNode).raw;
+  return typeof raw === "string" ? raw : documentText(document);
+}
+
+export function paragraphSequenceUnit(document: TxtDocumentNode): TextUnit {
+  const text = rawDocumentText(document);
+
+  return {
+    id: "paragraph-sequence:0",
+    kind: "document",
+    node: document,
+    normalizedText: normalizeForMatch(text),
+    range: { end: text.length, start: 0 },
+    sourceRangeFor: (range) => range,
+    text
+  };
+}
+
 export function paragraphUnits(document: TxtDocumentNode): TextUnit[] {
   return allParagraphs(document).map((paragraph, index) => ({
     id: `paragraph:${index}`,

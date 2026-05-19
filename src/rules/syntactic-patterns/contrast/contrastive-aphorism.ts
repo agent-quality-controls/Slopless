@@ -6,6 +6,8 @@ import {
   tokens,
   trimTerminalPunctuation
 } from "../../../shared/matchers/prose-patterns.js";
+import { pairHasAbstractSubjectOrObject } from "./private/abstract-pair-gates.js";
+import { matchSameSentenceContrast } from "./private/same-sentence-contrast.js";
 
 const PREFIXES = ["and ", "but ", "so ", "because "];
 const ENOUGH_FOR_SUFFIXES = [" is enough for this", " is enough for that"];
@@ -60,7 +62,8 @@ function matchesPattern(
   }
 
   for (let index = 0; index < pattern.length; index += 1) {
-    if (!partMatches(words[index], pattern[index] as Part)) {
+    const part = pattern[index];
+    if (part === undefined || !partMatches(words[index], part)) {
       return false;
     }
   }
@@ -226,19 +229,105 @@ function matchCurriculumPair(
   return undefined;
 }
 
+function matchLessMorePair(first: string, second: string): string | undefined {
+  const a = tokens(cleanSentence(first, PREFIXES));
+  const b = tokens(cleanSentence(second, PREFIXES));
+
+  if (
+    startsWithWords(a, ["it", "is", "less"]) &&
+    startsWithWords(b, ["it", "is", "more"])
+  ) {
+    return "it-is-less-it-is-more";
+  }
+
+  return undefined;
+}
+
+function hasTokenPair(
+  words: readonly string[],
+  first: string,
+  second: string
+): boolean {
+  return words.some(
+    (word, index) => word === first && words[index + 1] === second
+  );
+}
+
+function matchGivesYouPair(first: string, second: string): string | undefined {
+  const a = tokens(cleanSentence(first, PREFIXES));
+  const b = tokens(cleanSentence(second, PREFIXES));
+
+  if (
+    hasTokenPair(a, "gives", "you") &&
+    hasTokenPair(b, "gives", "you") &&
+    a.at(-1) !== b.at(-1) &&
+    pairHasAbstractSubjectOrObject(a, "gives", "you") &&
+    pairHasAbstractSubjectOrObject(b, "gives", "you")
+  ) {
+    return "x-gives-you-y-pair";
+  }
+
+  return undefined;
+}
+
+function matchGetsOneAnotherPair(
+  first: string,
+  second: string
+): string | undefined {
+  const a = tokens(cleanSentence(first, PREFIXES));
+  const b = tokens(cleanSentence(second, PREFIXES));
+
+  if (hasTokenPair(a, "gets", "one") && hasTokenPair(b, "gets", "another")) {
+    return pairHasAbstractSubjectOrObject(a, "gets", "one") &&
+      pairHasAbstractSubjectOrObject(b, "gets", "another")
+      ? "x-gets-one-y-gets-another"
+      : undefined;
+  }
+
+  return undefined;
+}
+
+function hasEvaluativePredicate(words: readonly string[]): boolean {
+  return words.some(
+    (word, index) =>
+      ["is", "feels", "get", "gets", "becomes"].includes(word) &&
+      pairHasAbstractSubjectOrObject(words, word, words[index + 1] ?? "")
+  );
+}
+
+function matchEvaluativeContrastPair(
+  first: string,
+  second: string
+): string | undefined {
+  const a = tokens(cleanSentence(first, PREFIXES));
+  const b = tokens(cleanSentence(second, PREFIXES));
+  const aTail = a.at(-1);
+  const bTail = b.at(-1);
+
+  return aTail !== undefined &&
+    bTail !== undefined &&
+    aTail !== bTail &&
+    hasEvaluativePredicate(a) &&
+    hasEvaluativePredicate(b)
+    ? "abstract-evaluative-pair"
+    : undefined;
+}
+
 const rule = defineTextlintRule({
   detector: {
     detect: ({ units }) => {
       const detections = units.flatMap((unit) => {
         const signal = matchSingle(unit.text);
-        if (signal === undefined) {
+        const sameSentenceSignal =
+          signal ?? matchSameSentenceContrast(unit.text);
+        if (sameSentenceSignal === undefined) {
           return [];
         }
 
         return [
           {
-            evidence: signal,
-            label: signal,
+            evidence: sameSentenceSignal,
+            label: sameSentenceSignal,
             range: { start: 0, end: unit.text.length },
             ruleId: "syntactic-patterns:contrastive-aphorism" as const,
             unitId: unit.id
@@ -252,8 +341,16 @@ const rule = defineTextlintRule({
         if (current === undefined || next === undefined) {
           continue;
         }
+        if (current.node !== next.node) {
+          continue;
+        }
 
-        const signal = matchCurriculumPair(current.text, next.text);
+        const signal =
+          matchCurriculumPair(current.text, next.text) ??
+          matchLessMorePair(current.text, next.text) ??
+          matchGivesYouPair(current.text, next.text) ??
+          matchGetsOneAnotherPair(current.text, next.text) ??
+          matchEvaluativeContrastPair(current.text, next.text);
         if (signal !== undefined) {
           detections.push({
             evidence: signal,

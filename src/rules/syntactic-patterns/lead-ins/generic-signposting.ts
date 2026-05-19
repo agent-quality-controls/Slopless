@@ -1,3 +1,4 @@
+import { hasConcreteImplementationSummary } from "../../../shared/matchers/concrete-evidence.js";
 import {
   cleanSentence,
   containsAny,
@@ -5,6 +6,7 @@ import {
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
 import { oneToOneRule } from "../../private/textlint-rule-builders.js";
+import { matchDiscourseEvaluationFrame } from "./private/discourse-evaluation.js";
 
 const PREFIXES = ["however, ", "but ", "and ", "so "];
 const IMPORTANT_TO_PATTERNS = [
@@ -24,18 +26,28 @@ const CONSULTATION_PATTERNS = [
 ];
 const NOTE_PATTERNS = ["please note that", "please note"];
 const QUESTION_PATTERNS = [
+  "the audit move",
+  "wrong level of question",
   "the useful question is",
   "the useful move is",
+  "the missing layer is",
   "the practical move is",
+  "the practical point is",
   "the real question is",
-  "the better question is"
+  "the better question is",
+  "the better operating question is"
 ];
 const ANSWER_PATTERNS = [
+  "the lazy conclusion is",
+  "the better conclusion",
   "the answer is simple",
   "the answer is straightforward",
+  "the grown-up answer is",
   "the practical answer is",
   "the short answer is",
   "the better conclusion is",
+  "the clear answer is",
+  "the correct answer is",
   "the useful conclusion is simple"
 ];
 const FRAME_PATTERNS = [
@@ -45,6 +57,7 @@ const FRAME_PATTERNS = [
   "the useful version is",
   "the point is plain enough"
 ];
+const DETERMINERS = ["a", "an", "the", "this", "that"];
 const SEQUENCE_PATTERNS = [
   "a simple sequence works well",
   "a simple pattern works well",
@@ -96,22 +109,31 @@ const FRAME_ADJECTIVES = [
 ];
 const FRAME_NOUNS = [
   "answer",
+  "approach",
   "challenge",
+  "choice",
   "conclusion",
   "fact",
+  "fix",
+  "focus",
   "frame",
   "idea",
   "lesson",
   "move",
+  "path",
   "point",
+  "principle",
+  "priority",
   "problem",
   "question",
   "result",
   "rule",
   "shift",
   "signal",
+  "strategy",
   "test",
   "thing",
+  "tradeoff",
   "truth",
   "version",
   "way",
@@ -155,10 +177,11 @@ function matchEvaluativeFrame(words: readonly string[]): string | undefined {
   const [first, second, third, fourth] = words;
 
   if (
-    first === "the" &&
+    first !== undefined &&
     second !== undefined &&
     third !== undefined &&
     fourth !== undefined &&
+    DETERMINERS.includes(first) &&
     FRAME_ADJECTIVES.includes(second) &&
     FRAME_NOUNS.includes(third) &&
     ABSTRACT_FRAME_VERBS.includes(fourth)
@@ -205,6 +228,15 @@ function matchWhatFrame(words: readonly string[]): string | undefined {
     return "what-matters-most";
   }
 
+  if (
+    words.length === 3 &&
+    first === "what" &&
+    (second === "helped" || second === "worked" || second === "changed") &&
+    (third === "more" || third === "most")
+  ) {
+    return `what-${second}-${third}`;
+  }
+
   return undefined;
 }
 
@@ -213,17 +245,36 @@ function matchAbstractFrame(text: string): string | undefined {
   return (
     matchModifiedAbstractFrame(words) ??
     matchEvaluativeFrame(words) ??
+    matchDiscourseEvaluationFrame(words) ??
     matchPointIsToFrame(words) ??
     matchWhatFrame(words)
   );
 }
 
+function matchFormulaicContentSetup(text: string): string | undefined {
+  if (
+    text.startsWith("each ") &&
+    text.includes(" has a source") &&
+    text.includes(" a reveal") &&
+    (text.includes("next move") || text.includes("buyer"))
+  ) {
+    return "each-piece-has-source-reveal-next-move";
+  }
+
+  return undefined;
+}
+
 function matchSignposting(sentence: string): SentenceMatch | undefined {
   const stripped = cleanSentence(sentence, PREFIXES);
+  const concreteImplementation = hasConcreteImplementationSummary(stripped);
   const abstract = matchAbstractFrame(stripped);
+  const formulaicSetup = matchFormulaicContentSetup(stripped);
 
-  if (abstract !== undefined) {
+  if (abstract !== undefined && !concreteImplementation) {
     return { kind: "abstract-evaluation-frame", signal: abstract };
+  }
+  if (formulaicSetup !== undefined) {
+    return { kind: "formulaic-content-setup", signal: formulaicSetup };
   }
 
   const checks: readonly (readonly [string, readonly string[]])[] = [
@@ -239,6 +290,14 @@ function matchSignposting(sentence: string): SentenceMatch | undefined {
 
   for (const [kind, patterns] of checks) {
     const signal = containsAny(stripped, patterns);
+    if (
+      concreteImplementation &&
+      (kind === "answer-frame" ||
+        kind === "frame-signpost" ||
+        kind === "question-frame")
+    ) {
+      continue;
+    }
     if (signal !== undefined) {
       return { kind, signal };
     }

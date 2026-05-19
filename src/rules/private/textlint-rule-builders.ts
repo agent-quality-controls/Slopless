@@ -5,6 +5,7 @@ import {
   allParagraphUnits,
   headingUnits,
   paragraphUnits,
+  paragraphSequenceUnit,
   linkUnits,
   sectionFirstSentenceUnits,
   sectionLastSentenceUnits,
@@ -35,13 +36,14 @@ type UnitKind =
   | "link"
   | "section-first-sentence"
   | "section-last-sentence"
+  | "paragraph-sequence"
   | "sentence"
   | "str";
 
 type DetectionRuleInput<Options extends object> = {
   readonly detect: (
     unit: TextUnit,
-    options: Readonly<Options>
+    options: Readonly<Options> | undefined
   ) => readonly LocalDetection[];
   readonly family: RuleFamilyId;
   readonly formatMessage: (report: RuleReport) => string;
@@ -87,6 +89,8 @@ export function oneToOneRule<Options extends object = Record<string, never>>(
           return headingUnits(document, input.ignoredAncestorTypes);
         case "paragraph":
           return paragraphUnits(document);
+        case "paragraph-sequence":
+          return [paragraphSequenceUnit(document)];
         case "link":
           return linkUnits(document, input.ignoredAncestorTypes);
         case "section-first-sentence":

@@ -1,4 +1,4 @@
-import type { TxtHeaderNode } from "@textlint/ast-node-types";
+import type { AnyTxtNode, TxtHeaderNode } from "@textlint/ast-node-types";
 import { splitWhitespace } from "../../shared/text/whitespace.js";
 import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
@@ -48,10 +48,13 @@ function countCapitalizedNonFirstWords(text: string): number {
   return count;
 }
 
+function isHeaderNode(node: AnyTxtNode): node is TxtHeaderNode {
+  return node.type === "Header" && "depth" in node;
+}
+
 const rule = oneToOneRule({
   detect: (unit) => {
-    const node = unit.node as TxtHeaderNode;
-    if (node.depth > MAX_RUST_HEADING_DEPTH) {
+    if (!isHeaderNode(unit.node) || unit.node.depth > MAX_RUST_HEADING_DEPTH) {
       return [];
     }
 

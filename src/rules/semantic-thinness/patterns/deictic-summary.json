@@ -9,8 +9,25 @@
     "{deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.",
     "{deicticSubject} {linkingVerb} the {summaryNoun} that {thinPredicate}.",
     "{deicticSubject} {linkingVerb} the {summaryNoun} {genericAudience} {reactionVerb}.",
+    "{deicticSubject} {summaryVerb} the {summaryNoun}.",
+    "{deicticSubject} {summaryVerb} the {evaluativeAdjective} {summaryNoun}.",
+    "{deicticSubject} {meaningVerb} {summaryNoun}.",
+    "{deicticSubject} {explanationVerb} {summaryNoun}.",
+    "{deicticSubject} {explanationVerb} the {summaryNoun}.",
+    "{deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
+    "{deicticSubject} {explanationVerb} why {abstractSubject} {abstractVerb}.",
+    "{deicticSubject} {explanationVerb} how {abstractSubject} {abstractVerb}.",
+    "{deicticSubject} means the {artifactNoun} has to {thinObligation}.",
+    "{deicticSubject} means the {artifactNoun} has to contain {abstractObject} worth {abstractGerund}.",
+    "{deicticSubject} {linkingVerb} the kind of {summaryNoun}.",
+    "{deicticSubject} {linkingVerb} the type of {summaryNoun}.",
+    "{deicticSubject} fits the {abstractSituation}.",
+    "{deicticSubject} {changeVerb} the {changeObject}.",
     "{deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.",
-    "{deicticSubject} {linkingVerb} how {abstractSubject} {abstractVerb}."
+    "{deicticSubject} {linkingVerb} how {abstractSubject} {abstractVerb}.",
+    "{deicticSubject} {linkingVerb} why {abstractSubject} {importanceVerb}.",
+    "{deicticSubject} {linkingVerb} where {abstractSubject} {startVerb}.",
+    "{deicticSubject} {linkingVerb} the reason {abstractSubject} {importanceVerb}."
   ],
   "slots": {
     "deicticSubject": ["that", "this", "it"],
@@ -24,7 +41,13 @@
       "simple",
       "honest",
       "actual",
-      "central"
+      "central",
+      "boring",
+      "useful",
+      "missing",
+      "whole",
+      "right",
+      "wrong"
     ],
     "summaryNoun": [
       "part",
@@ -36,8 +59,81 @@
       "nature",
       "invitation",
       "shift",
-      "work"
+      "work",
+      "report",
+      "decision",
+      "decisions",
+      "fix",
+      "problem",
+      "question",
+      "audit question",
+      "strategy",
+      "plan",
+      "surface",
+      "layer",
+      "source material",
+      "issue",
+      "signal",
+      "reason",
+      "takeaway"
     ],
+    "summaryVerb": ["changes", "changed", "shifts", "shifted"],
+    "changeVerb": ["changes", "changed", "reshapes", "reframes"],
+    "changeObject": [
+      "brief",
+      "page brief",
+      "report",
+      "plan",
+      "strategy",
+      "conversation",
+      "decision"
+    ],
+    "abstractSituation": [
+      "world",
+      "world we are in",
+      "moment",
+      "reality",
+      "new reality",
+      "search reality",
+      "context"
+    ],
+    "meaningVerb": ["means", "meant", "does not mean", "doesn't mean"],
+    "explanationVerb": ["shows", "showed", "explains", "explained", "proves"],
+    "weakJudgment": [
+      "useless",
+      "useful",
+      "simple",
+      "enough",
+      "wrong",
+      "right",
+      "dead",
+      "alive"
+    ],
+    "artifactNoun": [
+      "article",
+      "content",
+      "draft",
+      "page",
+      "post",
+      "report",
+      "source"
+    ],
+    "thinObligation": [
+      "be useful",
+      "stand alone",
+      "carry the answer",
+      "contain the signal",
+      "contain the useful part"
+    ],
+    "abstractObject": [
+      "source material",
+      "evidence",
+      "detail",
+      "context",
+      "substance",
+      "signal"
+    ],
+    "abstractGerund": ["retrieving", "citing", "sharing", "remembering"],
     "genericAudience": [
       "nobody",
       "people",
@@ -69,10 +165,21 @@
       "progress",
       "trust",
       "clarity",
+      "content",
+      "engagement",
+      "source material",
       "the work",
       "the shift",
       "the lesson",
-      "the story"
+      "the story",
+      "the answer",
+      "the focus",
+      "the strategy",
+      "the plan",
+      "the problem",
+      "the solution",
+      "the report",
+      "the decision"
     ],
     "abstractVerb": [
       "lives",
@@ -80,8 +187,13 @@
       "begins",
       "happens",
       "changes",
-      "settles"
-    ]
+      "settles",
+      "works",
+      "matters",
+      "moves"
+    ],
+    "importanceVerb": ["matters", "works", "changes", "counts", "sticks"],
+    "startVerb": ["starts", "begins", "happens", "shows up", "takes root"]
   },
   "rejectIf": [
     "sentence names the concrete lesson, truth, or decision",

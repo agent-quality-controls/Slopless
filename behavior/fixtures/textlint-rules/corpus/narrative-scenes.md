@@ -387,3 +387,41 @@ She did not wait for anyone to ask her a question. She pointed a small paw towar
 He didn't argue with the guard. Instead, he opened the ledger.
 
 The clerk checked the deployment notice. The beta endpoint is no longer available. It was removed after the migration. She did not wait because the clinic was closing. The status is not final because the review is still open.
+
+## widened narrative no-hit controls
+
+The control scene keeps purposeful movement, measured observation, and literal body facts out of the density rules.
+
+Cassia stepped onto the marked square, lifted the latch, and checked the number scratched into the brass plate.
+
+Arden looked through the spyhole, counted two guards, and wrote the count on the slate.
+
+Liska's ears flattened under the bandage because the medic wrapped it too tightly.
+
+Remal's tail twitched when the fly landed on the cut.
+
+Marius walked to the rack, picked up the practice sword, and measured it against the broken one.
+
+Cassia watched the pulley until the rope slipped, then marked the frayed strand with chalk.
+
+The actor lowered his voice for the stage cue.
+
+The singer smiled after the conductor gave the entrance cue.
+
+The runner crossed his arms to stretch his shoulders before the race.
+
+The technician rested her hands on the sill to reach the loose antenna cable.
+
+The weaker scene draft leaned on camera motion and body shorthand instead of action. Cassia's throat went tight before she could answer. For a moment, her eyes moved from the window to the floor.
+
+Cassia stepped to the sill, she rested her paws on the wood, and then she looked at Arden. Liska blinked. Her jaw tightened. Her shoulders stiffened.
+
+Arden scanned the alley. Cassia noticed the gate. Remal studied the roofline.
+
+The control passage kept the same surface vocabulary but tied it to evidence and tasks. Her eyes moved from the window to the floor because the chalk mark continued under the sill. She did not answer the guard because the bell drowned out his question. Cassia stepped to the sill, rested the pulley on the wood, and checked the knot number scratched into the post. Arden scanned the alley for the chalk arrow, counted two guards, and copied the mark onto his slate.
+
+The next rough scene leaned harder into stock emotional movement. In the silence after the vote, relief washed over the group. When the room went quiet, silence became heavy. A flicker of doubt crossed her face. His eyes flashed with something unreadable. She released a breath she did not know she was holding. Time seemed to slow around them.
+
+The mixed-beat sample stacked low-information movement, body, and looking beats. Cassia glanced at Arden. Her throat tightened. She stepped back. Her eyes found the door. She waited.
+
+The control scene kept similar words but gave each beat a task or physical cause. Water washed over the group after the roof seam split. The recording measured the silence at 28 decibels after the generator shut down. A flicker of blue light crossed the signal lens after Cassia turned the crank. His eyes flashed red because the stage reflector caught the glass lenses. The diver released a breath after surfacing beside the dock. The timer seemed to slow because the display refreshed once per second. Cassia glanced at the chalk arrow, stepped to the gate, copied the symbol, and waited for Arden to count the guards.

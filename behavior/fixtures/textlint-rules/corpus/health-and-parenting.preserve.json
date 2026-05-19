@@ -1317,6 +1317,48 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 83
+    },
+    {
+      "text": "Experts at the World Health Organization describe sleep guidance in the public report.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 129
+    },
+    {
+      "text": "Research shows that children need sleep.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 131
+    },
+    {
+      "text": "Some critics at the FDA argued in 2024 that the trial endpoint was too narrow.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 139
+    },
+    {
+      "text": "Many believe the platform is known for the 2025 accessibility audit.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 141
+    },
+    {
+      "text": "Her throat went tight because the allergic swelling had reached her airway.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 185
+    },
+    {
+      "text": "The patient's jaw tightened when the dentist adjusted the spacer.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 81
     }
   ]
 }

@@ -33,10 +33,10 @@ The implementation should add emotion-as-substance semantic templates, summary-f
 - `.plans/2026-05-17-181310-emotion-substance-and-density-expansion.md.manifest.toml`
 - `scripts/verify-emotion-substance-and-density-expansion.py`
 - `scripts/verify-all.sh`
-- `legacy/source-material/derived/sunstone-emotion-substance-variants.md`
-- `legacy/source-material/derived/sunstone-action-density-variants.md`
-- `legacy/source-material/derived/sunstone-slop-cases.md`
-- `legacy/source-material/incorporation-record.md`
+- `legacy/source-material/reviewed/skipped/sunstone-emotion-substance-variants.md`
+- `legacy/source-material/reviewed/skipped/sunstone-action-density-variants.md`
+- `legacy/source-material/reviewed/skipped/sunstone-slop-cases.md`
+- `legacy/source-material/reviewed/implemented/incorporation-record.md`
 - `src/rules/semantic-thinness/patterns/*.json`
 - `src/rules/semantic-thinness/private/pattern-data*.ts`
 - `src/rules/narrative-slop/body-action-density.ts`

@@ -49,19 +49,19 @@ function tokenSet(text: string): ReadonlySet<string> {
 }
 
 function configuredPolicy(
-  options: Readonly<RecommendedTermsOptions>
+  options: Readonly<RecommendedTermsOptions> | undefined
 ): RecommendedTermsPolicy | undefined {
   const terms =
-    options.terms?.map(normalizeForMatch).filter((term) => term.length > 0) ??
+    options?.terms?.map(normalizeForMatch).filter((term) => term.length > 0) ??
     [];
-  const minCount = options.minCount ?? 0;
+  const minCount = options?.minCount ?? 0;
 
   if (terms.length === 0 || minCount <= 0) {
     return undefined;
   }
 
   return {
-    allowInflections: options.allowInflections === true,
+    allowInflections: options?.allowInflections === true,
     minCount,
     terms
   };

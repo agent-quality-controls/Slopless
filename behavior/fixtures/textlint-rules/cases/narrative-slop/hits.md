@@ -55,3 +55,19 @@ For what seemed like an eternity, the room stayed silent.
 Cassia could not help but feel the alley watching. Her eyes never leaving the shuttered door, she felt a surge of panic.
 
 Arden couldn't shake the feeling that the mark had moved. A ghost of a smile crossed the guard's face. A dangerous glint flashed in his eyes.
+
+Cassia stepped to the sill, she rested her paws on the wood, and then she looked at Arden.
+
+Liska blinked. Her jaw tightened. Her shoulders stiffened.
+
+Arden scanned the alley. Cassia noticed the gate. Remal studied the roofline.
+
+A flicker of doubt crossed her face.
+
+His eyes flashed with something unreadable.
+
+She released a breath she did not know she was holding.
+
+Time seemed to slow around them.
+
+Cassia glanced at Arden. Her throat tightened. She stepped back. Her eyes found the door. She waited.

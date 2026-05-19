@@ -87,6 +87,59 @@ const GROUP_BEHAVIOR_GERUNDS = [
   "wondering"
 ];
 const BROAD_GROUP_LEADS = ["many", "most"];
+const VAGUE_QUANTIFIERS = ["a lot of", "many", "several", "some", "various"];
+const ABSTRACT_NOUNS = [
+  "areas",
+  "aspects",
+  "benefits",
+  "challenges",
+  "changes",
+  "concerns",
+  "factors",
+  "impacts",
+  "issues",
+  "outcomes",
+  "reasons",
+  "results",
+  "stakeholders",
+  "themes",
+  "things"
+];
+const ABSTRACT_MODIFIERS = [
+  "important",
+  "key",
+  "major",
+  "meaningful",
+  "notable",
+  "significant",
+  "various"
+];
+const EVIDENCE_MARKERS = [
+  "for example",
+  "including",
+  "such as",
+  "because",
+  "from ",
+  "after ",
+  "before ",
+  "when "
+];
+
+function hasDigit(text: string): boolean {
+  for (const character of text) {
+    if (character >= "0" && character <= "9") {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function hasEvidenceMarker(text: string): boolean {
+  return (
+    hasDigit(text) || EVIDENCE_MARKERS.some((marker) => text.includes(marker))
+  );
+}
 
 function matchGroupBehavior(words: readonly string[]): string | undefined {
   const [first, subject, third, gerund] = words;
@@ -107,7 +160,8 @@ function matchGroupBehavior(words: readonly string[]): string | undefined {
 }
 
 function matchUniversalizing(sentence: string): string | undefined {
-  const words = tokens(cleanSentence(sentence, PREFIXES));
+  const cleaned = cleanSentence(sentence, PREFIXES);
+  const words = tokens(cleaned);
   const group = matchGroupBehavior(words);
 
   if (group !== undefined) {
@@ -126,6 +180,50 @@ function matchUniversalizing(sentence: string): string | undefined {
 
     if (verb !== undefined) {
       return `${subject.join(" ")} ${verb}`;
+    }
+  }
+
+  const vagueQuantifier = matchVagueQuantifierAbstractNoun(words, cleaned);
+  if (vagueQuantifier !== undefined) {
+    return vagueQuantifier;
+  }
+
+  return undefined;
+}
+
+function matchVagueQuantifierAbstractNoun(
+  words: readonly string[],
+  text: string
+): string | undefined {
+  if (hasEvidenceMarker(text)) {
+    return undefined;
+  }
+
+  for (let index = 0; index < words.length; index += 1) {
+    const single = words[index];
+    const twoWord = `${words[index] ?? ""} ${words[index + 1] ?? ""}`;
+    const quantifier = VAGUE_QUANTIFIERS.includes(twoWord)
+      ? twoWord
+      : VAGUE_QUANTIFIERS.find((candidate) => candidate === single);
+    if (quantifier === undefined) {
+      continue;
+    }
+
+    const nounStart = quantifier.includes(" ") ? index + 2 : index + 1;
+    const first = words[nounStart];
+    const second = words[nounStart + 1];
+    const noun =
+      first !== undefined && ABSTRACT_NOUNS.includes(first)
+        ? first
+        : second !== undefined &&
+            first !== undefined &&
+            ABSTRACT_MODIFIERS.includes(first) &&
+            ABSTRACT_NOUNS.includes(second)
+          ? second
+          : undefined;
+
+    if (noun !== undefined) {
+      return `${quantifier} ${noun}`;
     }
   }
 

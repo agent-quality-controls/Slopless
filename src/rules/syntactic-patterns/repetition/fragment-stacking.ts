@@ -1,3 +1,4 @@
+import { hasConcreteInventorySubjects } from "../../../shared/matchers/concrete-evidence.js";
 import {
   type SplitSentence,
   splitSentences
@@ -324,7 +325,13 @@ function findFragmentStacks(text: string): FragmentMatch[] {
       break;
     }
 
-    if (fragmentTypes.length >= 2 && runSentences.length >= 3) {
+    if (
+      fragmentTypes.length >= 2 &&
+      runSentences.length >= 3 &&
+      !hasConcreteInventorySubjects(
+        runSentences.map((sentence) => sentence.text)
+      )
+    ) {
       const last = runSentences[runSentences.length - 1];
       if (last !== undefined) {
         matches.push({

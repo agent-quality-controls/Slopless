@@ -72,6 +72,10 @@ Research on self-determination theory shows that motivation lasts longer when a 
 
 Finally, if procrastination is chronic, severe, or tied to anxiety, depression, ADHD, burnout, or perfectionism that has become absurdly expensive, get help for the driver, not just the deadline.
 
+The parenting review keeps a sourced control beside the unsupported claims. Experts at the World Health Organization describe sleep guidance in the public report. Research shows that children need sleep.
+
+The review also keeps attribution controls next to the suspicious claims. Some critics at the FDA argued in 2024 that the trial endpoint was too narrow. Many believe the platform is known for the 2025 accessibility audit.
+
 ### screens with children
 
 The parenting section returns to screens as a household system.
@@ -417,3 +421,5 @@ Most adults need at least 7 hours of sleep per night.
 After the clinic updated its asthma action plan, the office manager checked the reminder system. Rotate the signing key every thirty days. The meeting ended after the clerk stamped the permit. The new tax rule raised quarterly payments by twelve percent. They stood by the north exit at thirteen minutes after eight.
 
 The pediatrician paused while the parents absorbed the discharge instructions. The moment passed. Then she showed them where the inhaler schedule belonged on the refrigerator.
+
+The allergy handout used body language only when the cause was physical. Her throat went tight because the allergic swelling had reached her airway. The patient's jaw tightened when the dentist adjusted the spacer.

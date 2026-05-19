@@ -4,16 +4,61 @@ plan = ".plans/2026-05-18-171548-new-density-checks.md"
 path = "src/rules/syntactic-patterns/lead-ins/formal-transition-density.ts"
 rule_id = "syntactic-patterns:formal-transition-density"
 report_policy = "density"
+registry = "src/registries/syntactic-patterns/lead-ins.ts"
+rule_key = "formal-transition-density"
+package_export = "./rules/syntactic-patterns/lead-ins/formal-transition-density"
 
 [[new_rule]]
 path = "src/rules/syntactic-patterns/repetition/repeated-sentence-starts.ts"
 rule_id = "syntactic-patterns:repeated-sentence-starts"
 report_policy = "density"
+registry = "src/registries/syntactic-patterns/repetition.ts"
+rule_key = "repeated-sentence-starts"
+package_export = "./rules/syntactic-patterns/repetition/repeated-sentence-starts"
 
 [[new_rule]]
 path = "src/rules/syntactic-patterns/authority/uncited-authority.ts"
 rule_id = "syntactic-patterns:uncited-authority"
 report_policy = "one-to-one"
+registry = "src/registries/syntactic-patterns/authority.ts"
+rule_key = "uncited-authority"
+package_export = "./rules/syntactic-patterns/authority/uncited-authority"
+
+[[fixture_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+text = "However, the launch note stayed vague. Therefore, the owner guessed at the rollback. Ultimately, the review became a ceremony instead of a decision."
+
+[[fixture_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+text = "The report says the queue recovered. The report says the owners aligned. The report says the deadline moved."
+
+[[fixture_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+text = "Experts agree that teams work better when meetings start with trust."
+
+[[fixture_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+text = "Data shows that retention improves when owners publish rollback notes before launch."
+
+[[fixture_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+text = "However, the rollback owner signed the launch note after the incident review."
+
+[[fixture_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+text = "The report says the queue recovered. Its owner signed the rollback. Finance approved the export before the deadline moved."
+
+[[fixture_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+text = "Experts at the World Health Organization describe sleep guidance in the public report."
+
+[[fixture_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+text = "Research shows that children need sleep."
+
+[[fixture_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+text = "Data from the June retention cohort shows that renewal improved by four percent."
 
 [[fixture_required]]
 path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
@@ -38,4 +83,3 @@ rules = [
   "syntactic-patterns:repeated-sentence-starts",
   "syntactic-patterns:uncited-authority"
 ]
-

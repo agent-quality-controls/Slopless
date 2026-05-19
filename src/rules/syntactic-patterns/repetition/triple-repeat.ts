@@ -1,3 +1,4 @@
+import { hasConcreteInventorySubjects } from "../../../shared/matchers/concrete-evidence.js";
 import { splitSentences } from "../../../shared/text/sentences.js";
 import { splitWhitespace } from "../../../shared/text/whitespace.js";
 import { oneToOneRule } from "../../private/textlint-rule-builders.js";
@@ -103,11 +104,16 @@ function findTripleRepeats(text: string): RepeatMatch[] {
       continue;
     }
 
+    const repeatedSentences = [first.text, second.text, third.text];
+    if (hasConcreteInventorySubjects(repeatedSentences)) {
+      continue;
+    }
+
     matches.push({
       end: third.end,
       kind: "triple",
       opener: firstOpener,
-      sentences: [first.text, second.text, third.text],
+      sentences: repeatedSentences,
       start: first.start
     });
   }
