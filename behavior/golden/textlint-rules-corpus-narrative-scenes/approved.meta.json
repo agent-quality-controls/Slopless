@@ -1,19 +1,19 @@
 {
   "suite": "textlint-rules-corpus-narrative-scenes",
   "kind": "approved",
-  "run_id": "2026-05-19T18-53-05.752744Z-df22e59a",
-  "run_commit": "1356572",
+  "run_id": "2026-05-20T16-55-02.412305Z-04547efb",
+  "run_commit": "212d962",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T18:53:05.752744Z",
-  "fixture_hash": "sha256:528e41adb94bf0a4b631c39b7c340b65eb482700f59cbe580eb8ee357ac5b8cf",
-  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "recorded_at": "2026-05-20T16:55:02.412305Z",
+  "fixture_hash": "sha256:0dee7af124f26419b76c869abce01c703dc59063d5da3d5e1bdd8c183b0e938e",
+  "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
     {
       "path": "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
-      "sha256": "sha256:69813e17751a6860a2ed78ef73aab4a5010ed54099e44d083fe9cd1f5700001f"
+      "sha256": "sha256:d1d86cbbbcf44d84958d791cf9146087778c9f69e53360f139cc2d9109d53fb7"
     }
   ],
-  "comment": "Restore corpus coverage for low-information beat density"
+  "comment": "Approve empty beat corpus findings"
 }

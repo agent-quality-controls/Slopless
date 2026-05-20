@@ -2533,6 +2533,29 @@
         "type": "lint"
       },
       {
+        "column": 25,
+        "index": 9620,
+        "line": 285,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 285
+          },
+          "start": {
+            "column": 25,
+            "line": 285
+          }
+        },
+        "message": "Narrative empty beat: generic animal body tag. Replace placeholder hesitation, waiting, or animal body shorthand with concrete action or cause.",
+        "range": [
+          9620,
+          9635
+        ],
+        "ruleId": "empty-beat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 1,
         "index": 10400,
         "line": 303,
@@ -2851,6 +2874,29 @@
           10927
         ],
         "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 10888,
+        "line": 321,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 321
+          },
+          "start": {
+            "column": 26,
+            "line": 321
+          }
+        },
+        "message": "Narrative empty beat: generic animal body tag. Replace placeholder hesitation, waiting, or animal body shorthand with concrete action or cause.",
+        "range": [
+          10888,
+          10904
+        ],
+        "ruleId": "empty-beat",
         "severity": 2,
         "type": "lint"
       },
@@ -3564,6 +3610,190 @@
           17058
         ],
         "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 68,
+        "index": 17988,
+        "line": 451,
+        "loc": {
+          "end": {
+            "column": 94,
+            "line": 451
+          },
+          "start": {
+            "column": 68,
+            "line": 451
+          }
+        },
+        "message": "Narrative empty beat: empty hesitation beat. Replace placeholder hesitation, waiting, or animal body shorthand with concrete action or cause.",
+        "range": [
+          17988,
+          18014
+        ],
+        "ruleId": "empty-beat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 165,
+        "index": 18085,
+        "line": 451,
+        "loc": {
+          "end": {
+            "column": 227,
+            "line": 451
+          },
+          "start": {
+            "column": 165,
+            "line": 451
+          }
+        },
+        "message": "Narrative empty beat: empty placeholding beat. Replace placeholder hesitation, waiting, or animal body shorthand with concrete action or cause.",
+        "range": [
+          18085,
+          18147
+        ],
+        "ruleId": "empty-beat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 208,
+        "index": 18128,
+        "line": 451,
+        "loc": {
+          "end": {
+            "column": 226,
+            "line": 451
+          },
+          "start": {
+            "column": 208,
+            "line": 451
+          }
+        },
+        "message": "Narrative empty beat: generic animal body tag. Replace placeholder hesitation, waiting, or animal body shorthand with concrete action or cause.",
+        "range": [
+          18128,
+          18146
+        ],
+        "ruleId": "empty-beat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18149,
+        "line": 453,
+        "loc": {
+          "end": {
+            "column": 451,
+            "line": 453
+          },
+          "start": {
+            "column": 1,
+            "line": 453
+          }
+        },
+        "message": "Paragraph has 7 sentences. Keep paragraphs to 6 sentences or fewer.",
+        "range": [
+          18149,
+          18599
+        ],
+        "ruleId": "paragraph-length",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 95,
+        "index": 18243,
+        "line": 453,
+        "loc": {
+          "end": {
+            "column": 264,
+            "line": 453
+          },
+          "start": {
+            "column": 95,
+            "line": 453
+          }
+        },
+        "message": "Triple repeat opener found: \"liska\". Vary the sentence openers.",
+        "range": [
+          18243,
+          18412
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 101,
+        "index": 18249,
+        "line": 453,
+        "loc": {
+          "end": {
+            "column": 277,
+            "line": 453
+          },
+          "start": {
+            "column": 101,
+            "line": 453
+          }
+        },
+        "message": "Body-action density: 3 movement cues in a short span (paused, waited).",
+        "range": [
+          18249,
+          18425
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 148,
+        "index": 18296,
+        "line": 453,
+        "loc": {
+          "end": {
+            "column": 322,
+            "line": 453
+          },
+          "start": {
+            "column": 148,
+            "line": 453
+          }
+        },
+        "message": "Triple repeat opener found: \"liska\". Vary the sentence openers.",
+        "range": [
+          18296,
+          18470
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 204,
+        "index": 18352,
+        "line": 453,
+        "loc": {
+          "end": {
+            "column": 264,
+            "line": 453
+          },
+          "start": {
+            "column": 204,
+            "line": 453
+          }
+        },
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
+        "range": [
+          18352,
+          18412
+        ],
+        "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
       }

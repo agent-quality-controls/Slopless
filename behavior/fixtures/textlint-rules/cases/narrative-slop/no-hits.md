@@ -101,3 +101,15 @@ The field biologist watched the fox, counted the kits, noted the den, and logged
 The runner crossed the line, stopped the timer, checked her pulse, and drank water.
 
 Cassia copied the arrow, checked the gate symbol, counted the guards, and marked the map.
+
+Liska paused to listen for the bell under the stair.
+
+Liska paused for a second to count the missing buttons.
+
+Liska lingered by the broken latch to test whether it moved.
+
+Liska waited beside the gate until Marius raised his paw.
+
+Her tail twitched when the fly landed on the cut.
+
+Her ears flattened under the bandage because the medic wrapped it too tightly.

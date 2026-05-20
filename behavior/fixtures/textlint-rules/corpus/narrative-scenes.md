@@ -447,3 +447,7 @@ The runner crossed the line, stopped the timer, checked her pulse, and drank wat
 Cassia copied the arrow, checked the gate symbol, counted the guards, and marked the map.
 
 The new controls keep short negation and silence lines literal when the cause is named. It wasn't just a sound because the meter also recorded a vibration in the floor. The script didn't wait for input because the timeout was zero. Everyone went quiet because Marius raised one paw. Silence filled the yard after the sound meter stopped at 28 decibels.
+
+The next Liska passage uses empty beats instead of story movement. Liska paused for a second. Then she led them across the yard-compound to the steep stone stairs. Liska lingered in the dusty yard-compound, her tail twitching.
+
+The matching control passage keeps the same surface words but gives each beat a job or cause. Liska paused to listen for the bell under the stair. Liska paused for a second to count the missing buttons. Liska lingered by the broken latch to test whether it moved. Liska waited beside the gate until Marius raised his paw. Her tail twitched when the fly landed on the cut. Her ears flattened under the bandage because the medic wrapped it too tightly.

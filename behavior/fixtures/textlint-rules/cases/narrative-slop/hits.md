@@ -81,3 +81,7 @@ The captain walked to the rail, looked across the water, looked back at the crew
 Her shoulders tensed, her breath slipped out, her fingers brushed the scar, and she looked away.
 
 He blinked, looked down, looked up, and felt the moment settle like dust across his skin.
+
+Liska paused for a second. Then she led them across the yard-compound to the steep stone stairs.
+
+Liska lingered in the dusty yard-compound, her tail twitching.

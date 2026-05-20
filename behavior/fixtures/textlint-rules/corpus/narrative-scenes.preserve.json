@@ -1562,6 +1562,62 @@
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
       "line": 233
+    },
+    {
+      "text": "Liska paused for a second. Then she led them across the yard-compound to the steep stone stairs.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 85
+    },
+    {
+      "text": "Liska lingered in the dusty yard-compound, her tail twitching.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 87
+    },
+    {
+      "text": "Liska paused to listen for the bell under the stair.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 105
+    },
+    {
+      "text": "Liska paused for a second to count the missing buttons.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 107
+    },
+    {
+      "text": "Liska lingered by the broken latch to test whether it moved.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 109
+    },
+    {
+      "text": "Liska waited beside the gate until Marius raised his paw.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 111
+    },
+    {
+      "text": "Her tail twitched when the fly landed on the cut.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 113
+    },
+    {
+      "text": "Her ears flattened under the bandage because the medic wrapped it too tightly.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 115
     }
   ]
 }
