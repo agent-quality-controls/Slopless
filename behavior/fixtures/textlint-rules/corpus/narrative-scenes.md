@@ -454,4 +454,8 @@ The matching control passage keeps the same surface words but gives each beat a 
 
 The next Liska passage labels emotion and steers the reader with camera attention. She was still very angry. Cassia looked at Arden. Remal had focused on the front latch, but Liska was showing them a different way.
 
-The matching control passage keeps emotion and attention tied to concrete work. The warning light was still very angry red after the fuse failed. She was still very angry about the broken latch, so she counted the missing screws before speaking. Cassia looked at the chalk arrow and copied it onto the slate. Cassia looked at Arden because he held the only clean map. Remal had focused on the front latch and copied the serial number into the ledger.
+The matching control passage keeps emotion and attention tied to concrete work. The warning light was still very angry red after the fuse failed. She was still very angry about the broken latch, so she counted the missing screws before speaking. Cassia looked at the chalk arrow and copied it onto the slate.
+
+Cassia looked at Arden because he held the only clean map.
+
+Remal had focused on the front latch and copied the serial number into the ledger.

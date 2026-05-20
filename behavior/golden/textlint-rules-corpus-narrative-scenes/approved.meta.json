@@ -1,19 +1,19 @@
 {
   "suite": "textlint-rules-corpus-narrative-scenes",
   "kind": "approved",
-  "run_id": "2026-05-20T17-11-05.698258Z-04547efb",
-  "run_commit": "a0b2e37",
+  "run_id": "2026-05-20T17-20-24.146561Z-04547efb",
+  "run_commit": "e9ee009",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-20T17:11:05.698258Z",
-  "fixture_hash": "sha256:3ce736a0b1c7315192a326b73a6a8b2154b6649b073d865b07a217002b71894d",
+  "recorded_at": "2026-05-20T17:20:24.146561Z",
+  "fixture_hash": "sha256:3155224cf9a4d62013e6e56bbfd5c19e7c2ac7d3edd90fcc139ce02267161e0e",
   "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
     {
       "path": "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
-      "sha256": "sha256:9009a1b41ee01e6a77509f88ddc2f5f07143c68ec926a94bc4ee63a7a65b98c2"
+      "sha256": "sha256:8fb3c24d1d6da1cc9dd7adc9cfd822508645bbb54222fc6d902062f83bf76d3b"
     }
   ],
-  "comment": "Approve Liska emotion and attention corpus findings"
+  "comment": "Route looking example through perception density"
 }

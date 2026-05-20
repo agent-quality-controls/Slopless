@@ -1383,25 +1383,25 @@
         "type": "lint"
       },
       {
-        "column": 1,
-        "index": 3755,
+        "column": 8,
+        "index": 3762,
         "line": 91,
         "loc": {
           "end": {
-            "column": 106,
+            "column": 42,
             "line": 91
           },
           "start": {
-            "column": 1,
+            "column": 8,
             "line": 91
           }
         },
-        "message": "Attention redirection: Cassia looked at Arden. Remal had focused on the front latch, but Liska was showing them a different way.. Replace the camera/attention setup with the concrete route, clue, or decision.",
+        "message": "Perception verb density: 2 perception verbs in a short span (looked, focused).",
         "range": [
-          3755,
-          3860
+          3762,
+          3796
         ],
-        "ruleId": "attention-redirection",
+        "ruleId": "perception-verb-density",
         "severity": 2,
         "type": "lint"
       }
