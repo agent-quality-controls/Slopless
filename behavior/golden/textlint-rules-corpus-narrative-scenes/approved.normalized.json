@@ -3842,6 +3842,29 @@
         "ruleId": "perception-verb-density",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 163,
+        "index": 19433,
+        "line": 463,
+        "loc": {
+          "end": {
+            "column": 180,
+            "line": 463
+          },
+          "start": {
+            "column": 163,
+            "line": 463
+          }
+        },
+        "message": "Narrative empty beat: empty movement beat. Replace placeholder hesitation, waiting, or animal body shorthand with concrete action or cause.",
+        "range": [
+          19433,
+          19450
+        ],
+        "ruleId": "empty-beat",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   }

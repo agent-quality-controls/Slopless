@@ -89,3 +89,5 @@ Liska lingered in the dusty yard-compound, her tail twitching.
 She was still very angry.
 
 Cassia looked at Arden. Remal had focused on the front latch, but Liska was showing them a different way.
+
+Liska led them across the yard-compound to the steep stone stairs. Cassia kept pace. She kept her eyes on the small cub.

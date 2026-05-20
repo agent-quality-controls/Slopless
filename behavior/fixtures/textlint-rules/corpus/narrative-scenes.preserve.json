@@ -1667,6 +1667,41 @@
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
       "line": 125
+    },
+    {
+      "text": "Liska led them across the yard-compound to the steep stone stairs. Cassia kept pace. She kept her eyes on the small cub.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 93
+    },
+    {
+      "text": "Cassia kept pace with Liska because the lantern path had loose stones.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 127
+    },
+    {
+      "text": "The runner kept pace with the lead group for three miles.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 129
+    },
+    {
+      "text": "The drummer kept pace with the metronome during the timing drill.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 131
+    },
+    {
+      "text": "Cassia kept pace with Liska to match the rope count.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 133
     }
   ]
 }

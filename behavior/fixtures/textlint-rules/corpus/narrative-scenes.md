@@ -459,3 +459,7 @@ The matching control passage keeps emotion and attention tied to concrete work. 
 Cassia looked at Arden because he held the only clean map.
 
 Remal had focused on the front latch and copied the serial number into the ledger.
+
+The next stair passage uses filler movement instead of showing what Cassia does with the clue. Liska led them across the yard-compound to the steep stone stairs. Cassia kept pace. She kept her eyes on the small cub.
+
+The matching controls keep pace literal, measured, or causal. Cassia kept pace with Liska because the lantern path had loose stones. The runner kept pace with the lead group for three miles. The drummer kept pace with the metronome during the timing drill. Cassia kept pace with Liska to match the rope count.

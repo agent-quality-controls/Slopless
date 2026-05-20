@@ -27,6 +27,7 @@ const BODY_PARTS = wordSet("ear ears tail tails whisker whiskers");
 const BODY_TAG_VERBS = wordSet(
   "angled angling drooped drooping flicked flicking flattened flattening twitched twitching"
 );
+const KEPT_PACE_FOLLOWERS = wordSet("beside behind near next with");
 
 function isCapitalized(token: Token): boolean {
   const first = token.text[0];
@@ -85,6 +86,17 @@ function isEmptyPlaceholding(tokens: readonly Token[]): boolean {
   );
 }
 
+function isEmptyKeptPace(tokens: readonly Token[]): boolean {
+  return (
+    hasPersonSubject(tokens) &&
+    tokens[1]?.normalized === "kept" &&
+    tokens[2]?.normalized === "pace" &&
+    (tokens.length === 3 ||
+      KEPT_PACE_FOLLOWERS.has(tokens[3]?.normalized ?? "")) &&
+    !hasCauseOrPurpose(tokens.slice(3))
+  );
+}
+
 function bodyTagStart(tokens: readonly Token[]): number | undefined {
   for (let index = 0; index < tokens.length - 2; index += 1) {
     if (
@@ -138,6 +150,13 @@ function sentenceDetections(
   if (isEmptyPlaceholding(tokens)) {
     return [
       sentenceDetection(sentence, "empty placeholding beat"),
+      ...(bodyTag === undefined ? [] : [bodyTag])
+    ];
+  }
+
+  if (isEmptyKeptPace(tokens)) {
+    return [
+      sentenceDetection(sentence, "empty movement beat"),
       ...(bodyTag === undefined ? [] : [bodyTag])
     ];
   }

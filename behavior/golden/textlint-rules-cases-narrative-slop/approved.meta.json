@@ -1,23 +1,23 @@
 {
   "suite": "textlint-rules-cases-narrative-slop",
   "kind": "approved",
-  "run_id": "2026-05-20T17-20-23.048079Z-04547efb",
-  "run_commit": "e9ee009",
+  "run_id": "2026-05-20T17-37-53.568674Z-04547efb",
+  "run_commit": "27265a9",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-20T17:20:23.048079Z",
-  "fixture_hash": "sha256:fe6252c4413e3969d43dac838d7be066fbb3bfcabfbfc3c67ecc659da16a4e21",
+  "recorded_at": "2026-05-20T17:37:53.568674Z",
+  "fixture_hash": "sha256:5a3ddbe800b1afb72a47b9064b30001bee79b037c131bc6bf3271cd3c424671f",
   "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
     {
       "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md",
-      "sha256": "sha256:06efafbebb9dfab6ff7fc6ddfdeb7bf3ae0463ec26ce26e76043209366c612be"
+      "sha256": "sha256:0c541940e7848677ca76b3b1c32819f9512ca69c8594bd3dcb915d039a510d9f"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md",
-      "sha256": "sha256:2e660ac6aa4b0477573636776c6442d826cb5546258281a7b71281daa3c120f7"
+      "sha256": "sha256:41d4e274f72375cf4775056cd697e5bc703f396b4b0a91dc8ce3acd16682305e"
     }
   ],
-  "comment": "Route looking example through perception density"
+  "comment": "Approve kept pace empty beat"
 }
