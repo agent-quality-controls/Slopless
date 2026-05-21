@@ -8,7 +8,11 @@ export type SourceText = {
 };
 
 export function sourceText(node: TxtParentNode): SourceText {
-  const source = new StringSource(node);
+  // textlint-util-to-string has not updated its public type for textlint 15.7's
+  // readonly children, but it only reads the node at runtime.
+  const source = new StringSource(
+    node as ConstructorParameters<typeof StringSource>[0] // type-coverage:ignore-line
+  );
 
   return {
     originalEndFor: (end) => source.originalIndexFromIndex(end, true) ?? end,
