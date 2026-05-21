@@ -74,7 +74,7 @@ fixtures = ["behavior/fixtures/textlint-rules/edge-cases/generated/*.md"]
 command = ["scripts/behavior-replay.sh", "{fixtures}"]
 ok_exit_codes = [0, 1]
 output_format = "json"
-normalizer = ["python3", "scripts/normalize-textlint-golden-output.py"]
+normalizer = ["python3", "developer-helpers/scripts/normalize-textlint-golden-output.py"]
 approved_dir = "behavior/golden/textlint-rules-edge-cases"
 received_dir = ".fixture3/textlint-rules-edge-cases"
 diff_dir = ".fixture3/textlint-rules-edge-cases"
@@ -92,7 +92,7 @@ path = "scripts/behavior-replay.sh"
 path = "scripts/fixture3.sh"
 
 [[required_command]]
-path = "scripts/normalize-textlint-golden-output.py"
+path = "developer-helpers/scripts/normalize-textlint-golden-output.py"
 
 [[case_kind]]
 value = "positive"

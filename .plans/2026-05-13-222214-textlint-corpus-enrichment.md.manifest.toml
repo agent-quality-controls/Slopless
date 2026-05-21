@@ -108,7 +108,7 @@ name = "textlint-rules-corpus"
 manifest = "fixture3.yaml"
 fixture_glob = "behavior/fixtures/textlint-rules/corpus/*.md"
 approved_output = "behavior/golden/textlint-rules-corpus/approved.normalized.json"
-normalizer = ["python3", "scripts/normalize-textlint-golden-output.py"]
+normalizer = ["python3", "developer-helpers/scripts/normalize-textlint-golden-output.py"]
 coverage_exclude_paths = ["behavior/fixtures/textlint-rules/corpus/positive.md"]
 
 [[coverage_rule]]

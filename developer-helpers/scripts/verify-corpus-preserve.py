@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 FIXTURE_ROOT = ROOT / "behavior/fixtures/textlint-rules"
 CASES_ROOT = FIXTURE_ROOT / "cases"
 CORPUS_ROOT = FIXTURE_ROOT / "corpus"

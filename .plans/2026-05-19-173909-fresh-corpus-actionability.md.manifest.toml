@@ -3,7 +3,7 @@ root = "new-corpus/2026-05-19-fresh-slop-expansion"
 case_separator = "---"
 
 [[required_file]]
-path = "scripts/verify-fresh-corpus-actionability.py"
+path = "developer-helpers/scripts/verify-fresh-corpus-actionability.py"
 
 [[required_file]]
 path = "src/rules/academic-slop/academic-boilerplate.ts"

@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / ".plans/2026-05-18-164928-wordiness-and-narrative-expansion.md.manifest.toml"
 
 

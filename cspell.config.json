@@ -33,6 +33,7 @@
     "operationalizing",
     "overcomplication",
     "pipefail",
+    "placeholding",
     "pmid",
     "prosesmasher",
     "reimagining",
@@ -54,6 +55,7 @@
     "uncited",
     "uncomparable",
     "uncomparables",
+    "venv",
     "websmasher",
     "worklogs",
     "zenodo"
@@ -61,10 +63,8 @@
   "ignorePaths": [
     ".plans",
     ".worklogs",
-    "analytics/star-history",
     "behavior/golden",
-    "datasets",
-    "legacy",
+    "developer-helpers",
     "new-corpus",
     "dist",
     "node_modules",

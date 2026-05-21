@@ -58,7 +58,7 @@ fixtures = ["behavior/fixtures/textlint-rules/corpus/*.md"]
 command = ["scripts/behavior-replay.sh", "{fixtures}"]
 ok_exit_codes = [0, 1]
 output_format = "json"
-normalizer = ["python3", "scripts/normalize-textlint-golden-output.py"]
+normalizer = ["python3", "developer-helpers/scripts/normalize-textlint-golden-output.py"]
 approved_dir = "behavior/golden/textlint-rules-corpus"
 received_dir = ".fixture3/textlint-rules-corpus"
 diff_dir = ".fixture3/textlint-rules-corpus"
@@ -78,7 +78,7 @@ path = "scripts/behavior-replay.sh"
 reason = "fixture3 project command"
 
 [[required_command]]
-path = "scripts/normalize-textlint-golden-output.py"
+path = "developer-helpers/scripts/normalize-textlint-golden-output.py"
 reason = "fixture3 output normalizer"
 
 [[required_command]]

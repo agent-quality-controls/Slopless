@@ -12,7 +12,7 @@ path = "new-corpus/2026-05-19-fresh-slop-expansion/README.md"
 path = "new-corpus/2026-05-19-fresh-slop-expansion/analysis/initial-expansion-ideas.md"
 
 [[required_path]]
-path = "scripts/verify-fresh-slop-corpus.py"
+path = "developer-helpers/scripts/verify-fresh-slop-corpus.py"
 
 [[text_angle]]
 slug = "linkedin-inspirational-consulting"

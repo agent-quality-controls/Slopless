@@ -7,7 +7,7 @@ import sys
 import tomllib
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / ".plans/2026-05-19-173909-fresh-corpus-actionability.md.manifest.toml"
 PROHIBITED_PHRASES = ROOT / "src/rules/phrases/data/prohibited-phrases.json"
 

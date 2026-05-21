@@ -1,0 +1,80 @@
+[[required_path]]
+path = "developer-helpers"
+kind = "dir"
+
+[[required_path]]
+path = "developer-helpers/README.md"
+kind = "file"
+
+[[required_path]]
+path = "developer-helpers/scripts"
+kind = "dir"
+
+[[required_path]]
+path = "scripts/behavior-replay.sh"
+kind = "file"
+
+[[required_path]]
+path = "scripts/fixture3.sh"
+kind = "file"
+
+[[required_path]]
+path = "scripts/verify-cli-version.mjs"
+kind = "file"
+
+[[forbidden_path]]
+path = "analytics"
+
+[[forbidden_path]]
+path = "datasets"
+
+[[forbidden_path]]
+path = "legacy"
+
+[[forbidden_glob]]
+path = "scripts"
+pattern = "*.py"
+
+[[required_text]]
+path = "package.json"
+value = "node scripts/verify-cli-version.mjs"
+
+[[required_text]]
+path = "cspell.config.json"
+value = "developer-helpers"
+
+[[required_text]]
+path = "eslint.config.js"
+value = "developer-helpers/**"
+
+[[required_text]]
+path = ".prettierignore"
+value = "developer-helpers"
+
+[[required_text]]
+path = ".gitattributes"
+value = "developer-helpers/** linguist-vendored"
+
+[[required_text]]
+path = ".github/AGENTS.md"
+value = "developer-helpers/scripts/verify-corpus-preserve.py"
+
+[[forbidden_text]]
+path = "package.json"
+value = "scripts/verify-cli-version.py"
+
+[[forbidden_text]]
+path = ".gitattributes"
+value = "scripts/*.py"
+
+[[forbidden_text]]
+path = "cspell.config.json"
+value = "analytics/star-history"
+
+[[forbidden_text]]
+path = "eslint.config.js"
+value = "datasets/**"
+
+[[forbidden_text]]
+path = ".prettierignore"
+value = "legacy"

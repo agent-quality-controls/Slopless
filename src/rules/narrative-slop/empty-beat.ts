@@ -149,7 +149,7 @@ function sentenceDetections(
 
   if (isEmptyPlaceholder(tokens)) {
     return [
-      sentenceDetection(sentence, "empty placeholder beat"),
+      sentenceDetection(sentence, "empty placeholding beat"),
       ...(bodyTag === undefined ? [] : [bodyTag])
     ];
   }

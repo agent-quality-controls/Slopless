@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / ".plans/2026-05-18-182750-summary-vague-subjective-expansion.md.manifest.toml"
 CORPUS_DIR = ROOT / "behavior/fixtures/textlint-rules/corpus"
 

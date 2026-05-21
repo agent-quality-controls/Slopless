@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 MANIFESTS = [
     ROOT / ".plans/2026-05-19-144747-semantic-max-widening.md.manifest.toml",
     ROOT / ".plans/2026-05-19-144747-syntactic-max-widening.md.manifest.toml",

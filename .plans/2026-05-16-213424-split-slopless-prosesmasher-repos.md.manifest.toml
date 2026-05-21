@@ -8,10 +8,10 @@ path = "behavior"
 path = "scripts/behavior-replay.sh"
 
 [[required_path]]
-path = "scripts/normalize-textlint-golden-output.py"
+path = "developer-helpers/scripts/normalize-textlint-golden-output.py"
 
 [[required_path]]
-path = "scripts/verify-corpus-preserve.py"
+path = "developer-helpers/scripts/verify-corpus-preserve.py"
 
 [[required_path]]
 path = "scripts/fixture3.sh"

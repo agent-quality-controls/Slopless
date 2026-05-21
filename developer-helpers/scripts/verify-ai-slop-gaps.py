@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / ".plans/2026-05-18-153519-ai-slop-gap-implementation.md.manifest.toml"
 PACKAGE_JSON = ROOT / "package.json"
 PRESET = ROOT / "src/presets/everything.ts"

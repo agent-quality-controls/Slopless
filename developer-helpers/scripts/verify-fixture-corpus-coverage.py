@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / ".plans/2026-05-18-095432-source-ledger-and-corpus-coverage.md.manifest.toml"
 
 
@@ -80,7 +80,7 @@ def verify_source_state(data: dict[str, Any], errors: list[str]) -> None:
     classified_paths = {
         str(row["path"]) for row in manifest_rows(data, "source_candidate_file")
     }
-    for path in sorted((ROOT / "legacy/source-material/reviewed/skipped").glob("*.md")):
+    for path in sorted((ROOT / "developer-helpers/legacy/source-material/reviewed/skipped").glob("*.md")):
         relative = str(path.relative_to(ROOT))
         if relative not in classified_paths:
             errors.append(f"derived source file is not classified in manifest: {relative}")

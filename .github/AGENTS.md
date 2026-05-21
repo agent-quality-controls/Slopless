@@ -36,7 +36,7 @@ Defaults:
 - `src/registries`: maps family rule IDs to rule modules
 - `behavior/fixtures/textlint-rules`: case and corpus fixtures
 - `scripts/behavior-replay.sh`: fixture3 runner
-- `scripts/verify-corpus-preserve.py`: confirms corpus preserves reviewed cases
+- `developer-helpers/scripts/verify-corpus-preserve.py`: confirms corpus preserves reviewed cases
 
 ## Release
 
@@ -72,7 +72,7 @@ When changing rules or fixtures:
 
 ```bash
 fixture3 check --feature textlint-rules
-scripts/verify-corpus-preserve.py
+developer-helpers/scripts/verify-corpus-preserve.py
 npm run validate
 ```
 
