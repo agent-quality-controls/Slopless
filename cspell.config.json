@@ -61,6 +61,7 @@
   "ignorePaths": [
     ".plans",
     ".worklogs",
+    "analytics/star-history",
     "behavior/golden",
     "datasets",
     "legacy",

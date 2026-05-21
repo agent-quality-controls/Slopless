@@ -48,9 +48,9 @@ path = "packages"
 
 [package_json]
 name = "slopless"
-repository_url = "git+https://github.com/agent-quality-controls/slopless.git"
-homepage = "https://github.com/agent-quality-controls/slopless#readme"
-bugs_url = "https://github.com/agent-quality-controls/slopless/issues"
+repository_url = "git+https://github.com/seochecks-ai/slopless.git"
+homepage = "https://github.com/seochecks-ai/slopless#readme"
+bugs_url = "https://github.com/seochecks-ai/slopless/issues"
 bin_name = "slopless"
 bin_path = "dist/cli.js"
 files = ["dist", "README.md", "skills", "slopless.textlintrc.json"]

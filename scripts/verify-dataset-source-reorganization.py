@@ -57,11 +57,11 @@ def verify_inventory_text(errors: list[str], data: dict[str, Any]) -> None:
 
 def verify_fixture_boundaries(errors: list[str]) -> None:
     fixture_root = ROOT / "behavior" / "fixtures" / "textlint-rules"
-    golden_root = ROOT / "behavior" / "golden" / "textlint-rules"
+    golden_roots = sorted((ROOT / "behavior" / "golden").glob("textlint-rules-*"))
     if not fixture_root.is_dir():
         errors.append("missing Fixture3 fixture root: behavior/fixtures/textlint-rules")
-    if not golden_root.is_dir():
-        errors.append("missing Fixture3 golden root: behavior/golden/textlint-rules")
+    if not golden_roots:
+        errors.append("missing Fixture3 golden roots: behavior/golden/textlint-rules-*")
 
 
 def main() -> int:

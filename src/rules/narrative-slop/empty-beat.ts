@@ -75,7 +75,7 @@ function isEmptyDurationPause(tokens: readonly Token[]): boolean {
   );
 }
 
-function isEmptyPlaceholding(tokens: readonly Token[]): boolean {
+function isEmptyPlaceholder(tokens: readonly Token[]): boolean {
   return (
     hasPersonSubject(tokens) &&
     EMPTY_PLACEHOLDER_VERBS.has(tokens[1]?.normalized ?? "") &&
@@ -147,9 +147,9 @@ function sentenceDetections(
     ];
   }
 
-  if (isEmptyPlaceholding(tokens)) {
+  if (isEmptyPlaceholder(tokens)) {
     return [
-      sentenceDetection(sentence, "empty placeholding beat"),
+      sentenceDetection(sentence, "empty placeholder beat"),
       ...(bodyTag === undefined ? [] : [bodyTag])
     ];
   }
