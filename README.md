@@ -4,7 +4,7 @@
 [![downloads](https://img.shields.io/npm/dm/slopless)](https://www.npmjs.com/package/slopless)
 [![license](https://img.shields.io/npm/l/slopless)](LICENSE)
 [![ci](https://img.shields.io/github/actions/workflow/status/seochecks-ai%2Fslopless/ci.yml?branch=main&label=ci)](/actions/workflows/ci.yml)
-[![node](https://img.shields.io/node/v/slopless)](package.json)
+[![node](https://img.shields.io/badge/node-22%2B-brightgreen)](package.json)
 
 Catch AI and human slop in English Markdown without calling an LLM. Slopless ships 50+ deterministic textlint rules and a CLI that emits structured JSON findings.
 
