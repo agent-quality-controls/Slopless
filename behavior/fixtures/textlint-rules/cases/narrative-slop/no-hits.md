@@ -91,3 +91,43 @@ The diver released a breath after surfacing beside the dock.
 The timer seemed to slow because the display refreshed once per second.
 
 Cassia glanced at the chalk arrow, stepped to the gate, copied the symbol, and waited for Arden to count the guards.
+
+The nurse checked his pulse, counted his breaths, recorded his temperature, and adjusted the cuff.
+
+The stage manager marked the tape, moved the chair, checked the light, and called the actor.
+
+The field biologist watched the fox, counted the kits, noted the den, and logged the time.
+
+The runner crossed the line, stopped the timer, checked her pulse, and drank water.
+
+Cassia copied the arrow, checked the gate symbol, counted the guards, and marked the map.
+
+Liska paused to listen for the bell under the stair.
+
+Liska paused for a second to count the missing buttons.
+
+Liska lingered by the broken latch to test whether it moved.
+
+Liska waited beside the gate until Marius raised his paw.
+
+Her tail twitched when the fly landed on the cut.
+
+Her ears flattened under the bandage because the medic wrapped it too tightly.
+
+The warning light was still very angry red after the fuse failed.
+
+She was still very angry about the broken latch, so she counted the missing screws before speaking.
+
+Cassia looked at the chalk arrow and copied it onto the slate.
+
+Cassia looked at Arden because he held the only clean map.
+
+Remal had focused on the front latch and copied the serial number into the ledger.
+
+Cassia kept pace with Liska because the lantern path had loose stones.
+
+The runner kept pace with the lead group for three miles.
+
+The drummer kept pace with the metronome during the timing drill.
+
+Cassia kept pace with Liska to match the rope count.

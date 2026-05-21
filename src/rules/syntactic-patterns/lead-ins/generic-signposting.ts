@@ -63,6 +63,20 @@ const SEQUENCE_PATTERNS = [
   "a simple pattern works well",
   "a simple rule works well"
 ];
+const EMPTY_ADVANTAGE_WORDS = ["advantage", "edge", "signal"];
+const CONDITIONAL_ABSTRACTIONS = [
+  "conditions",
+  "conversation",
+  "conversations",
+  "impact",
+  "outcomes"
+];
+const PROFOUND_TAILS = [
+  "big signal",
+  "profound implications",
+  "simple idea",
+  "small change"
+];
 const WHAT_FRAME_TAIL_STARTERS = [
   "boring",
   "clear",
@@ -264,14 +278,64 @@ function matchFormulaicContentSetup(text: string): string | undefined {
   return undefined;
 }
 
+function matchGeneratedFormula(text: string): string | undefined {
+  const words = tokens(text);
+
+  if (
+    words[0] === "in" &&
+    words[1] === "a" &&
+    words[2] === "world" &&
+    words[3] === "where" &&
+    words.includes("becomes") &&
+    EMPTY_ADVANTAGE_WORDS.includes(words.at(-1) ?? "")
+  ) {
+    return "in-a-world-where-x-becomes-y";
+  }
+
+  if (
+    words[0] === "if" &&
+    words[1] === "we" &&
+    (words[2] === "want" || words[2] === "care") &&
+    words.some((word) => CONDITIONAL_ABSTRACTIONS.includes(word)) &&
+    (words.includes("need") || words.includes("care"))
+  ) {
+    return "if-we-want-care-we-need-care";
+  }
+
+  if (
+    (words[0] === "it" || words[0] === "this") &&
+    words[1] === "is" &&
+    PROFOUND_TAILS.some((tail) => text.includes(tail))
+  ) {
+    return "simple-profound-signal-frame";
+  }
+
+  if (
+    words[0] === "this" &&
+    words[1] === "is" &&
+    words[2] === "the" &&
+    words[3] === "moment" &&
+    words[4] === "to" &&
+    words.includes("over")
+  ) {
+    return "this-is-the-moment-to-choose";
+  }
+
+  return undefined;
+}
+
 function matchSignposting(sentence: string): SentenceMatch | undefined {
   const stripped = cleanSentence(sentence, PREFIXES);
   const concreteImplementation = hasConcreteImplementationSummary(stripped);
   const abstract = matchAbstractFrame(stripped);
   const formulaicSetup = matchFormulaicContentSetup(stripped);
+  const generatedFormula = matchGeneratedFormula(stripped);
 
   if (abstract !== undefined && !concreteImplementation) {
     return { kind: "abstract-evaluation-frame", signal: abstract };
+  }
+  if (generatedFormula !== undefined && !concreteImplementation) {
+    return { kind: "generated-formula", signal: generatedFormula };
   }
   if (formulaicSetup !== undefined) {
     return { kind: "formulaic-content-setup", signal: formulaicSetup };

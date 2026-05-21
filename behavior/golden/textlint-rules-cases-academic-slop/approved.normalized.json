@@ -1,0 +1,747 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/academic-slop/hits.md",
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Coleman-Liau is 17.92. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "coleman-liau",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Flesch Reading Ease is 18.16. Keep it at 61 or higher.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Gunning Fog is 17.72. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "gunning-fog",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 19,
+        "index": 18,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 1
+          },
+          "start": {
+            "column": 19,
+            "line": 1
+          }
+        },
+        "message": "Tortured phrase found: \"counterfeit consciousness\". Replace it with the standard scientific term.",
+        "range": [
+          18,
+          43
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 38,
+        "index": 125,
+        "line": 3,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 3
+          },
+          "start": {
+            "column": 38,
+            "line": 3
+          }
+        },
+        "message": "Tortured phrase found: \"bosom peril\". Replace it with the standard scientific term.",
+        "range": [
+          125,
+          136
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 21,
+        "index": 172,
+        "line": 5,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 5
+          },
+          "start": {
+            "column": 21,
+            "line": 5
+          }
+        },
+        "message": "Tortured phrase found: \"sign to clamor\". Replace it with the standard scientific term.",
+        "range": [
+          172,
+          186
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 31,
+        "index": 246,
+        "line": 7,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 7
+          },
+          "start": {
+            "column": 31,
+            "line": 7
+          }
+        },
+        "message": "Tortured phrase found: \"man-made reasoning\". Replace it with the standard scientific term.",
+        "range": [
+          246,
+          264
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 325,
+        "line": 9,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 9
+          },
+          "start": {
+            "column": 24,
+            "line": 9
+          }
+        },
+        "message": "Tortured phrase found: \"data and interchanges innovation\". Replace it with the standard scientific term.",
+        "range": [
+          325,
+          357
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 36,
+        "index": 448,
+        "line": 11,
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 11
+          },
+          "start": {
+            "column": 36,
+            "line": 11
+          }
+        },
+        "message": "Tortured phrase found: \"shut circuit tv\". Replace it with the standard scientific term.",
+        "range": [
+          448,
+          463
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 503,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 95,
+            "line": 13
+          },
+          "start": {
+            "column": 1,
+            "line": 13
+          }
+        },
+        "message": "Academic formula frame found: \"The paper contributes a fresh perspective to the ongoing dialogue about pedagogical innovation\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          503,
+          597
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 600,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 81,
+            "line": 15
+          },
+          "start": {
+            "column": 1,
+            "line": 15
+          }
+        },
+        "message": "Academic formula frame found: \"The findings indicate that mentorship can unlock new forms of academic belonging\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          600,
+          680
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 43,
+        "index": 642,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 15
+          },
+          "start": {
+            "column": 43,
+            "line": 15
+          }
+        },
+        "message": "Prohibited word found: \"unlock\". Rewrite without this term.",
+        "range": [
+          642,
+          648
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 683,
+        "line": 17,
+        "loc": {
+          "end": {
+            "column": 85,
+            "line": 17
+          },
+          "start": {
+            "column": 1,
+            "line": 17
+          }
+        },
+        "message": "Academic formula frame found: \"The article situates these practices within a broader matrix of institutional change\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          683,
+          767
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 770,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 103,
+            "line": 19
+          },
+          "start": {
+            "column": 1,
+            "line": 19
+          }
+        },
+        "message": "Academic formula frame found: \"The study offers a roadmap for scholars seeking to navigate the complexities of interdisciplinary work\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          770,
+          872
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 875,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 90,
+            "line": 21
+          },
+          "start": {
+            "column": 1,
+            "line": 21
+          }
+        },
+        "message": "Academic formula frame found: \"The discussion reveals how meaning making practices shape the contours of student success\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          875,
+          964
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 967,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 97,
+            "line": 23
+          },
+          "start": {
+            "column": 1,
+            "line": 23
+          }
+        },
+        "message": "Academic formula frame found: \"The study reveals the potential of cross sector partnerships to catalyze systemic transformation\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          967,
+          1063
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1066,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 108,
+            "line": 25
+          },
+          "start": {
+            "column": 1,
+            "line": 25
+          }
+        },
+        "message": "Academic formula frame found: \"The article provides a comprehensive overview of the evolving discourse surrounding ethical data governance\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          1066,
+          1173
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 1089,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 37,
+            "line": 25
+          },
+          "start": {
+            "column": 24,
+            "line": 25
+          }
+        },
+        "message": "LLM vocabulary found: \"comprehensive\". Replace the stock diction with a concrete word.",
+        "range": [
+          1089,
+          1102
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1176,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 85,
+            "line": 27
+          },
+          "start": {
+            "column": 1,
+            "line": 27
+          }
+        },
+        "message": "Academic formula frame found: \"The evidence suggests that collaboration serves as a key driver of meaningful change\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          1176,
+          1260
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1288,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 104,
+            "line": 29
+          },
+          "start": {
+            "column": 1,
+            "line": 29
+          }
+        },
+        "message": "Academic formula frame found: \"This framework offers a robust pathway for understanding the shifting contours of disciplinary practice\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          1288,
+          1391
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 25,
+        "index": 1312,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 29
+          },
+          "start": {
+            "column": 25,
+            "line": 29
+          }
+        },
+        "message": "Prohibited word found: \"robust\". Rewrite without this term.",
+        "range": [
+          1312,
+          1318
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1394,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 68,
+            "line": 31
+          },
+          "start": {
+            "column": 1,
+            "line": 31
+          }
+        },
+        "message": "Academic formula frame found: \"The discussion highlights the importance of centering student voice\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          1394,
+          1461
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 23,
+        "index": 1530,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 104,
+            "line": 33
+          },
+          "start": {
+            "column": 23,
+            "line": 33
+          }
+        },
+        "message": "Academic formula frame found: \"reflexivity emerges as a critical touchstone for reimagining scholarly engagement\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          1530,
+          1611
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1614,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 75,
+            "line": 35
+          },
+          "start": {
+            "column": 1,
+            "line": 35
+          }
+        },
+        "message": "Academic formula frame found: \"The study illuminates the ways in which policy actors negotiate complexity\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          1614,
+          1688
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1738,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 96,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Academic formula frame found: \"These insights have profound implications for researchers seeking to bridge theory and practice\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          1738,
+          1833
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 70,
+        "index": 1807,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 96,
+            "line": 37
+          },
+          "start": {
+            "column": 70,
+            "line": 37
+          }
+        },
+        "message": "Academic boilerplate found: \"bridge theory and practice\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          1807,
+          1833
+        ],
+        "ruleId": "academic-boilerplate",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 1861,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 39
+          },
+          "start": {
+            "column": 26,
+            "line": 39
+          }
+        },
+        "message": "LLM vocabulary found: \"tapestry\". Replace the stock diction with a concrete word.",
+        "range": [
+          1861,
+          1869
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 1861,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 39
+          },
+          "start": {
+            "column": 26,
+            "line": 39
+          }
+        },
+        "message": "Prohibited word found: \"tapestry\". Rewrite without this term.",
+        "range": [
+          1861,
+          1869
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 22,
+        "index": 1972,
+        "line": 41,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 41
+          },
+          "start": {
+            "column": 22,
+            "line": 41
+          }
+        },
+        "message": "Academic boilerplate found: \"fertile ground\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          1972,
+          1986
+        ],
+        "ruleId": "academic-boilerplate",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 58,
+        "index": 2100,
+        "line": 43,
+        "loc": {
+          "end": {
+            "column": 73,
+            "line": 43
+          },
+          "start": {
+            "column": 58,
+            "line": 43
+          }
+        },
+        "message": "Academic boilerplate found: \"broader ecology\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          2100,
+          2115
+        ],
+        "ruleId": "academic-boilerplate",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2140,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 95,
+            "line": 45
+          },
+          "start": {
+            "column": 1,
+            "line": 45
+          }
+        },
+        "message": "Academic formula frame found: \"The analysis gestures toward a more expansive understanding of what counts as scholarly impact\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          2140,
+          2234
+        ],
+        "ruleId": "academic-formula-frames",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 59,
+        "index": 2295,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 74,
+            "line": 47
+          },
+          "start": {
+            "column": 59,
+            "line": 47
+          }
+        },
+        "message": "Academic boilerplate found: \"academic praxis\". Replace it with the concrete claim, method, or result.",
+        "range": [
+          2295,
+          2310
+        ],
+        "ruleId": "academic-boilerplate",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/academic-slop/no-hits.md",
+    "messages": []
+  }
+]

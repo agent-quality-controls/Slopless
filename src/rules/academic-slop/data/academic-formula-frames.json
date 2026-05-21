@@ -1,0 +1,252 @@
+[
+  {
+    "id": "contributes-to-dialogue",
+    "slots": {
+      "paperNoun": ["article", "chapter", "paper", "study"],
+      "valueNoun": [
+        "fresh perspective",
+        "important contribution",
+        "meaningful contribution",
+        "nuanced perspective",
+        "valuable contribution"
+      ],
+      "discourseNoun": [
+        "conversation",
+        "debate",
+        "dialogue",
+        "discourse",
+        "literature"
+      ],
+      "academicObject": [
+        "belonging",
+        "community engagement",
+        "digital transformation",
+        "institutional change",
+        "interdisciplinary work",
+        "knowledge production",
+        "meaning making",
+        "pedagogical innovation",
+        "social change",
+        "student success"
+      ]
+    },
+    "templates": [
+      "the {paperNoun} contributes a {valueNoun} to the ongoing {discourseNoun} about {academicObject}",
+      "the {paperNoun} contributes an {valueNoun} to the ongoing {discourseNoun} about {academicObject}"
+    ]
+  },
+  {
+    "id": "findings-enable-abstraction",
+    "slots": {
+      "findingNoun": ["findings", "results"],
+      "abstractActor": [
+        "collaboration",
+        "mentorship",
+        "participation",
+        "reflection",
+        "storytelling"
+      ],
+      "enableVerb": ["create", "enable", "unlock"],
+      "abstractOutcome": [
+        "new forms of academic belonging",
+        "new forms of collective agency",
+        "new modes of participation",
+        "new pathways for transformation"
+      ]
+    },
+    "templates": [
+      "the {findingNoun} indicate that {abstractActor} can {enableVerb} {abstractOutcome}",
+      "the {findingNoun} suggest that {abstractActor} can {enableVerb} {abstractOutcome}"
+    ]
+  },
+  {
+    "id": "situates-broader-matrix",
+    "slots": {
+      "paperNoun": ["article", "chapter", "paper", "study"],
+      "academicObject": [
+        "these practices",
+        "these processes",
+        "these strategies",
+        "these tensions",
+        "this intervention"
+      ],
+      "matrixNoun": ["landscape", "matrix", "terrain", "web"],
+      "abstractChange": [
+        "cultural change",
+        "institutional change",
+        "meaning making",
+        "social transformation",
+        "systemic transformation"
+      ]
+    },
+    "templates": [
+      "the {paperNoun} situates {academicObject} within a broader {matrixNoun} of {abstractChange}"
+    ]
+  },
+  {
+    "id": "roadmap-for-scholars",
+    "slots": {
+      "paperNoun": ["article", "chapter", "paper", "study"],
+      "scholarNoun": ["practitioners", "researchers", "scholars"],
+      "academicVerb": ["address", "engage", "navigate", "unpack"],
+      "complexityNoun": ["complexities", "complexity"],
+      "academicObject": [
+        "community engagement",
+        "digital transformation",
+        "institutional change",
+        "interdisciplinary work",
+        "knowledge production",
+        "student success"
+      ]
+    },
+    "templates": [
+      "the {paperNoun} offers a roadmap for {scholarNoun} seeking to {academicVerb} the {complexityNoun} of {academicObject}"
+    ]
+  },
+  {
+    "id": "contours-of-success",
+    "slots": {
+      "discussionNoun": ["analysis", "discussion", "paper", "study"],
+      "processNoun": [
+        "collaborative practices",
+        "meaning making practices",
+        "participatory practices",
+        "reflective practices"
+      ],
+      "successNoun": [
+        "collective success",
+        "institutional success",
+        "student success",
+        "transformative success"
+      ]
+    },
+    "templates": [
+      "the {discussionNoun} reveals how {processNoun} shape the contours of {successNoun}"
+    ]
+  },
+  {
+    "id": "potential-to-catalyze",
+    "slots": {
+      "paperNoun": ["article", "chapter", "paper", "study"],
+      "abstractSubject": [
+        "collaboration",
+        "cross sector partnerships",
+        "dialogue",
+        "participation",
+        "shared leadership"
+      ],
+      "abstractOutcome": [
+        "collective transformation",
+        "institutional transformation",
+        "social transformation",
+        "systemic transformation"
+      ]
+    },
+    "templates": [
+      "the {paperNoun} reveals the potential of {abstractSubject} to catalyze {abstractOutcome}"
+    ]
+  },
+  {
+    "id": "comprehensive-discourse-overview",
+    "slots": {
+      "paperNoun": ["article", "paper", "study"],
+      "discourseObject": [
+        "the evolving discourse surrounding ethical data governance",
+        "the evolving nature of professional identity",
+        "the shifting contours of disciplinary practice"
+      ]
+    },
+    "templates": [
+      "the {paperNoun} provides a comprehensive overview of {discourseObject}"
+    ]
+  },
+  {
+    "id": "key-driver-change",
+    "slots": {
+      "evidenceNoun": ["evidence", "findings", "results"],
+      "abstractActor": [
+        "collaboration",
+        "dialogue",
+        "mentorship",
+        "reflective practice",
+        "trust"
+      ],
+      "abstractChange": [
+        "meaningful change",
+        "collaborative practice",
+        "inclusive curriculum design",
+        "student success"
+      ]
+    },
+    "templates": [
+      "the {evidenceNoun} suggests that {abstractActor} serves as a key driver of {abstractChange}"
+    ]
+  },
+  {
+    "id": "robust-pathway-contours",
+    "slots": {
+      "frameworkNoun": ["framework", "model", "paper", "study"],
+      "contourObject": [
+        "the shifting contours of disciplinary practice",
+        "the broader ecology of knowledge exchange",
+        "the layered realities of academic work"
+      ]
+    },
+    "templates": [
+      "this {frameworkNoun} offers a robust pathway for understanding {contourObject}",
+      "the {frameworkNoun} offers a robust pathway for understanding {contourObject}"
+    ]
+  },
+  {
+    "id": "centering-and-touchstone",
+    "slots": {
+      "discussionNoun": ["discussion", "paper", "study"],
+      "academicObject": ["student voice", "care", "equity", "relationality"],
+      "abstractConcept": ["reflexivity", "relationality", "care", "agency"],
+      "academicGerund": [
+        "reimagining scholarly engagement",
+        "rethinking institutional practice",
+        "building resilient learning communities"
+      ]
+    },
+    "templates": [
+      "the {discussionNoun} highlights the importance of centering {academicObject}",
+      "{abstractConcept} emerges as a critical touchstone for {academicGerund}"
+    ]
+  },
+  {
+    "id": "illuminates-ways",
+    "slots": {
+      "paperNoun": ["article", "paper", "study"],
+      "academicActor": ["policy actors", "institutions", "students"],
+      "academicVerb": ["negotiate", "navigate", "operationalize"],
+      "abstractObject": [
+        "complexity",
+        "equity",
+        "identity",
+        "knowledge exchange"
+      ]
+    },
+    "templates": [
+      "the {paperNoun} illuminates the ways in which {academicActor} {academicVerb} {abstractObject}"
+    ]
+  },
+  {
+    "id": "profound-implications-gestures",
+    "slots": {
+      "insightNoun": ["these insights", "the findings", "the results"],
+      "scholarNoun": ["researchers", "scholars", "practitioners"],
+      "paperNoun": ["analysis", "article", "paper", "study"],
+      "academicObject": [
+        "what counts as scholarly impact",
+        "digital literacy",
+        "professional identity",
+        "student agency"
+      ]
+    },
+    "templates": [
+      "{insightNoun} have profound implications for {scholarNoun} seeking to bridge theory and practice",
+      "the {paperNoun} gestures toward a more expansive understanding of {academicObject}"
+    ]
+  }
+]

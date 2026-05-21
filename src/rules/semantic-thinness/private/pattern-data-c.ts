@@ -1,4 +1,5 @@
 import abstractPersonificationLine from "../patterns/abstract-personification-line.json" with { type: "json" };
+import abstractAgencyPersonification from "../patterns/abstract-agency-personification.json" with { type: "json" };
 import bodyEmotionShorthand from "../patterns/body-emotion-shorthand.json" with { type: "json" };
 import emptyAtmosphereShift from "../patterns/empty-atmosphere-shift.json" with { type: "json" };
 import fixedMetaphorFrame from "../patterns/fixed-metaphor-frame.json" with { type: "json" };
@@ -8,6 +9,7 @@ import summaryFogTransition from "../patterns/summary-fog-transition.json" with 
 import type { SemanticThinnessPattern } from "./pattern-matcher.js";
 
 export const semanticThinnessPatternSetC: readonly SemanticThinnessPattern[] = [
+  abstractAgencyPersonification,
   abstractPersonificationLine,
   bodyEmotionShorthand,
   emptyAtmosphereShift,

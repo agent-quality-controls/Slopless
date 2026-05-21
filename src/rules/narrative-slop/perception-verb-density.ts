@@ -4,6 +4,10 @@ import type { RuleDetection, RuleId, TextUnit } from "../types.js";
 import { type Token, wordTokens } from "../../shared/text/tokens.js";
 
 const PERCEPTION_VERBS = new Set([
+  "focus",
+  "focuses",
+  "focused",
+  "focusing",
   "look",
   "looks",
   "looked",

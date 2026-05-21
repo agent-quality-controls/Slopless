@@ -1,0 +1,26 @@
+{
+  "corpus": "arden-chapter-1-polished.md",
+  "preserve": [
+    {
+      "text": "It wasn't just a sound; it was a vibration that traveled through the dusty ground and tickled Cassia's paws.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1103
+    },
+    {
+      "text": "Bella didn't wait.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1105
+    },
+    {
+      "text": "Everyone went quiet. Silence filled the yard.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 257
+    }
+  ]
+}

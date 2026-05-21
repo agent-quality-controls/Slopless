@@ -179,7 +179,8 @@
       "the problem",
       "the solution",
       "the report",
-      "the decision"
+      "the decision",
+      "everything"
     ],
     "abstractVerb": [
       "lives",
@@ -193,7 +194,14 @@
       "moves"
     ],
     "importanceVerb": ["matters", "works", "changes", "counts", "sticks"],
-    "startVerb": ["starts", "begins", "happens", "shows up", "takes root"]
+    "startVerb": [
+      "starts",
+      "begins",
+      "begins to feel different",
+      "happens",
+      "shows up",
+      "takes root"
+    ]
   },
   "rejectIf": [
     "sentence names the concrete lesson, truth, or decision",

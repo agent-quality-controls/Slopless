@@ -76,5 +76,65 @@
       "serves as a testament to the power of",
       "serve as a testament to the power of"
     ]
+  },
+  {
+    "id": "intersection-abstraction",
+    "slots": {
+      "abstractDomain": [
+        "alignment",
+        "belonging",
+        "clarity",
+        "collaboration",
+        "creativity",
+        "empathy",
+        "execution",
+        "growth",
+        "impact",
+        "innovation",
+        "insight",
+        "leadership",
+        "purpose",
+        "resilience",
+        "strategy",
+        "transformation",
+        "trust",
+        "value"
+      ]
+    },
+    "templates": [
+      "sits at the intersection of {abstractDomain} {abstractDomain} and {abstractDomain}",
+      "sit at the intersection of {abstractDomain} {abstractDomain} and {abstractDomain}"
+    ]
+  },
+  {
+    "id": "forward-looking-humanity",
+    "slots": {
+      "summarySubject": ["these signals", "these ideas", "these shifts"],
+      "summaryVerb": ["tell", "point toward", "reveal"],
+      "biggerStory": [
+        "a bigger story",
+        "a deeper story",
+        "a larger story",
+        "a more human way"
+      ],
+      "softCorporateVerb": [
+        "center what makes us human",
+        "build what matters",
+        "honor the work",
+        "lead with purpose"
+      ],
+      "futureSubject": ["the next chapter", "the work ahead", "the road ahead"],
+      "abstractRequirement": [
+        "courage empathy and execution",
+        "clarity trust and execution",
+        "discipline alignment and care",
+        "focus courage and resilience"
+      ]
+    },
+    "templates": [
+      "taken together {summarySubject} {summaryVerb} {biggerStory}",
+      "as we move forward we must continue to {softCorporateVerb}",
+      "looking ahead {futureSubject} will require {abstractRequirement}"
+    ]
   }
 ]

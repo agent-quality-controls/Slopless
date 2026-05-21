@@ -16,6 +16,7 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+.venv/
 
 # Node
 node_modules/
@@ -26,3 +27,6 @@ dist/
 
 # Slopless local probe output
 .slopless/
+
+# Jupyter
+.ipynb_checkpoints/

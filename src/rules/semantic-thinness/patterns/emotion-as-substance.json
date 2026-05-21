@@ -12,6 +12,8 @@
     "{abstractEmotion} {substanceMotion} over {placeTarget}.",
     "{abstractEmotion} {substanceMotion} in {bodyContainer}.",
     "{abstractEmotion} {substanceMotion} through {placeTarget}.",
+    "{abstractEmotion} pooled at the edges of {abstractContainer}.",
+    "{abstractEmotion} entered {placeTarget} like a {substanceImage}.",
     "{abstractEmotion} tightened in {bodyContainer}."
   ],
   "slots": {
@@ -26,7 +28,9 @@
       "shame",
       "tension",
       "certainty",
-      "confusion"
+      "clarity",
+      "confusion",
+      "hope"
     ],
     "substanceMotion": [
       "built",
@@ -71,6 +75,7 @@
       "the group"
     ],
     "placeTarget": [
+      "the conversation",
       "the room",
       "the yard",
       "the courtyard",
@@ -78,6 +83,17 @@
       "the group",
       "the table",
       "the team"
+    ],
+    "abstractContainer": [
+      "the choice",
+      "the conversation",
+      "the decision",
+      "the moment"
+    ],
+    "substanceImage": [
+      "temperature change",
+      "weather change",
+      "weight in the room"
     ]
   },
   "rejectIf": [

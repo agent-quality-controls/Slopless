@@ -1464,6 +1464,244 @@
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
       "line": 93
+    },
+    {
+      "text": "Lila's ears twitched, her tail flicked, her eyes narrowed, and the silence around her seemed to lean closer.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 75
+    },
+    {
+      "text": "She blinked, swallowed, shifted her weight, and glanced at the floor while the air changed in a way no one named.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 77
+    },
+    {
+      "text": "The captain walked to the rail, looked across the water, looked back at the crew, and let the moment settle on his shoulders.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 79
+    },
+    {
+      "text": "Her shoulders tensed, her breath slipped out, her fingers brushed the scar, and she looked away.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 81
+    },
+    {
+      "text": "He blinked, looked down, looked up, and felt the moment settle like dust across his skin.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 83
+    },
+    {
+      "text": "The nurse checked his pulse, counted his breaths, recorded his temperature, and adjusted the cuff.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 95
+    },
+    {
+      "text": "The stage manager marked the tape, moved the chair, checked the light, and called the actor.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 97
+    },
+    {
+      "text": "The field biologist watched the fox, counted the kits, noted the den, and logged the time.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 99
+    },
+    {
+      "text": "The runner crossed the line, stopped the timer, checked her pulse, and drank water.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 101
+    },
+    {
+      "text": "Cassia copied the arrow, checked the gate symbol, counted the guards, and marked the map.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 103
+    },
+    {
+      "text": "It wasn't just a sound because the meter also recorded a vibration in the floor.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 237
+    },
+    {
+      "text": "The script didn't wait for input because the timeout was zero.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 239
+    },
+    {
+      "text": "Everyone went quiet because Marius raised one paw.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 231
+    },
+    {
+      "text": "Silence filled the yard after the sound meter stopped at 28 decibels.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 233
+    },
+    {
+      "text": "Liska paused for a second. Then she led them across the yard-compound to the steep stone stairs.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 85
+    },
+    {
+      "text": "Liska lingered in the dusty yard-compound, her tail twitching.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 87
+    },
+    {
+      "text": "Liska paused to listen for the bell under the stair.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 105
+    },
+    {
+      "text": "Liska paused for a second to count the missing buttons.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 107
+    },
+    {
+      "text": "Liska lingered by the broken latch to test whether it moved.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 109
+    },
+    {
+      "text": "Liska waited beside the gate until Marius raised his paw.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 111
+    },
+    {
+      "text": "Her tail twitched when the fly landed on the cut.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 113
+    },
+    {
+      "text": "Her ears flattened under the bandage because the medic wrapped it too tightly.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 115
+    },
+    {
+      "text": "She was still very angry.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 89
+    },
+    {
+      "text": "Cassia looked at Arden. Remal had focused on the front latch, but Liska was showing them a different way.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 91
+    },
+    {
+      "text": "The warning light was still very angry red after the fuse failed.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 117
+    },
+    {
+      "text": "She was still very angry about the broken latch, so she counted the missing screws before speaking.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 119
+    },
+    {
+      "text": "Cassia looked at the chalk arrow and copied it onto the slate.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 121
+    },
+    {
+      "text": "Cassia looked at Arden because he held the only clean map.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 123
+    },
+    {
+      "text": "Remal had focused on the front latch and copied the serial number into the ledger.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 125
+    },
+    {
+      "text": "Liska led them across the yard-compound to the steep stone stairs. Cassia kept pace. She kept her eyes on the small cub.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 93
+    },
+    {
+      "text": "Cassia kept pace with Liska because the lantern path had loose stones.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 127
+    },
+    {
+      "text": "The runner kept pace with the lead group for three miles.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 129
+    },
+    {
+      "text": "The drummer kept pace with the metronome during the timing drill.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 131
+    },
+    {
+      "text": "Cassia kept pace with Liska to match the rope count.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 133
     }
   ]
 }

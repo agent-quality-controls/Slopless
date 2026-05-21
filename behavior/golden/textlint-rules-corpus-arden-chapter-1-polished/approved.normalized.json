@@ -1,0 +1,99 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/arden-chapter-1-polished.md",
+    "messages": [
+      {
+        "column": 44,
+        "index": 290,
+        "line": 5,
+        "loc": {
+          "end": {
+            "column": 152,
+            "line": 5
+          },
+          "start": {
+            "column": 44,
+            "line": 5
+          }
+        },
+        "message": "Negation reframe found: \"It wasn't just a sound; it was a vibration that traveled through the dusty ground and tickled Cassia's paws.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          290,
+          398
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 674,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 19,
+            "line": 13
+          },
+          "start": {
+            "column": 1,
+            "line": 13
+          }
+        },
+        "message": "Negation reframe found: \"Bella didn't wait.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          674,
+          692
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2348,
+        "line": 41,
+        "loc": {
+          "end": {
+            "column": 21,
+            "line": 41
+          },
+          "start": {
+            "column": 1,
+            "line": 41
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {groupSubject} went {thinState}.",
+        "range": [
+          2348,
+          2368
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 22,
+        "index": 2369,
+        "line": 41,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 41
+          },
+          "start": {
+            "column": 22,
+            "line": 41
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {sceneElement} filled {placeObject}.",
+        "range": [
+          2369,
+          2393
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  }
+]

@@ -36,7 +36,7 @@ Defaults:
 - `src/registries`: maps family rule IDs to rule modules
 - `behavior/fixtures/textlint-rules`: case and corpus fixtures
 - `scripts/behavior-replay.sh`: fixture3 runner
-- `scripts/verify-corpus-preserve.py`: confirms corpus preserves reviewed cases
+- `developer-helpers/scripts/verify-corpus-preserve.py`: confirms corpus preserves reviewed cases
 
 ## Release
 
@@ -71,9 +71,9 @@ Cases are reviewed minimal examples. Corpus files are readable prose that should
 When changing rules or fixtures:
 
 ```bash
-fixture3 check --suite textlint-rules
-scripts/verify-corpus-preserve.py
+fixture3 check --feature textlint-rules
+developer-helpers/scripts/verify-corpus-preserve.py
 npm run validate
 ```
 
-The current approved fixture output may intentionally be an empty JSON file while fixture3 bootstrap behavior is being refined.
+Fixture approvals are split by family and corpus file so each approved JSON stays below the G3TS staged-file limit.

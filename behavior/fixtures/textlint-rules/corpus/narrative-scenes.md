@@ -425,3 +425,41 @@ The next rough scene leaned harder into stock emotional movement. In the silence
 The mixed-beat sample stacked low-information movement, body, and looking beats. Cassia glanced at Arden. Her throat tightened. She stepped back. Her eyes found the door. She waited.
 
 The control scene kept similar words but gave each beat a task or physical cause. Water washed over the group after the roof seam split. The recording measured the silence at 28 decibels after the generator shut down. A flicker of blue light crossed the signal lens after Cassia turned the crank. His eyes flashed red because the stage reflector caught the glass lenses. The diver released a breath after surfacing beside the dock. The timer seemed to slow because the display refreshed once per second. Cassia glanced at the chalk arrow, stepped to the gate, copied the symbol, and waited for Arden to count the guards.
+
+Lila's ears twitched, her tail flicked, her eyes narrowed, and the silence around her seemed to lean closer.
+
+She blinked, swallowed, shifted her weight, and glanced at the floor while the air changed in a way no one named.
+
+The captain walked to the rail, looked across the water, looked back at the crew, and let the moment settle on his shoulders.
+
+Her shoulders tensed, her breath slipped out, her fingers brushed the scar, and she looked away.
+
+He blinked, looked down, looked up, and felt the moment settle like dust across his skin.
+
+The nurse checked his pulse, counted his breaths, recorded his temperature, and adjusted the cuff.
+
+The stage manager marked the tape, moved the chair, checked the light, and called the actor.
+
+The field biologist watched the fox, counted the kits, noted the den, and logged the time.
+
+The runner crossed the line, stopped the timer, checked her pulse, and drank water.
+
+Cassia copied the arrow, checked the gate symbol, counted the guards, and marked the map.
+
+The new controls keep short negation and silence lines literal when the cause is named. It wasn't just a sound because the meter also recorded a vibration in the floor. The script didn't wait for input because the timeout was zero. Everyone went quiet because Marius raised one paw. Silence filled the yard after the sound meter stopped at 28 decibels.
+
+The next Liska passage uses empty beats instead of story movement. Liska paused for a second. Then she led them across the yard-compound to the steep stone stairs. Liska lingered in the dusty yard-compound, her tail twitching.
+
+The matching control passage keeps the same surface words but gives each beat a job or cause. Liska paused to listen for the bell under the stair. Liska paused for a second to count the missing buttons. Liska lingered by the broken latch to test whether it moved. Liska waited beside the gate until Marius raised his paw. Her tail twitched when the fly landed on the cut. Her ears flattened under the bandage because the medic wrapped it too tightly.
+
+The next Liska passage labels emotion and steers the reader with camera attention. She was still very angry. Cassia looked at Arden. Remal had focused on the front latch, but Liska was showing them a different way.
+
+The matching control passage keeps emotion and attention tied to concrete work. The warning light was still very angry red after the fuse failed. She was still very angry about the broken latch, so she counted the missing screws before speaking. Cassia looked at the chalk arrow and copied it onto the slate.
+
+Cassia looked at Arden because he held the only clean map.
+
+Remal had focused on the front latch and copied the serial number into the ledger.
+
+The next stair passage uses filler movement instead of showing what Cassia does with the clue. Liska led them across the yard-compound to the steep stone stairs. Cassia kept pace. She kept her eyes on the small cub.
+
+The matching controls keep pace literal, measured, or causal. Cassia kept pace with Liska because the lantern path had loose stones. The runner kept pace with the lead group for three miles. The drummer kept pace with the metronome during the timing drill. Cassia kept pace with Liska to match the rope count.

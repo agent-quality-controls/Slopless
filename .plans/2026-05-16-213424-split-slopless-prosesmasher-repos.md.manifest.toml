@@ -8,10 +8,10 @@ path = "behavior"
 path = "scripts/behavior-replay.sh"
 
 [[required_path]]
-path = "scripts/normalize-textlint-golden-output.py"
+path = "developer-helpers/scripts/normalize-textlint-golden-output.py"
 
 [[required_path]]
-path = "scripts/verify-corpus-preserve.py"
+path = "developer-helpers/scripts/verify-corpus-preserve.py"
 
 [[required_path]]
 path = "scripts/fixture3.sh"
@@ -20,7 +20,7 @@ path = "scripts/fixture3.sh"
 path = "package.json"
 
 [[required_path]]
-path = "package-lock.json"
+path = "pnpm-lock.yaml"
 
 [[required_path]]
 path = "README.md"
@@ -48,9 +48,9 @@ path = "packages"
 
 [package_json]
 name = "slopless"
-repository_url = "git+https://github.com/agent-quality-controls/slopless.git"
-homepage = "https://github.com/agent-quality-controls/slopless#readme"
-bugs_url = "https://github.com/agent-quality-controls/slopless/issues"
+repository_url = "git+https://github.com/seochecks-ai/slopless.git"
+homepage = "https://github.com/seochecks-ai/slopless#readme"
+bugs_url = "https://github.com/seochecks-ai/slopless/issues"
 bin_name = "slopless"
 bin_path = "dist/cli.js"
 files = ["dist", "README.md", "skills", "slopless.textlintrc.json"]

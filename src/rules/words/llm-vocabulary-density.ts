@@ -1,6 +1,7 @@
 import { defineTextlintRule } from "../../adapters/textlint/rule.js";
 import { paragraphUnits } from "../../adapters/textlint/units.js";
 import { wordTokens } from "../../shared/text/tokens.js";
+import { isVocabularyContextAllowed } from "./private/vocabulary-context.js";
 import type { RuleDetection, RuleId, TextUnit } from "../types.js";
 
 const RULE_ID = "words:llm-vocabulary-density" satisfies RuleId;
@@ -13,18 +14,51 @@ const WINDOW_SENTENCES = 4;
 const LLM_DENSITY_WORDS = new Set([
   "approach",
   "approaches",
+  "amplified",
+  "amplifies",
+  "amplify",
+  "amplifying",
+  "authentic",
+  "ai",
+  "catalyze",
+  "catalyzed",
+  "catalyzes",
+  "catalyzing",
+  "complexities",
+  "complexity",
+  "confidence",
+  "engagement",
   "ecosystem",
   "ecosystems",
   "elevate",
   "elevates",
   "elevating",
   "elevated",
+  "empower",
+  "empowered",
+  "empowering",
+  "empowers",
+  "frictionless",
+  "holistic",
   "impact",
   "impacts",
+  "intentional",
   "insight",
   "insights",
+  "learnings",
+  "native",
+  "next",
+  "generation",
+  "navigate",
+  "navigates",
+  "navigating",
   "nuance",
   "nuanced",
+  "operationalize",
+  "operationalized",
+  "operationalizes",
+  "operationalizing",
+  "resonant",
   "robust",
   "scale",
   "scales",
@@ -33,6 +67,10 @@ const LLM_DENSITY_WORDS = new Set([
   "strategy",
   "strategies",
   "strategic",
+  "stakeholder",
+  "stakeholders",
+  "sustainable",
+  "synergies",
   "touchpoint",
   "touchpoints",
   "transform",
@@ -41,6 +79,7 @@ const LLM_DENSITY_WORDS = new Set([
   "unlock",
   "unlocks",
   "unlocking",
+  "value",
   "workflow",
   "workflows"
 ]);
@@ -51,7 +90,11 @@ function vocabularyDetections(
   unit: TextUnit
 ): RuleDetection<VocabularyGroup>[] {
   return wordTokens(unit.text)
-    .filter((token) => LLM_DENSITY_WORDS.has(token.normalized))
+    .filter(
+      (token) =>
+        LLM_DENSITY_WORDS.has(token.normalized) &&
+        !isVocabularyContextAllowed(unit.text, token.normalized)
+    )
     .map((token) => ({
       evidence: unit.text.slice(token.start, token.end),
       group: GROUP,

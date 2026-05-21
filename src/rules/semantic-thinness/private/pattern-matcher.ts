@@ -61,6 +61,7 @@ const REJECT_TOKENS = new Set([
   "while"
 ]);
 const BROAD_PATTERN_IDS = new Set([
+  "abstract-agency-personification",
   "abstract-personification-line",
   "body-emotion-shorthand",
   "deictic-summary",
@@ -75,7 +76,12 @@ const BROAD_PATTERN_IDS = new Set([
   "truth-answer-moves",
   "vague-threshold-change"
 ]);
-const CONNECTOR_ALLOWED_PATTERN_IDS = new Set(["vague-summary-cost"]);
+const CONNECTOR_ALLOWED_PATTERN_IDS = new Set([
+  "abstract-agency-personification",
+  "body-knows",
+  "recursive-meaning-frame",
+  "vague-summary-cost"
+]);
 function normalizedTokens(text: string): readonly string[] {
   return wordTokens(text).map((token) => token.normalized);
 }

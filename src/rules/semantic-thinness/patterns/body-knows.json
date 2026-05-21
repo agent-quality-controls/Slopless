@@ -8,7 +8,9 @@
     "{wisdomSubject} {wisdomVerb}.",
     "{wisdomSubject} {wisdomVerb} {genericObject}.",
     "{wisdomSubject} {wisdomVerb} what {genericSubject} {thinPredicate}.",
-    "{wisdomSubject} {wisdomVerb} long before {mindSubject} {mindVerb}."
+    "{wisdomSubject} {wisdomVerb} long before {mindSubject} {mindVerb}.",
+    "{wisdomSubject} becomes the map when {mindSubject} is still {abstractMotion}.",
+    "{cellsSubject} recognize the difference between {abstractState} and {abstractState}."
   ],
   "slots": {
     "wisdomSubject": [
@@ -52,7 +54,20 @@
       "is ready to release"
     ],
     "mindSubject": ["the mind", "your mind", "her mind", "his mind"],
-    "mindVerb": ["admits it", "understands", "catches up", "can explain it"]
+    "mindVerb": ["admits it", "understands", "catches up", "can explain it"],
+    "abstractMotion": [
+      "arguing with the road",
+      "arguing with the truth",
+      "chasing the old answer"
+    ],
+    "cellsSubject": ["your cells", "the cells"],
+    "abstractState": [
+      "achievement",
+      "alignment",
+      "certainty",
+      "permission",
+      "progress"
+    ]
   },
   "rejectIf": [
     "sentence describes a concrete physiological symptom",

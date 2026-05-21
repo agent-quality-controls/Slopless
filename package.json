@@ -12,9 +12,10 @@
     "url": "https://github.com/seochecks-ai/slopless/issues"
   },
   "type": "module",
+  "packageManager": "pnpm@10.32.0",
   "main": "./dist/index.js",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   },
   "scripts": {
     "build": "rm -rf dist && tsc -p tsconfig.json && chmod +x dist/cli.js",
@@ -24,7 +25,7 @@
     "lint:css": "stylelint --max-warnings 0 \"styles/**/*.css\"",
     "spellcheck": "cspell .",
     "typecov": "type-coverage --strict --at-least 100",
-    "validate": "npm run build && scripts/verify-cli-version.py && npm run lint && npm run lint:css && prettier --check . && cspell . && type-coverage --strict --at-least 100 && scripts/validate-g3ts.sh"
+    "validate": "pnpm run build && node scripts/verify-cli-version.mjs && pnpm run lint && pnpm run lint:css && prettier --check . && cspell . && type-coverage --strict --at-least 100"
   },
   "files": [
     "dist",
@@ -37,6 +38,8 @@
   },
   "exports": {
     ".": "./dist/index.js",
+    "./rules/academic-slop/academic-boilerplate": "./dist/rules/academic-slop/academic-boilerplate.js",
+    "./rules/academic-slop/academic-formula-frames": "./dist/rules/academic-slop/academic-formula-frames.js",
     "./rules/academic-slop/tortured-phrases": "./dist/rules/academic-slop/tortured-phrases.js",
     "./rules/metrics/avg-sentence-length": "./dist/rules/metrics/avg-sentence-length.js",
     "./rules/metrics/coleman-liau": "./dist/rules/metrics/coleman-liau.js",
@@ -128,6 +131,7 @@
     "stylelint": "17.11.0",
     "stylelint-config-standard": "40.0.0",
     "stylelint-config-tailwindcss": "1.0.1",
+    "syncpack": "15.3.1",
     "type-coverage": "2.29.7",
     "typescript": "5.9.3"
   }

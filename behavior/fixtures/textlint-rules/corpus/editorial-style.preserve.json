@@ -2199,6 +2199,363 @@
       "bucket": "no-hits",
       "source": "cases/words/no-hits.md",
       "line": 19
+    },
+    {
+      "text": "This is a game-changer for teams ready to embrace the next horizon.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 347
+    },
+    {
+      "text": "Our mission is to empower teams to unlock their full potential.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 349
+    },
+    {
+      "text": "We need to double-click on the opportunity before we socialize the proposal.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 351
+    },
+    {
+      "text": "This work sits at the intersection of innovation, empathy, and execution.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 353
+    },
+    {
+      "text": "The campaign invites leaders to unlock their full potential across the next horizon.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 355
+    },
+    {
+      "text": "Double-click on the file icon to open the installer.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 93
+    },
+    {
+      "text": "The survey crew met at the intersection of Pine Street, Oak Street, and River Road.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 95
+    },
+    {
+      "text": "The trainer helped the dogs socialize before the adoption event.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 97
+    },
+    {
+      "text": "The style guide quotes \"game-changer\" as a phrase to delete.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 99
+    },
+    {
+      "text": "The product title is \"Unlock Your Full Potential\" in the blocked-example list.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 101
+    },
+    {
+      "text": "The platform delivers a holistic experience that empowers users to navigate complexity with confidence.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 39
+    },
+    {
+      "text": "The initiative is designed to amplify momentum, catalyze change, and create sustainable value.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 41
+    },
+    {
+      "text": "The product experience should feel elegant, seamless, accessible, and emotionally resonant.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 43
+    },
+    {
+      "text": "The strategy empowers teams to navigate complexity and unlock holistic value.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 45
+    },
+    {
+      "text": "The palladium can catalyze the test at 40 C.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 21
+    },
+    {
+      "text": "The confidence level was 95 percent.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 23
+    },
+    {
+      "text": "The track was frictionless in the physics lab.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 25
+    },
+    {
+      "text": "The report lists sustainable fuel use.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 27
+    },
+    {
+      "text": "The value was five dollars.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 29
+    },
+    {
+      "text": "Taken together, these signals tell a bigger story about the future of work.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 357
+    },
+    {
+      "text": "As we move forward, we must continue to center what makes us human.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 359
+    },
+    {
+      "text": "Looking ahead, the next chapter will require courage, empathy, and execution.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 361
+    },
+    {
+      "text": "We are excited to announce a new era of customer-centric innovation.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 363
+    },
+    {
+      "text": "The platform enables seamless collaboration across cross-functional stakeholders.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 365
+    },
+    {
+      "text": "We are building a best-in-class solution for next-generation growth.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 367
+    },
+    {
+      "text": "The strategy leverages synergies across the value chain.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 369
+    },
+    {
+      "text": "We need to operationalize learnings across the enterprise.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 371
+    },
+    {
+      "text": "The team will circle back after pressure-testing the north-star narrative.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 373
+    },
+    {
+      "text": "We can move the needle by activating the right levers.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 375
+    },
+    {
+      "text": "The product creates a flywheel of trust, engagement, and measurable impact.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 377
+    },
+    {
+      "text": "We need to future-proof the experience for the AI-native customer journey.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 379
+    },
+    {
+      "text": "The campaign will meet users where they are with authentic storytelling.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 381
+    },
+    {
+      "text": "Looking ahead through the windshield, Mara saw the bridge close.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 103
+    },
+    {
+      "text": "The technician will pressure-test the valve before opening the line.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 105
+    },
+    {
+      "text": "The compass needle moved when the magnet touched the case.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 107
+    },
+    {
+      "text": "The lever on the press jammed before the operator could release it.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 109
+    },
+    {
+      "text": "The flywheel cracked after the engine overheated.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 111
+    },
+    {
+      "text": "The product manual says the device works with next-generation CPUs.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 113
+    },
+    {
+      "text": "The customer-centric coordinate system uses the customer point as the origin.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 115
+    },
+    {
+      "text": "The witness said the team moved forward after the door opened.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 117
+    },
+    {
+      "text": "The initiative is intentional, authentic, scalable, and designed to unlock meaningful impact.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 47
+    },
+    {
+      "text": "The roadmap enables cross-functional stakeholders to operationalize learnings across the value chain.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 49
+    },
+    {
+      "text": "The product creates a customer-centric, next-generation journey with seamless, AI-native collaboration.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 51
+    },
+    {
+      "text": "The framework helps teams activate synergies, future-proof workflows, and amplify strategic alignment.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 53
+    },
+    {
+      "text": "The platform empowers holistic growth through authentic engagement and sustainable transformation.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 55
+    },
+    {
+      "text": "The contract names three stakeholders and lists their voting rights.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 31
+    },
+    {
+      "text": "The lesson plan asks students to define operationalize in one sentence.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 33
+    },
+    {
+      "text": "The battery value chain starts at the lithium mine and ends at recycling.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 35
+    },
+    {
+      "text": "The AI-native file format stores model metadata in the header.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 37
+    },
+    {
+      "text": "The label says the wood finish is authentic shellac.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 39
+    },
+    {
+      "text": "The city report says the water supply is sustainable under the drought model.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 41
     }
   ]
 }

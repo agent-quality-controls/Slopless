@@ -89,3 +89,29 @@ The board scheduled a formal review for May.
 The editor quoted "added bonus" as a redundancy example.
 
 The report says the guarantee is absolute after legal review.
+
+Double-click on the file icon to open the installer.
+
+The survey crew met at the intersection of Pine Street, Oak Street, and River Road.
+
+The trainer helped the dogs socialize before the adoption event.
+
+The style guide quotes "game-changer" as a phrase to delete.
+
+The product title is "Unlock Your Full Potential" in the blocked-example list.
+
+Looking ahead through the windshield, Mara saw the bridge close.
+
+The technician will pressure-test the valve before opening the line.
+
+The compass needle moved when the magnet touched the case.
+
+The lever on the press jammed before the operator could release it.
+
+The flywheel cracked after the engine overheated.
+
+The product manual says the device works with next-generation CPUs.
+
+The customer-centric coordinate system uses the customer point as the origin.
+
+The witness said the team moved forward after the door opened.

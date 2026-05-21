@@ -2983,6 +2983,643 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 213
+    },
+    {
+      "text": "The paper contributes a fresh perspective to the ongoing dialogue about pedagogical innovation.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 13
+    },
+    {
+      "text": "The findings indicate that mentorship can unlock new forms of academic belonging.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 15
+    },
+    {
+      "text": "The article situates these practices within a broader matrix of institutional change.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 17
+    },
+    {
+      "text": "The study offers a roadmap for scholars seeking to navigate the complexities of interdisciplinary work.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 19
+    },
+    {
+      "text": "The discussion reveals how meaning making practices shape the contours of student success.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 21
+    },
+    {
+      "text": "The study reveals the potential of cross sector partnerships to catalyze systemic transformation.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 23
+    },
+    {
+      "text": "The paper reports that 42 students completed the tutoring program between March and June.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 21
+    },
+    {
+      "text": "The findings indicate that the control group scored 8 percent higher on the second exam.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 23
+    },
+    {
+      "text": "The article places the survey instrument in Appendix B with the consent script.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 25
+    },
+    {
+      "text": "The study gives a route map for the field team walking from station 3 to station 7.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 27
+    },
+    {
+      "text": "The discussion explains how attendance records changed after the schedule moved to Friday.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 29
+    },
+    {
+      "text": "Not because the work is easy, but because the work matters.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1069
+    },
+    {
+      "text": "Not because the old model was wrong, but because the next model needs to be better.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1071
+    },
+    {
+      "text": "Not because everyone agrees, but because the direction is becoming clearer.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1073
+    },
+    {
+      "text": "Not because the launch is loud, but because the change has to mean something.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1075
+    },
+    {
+      "text": "Not because the server failed, but because the token expired.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 215
+    },
+    {
+      "text": "Not because the sample was contaminated, but because the vial cracked.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 217
+    },
+    {
+      "text": "The fixture quotes \"Not because the work is easy, but because the work matters\" as a detector example.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 219
+    },
+    {
+      "text": "Not because the patient refused care, but because the clinic closed at noon.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 221
+    },
+    {
+      "text": "The room seemed to understand that something important was beginning to shift.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 217
+    },
+    {
+      "text": "The strategy wanted to become more honest with itself.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 219
+    },
+    {
+      "text": "The brand had been waiting for courage to become what it was always becoming.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 221
+    },
+    {
+      "text": "The conversation held the team until clarity arrived.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 223
+    },
+    {
+      "text": "The meaning of the decision lives in what it makes available.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 225
+    },
+    {
+      "text": "The room sensor reported that occupancy increased after the doors opened.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 205
+    },
+    {
+      "text": "The strategy document lists Mara as owner and May 31 as the review date.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 207
+    },
+    {
+      "text": "The brand record in the trademark filing uses the product name and class number.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 209
+    },
+    {
+      "text": "The conversation transcript names the speaker and the exact question.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 211
+    },
+    {
+      "text": "The audio engineer said clarity improved after the filter removed hiss.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 213
+    },
+    {
+      "text": "The data was whispering that the organization had outgrown its old questions.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 227
+    },
+    {
+      "text": "The market was asking for a more human answer.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 229
+    },
+    {
+      "text": "The product knew it needed to stop performing and start belonging.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 231
+    },
+    {
+      "text": "The silence in the dashboard said more than the metrics could say.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 233
+    },
+    {
+      "text": "This is where everything begins to feel different, even before anything changes.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 235
+    },
+    {
+      "text": "Something opens when you stop forcing the answer and start honoring the question.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 237
+    },
+    {
+      "text": "The roadmap stopped being a plan and started becoming a permission structure.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 239
+    },
+    {
+      "text": "The answer was always closer than the search made it seem.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 241
+    },
+    {
+      "text": "Your cells recognize the difference between alignment and achievement.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 243
+    },
+    {
+      "text": "The body becomes the map when the mind is still arguing with the road.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 245
+    },
+    {
+      "text": "Hope pooled at the edges of the decision before anyone could name it.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 247
+    },
+    {
+      "text": "Clarity entered the conversation like a temperature change.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 249
+    },
+    {
+      "text": "The next level asks for a version of you that can hold more truth.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 251
+    },
+    {
+      "text": "The path forward is obvious once the noise is no longer allowed to lead.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 253
+    },
+    {
+      "text": "The real opportunity is to let the work teach us what the work is.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 255
+    },
+    {
+      "text": "The market asked vendors to submit bids by Friday.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 215
+    },
+    {
+      "text": "The product recorded that the user stopped the timer at 14 seconds.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 217
+    },
+    {
+      "text": "The dashboard showed that the error rate dropped from 4 percent to 1 percent.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 219
+    },
+    {
+      "text": "The roadmap document changed when Mara removed the billing migration.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 221
+    },
+    {
+      "text": "The cells recognized the tagged protein under fluorescence microscopy.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 223
+    },
+    {
+      "text": "The body map labels the femur, pelvis, and lower spine.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 225
+    },
+    {
+      "text": "The answer was closer to 47 than to 52 after rounding.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 227
+    },
+    {
+      "text": "The conversation transcript says the speaker used the word clarity twice.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 229
+    },
+    {
+      "text": "In a world where change is constant, clarity becomes the real advantage.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1077
+    },
+    {
+      "text": "If we want better outcomes, we need better conversations.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1079
+    },
+    {
+      "text": "If we care about impact, we have to care about the conditions that make impact possible.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1081
+    },
+    {
+      "text": "This is the moment to choose clarity over comfort.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1083
+    },
+    {
+      "text": "It is a simple idea with profound implications.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1085
+    },
+    {
+      "text": "Better inputs create better outputs.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1087
+    },
+    {
+      "text": "Better questions create better systems.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1089
+    },
+    {
+      "text": "Strategy is not what you say yes to; it is what you are willing to say no to.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1091
+    },
+    {
+      "text": "Change is not a destination; it is a discipline.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1093
+    },
+    {
+      "text": "Clarity is not the absence of complexity; it is the ability to move through it.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1095
+    },
+    {
+      "text": "Momentum is not speed; it is coordinated energy.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1097
+    },
+    {
+      "text": "Alignment is not agreement; it is shared motion.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1099
+    },
+    {
+      "text": "Execution is not activity; it is intention made visible.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1101
+    },
+    {
+      "text": "In a world map, the prime meridian passes through Greenwich.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 223
+    },
+    {
+      "text": "If the server returns 500, we need the request ID.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 225
+    },
+    {
+      "text": "Better batteries create better range in this test because the voltage stays stable.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 227
+    },
+    {
+      "text": "The strategy is not stored in the database; it is stored in the repository.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 229
+    },
+    {
+      "text": "Change is not a destination field in the schema.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 231
+    },
+    {
+      "text": "Momentum is not speed in the physics worksheet.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 233
+    },
+    {
+      "text": "Alignment is not agreement in this contract clause.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 235
+    },
+    {
+      "text": "The article provides a comprehensive overview of the evolving discourse surrounding ethical data governance.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 25
+    },
+    {
+      "text": "The evidence suggests that collaboration serves as a key driver of meaningful change across academic settings.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 27
+    },
+    {
+      "text": "This framework offers a robust pathway for understanding the shifting contours of disciplinary practice.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 29
+    },
+    {
+      "text": "The discussion highlights the importance of centering student voice in the co-construction of learning outcomes.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 31
+    },
+    {
+      "text": "The paper argues that reflexivity emerges as a critical touchstone for reimagining scholarly engagement.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 33
+    },
+    {
+      "text": "The study illuminates the ways in which policy actors negotiate complexity within rapidly changing institutional contexts.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 35
+    },
+    {
+      "text": "These insights have profound implications for researchers seeking to bridge theory and practice.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 37
+    },
+    {
+      "text": "The literature reveals a tapestry of perspectives that collectively enrich our understanding of digital literacy.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 39
+    },
+    {
+      "text": "The findings provide fertile ground for rethinking how institutions operationalize equity.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 41
+    },
+    {
+      "text": "The chapter interrogates how power circulates within the broader ecology of knowledge exchange.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 43
+    },
+    {
+      "text": "The analysis gestures toward a more expansive understanding of what counts as scholarly impact.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 45
+    },
+    {
+      "text": "The discussion situates care as an essential dimension of academic praxis.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 47
+    },
+    {
+      "text": "The article provides the survey instrument, codebook, and response counts.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 31
+    },
+    {
+      "text": "The evidence suggests that the 12-volt battery failed after 300 cycles.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 33
+    },
+    {
+      "text": "The framework offers a route for loading the module without circular imports.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 35
+    },
+    {
+      "text": "The discussion highlights that section 4.2 contains the consent script.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 37
+    },
+    {
+      "text": "The study reports that policy actors filed 18 comments before the deadline.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 39
+    },
+    {
+      "text": "The literature review names each database query and inclusion criterion.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 41
+    },
+    {
+      "text": "The chapter quotes \"bridge theory and practice\" as an example of vague academic prose.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 43
     }
   ]
 }

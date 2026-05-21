@@ -2,8 +2,8 @@ dist
 node_modules
 target
 package-lock.json
+pnpm-lock.yaml
 behavior/golden
-datasets
+developer-helpers
 .plans
 .worklogs
-legacy
