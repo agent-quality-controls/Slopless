@@ -1,3 +1,7 @@
+[checks]
+package = false
+npmrc = false
+
 [ts.package]
 source_globs = ["src/**/*.ts"]
 
