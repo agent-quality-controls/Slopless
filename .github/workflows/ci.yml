@@ -19,8 +19,6 @@ jobs:
         with:
           key: g3ts
       - uses: pnpm/action-setup@v4
-        with:
-          version: 11.2.2
       - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
